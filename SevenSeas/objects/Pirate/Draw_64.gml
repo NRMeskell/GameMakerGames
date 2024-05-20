@@ -18,7 +18,9 @@ else
 
 DrawPirate(xWindow+xPicture, yWindow+yPicture)
     
-draw_sprite_ext(PirateSheetSpr, (min(7, morale) + 3) + 1, xWindow, yWindow, size, size, 0, c_white, 1)
+draw_sprite_ext(moraleSheet[stars], (min(7, morale) + 3), xWindow, yWindow, size, size, 0, c_white, 1)
+draw_sprite_ext(MoraleSymbolSpr, myMainPer, xWindow, yWindow, size, size, 0, c_white, 1)
+
 if !injured
     draw_sprite(PirateLifeSpr, -1+sprite_get_number(PirateLifeSpr)*myHealth/maxHealth, xWindow, yWindow)
 else

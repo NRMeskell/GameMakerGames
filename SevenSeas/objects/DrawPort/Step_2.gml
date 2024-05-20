@@ -23,7 +23,7 @@ if !overButton
 else
     overButton = point_in_rectangle(mouse_x, mouse_y, x-sprite_get_width(LandMenuSpr)/2, y-sprite_get_height(LandMenuSpr), x+sprite_get_width(LandMenuSpr)/2, y)
 
-if Clock.alarm[2] > 0 or MapCreator.pirateSelected or ds_list_size(ItemRunner.floatingItems) > 0 or  instance_exists(Store) or instance_exists(Event) or ds_list_size(global.notificationList) > 0// or sprite_index = CampFireDyingSpr
+if Clock.alarm[2] > 0 or global.pirateSelected or ds_list_size(ItemRunner.floatingItems) > 0 or  instance_exists(Store) or instance_exists(Event) or ds_list_size(global.notificationList) > 0// or sprite_index = CampFireDyingSpr
     overButton = false
 
 ///Press Button
