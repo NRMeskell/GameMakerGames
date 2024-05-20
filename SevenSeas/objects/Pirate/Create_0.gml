@@ -9,6 +9,10 @@ global.KEEN = 1
 global.FEARSOME = 2
 global.DARING = 3
 
+moraleSheet[0] = Morale1Spr
+moraleSheet[1] = Morale1Spr
+moraleSheet[2] = Morale1Spr
+
 
 //NOTES
 

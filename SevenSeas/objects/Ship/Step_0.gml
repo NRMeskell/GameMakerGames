@@ -187,11 +187,6 @@ else
 
 ///Pirate Selected Tracker
 
-global.pirateSelected = false
-with Pirate
-    if selected
-        global.pirateSelected = true
-
 ///Double Click Controller
 
 if mouse_check_button_pressed(mb_left)

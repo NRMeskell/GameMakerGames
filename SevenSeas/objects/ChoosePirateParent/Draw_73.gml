@@ -9,12 +9,6 @@ if !injured
 else
     draw_sprite(PirateLifeInjuredSpr, -1+sprite_get_number(PirateLifeSpr)*myHealth/maxHealth, xWindow, yWindow)
 
-//draw_sprite_ext(PirateSheetSpr, (moral + 3) + 1, xWindow, yWindow, size, size, 0, c_white, 1)
-/*draw_sprite_ext(PiratePersonalitySpr, 0, xWindow + 66, yWindow + 124, size, size, 0, c_white, 1)
-draw_sprite_ext(PiratePersonalitySpr, 1 + mySecondPer, xWindow + 66, yWindow + 124, size, size, 0, c_white, 1)
-draw_sprite_ext(PiratePersonalitySpr, 6 + myMainPer, xWindow + 66, yWindow + 124, size, size, 0, c_white, 1)
-
-
 /* */
 ///Draw Name Menu
 
@@ -98,6 +92,7 @@ else
 if overSelf
     draw_sprite(OverPirateChooseSpr, 0, xWindow, yWindow)
     
+draw_sprite_ext(MoraleSymbolSpr, myMainPer, xWindow, yWindow, size, size, 0, c_white, 1)
 
 /* */
 ///Draw Bonuses

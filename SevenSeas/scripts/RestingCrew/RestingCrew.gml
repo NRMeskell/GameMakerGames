@@ -3,7 +3,7 @@ function RestingCrew() {
 	global.moraleBoost = "rested"
 	with Pirate
 	    {
-		UpdateMorale(1, -1)
+		UpdateMorale(2, -1)
 		if other.campPower == 3{
 		    myHealth = round(min(myHealth + (maxHealth*1/(1+global.gameDiff)), maxHealth))
 			}

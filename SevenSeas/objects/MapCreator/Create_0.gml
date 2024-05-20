@@ -385,7 +385,7 @@ minZoom = 1
 zoom = 1
 overMap = false
 
-pirateSelected = false
+global.pirateSelected = false
 overPause = false
 overBoatButton = false
 overZoomIn = false
