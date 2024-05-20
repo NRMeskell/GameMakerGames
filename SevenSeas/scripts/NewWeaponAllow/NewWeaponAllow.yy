@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"NewWeaponAllow",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"NewWeaponAllow",
+  "parent":{
+    "name":"NewWeapon",
+    "path":"folders/Scripts/Events/Requests/fearsome/NewWeapon.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

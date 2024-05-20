@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"BridgeMusic",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":192,
+  "compression":3,
+  "conversionMode":0,
+  "duration":141.552,
+  "name":"BridgeMusic",
+  "parent":{
+    "name":"DodgeBall",
+    "path":"folders/Sounds/Music/DodgeBall.yy",
+  },
+  "preload":true,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"BridgeMusic.mp3",
+  "type":0,
+  "volume":1.0,
+}

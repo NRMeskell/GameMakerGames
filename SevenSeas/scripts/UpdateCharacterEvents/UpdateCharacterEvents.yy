@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"UpdateCharacterEvents",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"UpdateCharacterEvents",
+  "parent":{
+    "name":"Characters",
+    "path":"folders/Scripts/Events/Characters.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

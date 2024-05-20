@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"DolphinsLetCrewPlay",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"DolphinsLetCrewPlay",
+  "parent":{
+    "name":"Dolphins",
+    "path":"folders/Scripts/Events/SailingEvents/StandardEvents/Dolphins.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

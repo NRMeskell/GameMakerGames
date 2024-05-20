@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"ShadyCharacter",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ShadyCharacter",
+  "parent":{
+    "name":"EileGreasyhair",
+    "path":"folders/Scripts/Events/Characters/EileGreasyhair.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

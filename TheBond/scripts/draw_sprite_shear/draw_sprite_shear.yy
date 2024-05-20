@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"draw_sprite_shear",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"draw_sprite_shear",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

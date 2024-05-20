@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"BreakAllow",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"BreakAllow",
+  "parent":{
+    "name":"Break",
+    "path":"folders/Scripts/Events/Requests/Jolly/Break.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

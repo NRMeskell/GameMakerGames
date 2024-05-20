@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"SilverwheelChallenge",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SilverwheelChallenge",
+  "parent":{
+    "name":"Silverwheel",
+    "path":"folders/Scripts/Events/Characters/Silverwheel.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

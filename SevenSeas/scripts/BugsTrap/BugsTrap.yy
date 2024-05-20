@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"BugsTrap",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"BugsTrap",
+  "parent":{
+    "name":"Bugs",
+    "path":"folders/Scripts/Events/SailingEvents/TropicalEvents/Bugs.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

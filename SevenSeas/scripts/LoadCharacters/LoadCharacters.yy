@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"LoadCharacters",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"LoadCharacters",
+  "parent":{
+    "name":"SaveBasics",
+    "path":"folders/Scripts/SaveGame/SaveBasics.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

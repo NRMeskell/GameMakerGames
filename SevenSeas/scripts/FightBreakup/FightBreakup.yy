@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"FightBreakup",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"FightBreakup",
+  "parent":{
+    "name":"Fight",
+    "path":"folders/Scripts/Events/LandingEvents/PortEvents/Events/Fight.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

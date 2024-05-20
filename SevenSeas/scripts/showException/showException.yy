@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"showException",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"showException",
+  "parent":{
+    "name":"Events",
+    "path":"folders/Scripts/Events.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

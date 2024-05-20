@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"PoorLanding",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"PoorLanding",
+  "parent":{
+    "name":"Notifications",
+    "path":"folders/Scripts/Events/LandingEvents/PortEvents/Notifications.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"SupplyBoxArrive",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SupplyBoxArrive",
+  "parent":{
+    "name":"SupplyBox",
+    "path":"folders/Scripts/Events/SailingEvents/PirateEvents/SupplyBox.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

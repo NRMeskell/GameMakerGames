@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"Checkers",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Checkers",
+  "parent":{
+    "name":"Checkers",
+    "path":"folders/Scripts/Events/Requests/keen/Checkers.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

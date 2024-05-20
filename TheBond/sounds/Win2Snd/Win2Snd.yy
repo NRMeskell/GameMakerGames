@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"Win2Snd",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":192,
+  "compression":3,
+  "conversionMode":0,
+  "duration":2.246531,
+  "name":"Win2Snd",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":true,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Win2Snd",
+  "type":0,
+  "volume":0.08,
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"BugsIgnore",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"BugsIgnore",
+  "parent":{
+    "name":"Bugs",
+    "path":"folders/Scripts/Events/SailingEvents/TropicalEvents/Bugs.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

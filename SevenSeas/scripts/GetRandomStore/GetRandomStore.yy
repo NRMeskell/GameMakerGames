@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"GetRandomStore",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"GetRandomStore",
+  "parent":{
+    "name":"Items",
+    "path":"folders/Scripts/Items.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"AreAdjacent",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"AreAdjacent",
+  "parent":{
+    "name":"Combat",
+    "path":"folders/Scripts/Combat.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

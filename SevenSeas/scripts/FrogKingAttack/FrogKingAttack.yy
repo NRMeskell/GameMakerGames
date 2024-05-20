@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"FrogKingAttack",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"FrogKingAttack",
+  "parent":{
+    "name":"FrogKing",
+    "path":"folders/Scripts/Events/Characters/FrogKing.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

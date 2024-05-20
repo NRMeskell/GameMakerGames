@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"CustomSeaLoot",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"CustomSeaLoot",
+  "parent":{
+    "name":"Items",
+    "path":"folders/Scripts/Items.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"DrawBackWaterWithLighting",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"DrawBackWaterWithLighting",
+  "parent":{
+    "name":"Lighting",
+    "path":"folders/Scripts/Lighting.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

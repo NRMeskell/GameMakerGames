@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"GratefulDecline",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"GratefulDecline",
+  "parent":{
+    "name":"CoveCollector",
+    "path":"folders/Scripts/Events/Characters/CoveCollector.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

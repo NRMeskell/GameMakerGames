@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"FloatingBarrelCheck",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"FloatingBarrelCheck",
+  "parent":{
+    "name":"FloatingBarrel",
+    "path":"folders/Scripts/Events/SailingEvents/StandardEvents/FloatingBarrel.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

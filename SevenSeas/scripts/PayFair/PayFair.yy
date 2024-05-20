@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"PayFair",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"PayFair",
+  "parent":{
+    "name":"PayTime",
+    "path":"folders/Scripts/Events/SailingEvents/StandardEvents/PayTime.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

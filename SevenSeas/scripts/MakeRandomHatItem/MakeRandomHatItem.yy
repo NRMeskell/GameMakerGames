@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"MakeRandomHatItem",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"MakeRandomHatItem",
+  "parent":{
+    "name":"Items",
+    "path":"folders/Scripts/Items.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

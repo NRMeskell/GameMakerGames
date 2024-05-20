@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"JohnnyStay",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"JohnnyStay",
+  "parent":{
+    "name":"JohnnyShortsticks",
+    "path":"folders/Scripts/Events/Characters/JohnnyShortsticks.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

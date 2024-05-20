@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"HeatSickness",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"HeatSickness",
+  "parent":{
+    "name":"Conditions",
+    "path":"folders/Scripts/Events/Conditions.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

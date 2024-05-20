@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"WildIgnore",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"WildIgnore",
+  "parent":{
+    "name":"WildAnimals",
+    "path":"folders/Scripts/Events/LandingEvents/PortEvents/Events/WildAnimals.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

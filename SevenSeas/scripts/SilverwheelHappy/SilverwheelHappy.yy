@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"SilverwheelHappy",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SilverwheelHappy",
+  "parent":{
+    "name":"Silverwheel",
+    "path":"folders/Scripts/Events/Characters/Silverwheel.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

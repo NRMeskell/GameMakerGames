@@ -1,0 +1,2509 @@
+Converting GML script: ${project_dir}\scripts\FloatingBarrelGrab\FloatingBarrelGrab.gml
+Converted description /// @description Grab Barrel
+
+Converting GML script: ${project_dir}\scripts\FloatingBarrelCheck\FloatingBarrelCheck.gml
+Converted description /// @description Check Barrel
+
+Converting GML script: ${project_dir}\scripts\AmbushedRun\AmbushedRun.gml
+Converted description /// @description Run Away
+
+Converting GML script: ${project_dir}\scripts\RottenIgnore\RottenIgnore.gml
+Converted description /// @description clean up the mess
+
+Converting GML script: ${project_dir}\scripts\RottenJuryRig\RottenJuryRig.gml
+Converted description /// @description Jury-rig
+
+Converting GML script: ${project_dir}\scripts\SupplyBoxDeposit\SupplyBoxDeposit.gml
+Converted description /// @description Grab Barrel
+
+Converting GML script: ${project_dir}\scripts\SupplyBoxWithdraw\SupplyBoxWithdraw.gml
+Converted description /// @description Check Barrel
+
+Converting GML script: ${project_dir}\scripts\StarsMappingAllow\StarsMappingAllow.gml
+Converted description /// @description Agree cheats
+
+Converting GML script: ${project_dir}\scripts\ImproveAllow\ImproveAllow.gml
+Converted description /// @description Agree cheats
+
+Converting GML script: ${project_dir}\scripts\FishingAllow\FishingAllow.gml
+Converted description /// @description clean up the mess
+
+Converting GML script: ${project_dir}\scripts\RaceAllow\RaceAllow.gml
+Converted description /// @description clean up the mess
+
+Converting GML script: ${project_dir}\scripts\AbleToStore\AbleToStore.gml
+Converted string - line 8: 'storage' -> "storage"
+
+Converting GML script: ${project_dir}\scripts\StoreItem\StoreItem.gml
+Converted string - line 45: 'storage' -> "storage"
+
+Converting GML script: ${project_dir}\scripts\RestingCrew\RestingCrew.gml
+Converted description /// @description Rested Crew
+
+Converting GML script: ${project_dir}\scripts\LookInCave\LookInCave.gml
+Converted description /// @description Create Bats and set Timer
+
+Converting GML script: ${project_dir}\scripts\CliffTreasure\CliffTreasure.gml
+Error: variable 'message' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+
+Converting GML script: ${project_dir}\scripts\ExploreJungle\ExploreJungle.gml
+Converted description /// @description Create Bats and set Timer
+
+Converting GML script: ${project_dir}\scripts\OasisSwim\OasisSwim.gml
+Converted description /// @description Create Bats and set Timer
+
+Converting GML script: ${project_dir}\scripts\CreatePirate\CreatePirate.gml
+Error: variable 'myLayer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description Create Pirate
+
+Converting GML script: ${project_dir}\scripts\PirateLevelUp\PirateLevelUp.gml
+Converted description /// @description Level Up
+Converted string - line 48: 'bed' -> "bed"
+
+Converting GML script: ${project_dir}\scripts\PirateLevelUpFinal\PirateLevelUpFinal.gml
+Converted description /// @description Level Up Real
+
+Converting GML script: ${project_dir}\scripts\GeneratePirateLooks\GeneratePirateLooks.gml
+Converted description /// @description Looks
+
+Converting GML script: ${project_dir}\scripts\GeneratePirateSpeech\GeneratePirateSpeech.gml
+Converted description /// @description Speech Dictionaries
+
+Converting GML script: ${project_dir}\scripts\GeneratePirateName\GeneratePirateName.gml
+Converted description /// @description Name
+Converted string - line 7: 'Blade' -> "Blade"
+Converted string - line 7: 'Robert' -> "Robert"
+Converted string - line 7: 'George' -> "George"
+Converted string - line 7: 'Jon' -> "Jon"
+Converted string - line 7: 'John' -> "John"
+Converted string - line 7: 'Luke' -> "Luke"
+Converted string - line 7: 'Tim' -> "Tim"
+Converted string - line 7: 'Will' -> "Will"
+Converted string - line 7: 'Bill' -> "Bill"
+Converted string - line 7: 'Billy' -> "Billy"
+Converted string - line 7: 'Davey' -> "Davey"
+Converted string - line 7: 'Jack' -> "Jack"
+Converted string - line 7: 'Smith' -> "Smith"
+Converted string - line 7: 'Sam' -> "Sam"
+Converted string - line 7: 'James' -> "James"
+Converted string - line 7: 'Harry' -> "Harry"
+Converted string - line 7: 'Max' -> "Max"
+Converted string - line 7: 'Bob' -> "Bob"
+Converted string - line 7: 'Jake' -> "Jake"
+Converted string - line 7: 'Henry' -> "Henry"
+Converted string - line 7: 'Nate' -> "Nate"
+Converted string - line 7: 'Brook' -> "Brook"
+Converted string - line 7: 'Ocean' -> "Ocean"
+Converted string - line 7: 'Chuck' -> "Chuck"
+Converted string - line 7: 'Danny' -> "Danny"
+Converted string - line 7: 'Peter' -> "Peter"
+Converted string - line 7: 'Dave' -> "Dave"
+Converted string - line 7: 'Eliot' -> "Eliot"
+Converted string - line 9: 'Anya' -> "Anya"
+Converted string - line 9: 'Ella' -> "Ella"
+Converted string - line 9: 'Sam' -> "Sam"
+Converted string - line 9: 'Mia' -> "Mia"
+Converted string - line 9: 'Abby' -> "Abby"
+Converted string - line 9: 'Ash' -> "Ash"
+Converted string - line 9: 'Cal' -> "Cal"
+Converted string - line 9: 'Emma' -> "Emma"
+Converted string - line 9: 'Jetta' -> "Jetta"
+Converted string - line 9: 'Jewel' -> "Jewel"
+Converted string - line 9: 'Lily' -> "Lily"
+Converted string - line 9: 'Lila' -> "Lila"
+Converted string - line 9: 'Maddie' -> "Maddie"
+Converted string - line 9: 'Sia' -> "Sia"
+Converted string - line 9: 'Piper' -> "Piper"
+Converted string - line 9: 'Sandi' -> "Sandi"
+Converted string - line 9: 'Pip' -> "Pip"
+Converted string - line 9: 'Zoe' -> "Zoe"
+Converted string - line 9: 'Belle' -> "Belle"
+Converted string - line 9: 'Coral' -> "Coral"
+Converted string - line 9: 'Lucy' -> "Lucy"
+Converted string - line 9: 'Maria' -> "Maria"
+Converted string - line 9: 'Pearl' -> "Pearl"
+Converted string - line 9: 'Skye' -> "Skye"
+Converted string - line 9: 'Alice' -> "Alice"
+Converted string - line 9: 'Mary' -> "Mary"
+Converted string - line 9: 'Rose' -> "Rose"
+Converted string - line 12: 'Ugly' -> "Ugly"
+Converted string - line 12: 'Sad' -> "Sad"
+Converted string - line 12: 'Happy' -> "Happy"
+Converted string - line 12: 'Crusty' -> "Crusty"
+Converted string - line 12: 'Dread' -> "Dread"
+Converted string - line 12: 'Cut' -> "Cut"
+Converted string - line 12: 'Gray' -> "Gray"
+Converted string - line 12: 'Dead' -> "Dead"
+Converted string - line 12: 'Blood' -> "Blood"
+Converted string - line 12: 'Greasy' -> "Greasy"
+Converted string - line 12: 'Black' -> "Black"
+Converted string - line 12: 'Steel' -> "Steel"
+Converted string - line 12: 'Swift' -> "Swift"
+Converted string - line 12: 'Bad' -> "Bad"
+Converted string - line 12: 'Silver' -> "Silver"
+Converted string - line 12: 'Boom' -> "Boom"
+Converted string - line 12: 'Flint' -> "Flint"
+Converted string - line 12: 'Smoke' -> "Smoke"
+Converted string - line 12: 'Red' -> "Red"
+Converted string - line 12: 'Big' -> "Big"
+Converted string - line 12: 'Long' -> "Long"
+Converted string - line 12: 'Quick' -> "Quick"
+Converted string - line 12: 'Dread' -> "Dread"
+Converted string - line 12: 'Short' -> "Short"
+Converted string - line 12: 'Crazy' -> "Crazy"
+Converted string - line 12: 'Storm' -> "Storm"
+Converted string - line 12: 'Kill' -> "Kill"
+Converted string - line 12: 'Iron' -> "Iron"
+Converted string - line 12: 'Water' -> "Water"
+Converted string - line 12: 'Salty' -> "Salty"
+Converted string - line 12: 'Gold' -> "Gold"
+Converted string - line 12: 'Doom' -> "Doom"
+Converted string - line 12: 'Bone' -> "Bone"
+Converted string - line 12: 'Mad' -> "Mad"
+Converted string - line 12: 'True' -> "True"
+Converted string - line 12: 'Blue' -> "Blue"
+Converted string - line 12: 'Broken' -> "Broken"
+Converted string - line 14: 'throat' -> "throat"
+Converted string - line 14: 'shot' -> "shot"
+Converted string - line 14: 'parrot' -> "parrot"
+Converted string - line 14: 'hat' -> "hat"
+Converted string - line 14: 'rope' -> "rope"
+Converted string - line 14: 'hook' -> "hook"
+Converted string - line 14: 'nose' -> "nose"
+Converted string - line 14: 'sword' -> "sword"
+Converted string - line 14: 'fire' -> "fire"
+Converted string - line 14: 'boots' -> "boots"
+Converted string - line 14: 'teeth' -> "teeth"
+Converted string - line 14: 'nose' -> "nose"
+Converted string - line 14: 'eye' -> "eye"
+Converted string - line 14: 'boat' -> "boat"
+Converted string - line 14: 'fish' -> "fish"
+Converted string - line 14: 'rum' -> "rum"
+Converted string - line 14: 'sail' -> "sail"
+Converted string - line 14: 'hair' -> "hair"
+Converted string - line 14: 'tooth' -> "tooth"
+Converted string - line 14: 'pants' -> "pants"
+Converted string - line 14: 'cannon' -> "cannon"
+Converted string - line 14: 'bones' -> "bones"
+Converted string - line 14: 'ear' -> "ear"
+Converted string - line 14: 'skull' -> "skull"
+Converted string - line 14: 'wind' -> "wind"
+Converted string - line 14: 'sea' -> "sea"
+Converted string - line 14: 'anchor' -> "anchor"
+Converted string - line 14: 'shark' -> "shark"
+Converted string - line 14: 'sparrow' -> "sparrow"
+Converted string - line 14: 'lips' -> "lips"
+Converted string - line 22: ' ' -> " "
+Converted string - line 28: ' ' -> " "
+
+Converting GML script: ${project_dir}\scripts\DrawActionInfo\DrawActionInfo.gml
+Converted description /// @description @description DrawActionInfo(action, x, y, draw required slots, attacker, <optional> priority)
+/// @param action
+/// @param  x
+/// @param  y
+/// @param  draw required slots
+/// @param  attacker
+/// @param  <optional> priority
+
+Converting GML script: ${project_dir}\scripts\RemovePunctuation\RemovePunctuation.gml
+Converted description /// @description  @description RemovePunctuation(string)
+/// @param string
+
+Converting GML script: ${project_dir}\scripts\SwitchShips\SwitchShips.gml
+Error: variable 'myLayer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+
+Converting GML script: ${project_dir}\scripts\DrawShip\DrawShip.gml
+Converted description /// @description  @description DrawShip(hull sprite, sprite index, x, y, angle, flag sprite, flag color, layer)
+/// @param hull sprite
+/// @param  sprite index
+/// @param  x
+/// @param  y
+/// @param  angle
+/// @param  flag sprite
+/// @param  flag color
+/// @param  layer
+
+Converting GML script: ${project_dir}\scripts\ApplyCrewEffect\ApplyCrewEffect.gml
+Converted description /// @description Apply effect
+
+Converting GML script: ${project_dir}\scripts\DrawBackWithLighting\DrawBackWithLighting.gml
+Converted description /// @description  @description DrawBackWithLighting(background, x, y, color, alpha, layer)
+/// @param background
+/// @param  x
+/// @param  y
+/// @param  color
+/// @param  alpha
+/// @param  layer
+
+Converting GML script: ${project_dir}\scripts\DrawBackWaterWithLighting\DrawBackWaterWithLighting.gml
+Converted description /// @description  @description DrawBackWaterWithLighting(background, x, y, xscale, yscale, color, alpha, layer)
+/// @param background
+/// @param  x
+/// @param  y
+/// @param  xscale
+/// @param  yscale
+/// @param  color
+/// @param  alpha
+/// @param  layer
+
+Converting GML script: ${project_dir}\scripts\DrawWithLighting\DrawWithLighting.gml
+Converted description /// @description  @description DrawWithLighting(sprite, index, x, y, rotation, color, alpha, layer)
+/// @param sprite
+/// @param  index
+/// @param  x
+/// @param  y
+/// @param  rotation
+/// @param  color
+/// @param  alpha
+/// @param  layer
+
+Converting GML script: ${project_dir}\scripts\DrawWithWaterLighting\DrawWithWaterLighting.gml
+Converted description /// @description  @description DrawWithWaterLighting(sprite, index, x, y, rotation, color, alpha, layer)
+/// @param sprite
+/// @param  index
+/// @param  x
+/// @param  y
+/// @param  rotation
+/// @param  color
+/// @param  alpha
+/// @param  layer
+
+Converting GML script: ${project_dir}\scripts\DrawSimpleLighting\DrawSimpleLighting.gml
+Converted description /// @description  @description DrawWithLighting(sprite, index, x, y, rotation, color, alpha, layer)
+/// @param sprite
+/// @param  index
+/// @param  x
+/// @param  y
+/// @param  rotation
+/// @param  color
+/// @param  alpha
+/// @param  layer
+
+Converting GML script: ${project_dir}\scripts\SplitLine\SplitLine.gml
+Converted string - line 8: ',' -> ","
+
+Converting GML script: ${project_dir}\scripts\ReadAllSaveFiles\ReadAllSaveFiles.gml
+Converted description /// @description Reads the names of all save files
+
+Converting GML script: ${project_dir}\scripts\LoadMapVariables\LoadMapVariables.gml
+Error: variable 'bool' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+
+Converting GML script: ${project_dir}\scripts\SaveMapSurface\SaveMapSurface.gml
+Converted description /// @description sea surface reading
+
+Converting GML script: ${project_dir}\scripts\SaveLandingSpots\SaveLandingSpots.gml
+Converted description /// @description sea surface reading
+
+Converting GML script: ${project_dir}\scripts\LoadLandingSpots\LoadLandingSpots.gml
+Error: variable 'bool' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description Load Ladnigng Spots
+
+Converting GML script: ${project_dir}\scripts\SaveBuildings\SaveBuildings.gml
+Converted description /// @description Save Buildings
+
+Converting GML script: ${project_dir}\scripts\LoadBuildings\LoadBuildings.gml
+Converted description /// @description Load Buildings
+
+Converting GML script: ${project_dir}\scripts\SaveBuildingTarget\SaveBuildingTarget.gml
+Converted description /// @description Save Buildings
+
+Converting GML script: ${project_dir}\scripts\SaveItem\SaveItem.gml
+Converted description /// @description Save item @description SaveItem(item object_index)
+/// @param item object_index
+
+Converting GML script: ${project_dir}\scripts\LoadItem\LoadItem.gml
+Error: variable 'bool' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description Save item @description SaveItem(item object_index)
+/// @param item object_index
+
+Converting GML script: ${project_dir}\scripts\SaveCharacters\SaveCharacters.gml
+Converted description /// @description Save Characters
+
+Converting GML script: ${project_dir}\scripts\LoadCharacters\LoadCharacters.gml
+Error: variable 'bool' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description load characters
+
+Converting GML script: ${project_dir}\scripts\LoadPirate\LoadPirate.gml
+Error: variable 'bool' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+
+!!! Font NameFont font family Copperplate Gothic Light is installed but couldn't match style - Font has NOT been regenerated
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\NameFont\NameFont.gms1.png
+Font EventButtonFont has been converted to font family Bernard MT Condensed (Regular)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\EventButtonFont\EventButtonFont.gms1.png
+Converting GML script: ${project_dir}\objects\Pirate\Create_0.gml
+Converted description /// @description Generate Pirate Traits 
+Converted string - line 12: 'jolly' -> "jolly"
+Converted string - line 13: 'keen' -> "keen"
+Converted string - line 14: 'fearsome' -> "fearsome"
+Converted string - line 15: 'daring' -> "daring"
+Converted string - line 157: 'wheel' -> "wheel"
+Converted string - line 158: 'sail' -> "sail"
+Converted string - line 159: 'rigging' -> "rigging"
+Converted string - line 160: 'cannon' -> "cannon"
+Converted string - line 161: 'medical' -> "medical"
+Converted string - line 162: 'survival' -> "survival"
+
+Converting GML script: ${project_dir}\objects\Pirate\Step_0.gml
+Error: variable 'myLayer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted builtin - line 9: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 306: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted description /// @description Slots
+Converted string - line 16: 'storage' -> "storage"
+
+Converting GML script: ${project_dir}\objects\Pirate\Other_14.gml
+Error: variable 'myLayer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description Move to auto slot
+Converted string - line 33: 'bed' -> "bed"
+
+Converting GML script: ${project_dir}\objects\Pirate\Other_13.gml
+Converted description /// @description Lose Limb
+Converted string - line 6: 'hand' -> "hand"
+Converted string - line 6: 'leg' -> "leg"
+Converted string - line 6: 'eye' -> "eye"
+Converted string - line 8: 'hand' -> "hand"
+Converted string - line 31: 'leg' -> "leg"
+Converted string - line 47: 'eye' -> "eye"
+
+Converting GML script: ${project_dir}\objects\Pirate\Other_12.gml
+Converted description /// @description Destroyed
+
+Converting GML script: ${project_dir}\objects\Pirate\Other_11.gml
+Converted description /// @description Select
+
+Converting GML script: ${project_dir}\objects\Pirate\Other_10.gml
+Converted description /// @description Deselect
+
+Converting GML script: ${project_dir}\objects\Pirate\Draw_64.gml
+Converted string - line 331: '+' -> "+"
+Converted string - line 331: '+' -> "+"
+
+Converting GML script: ${project_dir}\objects\PiratePreview\Create_0.gml
+Converted description /// @description Looks
+Converted string - line 80: 'Blade' -> "Blade"
+Converted string - line 80: 'Robert' -> "Robert"
+Converted string - line 80: 'George' -> "George"
+Converted string - line 80: 'Jon' -> "Jon"
+Converted string - line 80: 'John' -> "John"
+Converted string - line 80: 'Luke' -> "Luke"
+Converted string - line 80: 'Tim' -> "Tim"
+Converted string - line 80: 'Will' -> "Will"
+Converted string - line 80: 'Bill' -> "Bill"
+Converted string - line 80: 'Billy' -> "Billy"
+Converted string - line 80: 'Davey' -> "Davey"
+Converted string - line 80: 'Jack' -> "Jack"
+Converted string - line 80: 'Smith' -> "Smith"
+Converted string - line 80: 'Sam' -> "Sam"
+Converted string - line 80: 'James' -> "James"
+Converted string - line 80: 'Harry' -> "Harry"
+Converted string - line 80: 'William' -> "William"
+Converted string - line 80: 'Bob' -> "Bob"
+Converted string - line 80: 'Jake' -> "Jake"
+Converted string - line 80: 'Henry' -> "Henry"
+Converted string - line 80: 'Nate' -> "Nate"
+Converted string - line 80: 'Brook' -> "Brook"
+Converted string - line 80: 'Ocean' -> "Ocean"
+Converted string - line 80: 'Chuck' -> "Chuck"
+Converted string - line 82: 'Anya' -> "Anya"
+Converted string - line 82: 'Ella' -> "Ella"
+Converted string - line 82: 'Sam' -> "Sam"
+Converted string - line 82: 'Mia' -> "Mia"
+Converted string - line 82: 'Abby' -> "Abby"
+Converted string - line 82: 'Ash' -> "Ash"
+Converted string - line 82: 'Cal' -> "Cal"
+Converted string - line 82: 'Emma' -> "Emma"
+Converted string - line 82: 'Jetta' -> "Jetta"
+Converted string - line 82: 'Jewel' -> "Jewel"
+Converted string - line 82: 'Lily' -> "Lily"
+Converted string - line 82: 'Lila' -> "Lila"
+Converted string - line 82: 'Maddie' -> "Maddie"
+Converted string - line 82: 'Sia' -> "Sia"
+Converted string - line 82: 'Piper' -> "Piper"
+Converted string - line 82: 'Sandi' -> "Sandi"
+Converted string - line 82: 'Sandrea' -> "Sandrea"
+Converted string - line 82: 'Pip' -> "Pip"
+Converted string - line 82: 'Zoe' -> "Zoe"
+Converted string - line 82: 'Belle' -> "Belle"
+Converted string - line 82: 'Coral' -> "Coral"
+Converted string - line 82: 'Lucy' -> "Lucy"
+Converted string - line 82: 'Maria' -> "Maria"
+Converted string - line 82: 'Pearl' -> "Pearl"
+Converted string - line 82: 'Skye' -> "Skye"
+Converted string - line 85: 'Ugly' -> "Ugly"
+Converted string - line 85: 'Sad' -> "Sad"
+Converted string - line 85: 'Happy' -> "Happy"
+Converted string - line 85: 'Crusty' -> "Crusty"
+Converted string - line 85: 'Dread' -> "Dread"
+Converted string - line 85: 'Cut' -> "Cut"
+Converted string - line 85: 'Gray' -> "Gray"
+Converted string - line 85: 'Dead' -> "Dead"
+Converted string - line 85: 'Blood' -> "Blood"
+Converted string - line 85: 'Greasy' -> "Greasy"
+Converted string - line 85: 'Black' -> "Black"
+Converted string - line 85: 'Steel' -> "Steel"
+Converted string - line 85: 'Swift' -> "Swift"
+Converted string - line 85: 'Bad' -> "Bad"
+Converted string - line 85: 'Silver' -> "Silver"
+Converted string - line 85: 'Boom' -> "Boom"
+Converted string - line 85: 'Flint' -> "Flint"
+Converted string - line 85: 'Smoke' -> "Smoke"
+Converted string - line 85: 'Red' -> "Red"
+Converted string - line 85: 'Big' -> "Big"
+Converted string - line 85: 'Long' -> "Long"
+Converted string - line 85: 'Quick' -> "Quick"
+Converted string - line 85: 'Dread' -> "Dread"
+Converted string - line 85: 'Short' -> "Short"
+Converted string - line 85: 'Crazy' -> "Crazy"
+Converted string - line 85: 'Storm' -> "Storm"
+Converted string - line 85: 'Kill' -> "Kill"
+Converted string - line 85: 'Iron' -> "Iron"
+Converted string - line 85: 'Water' -> "Water"
+Converted string - line 85: 'Salty' -> "Salty"
+Converted string - line 85: 'Gold' -> "Gold"
+Converted string - line 85: 'Doom' -> "Doom"
+Converted string - line 85: 'Bone' -> "Bone"
+Converted string - line 85: 'Mad' -> "Mad"
+Converted string - line 85: 'True' -> "True"
+Converted string - line 85: 'Blue' -> "Blue"
+Converted string - line 85: 'Broken' -> "Broken"
+Converted string - line 87: 'throat' -> "throat"
+Converted string - line 87: 'shot' -> "shot"
+Converted string - line 87: 'parrot' -> "parrot"
+Converted string - line 87: 'hat' -> "hat"
+Converted string - line 87: 'rope' -> "rope"
+Converted string - line 87: 'hook' -> "hook"
+Converted string - line 87: 'nose' -> "nose"
+Converted string - line 87: 'sword' -> "sword"
+Converted string - line 87: 'fire' -> "fire"
+Converted string - line 87: 'boots' -> "boots"
+Converted string - line 87: 'teeth' -> "teeth"
+Converted string - line 87: 'nose' -> "nose"
+Converted string - line 87: 'eye' -> "eye"
+Converted string - line 87: 'boat' -> "boat"
+Converted string - line 87: 'fish' -> "fish"
+Converted string - line 87: 'rum' -> "rum"
+Converted string - line 87: 'sail' -> "sail"
+Converted string - line 87: 'hair' -> "hair"
+Converted string - line 87: 'tooth' -> "tooth"
+Converted string - line 87: 'pants' -> "pants"
+Converted string - line 87: 'cannon' -> "cannon"
+Converted string - line 87: 'bones' -> "bones"
+Converted string - line 87: 'ear' -> "ear"
+Converted string - line 87: 'skull' -> "skull"
+Converted string - line 87: 'wind' -> "wind"
+Converted string - line 87: 'sea' -> "sea"
+Converted string - line 87: 'anchor' -> "anchor"
+Converted string - line 87: 'shark' -> "shark"
+Converted string - line 87: 'sparrow' -> "sparrow"
+Converted string - line 95: ' ' -> " "
+Converted string - line 101: ' ' -> " "
+
+Converting GML script: ${project_dir}\objects\Ship\Create_0.gml
+Error: variable 'myLayer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description Gameplay Vars
+Converted string - line 35: 'Dismal' -> "Dismal"
+Converted string - line 36: 'Low' -> "Low"
+Converted string - line 37: 'Fair' -> "Fair"
+Converted string - line 38: 'High' -> "High"
+Converted string - line 39: 'Great' -> "Great"
+
+Converting GML script: ${project_dir}\objects\Ship\Alarm_11.gml
+Converted description /// @description Save game
+
+Converting GML script: ${project_dir}\objects\Ship\Alarm_0.gml
+Converted description /// @description Starting Pirates and Cargo
+
+Converting GML script: ${project_dir}\objects\Ship\Step_0.gml
+Converted builtin - line 53: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 58: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 68: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted description /// @description Rock
+Converted string - line 109: 'cannon' -> "cannon"
+Converted string - line 115: 'sail' -> "sail"
+Converted string - line 121: 'wheel' -> "wheel"
+Converted string - line 127: 'rigging' -> "rigging"
+Converted string - line 132: 'medical' -> "medical"
+Converted string - line 182: 'bed' -> "bed"
+Converted string - line 182: 'medical' -> "medical"
+
+Converting GML script: ${project_dir}\objects\Ship\Draw_64.gml
+Converted builtin - line 13: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 18: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 84: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 92: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted string - line 55: '/' -> "/"
+
+Converting GML script: ${project_dir}\objects\Ship\KeyPress_17.gml
+Converted description /// @description TEMP
+
+Converting GML script: ${project_dir}\objects\Ship\KeyPress_8.gml
+Converted description /// @description game restart
+
+Converting GML script: ${project_dir}\objects\ShipSlot\Create_0.gml
+Converted description /// @description Create
+
+Converting GML script: ${project_dir}\objects\ShipSlot\Step_0.gml
+Converted description /// @description Change Positions
+Converted string - line 6: 'storage' -> "storage"
+
+Converting GML script: ${project_dir}\objects\ShipSlot\Other_10.gml
+Error: variable 'myLayer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description Draw Self
+
+Converting GML script: ${project_dir}\objects\Cargo\Create_0.gml
+Converted description /// @description Real
+
+Converting GML script: ${project_dir}\objects\Cargo\Step_0.gml
+Error: variable 'myLayer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted description /// @description Select
+Converted string - line 39: 'storage' -> "storage"
+
+Converting GML script: ${project_dir}\objects\Cargo\Other_12.gml
+Converted description /// @description Destroyed
+
+Converting GML script: ${project_dir}\objects\Cargo\Other_11.gml
+Converted description /// @description Select
+
+Converting GML script: ${project_dir}\objects\Cargo\Other_10.gml
+Converted description /// @description Deselect
+
+Converting GML script: ${project_dir}\objects\Cargo\Draw_64.gml
+Converted description /// @description Draw Cargo
+
+Converting GML script: ${project_dir}\objects\NotifacationList\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\NotifacationList\Step_0.gml
+Converted description /// @description Global Menu Open
+
+Converting GML script: ${project_dir}\objects\NotifacationList\Draw_64.gml
+Converted description /// @description Close Notifacation
+
+Converting GML script: ${project_dir}\objects\DumpItem\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\DumpItem\Step_0.gml
+Converted description /// @description Close Notifacation
+
+Converting GML script: ${project_dir}\objects\DumpItem\Other_11.gml
+Converted description /// @description Dump Pirate
+
+Converting GML script: ${project_dir}\objects\DumpItem\Other_10.gml
+Converted description /// @description Dump Cargo
+
+Converting GML script: ${project_dir}\objects\DumpItem\Draw_64.gml
+Converted description /// @description Close Notifacation
+
+Converting GML script: ${project_dir}\objects\ConquerPannel\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\ConquerPannel\Step_0.gml
+Converted description /// @description Over Scroll
+
+Converting GML script: ${project_dir}\objects\ConquerPannel\Other_13.gml
+Converted description /// @description Check sea
+
+Converting GML script: ${project_dir}\objects\ConquerPannel\Other_11.gml
+Converted description /// @description Close Event
+
+Converting GML script: ${project_dir}\objects\ConquerPannel\Draw_64.gml
+Converted description /// @description Draw Stuff
+
+Converting GML script: ${project_dir}\objects\Clock\Create_0.gml
+Converted description /// @description Time Vars
+
+Converting GML script: ${project_dir}\objects\Clock\Alarm_0.gml
+Converted description /// @description Make Cloud
+
+Converting GML script: ${project_dir}\objects\Clock\Step_0.gml
+Converted description /// @description Do Time Cycle
+
+Converting GML script: ${project_dir}\objects\Clock\Draw_72.gml
+Converted description /// @description Draw Sun and Moon
+
+Converting GML script: ${project_dir}\objects\Cloud\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\Cloud\Step_0.gml
+Converted description /// @description Move
+
+Converting GML script: ${project_dir}\objects\WeatherController\Create_0.gml
+Converted description /// @description Weather
+
+Converting GML script: ${project_dir}\objects\WeatherController\Step_0.gml
+Converted description /// @description Weather vars
+Converted string - line 24: 'The seas be still!' -> "The seas be still!"
+Converted string - line 30: 'The seas be nice!' -> "The seas be nice!"
+Converted string - line 36: 'The seas be rough!' -> "The seas be rough!"
+
+Converting GML script: ${project_dir}\objects\WeatherController\Other_11.gml
+Converted description /// @description Make Drifting Cloud
+
+Converting GML script: ${project_dir}\objects\WeatherController\Other_10.gml
+Converted description /// @description Make Cloud
+
+Converting GML script: ${project_dir}\objects\EnemyAttack\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\EnemyAttack\Alarm_0.gml
+Converted description /// @description Destroy
+
+Converting GML script: ${project_dir}\objects\EnemyAttack\Step_0.gml
+Converted description /// @description Animate
+
+Converting GML script: ${project_dir}\objects\EnemyAttack\Draw_73.gml
+Converted description /// @description Draw Attack Spr
+
+Converting GML script: ${project_dir}\objects\UseFoodAnimation\Create_0.gml
+Converted description /// @description Animate
+
+Converting GML script: ${project_dir}\objects\UseFoodAnimation\Alarm_0.gml
+Converted description /// @description Gone
+
+Converting GML script: ${project_dir}\objects\UseFoodAnimation\Draw_73.gml
+Converted description /// @description Draw self
+
+Converting GML script: ${project_dir}\objects\SpeechController\Create_0.gml
+Converted description /// @description Speech Dicts
+
+Converting GML script: ${project_dir}\objects\SoundController\Create_0.gml
+Converted description /// @description Global sea types
+
+Converting GML script: ${project_dir}\objects\SoundController\Alarm_0.gml
+Converted description /// @description Stop Music
+
+Converting GML script: ${project_dir}\objects\SoundController\Step_0.gml
+Converted description /// @description Play Music
+
+Converting GML script: ${project_dir}\objects\SoundController\Other_11.gml
+Converted description /// @description Switch sailing song
+
+Converting GML script: ${project_dir}\objects\SoundController\Other_10.gml
+Converted description /// @description Set Volumes
+
+Converting GML script: ${project_dir}\objects\SoundController\KeyPress_40.gml
+Converted description /// @description TEMP
+
+Converting GML script: ${project_dir}\objects\SoundController\KeyPress_38.gml
+Converted description /// @description TEMP
+
+Converting GML script: ${project_dir}\objects\PirateLeveler\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\PirateLeveler\Alarm_0.gml
+Converted description /// @description Destroyed
+
+Converting GML script: ${project_dir}\objects\PirateLeveler\Step_0.gml
+Converted description /// @description Move and buttons
+
+Converting GML script: ${project_dir}\objects\PirateLeveler\Draw_64.gml
+Converted description /// @description draw self
+
+Converting GML script: ${project_dir}\objects\MoraleDisplay\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\MoraleDisplay\Alarm_1.gml
+Converted description /// @description Gone
+
+Converting GML script: ${project_dir}\objects\MoraleDisplay\Alarm_0.gml
+Converted description /// @description Moving
+
+Converting GML script: ${project_dir}\objects\MoraleDisplay\Step_0.gml
+Converted description /// @description Move
+
+Converting GML script: ${project_dir}\objects\MoraleDisplay\Draw_64.gml
+Converted description /// @description Draw self
+
+Converting GML script: ${project_dir}\objects\ViewController\Create_0.gml
+Converted builtin - line 4: view_xview[0] = 0 -> __view_set( e__VW.XView, 0, 0 )
+Converted builtin - line 5: view_yview[0] = 0 -> __view_set( e__VW.YView, 0, 0 )
+Converted builtin - line 7: view_wview[0] = room_width -> __view_set( e__VW.WView, 0, room_width )
+Converted builtin - line 6: view_hview[0] = room_height -> __view_set( e__VW.HView, 0, room_height )
+Converted builtin - line 3: view_visible[0] = true -> __view_set( e__VW.Visible, 0, true )
+Converted builtin - line 8: view_xport[0] = 0 -> __view_set( e__VW.XPort, 0, 0 )
+Converted builtin - line 9: view_yport[0] = 0 -> __view_set( e__VW.YPort, 0, 0 )
+Converted builtin - line 10: view_wport[0] = room_width -> __view_set( e__VW.WPort, 0, room_width )
+Converted builtin - line 11: view_hport[0] = room_height -> __view_set( e__VW.HPort, 0, room_height )
+Converted description /// @description gui size
+
+Converting GML script: ${project_dir}\objects\ViewController\Step_0.gml
+Converted description /// @description Center Window
+
+Converting GML script: ${project_dir}\objects\GameStatsController\Create_0.gml
+Converted description /// @description Stats
+
+Converting GML script: ${project_dir}\objects\GameStatsController\Step_0.gml
+Converted description /// @description Death
+
+Converting GML script: ${project_dir}\objects\Defeat\Create_0.gml
+Converted description /// @description Fade in Border and Play music
+
+Converting GML script: ${project_dir}\objects\Defeat\Alarm_0.gml
+Converted description /// @description End old music
+
+Converting GML script: ${project_dir}\objects\Defeat\Step_0.gml
+Converted description /// @description Ship Sinking
+
+Converting GML script: ${project_dir}\objects\Defeat\Draw_64.gml
+Converted description /// @description Draw defeat
+
+Converting GML script: ${project_dir}\objects\MapShip\Create_0.gml
+Converted description /// @description Arive Vars
+
+Converting GML script: ${project_dir}\objects\MapShip\Other_12.gml
+Converted description /// @description Draw Path
+
+Converting GML script: ${project_dir}\objects\MapShip\Other_11.gml
+Converted description /// @description Set Islands
+
+Converting GML script: ${project_dir}\objects\MapShip\Other_10.gml
+Converted description /// @description clear islands
+
+Converting GML script: ${project_dir}\objects\LandingSpot\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\LandingSpot\Other_11.gml
+Converted description /// @description Draw Self
+
+Converting GML script: ${project_dir}\objects\MapCreator\Create_0.gml
+Converted builtin - line 402: view_xview[1] -> __view_get( e__VW.XView, 1 )
+Converted builtin - line 440: view_xview[1] -> __view_get( e__VW.XView, 1 )
+Converted builtin - line 421: view_xview[1] = miniViewX -> __view_set( e__VW.XView, 1, miniViewX )
+Converted builtin - line 431: view_xview[0] = 0 -> __view_set( e__VW.XView, 0, 0 )
+Converted builtin - line 403: view_yview[1] -> __view_get( e__VW.YView, 1 )
+Converted builtin - line 441: view_yview[1] -> __view_get( e__VW.YView, 1 )
+Converted builtin - line 422: view_yview[1] = miniViewY -> __view_set( e__VW.YView, 1, miniViewY )
+Converted builtin - line 432: view_yview[0] = 0 -> __view_set( e__VW.YView, 0, 0 )
+Converted builtin - line 423: view_wview[1] = miniWidth*zoom -> __view_set( e__VW.WView, 1, miniWidth*zoom )
+Converted builtin - line 434: view_wview[0] = room_width -> __view_set( e__VW.WView, 0, room_width )
+Converted builtin - line 424: view_hview[1] = drawMiniHeight -> __view_set( e__VW.HView, 1, drawMiniHeight )
+Converted builtin - line 433: view_hview[0] = room_height -> __view_set( e__VW.HView, 0, room_height )
+Converted builtin - line 419: view_visible[1] = true -> __view_set( e__VW.Visible, 1, true )
+Converted builtin - line 430: view_visible[0] = true -> __view_set( e__VW.Visible, 0, true )
+Converted builtin - line 425: view_xport[1] = miniX -> __view_set( e__VW.XPort, 1, miniX )
+Converted builtin - line 435: view_xport[0] = 0 -> __view_set( e__VW.XPort, 0, 0 )
+Converted builtin - line 426: view_yport[1] = miniY -> __view_set( e__VW.YPort, 1, miniY )
+Converted builtin - line 436: view_yport[0] = 0 -> __view_set( e__VW.YPort, 0, 0 )
+Converted builtin - line 427: view_wport[1] = miniPortWidth -> __view_set( e__VW.WPort, 1, miniPortWidth )
+Converted builtin - line 437: view_wport[0] = room_width -> __view_set( e__VW.WPort, 0, room_width )
+Converted builtin - line 428: view_hport[1] = drawMiniHeight -> __view_set( e__VW.HPort, 1, drawMiniHeight )
+Converted builtin - line 438: view_hport[0] = room_height -> __view_set( e__VW.HPort, 0, room_height )
+Converted description /// @description Create Port Types
+
+Converting GML script: ${project_dir}\objects\MapCreator\Step_2.gml
+Converted description /// @description Sea conquering
+
+Converting GML script: ${project_dir}\objects\MapCreator\Step_0.gml
+Converted builtin - line 20: view_xview[1] -> __view_get( e__VW.XView, 1 )
+Converted builtin - line 46: view_xview[1] -> __view_get( e__VW.XView, 1 )
+Converted builtin - line 48: view_xview[1] -> __view_get( e__VW.XView, 1 )
+Converted builtin - line 145: view_xview[1] -> __view_get( e__VW.XView, 1 )
+Converted builtin - line 145: view_xview[1] -> __view_get( e__VW.XView, 1 )
+Converted builtin - line 147: view_xview[1] -> __view_get( e__VW.XView, 1 )
+Converted builtin - line 147: view_xview[1] -> __view_get( e__VW.XView, 1 )
+Converted builtin - line 37: view_xview[1] = windowGrabX + (mouseGrabX - window_view_mouse_get_x(0))*zoom -> __view_set( e__VW.XView, 1, windowGrabX + (mouseGrabX - window_view_mouse_get_x(0))*zoom )
+Converted builtin - line 47: view_xview[1] = mapStart -> __view_set( e__VW.XView, 1, mapStart )
+Converted builtin - line 49: view_xview[1] = mapStart + seaSizeX - view_wview[1] -> __view_set( e__VW.XView, 1, mapStart + seaSizeX - view_wview[1] )
+Converted builtin - line 161: view_xview[1] = MapShip.x - (miniWidth*zoom)/2 -> __view_set( e__VW.XView, 1, MapShip.x - (miniWidth*zoom)/2 )
+Converted builtin - line 188: view_xview[1] -= (miniWidth*zoom - view_wview[1])/2 -> __view_set( e__VW.XView, 1, __view_get( e__VW.XView, 1 ) - ((miniWidth*zoom - view_wview[1])/2) )
+Converted builtin - line 197: view_xview[1] -= (miniWidth*zoom - view_wview[1])/2 -> __view_set( e__VW.XView, 1, __view_get( e__VW.XView, 1 ) - ((miniWidth*zoom - view_wview[1])/2) )
+Converted builtin - line 146: view_xview[1] ++ -> __view_set_pp( e__VW.XView, 1, __view_get( e__VW.XView, 1 ) + 1 )
+Converted builtin - line 148: view_xview[1] -- -> __view_set_pp( e__VW.XView, 1, __view_get( e__VW.XView, 1 ) - 1 )
+Converted builtin - line 21: view_yview[1] -> __view_get( e__VW.YView, 1 )
+Converted builtin - line 51: view_yview[1] -> __view_get( e__VW.YView, 1 )
+Converted builtin - line 53: view_yview[1] -> __view_get( e__VW.YView, 1 )
+Converted builtin - line 150: view_yview[1] -> __view_get( e__VW.YView, 1 )
+Converted builtin - line 150: view_yview[1] -> __view_get( e__VW.YView, 1 )
+Converted builtin - line 152: view_yview[1] -> __view_get( e__VW.YView, 1 )
+Converted builtin - line 152: view_yview[1] -> __view_get( e__VW.YView, 1 )
+Converted builtin - line 38: view_yview[1] = windowGrabY + (mouseGrabY - window_view_mouse_get_y(0))*zoom -> __view_set( e__VW.YView, 1, windowGrabY + (mouseGrabY - window_view_mouse_get_y(0))*zoom )
+Converted builtin - line 52: view_yview[1] = 0 -> __view_set( e__VW.YView, 1, 0 )
+Converted builtin - line 54: view_yview[1] = seaSizeY - view_hview[1] -> __view_set( e__VW.YView, 1, seaSizeY - view_hview[1] )
+Converted builtin - line 162: view_yview[1] = MapShip.y - (drawMiniHeight*zoom)/2 -> __view_set( e__VW.YView, 1, MapShip.y - (drawMiniHeight*zoom)/2 )
+Converted builtin - line 189: view_yview[1] -= (drawMiniHeight*zoom - view_hview[1])/2 -> __view_set( e__VW.YView, 1, __view_get( e__VW.YView, 1 ) - ((drawMiniHeight*zoom - view_hview[1])/2) )
+Converted builtin - line 198: view_yview[1] -= (drawMiniHeight*zoom - view_hview[1])/2 -> __view_set( e__VW.YView, 1, __view_get( e__VW.YView, 1 ) - ((drawMiniHeight*zoom - view_hview[1])/2) )
+Converted builtin - line 151: view_yview[1] ++ -> __view_set_pp( e__VW.YView, 1, __view_get( e__VW.YView, 1 ) + 1 )
+Converted builtin - line 153: view_yview[1] -- -> __view_set_pp( e__VW.YView, 1, __view_get( e__VW.YView, 1 ) - 1 )
+Converted builtin - line 48: view_wview[1] -> __view_get( e__VW.WView, 1 )
+Converted builtin - line 92: view_wview[1] = miniWidth*zoom -> __view_set( e__VW.WView, 1, miniWidth*zoom )
+Converted builtin - line 110: view_wview[1] = miniWidth*zoom -> __view_set( e__VW.WView, 1, miniWidth*zoom )
+Converted builtin - line 118: view_wview[1] = miniWidth*zoom -> __view_set( e__VW.WView, 1, miniWidth*zoom )
+Converted builtin - line 164: view_wview[1] = miniWidth*zoom -> __view_set( e__VW.WView, 1, miniWidth*zoom )
+Converted builtin - line 191: view_wview[1] = miniWidth*zoom -> __view_set( e__VW.WView, 1, miniWidth*zoom )
+Converted builtin - line 200: view_wview[1] = miniWidth*zoom -> __view_set( e__VW.WView, 1, miniWidth*zoom )
+Converted builtin - line 53: view_hview[1] -> __view_get( e__VW.HView, 1 )
+Converted builtin - line 79: view_hview[1] = drawMiniHeight -> __view_set( e__VW.HView, 1, drawMiniHeight )
+Converted builtin - line 91: view_hview[1] = drawMiniHeight*zoom -> __view_set( e__VW.HView, 1, drawMiniHeight*zoom )
+Converted builtin - line 108: view_hview[1] = drawMiniHeight*zoom -> __view_set( e__VW.HView, 1, drawMiniHeight*zoom )
+Converted builtin - line 116: view_hview[1] = drawMiniHeight*zoom -> __view_set( e__VW.HView, 1, drawMiniHeight*zoom )
+Converted builtin - line 163: view_hview[1] = drawMiniHeight*zoom -> __view_set( e__VW.HView, 1, drawMiniHeight*zoom )
+Converted builtin - line 190: view_hview[1] = drawMiniHeight*zoom -> __view_set( e__VW.HView, 1, drawMiniHeight*zoom )
+Converted builtin - line 199: view_hview[1] = drawMiniHeight*zoom -> __view_set( e__VW.HView, 1, drawMiniHeight*zoom )
+Converted builtin - line 216: view_hview[1] = drawMiniHeight -> __view_set( e__VW.HView, 1, drawMiniHeight )
+Converted builtin - line 98: view_visible[1] = false -> __view_set( e__VW.Visible, 1, false )
+Converted builtin - line 103: view_visible[1] = true -> __view_set( e__VW.Visible, 1, true )
+Converted builtin - line 8: view_xport[1] -> __view_get( e__VW.XPort, 1 )
+Converted builtin - line 8: view_xport[1] -> __view_get( e__VW.XPort, 1 )
+Converted builtin - line 8: view_yport[1] -> __view_get( e__VW.YPort, 1 )
+Converted builtin - line 8: view_yport[1] -> __view_get( e__VW.YPort, 1 )
+Converted builtin - line 8: view_wport[1] -> __view_get( e__VW.WPort, 1 )
+Converted builtin - line 8: view_hport[1] -> __view_get( e__VW.HPort, 1 )
+Converted builtin - line 80: view_hport[1] = drawMiniHeight -> __view_set( e__VW.HPort, 1, drawMiniHeight )
+Converted builtin - line 93: view_hport[1] = drawMiniHeight -> __view_set( e__VW.HPort, 1, drawMiniHeight )
+Converted builtin - line 109: view_hport[1] = drawMiniHeight -> __view_set( e__VW.HPort, 1, drawMiniHeight )
+Converted builtin - line 117: view_hport[1] = drawMiniHeight -> __view_set( e__VW.HPort, 1, drawMiniHeight )
+Converted builtin - line 217: view_hport[1] = drawMiniHeight -> __view_set( e__VW.HPort, 1, drawMiniHeight )
+Converted builtin - line 49: view_wview[1] -> __view_get( e__VW.WView, 1 )
+Converted builtin - line 188: view_wview[1] -> __view_get( e__VW.WView, 1 )
+Converted builtin - line 197: view_wview[1] -> __view_get( e__VW.WView, 1 )
+Converted builtin - line 54: view_hview[1] -> __view_get( e__VW.HView, 1 )
+Converted builtin - line 189: view_hview[1] -> __view_get( e__VW.HView, 1 )
+Converted builtin - line 198: view_hview[1] -> __view_get( e__VW.HView, 1 )
+
+Converting GML script: ${project_dir}\objects\MapCreator\Other_12.gml
+Converted description /// @description release seas    
+
+Converting GML script: ${project_dir}\objects\MapCreator\Other_11.gml
+Converted description /// @description Conquer Sea
+
+Converting GML script: ${project_dir}\objects\MapCreator\Other_10.gml
+Converted description /// @description Restart Map Making
+
+Converting GML script: ${project_dir}\objects\MapCreator\Draw_73.gml
+Converted builtin - line 68: view_xview[1] -> __view_get( e__VW.XView, 1 )
+Converted builtin - line 70: view_xview[1] -> __view_get( e__VW.XView, 1 )
+Converted builtin - line 73: view_xview[1] -> __view_get( e__VW.XView, 1 )
+Converted builtin - line 75: view_xview[1] -> __view_get( e__VW.XView, 1 )
+Converted builtin - line 79: view_xview[1] -> __view_get( e__VW.XView, 1 )
+Converted builtin - line 81: view_xview[1] -> __view_get( e__VW.XView, 1 )
+Converted builtin - line 84: view_xview[1] -> __view_get( e__VW.XView, 1 )
+Converted builtin - line 86: view_xview[1] -> __view_get( e__VW.XView, 1 )
+Converted builtin - line 94: view_xview[1] -> __view_get( e__VW.XView, 1 )
+Converted builtin - line 68: view_yview[1] -> __view_get( e__VW.YView, 1 )
+Converted builtin - line 70: view_yview[1] -> __view_get( e__VW.YView, 1 )
+Converted builtin - line 73: view_yview[1] -> __view_get( e__VW.YView, 1 )
+Converted builtin - line 75: view_yview[1] -> __view_get( e__VW.YView, 1 )
+Converted builtin - line 79: view_yview[1] -> __view_get( e__VW.YView, 1 )
+Converted builtin - line 81: view_yview[1] -> __view_get( e__VW.YView, 1 )
+Converted builtin - line 84: view_yview[1] -> __view_get( e__VW.YView, 1 )
+Converted builtin - line 86: view_yview[1] -> __view_get( e__VW.YView, 1 )
+Converted builtin - line 94: view_yview[1] -> __view_get( e__VW.YView, 1 )
+Converted builtin - line 68: view_wview[1] -> __view_get( e__VW.WView, 1 )
+Converted builtin - line 70: view_wview[1] -> __view_get( e__VW.WView, 1 )
+Converted builtin - line 73: view_wview[1] -> __view_get( e__VW.WView, 1 )
+Converted builtin - line 75: view_wview[1] -> __view_get( e__VW.WView, 1 )
+Converted builtin - line 94: view_wview[1] -> __view_get( e__VW.WView, 1 )
+Converted builtin - line 104: view_wport[1] -> __view_get( e__VW.WPort, 1 )
+Converted builtin - line 104: view_hport[1] -> __view_get( e__VW.HPort, 1 )
+Converted builtin - line 107: view_surface_id[1] = surf -> __view_set( e__VW.SurfaceID, 1, surf )
+Converted description /// @description Draw surfaces
+
+Converting GML script: ${project_dir}\objects\MapCreator\Draw_64.gml
+Converted builtin - line 20: view_xport[1] -> __view_get( e__VW.XPort, 1 )
+Converted builtin - line 20: view_yport[1] -> __view_get( e__VW.YPort, 1 )
+Converted builtin - line 20: view_wport[1] -> __view_get( e__VW.WPort, 1 )
+Converted builtin - line 20: view_hport[1] -> __view_get( e__VW.HPort, 1 )
+Converted description /// @description Draw Frame
+
+Converting GML script: ${project_dir}\objects\MapMarker\Draw_73.gml
+Converted description /// @description Draw Self
+
+Converting GML script: ${project_dir}\objects\PortDrawerBack\Create_0.gml
+Converted description /// @description Create Port surfaces
+
+Converting GML script: ${project_dir}\objects\PortDrawerBack\Other_10.gml
+Converted description /// @description Draw back port stuff
+
+Converting GML script: ${project_dir}\objects\PortDrawerFront\Other_10.gml
+Converted description /// @description Draw back port stuff
+
+Converting GML script: ${project_dir}\objects\DrawPort\Create_0.gml
+Converted description /// @description Start Vars
+
+Converting GML script: ${project_dir}\objects\DrawPort\Step_2.gml
+Converted description /// @description Draw Over Button
+
+Converting GML script: ${project_dir}\objects\DrawPort\Step_0.gml
+Converted description /// @description Scrolling
+
+Converting GML script: ${project_dir}\objects\DrawPort\Other_10.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\DrawPort\Draw_0.gml
+Converted description /// @description dont draw
+
+Converting GML script: ${project_dir}\objects\Tavern\Create_0.gml
+Converted description /// @description Start Vars
+
+Converting GML script: ${project_dir}\objects\Tavern\Destroy_0.gml
+Converted description /// @description destroy light
+
+Converting GML script: ${project_dir}\objects\Tavern\Step_1.gml
+Converted description /// @description Create Light Source
+
+Converting GML script: ${project_dir}\objects\Tavern\Other_14.gml
+Converted description /// @description Pirates
+
+Converting GML script: ${project_dir}\objects\Tavern\Other_13.gml
+Converted description /// @description Look at rum
+
+Converting GML script: ${project_dir}\objects\Tavern\Other_12.gml
+Converted description /// @description Look at food
+
+Converting GML script: ${project_dir}\objects\Tavern\Other_11.gml
+Converted description /// @description Look at pirates
+
+Converting GML script: ${project_dir}\objects\Smithy\Create_0.gml
+Converted description /// @description Start Vars
+
+Converting GML script: ${project_dir}\objects\Smithy\Destroy_0.gml
+Converted description /// @description destroy light
+
+Converting GML script: ${project_dir}\objects\Smithy\Step_1.gml
+Converted description /// @description Create Light Source
+
+Converting GML script: ${project_dir}\objects\Smithy\Other_14.gml
+Converted description /// @description Swords
+
+Converting GML script: ${project_dir}\objects\Smithy\Other_13.gml
+Converted description /// @description Buy Rifle
+
+Converting GML script: ${project_dir}\objects\Smithy\Other_12.gml
+Converted description /// @description Buy Guns
+
+Converting GML script: ${project_dir}\objects\Smithy\Other_11.gml
+Converted description /// @description Buy Swords
+
+Converting GML script: ${project_dir}\objects\Taylors\Create_0.gml
+Converted description /// @description Start Vars
+
+Converting GML script: ${project_dir}\objects\Taylors\Destroy_0.gml
+Converted description /// @description destroy light
+
+Converting GML script: ${project_dir}\objects\Taylors\Step_1.gml
+Converted description /// @description Create Light Source
+
+Converting GML script: ${project_dir}\objects\Taylors\Other_14.gml
+Converted description /// @description Hats
+
+Converting GML script: ${project_dir}\objects\Taylors\Other_13.gml
+Converted description /// @description Buy Pants
+
+Converting GML script: ${project_dir}\objects\Taylors\Other_12.gml
+Converted description /// @description Buy Shirts
+
+Converting GML script: ${project_dir}\objects\Taylors\Other_11.gml
+Converted description /// @description Buy Hats
+
+Converting GML script: ${project_dir}\objects\ShipYard\Create_0.gml
+Converted description /// @description Start Vars
+
+Converting GML script: ${project_dir}\objects\ShipYard\Destroy_0.gml
+Converted description /// @description destroy light
+
+Converting GML script: ${project_dir}\objects\ShipYard\Step_1.gml
+Converted description /// @description Create Light Source
+
+Converting GML script: ${project_dir}\objects\ShipYard\Other_14.gml
+Converted description /// @description Supplies
+
+Converting GML script: ${project_dir}\objects\ShipYard\Other_13.gml
+Converted description /// @description Look at repairs
+
+Converting GML script: ${project_dir}\objects\ShipYard\Other_12.gml
+Converted description /// @description Look at supplies
+
+Converting GML script: ${project_dir}\objects\ShipYard\Other_11.gml
+Converted description /// @description Buy Ships
+
+Converting GML script: ${project_dir}\objects\TrinketShop\Create_0.gml
+Converted description /// @description Start Vars
+
+Converting GML script: ${project_dir}\objects\TrinketShop\Destroy_0.gml
+Converted description /// @description destroy light
+
+Converting GML script: ${project_dir}\objects\TrinketShop\Step_1.gml
+Converted description /// @description Create Light Source
+
+Converting GML script: ${project_dir}\objects\TrinketShop\Other_14.gml
+Converted description /// @description make Items
+
+Converting GML script: ${project_dir}\objects\TrinketShop\Other_13.gml
+Converted description /// @description Trade Items
+
+Converting GML script: ${project_dir}\objects\TrinketShop\Other_12.gml
+Converted description /// @description Buy Cargo
+
+Converting GML script: ${project_dir}\objects\TrinketShop\Other_11.gml
+Converted description /// @description Buy Items
+
+Converting GML script: ${project_dir}\objects\LandFlavor\Step_2.gml
+Converted description /// @description Draw when at port
+
+Converting GML script: ${project_dir}\objects\Camp\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\Camp\Alarm_1.gml
+Converted description /// @description Activate special action
+
+Converting GML script: ${project_dir}\objects\Camp\Alarm_0.gml
+Converted description /// @description Create "Z"
+
+Converting GML script: ${project_dir}\objects\Camp\Step_1.gml
+Converted description /// @description Create Light Source
+
+Converting GML script: ${project_dir}\objects\Camp\Other_13.gml
+Converted description /// @description Special action
+
+Converting GML script: ${project_dir}\objects\Camp\Other_12.gml
+Converted description /// @description Search for food
+
+Converting GML script: ${project_dir}\objects\Camp\Other_11.gml
+Converted description /// @description Resting
+
+Converting GML script: ${project_dir}\objects\Sleeping\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\Sleeping\Step_0.gml
+Converted description /// @description Dissapear
+
+Converting GML script: ${project_dir}\objects\Bat\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\Bat\Destroy_0.gml
+Converted description /// @description Stop sound
+
+Converting GML script: ${project_dir}\objects\Bat\Alarm_0.gml
+Converted description /// @description Move bat-like
+
+Converting GML script: ${project_dir}\objects\Bat\Draw_73.gml
+Converted description /// @description draw self
+
+Converting GML script: ${project_dir}\objects\JungleBird\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\JungleBird\Destroy_0.gml
+Converted description /// @description Stop sound
+
+Converting GML script: ${project_dir}\objects\JungleBird\Alarm_0.gml
+Converted description /// @description Move bird-like
+
+Converting GML script: ${project_dir}\objects\JungleBird\Draw_73.gml
+Converted description /// @description draw self
+
+Converting GML script: ${project_dir}\objects\TreasureChest\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\TreasureChest\Step_0.gml
+Converted description /// @description Change Types
+
+Converting GML script: ${project_dir}\objects\TreasureChest\Draw_73.gml
+Converted description /// @description draw self
+
+Converting GML script: ${project_dir}\objects\RopeHook\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\RopeHook\Step_0.gml
+Converted description /// @description Loop Animation
+
+Converting GML script: ${project_dir}\objects\RopeHook\Draw_73.gml
+Converted description /// @description draw self
+
+Converting GML script: ${project_dir}\objects\OasisSplash\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\OasisSplash\Destroy_0.gml
+Converted description /// @description Stop sound
+
+Converting GML script: ${project_dir}\objects\OasisSplash\Alarm_0.gml
+Converted description /// @description create
+
+Converting GML script: ${project_dir}\objects\OasisSplash\Draw_73.gml
+Converted description /// @description draw self
+
+Converting GML script: ${project_dir}\objects\Event\Create_0.gml
+Converted description /// @description Destroy if event exists
+
+Converting GML script: ${project_dir}\objects\Event\Step_0.gml
+Converted description /// @description Button Pressed
+
+Converting GML script: ${project_dir}\objects\Event\Draw_64.gml
+Converted description /// @description Draw Event Card
+
+Converting GML script: ${project_dir}\objects\Request\Create_0.gml
+Converted description /// @description Destroy if event exists
+
+Converting GML script: ${project_dir}\objects\Request\Step_0.gml
+Converted description /// @description Button Pressed
+
+Converting GML script: ${project_dir}\objects\Request\Draw_64.gml
+Converted description /// @description Draw Event Card
+
+Converting GML script: ${project_dir}\objects\EventController\Create_0.gml
+Converted description /// @description Event codes
+
+Converting GML script: ${project_dir}\objects\EventController\Alarm_0.gml
+Converted description /// @description Port Landing Event
+
+Converting GML script: ${project_dir}\objects\EventController\Step_0.gml
+Converted description /// @description Control Events
+
+Converting GML script: ${project_dir}\objects\EventController\Other_11.gml
+Converted description /// @description Rarity Map
+
+Converting GML script: ${project_dir}\objects\EventController\Other_10.gml
+Converted description /// @description Event difficulty
+
+Converting GML script: ${project_dir}\objects\ConditionTimer\Create_0.gml
+Converted description /// @description ConditionTimer 
+
+Converting GML script: ${project_dir}\objects\ConditionTimer\Step_0.gml
+Converted description /// @description Do Time
+
+Converting GML script: ${project_dir}\objects\FoodTimer\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\FoodTimer\Step_0.gml
+Converted description /// @description Eating Time
+
+Converting GML script: ${project_dir}\objects\EventDrawer\Step_2.gml
+Converted description /// @description float away
+
+Converting GML script: ${project_dir}\objects\ShipEvent\Create_0.gml
+Converted description /// @description Pirate Ship Vars
+
+Converting GML script: ${project_dir}\objects\ShipEvent\Step_0.gml
+Converted description /// @description Move
+
+Converting GML script: ${project_dir}\objects\ShipEvent\Other_10.gml
+Converted description /// @description Draw self
+
+Converting GML script: ${project_dir}\objects\ShipEvent\Draw_0.gml
+Converted description /// @description Dont draw self
+
+Converting GML script: ${project_dir}\objects\Dolphins\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\Dolphins\Step_0.gml
+Converted description /// @description Rotate
+
+Converting GML script: ${project_dir}\objects\Dolphins\Other_10.gml
+Converted description /// @description Draw self
+
+Converting GML script: ${project_dir}\objects\Barrel\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\Barrel\Step_0.gml
+Converted description /// @description Move to place
+
+Converting GML script: ${project_dir}\objects\Barrel\Other_10.gml
+Converted description /// @description Draw self
+
+Converting GML script: ${project_dir}\objects\GiantTurtleDrawer\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\GiantTurtleDrawer\Step_0.gml
+Converted description /// @description Move to place
+
+Converting GML script: ${project_dir}\objects\GiantTurtleDrawer\Other_10.gml
+Converted description /// @description Draw self
+
+Converting GML script: ${project_dir}\objects\RaftEvent\Create_0.gml
+Converted description /// @description Raft Vars
+
+Converting GML script: ${project_dir}\objects\RaftEvent\Step_0.gml
+Converted description /// @description Move
+
+Converting GML script: ${project_dir}\objects\RaftEvent\Other_10.gml
+Converted description /// @description Draw self
+
+Converting GML script: ${project_dir}\objects\RaftEvent\Draw_0.gml
+Converted description /// @description Dont draw self
+
+Converting GML script: ${project_dir}\objects\TradingPostEvent\Create_0.gml
+Converted description /// @description Raft Vars
+
+Converting GML script: ${project_dir}\objects\TradingPostEvent\Step_0.gml
+Converted description /// @description Move
+
+Converting GML script: ${project_dir}\objects\TradingPostEvent\Other_10.gml
+Converted description /// @description Draw self
+
+Converting GML script: ${project_dir}\objects\TradingPostEvent\Draw_0.gml
+Converted description /// @description Dont draw self
+
+Converting GML script: ${project_dir}\objects\MermaidEvent\Create_0.gml
+Converted description /// @description Raft Vars
+
+Converting GML script: ${project_dir}\objects\MermaidEvent\Other_10.gml
+Converted description /// @description Draw self
+
+Converting GML script: ${project_dir}\objects\MermaidEvent\Draw_0.gml
+Converted description /// @description Dont draw self
+
+Converting GML script: ${project_dir}\objects\BirdEvent\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\BirdEvent\Step_0.gml
+Converted description /// @description Turn Around
+
+Converting GML script: ${project_dir}\objects\BirdEvent\Other_10.gml
+Converted description /// @description Draw self
+
+Converting GML script: ${project_dir}\objects\FishEvent\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\FishEvent\Step_0.gml
+Converted description /// @description Turn Around
+
+Converting GML script: ${project_dir}\objects\FishEvent\Other_10.gml
+Converted description /// @description Draw self
+
+Converting GML script: ${project_dir}\objects\CharacterParent\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\CharacterParent\Step_0.gml
+Converted description /// @description update states
+
+Converting GML script: ${project_dir}\objects\CharacterCreator\Create_0.gml
+Converted description /// @description Add Characters
+
+Converting GML script: ${project_dir}\objects\JohnnyShortsticks\Other_10.gml
+Converted description /// @description Johnny state switching
+
+Converting GML script: ${project_dir}\objects\CoveCollector\Other_10.gml
+Converted description /// @description Become friendlier
+
+Converting GML script: ${project_dir}\objects\CaptainSilverwheel\Other_11.gml
+Converted description /// @description Update level
+
+Converting GML script: ${project_dir}\objects\CaptainSilverwheel\Other_10.gml
+Converted description /// @description Silverwheel level up
+
+Converting GML script: ${project_dir}\objects\FrogKing\Other_10.gml
+Converted description /// @description Frog King Reactions
+
+Converting GML script: ${project_dir}\objects\GiantTurtle\Other_11.gml
+Converted description /// @description update state for treasure
+
+Converting GML script: ${project_dir}\objects\GiantTurtle\Other_10.gml
+Converted description /// @description Turtle Events
+
+Converting GML script: ${project_dir}\objects\ObjectVarsRunner\Create_0.gml
+Converted description /// @description BackStory
+
+Converting GML script: ${project_dir}\objects\ItemParent\Step_1.gml
+Converted description /// @description Over Buttons
+
+Converting GML script: ${project_dir}\objects\ItemParent\Step_0.gml
+Converted description /// @description Buttons
+
+Converting GML script: ${project_dir}\objects\ItemParent\Other_11.gml
+Converted description /// @description Special Action
+
+Converting GML script: ${project_dir}\objects\ItemParent\Draw_64.gml
+Converted description /// @description Draw info
+
+Converting GML script: ${project_dir}\objects\ItemRunner\Create_0.gml
+Converted description /// @description Level Vars
+
+Converting GML script: ${project_dir}\objects\ItemRunner\Step_0.gml
+Converted description /// @description Control Item selections
+Converted string - line 11: 'R' -> "R"
+Converted string - line 16: 'S' -> "S"
+Converted string - line 21: 'P' -> "P"
+Converted string - line 26: 'H' -> "H"
+
+Converting GML script: ${project_dir}\objects\Store\Create_0.gml
+Converted description /// @description Create Vars
+
+Converting GML script: ${project_dir}\objects\Store\Alarm_0.gml
+Converted description /// @description Select all
+
+Converting GML script: ${project_dir}\objects\Store\Step_0.gml
+Converted description /// @description Display objects/update canTake
+
+Converting GML script: ${project_dir}\objects\Store\Other_12.gml
+Converted description /// @description Give Items to Player Real
+
+Converting GML script: ${project_dir}\objects\Store\Other_11.gml
+Converted description /// @description Take Items
+
+Converting GML script: ${project_dir}\objects\Store\Other_10.gml
+Converted description /// @description Close Store
+
+Converting GML script: ${project_dir}\objects\Store\Draw_64.gml
+Converted description /// @description Draw Text
+
+Converting GML script: ${project_dir}\objects\StoreAreYouSure\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\StoreAreYouSure\Step_0.gml
+Converted description /// @description Close Notifacation
+
+Converting GML script: ${project_dir}\objects\StoreAreYouSure\Other_10.gml
+Converted description /// @description Surrender
+
+Converting GML script: ${project_dir}\objects\StoreAreYouSure\Draw_64.gml
+Converted description /// @description Close Notifacation
+
+Converting GML script: ${project_dir}\objects\StoreObjectParent\Step_0.gml
+Converted description /// @description Over Buttons
+
+Converting GML script: ${project_dir}\objects\StoreObjectItem\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\StoreObjectItem\Other_10.gml
+Converted description /// @description NewShip
+
+Converting GML script: ${project_dir}\objects\StoreObjectItem\Draw_75.gml
+Converted description /// @description Draw Self
+
+Converting GML script: ${project_dir}\objects\StoreObjectStorable\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\StoreObjectStorable\Alarm_0.gml
+Converted description /// @description Set Vars
+
+Converting GML script: ${project_dir}\objects\StoreObjectStorable\Other_10.gml
+Converted description /// @description Store
+
+Converting GML script: ${project_dir}\objects\StoreObjectStorable\Draw_75.gml
+Converted description /// @description Draw Self
+
+Converting GML script: ${project_dir}\objects\StoreObjectTrade\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\StoreObjectTrade\Alarm_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\StoreObjectTrade\Other_10.gml
+Converted description /// @description Store
+
+Converting GML script: ${project_dir}\objects\StoreObjectTrade\Draw_75.gml
+Converted description /// @description Draw Self
+
+Converting GML script: ${project_dir}\objects\StoreObjectHealth\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\StoreObjectHealth\Alarm_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\StoreObjectHealth\Other_10.gml
+Converted description /// @description Store
+
+Converting GML script: ${project_dir}\objects\StoreObjectHealth\Draw_75.gml
+Converted description /// @description Draw Self
+
+Converting GML script: ${project_dir}\objects\StoreObjectVictory\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\StoreObjectVictory\Other_10.gml
+Converted description /// @description Store
+
+Converting GML script: ${project_dir}\objects\StoreObjectVictory\Draw_75.gml
+Converted description /// @description Draw Self
+
+Converting GML script: ${project_dir}\objects\StoreObjectShip\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\StoreObjectShip\Alarm_0.gml
+Converted description /// @description Set Vars
+
+Converting GML script: ${project_dir}\objects\StoreObjectShip\Other_10.gml
+Converted description /// @description Store
+
+Converting GML script: ${project_dir}\objects\StoreObjectShip\Draw_75.gml
+Converted description /// @description Draw Self
+
+Converting GML script: ${project_dir}\objects\StoreObjectPirate\Create_0.gml
+Converted description /// @description Make Pirate Traits
+
+Converting GML script: ${project_dir}\objects\StoreObjectPirate\Other_10.gml
+Converted description /// @description Create Pirate
+
+Converting GML script: ${project_dir}\objects\StoreObjectPirate\Draw_75.gml
+Converted description /// @description Draw Self
+
+Converting GML script: ${project_dir}\objects\CombatRunner\Destroy_0.gml
+Converted builtin - line 3: view_xview[0] = 0 -> __view_set( e__VW.XView, 0, 0 )
+Converted builtin - line 4: view_yview[0] = 0 -> __view_set( e__VW.YView, 0, 0 )
+Converted builtin - line 6: view_wview[0] = room_width -> __view_set( e__VW.WView, 0, room_width )
+Converted builtin - line 5: view_hview[0] = room_height -> __view_set( e__VW.HView, 0, room_height )
+Converted description /// @description Reset view
+
+Converting GML script: ${project_dir}\objects\CombatRunner\Alarm_4.gml
+Converted description /// @description Wait to start turn
+
+Converting GML script: ${project_dir}\objects\CombatRunner\Alarm_3.gml
+Converted description /// @description Add Enemy Attack
+
+Converting GML script: ${project_dir}\objects\CombatRunner\Alarm_2.gml
+Converted description /// @description Wait for turn
+
+Converting GML script: ${project_dir}\objects\CombatRunner\Alarm_1.gml
+Converted description /// @description Die
+
+Converting GML script: ${project_dir}\objects\CombatRunner\Alarm_0.gml
+Converted description /// @description PlaceHolder
+
+Converting GML script: ${project_dir}\objects\CombatRunner\Step_0.gml
+Converted builtin - line 99: view_xview[0] += combatXShift -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) + (combatXShift) )
+Converted builtin - line 109: view_xview[0] -= combatXShift -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) - (combatXShift) )
+Converted builtin - line 100: view_yview[0] += combatYShift -> __view_set( e__VW.YView, 0, __view_get( e__VW.YView, 0 ) + (combatYShift) )
+Converted builtin - line 110: view_yview[0] -= combatYShift -> __view_set( e__VW.YView, 0, __view_get( e__VW.YView, 0 ) - (combatYShift) )
+Converted builtin - line 95: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 105: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 97: view_wview[0] *= 1 - combatZoomSpeed -> __view_set( e__VW.WView, 0, __view_get( e__VW.WView, 0 ) * (1 - combatZoomSpeed) )
+Converted builtin - line 107: view_wview[0] /= 1 - combatZoomSpeed -> __view_set( e__VW.WView, 0, __view_get( e__VW.WView, 0 ) / (1 - combatZoomSpeed) )
+Converted builtin - line 98: view_hview[0] *= 1 - combatZoomSpeed -> __view_set( e__VW.HView, 0, __view_get( e__VW.HView, 0 ) * (1 - combatZoomSpeed) )
+Converted builtin - line 108: view_hview[0] /= 1 - combatZoomSpeed -> __view_set( e__VW.HView, 0, __view_get( e__VW.HView, 0 ) / (1 - combatZoomSpeed) )
+Converted description /// @description Update Enemy Actions
+
+Converting GML script: ${project_dir}\objects\CombatRunner\Other_15.gml
+Converted description /// @description Destroyed
+
+Converting GML script: ${project_dir}\objects\CombatRunner\Other_13.gml
+Converted description /// @description Check Death
+
+Converting GML script: ${project_dir}\objects\CombatRunner\Other_12.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\CombatRunner\Other_11.gml
+Converted description /// @description Update Available Player Actions
+
+Converting GML script: ${project_dir}\objects\CombatRunner\Other_10.gml
+Converted description /// @description Wait for turn and refresh stuff
+
+Converting GML script: ${project_dir}\objects\CombatRunner\Draw_75.gml
+Converted builtin - line 7: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted description /// @description Draw Action Info
+
+Converting GML script: ${project_dir}\objects\CombatRunner\Draw_64.gml
+Converted builtin - line 30: view_xview[0] -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: ${project_dir}\objects\DamageController\Create_0.gml
+Converted description /// @description Action Damages
+
+Converting GML script: ${project_dir}\objects\SurrenderOption\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\SurrenderOption\Alarm_0.gml
+Converted description /// @description Exists
+
+Converting GML script: ${project_dir}\objects\SurrenderOption\Step_0.gml
+Converted description /// @description Close Notifacation
+
+Converting GML script: ${project_dir}\objects\SurrenderOption\Other_10.gml
+Converted description /// @description Surrender
+
+Converting GML script: ${project_dir}\objects\SurrenderOption\Draw_64.gml
+Converted description /// @description Close Notifacation
+
+Converting GML script: ${project_dir}\objects\Enemy\Step_0.gml
+Converted description /// @description Dead
+
+Converting GML script: ${project_dir}\objects\Enemy\Other_15.gml
+Converted description /// @description Dead
+
+Converting GML script: ${project_dir}\objects\Enemy\Other_10.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\Enemy\Draw_75.gml
+Converted builtin - line 15: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 46: view_xview[0] -> __view_get( e__VW.XView, 0 )
+Converted description /// @description drawSelf
+
+Converting GML script: ${project_dir}\objects\EnemyShip\Create_0.gml
+Converted description /// @description Add vars and looks
+
+Converting GML script: ${project_dir}\objects\EnemyShip\Draw_72.gml
+Converted description /// @description Draw self
+
+Converting GML script: ${project_dir}\objects\EnemyCollectors\Create_0.gml
+Converted description /// @description Add vars and looks
+
+Converting GML script: ${project_dir}\objects\EnemyCollectors\Other_22.gml
+Converted description /// @description Update Character
+
+Converting GML script: ${project_dir}\objects\EnemyCollectors\Draw_72.gml
+Converted description /// @description Draw self
+
+Converting GML script: ${project_dir}\objects\SilverwheelEnemy\Create_0.gml
+Converted description /// @description Add vars and looks
+
+Converting GML script: ${project_dir}\objects\SilverwheelEnemy\Other_22.gml
+Converted description /// @description Update Character
+
+Converting GML script: ${project_dir}\objects\SilverwheelEnemy\Draw_72.gml
+Converted description /// @description Draw self
+
+Converting GML script: ${project_dir}\objects\EnemyCollector\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\EnemySilverwheel\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\EnemyPirate\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\EnemyCaptain\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\EnemyAdmiral\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\EnemyCannonier\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\Merchant\Create_0.gml
+Converted description /// @description Add vars and looks
+
+Converting GML script: ${project_dir}\objects\Merchant\Other_22.gml
+Converted description /// @description Add Treasure
+
+Converting GML script: ${project_dir}\objects\Merchant\Draw_72.gml
+Converted description /// @description Draw self
+
+Converting GML script: ${project_dir}\objects\MerchantCrew\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\ShipGaurd\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\MerchantCaptain\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\TropicalEnemy\Create_0.gml
+Converted description /// @description Add vars and looks
+
+Converting GML script: ${project_dir}\objects\TropicalEnemy\Destroy_0.gml
+Converted description /// @description Conquer Vars
+
+Converting GML script: ${project_dir}\objects\TropicalEnemy\Draw_72.gml
+Converted description /// @description Draw self
+
+Converting GML script: ${project_dir}\objects\TropicalEnemySword\Create_0.gml
+Converted description /// @description Add vars and looks
+
+Converting GML script: ${project_dir}\objects\TropicalEnemySword\Destroy_0.gml
+Converted description /// @description Conquer Vars
+
+Converting GML script: ${project_dir}\objects\TropicalEnemySword\Draw_72.gml
+Converted description /// @description Draw self
+
+Converting GML script: ${project_dir}\objects\TropicalEnemyRoyal\Create_0.gml
+Converted description /// @description Add vars and looks
+
+Converting GML script: ${project_dir}\objects\TropicalEnemyRoyal\Destroy_0.gml
+Converted description /// @description Conquer Vars
+
+Converting GML script: ${project_dir}\objects\TropicalEnemyRoyal\Draw_72.gml
+Converted description /// @description Draw self
+
+Converting GML script: ${project_dir}\objects\EnemyFrogCrew\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\EnemyFrogGunner\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\EnemyFrogCannon\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\EnemyRoyalFrogCrew\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\EnemyRoyalFrogCannon\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\EnemyFrogCaptain\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\PlayerActionRunner\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\PlayerActionRunner\Step_0.gml
+Converted builtin - line 27: view_xview -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: ${project_dir}\objects\PlayerActionRunner\Draw_64.gml
+Converted builtin - line 7: view_xview[0] -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: ${project_dir}\objects\ActionParent\Step_0.gml
+Converted builtin - line 5: view_xview -> __view_get( e__VW.XView, 0 )
+Converted description /// @description Do Actions
+
+Converting GML script: ${project_dir}\objects\ActionParent\Other_11.gml
+Converted description /// @description Attack
+
+Converting GML script: ${project_dir}\objects\ActionParent\Other_10.gml
+Converted description /// @description Create Basics
+
+Converting GML script: ${project_dir}\objects\ActionParent\Draw_75.gml
+Converted builtin - line 7: view_xview[0] -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: ${project_dir}\objects\ActionParent\Draw_74.gml
+Converted builtin - line 6: view_xview[0] -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: ${project_dir}\objects\LostEyeAction\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\LostEyeAction\Other_12.gml
+Converted description /// @description Update info
+
+Converting GML script: ${project_dir}\objects\LostEyeAction\Other_11.gml
+Converted description /// @description Attack
+
+Converting GML script: ${project_dir}\objects\BlankAction\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\BlankAction\Other_12.gml
+Converted description /// @description update Stats
+
+Converting GML script: ${project_dir}\objects\BasicMelleAction\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\BasicMelleAction\Other_12.gml
+Converted description /// @description Update info
+
+Converting GML script: ${project_dir}\objects\HeavyBoardingAction\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\HeavyBoardingAction\Other_12.gml
+Converted description /// @description Update info
+
+Converting GML script: ${project_dir}\objects\SwarmAction\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\SwarmAction\Other_12.gml
+Converted description /// @description Update info
+
+Converting GML script: ${project_dir}\objects\HammerBlowAction\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\HammerBlowAction\Other_12.gml
+Converted description /// @description Update info
+
+Converting GML script: ${project_dir}\objects\ScoutingAction\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\ScoutingAction\Other_12.gml
+Converted description /// @description Update info
+
+Converting GML script: ${project_dir}\objects\FinishingStabAction\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\FinishingStabAction\Other_12.gml
+Converted description /// @description Update info
+
+Converting GML script: ${project_dir}\objects\HoldFastAction\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\HoldFastAction\Other_12.gml
+Converted description /// @description Update info
+
+Converting GML script: ${project_dir}\objects\MonkeyBiteAction\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\MonkeyBiteAction\Other_12.gml
+Converted description /// @description Update info
+
+Converting GML script: ${project_dir}\objects\MonkeyBiteAction\Other_11.gml
+Converted description /// @description Attack
+
+Converting GML script: ${project_dir}\objects\BasicRangedAction\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\BasicRangedAction\Other_12.gml
+Converted description /// @description Update Info
+
+Converting GML script: ${project_dir}\objects\BarrageAction\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\BarrageAction\Other_12.gml
+Converted description /// @description Update Info
+
+Converting GML script: ${project_dir}\objects\LookoutAction\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\LookoutAction\Other_12.gml
+Converted description /// @description Update info
+
+Converting GML script: ${project_dir}\objects\TargetedFireAction\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\TargetedFireAction\Other_12.gml
+Converted description /// @description Update info
+
+Converting GML script: ${project_dir}\objects\SniperAction\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\SniperAction\Other_12.gml
+Converted description /// @description Update info
+
+Converting GML script: ${project_dir}\objects\CauseChaosAction\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\CauseChaosAction\Other_12.gml
+Converted description /// @description Update info
+
+Converting GML script: ${project_dir}\objects\BleedingShotAction\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\BleedingShotAction\Other_12.gml
+Converted description /// @description Update Info
+
+Converting GML script: ${project_dir}\objects\ParrotSquawkAction\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\ParrotSquawkAction\Other_12.gml
+Converted description /// @description Update Info
+
+Converting GML script: ${project_dir}\objects\BasicCannonAction\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\BasicCannonAction\Other_12.gml
+Converted description /// @description Update info
+
+Converting GML script: ${project_dir}\objects\BroadsideAction\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\BroadsideAction\Other_12.gml
+Converted description /// @description Update info
+
+Converting GML script: ${project_dir}\objects\WarningShotAction\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\WarningShotAction\Other_12.gml
+Converted description /// @description Update info
+
+Converting GML script: ${project_dir}\objects\CannonSprayAction\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\CannonSprayAction\Other_12.gml
+Converted description /// @description Update info
+
+Converting GML script: ${project_dir}\objects\ChainShotAction\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\ChainShotAction\Other_12.gml
+Converted description /// @description Update info
+
+Converting GML script: ${project_dir}\objects\ShrapnelAction\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\ShrapnelAction\Other_12.gml
+Converted description /// @description Update info
+
+Converting GML script: ${project_dir}\objects\ConcentratedFireAction\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\ConcentratedFireAction\Other_12.gml
+Converted description /// @description Update info
+
+Converting GML script: ${project_dir}\objects\MonkeyCannonAction\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\MonkeyCannonAction\Other_12.gml
+Converted description /// @description Update info
+
+Converting GML script: ${project_dir}\objects\BasicShipAction\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\BasicShipAction\Other_12.gml
+Converted description /// @description update Stats
+
+Converting GML script: ${project_dir}\objects\BasicRunAction\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\BasicRunAction\Other_12.gml
+Converted description /// @description update Stats
+
+Converting GML script: ${project_dir}\objects\OutmaneuverAction\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\OutmaneuverAction\Other_12.gml
+Converted description /// @description update Stats
+
+Converting GML script: ${project_dir}\objects\SurgeryAction\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\SurgeryAction\Other_12.gml
+Converted description /// @description update Stats
+
+Converting GML script: ${project_dir}\objects\RammingAction\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\RammingAction\Other_12.gml
+Converted description /// @description update Stats
+
+Converting GML script: ${project_dir}\objects\EngageAction\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\EngageAction\Other_12.gml
+Converted description /// @description update Stats
+
+Converting GML script: ${project_dir}\objects\DisengageAction\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\DisengageAction\Other_12.gml
+Converted description /// @description update Stats
+
+Converting GML script: ${project_dir}\objects\SurpriseAction\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\SurpriseAction\Other_12.gml
+Converted description /// @description update Stats
+
+Converting GML script: ${project_dir}\objects\RealAttack\Alarm_3.gml
+Converted description /// @description Switch turns
+
+Converting GML script: ${project_dir}\objects\RealAttack\Alarm_2.gml
+Converted description /// @description Control Animation Length & set damage
+
+Converting GML script: ${project_dir}\objects\RealAttack\Alarm_1.gml
+Converted description /// @description Animate
+
+Converting GML script: ${project_dir}\objects\RealAttack\Alarm_0.gml
+Converted description /// @description done animating/do damage
+
+Converting GML script: ${project_dir}\objects\RealAttack\Other_13.gml
+Converted description /// @description Set damage vars
+
+Converting GML script: ${project_dir}\objects\RealAttack\Other_10.gml
+Converted description /// @description Set vars
+
+Converting GML script: ${project_dir}\objects\RealAttack\Draw_64.gml
+Converted description /// @description Draw Attack
+
+Converting GML script: ${project_dir}\objects\ShipAttack\Alarm_4.gml
+Converted description /// @description Animate
+
+Converting GML script: ${project_dir}\objects\ShipAttack\Alarm_2.gml
+Converted description /// @description Activate
+
+Converting GML script: ${project_dir}\objects\ShipAttack\Step_0.gml
+Converted description /// @description Move Ship
+
+Converting GML script: ${project_dir}\objects\ShipAttack\Other_10.gml
+Converted description /// @description Set vars
+
+Converting GML script: ${project_dir}\objects\AttackAnimation\Step_0.gml
+Converted description /// @description Attack Lighting
+
+Converting GML script: ${project_dir}\objects\AttackAnimation\Other_7.gml
+Converted description /// @description Destroy
+
+Converting GML script: ${project_dir}\objects\AttackAnimation\Draw_72.gml
+Converted description /// @description Draw self
+
+Converting GML script: ${project_dir}\objects\ShipSwordAttack\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\ShipSwordAttack\Other_11.gml
+Converted description /// @description Do attack
+
+Converting GML script: ${project_dir}\objects\ShipHeavyBoardingAttack\Create_0.gml
+Converted description /// @description Sound Vars
+
+Converting GML script: ${project_dir}\objects\ShipHeavyBoardingAttack\Other_11.gml
+Converted description /// @description Do attack
+
+Converting GML script: ${project_dir}\objects\ShipSwarmAttack\Create_0.gml
+Converted description /// @description Sound Vars
+
+Converting GML script: ${project_dir}\objects\ShipSwarmAttack\Other_11.gml
+Converted description /// @description Do Attack
+
+Converting GML script: ${project_dir}\objects\ShipHammerAttack\Create_0.gml
+Converted description /// @description Sound Vars
+
+Converting GML script: ${project_dir}\objects\ShipHammerAttack\Other_12.gml
+Converted description /// @description Dont flip
+
+Converting GML script: ${project_dir}\objects\ShipHammerAttack\Other_11.gml
+Converted description /// @description Do Attack
+
+Converting GML script: ${project_dir}\objects\ShipScoutAttack\Create_0.gml
+Converted description /// @description Sound Vars
+
+Converting GML script: ${project_dir}\objects\ShipScoutAttack\Other_11.gml
+Converted description /// @description Do Attack
+
+Converting GML script: ${project_dir}\objects\ShipFinishingAttack\Create_0.gml
+Converted description /// @description Sound Vars
+
+Converting GML script: ${project_dir}\objects\ShipFinishingAttack\Other_11.gml
+Converted description /// @description Animate
+
+Converting GML script: ${project_dir}\objects\ShipHoldFastAttack\Create_0.gml
+Converted description /// @description Sound Vars
+
+Converting GML script: ${project_dir}\objects\ShipHoldFastAttack\Other_12.gml
+Converted description /// @description Dont flip
+
+Converting GML script: ${project_dir}\objects\ShipHoldFastAttack\Other_11.gml
+Converted description /// @description Do attack
+
+Converting GML script: ${project_dir}\objects\MonkeyBiteAttack\Create_0.gml
+Converted description /// @description Sound Vars
+
+Converting GML script: ${project_dir}\objects\MonkeyBiteAttack\Other_11.gml
+Converted description /// @description Do attack
+
+Converting GML script: ${project_dir}\objects\ShipGunAttack\Create_0.gml
+Converted description /// @description Sound Vars
+
+Converting GML script: ${project_dir}\objects\ShipGunAttack\Other_11.gml
+Converted description /// @description Do attack
+
+Converting GML script: ${project_dir}\objects\ShipBarrageAttack\Create_0.gml
+Converted description /// @description Sound Vars
+
+Converting GML script: ${project_dir}\objects\ShipBarrageAttack\Other_11.gml
+Converted description /// @description Do attack
+
+Converting GML script: ${project_dir}\objects\ShipLookoutAttack\Create_0.gml
+Converted description /// @description Sound Vars
+
+Converting GML script: ${project_dir}\objects\ShipLookoutAttack\Other_11.gml
+Converted description /// @description Do attack
+Converted string - line 4: 'expose' -> "expose"
+
+Converting GML script: ${project_dir}\objects\ShipChaosAttack\Create_0.gml
+Converted description /// @description Sound Vars
+
+Converting GML script: ${project_dir}\objects\ShipChaosAttack\Other_12.gml
+Converted description /// @description Animation Customs
+
+Converting GML script: ${project_dir}\objects\ShipChaosAttack\Other_11.gml
+Converted description /// @description Animate
+
+Converting GML script: ${project_dir}\objects\ShipSniperAttack\Create_0.gml
+Converted description /// @description Sound Vars
+
+Converting GML script: ${project_dir}\objects\ShipSniperAttack\Other_11.gml
+Converted description /// @description Animate
+
+Converting GML script: ${project_dir}\objects\ShipTargetedAttack\Create_0.gml
+Converted description /// @description Sound Vars
+
+Converting GML script: ${project_dir}\objects\ShipTargetedAttack\Other_11.gml
+Converted description /// @description Animate
+
+Converting GML script: ${project_dir}\objects\BleedingShotAttack\Create_0.gml
+Converted description /// @description Sound Vars
+
+Converting GML script: ${project_dir}\objects\BleedingShotAttack\Other_11.gml
+Converted description /// @description Animate
+
+Converting GML script: ${project_dir}\objects\ParrotSquawkAttack\Create_0.gml
+Converted description /// @description Sound Vars
+
+Converting GML script: ${project_dir}\objects\ParrotSquawkAttack\Other_11.gml
+Converted description /// @description Animate
+
+Converting GML script: ${project_dir}\objects\ShipCannonAttack\Create_0.gml
+Converted description /// @description Sound Vars
+
+Converting GML script: ${project_dir}\objects\ShipCannonAttack\Other_11.gml
+Converted description /// @description Animate
+
+Converting GML script: ${project_dir}\objects\BroadsideAttack\Create_0.gml
+Converted description /// @description Sound Vars
+
+Converting GML script: ${project_dir}\objects\BroadsideAttack\Other_11.gml
+Converted description /// @description Animate
+
+Converting GML script: ${project_dir}\objects\ShipWarningAttack\Create_0.gml
+Converted description /// @description Sound Vars
+
+Converting GML script: ${project_dir}\objects\ShipWarningAttack\Other_11.gml
+Converted description /// @description Animate
+Converted string - line 9: 'enemy' -> "enemy"
+
+Converting GML script: ${project_dir}\objects\SprayAttack\Create_0.gml
+Converted description /// @description Sound Vars
+
+Converting GML script: ${project_dir}\objects\SprayAttack\Other_12.gml
+Converted description /// @description Update Animation
+
+Converting GML script: ${project_dir}\objects\SprayAttack\Other_11.gml
+Converted description /// @description Animate
+
+Converting GML script: ${project_dir}\objects\ChainShotAttack\Create_0.gml
+Converted description /// @description Sound Vars
+
+Converting GML script: ${project_dir}\objects\ChainShotAttack\Other_11.gml
+Converted description /// @description Animate
+
+Converting GML script: ${project_dir}\objects\ShrapnelAttack\Create_0.gml
+Converted description /// @description Sound Vars
+
+Converting GML script: ${project_dir}\objects\ShrapnelAttack\Other_11.gml
+Converted description /// @description Animate
+
+Converting GML script: ${project_dir}\objects\ConcentratedFireAttack\Create_0.gml
+Converted description /// @description Sound Vars
+
+Converting GML script: ${project_dir}\objects\ConcentratedFireAttack\Other_11.gml
+Converted description /// @description Animate
+
+Converting GML script: ${project_dir}\objects\MonkeyCannonAttack\Create_0.gml
+Converted description /// @description Sound Vars
+
+Converting GML script: ${project_dir}\objects\MonkeyCannonAttack\Other_11.gml
+Converted description /// @description Animate
+
+Converting GML script: ${project_dir}\objects\ShipShipChange\Create_0.gml
+Converted description /// @description Sound vars
+
+Converting GML script: ${project_dir}\objects\ShipShipRun\Create_0.gml
+Converted description /// @description Sound vars
+
+Converting GML script: ${project_dir}\objects\ShipShipRun\Other_11.gml
+Converted description /// @description Do Damage
+
+Converting GML script: ${project_dir}\objects\ShipEngageAttack\Create_0.gml
+Converted description /// @description Sound vars
+
+Converting GML script: ${project_dir}\objects\ShipEngageAttack\Other_11.gml
+Converted description /// @description Add damage multiplier
+
+Converting GML script: ${project_dir}\objects\ShipDisengageAttack\Create_0.gml
+Converted description /// @description Sound vars
+
+Converting GML script: ${project_dir}\objects\ShipDisengageAttack\Other_11.gml
+Converted description /// @description Add damage multiplier
+
+Converting GML script: ${project_dir}\objects\ShipOutmaneuver\Create_0.gml
+Converted description /// @description Sound vars
+
+Converting GML script: ${project_dir}\objects\ShipOutmaneuver\Other_11.gml
+Converted description /// @description Add damage multiplier
+
+Converting GML script: ${project_dir}\objects\ShipSurgery\Create_0.gml
+Converted description /// @description Sound vars
+
+Converting GML script: ${project_dir}\objects\ShipSurgery\Other_11.gml
+Converted description /// @description heal
+
+Converting GML script: ${project_dir}\objects\ShipRamming\Create_0.gml
+Converted description /// @description Sound vars
+
+Converting GML script: ${project_dir}\objects\ShipRamming\Other_11.gml
+Converted description /// @description Do Damage
+
+Converting GML script: ${project_dir}\objects\ShipSurpriseAttack\Create_0.gml
+Converted description /// @description Sound vars
+
+Converting GML script: ${project_dir}\objects\ShipSurpriseAttack\Other_11.gml
+Converted description /// @description Add damage multiplier
+
+Converting GML script: ${project_dir}\objects\EffectParent\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\EffectParent\Alarm_1.gml
+Converted description /// @description Create sparkles
+
+Converting GML script: ${project_dir}\objects\EffectParent\Other_11.gml
+Converted description /// @description Change sparkle
+
+Converting GML script: ${project_dir}\objects\EffectParent\Other_10.gml
+Converted description /// @description Draw sparkles
+
+Converting GML script: ${project_dir}\objects\OldCombatRunner\Destroy_0.gml
+Converted builtin - line 3: view_xview[0] = 0 -> __view_set( e__VW.XView, 0, 0 )
+Converted builtin - line 4: view_yview[0] = 0 -> __view_set( e__VW.YView, 0, 0 )
+Converted builtin - line 6: view_wview[0] = room_width -> __view_set( e__VW.WView, 0, room_width )
+Converted builtin - line 5: view_hview[0] = room_height -> __view_set( e__VW.HView, 0, room_height )
+Converted description /// @description Reset view
+
+Converting GML script: ${project_dir}\objects\OldCombatRunner\Alarm_2.gml
+Converted description /// @description Wait for enemy turn
+
+Converting GML script: ${project_dir}\objects\OldCombatRunner\Alarm_1.gml
+Converted description /// @description Die
+
+Converting GML script: ${project_dir}\objects\OldCombatRunner\Alarm_0.gml
+Converted description /// @description PlaceHolder
+
+Converting GML script: ${project_dir}\objects\OldCombatRunner\Step_0.gml
+Converted builtin - line 97: view_xview[0] += combatXShift -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) + (combatXShift) )
+Converted builtin - line 107: view_xview[0] -= combatXShift -> __view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) - (combatXShift) )
+Converted builtin - line 98: view_yview[0] += combatYShift -> __view_set( e__VW.YView, 0, __view_get( e__VW.YView, 0 ) + (combatYShift) )
+Converted builtin - line 108: view_yview[0] -= combatYShift -> __view_set( e__VW.YView, 0, __view_get( e__VW.YView, 0 ) - (combatYShift) )
+Converted builtin - line 93: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 103: view_wview[0] -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 95: view_wview[0] *= 1 - combatZoomSpeed -> __view_set( e__VW.WView, 0, __view_get( e__VW.WView, 0 ) * (1 - combatZoomSpeed) )
+Converted builtin - line 105: view_wview[0] /= 1 - combatZoomSpeed -> __view_set( e__VW.WView, 0, __view_get( e__VW.WView, 0 ) / (1 - combatZoomSpeed) )
+Converted builtin - line 96: view_hview[0] *= 1 - combatZoomSpeed -> __view_set( e__VW.HView, 0, __view_get( e__VW.HView, 0 ) * (1 - combatZoomSpeed) )
+Converted builtin - line 106: view_hview[0] /= 1 - combatZoomSpeed -> __view_set( e__VW.HView, 0, __view_get( e__VW.HView, 0 ) / (1 - combatZoomSpeed) )
+Converted description /// @description Update Enemy Actions
+
+Converting GML script: ${project_dir}\objects\OldCombatRunner\Other_16.gml
+Converted description /// @description Update enemy stats
+
+Converting GML script: ${project_dir}\objects\OldCombatRunner\Other_15.gml
+Converted description /// @description Destroyed
+
+Converting GML script: ${project_dir}\objects\OldCombatRunner\Other_13.gml
+Converted description /// @description Try surrendering
+
+Converting GML script: ${project_dir}\objects\OldCombatRunner\Other_12.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\OldCombatRunner\Other_11.gml
+Converted description /// @description Update Available Actions
+
+Converting GML script: ${project_dir}\objects\OldCombatRunner\Other_10.gml
+Converted description /// @description Wait for enemy turn if stuff is open
+
+Converting GML script: ${project_dir}\objects\OldCombatRunner\Draw_64.gml
+Converted builtin - line 30: view_xview[0] -> __view_get( e__VW.XView, 0 )
+
+Converting GML script: ${project_dir}\objects\LoadingScreenWaves\Create_0.gml
+Converted description /// @description BackgroundStart
+
+Converting GML script: ${project_dir}\objects\LoadingScreenWaves\Alarm_1.gml
+Converted description /// @description Begin Load
+
+Converting GML script: ${project_dir}\objects\LoadingScreenWaves\Alarm_0.gml
+Converted description /// @description Begin Save
+
+Converting GML script: ${project_dir}\objects\LoadingScreenWaves\Step_0.gml
+Converted description /// @description Move Waves
+
+Converting GML script: ${project_dir}\objects\LoadingScreenWaves\Other_12.gml
+Converted description /// @description LoadGame
+
+Converting GML script: ${project_dir}\objects\LoadingScreenWaves\Other_11.gml
+Converted description /// @description go to pirate chooser room
+
+Converting GML script: ${project_dir}\objects\LoadingScreenWaves\Other_10.gml
+Converted description /// @description Go to game room
+
+Converting GML script: ${project_dir}\objects\LoadingScreenWaves\Draw_64.gml
+Converted description /// @description Draw Background
+
+Converting GML script: ${project_dir}\objects\SaveGameRunner\Create_0.gml
+Converted description /// @description Save Game Vars
+
+Converting GML script: ${project_dir}\objects\SaveGameRunner\Other_12.gml
+Converted description /// @description LoadGame Game
+
+Converting GML script: ${project_dir}\objects\SaveGameRunner\Other_11.gml
+Converted description /// @description Minor Save
+
+Converting GML script: ${project_dir}\objects\SaveGameRunner\Other_10.gml
+Converted description /// @description Major Save
+
+Converting GML script: ${project_dir}\objects\TitleObject\Create_0.gml
+Converted description /// @description Falling Vars
+
+Converting GML script: ${project_dir}\objects\TitleObject\Step_0.gml
+Converted description /// @description Fall
+
+Converting GML script: ${project_dir}\objects\TitleObject\Draw_0.gml
+Converted description /// @description Draw self
+
+Converting GML script: ${project_dir}\objects\MenuButtonMaker\Create_0.gml
+Converted description /// @description Font
+Converted string - line 3: '!' -> "!"
+Converted string - line 4: '!' -> "!"
+Converted string - line 5: '!' -> "!"
+
+Converting GML script: ${project_dir}\objects\MenuButtonMaker\Other_12.gml
+Converted description /// @description Create Load Game
+
+Converting GML script: ${project_dir}\objects\MenuButtonMaker\Other_11.gml
+Converted description /// @description Create New Game
+
+Converting GML script: ${project_dir}\objects\MenuButtonMaker\Other_10.gml
+Converted description /// @description Create Buttons
+
+Converting GML script: ${project_dir}\objects\MainMenuBackgroundRunner\Create_0.gml
+Converted description /// @description Fonts
+Converted string - line 3: '!' -> "!"
+Converted string - line 4: '!' -> "!"
+
+Converting GML script: ${project_dir}\objects\MainMenuBackgroundRunner\Draw_0.gml
+Converted description /// @description Draw Background Land
+
+Converting GML script: ${project_dir}\objects\MenuButton\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\MenuButton\Step_0.gml
+Converted description /// @description Fall
+
+Converting GML script: ${project_dir}\objects\MenuButton\Other_12.gml
+Converted description /// @description Exit Game
+
+Converting GML script: ${project_dir}\objects\MenuButton\Other_11.gml
+Converted description /// @description New Game
+
+Converting GML script: ${project_dir}\objects\MenuButton\Other_10.gml
+Converted description /// @description New Game
+
+Converting GML script: ${project_dir}\objects\MenuButton\Draw_0.gml
+Converted description /// @description Draw Self
+
+Converting GML script: ${project_dir}\objects\NewGameMaker\Create_0.gml
+Converted description /// @description Name vars
+
+Converting GML script: ${project_dir}\objects\NewGameMaker\Step_0.gml
+Converted description /// @description Fall
+
+Converting GML script: ${project_dir}\objects\NewGameMaker\Draw_0.gml
+Converted description /// @description Draw Self
+
+Converting GML script: ${project_dir}\objects\LoadGameMaker\Create_0.gml
+Converted description /// @description Get Load Games
+
+Converting GML script: ${project_dir}\objects\LoadGameMaker\Step_0.gml
+Converted description /// @description Fall
+
+Converting GML script: ${project_dir}\objects\LoadGameMaker\Draw_0.gml
+Converted description /// @description Draw Self
+
+Converting GML script: ${project_dir}\objects\MenuCloud\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\MenuCloud\Step_0.gml
+Converted description /// @description Move
+
+Converting GML script: ${project_dir}\objects\ChoosePirateBackgroundRunner\Create_0.gml
+Converted description /// @description BackgroundStart
+
+Converting GML script: ${project_dir}\objects\ChoosePirateBackgroundRunner\Step_0.gml
+Converted description /// @description Move Waves
+
+Converting GML script: ${project_dir}\objects\ChoosePirateBackgroundRunner\Draw_0.gml
+Converted description /// @description Draw Background
+
+Converting GML script: ${project_dir}\objects\ChoosePirateParent\Step_0.gml
+Converted description /// @description Slide in
+
+Converting GML script: ${project_dir}\objects\ChoosePirateParent\Other_10.gml
+Converted description /// @description Create Pirate
+
+Converting GML script: ${project_dir}\objects\ChoosePirateParent\Draw_73.gml
+Converted description /// @description Draw Pirate Menu
+
+Converting GML script: ${project_dir}\objects\ChoosePirateParent\Draw_64.gml
+Converted description /// @description Draw Stats
+
+Converting GML script: ${project_dir}\objects\ChoosePirateParent\KeyPress_8.gml
+Converted description /// @description TEMP
+
+Converting GML script: ${project_dir}\objects\ChooseCaptain\Create_0.gml
+Converted description /// @description Make Pirate Traits
+Converted string - line 75: 'wheel' -> "wheel"
+Converted string - line 76: 'sail' -> "sail"
+Converted string - line 77: 'rigging' -> "rigging"
+Converted string - line 78: 'cannon' -> "cannon"
+Converted string - line 79: 'medical' -> "medical"
+Converted string - line 80: 'survival' -> "survival"
+
+Converting GML script: ${project_dir}\objects\ChooseCaptain\Alarm_0.gml
+Converted description /// @description Gone
+
+Converting GML script: ${project_dir}\objects\ChooseFirstMate\Create_0.gml
+Converted description /// @description Fonts
+Converted string - line 3: '!' -> "!"
+Converted string - line 4: '!' -> "!"
+Converted string - line 76: 'wheel' -> "wheel"
+Converted string - line 77: 'sail' -> "sail"
+Converted string - line 78: 'rigging' -> "rigging"
+Converted string - line 79: 'cannon' -> "cannon"
+Converted string - line 80: 'medical' -> "medical"
+Converted string - line 81: 'survival' -> "survival"
+
+Converting GML script: ${project_dir}\objects\ChooseFirstMate\Alarm_0.gml
+Converted description /// @description Go to game room
+
+Converting GML script: ${project_dir}\objects\ChoosePirateShip\Create_0.gml
+Converted description /// @description Pirate Ship
+
+Converting GML script: ${project_dir}\objects\ChoosePirateShip\Step_0.gml
+Converted description /// @description Move
+
+Converting GML script: ${project_dir}\objects\ChoosePirateShip\Draw_0.gml
+Converted description /// @description Dont draw
+
+Converting GML script: ${project_dir}\objects\LightParent\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\LightParent\Alarm_1.gml
+Converted description /// @description flickering
+
+Converting GML script: ${project_dir}\objects\LightParent\Alarm_0.gml
+Converted description /// @description Set lighting scale
+
+Converting GML script: ${project_dir}\objects\LightParent\Other_11.gml
+Converted description /// @description Normalize Light Amounts
+
+Converting GML script: ${project_dir}\objects\TestLight\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\TestLight\Step_0.gml
+Converted description /// @description Move to mouse
+
+Converting GML script: ${project_dir}\objects\TestLight\KeyPress_18.gml
+Converted description /// @description TEMP
+
+Converting GML script: ${project_dir}\objects\SunLight\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\SunLight\Step_0.gml
+Converted description /// @description Move to sun
+
+Converting GML script: ${project_dir}\objects\MoonLight\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\MoonLight\Step_0.gml
+Converted description /// @description Move to moon
+
+Converting GML script: instance inst_12ED2B07 creation code
+Error: variable 'myLayer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted string - line 15: 'rigging' -> "rigging"
+
+Converting GML script: instance inst_5461EC4F creation code
+Error: variable 'myLayer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted string - line 16: 'rigging' -> "rigging"
+
+Converting GML script: instance inst_D7732F16 creation code
+Error: variable 'myLayer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted string - line 15: 'wheel' -> "wheel"
+
+Converting GML script: instance inst_F8B12BF1 creation code
+Error: variable 'myLayer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted string - line 15: 'rigging' -> "rigging"
+
+Converting GML script: instance inst_5377D9A1 creation code
+Error: variable 'myLayer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted string - line 15: 'cannon' -> "cannon"
+
+Converting GML script: instance inst_086C010C creation code
+Error: variable 'myLayer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted string - line 15: 'cannon' -> "cannon"
+
+Converting GML script: instance inst_EB485769 creation code
+Error: variable 'myLayer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted string - line 15: 'bed' -> "bed"
+
+Converting GML script: instance inst_8E811ED1 creation code
+Error: variable 'myLayer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted string - line 15: 'bed' -> "bed"
+
+Converting GML script: instance inst_DFC7FA2A creation code
+Error: variable 'myLayer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted string - line 15: 'bed' -> "bed"
+
+Converting GML script: instance inst_D3ABDF40 creation code
+Error: variable 'myLayer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted string - line 15: 'cannon' -> "cannon"
+
+Converting GML script: instance inst_7FB3A37F creation code
+Error: variable 'myLayer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted string - line 15: 'storage' -> "storage"
+
+Converting GML script: instance inst_A0CA2353 creation code
+Error: variable 'myLayer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted string - line 15: 'storage' -> "storage"
+
+Converting GML script: instance inst_F3046377 creation code
+Error: variable 'myLayer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted string - line 15: 'storage' -> "storage"
+
+Converting GML script: instance inst_0D638761 creation code
+Error: variable 'myLayer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted string - line 15: 'storage' -> "storage"
+
+Converting GML script: instance inst_59E0CA7D creation code
+Error: variable 'myLayer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted string - line 15: 'storage' -> "storage"
+
+Converting GML script: instance inst_B6064738 creation code
+Error: variable 'myLayer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted string - line 15: 'medical' -> "medical"
+
+Converting GML script: instance inst_4C62DBCE creation code
+Error: variable 'myLayer' has same name as a built-in (function, constant or variable), it must be renamed to function correctly
+Converted string - line 15: 'storage' -> "storage"
+
+Missing audiogroup for sound: 'WavesSnd' - setting to default audio group
+Missing audiogroup for sound: 'BellSnd' - setting to default audio group
+Missing audiogroup for sound: 'DeathBellSnd' - setting to default audio group
+Missing audiogroup for sound: 'OpenMenuSnd' - setting to default audio group
+Missing audiogroup for sound: 'CloseMenuSound' - setting to default audio group
+Missing audiogroup for sound: 'OpenMapSnd' - setting to default audio group
+Missing audiogroup for sound: 'CloseMapSnd' - setting to default audio group
+Missing audiogroup for sound: 'SlidingOpenSnd' - setting to default audio group
+Missing audiogroup for sound: 'SlidingClosedSnd' - setting to default audio group
+Missing audiogroup for sound: 'StoreSelectSnd' - setting to default audio group
+Missing audiogroup for sound: 'StoreBuySnd' - setting to default audio group
+Missing audiogroup for sound: 'DingSnd' - setting to default audio group
+Missing audiogroup for sound: 'ShipCreakSnd' - setting to default audio group
+Missing audiogroup for sound: 'SwarmSnd' - setting to default audio group
+Missing audiogroup for sound: 'SwordSnd' - setting to default audio group
+Missing audiogroup for sound: 'ShieldsSnd' - setting to default audio group
+Missing audiogroup for sound: 'HammerSnd' - setting to default audio group
+Missing audiogroup for sound: 'BloodySwordSnd' - setting to default audio group
+Missing audiogroup for sound: 'ScoutingSnd' - setting to default audio group
+Missing audiogroup for sound: 'HeavySwordSnd' - setting to default audio group
+Missing audiogroup for sound: 'GunShotSnd' - setting to default audio group
+Missing audiogroup for sound: 'SniperSnd' - setting to default audio group
+Missing audiogroup for sound: 'BarrageSnd' - setting to default audio group
+Missing audiogroup for sound: 'TargetedSnd' - setting to default audio group
+Missing audiogroup for sound: 'BloodySnd' - setting to default audio group
+Missing audiogroup for sound: 'ChaosSnd' - setting to default audio group
+Missing audiogroup for sound: 'LookoutSnd' - setting to default audio group
+Missing audiogroup for sound: 'CannonSnd' - setting to default audio group
+Missing audiogroup for sound: 'BroadsideSnd' - setting to default audio group
+Missing audiogroup for sound: 'ChainSnd' - setting to default audio group
+Missing audiogroup for sound: 'ShrapnelSnd' - setting to default audio group
+Missing audiogroup for sound: 'WarningSnd' - setting to default audio group
+Missing audiogroup for sound: 'RopeHookSnd' - setting to default audio group
+Missing audiogroup for sound: 'RopeSwingSnd' - setting to default audio group
+Missing audiogroup for sound: 'JungleBirdSnd' - setting to default audio group
+Missing audiogroup for sound: 'BatSnd' - setting to default audio group
+Missing audiogroup for sound: 'DiggingSnd' - setting to default audio group
+Missing audiogroup for sound: 'SplashSnd' - setting to default audio group
+Missing audiogroup for sound: 'CombatMusicSnd' - setting to default audio group
+Missing audiogroup for sound: 'DefeatMusicSnd' - setting to default audio group
+Missing audiogroup for sound: 'PortMusicSnd' - setting to default audio group
+Missing audiogroup for sound: 'LeaveHerSnd' - setting to default audio group
+Missing audiogroup for sound: 'OldChariotSnd' - setting to default audio group
+Missing audiogroup for sound: 'WellermanSnd' - setting to default audio group
+Missing audiogroup for sound: 'DrunkenSailorSnd' - setting to default audio group
+Missing audiogroup for sound: 'AwayRioSnd' - setting to default audio group
+Missing audiogroup for sound: 'PortMusicTropicalSnd' - setting to default audio group
+Missing audiogroup for sound: 'LeaveHerTropicalSnd' - setting to default audio group
+Missing audiogroup for sound: 'OldChariotTropicalSnd' - setting to default audio group
+Missing audiogroup for sound: 'WellermanTropicalSnd' - setting to default audio group
+Missing audiogroup for sound: 'DrunkenSailorTropicalSnd' - setting to default audio group
+Missing audiogroup for sound: 'AwayRioTropicalSnd' - setting to default audio group
+Game speed set to 60
+Added compatibility script 'action/action_end_game.gml'
+Added compatibility script 'action/action_if_variable.gml'
+Added compatibility script 'background/background_add.gml'
+Added compatibility script 'background/background_create_from_surface.gml'
+Added compatibility script 'background/background_get_height.gml'
+Added compatibility script 'background/background_get_uvs.gml'
+Added compatibility script 'background/background_get_width.gml'
+Added compatibility script 'background/background_save.gml'
+Added compatibility script 'background/draw_background.gml'
+Added compatibility script 'background/draw_background_ext.gml'
+Added compatibility script 'background/draw_background_part.gml'
+Added compatibility script 'background/draw_background_part_ext.gml'
+Added compatibility script 'draw/draw_set_blend_mode.gml'
+Added compatibility script 'instance/instance_create.gml'
+Added compatibility script 'object/object_get_depth.gml'
+Added compatibility script 'view/__view_get.gml'
+Added compatibility script 'view/__view_set.gml'
+Added compatibility script 'view/__view_set_internal.gml'
+Added compatibility script 'view/__view_set_pp.gml'
+Added compatibility script 'action/__init_action.gml'
+Added compatibility script 'background/__init_background.gml'
+Added compatibility script 'view/__init_view.gml'
+Added compatibility script '__init_global.gml'
+Added compatibility script '__global_object_depths.gml'

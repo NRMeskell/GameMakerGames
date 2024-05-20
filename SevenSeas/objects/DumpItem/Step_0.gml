@@ -1,0 +1,42 @@
+/// @description Close Notifacation
+
+captionSize = string_height_ext(string_hash_to_newline(caption), 12, sprite_get_width(NotifacationSpr)-20) * 1.4
+textSize = 0
+
+notificationSize = captionSize
+
+onButtonLeft = point_in_rectangle(mouse_x, mouse_y, drawX - buttonShift - sprite_get_width(ButtonSpr)/4, drawY - sprite_get_height(ButtonSpr)/2.5 + (notificationSize)/2 + 20, drawX - buttonShift + sprite_get_width(ButtonSpr)/4, drawY + sprite_get_height(ButtonSpr)/2.5 + (notificationSize)/2 + 20)
+onButtonRight = point_in_rectangle(mouse_x, mouse_y, drawX + buttonShift - sprite_get_width(ButtonSpr)/4, drawY - sprite_get_height(ButtonSpr)/2.5 + (notificationSize)/2 + 20, drawX + buttonShift + sprite_get_width(ButtonSpr)/4, drawY + sprite_get_height(ButtonSpr)/2.5 + (notificationSize)/2 + 20)
+
+if (mouse_check_button_pressed(mb_left) and (onButtonRight or onButtonLeft))// or eventTimer < 1
+    {
+    closed = true
+    audio_play_sound(SlidingOpenSnd, 1, false)
+    if onButtonLeft
+        event_user(myEvent)
+    }
+    
+if closed
+    {
+    drawY += min(eventSpeed, point_distance(x, drawY, x, room_height/2)/eventFade + 1)
+    if drawY > room_height*1.25
+        {
+        eventTimer = eventTimerLength
+        closed = false
+        instance_destroy()
+        }
+    }
+
+///Global Menu Open
+
+global.eventOpen = instance_exists(Event)
+global.pirateOpen = false
+
+with Pirate
+    if selected = true
+        global.pirateOpen = true
+        
+if myDump != undefined
+    myDump.selected = false
+
+

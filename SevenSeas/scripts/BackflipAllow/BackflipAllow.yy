@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"BackflipAllow",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"BackflipAllow",
+  "parent":{
+    "name":"Backflip",
+    "path":"folders/Scripts/Events/Requests/daring/Backflip.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"ClimbCliff",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ClimbCliff",
+  "parent":{
+    "name":"Special",
+    "path":"folders/Scripts/LandPort/CampFireChoices/Special.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

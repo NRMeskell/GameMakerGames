@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"MermaidGrab",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"MermaidGrab",
+  "parent":{
+    "name":"Mermaids",
+    "path":"folders/Scripts/Events/SailingEvents/TropicalEvents/Mermaids.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

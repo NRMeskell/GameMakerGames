@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"TrainingAllow",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"TrainingAllow",
+  "parent":{
+    "name":"Training",
+    "path":"folders/Scripts/Events/Requests/fearsome/Training.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

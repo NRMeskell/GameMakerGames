@@ -1,0 +1,2110 @@
+GameMaker Studio 1 font texture has been backed up at C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\fonts\DisplayResourceFont\DisplayResourceFont.gms1.png
+GameMaker Studio 1 font texture has been backed up at C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\fonts\CaptionFont\CaptionFont.gms1.png
+GameMaker Studio 1 font texture has been backed up at C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\fonts\DiscriptionFont\DiscriptionFont.gms1.png
+GameMaker Studio 1 font texture has been backed up at C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\fonts\GameOverFont\GameOverFont.gms1.png
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Timer\Create_0.gml
+Converted description /// @description Timer
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Timer\Alarm_0.gml
+Converted description /// @description Second Timer
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Timer\Step_0.gml
+Converted description /// @description Time Tick
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Timer\Draw_74.gml
+Converted description /// @description Draw Time
+String not found: ConversionLog_ConvertedString 14 ' ' " "
+String not found: ConversionLog_ConvertedString 14 '0' "0"
+String not found: ConversionLog_ConvertedString 15 ' ' " "
+String not found: ConversionLog_ConvertedString 15 '0' "0"
+String not found: ConversionLog_ConvertedString 16 ' ' " "
+String not found: ConversionLog_ConvertedString 16 '0' "0"
+String not found: ConversionLog_ConvertedString 18 ':' ":"
+String not found: ConversionLog_ConvertedString 18 ':' ":"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\WorkerTag\Create_0.gml
+Converted description /// @description Visual and Vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\WorkerTag\Step_0.gml
+Converted description /// @description Task and Level
+String not found: ConversionLog_ConvertedString 3 'Building' "Building"
+String not found: ConversionLog_ConvertedString 6 'Tree' "Tree"
+String not found: ConversionLog_ConvertedString 9 'Rock' "Rock"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\WorkerTag\Mouse_7.gml
+Converted description /// @description Select
+String not found: ConversionLog_ConvertedString 5 'None' "None"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\WorkerTag\Draw_74.gml
+Converted description /// @description Draw Self and Level
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\TownHall\Create_0.gml
+Converted builtin - line 49: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 50: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 52: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 53: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 55: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 56: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 58: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 59: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 61: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 62: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Level Assign
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\TownHall\Alarm_1.gml
+Converted description /// @description Alarm[1] (Gold)/// @param Gold
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\TownHall\Step_0.gml
+Converted description /// @description Restart Game (New Game)/// @param New Game
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\TownHall\Draw_64.gml
+Converted builtin - line 32: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 34: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 35: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 36: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 40: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 41: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 43: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 49: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 49: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 50: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 50: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 51: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 51: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 55: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 32: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 34: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 35: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 36: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 40: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 41: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 43: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 49: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 49: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 50: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 50: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 51: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 51: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 55: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Draw Select
+String not found: ConversionLog_ConvertedString 32 'Town Hall' "Town Hall"
+String not found: ConversionLog_ConvertedString 34 'Resources:' "Resources:"
+String not found: ConversionLog_ConvertedString 35 '+' "+"
+String not found: ConversionLog_ConvertedString 36 '+' "+"
+String not found: ConversionLog_ConvertedString 43 'Protect at#all costs!' "Protect at#all costs!"
+String not found: ConversionLog_ConvertedString 55 '/' "/"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\TownHall\Draw_0.gml
+Converted description /// @description Health Bar
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\TownHall\KeyPress_72.gml
+Converted description /// @description TEMP
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\TowerVars\Create_0.gml
+Converted description /// @description Arrow Vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\ArrowTower\Create_0.gml
+Converted builtin - line 61: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 62: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 64: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 65: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 67: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 68: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 70: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 71: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Looks and vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\ArrowTower\Step_0.gml
+Converted description /// @description Collision With Worker and Building
+String not found: ConversionLog_ConvertedString 7 'Building' "Building"
+String not found: ConversionLog_ConvertedString 47 'Building' "Building"
+String not found: ConversionLog_ConvertedString 61 'Building' "Building"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\ArrowTower\Draw_64.gml
+Converted builtin - line 21: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 28: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 30: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 31: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 37: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 39: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 40: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 46: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 48: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 49: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 55: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 57: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 58: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 64: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 66: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 67: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 73: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 75: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 76: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 82: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 84: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 85: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 21: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 28: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 30: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 31: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 37: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 39: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 40: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 46: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 48: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 49: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 55: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 57: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 58: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 64: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 66: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 67: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 73: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 75: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 76: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 82: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 84: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 85: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Draw Menu
+String not found: ConversionLog_ConvertedString 11 'Damage: ' "Damage: "
+String not found: ConversionLog_ConvertedString 21 'Upgrades:' "Upgrades:"
+String not found: ConversionLog_ConvertedString 28 'Arrow Tower' "Arrow Tower"
+String not found: ConversionLog_ConvertedString 30 'Fast Tower' "Fast Tower"
+String not found: ConversionLog_ConvertedString 31 'Range Tower' "Range Tower"
+String not found: ConversionLog_ConvertedString 37 'Fast Tower' "Fast Tower"
+String not found: ConversionLog_ConvertedString 39 'Rapid Tower' "Rapid Tower"
+String not found: ConversionLog_ConvertedString 40 'Spray Tower' "Spray Tower"
+String not found: ConversionLog_ConvertedString 46 'Range Tower' "Range Tower"
+String not found: ConversionLog_ConvertedString 48 'Stun Tower' "Stun Tower"
+String not found: ConversionLog_ConvertedString 49 'Sniper Tower' "Sniper Tower"
+String not found: ConversionLog_ConvertedString 55 'Spray Tower' "Spray Tower"
+String not found: ConversionLog_ConvertedString 57 'No Upgrades' "No Upgrades"
+String not found: ConversionLog_ConvertedString 58 'No Upgrades' "No Upgrades"
+String not found: ConversionLog_ConvertedString 64 'Rapid Tower' "Rapid Tower"
+String not found: ConversionLog_ConvertedString 66 'No Upgrades' "No Upgrades"
+String not found: ConversionLog_ConvertedString 67 'No Upgrades' "No Upgrades"
+String not found: ConversionLog_ConvertedString 73 'Sniper Tower' "Sniper Tower"
+String not found: ConversionLog_ConvertedString 75 'No Upgrades' "No Upgrades"
+String not found: ConversionLog_ConvertedString 76 'No Upgrades' "No Upgrades"
+String not found: ConversionLog_ConvertedString 82 'Stun Tower' "Stun Tower"
+String not found: ConversionLog_ConvertedString 84 'No Upgrades' "No Upgrades"
+String not found: ConversionLog_ConvertedString 85 'No Upgrades' "No Upgrades"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\ArrowTower\Draw_0.gml
+Converted description /// @description Health Bar
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\MagicTower\Create_0.gml
+Converted builtin - line 63: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 64: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 66: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 67: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 69: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 70: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 72: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 73: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Looks and vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\MagicTower\Step_0.gml
+Converted description /// @description Collision With Worker and Building
+String not found: ConversionLog_ConvertedString 7 'Building' "Building"
+String not found: ConversionLog_ConvertedString 47 'Building' "Building"
+String not found: ConversionLog_ConvertedString 61 'Building' "Building"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\MagicTower\Draw_64.gml
+Converted builtin - line 21: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 28: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 30: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 31: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 37: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 39: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 40: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 46: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 48: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 49: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 55: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 57: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 58: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 64: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 66: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 67: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 73: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 75: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 76: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 82: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 84: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 85: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 21: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 28: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 30: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 31: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 37: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 39: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 40: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 46: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 48: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 49: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 55: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 57: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 58: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 64: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 66: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 67: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 73: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 75: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 76: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 82: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 84: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 85: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Draw Menu
+String not found: ConversionLog_ConvertedString 11 'Damage: ' "Damage: "
+String not found: ConversionLog_ConvertedString 21 'Upgrades:' "Upgrades:"
+String not found: ConversionLog_ConvertedString 28 'Magic Tower' "Magic Tower"
+String not found: ConversionLog_ConvertedString 30 'Fire Tower' "Fire Tower"
+String not found: ConversionLog_ConvertedString 31 'Energy Tower' "Energy Tower"
+String not found: ConversionLog_ConvertedString 37 'Fire Tower' "Fire Tower"
+String not found: ConversionLog_ConvertedString 39 'Bomb Tower' "Bomb Tower"
+String not found: ConversionLog_ConvertedString 40 'Torch Fire' "Torch Fire"
+String not found: ConversionLog_ConvertedString 46 'Energy Tower' "Energy Tower"
+String not found: ConversionLog_ConvertedString 48 'Bolt Tower' "Bolt Tower"
+String not found: ConversionLog_ConvertedString 49 'Chain Tower' "Chain Tower"
+String not found: ConversionLog_ConvertedString 55 'Torch Tower' "Torch Tower"
+String not found: ConversionLog_ConvertedString 57 'No Upgrades' "No Upgrades"
+String not found: ConversionLog_ConvertedString 58 'No Upgrades' "No Upgrades"
+String not found: ConversionLog_ConvertedString 64 'Bomb Tower' "Bomb Tower"
+String not found: ConversionLog_ConvertedString 66 'No Upgrades' "No Upgrades"
+String not found: ConversionLog_ConvertedString 67 'No Upgrades' "No Upgrades"
+String not found: ConversionLog_ConvertedString 73 'Bolt Tower' "Bolt Tower"
+String not found: ConversionLog_ConvertedString 75 'No Upgrades' "No Upgrades"
+String not found: ConversionLog_ConvertedString 76 'No Upgrades' "No Upgrades"
+String not found: ConversionLog_ConvertedString 82 'Chain Tower' "Chain Tower"
+String not found: ConversionLog_ConvertedString 84 'No Upgrades' "No Upgrades"
+String not found: ConversionLog_ConvertedString 85 'No Upgrades' "No Upgrades"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\MagicTower\Draw_0.gml
+Converted description /// @description Health Bar
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\House\Step_0.gml
+Converted builtin - line 143: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 144: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 146: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 147: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 149: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 150: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 152: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 153: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 155: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 156: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Collision With Worker and Building
+String not found: ConversionLog_ConvertedString 7 'Building' "Building"
+String not found: ConversionLog_ConvertedString 47 'Building' "Building"
+String not found: ConversionLog_ConvertedString 61 'Building' "Building"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\House\Draw_64.gml
+Converted builtin - line 17: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 26: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 28: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 31: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 37: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 37: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 38: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 38: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 39: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 39: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 43: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 44: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 54: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 55: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 57: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 58: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 17: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 26: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 28: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 31: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 37: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 37: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 38: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 38: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 39: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 39: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 43: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 44: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 60: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 61: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 63: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 64: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 66: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 67: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Draw Menu
+String not found: ConversionLog_ConvertedString 17 'House' "House"
+String not found: ConversionLog_ConvertedString 26 'Resources:' "Resources:"
+String not found: ConversionLog_ConvertedString 31 '+1' "+1"
+String not found: ConversionLog_ConvertedString 43 '/' "/"
+String not found: ConversionLog_ConvertedString 44 'Health' "Health"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\House\Draw_0.gml
+Converted description /// @description Health Bar
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Tavern\Create_0.gml
+Converted description /// @description Looks and vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Tavern\Step_0.gml
+Converted builtin - line 155: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 156: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 158: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 159: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 161: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 162: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 164: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 165: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 167: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 168: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Collision With Worker and Building
+String not found: ConversionLog_ConvertedString 7 'Building' "Building"
+String not found: ConversionLog_ConvertedString 48 'Building' "Building"
+String not found: ConversionLog_ConvertedString 62 'Building' "Building"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Tavern\Draw_64.gml
+Converted builtin - line 14: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 23: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 27: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 33: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 33: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 34: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 34: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 35: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 35: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 42: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 43: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 53: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 54: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 56: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 57: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 14: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 23: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 27: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 33: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 33: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 34: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 34: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 35: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 35: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 42: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 43: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 59: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 60: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 62: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 63: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 65: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 66: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Draw Menu
+String not found: ConversionLog_ConvertedString 14 'Tavern' "Tavern"
+String not found: ConversionLog_ConvertedString 23 'Resources:' "Resources:"
+String not found: ConversionLog_ConvertedString 27 'Economy' "Economy"
+String not found: ConversionLog_ConvertedString 42 '/' "/"
+String not found: ConversionLog_ConvertedString 43 'Health' "Health"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Tavern\Draw_0.gml
+Converted description /// @description Health Bar
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Inn\Step_0.gml
+Converted builtin - line 150: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 151: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 153: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 154: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 156: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 157: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 159: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 160: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 162: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 163: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Collision With Worker and Building
+String not found: ConversionLog_ConvertedString 7 'Building' "Building"
+String not found: ConversionLog_ConvertedString 47 'Building' "Building"
+String not found: ConversionLog_ConvertedString 61 'Building' "Building"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Inn\Draw_64.gml
+Converted builtin - line 17: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 26: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 29: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 35: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 35: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 36: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 36: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 37: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 37: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 41: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 42: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 52: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 53: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 55: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 56: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 17: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 26: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 29: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 35: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 35: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 36: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 36: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 37: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 37: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 41: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 42: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 58: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 59: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 61: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 62: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 64: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 65: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Draw Menu
+String not found: ConversionLog_ConvertedString 17 'Cathedral' "Cathedral"
+String not found: ConversionLog_ConvertedString 26 'Heals#Buildings' "Heals#Buildings"
+String not found: ConversionLog_ConvertedString 29 '' ""
+String not found: ConversionLog_ConvertedString 41 '/' "/"
+String not found: ConversionLog_ConvertedString 42 'Health' "Health"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Inn\Draw_0.gml
+Converted description /// @description Health Bar
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\WorkHouse\Create_0.gml
+Converted description /// @description Looks and vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\WorkHouse\Step_0.gml
+Converted builtin - line 157: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 158: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 160: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 161: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 163: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 164: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 166: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 167: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 169: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 170: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Collision With Worker and Building
+String not found: ConversionLog_ConvertedString 7 'Building' "Building"
+String not found: ConversionLog_ConvertedString 47 'Building' "Building"
+String not found: ConversionLog_ConvertedString 61 'Building' "Building"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\WorkHouse\Draw_64.gml
+Converted builtin - line 19: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 28: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 30: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 33: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 39: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 39: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 40: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 40: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 41: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 41: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 45: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 46: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 64: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 65: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 67: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 68: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 19: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 28: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 30: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 33: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 39: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 39: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 40: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 40: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 41: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 41: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 45: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 46: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 70: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 71: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 73: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 74: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 76: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 77: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Draw Menu
+String not found: ConversionLog_ConvertedString 19 'Work House' "Work House"
+String not found: ConversionLog_ConvertedString 28 'Resources:' "Resources:"
+String not found: ConversionLog_ConvertedString 33 '+1' "+1"
+String not found: ConversionLog_ConvertedString 45 '/' "/"
+String not found: ConversionLog_ConvertedString 46 'Health' "Health"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\WorkHouse\Draw_0.gml
+Converted description /// @description Health Bar
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Homestead\Create_0.gml
+Converted description /// @description Looks and vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Homestead\Alarm_0.gml
+Converted description /// @description Create Food
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Homestead\Step_0.gml
+Converted builtin - line 158: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 159: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 161: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 162: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 164: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 165: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 167: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 168: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 170: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 171: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Collision With Worker and Building
+String not found: ConversionLog_ConvertedString 7 'Building' "Building"
+String not found: ConversionLog_ConvertedString 48 'Building' "Building"
+String not found: ConversionLog_ConvertedString 62 'Building' "Building"
+String not found: ConversionLog_ConvertedString 217 'Tree' "Tree"
+String not found: ConversionLog_ConvertedString 222 'Rock' "Rock"
+String not found: ConversionLog_ConvertedString 227 'Gold' "Gold"
+String not found: ConversionLog_ConvertedString 233 'None' "None"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Homestead\Draw_64.gml
+Converted builtin - line 14: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 23: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 27: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 33: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 33: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 34: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 34: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 35: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 35: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 42: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 43: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 53: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 54: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 56: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 57: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 14: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 23: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 27: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 33: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 33: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 34: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 34: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 35: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 35: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 42: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 43: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 59: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 60: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 62: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 63: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 65: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 66: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Draw Menu
+String not found: ConversionLog_ConvertedString 14 'Homestead' "Homestead"
+String not found: ConversionLog_ConvertedString 23 'Food:' "Food:"
+String not found: ConversionLog_ConvertedString 27 '/100' "/100"
+String not found: ConversionLog_ConvertedString 42 '/' "/"
+String not found: ConversionLog_ConvertedString 43 'Health' "Health"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Homestead\Draw_0.gml
+Converted description /// @description Health Bar
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Farm\Step_0.gml
+Converted builtin - line 124: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 125: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 127: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 128: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 130: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 131: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 133: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 134: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 136: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 137: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Collision With Worker and Building
+String not found: ConversionLog_ConvertedString 7 'Building' "Building"
+String not found: ConversionLog_ConvertedString 47 'Building' "Building"
+String not found: ConversionLog_ConvertedString 61 'Building' "Building"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Farm\Draw_64.gml
+Converted builtin - line 17: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 26: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 29: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 35: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 35: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 36: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 36: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 37: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 37: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 41: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 42: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 52: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 53: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 55: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 56: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 17: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 26: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 29: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 35: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 35: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 36: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 36: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 37: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 37: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 41: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 42: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 58: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 59: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 61: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 62: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 64: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 65: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Draw Menu
+String not found: ConversionLog_ConvertedString 17 'Farm' "Farm"
+String not found: ConversionLog_ConvertedString 26 'Resources:' "Resources:"
+String not found: ConversionLog_ConvertedString 29 'Food' "Food"
+String not found: ConversionLog_ConvertedString 41 '/' "/"
+String not found: ConversionLog_ConvertedString 42 'Health' "Health"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Farm\Draw_0.gml
+Converted description /// @description Health Bar
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Bloodstone\Create_0.gml
+Converted description /// @description Looks and vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Bloodstone\Alarm_2.gml
+Converted description /// @description KillBlood Timer
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Bloodstone\Step_0.gml
+Converted builtin - line 166: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 167: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 169: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 170: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 172: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 173: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 175: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 176: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 178: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 179: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Bloodstone Charge and Ready
+String not found: ConversionLog_ConvertedString 16 'Building' "Building"
+String not found: ConversionLog_ConvertedString 57 'Building' "Building"
+String not found: ConversionLog_ConvertedString 71 'Building' "Building"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Bloodstone\Draw_64.gml
+Converted builtin - line 13: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 27: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 39: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 40: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 42: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 43: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 13: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 27: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 45: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 46: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 48: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 49: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 51: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 52: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Draw Menu
+String not found: ConversionLog_ConvertedString 13 'Blood Stone' "Blood Stone"
+String not found: ConversionLog_ConvertedString 27 'Power: ' "Power: "
+String not found: ConversionLog_ConvertedString 27 '#Tower Damage#Increased#By ' "#Tower Damage#Increased#By "
+String not found: ConversionLog_ConvertedString 27 '%' "%"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Bloodstone\Draw_0.gml
+Converted description /// @description Health Bar
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Bomb\Create_0.gml
+Converted description /// @description Looks and vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Bomb\Step_1.gml
+Converted builtin - line 171: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 172: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 174: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 175: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 177: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 178: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 180: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 181: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 183: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 184: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Collision With Worker and Building
+String not found: ConversionLog_ConvertedString 7 'Building' "Building"
+String not found: ConversionLog_ConvertedString 48 'Building' "Building"
+String not found: ConversionLog_ConvertedString 62 'Building' "Building"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Bomb\Draw_64.gml
+Converted builtin - line 3: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 4: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 6: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 7: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 33: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 42: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 46: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 58: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 61: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 72: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 73: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 75: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 76: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 9: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 10: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 12: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 13: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 15: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 16: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 33: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 42: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 46: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 58: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 61: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 78: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 79: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 81: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 82: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 84: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 85: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Draw Menu
+String not found: ConversionLog_ConvertedString 33 'Land Mine' "Land Mine"
+String not found: ConversionLog_ConvertedString 42 '' ""
+String not found: ConversionLog_ConvertedString 46 'Explodes When#Killed' "Explodes When#Killed"
+String not found: ConversionLog_ConvertedString 58 '/' "/"
+String not found: ConversionLog_ConvertedString 61 'Detonate' "Detonate"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Bomb\Draw_0.gml
+Converted description /// @description Health Bar
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Gong\Create_0.gml
+Converted description /// @description Looks and vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Gong\Step_0.gml
+Converted builtin - line 126: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 127: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 129: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 130: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 132: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 133: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 135: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 136: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 138: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 139: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Collision With Worker and Building
+String not found: ConversionLog_ConvertedString 7 'Building' "Building"
+String not found: ConversionLog_ConvertedString 48 'Building' "Building"
+String not found: ConversionLog_ConvertedString 62 'Building' "Building"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Gong\Draw_64.gml
+Converted builtin - line 19: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 29: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 33: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 36: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 47: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 48: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 50: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 51: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 19: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 29: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 33: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 36: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 53: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 54: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 56: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 57: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 59: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 60: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Draw Menu
+String not found: ConversionLog_ConvertedString 19 'Gong' "Gong"
+String not found: ConversionLog_ConvertedString 29 'Summons The#Dragon' "Summons The#Dragon"
+String not found: ConversionLog_ConvertedString 33 'Summon' "Summon"
+String not found: ConversionLog_ConvertedString 36 'No Upgrade' "No Upgrade"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Gong\Draw_0.gml
+Converted description /// @description Health Bar
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Altar\Create_0.gml
+Converted description /// @description Looks and vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Altar\Alarm_8.gml
+Converted description /// @description Gold Leave
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Altar\Step_0.gml
+Converted builtin - line 126: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 127: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 129: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 130: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 132: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 133: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 135: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 136: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 138: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 139: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Collision With Worker and Building
+String not found: ConversionLog_ConvertedString 7 'Building' "Building"
+String not found: ConversionLog_ConvertedString 48 'Building' "Building"
+String not found: ConversionLog_ConvertedString 62 'Building' "Building"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Altar\Draw_64.gml
+Converted builtin - line 19: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 29: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 33: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 36: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 47: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 48: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 50: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 51: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 19: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 29: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 33: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 36: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 53: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 54: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 56: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 57: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 59: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 60: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Draw Menu
+String not found: ConversionLog_ConvertedString 19 'Altar' "Altar"
+String not found: ConversionLog_ConvertedString 29 'Can Bribe#The Dragon' "Can Bribe#The Dragon"
+String not found: ConversionLog_ConvertedString 33 'Bribe' "Bribe"
+String not found: ConversionLog_ConvertedString 36 'No Upgrade' "No Upgrade"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Altar\Draw_0.gml
+Converted description /// @description Health Bar
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Academy\Create_0.gml
+Converted description /// @description Looks and vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Academy\Alarm_8.gml
+Converted description /// @description Walk Out Workers
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Academy\Step_1.gml
+Converted description /// @description Change Worker Stages
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Academy\Step_0.gml
+Converted builtin - line 126: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 127: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 129: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 130: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 132: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 133: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 135: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 136: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 138: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 139: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Collision With Worker and Building
+String not found: ConversionLog_ConvertedString 7 'Building' "Building"
+String not found: ConversionLog_ConvertedString 48 'Building' "Building"
+String not found: ConversionLog_ConvertedString 62 'Building' "Building"
+String not found: ConversionLog_ConvertedString 170 'Tree' "Tree"
+String not found: ConversionLog_ConvertedString 175 'Rock' "Rock"
+String not found: ConversionLog_ConvertedString 180 'Gold' "Gold"
+String not found: ConversionLog_ConvertedString 186 'None' "None"
+String not found: ConversionLog_ConvertedString 188 'Victory' "Victory"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Academy\Draw_64.gml
+Converted builtin - line 19: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 29: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 33: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 36: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 47: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 48: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 50: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 51: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 19: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 29: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 33: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 36: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 53: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 54: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 56: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 57: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 59: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 60: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Draw Menu
+String not found: ConversionLog_ConvertedString 19 'Academy' "Academy"
+String not found: ConversionLog_ConvertedString 29 'Trains Workers#Into Army' "Trains Workers#Into Army"
+String not found: ConversionLog_ConvertedString 33 'Train' "Train"
+String not found: ConversionLog_ConvertedString 36 'No Upgrade' "No Upgrade"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Academy\Draw_0.gml
+Converted description /// @description Health Bar
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Selectable\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Selectable\Step_2.gml
+Converted description /// @description GoTo MyTHing and select
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Selectable\Step_1.gml
+Converted description /// @description GoTo MyTHing and select
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Selectable\Step_0.gml
+Converted description /// @description GoTo MyTHing and select
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Selectable\Mouse_53.gml
+Converted description /// @description Unselect
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Selectable\Mouse_7.gml
+Converted description /// @description Select
+String not found: ConversionLog_ConvertedString 7 'None' "None"
+String not found: ConversionLog_ConvertedString 24 'None' "None"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\NoWallPlace\Create_0.gml
+Converted description /// @description Don't move
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\WoodWall\Create_0.gml
+Converted description /// @description Looks and vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\WoodWall\Step_0.gml
+Converted description /// @description Collision With Worker and Building
+String not found: ConversionLog_ConvertedString 13 'Building' "Building"
+String not found: ConversionLog_ConvertedString 53 'Building' "Building"
+String not found: ConversionLog_ConvertedString 67 'Building' "Building"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\WoodWall\Draw_64.gml
+Converted builtin - line 21: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 26: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 32: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 32: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 33: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 33: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 34: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 34: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 36: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 42: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 43: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 45: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 46: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 21: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 26: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 32: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 32: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 33: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 33: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 34: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 34: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 36: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 48: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 49: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 51: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 52: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 54: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 55: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Draw Menu
+String not found: ConversionLog_ConvertedString 21 'Health:' "Health:"
+String not found: ConversionLog_ConvertedString 26 'Wood Wall' "Wood Wall"
+String not found: ConversionLog_ConvertedString 36 '/' "/"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\WoodWall\Draw_0.gml
+Converted description /// @description Draw Self
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\WoodWall\KeyPress_17.gml
+Converted description /// @description TEMP
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\StoneWall\Create_0.gml
+Converted description /// @description Looks and vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\StoneWall\Step_0.gml
+Converted description /// @description Click on Buttons
+String not found: ConversionLog_ConvertedString 56 'Building' "Building"
+String not found: ConversionLog_ConvertedString 96 'Building' "Building"
+String not found: ConversionLog_ConvertedString 110 'Building' "Building"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\StoneWall\Draw_64.gml
+Converted builtin - line 21: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 26: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 32: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 32: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 33: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 33: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 34: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 34: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 36: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 43: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 44: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 46: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 47: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 21: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 26: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 32: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 32: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 33: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 33: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 34: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 34: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 36: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 49: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 50: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 52: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 53: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 55: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 56: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Draw Menu
+String not found: ConversionLog_ConvertedString 21 'Health:' "Health:"
+String not found: ConversionLog_ConvertedString 26 'Wood Wall' "Wood Wall"
+String not found: ConversionLog_ConvertedString 36 '/' "/"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\StoneWall\Draw_0.gml
+Converted description /// @description Draw Self
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\StoneWall\KeyPress_17.gml
+Converted description /// @description TEMP
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\SelectWorkerDrag\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\SelectWorkerDrag\Mouse_56.gml
+Converted description /// @description Select Worker
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\SelectWorkerDrag\Mouse_53.gml
+Converted description /// @description Start Grab
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\SelectWorkerDrag\Draw_64.gml
+Converted description /// @description Draw Selecting
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\ObjectPlacer\Create_0.gml
+Converted description /// @description GUI Menu Areas
+String not found: ConversionLog_ConvertedString 211 'None' "None"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\ObjectPlacer\Step_0.gml
+Converted description /// @description Test On Buttons
+String not found: ConversionLog_ConvertedString 33 'Arrow' "Arrow"
+String not found: ConversionLog_ConvertedString 46 'Magic' "Magic"
+String not found: ConversionLog_ConvertedString 59 'House' "House"
+String not found: ConversionLog_ConvertedString 72 'WorkShop' "WorkShop"
+String not found: ConversionLog_ConvertedString 85 'Tavern' "Tavern"
+String not found: ConversionLog_ConvertedString 98 'Inn' "Inn"
+String not found: ConversionLog_ConvertedString 111 'Homestead' "Homestead"
+String not found: ConversionLog_ConvertedString 124 'Farm' "Farm"
+String not found: ConversionLog_ConvertedString 137 'Academy' "Academy"
+String not found: ConversionLog_ConvertedString 150 'Altar' "Altar"
+String not found: ConversionLog_ConvertedString 163 'Gong' "Gong"
+String not found: ConversionLog_ConvertedString 176 'Blood' "Blood"
+String not found: ConversionLog_ConvertedString 189 'Bomb' "Bomb"
+String not found: ConversionLog_ConvertedString 203 'Wood Wall' "Wood Wall"
+String not found: ConversionLog_ConvertedString 216 'Stone Wall' "Stone Wall"
+String not found: ConversionLog_ConvertedString 233 'None' "None"
+String not found: ConversionLog_ConvertedString 270 'D' "D"
+String not found: ConversionLog_ConvertedString 272 'A' "A"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\ObjectPlacer\Mouse_54.gml
+Converted description /// @description Reset Object Grabbed
+String not found: ConversionLog_ConvertedString 10 'None' "None"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\ObjectPlacer\Mouse_53.gml
+Converted description /// @description Reset Selecting
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\ObjectPlacer\Draw_64.gml
+Converted description /// @description Draw Buttons
+String not found: ConversionLog_ConvertedString 58 'ArrowTower' "ArrowTower"
+String not found: ConversionLog_ConvertedString 64 'Fires arrows#at enemies' "Fires arrows#at enemies"
+String not found: ConversionLog_ConvertedString 72 'Magic Tower' "Magic Tower"
+String not found: ConversionLog_ConvertedString 78 'Fires magic#at enemies' "Fires magic#at enemies"
+String not found: ConversionLog_ConvertedString 86 'House' "House"
+String not found: ConversionLog_ConvertedString 92 'Produces#gold' "Produces#gold"
+String not found: ConversionLog_ConvertedString 100 'Tavern' "Tavern"
+String not found: ConversionLog_ConvertedString 106 'Doubles#nearby house#production' "Doubles#nearby house#production"
+String not found: ConversionLog_ConvertedString 114 'Cathedral' "Cathedral"
+String not found: ConversionLog_ConvertedString 128 'WorkHouse' "WorkHouse"
+String not found: ConversionLog_ConvertedString 134 'Creates a#worker' "Creates a#worker"
+String not found: ConversionLog_ConvertedString 142 'Mill' "Mill"
+String not found: ConversionLog_ConvertedString 148 'Uses food#to level#up workers' "Uses food#to level#up workers"
+String not found: ConversionLog_ConvertedString 156 'Farm' "Farm"
+String not found: ConversionLog_ConvertedString 162 'Provides food#to nearby#Mills' "Provides food#to nearby#Mills"
+String not found: ConversionLog_ConvertedString 170 'Academy' "Academy"
+String not found: ConversionLog_ConvertedString 176 'Trains#workers to#kill dragon' "Trains#workers to#kill dragon"
+String not found: ConversionLog_ConvertedString 184 'Altar' "Altar"
+String not found: ConversionLog_ConvertedString 190 'Can use#gold to#bribe dragon' "Can use#gold to#bribe dragon"
+String not found: ConversionLog_ConvertedString 198 'Gong' "Gong"
+String not found: ConversionLog_ConvertedString 204 'Can summon#dragon to#fight' "Can summon#dragon to#fight"
+String not found: ConversionLog_ConvertedString 212 'Bloodstone' "Bloodstone"
+String not found: ConversionLog_ConvertedString 218 'Nearby kills#boost all#tower damage' "Nearby kills#boost all#tower damage"
+String not found: ConversionLog_ConvertedString 226 'Land Mine' "Land Mine"
+String not found: ConversionLog_ConvertedString 232 'Explodes when#detonated#or killed' "Explodes when#detonated#or killed"
+String not found: ConversionLog_ConvertedString 240 'Wood Wall' "Wood Wall"
+String not found: ConversionLog_ConvertedString 246 'Stops#enemies' "Stops#enemies"
+String not found: ConversionLog_ConvertedString 254 'Stone Wall' "Stone Wall"
+String not found: ConversionLog_ConvertedString 260 'Stops#enemies' "Stops#enemies"
+String not found: ConversionLog_ConvertedString 289 'None' "None"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\ObjectPlacer\KeyPress_27.gml
+Converted description /// @description Pause
+String not found: ConversionLog_ConvertedString 5 'Screen.spr' "Screen.spr"
+String not found: ConversionLog_ConvertedString 7 'Screen.spr' "Screen.spr"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\ObjectPlacer\KeyPress_13.gml
+Converted description /// @description TEMP
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\NoPlace\Create_0.gml
+Converted description /// @description Slightly Bigger
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\TreePlacer\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\TreePlacer\Alarm_0.gml
+Converted description /// @description Tree
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Building\Create_0.gml
+Converted description /// @description Building Vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Building\Step_0.gml
+Converted description /// @description visible = false
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Building\Draw_0.gml
+Converted description /// @description Draw
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Worker\Create_0.gml
+Converted description /// @description Vars
+String not found: ConversionLog_ConvertedString 21 'None' "None"
+String not found: ConversionLog_ConvertedString 41 'None' "None"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Worker\Destroy_0.gml
+Converted description /// @description Destory Selectable
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Worker\Alarm_0.gml
+Converted description /// @description Re-Selected
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Worker\Step_0.gml
+Converted builtin - line 305: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 306: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 308: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 309: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 311: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 312: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 314: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 315: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 317: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 318: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Worker Level Sprs
+String not found: ConversionLog_ConvertedString 3 'Tree' "Tree"
+String not found: ConversionLog_ConvertedString 3 'Rock' "Rock"
+String not found: ConversionLog_ConvertedString 3 'Gold' "Gold"
+String not found: ConversionLog_ConvertedString 36 'Building' "Building"
+String not found: ConversionLog_ConvertedString 69 'Tree' "Tree"
+String not found: ConversionLog_ConvertedString 71 'None' "None"
+String not found: ConversionLog_ConvertedString 105 'Rock' "Rock"
+String not found: ConversionLog_ConvertedString 107 'None' "None"
+String not found: ConversionLog_ConvertedString 190 'None' "None"
+String not found: ConversionLog_ConvertedString 192 'Tree' "Tree"
+String not found: ConversionLog_ConvertedString 194 'Rock' "Rock"
+String not found: ConversionLog_ConvertedString 196 'Gold' "Gold"
+String not found: ConversionLog_ConvertedString 198 'None' "None"
+String not found: ConversionLog_ConvertedString 206 'None' "None"
+String not found: ConversionLog_ConvertedString 208 'Tree' "Tree"
+String not found: ConversionLog_ConvertedString 210 'Rock' "Rock"
+String not found: ConversionLog_ConvertedString 212 'Gold' "Gold"
+String not found: ConversionLog_ConvertedString 242 'Rock' "Rock"
+String not found: ConversionLog_ConvertedString 250 'Tree' "Tree"
+String not found: ConversionLog_ConvertedString 266 'Rock' "Rock"
+String not found: ConversionLog_ConvertedString 270 'Gold' "Gold"
+String not found: ConversionLog_ConvertedString 272 'Rock' "Rock"
+String not found: ConversionLog_ConvertedString 278 'Rock' "Rock"
+String not found: ConversionLog_ConvertedString 291 'Building' "Building"
+String not found: ConversionLog_ConvertedString 322 'Tree' "Tree"
+String not found: ConversionLog_ConvertedString 324 'Tree' "Tree"
+String not found: ConversionLog_ConvertedString 329 'Rock' "Rock"
+String not found: ConversionLog_ConvertedString 334 'Gold' "Gold"
+String not found: ConversionLog_ConvertedString 343 'None' "None"
+String not found: ConversionLog_ConvertedString 345 'Tree' "Tree"
+String not found: ConversionLog_ConvertedString 351 'Rock' "Rock"
+String not found: ConversionLog_ConvertedString 353 'Tree' "Tree"
+String not found: ConversionLog_ConvertedString 358 'Rock' "Rock"
+String not found: ConversionLog_ConvertedString 363 'Gold' "Gold"
+String not found: ConversionLog_ConvertedString 372 'None' "None"
+String not found: ConversionLog_ConvertedString 374 'Rock' "Rock"
+String not found: ConversionLog_ConvertedString 381 'Building' "Building"
+String not found: ConversionLog_ConvertedString 386 'Tree' "Tree"
+String not found: ConversionLog_ConvertedString 391 'Rock' "Rock"
+String not found: ConversionLog_ConvertedString 396 'Gold' "Gold"
+String not found: ConversionLog_ConvertedString 402 'None' "None"
+String not found: ConversionLog_ConvertedString 404 'Building' "Building"
+String not found: ConversionLog_ConvertedString 412 'Victory' "Victory"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Worker\Mouse_4.gml
+Converted description /// @description Selected
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Worker\Draw_64.gml
+Converted builtin - line 34: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 36: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 37: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 38: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 39: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 34: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 36: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 37: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 38: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 39: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Draw Select
+String not found: ConversionLog_ConvertedString 11 'None' "None"
+String not found: ConversionLog_ConvertedString 34 'Worker' "Worker"
+String not found: ConversionLog_ConvertedString 36 'Task:' "Task:"
+String not found: ConversionLog_ConvertedString 37 'Harvest' "Harvest"
+String not found: ConversionLog_ConvertedString 38 'Mine' "Mine"
+String not found: ConversionLog_ConvertedString 39 'Build' "Build"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Worker\Draw_0.gml
+Converted description /// @description Draw
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Hero\Destroy_0.gml
+Converted description /// @description Tavern Open
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Warrior\Create_0.gml
+Converted description /// @description Select
+String not found: ConversionLog_ConvertedString 21 '' ""
+String not found: ConversionLog_ConvertedString 22 '' ""
+String not found: ConversionLog_ConvertedString 40 'Damage' "Damage"
+String not found: ConversionLog_ConvertedString 40 'Speed' "Speed"
+String not found: ConversionLog_ConvertedString 40 'Health' "Health"
+String not found: ConversionLog_ConvertedString 40 'Damage' "Damage"
+String not found: ConversionLog_ConvertedString 42 'Damage' "Damage"
+String not found: ConversionLog_ConvertedString 45 '' ""
+String not found: ConversionLog_ConvertedString 46 'Damaging' "Damaging"
+String not found: ConversionLog_ConvertedString 48 'Damaging' "Damaging"
+String not found: ConversionLog_ConvertedString 51 'Speed' "Speed"
+String not found: ConversionLog_ConvertedString 55 '' ""
+String not found: ConversionLog_ConvertedString 56 'Fast' "Fast"
+String not found: ConversionLog_ConvertedString 58 'Fast' "Fast"
+String not found: ConversionLog_ConvertedString 61 'Health' "Health"
+String not found: ConversionLog_ConvertedString 64 '' ""
+String not found: ConversionLog_ConvertedString 65 'Tough' "Tough"
+String not found: ConversionLog_ConvertedString 67 'Tough' "Tough"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Warrior\Step_0.gml
+Converted description /// @description Move Towards Attackable
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Warrior\Draw_64.gml
+Converted builtin - line 13: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 15: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 16: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 17: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 18: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 19: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 26: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 26: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 27: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 27: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 28: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 28: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 30: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 13: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 15: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 16: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 17: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 18: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 19: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 26: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 26: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 27: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 27: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 28: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 28: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 30: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Draw Menu
+String not found: ConversionLog_ConvertedString 13 'Warrior' "Warrior"
+String not found: ConversionLog_ConvertedString 15 'Stats:' "Stats:"
+String not found: ConversionLog_ConvertedString 16 'Damage: ' "Damage: "
+String not found: ConversionLog_ConvertedString 17 'Speed: ' "Speed: "
+String not found: ConversionLog_ConvertedString 30 '/' "/"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Warrior\Draw_0.gml
+Converted description /// @description Health Bar
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Archer\Create_0.gml
+Converted description /// @description Select
+String not found: ConversionLog_ConvertedString 40 '' ""
+String not found: ConversionLog_ConvertedString 41 '' ""
+String not found: ConversionLog_ConvertedString 47 'Damage' "Damage"
+String not found: ConversionLog_ConvertedString 47 'Speed' "Speed"
+String not found: ConversionLog_ConvertedString 47 'Health' "Health"
+String not found: ConversionLog_ConvertedString 49 'Damage' "Damage"
+String not found: ConversionLog_ConvertedString 52 '' ""
+String not found: ConversionLog_ConvertedString 53 'Damaging' "Damaging"
+String not found: ConversionLog_ConvertedString 55 'Damaging' "Damaging"
+String not found: ConversionLog_ConvertedString 58 'Speed' "Speed"
+String not found: ConversionLog_ConvertedString 62 '' ""
+String not found: ConversionLog_ConvertedString 63 'Fast' "Fast"
+String not found: ConversionLog_ConvertedString 65 'Fast' "Fast"
+String not found: ConversionLog_ConvertedString 68 'Health' "Health"
+String not found: ConversionLog_ConvertedString 71 '' ""
+String not found: ConversionLog_ConvertedString 72 'Tough' "Tough"
+String not found: ConversionLog_ConvertedString 74 'Tough' "Tough"
+String not found: ConversionLog_ConvertedString 77 'Pierce' "Pierce"
+String not found: ConversionLog_ConvertedString 78 'Piercing' "Piercing"
+String not found: ConversionLog_ConvertedString 81 '' ""
+String not found: ConversionLog_ConvertedString 82 'Piercing' "Piercing"
+String not found: ConversionLog_ConvertedString 84 'Piercing' "Piercing"
+String not found: ConversionLog_ConvertedString 87 'Knock' "Knock"
+String not found: ConversionLog_ConvertedString 88 'Powerful' "Powerful"
+String not found: ConversionLog_ConvertedString 91 '' ""
+String not found: ConversionLog_ConvertedString 92 'Powerful' "Powerful"
+String not found: ConversionLog_ConvertedString 94 'Powerful' "Powerful"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Archer\Step_0.gml
+Converted description /// @description Move Towards Attackable
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Archer\Draw_64.gml
+Converted builtin - line 13: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 15: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 16: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 17: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 18: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 19: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 26: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 26: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 27: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 27: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 28: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 28: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 30: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 13: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 15: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 16: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 17: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 18: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 19: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 26: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 26: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 27: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 27: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 28: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 28: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 30: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Draw Menu
+String not found: ConversionLog_ConvertedString 13 'Archer' "Archer"
+String not found: ConversionLog_ConvertedString 15 'Stats:' "Stats:"
+String not found: ConversionLog_ConvertedString 16 'Damage: ' "Damage: "
+String not found: ConversionLog_ConvertedString 17 'Speed: ' "Speed: "
+String not found: ConversionLog_ConvertedString 30 '/' "/"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Archer\Draw_0.gml
+Converted description /// @description Health Bar
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Wizard\Create_0.gml
+Converted description /// @description Select
+String not found: ConversionLog_ConvertedString 40 '' ""
+String not found: ConversionLog_ConvertedString 41 '' ""
+String not found: ConversionLog_ConvertedString 62 'Damage' "Damage"
+String not found: ConversionLog_ConvertedString 62 'Speed' "Speed"
+String not found: ConversionLog_ConvertedString 62 'Health' "Health"
+String not found: ConversionLog_ConvertedString 64 'Damage' "Damage"
+String not found: ConversionLog_ConvertedString 67 '' ""
+String not found: ConversionLog_ConvertedString 68 'Damaging' "Damaging"
+String not found: ConversionLog_ConvertedString 70 'Damaging' "Damaging"
+String not found: ConversionLog_ConvertedString 73 'Speed' "Speed"
+String not found: ConversionLog_ConvertedString 77 '' ""
+String not found: ConversionLog_ConvertedString 78 'Fast' "Fast"
+String not found: ConversionLog_ConvertedString 80 'Fast' "Fast"
+String not found: ConversionLog_ConvertedString 83 'Health' "Health"
+String not found: ConversionLog_ConvertedString 86 '' ""
+String not found: ConversionLog_ConvertedString 87 'Tough' "Tough"
+String not found: ConversionLog_ConvertedString 89 'Tough' "Tough"
+String not found: ConversionLog_ConvertedString 92 'Light' "Light"
+String not found: ConversionLog_ConvertedString 93 'Lightning' "Lightning"
+String not found: ConversionLog_ConvertedString 97 '' ""
+String not found: ConversionLog_ConvertedString 98 'Lightning' "Lightning"
+String not found: ConversionLog_ConvertedString 100 'Lightning' "Lightning"
+String not found: ConversionLog_ConvertedString 103 'Fire' "Fire"
+String not found: ConversionLog_ConvertedString 104 'Fire' "Fire"
+String not found: ConversionLog_ConvertedString 107 '' ""
+String not found: ConversionLog_ConvertedString 108 'Fire' "Fire"
+String not found: ConversionLog_ConvertedString 110 'Fire' "Fire"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Wizard\Step_0.gml
+Converted description /// @description Move Towards Attackable
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Wizard\Draw_64.gml
+Converted builtin - line 13: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 15: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 16: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 17: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 18: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 19: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 26: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 26: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 27: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 27: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 28: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 28: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 30: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 13: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 15: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 16: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 17: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 18: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 19: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 26: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 26: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 27: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 27: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 28: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 28: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 30: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Draw Menu
+String not found: ConversionLog_ConvertedString 13 'Wizard' "Wizard"
+String not found: ConversionLog_ConvertedString 15 'Stats:' "Stats:"
+String not found: ConversionLog_ConvertedString 16 'Damage: ' "Damage: "
+String not found: ConversionLog_ConvertedString 17 'Speed: ' "Speed: "
+String not found: ConversionLog_ConvertedString 30 '/' "/"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Wizard\Draw_0.gml
+Converted description /// @description Health Bar
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Healer\Create_0.gml
+Converted description /// @description Select
+String not found: ConversionLog_ConvertedString 19 '' ""
+String not found: ConversionLog_ConvertedString 20 '' ""
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Healer\Step_0.gml
+Converted description /// @description Killed
+String not found: ConversionLog_ConvertedString 114 'Heal' "Heal"
+String not found: ConversionLog_ConvertedString 114 'Speed' "Speed"
+String not found: ConversionLog_ConvertedString 114 'Health' "Health"
+String not found: ConversionLog_ConvertedString 116 'Speed' "Speed"
+String not found: ConversionLog_ConvertedString 120 '' ""
+String not found: ConversionLog_ConvertedString 121 'Fast' "Fast"
+String not found: ConversionLog_ConvertedString 123 'Fast' "Fast"
+String not found: ConversionLog_ConvertedString 126 'Health' "Health"
+String not found: ConversionLog_ConvertedString 129 '' ""
+String not found: ConversionLog_ConvertedString 130 'Tough' "Tough"
+String not found: ConversionLog_ConvertedString 132 'Tough' "Tough"
+String not found: ConversionLog_ConvertedString 134 'Heal' "Heal"
+String not found: ConversionLog_ConvertedString 137 '' ""
+String not found: ConversionLog_ConvertedString 138 'Fast Aid' "Fast Aid"
+String not found: ConversionLog_ConvertedString 140 'Fast Aid' "Fast Aid"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Healer\Draw_64.gml
+Converted builtin - line 13: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 15: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 16: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 17: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 18: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 19: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 26: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 26: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 27: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 27: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 28: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 28: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 30: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 13: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 15: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 16: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 17: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 18: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 19: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 26: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 26: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 27: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 27: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 28: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 28: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 30: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description Draw Menu
+String not found: ConversionLog_ConvertedString 13 'Healer' "Healer"
+String not found: ConversionLog_ConvertedString 15 'Level:' "Level:"
+String not found: ConversionLog_ConvertedString 16 'Healing: ' "Healing: "
+String not found: ConversionLog_ConvertedString 17 'Speed: ' "Speed: "
+String not found: ConversionLog_ConvertedString 30 '/' "/"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Healer\Draw_0.gml
+Converted description /// @description Health Bar
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Tree\Create_0.gml
+Converted description /// @description Vars and look
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Tree\Step_0.gml
+Converted description /// @description Destroyed by Worker
+String not found: ConversionLog_ConvertedString 11 'Rock' "Rock"
+String not found: ConversionLog_ConvertedString 13 'Tree' "Tree"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Dropped\Create_0.gml
+Converted description /// @description Vars and look
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Dropped\Step_0.gml
+Converted description /// @description Destroyed by Worker
+String not found: ConversionLog_ConvertedString 11 'Tree' "Tree"
+String not found: ConversionLog_ConvertedString 13 'Rock' "Rock"
+String not found: ConversionLog_ConvertedString 15 'Gold' "Gold"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\RockDropped\Create_0.gml
+Converted description /// @description Vars and look
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\RockDropped\Step_0.gml
+Converted description /// @description Destroyed by Worker
+String not found: ConversionLog_ConvertedString 11 'Tree' "Tree"
+String not found: ConversionLog_ConvertedString 13 'Rock' "Rock"
+String not found: ConversionLog_ConvertedString 15 'Gold' "Gold"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Mine\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Mine\Step_0.gml
+Converted description /// @description Grab a random item
+String not found: ConversionLog_ConvertedString 6 'Rock' "Rock"
+String not found: ConversionLog_ConvertedString 10 'Gold' "Gold"
+String not found: ConversionLog_ConvertedString 12 'Rock' "Rock"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Enemy\Step_1.gml
+Converted description /// @description Killed
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Goblin\Create_0.gml
+Converted description /// @description Set Default Sprite for running
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Goblin\Alarm_3.gml
+Converted description /// @description UnStun
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Goblin\Alarm_2.gml
+Converted description /// @description Not On Fire
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Goblin\Step_0.gml
+Converted description /// @description Move Towards Attackable
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Goblin\Draw_0.gml
+Converted description /// @description Health Bar
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Orc\Create_0.gml
+Converted description /// @description Set Default Sprite for running
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Orc\Alarm_3.gml
+Converted description /// @description UnStun
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Orc\Alarm_2.gml
+Converted description /// @description Not On Fire
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Orc\Step_0.gml
+Converted description /// @description Move Towards Attackable
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Orc\Draw_0.gml
+Converted description /// @description Health Bar
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Oger\Create_0.gml
+Converted description /// @description Set Default Sprite for running
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Oger\Alarm_3.gml
+Converted description /// @description UnStun
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Oger\Alarm_2.gml
+Converted description /// @description Not On Fire
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Oger\Step_0.gml
+Converted description /// @description Move Towards Attackable
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Oger\Draw_0.gml
+Converted description /// @description Health Bar
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Ooze\Create_0.gml
+Converted description /// @description Set Default Sprite for running
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Ooze\Destroy_0.gml
+Converted description /// @description Ooze Puddle
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Ooze\Alarm_3.gml
+Converted description /// @description UnStun
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Ooze\Alarm_2.gml
+Converted description /// @description Not On Fire
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Ooze\Step_0.gml
+Converted description /// @description Move Towards Attackable
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Ooze\Draw_0.gml
+Converted description /// @description Health Bar
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\OozePuddle\Create_0.gml
+Converted description /// @description Set Death Alarm
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\OozePuddle\Alarm_1.gml
+Converted description /// @description Acid
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\OozePuddle\Alarm_0.gml
+Converted description /// @description Death Srink
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Imp\Create_0.gml
+Converted description /// @description Set Default Sprite for running
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Imp\Alarm_3.gml
+Converted description /// @description UnStun
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Imp\Alarm_2.gml
+Converted description /// @description Not On Fire
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Imp\Step_0.gml
+Converted description /// @description Move Towards Attackable
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Imp\Draw_0.gml
+Converted description /// @description Health Bar
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Skeleton\Create_0.gml
+Converted description /// @description Set Default Sprite for running
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Skeleton\Alarm_3.gml
+Converted description /// @description UnStun
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Skeleton\Alarm_2.gml
+Converted description /// @description Not On Fire
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Skeleton\Step_0.gml
+Converted description /// @description Move Towards Attackable
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Skeleton\Draw_0.gml
+Converted description /// @description Health Bar
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Spider\Create_0.gml
+Converted description /// @description Set Default Sprite for running
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Spider\Alarm_3.gml
+Converted description /// @description UnStun
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Spider\Alarm_2.gml
+Converted description /// @description Not On Fire
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Spider\Step_0.gml
+Converted description /// @description Move Towards Attackable
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Spider\Draw_0.gml
+Converted description /// @description Health Bar
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Troll\Create_0.gml
+Converted description /// @description Set Default Sprite for running
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Troll\Alarm_3.gml
+Converted description /// @description UnStun
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Troll\Alarm_2.gml
+Converted description /// @description Not On Fire
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Troll\Step_0.gml
+Converted description /// @description Move Towards Attackable
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Troll\Draw_0.gml
+Converted description /// @description Health Bar
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Drake\Create_0.gml
+Converted description /// @description Set Default Sprite for running
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Drake\Alarm_3.gml
+Converted description /// @description UnStun
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Drake\Alarm_2.gml
+Converted description /// @description Not On Fire
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Drake\Step_0.gml
+Converted description /// @description Move Towards Attackable
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Drake\Draw_0.gml
+Converted description /// @description Health Bar
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Ghost\Create_0.gml
+Converted description /// @description Set Default Sprite for running
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Ghost\Alarm_3.gml
+Converted description /// @description UnStun
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Ghost\Alarm_2.gml
+Converted description /// @description Not On Fire
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Ghost\Step_0.gml
+Converted description /// @description Move Towards Attackable
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Ghost\Draw_0.gml
+Converted description /// @description Health Bar
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Elemental\Create_0.gml
+Converted description /// @description Set Default Sprite for running
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Elemental\Alarm_3.gml
+Converted description /// @description UnStun
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Elemental\Alarm_2.gml
+Converted description /// @description Not On Fire
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Elemental\Step_0.gml
+Converted description /// @description Move Towards Attackable
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Elemental\Draw_0.gml
+Converted description /// @description Health Bar
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\ElementalSmash\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\ElementalSmash\Alarm_0.gml
+Converted description /// @description Dead
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\ElementalSmash\Step_0.gml
+Converted description /// @description Trail
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\ElementalSmash\Collision_a59c34f5-6d83-4d00-977e-796e9961e5eb.gml
+Converted description /// @description Hit
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\ElementalSmash\Collision_f6be1f0c-c491-466e-8d22-b7b9b077784c.gml
+Converted description /// @description Hit
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\SmashTrail\Step_0.gml
+Converted description /// @description Srink
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Ent\Create_0.gml
+Converted description /// @description Set Default Sprite for running
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Ent\Alarm_3.gml
+Converted description /// @description UnStun
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Ent\Alarm_2.gml
+Converted description /// @description Not On Fire
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Ent\Step_0.gml
+Converted description /// @description Move Towards Attackable
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Ent\Draw_0.gml
+Converted description /// @description Health Bar
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Roller\Create_0.gml
+Converted description /// @description Set Default Sprite for running
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Roller\Alarm_3.gml
+Converted description /// @description UnStun
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Roller\Alarm_2.gml
+Converted description /// @description Not On Fire
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Roller\Step_0.gml
+Converted description /// @description Move Towards Attackable
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Roller\Draw_0.gml
+Converted description /// @description Health Bar
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Dragon\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Dragon\Destroy_0.gml
+Converted description /// @description Create Death animation
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Dragon\Alarm_3.gml
+Converted description /// @description UnStun
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Dragon\Alarm_2.gml
+Converted description /// @description Not On Fire
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Dragon\Step_0.gml
+Converted description /// @description Move Towards Attackable
+String not found: ConversionLog_ConvertedString 31 'FireBall' "FireBall"
+String not found: ConversionLog_ConvertedString 31 'Spray' "Spray"
+String not found: ConversionLog_ConvertedString 43 'FireBall' "FireBall"
+String not found: ConversionLog_ConvertedString 62 'Spray' "Spray"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Dragon\Draw_0.gml
+Converted description /// @description Draw Head
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Dragon\KeyPress_17.gml
+Converted description /// @description TEMP
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\DragonDeath\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\DragonDeath\Alarm_0.gml
+Converted description /// @description Death
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Arrow\Alarm_2.gml
+Converted description /// @description Destroy
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Arrow\Collision_0907b8f9-9dd9-485c-98f2-97a2bf95896c.gml
+Converted description /// @description Hit
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Magic\Create_0.gml
+Converted description /// @description Lighting Not hitting the Enemy it's made on
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Magic\Alarm_2.gml
+Converted description /// @description Destroy
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Magic\Step_0.gml
+Converted description /// @description Rotate
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Magic\Collision_ceaf6626-2f09-4e65-bd2e-022a37b7e83f.gml
+Converted description /// @description Hit
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Magic\Draw_64.gml
+Converted description /// @description Draw self
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\OnFire\Create_0.gml
+Converted description /// @description Vars and Create
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\OnFire\Alarm_0.gml
+Converted description /// @description Destroy
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\OnFire\Step_0.gml
+Converted description /// @description Fade
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Explotion\Create_0.gml
+Converted description /// @description image_xscale
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Explotion\Alarm_0.gml
+Converted description /// @description Destroy
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Explotion\Collision_fda19ceb-fc7f-4032-adab-2feef238beee.gml
+Converted description /// @description Set on fire
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\EnemyFire\Alarm_2.gml
+Converted description /// @description Destroy
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\EnemyFire\Collision_010a3e70-a1a9-468c-a6fa-3f93437fe344.gml
+Converted description /// @description Hit
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\EnemyFire\Collision_76e93c8c-86b0-478c-8b04-ad388bc22d53.gml
+Converted description /// @description Hit
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\EnemyFire\Collision_3fb220d3-dc81-4684-bdc6-8d9e797385e7.gml
+Converted description /// @description Hit
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\VarsAndMonsters\Create_0.gml
+Converted description /// @description Monster Order List/Music
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\VarsAndMonsters\Alarm_0.gml
+Converted description /// @description Add Monsters
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\VarsAndMonsters\Step_0.gml
+Converted description /// @description Count Bloodstones
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\VarsAndMonsters\Draw_64.gml
+Converted builtin - line 42: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 45: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 46: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 48: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 49: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 50: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 42: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 45: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 46: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 48: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 49: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 50: view_yview -> __view_get( e__VW.YView, 0 )
+Converted description /// @description Draw Victory
+String not found: ConversionLog_ConvertedString 23 'Victory!' "Victory!"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\VarsAndMonsters\Draw_0.gml
+Converted description /// @description Draw Lose Fade
+String not found: ConversionLog_ConvertedString 15 'Game Over' "Game Over"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\MonsterInfo\Create_0.gml
+Converted description /// @description Created Vars
+String not found: ConversionLog_ConvertedString 9 'Goblin' "Goblin"
+String not found: ConversionLog_ConvertedString 14 'None' "None"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\MonsterInfo\Alarm_0.gml
+Converted description /// @description Set Monster Type
+String not found: ConversionLog_ConvertedString 7 'Orc' "Orc"
+String not found: ConversionLog_ConvertedString 12 'None' "None"
+String not found: ConversionLog_ConvertedString 19 'Oger' "Oger"
+String not found: ConversionLog_ConvertedString 24 'None' "None"
+String not found: ConversionLog_ConvertedString 31 'Acid Ooze' "Acid Ooze"
+String not found: ConversionLog_ConvertedString 36 'Leaves Acid#When Killed' "Leaves Acid#When Killed"
+String not found: ConversionLog_ConvertedString 44 'Imp' "Imp"
+String not found: ConversionLog_ConvertedString 49 'Shoots#FireBalls' "Shoots#FireBalls"
+String not found: ConversionLog_ConvertedString 56 'Skeleton' "Skeleton"
+String not found: ConversionLog_ConvertedString 61 'Not Hurt#By Arrows' "Not Hurt#By Arrows"
+String not found: ConversionLog_ConvertedString 68 'Spider' "Spider"
+String not found: ConversionLog_ConvertedString 73 'None' "None"
+String not found: ConversionLog_ConvertedString 80 'Troll' "Troll"
+String not found: ConversionLog_ConvertedString 85 'None' "None"
+String not found: ConversionLog_ConvertedString 92 'Drake' "Drake"
+String not found: ConversionLog_ConvertedString 97 'Shoots#Fireballs' "Shoots#Fireballs"
+String not found: ConversionLog_ConvertedString 104 'Ghost' "Ghost"
+String not found: ConversionLog_ConvertedString 109 'Ignores#Walls' "Ignores#Walls"
+String not found: ConversionLog_ConvertedString 116 'Elemental' "Elemental"
+String not found: ConversionLog_ConvertedString 121 'Not Hurt#By Magic' "Not Hurt#By Magic"
+String not found: ConversionLog_ConvertedString 128 'Ent' "Ent"
+String not found: ConversionLog_ConvertedString 133 'Comes When#Trees Cut' "Comes When#Trees Cut"
+String not found: ConversionLog_ConvertedString 140 'Roller' "Roller"
+String not found: ConversionLog_ConvertedString 145 'Explodes#On Contact' "Explodes#On Contact"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\MonsterInfo\Step_0.gml
+Converted description /// @description Clicked
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\MonsterInfo\Draw_64.gml
+Converted description /// @description Draw Selected
+String not found: ConversionLog_ConvertedString 11 'Damage: ' "Damage: "
+String not found: ConversionLog_ConvertedString 12 'Speed: ' "Speed: "
+String not found: ConversionLog_ConvertedString 13 'Health: ' "Health: "
+String not found: ConversionLog_ConvertedString 15 'None' "None"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\MonsterInfo\KeyPress_37.gml
+Converted description /// @description TEMP
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\GoldDing\Step_0.gml
+Converted description /// @description Destroy
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\GoldDing\Draw_64.gml
+Converted description /// @description Draw Ding
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\MusicController\Create_0.gml
+Converted description /// @description Volume Vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\MusicController\Step_0.gml
+Converted description /// @description Menu Room
+String not found: ConversionLog_ConvertedString 59 'Volume.ini' "Volume.ini"
+String not found: ConversionLog_ConvertedString 60 'VolumeLevel' "VolumeLevel"
+String not found: ConversionLog_ConvertedString 60 'MusicVolume' "MusicVolume"
+String not found: ConversionLog_ConvertedString 61 'VolumeLevel' "VolumeLevel"
+String not found: ConversionLog_ConvertedString 61 'SoundVolume' "SoundVolume"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\MusicController\Draw_0.gml
+Converted description /// @description Draw Screenshot
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\MonsterVars\Create_0.gml
+Converted description /// @description MonsterVars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Button\Step_0.gml
+Converted description /// @description Button
+String not found: ConversionLog_ConvertedString 15 'savegame' "savegame"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\NewGame\Create_0.gml
+Converted description /// @description Button Ready
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\NewGame\Mouse_4.gml
+Converted description /// @description Start New Game
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Continue\Create_0.gml
+Converted description /// @description Button Ready
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Continue\Mouse_4.gml
+Converted description /// @description Start New Game
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\LoadGame\Create_0.gml
+Converted description /// @description Button Ready
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\LoadGame\Alarm_0.gml
+Converted description /// @description Options
+String not found: ConversionLog_ConvertedString 7 'savegame1' "savegame1"
+String not found: ConversionLog_ConvertedString 13 'savegame2' "savegame2"
+String not found: ConversionLog_ConvertedString 19 'savegame3' "savegame3"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\LoadGame\Mouse_4.gml
+Converted description /// @description Start New Game
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\SaveGame\Create_0.gml
+Converted description /// @description Button Ready
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\SaveGame\Alarm_0.gml
+Converted description /// @description Options
+String not found: ConversionLog_ConvertedString 7 'savegame1' "savegame1"
+String not found: ConversionLog_ConvertedString 13 'savegame2' "savegame2"
+String not found: ConversionLog_ConvertedString 19 'savegame3' "savegame3"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\SaveGame\Mouse_4.gml
+Converted description /// @description Start New Game
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\SaveGameFile\Create_0.gml
+Converted description /// @description Button Ready
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\SaveGameFile\Mouse_4.gml
+Converted description /// @description Save
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\LoadGameFile\Create_0.gml
+Converted description /// @description Button Ready
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\LoadGameFile\Mouse_4.gml
+Converted description /// @description Load Game
+String not found: ConversionLog_ConvertedString 7 'Volume.ini' "Volume.ini"
+String not found: ConversionLog_ConvertedString 8 'VolumeLevel' "VolumeLevel"
+String not found: ConversionLog_ConvertedString 8 'MusicVolume' "MusicVolume"
+String not found: ConversionLog_ConvertedString 9 'VolumeLevel' "VolumeLevel"
+String not found: ConversionLog_ConvertedString 9 'SoundVolume' "SoundVolume"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Options\Create_0.gml
+Converted description /// @description Button Ready
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Options\Alarm_0.gml
+Converted description /// @description Options
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Options\Mouse_4.gml
+Converted description /// @description Start New Game
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Tutorial\Create_0.gml
+Converted description /// @description Button Ready
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Tutorial\Mouse_4.gml
+Converted description /// @description Start New Game
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\MainMenu\Create_0.gml
+Converted description /// @description Button Ready
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\MainMenu\Mouse_4.gml
+Converted description /// @description Start New Game
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Exit\Create_0.gml
+Converted description /// @description Button Ready
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Exit\Mouse_4.gml
+Converted description /// @description Start New Game
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\MusicOption\Create_0.gml
+Converted description /// @description Vars
+String not found: ConversionLog_ConvertedString 8 'Music' "Music"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\SoundOption\Create_0.gml
+Converted description /// @description Vars
+String not found: ConversionLog_ConvertedString 8 'Sound' "Sound"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Slider\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Slider\Step_0.gml
+Converted description /// @description Grabbed
+String not found: ConversionLog_ConvertedString 28 'Music' "Music"
+String not found: ConversionLog_ConvertedString 31 'Sound' "Sound"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\DoneButton\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\DoneButton\Mouse_4.gml
+Converted description /// @description Done
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\EasyOption\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\EasyOption\Mouse_4.gml
+Converted description /// @description Easy
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\MedOption\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\MedOption\Mouse_4.gml
+Converted description /// @description Easy
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\HardOption\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\HardOption\Mouse_4.gml
+Converted description /// @description Hard
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\CancelButton\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\CancelButton\Mouse_4.gml
+Converted description /// @description Cancel
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Crumble\Create_0.gml
+Converted description /// @description Crumble Vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Crumble\Step_0.gml
+Converted description /// @description Destroy
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\Crumble\Draw_0.gml
+Converted description /// @description Crumble
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\WorkerTagController\Create_0.gml
+Converted description /// @description Distance
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMaker\Projects\Little Town Defender 2.gmx\mvc\objects\WorkerTagController\Step_0.gml
+Converted description /// @description WorkerTag
+
+Missing audiogroup for sound: 'GameMusic1' - setting to default audio group
+Missing audiogroup for sound: 'GameMusic2' - setting to default audio group
+Missing audiogroup for sound: 'GameMusic3' - setting to default audio group
+Missing audiogroup for sound: 'MenuMusic' - setting to default audio group
+Missing audiogroup for sound: 'DragonMusic' - setting to default audio group
+Missing audiogroup for sound: 'Hammering' - setting to default audio group
+Missing audiogroup for sound: 'Axe' - setting to default audio group
+Missing audiogroup for sound: 'PickAxe' - setting to default audio group
+Missing audiogroup for sound: 'EnemyArrive' - setting to default audio group
+Missing audiogroup for sound: 'PlacingBuilding' - setting to default audio group
+Missing audiogroup for sound: 'GongSnd' - setting to default audio group
+Missing audiogroup for sound: 'DingSnd' - setting to default audio group
+Missing audiogroup for sound: 'MagicSnd' - setting to default audio group
+Missing audiogroup for sound: 'ArrowSnd' - setting to default audio group
+Game speed set to 30
+Added compatibility script 'background\draw_background.gml'
+Added compatibility script 'instance\instance_create.gml'
+Added compatibility script 'object\object_get_depth.gml'
+Added compatibility script 'view\__view_get.gml'
+Added compatibility script 'background\__init_background.gml'
+Added compatibility script 'view\__init_view.gml'
+Added compatibility script '__init_global.gml'
+Added compatibility script '__global_object_depths.gml'

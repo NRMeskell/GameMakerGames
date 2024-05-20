@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"background_get_uvs",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"background_get_uvs",
+  "parent":{
+    "name":"background",
+    "path":"folders/Scripts/compatibility/background.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

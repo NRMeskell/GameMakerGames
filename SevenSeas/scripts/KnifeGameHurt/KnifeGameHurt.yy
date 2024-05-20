@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"KnifeGameHurt",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"KnifeGameHurt",
+  "parent":{
+    "name":"Conditions",
+    "path":"folders/Scripts/Events/Conditions.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

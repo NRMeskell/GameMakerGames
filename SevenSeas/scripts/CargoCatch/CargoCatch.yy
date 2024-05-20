@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"CargoCatch",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"CargoCatch",
+  "parent":{
+    "name":"CargoStolen",
+    "path":"folders/Scripts/Events/LandingEvents/PortEvents/Events/CargoStolen.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"SaveItem",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SaveItem",
+  "parent":{
+    "name":"SaveBasics",
+    "path":"folders/Scripts/SaveGame/SaveBasics.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

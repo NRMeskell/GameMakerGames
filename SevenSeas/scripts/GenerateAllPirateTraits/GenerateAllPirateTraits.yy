@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"GenerateAllPirateTraits",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"GenerateAllPirateTraits",
+  "parent":{
+    "name":"Pirate",
+    "path":"folders/Scripts/Pirate.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

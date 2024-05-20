@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"CookAllow",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"CookAllow",
+  "parent":{
+    "name":"CookLearn",
+    "path":"folders/Scripts/Events/Requests/keen/CookLearn.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"KnifeGamesAllow",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"KnifeGamesAllow",
+  "parent":{
+    "name":"KnifeGames",
+    "path":"folders/Scripts/Events/Requests/daring/KnifeGames.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

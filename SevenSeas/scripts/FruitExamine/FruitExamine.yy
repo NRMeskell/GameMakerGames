@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"FruitExamine",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"FruitExamine",
+  "parent":{
+    "name":"Fruit",
+    "path":"folders/Scripts/Events/LandingEvents/PortEvents/Events/Fruit.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

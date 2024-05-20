@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"SilverwheelDeny",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SilverwheelDeny",
+  "parent":{
+    "name":"Silverwheel",
+    "path":"folders/Scripts/Events/Characters/Silverwheel.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

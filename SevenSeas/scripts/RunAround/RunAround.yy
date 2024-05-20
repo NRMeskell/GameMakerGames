@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"RunAround",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"RunAround",
+  "parent":{
+    "name":"RunningAround",
+    "path":"folders/Scripts/Events/Requests/daring/RunningAround.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

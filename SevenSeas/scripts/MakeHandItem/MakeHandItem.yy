@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"MakeHandItem",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"MakeHandItem",
+  "parent":{
+    "name":"Items",
+    "path":"folders/Scripts/Items.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

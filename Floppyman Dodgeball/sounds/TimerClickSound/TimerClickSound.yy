@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"TimerClickSound",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":192,
+  "compression":3,
+  "conversionMode":0,
+  "duration":0.24381,
+  "name":"TimerClickSound",
+  "parent":{
+    "name":"General",
+    "path":"folders/Sounds/General.yy",
+  },
+  "preload":true,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"TimerClickSound",
+  "type":0,
+  "volume":0.71,
+}

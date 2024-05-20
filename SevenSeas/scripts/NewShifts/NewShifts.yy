@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"NewShifts",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"NewShifts",
+  "parent":{
+    "name":"NewShifts",
+    "path":"folders/Scripts/Events/Requests/Jolly/NewShifts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

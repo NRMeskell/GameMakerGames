@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"BirdsScareAway",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"BirdsScareAway",
+  "parent":{
+    "name":"Birds",
+    "path":"folders/Scripts/Events/SailingEvents/StandardEvents/Birds.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

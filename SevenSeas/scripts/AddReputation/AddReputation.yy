@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"AddReputation",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"AddReputation",
+  "parent":{
+    "name":"Events",
+    "path":"folders/Scripts/Events.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

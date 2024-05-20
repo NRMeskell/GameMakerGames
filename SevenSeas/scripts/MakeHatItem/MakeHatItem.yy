@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"MakeHatItem",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"MakeHatItem",
+  "parent":{
+    "name":"Items",
+    "path":"folders/Scripts/Items.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

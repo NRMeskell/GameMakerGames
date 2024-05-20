@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"FrogKingDemandLeave",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"FrogKingDemandLeave",
+  "parent":{
+    "name":"FrogKing",
+    "path":"folders/Scripts/Events/Characters/FrogKing.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

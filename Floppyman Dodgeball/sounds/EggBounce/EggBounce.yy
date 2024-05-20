@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"EggBounce",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":192,
+  "compression":3,
+  "conversionMode":0,
+  "duration":0.202789,
+  "name":"EggBounce",
+  "parent":{
+    "name":"dodgeball",
+    "path":"folders/Sounds/SoundEffects/dodgeball.yy",
+  },
+  "preload":true,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"EggBounce",
+  "type":0,
+  "volume":0.29,
+}

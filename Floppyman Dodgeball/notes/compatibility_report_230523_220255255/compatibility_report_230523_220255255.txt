@@ -1,0 +1,866 @@
+Converting GML script: ${project_dir}\objects\CharacterCreator\Create_0.gml
+Converted builtin - line 174: view_wport = view_hport*960/540 -> __view_set( e__VW.WPort, 0, view_hport*960/540 )
+Converted builtin - line 173: view_hport = display_get_gui_height( -> __view_set( e__VW.HPort, 0, display_get_gui_height( )
+Converted description /// @description Create Character
+Converted string - line 32: '!' -> "!"
+Converted string - line 33: '!' -> "!"
+Converted string - line 34: '!' -> "!"
+Converted string - line 50: '"' -> "\""
+Converted builtin - line 174: view_hport -> __view_get( e__VW.HPort, 0 )
+
+Converting GML script: ${project_dir}\objects\CharacterCreator\Alarm_2.gml
+Converted description /// @description Countdown mode timer
+
+Converting GML script: ${project_dir}\objects\CharacterCreator\Alarm_0.gml
+Converted description /// @description Create Character
+
+Converting GML script: ${project_dir}\objects\CharacterCreator\Step_0.gml
+Converted description /// @description global clicking
+Converted string - line 65: 'A' -> "A"
+Converted string - line 66: 'D' -> "D"
+Converted string - line 67: 'S' -> "S"
+Converted string - line 68: 'W' -> "W"
+
+Converting GML script: ${project_dir}\objects\CharacterCreator\Other_13.gml
+Converted description /// @description start golf
+
+Converting GML script: ${project_dir}\objects\CharacterCreator\Other_12.gml
+Converted description /// @description Clear Room
+
+Converting GML script: ${project_dir}\objects\CharacterCreator\Other_11.gml
+Converted description /// @description next room
+
+Converting GML script: ${project_dir}\objects\CharacterCreator\Other_10.gml
+Converted description /// @description GameOver
+
+Converting GML script: ${project_dir}\objects\CharacterCreator\Draw_73.gml
+Converted description /// @description Display character key selections
+Converted string - line 8: 'A' -> "A"
+Converted string - line 9: 'D' -> "D"
+
+Converting GML script: ${project_dir}\objects\CharacterCreator\Draw_64.gml
+Converted description /// @description Draw Scores
+
+Converting GML script: ${project_dir}\objects\CharacterController\Create_0.gml
+Converted description /// @description Forces
+Converted string - line 22: 'S' -> "S"
+Converted string - line 23: 'W' -> "W"
+Converted string - line 24: 'A' -> "A"
+Converted string - line 25: 'D' -> "D"
+
+Converting GML script: ${project_dir}\objects\CharacterController\Alarm_6.gml
+Converted description /// @description Slipped
+
+Converting GML script: ${project_dir}\objects\CharacterController\Alarm_5.gml
+Converted description /// @description Unstun
+
+Converting GML script: ${project_dir}\objects\CharacterController\Alarm_4.gml
+Converted description /// @description Not sticky
+
+Converting GML script: ${project_dir}\objects\CharacterController\Alarm_3.gml
+Converted description /// @description Not sticky
+
+Converting GML script: ${project_dir}\objects\CharacterController\Alarm_2.gml
+Converted description /// @description Hit By Timer
+
+Converting GML script: ${project_dir}\objects\CharacterController\Alarm_0.gml
+Converted description /// @description falling
+
+Converting GML script: ${project_dir}\objects\CharacterController\Step_0.gml
+Converted description /// @description Bring together Body Parts
+
+Converting GML script: ${project_dir}\objects\CharacterController\Mouse_57.gml
+Converted description /// @description Release
+
+Converting GML script: ${project_dir}\objects\CharacterController\Mouse_54.gml
+Converted description /// @description Grab
+
+Converting GML script: ${project_dir}\objects\CharacterController\Other_11.gml
+Converted description /// @description Found Marker Golf
+
+Converting GML script: ${project_dir}\objects\CharacterController\Other_10.gml
+Converted description /// @description Destroy
+
+Converting GML script: ${project_dir}\objects\CharacterController\Draw_73.gml
+Converted description /// @description draw golf arrows
+
+Converting GML script: ${project_dir}\objects\CharacterController\Draw_0.gml
+Converted description /// @description Draw Chracter
+
+Converting GML script: ${project_dir}\objects\CharacterCollider\Step_0.gml
+Converted description /// @description Float in water
+
+Converting GML script: ${project_dir}\objects\CharacterCollider\Collision_81fb300d-224b-460a-babe-81ef0685d4fe.gml
+Converted description /// @description Make particle on landing
+
+Converting GML script: ${project_dir}\objects\CloudController\Create_0.gml
+Converted description /// @description Create Clouds and start alarm
+
+Converting GML script: ${project_dir}\objects\CloudController\Alarm_0.gml
+Converted description /// @description Make Clouds
+
+Converting GML script: ${project_dir}\objects\PhysicsController\Create_0.gml
+Converted description /// @description Physics
+
+Converting GML script: ${project_dir}\objects\PhysicsController\Step_0.gml
+Converted description /// @description Update Physics to game Speed
+
+Converting GML script: ${project_dir}\objects\PartyPackObject\Step_0.gml
+Converted description /// @description Change size
+
+Converting GML script: ${project_dir}\objects\ExitButton\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\ExitButton\Step_0.gml
+Converted description /// @description clicked
+
+Converting GML script: ${project_dir}\objects\ExitButton\Mouse_10.gml
+Converted description /// @description Play Click
+
+Converting GML script: ${project_dir}\objects\ExitButton\Draw_0.gml
+Converted description /// @description Draw self
+
+Converting GML script: ${project_dir}\objects\PartyButton\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\PartyButton\Step_0.gml
+Converted description /// @description clicked and clickable
+
+Converting GML script: ${project_dir}\objects\PartyButton\Mouse_10.gml
+Converted description /// @description Play Click
+
+Converting GML script: ${project_dir}\objects\PartyButton\Draw_0.gml
+Converted description /// @description Draw self
+
+Converting GML script: ${project_dir}\objects\GameModes\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\GameModes\Step_0.gml
+Converted description /// @description clicked and clickable
+
+Converting GML script: ${project_dir}\objects\GameModes\Mouse_10.gml
+Converted description /// @description Play Click
+
+Converting GML script: ${project_dir}\objects\GameModes\Draw_0.gml
+Converted description /// @description Draw self
+
+Converting GML script: ${project_dir}\objects\SoundController\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\SoundController\Step_0.gml
+Converted description /// @description Music Controller
+
+Converting GML script: ${project_dir}\objects\ViewController\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\ViewController\Step_0.gml
+Converted builtin - line 41: view_xview = x-view_wview/2 -> __view_set( e__VW.XView, 0, x-view_wview/2 )
+Converted builtin - line 48: view_xview = 0 -> __view_set( e__VW.XView, 0, 0 )
+Converted builtin - line 42: view_yview = y-view_hview/2 -> __view_set( e__VW.YView, 0, y-view_hview/2 )
+Converted builtin - line 49: view_yview = 0 -> __view_set( e__VW.YView, 0, 0 )
+Converted builtin - line 38: view_wview = viewScale -> __view_set( e__VW.WView, 0, viewScale )
+Converted builtin - line 47: view_wview = 960 -> __view_set( e__VW.WView, 0, 960 )
+Converted builtin - line 39: view_hview = viewScale*540/960 -> __view_set( e__VW.HView, 0, viewScale*540/960 )
+Converted builtin - line 46: view_hview = 540 -> __view_set( e__VW.HView, 0, 540 )
+Converted builtin - line 28: view_wport = view_hport*960/540 -> __view_set( e__VW.WPort, 0, view_hport*960/540 )
+Converted builtin - line 26: view_hport -> __view_get( e__VW.HPort, 0 )
+Converted builtin - line 27: view_hport = display_get_gui_height( -> __view_set( e__VW.HPort, 0, display_get_gui_height( )
+Converted description /// @description Move to players
+Converted builtin - line 41: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 42: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 28: view_hport -> __view_get( e__VW.HPort, 0 )
+
+Converting GML script: ${project_dir}\objects\ViewController\Draw_72.gml
+Converted builtin - line 17: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 22: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 25: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 28: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 29: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 33: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 17: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 22: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 25: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 28: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 29: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 33: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 17: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 17: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 22: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 22: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 22: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 22: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 25: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 25: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 25: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 28: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 28: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 28: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 28: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 29: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 29: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 29: view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin - line 29: view_hview -> __view_get( e__VW.HView, 0 )
+Converted description /// @description draw background
+
+Converting GML script: ${project_dir}\objects\DodgeBallPersistentCreator\Create_0.gml
+Converted description /// @description Create stuff
+
+Converting GML script: ${project_dir}\objects\StageList\Create_0.gml
+Converted description /// @description Create 
+
+Converting GML script: ${project_dir}\objects\Begin\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\Begin\Step_0.gml
+Converted description /// @description clicked and clickable
+
+Converting GML script: ${project_dir}\objects\Begin\Mouse_10.gml
+Converted description /// @description Play Click
+
+Converting GML script: ${project_dir}\objects\Begin\Draw_0.gml
+Converted description /// @description Draw self
+
+Converting GML script: ${project_dir}\objects\StageButton\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\GamemodeButton\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\GamemodeButton\Step_0.gml
+Converted description /// @description slide in from left
+
+Converting GML script: ${project_dir}\objects\StockButton\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\StockButton\Step_0.gml
+Converted description /// @description slide in from left
+
+Converting GML script: ${project_dir}\objects\BallAmountButton\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\BallButton\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\MainMenu\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\MainMenu\Step_0.gml
+Converted description /// @description slide in from left
+
+Converting GML script: ${project_dir}\objects\MainMenu\Mouse_10.gml
+Converted description /// @description Play Click
+
+Converting GML script: ${project_dir}\objects\MainMenu\Draw_0.gml
+Converted description /// @description Draw self
+
+Converting GML script: ${project_dir}\objects\ArenaLanding1Spawner\Alarm_0.gml
+Converted description /// @description Spawn Terrain
+
+Converting GML script: ${project_dir}\objects\ArenaCurveLeftSpawner\Alarm_0.gml
+Converted description /// @description Spawn Terrain
+
+Converting GML script: ${project_dir}\objects\ArenaCurveRightSpawner\Alarm_0.gml
+Converted description /// @description Spawn Terrain
+
+Converting GML script: ${project_dir}\objects\ArenaLandingMainSpawner\Alarm_0.gml
+Converted description /// @description Spawn Terrain
+
+Converting GML script: ${project_dir}\objects\FarmTurbine\Step_0.gml
+Converted description /// @description Rotate
+
+Converting GML script: ${project_dir}\objects\FarmHouseSpawner\Alarm_2.gml
+Converted description /// @description Close door
+
+Converting GML script: ${project_dir}\objects\FarmHouseSpawner\Alarm_1.gml
+Converted description /// @description Release Chickens
+
+Converting GML script: ${project_dir}\objects\FarmHouseSpawner\Alarm_0.gml
+Converted description /// @description Spawn Terrain
+
+Converting GML script: ${project_dir}\objects\FarmTreeSpawner\Alarm_0.gml
+Converted description /// @description Spawn Terrain
+
+Converting GML script: ${project_dir}\objects\FarmGroundSpawner\Alarm_0.gml
+Converted description /// @description Spawn Terrain
+
+Converting GML script: ${project_dir}\objects\BlimpSpawner\Create_0.gml
+Converted description /// @description Set Blimp movement vars
+
+Converting GML script: ${project_dir}\objects\BlimpSpawner\Alarm_0.gml
+Converted description /// @description Spawn Terrain
+
+Converting GML script: ${project_dir}\objects\BlimpSpawner\Step_0.gml
+Converted description /// @description Move Blimp
+
+Converting GML script: ${project_dir}\objects\BoatSpawner\Alarm_0.gml
+Converted description /// @description Spawn Terrain
+
+Converting GML script: ${project_dir}\objects\BoatSpawner\Step_0.gml
+Converted description /// @description Move Boat
+
+Converting GML script: ${project_dir}\objects\BoatSpawner\Draw_73.gml
+Converted description /// @description Draw Water
+
+Converting GML script: ${project_dir}\objects\BoatSpoke\Step_0.gml
+Converted description /// @description Rotate
+
+Converting GML script: ${project_dir}\objects\Cloud\Create_0.gml
+Converted description /// @description Creation
+
+Converting GML script: ${project_dir}\objects\Cloud\Step_0.gml
+Converted description /// @description Move and delete
+
+Converting GML script: ${project_dir}\objects\FerrisWheelSpawner\Create_0.gml
+Converted description /// @description Spin
+
+Converting GML script: ${project_dir}\objects\FerrisWheelSpawner\Alarm_0.gml
+Converted description /// @description Spawn Terrain
+
+Converting GML script: ${project_dir}\objects\FerrisWheelSpoke\Step_0.gml
+Converted description /// @description Spin
+
+Converting GML script: ${project_dir}\objects\FerrisWheelLeftWall\Step_0.gml
+Converted description /// @description Attach
+
+Converting GML script: ${project_dir}\objects\FerrisWheelRightWall\Step_0.gml
+Converted description /// @description Attach
+
+Converting GML script: ${project_dir}\objects\FerrisWheelCircle\Step_0.gml
+Converted description /// @description Spin
+
+Converting GML script: ${project_dir}\objects\FerrisWheelRoofSpawner\Create_0.gml
+Converted description /// @description Spin
+
+Converting GML script: ${project_dir}\objects\FerrisWheelRoofSpawner\Alarm_0.gml
+Converted description /// @description Spawn Terrain
+
+Converting GML script: ${project_dir}\objects\FerrisWheeGameSpawner\Create_0.gml
+Converted description /// @description Spin
+
+Converting GML script: ${project_dir}\objects\FerrisWheeGameSpawner\Alarm_0.gml
+Converted description /// @description Spawn Terrain
+
+Converting GML script: ${project_dir}\objects\BridgeBridge\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\BridgeBridge\Alarm_0.gml
+Converted description /// @description Move Bridge
+
+Converting GML script: ${project_dir}\objects\BridgeBridge\Step_0.gml
+Converted description /// @description Moving
+
+Converting GML script: ${project_dir}\objects\BridgeCar\Create_0.gml
+Converted description /// @description StartDriving
+
+Converting GML script: ${project_dir}\objects\BridgeCar\Step_0.gml
+Converted description /// @description Destroy
+
+Converting GML script: ${project_dir}\objects\BridgeCar\Collision_9e6e980d-1057-4ec7-8153-a219970ad956.gml
+Converted description /// @description Move Ball
+
+Converting GML script: ${project_dir}\objects\BridgeCar\Collision_a47604d9-740d-4fcc-8532-7f9e42ec3dd7.gml
+Converted description /// @description Knock Over
+
+Converting GML script: ${project_dir}\objects\BridgeSpawner\Alarm_1.gml
+Converted description /// @description Spawn Car
+
+Converting GML script: ${project_dir}\objects\BridgeSpawner\Alarm_0.gml
+Converted description /// @description Spawn Terrain
+
+Converting GML script: ${project_dir}\objects\BridgeSpawner\Draw_0.gml
+Converted description /// @description Draw Water
+
+Converting GML script: ${project_dir}\objects\CannonBall\Create_0.gml
+Converted description /// @description Alarm 0 launch
+
+Converting GML script: ${project_dir}\objects\CannonBall\Alarm_0.gml
+Converted description /// @description Launch
+
+Converting GML script: ${project_dir}\objects\CannonBall\Step_0.gml
+Converted description /// @description Create Trail
+
+Converting GML script: ${project_dir}\objects\CannonBall\Collision_7533a11f-10b0-4a77-a354-16f9616401f4.gml
+Converted description /// @description Explode
+
+Converting GML script: ${project_dir}\objects\CannonBall\Collision_3fac90dd-b36a-4d8d-975e-3fa62a7865d6.gml
+Converted description /// @description Explode
+
+Converting GML script: ${project_dir}\objects\CannonBall\Other_10.gml
+Converted description /// @description Explode
+
+Converting GML script: ${project_dir}\objects\CastleSpawner\Alarm_1.gml
+Converted description /// @description Create CannonBall
+
+Converting GML script: ${project_dir}\objects\CastleSpawner\Alarm_0.gml
+Converted description /// @description Spawn Terrain
+
+Converting GML script: ${project_dir}\objects\FactorySpawner\Alarm_1.gml
+Converted description /// @description smoke
+
+Converting GML script: ${project_dir}\objects\FactorySpawner\Alarm_0.gml
+Converted description /// @description Spawn Terrain
+
+Converting GML script: ${project_dir}\objects\FactoryGroundSpawner\Alarm_0.gml
+Converted description /// @description Spawn Terrain
+
+Converting GML script: ${project_dir}\objects\FactoryWheel\Step_0.gml
+Converted description /// @description Rotate
+
+Converting GML script: ${project_dir}\objects\FactoryPoint\Create_0.gml
+Converted description /// @description Path
+
+Converting GML script: ${project_dir}\objects\FactoryPoint\Alarm_0.gml
+Converted description /// @description Create Carts and Move to position
+
+Converting GML script: ${project_dir}\objects\FactoryBelt\Step_0.gml
+Converted description /// @description Move Left
+
+Converting GML script: ${project_dir}\objects\FactoryCloud\Create_0.gml
+Converted description /// @description Create Vars
+
+Converting GML script: ${project_dir}\objects\FactoryCloud\Step_0.gml
+Converted description /// @description Move up
+
+Converting GML script: ${project_dir}\objects\FactoryCar\Step_0.gml
+Converted description /// @description Don't glitch
+
+Converting GML script: ${project_dir}\objects\SkiLodgeSpawner\Alarm_0.gml
+Converted description /// @description Spawn Terrain
+
+Converting GML script: ${project_dir}\objects\SkiLiftPoint\Create_0.gml
+Converted description /// @description Path
+
+Converting GML script: ${project_dir}\objects\SkiLiftPoint\Alarm_0.gml
+Converted description /// @description Create Carts and Move to position
+
+Converting GML script: ${project_dir}\objects\SkiLiftPoint\Step_1.gml
+Converted description /// @description restart path
+
+Converting GML script: ${project_dir}\objects\SkiLiftChair\Step_0.gml
+Converted description /// @description Don't glitch
+
+Converting GML script: ${project_dir}\objects\DodgeBallTimer\Create_0.gml
+Converted description /// @description Start Timer
+
+Converting GML script: ${project_dir}\objects\DodgeBallTimer\Alarm_5.gml
+Converted description /// @description Drop Rocket
+
+Converting GML script: ${project_dir}\objects\DodgeBallTimer\Alarm_4.gml
+Converted description /// @description Drop Sticky
+
+Converting GML script: ${project_dir}\objects\DodgeBallTimer\Alarm_3.gml
+Converted description /// @description Drop Egg
+
+Converting GML script: ${project_dir}\objects\DodgeBallTimer\Alarm_2.gml
+Converted description /// @description Drop Super
+
+Converting GML script: ${project_dir}\objects\DodgeBallTimer\Alarm_1.gml
+Converted description /// @description Drop Rare
+
+Converting GML script: ${project_dir}\objects\DodgeBallTimer\Alarm_0.gml
+Converted description /// @description Drop Ball
+
+Converting GML script: ${project_dir}\objects\DodgeBallTimer\Other_10.gml
+Converted description /// @description Drop Ball
+
+Converting GML script: ${project_dir}\objects\ExplotionParticle\Create_0.gml
+Converted description /// @description Change image
+
+Converting GML script: ${project_dir}\objects\ExplotionParticle\Alarm_0.gml
+Converted description /// @description Gone
+
+Converting GML script: ${project_dir}\objects\ExplotionParticle\Step_0.gml
+Converted description /// @description Fire
+
+Converting GML script: ${project_dir}\objects\ExplotionParticle\Collision_3a0d392b-be3e-4a8e-966e-a6c99888517b.gml
+Converted description /// @description Disapear
+
+Converting GML script: ${project_dir}\objects\WaterParticle\Create_0.gml
+Converted description /// @description Change image
+
+Converting GML script: ${project_dir}\objects\WaterParticle\Alarm_0.gml
+Converted description /// @description Gone
+
+Converting GML script: ${project_dir}\objects\WaterParticle\Step_0.gml
+Converted description /// @description Fire
+
+Converting GML script: ${project_dir}\objects\WaterParticle\Collision_b554d3a0-f965-41c1-bea7-c26e01ad7513.gml
+Converted description /// @description Disapear
+
+Converting GML script: ${project_dir}\objects\WaterParticle\Collision_61cd8fa5-e79d-4e87-8e55-5a5a3b202eea.gml
+Converted description /// @description Disapear
+
+Converting GML script: ${project_dir}\objects\ContactParticle\Create_0.gml
+Converted description /// @description Change image
+
+Converting GML script: ${project_dir}\objects\ContactParticle\Alarm_0.gml
+Converted description /// @description Gone
+
+Converting GML script: ${project_dir}\objects\ContactParticle\Step_0.gml
+Converted description /// @description Fire
+
+Converting GML script: ${project_dir}\objects\ContactParticle\Collision_0d4a593a-7d8d-44e1-a6de-52f68b1ce62a.gml
+Converted description /// @description Disapear
+
+Converting GML script: ${project_dir}\objects\Bomb\Create_0.gml
+Converted description /// @description Ball Type
+
+Converting GML script: ${project_dir}\objects\Bomb\Alarm_0.gml
+Converted description /// @description Explode on Timer
+
+Converting GML script: ${project_dir}\objects\Bomb\Other_10.gml
+Converted description /// @description Explode
+
+Converting GML script: ${project_dir}\objects\SoccerBall\Create_0.gml
+Converted description /// @description Ball Type
+
+Converting GML script: ${project_dir}\objects\SoccerBall\Step_2.gml
+Converted description /// @description Volume
+
+Converting GML script: ${project_dir}\objects\SoccerBall\Collision_1c0b7d84-0eb9-4380-bf76-415ff9d492c0.gml
+Converted description /// @description Kicked
+
+Converting GML script: ${project_dir}\objects\WaterBalloonBall\Create_0.gml
+Converted description /// @description Ball Type
+
+Converting GML script: ${project_dir}\objects\WaterBalloonBall\Alarm_0.gml
+Converted description /// @description Explode on Timer
+
+Converting GML script: ${project_dir}\objects\WaterBalloonBall\Other_10.gml
+Converted description /// @description Explode
+
+Converting GML script: ${project_dir}\objects\EggBall\Create_0.gml
+Converted description /// @description Ball Type
+
+Converting GML script: ${project_dir}\objects\EggBall\Alarm_0.gml
+Converted description /// @description Explode on Timer
+
+Converting GML script: ${project_dir}\objects\EggBall\Other_10.gml
+Converted description /// @description Explode
+
+Converting GML script: ${project_dir}\objects\DodgeBall\Create_0.gml
+Converted description /// @description Ball Type
+
+Converting GML script: ${project_dir}\objects\BowlingBall\Create_0.gml
+Converted description /// @description Ball Type
+
+Converting GML script: ${project_dir}\objects\BowlingBall\Step_1.gml
+Converted description /// @description Rolling
+
+Converting GML script: ${project_dir}\objects\BowlingBall\Collision_b3028b68-2949-4cc3-856e-5960eb03ee58.gml
+Converted description /// @description Knock Over
+
+Converting GML script: ${project_dir}\objects\SuperBall\Create_0.gml
+Converted description /// @description Ball Type
+
+Converting GML script: ${project_dir}\objects\StickyBall\Create_0.gml
+Converted description /// @description Ball Type
+
+Converting GML script: ${project_dir}\objects\StickyBall\Step_1.gml
+Converted description /// @description Refresh
+
+Converting GML script: ${project_dir}\objects\RocketBall\Create_0.gml
+Converted description /// @description Ball Type
+
+Converting GML script: ${project_dir}\objects\RocketBall\Destroy_0.gml
+Converted description /// @description Turn off sound
+
+Converting GML script: ${project_dir}\objects\RocketBall\Alarm_0.gml
+Converted description /// @description No more rocket
+
+Converting GML script: ${project_dir}\objects\RocketBall\Step_1.gml
+Converted description /// @description rocket
+
+Converting GML script: ${project_dir}\objects\RocketBall\Other_10.gml
+Converted description /// @description Lock onto target
+
+Converting GML script: ${project_dir}\objects\FootBall\Create_0.gml
+Converted description /// @description Ball Type
+
+Converting GML script: ${project_dir}\objects\FootBall\Collision_0da3f4f0-b73f-4450-bec2-fcaa437a0388.gml
+Converted description /// @description Bounce Sound 
+
+Converting GML script: ${project_dir}\objects\Balloon\Create_0.gml
+Converted description /// @description Ball Type
+
+Converting GML script: ${project_dir}\objects\Balloon\Step_1.gml
+Converted description /// @description low gravity
+
+Converting GML script: ${project_dir}\objects\Chicken\Create_0.gml
+Converted description /// @description Ball Type
+
+Converting GML script: ${project_dir}\objects\Chicken\Alarm_1.gml
+Converted description /// @description Jump
+
+Converting GML script: ${project_dir}\objects\Chicken\Alarm_0.gml
+Converted description /// @description No more rocket
+
+Converting GML script: ${project_dir}\objects\Chicken\Step_0.gml
+Converted description /// @description Recover
+
+Converting GML script: ${project_dir}\objects\Chicken\Collision_cae0d3ec-1335-40fa-bd0b-da9cd9c9978c.gml
+Converted description /// @description Call hit
+
+Converting GML script: ${project_dir}\objects\Chicken\Other_10.gml
+Converted description /// @description Lock onto target
+
+Converting GML script: ${project_dir}\objects\Chicken\Draw_0.gml
+Converted description /// @description Draw Chicken
+
+Converting GML script: ${project_dir}\objects\ChickenWing\Create_0.gml
+Converted description /// @description imageIndex
+
+Converting GML script: ${project_dir}\objects\DodgeBallParent\Step_0.gml
+Converted description /// @description Off Stage
+
+Converting GML script: ${project_dir}\objects\DodgeBallParent\Collision_ad4a0a10-9caf-4215-aeba-9ddd96378910.gml
+Converted description /// @description Bounce Sound 
+
+Converting GML script: ${project_dir}\objects\DodgeBallParent\Collision_d7773ef6-1a4d-48ec-8ac6-7d7d1b7551dc.gml
+Converted description /// @description Bounce Sound 
+
+Converting GML script: ${project_dir}\objects\DodgeBallParent\Collision_eb422ef7-9d47-400c-ad7c-f2d97cebca5e.gml
+Converted description /// @description Bounce Sound 
+
+Converting GML script: ${project_dir}\objects\DodgeBallParent\Other_11.gml
+Converted description /// @description Bounce Sound 
+
+Converting GML script: ${project_dir}\objects\GolfGamemodeButton\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\GolfGamemodeButton\Step_0.gml
+Converted description /// @description slide in from left
+
+Converting GML script: ${project_dir}\objects\GolfTimeOut\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\GolfTimeOut\Step_0.gml
+Converted description /// @description slide in from left
+
+Converting GML script: ${project_dir}\objects\BeginGolf\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\BeginGolf\Step_0.gml
+Converted description /// @description clicked and clickable
+
+Converting GML script: ${project_dir}\objects\BeginGolf\Mouse_10.gml
+Converted description /// @description Play Click
+
+Converting GML script: ${project_dir}\objects\BeginGolf\Draw_0.gml
+Converted description /// @description Draw self
+
+Converting GML script: ${project_dir}\objects\GrassDrawer\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\GrassOutliner\Create_0.gml
+Converted description /// @description Create grass surface
+
+Converting GML script: ${project_dir}\objects\GrassOutliner\Draw_0.gml
+Converted description /// @description Draw grass w/ outline
+
+Converting GML script: ${project_dir}\objects\LavaDrop\Create_0.gml
+Converted description /// @description Change image
+
+Converting GML script: ${project_dir}\objects\LavaDrop\Alarm_0.gml
+Converted description /// @description Gone
+
+Converting GML script: ${project_dir}\objects\LavaDrop\Step_0.gml
+Converted description /// @description Fire
+
+Converting GML script: ${project_dir}\objects\LavaDrop\Collision_0652150d-b211-47b6-9ec5-d5607ed6a5a7.gml
+Converted description /// @description Disapear
+
+Converting GML script: ${project_dir}\objects\GolfSand0\Collision_50be51fe-75fc-40ff-80d0-dcce8b548966.gml
+Converted description /// @description can't jump
+
+Converting GML script: ${project_dir}\objects\GolfSand1\Collision_fff456e5-9aaa-4656-9aff-ecc4ebadb9b7.gml
+Converted description /// @description can't jump
+
+Converting GML script: ${project_dir}\objects\GolfWater\Step_0.gml
+Converted description /// @description make wet
+
+Converting GML script: ${project_dir}\objects\GolfWater\Draw_0.gml
+Converted description /// @description Draw self
+
+Converting GML script: ${project_dir}\objects\Rock\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\PineTreeSpawner\Create_0.gml
+Converted description /// @description spawn stuff
+
+Converting GML script: ${project_dir}\objects\PineTreeSpawner\Alarm_0.gml
+Converted description /// @description spawn branches
+
+Converting GML script: ${project_dir}\objects\PineTreeSpawner\Step_0.gml
+Converted description /// @description Sway
+
+Converting GML script: ${project_dir}\objects\PineTreeTrunk\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\PineTreeBranchesBottom\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\PineTreeBranchesMid\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\PineTreeBranchesTop\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\SmallTreeSpawner\Create_0.gml
+Converted description /// @description spawn stuff
+
+Converting GML script: ${project_dir}\objects\SmallTreeSpawner\Alarm_0.gml
+Converted description /// @description spawn branches
+
+Converting GML script: ${project_dir}\objects\SmallTreeSpawner\Step_0.gml
+Converted description /// @description Sway
+
+Converting GML script: ${project_dir}\objects\GolfTurbine\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\GolfTurbine\Step_0.gml
+Converted description /// @description Rotate
+
+Converting GML script: ${project_dir}\objects\GolfTurbineBack\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: ${project_dir}\objects\GolfTurbineBack\Step_0.gml
+Converted description /// @description Rotate
+
+Converting GML script: ${project_dir}\objects\GolfWindmillSpawner\Create_0.gml
+Converted description /// @description alarm[0]
+
+Converting GML script: ${project_dir}\objects\GolfWindmillSpawner\Alarm_0.gml
+Converted description /// @description spawn blades
+
+Converting GML script: ${project_dir}\objects\GolfClub\Create_0.gml
+Converted description /// @description In sand
+
+Converting GML script: ${project_dir}\objects\GolfClub\Alarm_3.gml
+Converted description /// @description free player
+
+Converting GML script: ${project_dir}\objects\GolfClub\Alarm_2.gml
+Converted description /// @description Hit Ball
+
+Converting GML script: ${project_dir}\objects\GolfClub\Alarm_1.gml
+Converted description /// @description Hold Swing
+
+Converting GML script: ${project_dir}\objects\GolfClub\Alarm_0.gml
+Converted description /// @description Next Stage of swinging
+
+Converting GML script: ${project_dir}\objects\GolfClub\Step_0.gml
+Converted description /// @description Swing Paths
+
+Converting GML script: ${project_dir}\objects\GolfBall\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\GolfBall\Step_0.gml
+Converted description /// @description ball stuff
+
+Converting GML script: ${project_dir}\objects\GolfBall\Collision_9e50e5f6-6b7f-4947-a501-607ffe1a7f0a.gml
+Converted description /// @description Hit into hole
+
+Converting GML script: ${project_dir}\objects\GolfBall\Collision_d5823bca-3850-4d0e-9c58-254eccaee576.gml
+Converted description /// @description Rock Bounce
+
+Converting GML script: ${project_dir}\objects\GolfBall\Collision_2a5af76b-9fbc-4783-ad44-b5bb1c10efd7.gml
+Converted description /// @description Rock Bounce
+
+Converting GML script: ${project_dir}\objects\GolfBall\Collision_d0a8441c-8464-40e7-9f65-f193908a5706.gml
+Converted description /// @description Tree Bounce
+
+Converting GML script: ${project_dir}\objects\GolfBall\Collision_59a80b0a-9652-497a-9d04-2ce60a91df94.gml
+Converted description /// @description Rock Bounce
+
+Converting GML script: ${project_dir}\objects\GolfBall\Collision_18b10dc4-2e21-4589-92dc-86d5fd0e6006.gml
+Converted description /// @description Sand Bounce
+
+Converting GML script: ${project_dir}\objects\GolfBall\Collision_d06939bc-6509-4c91-96c5-23f04108ccd5.gml
+Converted description /// @description Green Bounce
+
+Converting GML script: ${project_dir}\objects\GolfBall\Collision_269bc4a0-5367-4384-800f-27944030a3ed.gml
+Converted description /// @description Grass Bounce
+
+Converting GML script: ${project_dir}\objects\GolfBall\Other_12.gml
+Converted description /// @description Bounce Sound 
+
+Converting GML script: ${project_dir}\objects\GolfBall\Other_11.gml
+Converted description /// @description Bring ball
+
+Converting GML script: ${project_dir}\objects\GolfBall\Other_10.gml
+Converted description /// @description Reset ball
+
+Converting GML script: ${project_dir}\objects\GolfBallGhost\Alarm_0.gml
+Converted description /// @description Create New Ball
+
+Converting GML script: ${project_dir}\objects\BallMarker\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: ${project_dir}\objects\BallMarker\Step_0.gml
+Converted description /// @description Sand
+
+Converting GML script: ${project_dir}\objects\BallMarker\Other_10.gml
+Converted description /// @description Move to good location
+
+Converting GML script: ${project_dir}\objects\BallMarker\Draw_0.gml
+Converted description /// @description Draw Marker
+
+Converting GML script: ${project_dir}\objects\GolfFlagSpawner\Create_0.gml
+Converted description /// @description Make Flag
+
+Converting GML script: ${project_dir}\objects\GolfFlagSpawner\Alarm_0.gml
+Converted description /// @description Make Flag
+
+Converting GML script: ${project_dir}\objects\GolfFlagFlag\Step_0.gml
+Converted description /// @description Blow
+
+Missing audiogroup for sound: 'MenuMusic' - setting to default audio group
+Missing audiogroup for sound: 'FarmMusic' - setting to default audio group
+Missing audiogroup for sound: 'FerrisWheelMusic' - setting to default audio group
+Missing audiogroup for sound: 'BoatMusic' - setting to default audio group
+Missing audiogroup for sound: 'CastleMusic' - setting to default audio group
+Missing audiogroup for sound: 'BridgeMusic' - setting to default audio group
+Missing audiogroup for sound: 'SkiLodgeMusic' - setting to default audio group
+Missing audiogroup for sound: 'FactoryMusic' - setting to default audio group
+Missing audiogroup for sound: 'BlimpMusic' - setting to default audio group
+Missing audiogroup for sound: 'GolfMenuMusic' - setting to default audio group
+Missing audiogroup for sound: 'GolfMapMusic' - setting to default audio group
+Missing audiogroup for sound: 'SplashSound' - setting to default audio group
+Missing audiogroup for sound: 'BounceSound3' - setting to default audio group
+Missing audiogroup for sound: 'WooshSound' - setting to default audio group
+Missing audiogroup for sound: 'BowlingPinSound' - setting to default audio group
+Missing audiogroup for sound: 'EggBounce' - setting to default audio group
+Missing audiogroup for sound: 'SplatSound' - setting to default audio group
+Missing audiogroup for sound: 'HugeExplosionSound' - setting to default audio group
+Missing audiogroup for sound: 'RocketSound' - setting to default audio group
+Missing audiogroup for sound: 'BombExplosionSound' - setting to default audio group
+Missing audiogroup for sound: 'CarHornSound' - setting to default audio group
+Missing audiogroup for sound: 'ChickenSound' - setting to default audio group
+Missing audiogroup for sound: 'BoingSound' - setting to default audio group
+Missing audiogroup for sound: 'BounceSound' - setting to default audio group
+Missing audiogroup for sound: 'BounceSound2' - setting to default audio group
+Missing audiogroup for sound: 'BirdsSound' - setting to default audio group
+Missing audiogroup for sound: 'GrassBounceSound' - setting to default audio group
+Missing audiogroup for sound: 'HitBallSound' - setting to default audio group
+Missing audiogroup for sound: 'RockBounceSound' - setting to default audio group
+Missing audiogroup for sound: 'SandBounceSound' - setting to default audio group
+Missing audiogroup for sound: 'TreeBounceSound' - setting to default audio group
+Missing audiogroup for sound: 'TimerClickSound' - setting to default audio group
+Missing audiogroup for sound: 'LightClickSound' - setting to default audio group
+Missing audiogroup for sound: 'ClickSound' - setting to default audio group
+Game speed set to 60
+Added compatibility script 'action/action_if_variable.gml'
+Added compatibility script 'action/action_set_alarm.gml'
+Added compatibility script 'background/background_get_width.gml'
+Added compatibility script 'background/draw_background.gml'
+Added compatibility script 'background/draw_background_ext.gml'
+Added compatibility script 'instance/instance_create.gml'
+Added compatibility script 'object/object_get_depth.gml'
+Added compatibility script 'view/__view_get.gml'
+Added compatibility script 'view/__view_set.gml'
+Added compatibility script 'view/__view_set_internal.gml'
+Added compatibility script 'action/__init_action.gml'
+Added compatibility script 'background/__init_background.gml'
+Added compatibility script 'view/__init_view.gml'
+Added compatibility script '__init_global.gml'
+Added compatibility script '__global_object_depths.gml'

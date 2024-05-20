@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"StrangeTrap",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"StrangeTrap",
+  "parent":{
+    "name":"StrangeAnimal",
+    "path":"folders/Scripts/Events/SailingEvents/TropicalEvents/StrangeAnimal.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

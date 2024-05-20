@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"PirateShipEngage",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"PirateShipEngage",
+  "parent":{
+    "name":"PirateShip",
+    "path":"folders/Scripts/Events/SailingEvents/PirateEvents/PirateShip.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"GetWaterLevel",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"GetWaterLevel",
+  "parent":{
+    "name":"Ship",
+    "path":"folders/Scripts/Ship.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"JournalAllow",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"JournalAllow",
+  "parent":{
+    "name":"MissingJournal",
+    "path":"folders/Scripts/Events/Requests/fearsome/MissingJournal.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

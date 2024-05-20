@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"JungleAction",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"JungleAction",
+  "parent":{
+    "name":"Special",
+    "path":"folders/Scripts/LandPort/CampFireChoices/Special.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

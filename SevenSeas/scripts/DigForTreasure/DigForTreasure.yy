@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"DigForTreasure",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"DigForTreasure",
+  "parent":{
+    "name":"Special",
+    "path":"folders/Scripts/LandPort/CampFireChoices/Special.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

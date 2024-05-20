@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"MessyAllow",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"MessyAllow",
+  "parent":{
+    "name":"Messy",
+    "path":"folders/Scripts/Events/Requests/keen/Messy.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

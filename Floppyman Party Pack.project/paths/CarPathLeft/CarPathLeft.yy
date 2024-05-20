@@ -1,0 +1,28 @@
+{
+  "$GMPath":"",
+  "%Name":"CarPathLeft",
+  "closed":false,
+  "kind":1,
+  "name":"CarPathLeft",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":-128.0,"y":620.0,},
+    {"speed":100.0,"x":36.0,"y":524.0,},
+    {"speed":100.0,"x":80.0,"y":504.0,},
+    {"speed":100.0,"x":128.0,"y":492.0,},
+    {"speed":100.0,"x":188.0,"y":484.0,},
+    {"speed":100.0,"x":352.0,"y":484.0,},
+    {"speed":100.0,"x":744.0,"y":484.0,},
+    {"speed":100.0,"x":788.0,"y":484.0,},
+    {"speed":100.0,"x":840.0,"y":492.0,},
+    {"speed":100.0,"x":880.0,"y":504.0,},
+    {"speed":100.0,"x":952.0,"y":536.0,},
+    {"speed":100.0,"x":1088.0,"y":616.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

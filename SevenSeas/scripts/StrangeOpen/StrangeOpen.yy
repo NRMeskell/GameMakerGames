@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"StrangeOpen",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"StrangeOpen",
+  "parent":{
+    "name":"StrangeAnimal",
+    "path":"folders/Scripts/Events/SailingEvents/TropicalEvents/StrangeAnimal.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
