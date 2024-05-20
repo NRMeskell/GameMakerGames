@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"SupplySearch",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SupplySearch",
+  "parent":{
+    "name":"CampFireChoices",
+    "path":"folders/Scripts/LandPort/CampFireChoices.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

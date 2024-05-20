@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"DrawBackWithLighting",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"DrawBackWithLighting",
+  "parent":{
+    "name":"Lighting",
+    "path":"folders/Scripts/Lighting.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

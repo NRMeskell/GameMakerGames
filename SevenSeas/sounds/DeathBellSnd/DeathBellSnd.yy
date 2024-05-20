@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"DeathBellSnd",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":192,
+  "compression":0,
+  "conversionMode":0,
+  "duration":4.822971,
+  "name":"DeathBellSnd",
+  "parent":{
+    "name":"menu",
+    "path":"folders/Sounds/menu.yy",
+  },
+  "preload":true,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"DeathBellSnd",
+  "type":0,
+  "volume":1.0,
+}

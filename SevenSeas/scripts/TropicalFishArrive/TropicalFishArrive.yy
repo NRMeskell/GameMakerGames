@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"TropicalFishArrive",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"TropicalFishArrive",
+  "parent":{
+    "name":"Fish",
+    "path":"folders/Scripts/Events/SailingEvents/TropicalEvents/Fish.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"CrazyPirateMedicate",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"CrazyPirateMedicate",
+  "parent":{
+    "name":"CrazyPirate",
+    "path":"folders/Scripts/Events/SailingEvents/StillEvents/CrazyPirate.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

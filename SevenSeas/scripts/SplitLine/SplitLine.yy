@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"SplitLine",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SplitLine",
+  "parent":{
+    "name":"SaveGame",
+    "path":"folders/Scripts/SaveGame.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

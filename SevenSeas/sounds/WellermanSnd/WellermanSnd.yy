@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"WellermanSnd",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":192,
+  "compression":0,
+  "conversionMode":0,
+  "duration":113.330795,
+  "name":"WellermanSnd",
+  "parent":{
+    "name":"PirateCove",
+    "path":"folders/Sounds/music/PirateCove.yy",
+  },
+  "preload":true,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"WellermanSnd",
+  "type":0,
+  "volume":0.2,
+}

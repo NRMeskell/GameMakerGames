@@ -1,0 +1,244 @@
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\scripts\BackToMenu\BackToMenu.gml
+Converted description /// @description BackToMenu
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\scripts\OpenCredits\OpenCredits.gml
+Converted description /// @description Open
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\scripts\RoomSelect\RoomSelect.gml
+Converted description /// @description GoToRoom
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\scripts\LevelSelect\LevelSelect.gml
+Converted description /// @description Create Level Select
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\scripts\draw_sprite_shear\draw_sprite_shear.gml
+Converted description /// @description  @description draw_sprite_shear(sprite,subimg,x,y,xshear,yshear,image_xscale,image_yscale,image_color,alpha)/// @param sprite
+/// @param subimg
+/// @param x
+/// @param y
+/// @param xshear
+/// @param yshear
+/// @param image_xscale
+/// @param image_yscale
+/// @param image_color
+/// @param alpha
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\SpiritParent\Alarm_0.gml
+Converted description /// @description Move
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\SpiritParent\Step_0.gml
+Converted description /// @description Move
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\WhiteSpirit\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\WhiteSpirit\Collision_faa78816-12ba-4b12-a8d7-fe724fa4d2fc.gml
+Converted description /// @description Victory
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\WhiteSpirit\Other_10.gml
+Converted description /// @description Draw Connection
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\BlackSpirit\Create_0.gml
+Converted description /// @description Vars
+String not found: ConversionLog_ConvertedString 6 'S' "S"
+String not found: ConversionLog_ConvertedString 7 'W' "W"
+String not found: ConversionLog_ConvertedString 8 'A' "A"
+String not found: ConversionLog_ConvertedString 9 'D' "D"
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\BlackSpirit\Other_10.gml
+Converted description /// @description draw self
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\RainbowSpirit\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\RainbowSpirit\Destroy_0.gml
+Converted description /// @description Stop Birds
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\RainbowSpirit\Alarm_0.gml
+Converted description /// @description Next Room
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\RainbowSpirit\Step_0.gml
+Converted description /// @description Alive Circle
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\RainbowSpirit\Other_10.gml
+Converted description /// @description Draw Circle
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\Drawable\Other_10.gml
+Converted description /// @description Draw self and shadows
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\GroundTile\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\GroundTile\Draw_72.gml
+Converted description /// @description Draw self
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\RoomRunner\Create_0.gml
+Converted description /// @description Create Ground
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\RoomRunner\Draw_72.gml
+Converted description /// @description Draw Water
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\RoomRunner\Draw_0.gml
+Converted description /// @description Draw Drawables
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\RoomRunner\KeyPress_27.gml
+Converted description /// @description menu
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\RoomRunner\KeyPress_8.gml
+Converted description /// @description TEMP
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\Bush\Create_0.gml
+Converted description /// @description image_speed 
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\Door\Other_10.gml
+Converted description /// @description Draw self and shadows
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\AllDoor\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\ClosedAllDoor\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\BlackDoor\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\ClosedBlackDoor\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\WhiteDoor\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\ClosedWhiteDoor\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\Portal\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\Portal\Step_0.gml
+Converted description /// @description Portal
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\Button\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\Button\Step_0.gml
+Converted description /// @description Flip Switch
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\Button\Other_11.gml
+Converted description /// @description Activate
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\Switch\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\Switch\Step_0.gml
+Converted description /// @description Flip Switch
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\Wall\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\SoulTrap\Create_0.gml
+Converted description /// @description vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\SoulTrap\Alarm_0.gml
+Converted description /// @description Failed 
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\SoulTrap\Step_0.gml
+Converted description /// @description Hit Spirit
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\PanelParent\Draw_0.gml
+Converted description /// @description Draw Self
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\ButtonParent\Step_2.gml
+Converted description /// @description button pressed
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\ButtonParent\Draw_0.gml
+Converted description /// @description Draw Self
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\LevelFailed\Create_0.gml
+Converted description /// @description Create
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\Restart\Create_0.gml
+Converted description /// @description Create
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\Restart\Other_10.gml
+Converted description /// @description Delete
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\LevelComplete\Create_0.gml
+Converted description /// @description Create
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\Credits\Create_0.gml
+Converted description /// @description Create
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\Credits\KeyPress_27.gml
+Converted description /// @description exit
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\GameRunner\Create_0.gml
+Converted description /// @description Set Vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\GameRunner\Step_0.gml
+Converted description /// @description Play Music
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\GameRunner\Other_11.gml
+Converted description /// @description Level Failed
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\GameRunner\Other_10.gml
+Converted description /// @description Level Succeded
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\MenuCreator\Create_0.gml
+Converted description /// @description Create Menu
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\MenuCreator\Step_0.gml
+Converted description /// @description Create Clouds
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\MenuCreator\Draw_0.gml
+Converted description /// @description Draw Title
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\LevelButton\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\LevelButton\Draw_73.gml
+Converted description /// @description Draw Lock
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\LevelPanel\Create_0.gml
+Converted description /// @description Create
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\LevelPanel\KeyPress_27.gml
+Converted description /// @description Delete
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\ArrowDrawer\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\ArrowDrawer\Step_0.gml
+Converted description /// @description Check has moved
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\ArrowDrawer\Draw_0.gml
+Converted description /// @description Draw Arrows
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\Butterfly\Create_0.gml
+Converted description /// @description Vars
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\Butterfly\Alarm_0.gml
+Converted description /// @description Move about
+
+Converting GML script: C:\Users\natha\OneDrive\Documents\GameMakerStudio2\TheBond\conv\gmx\TheBond_41B89C3E\objects\Cloud\Step_0.gml
+Converted description /// @description Shrink
+
+Missing audiogroup for sound: 'Music1' - setting to default audio group
+Missing audiogroup for sound: 'Music2' - setting to default audio group
+Missing audiogroup for sound: 'Music3' - setting to default audio group
+Missing audiogroup for sound: 'WinSnd' - setting to default audio group
+Missing audiogroup for sound: 'Birds' - setting to default audio group
+Missing audiogroup for sound: 'SuckSnd' - setting to default audio group
+Missing audiogroup for sound: 'Win2Snd' - setting to default audio group
+Missing audiogroup for sound: 'Suck2Snd' - setting to default audio group
+Missing audiogroup for sound: 'LeverSnd' - setting to default audio group
+Missing audiogroup for sound: 'TeleportSnd' - setting to default audio group
+Missing audiogroup for sound: 'ButtonSnd' - setting to default audio group
+Missing audiogroup for sound: 'ButtonReleaseSnd' - setting to default audio group
+Game speed set to 60
+Added compatibility script 'd3d\d3d_transform_add_translation.gml'
+Added compatibility script 'd3d\d3d_transform_stack_pop.gml'
+Added compatibility script 'd3d\d3d_transform_stack_push.gml'
+Added compatibility script 'instance\instance_create.gml'
+Added compatibility script 'object\object_get_depth.gml'
+Added compatibility script 'd3d\__init_d3d.gml'
+Added compatibility script '__init_global.gml'
+Added compatibility script '__global_object_depths.gml'

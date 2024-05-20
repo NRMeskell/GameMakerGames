@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"DeleteSaveFile",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"DeleteSaveFile",
+  "parent":{
+    "name":"SaveGame",
+    "path":"folders/Scripts/SaveGame.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

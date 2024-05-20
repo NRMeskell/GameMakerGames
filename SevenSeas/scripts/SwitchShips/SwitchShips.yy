@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"SwitchShips",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SwitchShips",
+  "parent":{
+    "name":"Ship",
+    "path":"folders/Scripts/Ship.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

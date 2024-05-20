@@ -1,0 +1,2 @@
+/// @description Dont draw self
+

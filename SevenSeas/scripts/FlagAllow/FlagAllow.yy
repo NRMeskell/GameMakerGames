@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"FlagAllow",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"FlagAllow",
+  "parent":{
+    "name":"FlagRedesign",
+    "path":"folders/Scripts/Events/Requests/fearsome/FlagRedesign.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

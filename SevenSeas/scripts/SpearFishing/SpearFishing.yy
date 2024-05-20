@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"SpearFishing",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SpearFishing",
+  "parent":{
+    "name":"Fishing",
+    "path":"folders/Scripts/Events/Requests/daring/Fishing.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

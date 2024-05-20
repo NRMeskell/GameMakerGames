@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"ContinueGame",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ContinueGame",
+  "parent":{
+    "name":"ButtonScripts",
+    "path":"folders/Scripts/ButtonScripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

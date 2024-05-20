@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"TropicalHeat",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"TropicalHeat",
+  "parent":{
+    "name":"Heat",
+    "path":"folders/Scripts/Events/SailingEvents/TropicalEvents/Heat.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

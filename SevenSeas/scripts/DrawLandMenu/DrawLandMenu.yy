@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"DrawLandMenu",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"DrawLandMenu",
+  "parent":{
+    "name":"LandPort",
+    "path":"folders/Scripts/LandPort.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

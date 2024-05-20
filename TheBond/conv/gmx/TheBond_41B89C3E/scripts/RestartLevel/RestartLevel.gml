@@ -1,0 +1,3 @@
+//RestartLevel
+
+room_restart()

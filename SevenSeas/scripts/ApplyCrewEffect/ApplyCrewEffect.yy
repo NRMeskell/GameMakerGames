@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"ApplyCrewEffect",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ApplyCrewEffect",
+  "parent":{
+    "name":"Combat",
+    "path":"folders/Scripts/Combat.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

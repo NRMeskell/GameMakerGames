@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"PlagueShipLook",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"PlagueShipLook",
+  "parent":{
+    "name":"PlagueShip",
+    "path":"folders/Scripts/Events/SailingEvents/StandardEvents/PlagueShip.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

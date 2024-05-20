@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"LookInCave",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"LookInCave",
+  "parent":{
+    "name":"Special",
+    "path":"folders/Scripts/LandPort/CampFireChoices/Special.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

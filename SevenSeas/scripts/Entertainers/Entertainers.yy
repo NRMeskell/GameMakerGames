@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"Entertainers",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Entertainers",
+  "parent":{
+    "name":"Entertainers",
+    "path":"folders/Scripts/Events/LandingEvents/PortEvents/Events/Entertainers.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

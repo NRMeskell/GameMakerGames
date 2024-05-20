@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"LoadPirate",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"LoadPirate",
+  "parent":{
+    "name":"SaveBasics",
+    "path":"folders/Scripts/SaveGame/SaveBasics.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

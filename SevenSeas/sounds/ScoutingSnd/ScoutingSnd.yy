@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"ScoutingSnd",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":192,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.0,
+  "name":"ScoutingSnd",
+  "parent":{
+    "name":"Melle",
+    "path":"folders/Sounds/game/Combat/Melle.yy",
+  },
+  "preload":true,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"ScoutingSnd",
+  "type":0,
+  "volume":1.0,
+}

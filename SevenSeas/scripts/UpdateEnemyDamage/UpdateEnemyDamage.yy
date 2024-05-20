@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"UpdateEnemyDamage",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"UpdateEnemyDamage",
+  "parent":{
+    "name":"Combat",
+    "path":"folders/Scripts/Combat.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

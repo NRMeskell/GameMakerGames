@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"PartyAllow",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"PartyAllow",
+  "parent":{
+    "name":"Party",
+    "path":"folders/Scripts/Events/Requests/Jolly/Party.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

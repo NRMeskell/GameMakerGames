@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"DrawShip",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"DrawShip",
+  "parent":{
+    "name":"Ship",
+    "path":"folders/Scripts/Ship.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"TikiHeads",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"TikiHeads",
+  "parent":{
+    "name":"Special",
+    "path":"folders/Scripts/LandPort/CampFireChoices/Special.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

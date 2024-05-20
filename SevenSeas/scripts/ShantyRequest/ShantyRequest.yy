@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"ShantyRequest",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ShantyRequest",
+  "parent":{
+    "name":"Shanties",
+    "path":"folders/Scripts/Events/Requests/Jolly/Shanties.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

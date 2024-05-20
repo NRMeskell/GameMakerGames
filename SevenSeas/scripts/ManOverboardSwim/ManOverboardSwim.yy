@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"ManOverboardSwim",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ManOverboardSwim",
+  "parent":{
+    "name":"ManOverboard",
+    "path":"folders/Scripts/Events/SailingEvents/StormEvents/ManOverboard.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

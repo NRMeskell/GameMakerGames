@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"InstrumentLearn",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"InstrumentLearn",
+  "parent":{
+    "name":"Instrument",
+    "path":"folders/Scripts/Events/Requests/Jolly/Instrument.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

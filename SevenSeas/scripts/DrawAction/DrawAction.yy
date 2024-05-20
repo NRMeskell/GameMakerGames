@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"DrawAction",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"DrawAction",
+  "parent":{
+    "name":"Pirate",
+    "path":"folders/Scripts/Pirate.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

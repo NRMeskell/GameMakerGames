@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"RaftPirateLetFloat",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"RaftPirateLetFloat",
+  "parent":{
+    "name":"RaftPirate",
+    "path":"folders/Scripts/Events/SailingEvents/StandardEvents/RaftPirate.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

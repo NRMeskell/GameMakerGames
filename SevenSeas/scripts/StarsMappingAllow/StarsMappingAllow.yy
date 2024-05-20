@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"StarsMappingAllow",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"StarsMappingAllow",
+  "parent":{
+    "name":"StarsMapping",
+    "path":"folders/Scripts/Events/Requests/keen/StarsMapping.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

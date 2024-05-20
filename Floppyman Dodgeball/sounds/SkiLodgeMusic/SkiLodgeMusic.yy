@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"SkiLodgeMusic",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":192,
+  "compression":3,
+  "conversionMode":0,
+  "duration":128.67918,
+  "name":"SkiLodgeMusic",
+  "parent":{
+    "name":"DodgeBall",
+    "path":"folders/Sounds/Music/DodgeBall.yy",
+  },
+  "preload":true,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"SkiLodgeMusic.mp3",
+  "type":0,
+  "volume":0.09,
+}

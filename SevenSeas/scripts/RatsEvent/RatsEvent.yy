@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"RatsEvent",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"RatsEvent",
+  "parent":{
+    "name":"Conditions",
+    "path":"folders/Scripts/Events/Conditions.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

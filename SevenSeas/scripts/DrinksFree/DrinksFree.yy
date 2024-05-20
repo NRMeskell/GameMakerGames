@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"DrinksFree",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"DrinksFree",
+  "parent":{
+    "name":"DrinkStand",
+    "path":"folders/Scripts/Events/LandingEvents/PortEvents/Events/DrinkStand.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"SaveBuildings",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SaveBuildings",
+  "parent":{
+    "name":"MapSaving",
+    "path":"folders/Scripts/SaveGame/MapSaving.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

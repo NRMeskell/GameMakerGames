@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"SplatSound",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":192,
+  "compression":3,
+  "conversionMode":0,
+  "duration":1.397551,
+  "name":"SplatSound",
+  "parent":{
+    "name":"dodgeball",
+    "path":"folders/Sounds/SoundEffects/dodgeball.yy",
+  },
+  "preload":true,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"SplatSound",
+  "type":0,
+  "volume":0.46,
+}

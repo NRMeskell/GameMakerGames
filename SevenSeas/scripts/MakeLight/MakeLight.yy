@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"MakeLight",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"MakeLight",
+  "parent":{
+    "name":"Ship",
+    "path":"folders/Scripts/Ship.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"MakeRandomPantsItem",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"MakeRandomPantsItem",
+  "parent":{
+    "name":"Items",
+    "path":"folders/Scripts/Items.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

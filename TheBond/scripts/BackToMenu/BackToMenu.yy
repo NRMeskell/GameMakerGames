@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"BackToMenu",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"BackToMenu",
+  "parent":{
+    "name":"ButtonScripts",
+    "path":"folders/Scripts/ButtonScripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

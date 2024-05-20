@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"LoseRandomItems",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"LoseRandomItems",
+  "parent":{
+    "name":"Items",
+    "path":"folders/Scripts/Items.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

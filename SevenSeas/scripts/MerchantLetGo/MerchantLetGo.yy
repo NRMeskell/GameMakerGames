@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"MerchantLetGo",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"MerchantLetGo",
+  "parent":{
+    "name":"Merchant",
+    "path":"folders/Scripts/Events/SailingEvents/StandardEvents/Merchant.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

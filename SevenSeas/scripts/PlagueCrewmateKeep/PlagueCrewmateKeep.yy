@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"PlagueCrewmateKeep",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"PlagueCrewmateKeep",
+  "parent":{
+    "name":"Conditions",
+    "path":"folders/Scripts/Events/Conditions.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

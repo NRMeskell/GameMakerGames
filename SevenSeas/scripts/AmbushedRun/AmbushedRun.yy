@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"AmbushedRun",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"AmbushedRun",
+  "parent":{
+    "name":"Ambushed",
+    "path":"folders/Scripts/Events/SailingEvents/StandardEvents/Ambushed.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

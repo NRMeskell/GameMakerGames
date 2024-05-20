@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"AttackEvents",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"AttackEvents",
+  "parent":{
+    "name":"Combat",
+    "path":"folders/Scripts/Combat.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

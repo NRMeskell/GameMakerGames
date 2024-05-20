@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"FoundItems",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"FoundItems",
+  "parent":{
+    "name":"Notifications",
+    "path":"folders/Scripts/Events/LandingEvents/PortEvents/Notifications.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

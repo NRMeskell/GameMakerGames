@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"FrogNegotiate",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"FrogNegotiate",
+  "parent":{
+    "name":"FrogsArrive",
+    "path":"folders/Scripts/Events/SailingEvents/TropicalEvents/FrogsArrive.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

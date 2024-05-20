@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"CollectorsAttack",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"CollectorsAttack",
+  "parent":{
+    "name":"CoveCollector",
+    "path":"folders/Scripts/Events/Characters/CoveCollector.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

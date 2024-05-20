@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"LoadReputation",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"LoadReputation",
+  "parent":{
+    "name":"SaveBasics",
+    "path":"folders/Scripts/SaveGame/SaveBasics.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

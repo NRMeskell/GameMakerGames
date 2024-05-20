@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"SpoiledFoodSalvage",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SpoiledFoodSalvage",
+  "parent":{
+    "name":"SpoiledFood",
+    "path":"folders/Scripts/Events/SailingEvents/StillEvents/SpoiledFood.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

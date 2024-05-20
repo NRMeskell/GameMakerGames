@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"GiantTurtleSpecial",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"GiantTurtleSpecial",
+  "parent":{
+    "name":"GiantTurtle",
+    "path":"folders/Scripts/Events/Characters/GiantTurtle.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

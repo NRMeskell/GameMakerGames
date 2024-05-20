@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"HostileLocals",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"HostileLocals",
+  "parent":{
+    "name":"Notifications",
+    "path":"folders/Scripts/Events/LandingEvents/PortEvents/Notifications.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

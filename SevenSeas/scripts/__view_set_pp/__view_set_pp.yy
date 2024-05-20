@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"__view_set_pp",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"__view_set_pp",
+  "parent":{
+    "name":"view",
+    "path":"folders/Scripts/compatibility/view.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

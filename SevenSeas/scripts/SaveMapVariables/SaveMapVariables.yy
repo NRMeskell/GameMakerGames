@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"SaveMapVariables",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SaveMapVariables",
+  "parent":{
+    "name":"MapSaving",
+    "path":"folders/Scripts/SaveGame/MapSaving.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,24 @@
+{
+  "$GMPath":"",
+  "%Name":"SkiLodgeLiftPath",
+  "closed":false,
+  "kind":0,
+  "name":"SkiLodgeLiftPath",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":1140.0,"y":96.0,},
+    {"speed":100.0,"x":928.0,"y":100.0,},
+    {"speed":100.0,"x":716.0,"y":96.0,},
+    {"speed":100.0,"x":568.0,"y":80.0,},
+    {"speed":100.0,"x":460.0,"y":60.0,},
+    {"speed":100.0,"x":372.0,"y":36.0,},
+    {"speed":100.0,"x":224.0,"y":-32.0,},
+    {"speed":100.0,"x":104.0,"y":-136.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

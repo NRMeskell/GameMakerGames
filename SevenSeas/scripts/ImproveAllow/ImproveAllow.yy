@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"ImproveAllow",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ImproveAllow",
+  "parent":{
+    "name":"ImproveShip",
+    "path":"folders/Scripts/Events/Requests/keen/ImproveShip.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

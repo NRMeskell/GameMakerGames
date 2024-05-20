@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"MalariaCrewmate",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"MalariaCrewmate",
+  "parent":{
+    "name":"Conditions",
+    "path":"folders/Scripts/Events/Conditions.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

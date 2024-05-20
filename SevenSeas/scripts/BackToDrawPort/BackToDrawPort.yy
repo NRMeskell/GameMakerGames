@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"BackToDrawPort",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"BackToDrawPort",
+  "parent":{
+    "name":"LandPort",
+    "path":"folders/Scripts/LandPort.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

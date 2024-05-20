@@ -1,0 +1,28 @@
+{
+  "$GMPath":"",
+  "%Name":"FactoryCartPath",
+  "closed":true,
+  "kind":1,
+  "name":"FactoryCartPath",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":122.0,"y":135.0,},
+    {"speed":100.0,"x":113.0,"y":164.0,},
+    {"speed":100.0,"x":113.0764,"y":318.07498,},
+    {"speed":100.0,"x":113.0,"y":490.0,},
+    {"speed":100.0,"x":126.0,"y":510.0,},
+    {"speed":100.0,"x":144.0,"y":516.0,},
+    {"speed":100.0,"x":168.0,"y":510.0,},
+    {"speed":100.0,"x":180.0,"y":490.0,},
+    {"speed":100.0,"x":180.0,"y":320.3333,},
+    {"speed":100.0,"x":180.0,"y":163.0,},
+    {"speed":100.0,"x":172.0,"y":135.0,},
+    {"speed":100.0,"x":144.0,"y":125.0,},
+  ],
+  "precision":8,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

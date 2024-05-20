@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"GetNewCharacterEncounter",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"GetNewCharacterEncounter",
+  "parent":{
+    "name":"Characters",
+    "path":"folders/Scripts/Events/Characters.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

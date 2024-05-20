@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"CollectorsPay",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"CollectorsPay",
+  "parent":{
+    "name":"CoveCollector",
+    "path":"folders/Scripts/Events/Characters/CoveCollector.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

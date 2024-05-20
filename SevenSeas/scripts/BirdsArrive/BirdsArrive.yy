@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"BirdsArrive",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"BirdsArrive",
+  "parent":{
+    "name":"Birds",
+    "path":"folders/Scripts/Events/SailingEvents/StandardEvents/Birds.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

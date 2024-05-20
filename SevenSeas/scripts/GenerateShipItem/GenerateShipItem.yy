@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"GenerateShipItem",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"GenerateShipItem",
+  "parent":{
+    "name":"Ship",
+    "path":"folders/Scripts/Ship.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

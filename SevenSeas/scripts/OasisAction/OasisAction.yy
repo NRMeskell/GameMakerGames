@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"OasisAction",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"OasisAction",
+  "parent":{
+    "name":"Special",
+    "path":"folders/Scripts/LandPort/CampFireChoices/Special.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

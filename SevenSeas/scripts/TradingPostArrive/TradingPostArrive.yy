@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"TradingPostArrive",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"TradingPostArrive",
+  "parent":{
+    "name":"TradingPost",
+    "path":"folders/Scripts/Events/SailingEvents/PirateEvents/TradingPost.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

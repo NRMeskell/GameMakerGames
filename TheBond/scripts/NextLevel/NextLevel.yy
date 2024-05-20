@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"NextLevel",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"NextLevel",
+  "parent":{
+    "name":"ButtonScripts",
+    "path":"folders/Scripts/ButtonScripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

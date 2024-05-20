@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"CargoAmount",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"CargoAmount",
+  "parent":{
+    "name":"Cargo",
+    "path":"folders/Scripts/Cargo.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

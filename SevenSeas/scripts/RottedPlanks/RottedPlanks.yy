@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"RottedPlanks",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"RottedPlanks",
+  "parent":{
+    "name":"Conditions",
+    "path":"folders/Scripts/Events/Conditions.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

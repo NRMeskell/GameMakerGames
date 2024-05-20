@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"NoiseAllow",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"NoiseAllow",
+  "parent":{
+    "name":"LessNoise",
+    "path":"folders/Scripts/Events/Requests/keen/LessNoise.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

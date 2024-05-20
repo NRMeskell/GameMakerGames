@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"MastDamagedSend",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"MastDamagedSend",
+  "parent":{
+    "name":"MastDamage",
+    "path":"folders/Scripts/Events/SailingEvents/StormEvents/MastDamage.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

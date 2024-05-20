@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"PartyCrew",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"PartyCrew",
+  "parent":{
+    "name":"Party",
+    "path":"folders/Scripts/Events/Requests/Jolly/Party.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

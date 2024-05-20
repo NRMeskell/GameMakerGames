@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"DrunkenSailorSnd",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":192,
+  "compression":0,
+  "conversionMode":0,
+  "duration":93.33261,
+  "name":"DrunkenSailorSnd",
+  "parent":{
+    "name":"PirateCove",
+    "path":"folders/Sounds/music/PirateCove.yy",
+  },
+  "preload":true,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"DrunkenSailorSnd",
+  "type":0,
+  "volume":0.12,
+}

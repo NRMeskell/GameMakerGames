@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"StowawayFlog",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"StowawayFlog",
+  "parent":{
+    "name":"Stowaway",
+    "path":"folders/Scripts/Events/SailingEvents/StandardEvents/Stowaway.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

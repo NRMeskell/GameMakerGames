@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"closeEventCode",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"closeEventCode",
+  "parent":{
+    "name":"Events",
+    "path":"folders/Scripts/Events.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"CollectorsDecline",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"CollectorsDecline",
+  "parent":{
+    "name":"CoveCollector",
+    "path":"folders/Scripts/Events/Characters/CoveCollector.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
