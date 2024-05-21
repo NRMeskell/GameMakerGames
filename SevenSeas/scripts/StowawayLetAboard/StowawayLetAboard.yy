@@ -6,7 +6,7 @@
   "name":"StowawayLetAboard",
   "parent":{
     "name":"Stowaway",
-    "path":"folders/Scripts/Events/SailingEvents/StandardEvents/Stowaway.yy",
+    "path":"folders/Scripts/Events/SailingEvents/PirateEvents/Stowaway.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

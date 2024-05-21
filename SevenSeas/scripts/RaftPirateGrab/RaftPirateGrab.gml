@@ -42,7 +42,7 @@ function RaftPirateGrab() {
 		    }
 	}
     else{
-		ds_list_add(global.notificationList, "Sailor drowned!", "The sailor, too weak to climb, fails to hold on to the rope and falls back in to the sea.") 
+		ds_list_add(global.notificationList, "Sailor drowned!", "The sailor, too weak to climb, fails to hold on to the rope and falls back into the sea.") 
 		UpdateMorale(-2,  global.JOLLY)
 		UpdateMorale(-1,  global.DARING)
 		UpdateMorale(-1,  -1)
