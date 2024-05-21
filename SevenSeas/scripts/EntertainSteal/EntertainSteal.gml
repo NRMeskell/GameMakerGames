@@ -5,7 +5,6 @@ function EntertainSteal() {
 	    {
 	    items = LoseRandomItems(instance_number(Pirate) div 3)
 	    ds_list_add(global.notificationList, "caught!", "someone notices, and the crowd attack and rob your crew! Items lost: " + items)
-	    AddReputation("repute", -2, "pickpocketing")
 		}
 	else
 	    {

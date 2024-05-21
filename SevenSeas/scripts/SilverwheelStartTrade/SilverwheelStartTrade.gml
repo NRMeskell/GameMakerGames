@@ -4,8 +4,7 @@ function SilverwheelStartTrade() {
 	GetRandomStore(irandom_range(3,4), "Trades")
 
 	with CaptainSilverwheel{
-	    myVar += 2
-	    event_user(1)
+	    myVar += 1
 	    }     
         
 	script_execute(closeEventCode)

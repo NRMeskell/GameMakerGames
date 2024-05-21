@@ -5,7 +5,6 @@ function FrogKingRefuse() {
 		FrogKing.myState = "free"
 	}
 	else{
-		AddReputation("frogs", -2, "refusal of the king")
 		ds_list_add(global.notificationList, "Demands Refused!", "The Frog King in unhappy. He wonders if a little military encouragement will change your mind.")
 		FrogKing.myState = "annoyed"
 		}

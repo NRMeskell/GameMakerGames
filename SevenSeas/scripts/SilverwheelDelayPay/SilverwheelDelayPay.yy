@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"SilverwheelDelayPay",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SilverwheelDelayPay",
+  "parent":{
+    "name":"Silverwheel",
+    "path":"folders/Scripts/Events/Characters/Silverwheel.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

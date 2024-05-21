@@ -3,20 +3,17 @@
 
 if myState == "at port" or myState == "unmet"{
     ds_list_add(locations, global.seaNames[0])
-	if searchReputationType("repute")[0] > -2
-		ds_list_add(myPortEvents, JohnnyArrive)
-	else
-		ds_list_add(myPortEvents, JohnnyArriveScared)
+	ds_list_add(myPortEvents, JohnnyArrive)
+	myVar = 0
     }
 else if myState == "on ship"{
     UpdateCharacterPortEvents(JohnnyRunOff)
-	if searchReputationType("repute")[0] < -3
-		UpdateCharacterEvents(JohnnyEatsFood, JohnnyScared)
-	else if searchReputationType("repute")[0] < -1
-		UpdateCharacterEvents(JohnnyEatsFood, JohnnySad)
-	else
-		UpdateCharacterEvents(JohnnyEatsFood, JohnnySings, JohnnyMakeItem, JohnnyGetInWay)
-    for(i=0; i<7; i++)
+	UpdateCharacterEvents(JohnnyEatsFood, JohnnySings, JohnnyMakeItem, JohnnyGetInWay)
+    if myVar = 1{
+		myVar = 0
+		UpdateCharacterEvents(JohnnyScared)
+	}
+	for(i=0; i<7; i++)
         ds_list_add(locations, global.seaNames[i])
     }
 else if myState == "stow away"{
@@ -24,12 +21,13 @@ else if myState == "stow away"{
     UpdateCharacterEvents(JohnnyStowaway)
     for(i=0; i<7; i++)
         ds_list_add(locations, global.seaNames[i])
+	myVar = 0
     }
 else if myState == 3{
     ///Johnny becomes angry
     UpdateCharacterEvents()
     UpdateCharacterPortEvents(JohnnyFurious)
-
+	myVar = 0
     ds_list_add(locations, global.seaNames[0])
     }
 

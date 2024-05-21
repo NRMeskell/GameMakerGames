@@ -36,7 +36,7 @@ if alarm[1] == -1
     draw_rectangle(x-21-healthBarWidth, (y-19)+33, x-21-myHealthWidth, (y-18)+33, false)
 	
     draw_set_color(merge_color(c_black,c_red,0.6))
-    draw_rectangle(x-21-healthBarWidth, (y-19)+33, x-21-myHealthWidth, (y-19)+33, false)
+    draw_rectangle(x-21-healthBarWidth, (y-19)+33, x-21-myHealthWidth, (y-18)+33, false)
     
 	//draw health marks
 	draw_set_color(c_black)

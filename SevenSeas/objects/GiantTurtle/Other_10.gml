@@ -3,9 +3,9 @@
 ds_list_add(locations, global.seaNames[1])
 
 if myState != "unmet"{
-	result = irandom(myVar + searchReputationType("nature")[0])
-	myStates = ["waiting", "waiting", "waiting", "small", "small", "med", "special"]
-	myState = myStates[min(result, 6)]
+	result = irandom(myVar)
+	myStates = ["waiting", "waiting", "small", "small", "med", "special"]
+	myState = myStates[min(result, 5)]
 }
 
 

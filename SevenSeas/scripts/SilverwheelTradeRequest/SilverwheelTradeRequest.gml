@@ -11,14 +11,7 @@ function SilverwheelTradeRequest() {
 		}
 	else{
 		ds_list_add(global.notificationList, "Insulted!", "Captain Silverwheel sails away furiously!")
-		AddReputation("repute", -2, "silverwheel insult")
 	}
         
 	script_execute(closeEventCode)
-
-
-
-
-
-
 }

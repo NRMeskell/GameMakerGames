@@ -8,7 +8,6 @@ function WildIgnore() {
 	    }
 	else{
 		ds_list_add(global.notificationList, "annoyed locals", "The locals note your lack of help.")
-		AddReputation("repute", -1, "annoyed locals")
 	}
 
 	script_execute(closeEventCode)

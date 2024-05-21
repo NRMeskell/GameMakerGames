@@ -20,7 +20,6 @@ function BirdsScareAway() {
 		    }
 
 		ds_list_add(global.notificationList, "Failed to scare off the birds!", "They made away with cargo:#" + itemsTaken)
-		AddReputation("nature", -1, "bird frightening")
 	}
 
 	EventDrawer.floatAway = true

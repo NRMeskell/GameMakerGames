@@ -15,7 +15,7 @@ function PirateMoraleUpdate(argument0, argument1, argument2){
 
 	repeat(abs(moraleChange))
 	    {
-	    if random(1) < power(2,(global.seaLevel-stars))
+	    if true //always gain morale random(1) < power(2,(global.seaLevel-stars))
 	        {
 	        if sign(moraleChange) == -1
 	            {

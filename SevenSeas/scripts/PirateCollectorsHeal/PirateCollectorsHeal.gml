@@ -15,7 +15,7 @@ function PirateCollectorsHeal() {
 	    captionText = "Cove Patrol"
 	    global.moraleBoost = "Patrol" 
     
-	    eventText = "Captain Hardcoin arrives, and offers his aid in return for your " + searchReputationType("patrol")[1] + "!"
+	    eventText = "Captain Hardcoin arrives, and offers his aid!"
     
 	    myShip = instance_create(-1000,0,ShipEvent)
 	    with myShip

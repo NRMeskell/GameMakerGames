@@ -1,3 +1,6 @@
+///@description CargoAmount(type)
+///@param type
+
 function CargoAmount(argument0) {
 	cargoStored = 0
 

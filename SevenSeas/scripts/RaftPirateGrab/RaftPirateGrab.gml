@@ -30,8 +30,6 @@ function RaftPirateGrab() {
 		        {
 		        image_index = 1
 		        }
-				
-			AddReputation("repute", 2, "sailor rescue")
 		    }
 		else
 		    {

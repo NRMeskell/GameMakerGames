@@ -10,7 +10,6 @@ function FightAllow() {
 	        other.itemLost = LoseRandomItem()
 	        }
 	    ds_list_add(global.notificationList, myPirate.firstName + " lost!", "they were beat badly, and their " + itemLost + " was taken!")
-		AddReputation("fear", -2, "lost street-brawl")
 		}
 	else
 	    {
@@ -22,7 +21,6 @@ function FightAllow() {
 	        }
         
 	    ds_list_add(global.notificationList, myPirate.firstName + " won!", "they were victorious and gain morale.")
-		AddReputation("fear", 1, "lost street-brawl")
 		}
 
 	script_execute(closeEventCode)

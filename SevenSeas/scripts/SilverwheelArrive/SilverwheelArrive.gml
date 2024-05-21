@@ -18,19 +18,12 @@ function SilverwheelArrive() {
 	        }
     
 	    myShip = instance_create(-1000,0,ShipEvent)
-	    with myShip
-	        {
+	    with myShip{
 	        myShipHull = SilverwheelShipSpr
 	        flagColor = c_white
 	        myFlag = SilverwheelFlagSpr
-	        }
+	    }
 	    global.moraleBoost = "Silverwheel"
 		
-		CaptainSilverwheel.myState = "trade"
-	    }
-
-
-
-
-
+	}
 }

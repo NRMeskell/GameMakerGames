@@ -6,7 +6,11 @@
 ///@param type
 ///@param amount
 ///@param event name
-function AddReputation(argument0, argument1, argument2){		
+function AddReputation(argument0, argument1, argument2){	
+	return;
+}
+
+/*
 	if argument1 > 0{
 		cancelRep = false
 		for(var i=0; i<ds_list_size(global.reputation) and cancelRep = false; i++){
@@ -32,7 +36,7 @@ function AddReputation(argument0, argument1, argument2){
 	myDisplay = instance_create(MapCreator.conquerButtonX - 40, -20, ReputationDisplay)
 	myDisplay.repType = argument0
 	myDisplay.amount = argument1
-}
+}*/
 
 function searchReputationType(argument0){
 	searchList = ds_list_create()

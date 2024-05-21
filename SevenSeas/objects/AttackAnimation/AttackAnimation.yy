@@ -11,8 +11,8 @@
   "name":"AttackAnimation",
   "overriddenProperties":[],
   "parent":{
-    "name":"PlayerAttacks",
-    "path":"folders/Objects/Combat/Attacks/PlayerAttacks.yy",
+    "name":"Attacks",
+    "path":"folders/Objects/Combat/Attacks.yy",
   },
   "parentObjectId":{
     "name":"LightParent",

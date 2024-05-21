@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Ship",
-    "path":"folders/Objects/Combat/Attacks/PlayerAttacks/Ship.yy",
+    "path":"folders/Objects/Combat/Attacks/Ship.yy",
   },
   "parentObjectId":{
     "name":"ShipAttack",

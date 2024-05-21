@@ -9,9 +9,14 @@ global.KEEN = 1
 global.FEARSOME = 2
 global.DARING = 3
 
-moraleSheet[0] = Morale1Spr
-moraleSheet[1] = Morale1Spr
-moraleSheet[2] = Morale1Spr
+moraleMax[0] = 8;
+moraleMax[1] = 12;
+moraleMax[2] = 16;
+
+moraleXLow = 50;
+moraleXHigh = 124;
+moraleY = 137;
+moraleXWidth = moraleXHigh-moraleXLow;
 
 
 //NOTES

@@ -14,9 +14,7 @@ if (mouse_check_button_pressed(mb_left) and (onButtonRight or onButtonLeft))// o
     audio_play_sound(SlidingOpenSnd, 1, false)
     if onButtonLeft
         event_user(0)
-	AddReputation("repute", -1, "slaughter of surrendering ship")
-	AddReputation("fear", 1, "slaughter of surrendering ship")
-    }
+	}
     
 if closed
     {

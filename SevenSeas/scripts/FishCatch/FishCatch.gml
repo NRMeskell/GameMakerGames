@@ -1,5 +1,4 @@
 function FishCatch() {
-	AddReputation("nature", -1, "catching fish")
 	//Stop Birds
 	if argument0{
 		GetRandomLoot(irandom(2)+1, "fish caught", [4,6])

@@ -3,7 +3,6 @@ function MermaidFriend() {
 
 	if argument0
 	    {
-		AddReputation("nature", 2, "kindness to the mermaids")
 	    with Pirate
 	        {
 	        UpdateMorale(1, -1)

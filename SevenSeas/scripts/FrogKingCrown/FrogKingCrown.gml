@@ -1,6 +1,5 @@
 function FrogKingCrown() {	
 	
-	AddReputation("frogs", 5, "tropical crown gift")
 	ds_list_add(global.notificationList, "Crown Returned!", "The frog king leaps in delight! He takes the crown, promises free passage, and presents a royal gift!")
 
 	FrogKing.myState = "frog gift"

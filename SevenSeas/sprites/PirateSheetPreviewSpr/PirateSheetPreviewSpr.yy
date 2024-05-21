@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"PirateMenu",
-    "path":"folders/Sprites/PirateMenu.yy",
+    "name":"Buttons",
+    "path":"folders/Sprites/Buttons.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

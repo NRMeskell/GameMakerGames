@@ -1,5 +1,5 @@
 function JohnnyWait() {
-	if irandom(1) > 0 and searchReputationType("repute")[0] > -1
+	if irandom(1) > 0
 	    {
 	    ds_list_add(global.notificationList, "Johnny returns!", "he proudly brings back some stuff he 'found' in the market!")
 	    with Pirate
@@ -14,7 +14,9 @@ function JohnnyWait() {
 	    ds_list_add(global.notificationList, "Johhny does not return!", "The crew wait impatiently for the rest of the day, but Johhny is not seen.")
 	    with Pirate
 	        {
-	        UpdateMorale(-1, global.DARING)
+	        UpdateMorale(1, global.FEARSOME)
+			UpdateMorale(-1, global.DARING)
+	        UpdateMorale(-1, global.KEEN)
 	        UpdateMorale(-3, global.JOLLY)
 	        }
         

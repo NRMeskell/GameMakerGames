@@ -14,17 +14,11 @@ function StowawayLetAboard() {
 				UpdateMorale(-1, -1)	
 			    UpdateMorale(-1, global.FEARSOME)
 			    }
-				
-			AddReputation("repute", 2, "stowaway mercy")
-			AddReputation("fear", -1, "stowaway mercy")
 			}
 		else{
 			ds_list_add(global.notificationList, "stowaway declines!", "The stowaway says they only wanted to get out of town, and do not want to join the crew. They will leave at the next port.")
 			with newPirate
 				myGoal = "leave"
-			
-			AddReputation("repute", 2, "stowaway mercy")
-			AddReputation("fear", -1, "stowaway mercy")
 			}
 		}
 	else

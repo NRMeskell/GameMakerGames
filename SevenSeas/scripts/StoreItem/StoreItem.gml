@@ -1,3 +1,7 @@
+///@description StoreItem(type, amount)
+///@param type
+///@param amount
+
 function StoreItem(argument0, argument1) {
 	//Work with food types
 	if argument0 == 6

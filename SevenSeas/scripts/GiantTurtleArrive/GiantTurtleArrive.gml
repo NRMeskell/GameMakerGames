@@ -12,9 +12,9 @@ function GiantTurtleArrive() {
 	    global.allowSelect = false
 	    captionText = "Giant Sea Trutle"
 	    if GiantTurtle.myState == "unmet"
-	        eventText = "a massive sea turtle arrives, and begins to swim alongside the ship" 
+	        eventText = "a massive sea turtle arrives and begins to swim alongside the ship" 
 	    else
-	        eventText = "the sea turtle returns, and once again begins to swim alongside the ship" 
+	        eventText = "the sea turtle returns and once again begins to swim alongside the ship" 
         
 		GiantTurtle.myState = "waiting"
 	    with instance_create(0,0,GiantTurtleDrawer)

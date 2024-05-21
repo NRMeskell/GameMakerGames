@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Melle",
-    "path":"folders/Objects/Combat/Attacks/PlayerAttacks/Melle.yy",
+    "path":"folders/Objects/Combat/Attacks/Melle.yy",
   },
   "parentObjectId":{
     "name":"RealAttack",

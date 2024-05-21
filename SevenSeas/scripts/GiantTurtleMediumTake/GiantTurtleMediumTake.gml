@@ -24,13 +24,11 @@ function GiantTurtleMediumTake() {
 	    CustomSeaLoot()
 	    ds_list_add(items, specialItem)
 	    }
+		GiantTurtle.myVar = 0
 	}
 	else{
 		ds_list_add(global.notificationList, "Item fell!", "The item was knocked off the turtle, and it dives slowly down after it")
 	}
-	
-	with GiantTurtle
-	    event_user(1)
     
 	script_execute(closeEventCode)
 

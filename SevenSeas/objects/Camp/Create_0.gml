@@ -1,6 +1,5 @@
 /// @description vars
 myLight[0] = noone
-
 myLightY[0] = -10
 myLightX[0] = 0
 

@@ -4,7 +4,6 @@ if global.modernRes
 	sceneBackground = surface_create(display_get_gui_width(), display_get_height())
 else
 	sceneBackground = surface_create(room_width, room_height)
-show_debug_overlay(true) 
 
 global.myLayer = 0
 global.storeSize[0] = 100
@@ -49,14 +48,6 @@ moralDisplay[4] = "Great"
 shipType = 0
 damage = 0
 
-shipMaxCrew[0] = 4
-shipMaxCrew[1] = 5
-shipMaxCrew[2] = 5
-shipMaxCrew[3] = 5
-shipMaxCrew[4] = 6
-shipMaxCrew[5] = 6
-shipMaxCrew[6] = 6
-
 shipName[0] = "Sloop"
 shipName[1] = "Schooner"
 shipName[2] = "Caravel"
@@ -73,8 +64,50 @@ shipDescription[4] = "A triple-masted storage ship"
 shipDescription[5] = "A large, powerful warship"
 shipDescription[6] = "A formidable sailing vessel"
 
+hullDict[0] = ShipSloopSpr
+hullDict[1] = ShipScoonerSpr
+hullDict[2] = ShipCaravelSpr
+hullDict[3] = ShipBrigSpr
+
+//rigging
+shipSlots[0,0] = 2
+shipSlots[0,1] = 3
+shipSlots[0,2] = 2
+shipSlots[0,3] = 2
+shipSlots[0,4] = 3
+shipSlots[0,5] = 2
+shipSlots[0,6] = 3
+
+//cannon
+shipSlots[1,0] = 1
+shipSlots[1,1] = 1
+shipSlots[1,2] = 1
+shipSlots[1,3] = 2
+shipSlots[1,4] = 1
+shipSlots[1,5] = 3
+shipSlots[1,6] = 2
+
+//cargo
+shipSlots[3,0] = 4
+shipSlots[3,1] = 5
+shipSlots[3,2] = 5
+shipSlots[3,3] = 4
+shipSlots[3,4] = 6
+shipSlots[3,5] = 4
+shipSlots[3,6] = 5
+
+//crew
+shipMaxCrew[0] = 4
+shipMaxCrew[1] = 4
+shipMaxCrew[2] = 4
+shipMaxCrew[3] = 5
+shipMaxCrew[4] = 6
+shipMaxCrew[5] = 6
+shipMaxCrew[6] = 6
+
+//health
 maxHealthType[0] = 250
-maxHealthType[1] = 500
+maxHealthType[1] = 450
 maxHealthType[2] = 500
 maxHealthType[3] = 600
 maxHealthType[4] = 1000
@@ -105,45 +138,6 @@ flagY[2] = 25-96
 flagX[3] = 75-65
 flagY[3] = 29-96
 
-
-
-hullDict[0] = ShipSloopSpr
-hullDict[1] = ShipScoonerSpr
-hullDict[2] = ShipCaravelSpr
-hullDict[3] = ShipBrigSpr
-
-//rigging
-shipSlots[0,0] = 2
-shipSlots[0,1] = 3
-shipSlots[0,2] = 2
-shipSlots[0,3] = 2
-shipSlots[0,4] = 3
-shipSlots[0,5] = 2
-shipSlots[0,6] = 3
-//cannon
-shipSlots[1,0] = 1
-shipSlots[1,1] = 1
-shipSlots[1,2] = 1
-shipSlots[1,3] = 2
-shipSlots[1,4] = 1
-shipSlots[1,5] = 3
-shipSlots[1,6] = 2
-//bed
-shipSlots[2,0] = 1
-shipSlots[2,1] = 1
-shipSlots[2,2] = 2
-shipSlots[2,3] = 2
-shipSlots[2,4] = 2
-shipSlots[2,5] = 2
-shipSlots[2,6] = 3
-//cargo
-shipSlots[3,0] = 4
-shipSlots[3,1] = 5
-shipSlots[3,2] = 5
-shipSlots[3,3] = 4
-shipSlots[3,4] = 6
-shipSlots[3,5] = 4
-shipSlots[3,6] = 5
 
 ///Waves Vars
 

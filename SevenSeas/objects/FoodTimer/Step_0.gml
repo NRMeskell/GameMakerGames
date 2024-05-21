@@ -51,9 +51,4 @@ if alarm[0] < 1{
 	            }
 	        }
 	    }
-	
-	if payCount == 10 and ds_list_size(global.notificationList) == 0{
-		payCount = 0
-		PayTime()
-	}
 }

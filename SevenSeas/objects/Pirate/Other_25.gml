@@ -39,6 +39,3 @@ if (Ship.portSelect = true or global.inPort = false)
 
 }
 }
-
-if selected
-	draw_text(100, 100, healed)

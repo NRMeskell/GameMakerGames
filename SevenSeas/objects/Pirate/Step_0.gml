@@ -192,10 +192,10 @@ if ds_list_size(myMoraleReasons) > 8{
     
 if morale < -3
     morale = -3
-if morale <= 7
+if morale <= moraleMax[stars]
 	leveling = false
 	
-if morale > 7 and !MapCreator.instantClose
+if morale > moraleMax[stars] and !MapCreator.instantClose
     PirateLevelUp(true, true)
     
 prevMorale = morale

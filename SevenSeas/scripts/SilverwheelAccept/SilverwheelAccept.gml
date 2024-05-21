@@ -10,8 +10,6 @@ function SilverwheelAccept() {
     
 	with CaptainSilverwheel{
 	    myVar += 2
-	    if irandom(1)
-			myState = "trading"
 		}
 
 	script_execute(closeEventCode)

@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Ranged",
-    "path":"folders/Objects/Combat/Attacks/PlayerAttacks/Ranged.yy",
+    "path":"folders/Objects/Combat/Attacks/Ranged.yy",
   },
   "parentObjectId":{
     "name":"RealAttack",
