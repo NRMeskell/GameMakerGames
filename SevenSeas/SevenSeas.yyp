@@ -123,7 +123,7 @@
     {"$GMFolder":"","%Name":"RaftPirate","folderPath":"folders/Scripts/Events/SailingEvents/StandardEvents/RaftPirate.yy","name":"RaftPirate","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"RottenPlanks","folderPath":"folders/Scripts/Events/SailingEvents/StandardEvents/RottenPlanks.yy","name":"RottenPlanks","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Shortcut","folderPath":"folders/Scripts/Events/SailingEvents/StandardEvents/Shortcut.yy","name":"Shortcut","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Stowaway","folderPath":"folders/Scripts/Events/SailingEvents/StandardEvents/Stowaway.yy","name":"Stowaway","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Stowaway","folderPath":"folders/Scripts/Events/SailingEvents/PirateEvents/Stowaway.yy","name":"Stowaway","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"StillEvents","folderPath":"folders/Scripts/Events/SailingEvents/StillEvents.yy","name":"StillEvents","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"CrazyPirate","folderPath":"folders/Scripts/Events/SailingEvents/StillEvents/CrazyPirate.yy","name":"CrazyPirate","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"SpoiledFood","folderPath":"folders/Scripts/Events/SailingEvents/StillEvents/SpoiledFood.yy","name":"SpoiledFood","resourceType":"GMFolder","resourceVersion":"2.0",},

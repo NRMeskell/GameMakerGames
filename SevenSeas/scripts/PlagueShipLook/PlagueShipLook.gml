@@ -8,7 +8,7 @@ function PlagueShipLook() {
 	    }
 	else
 	    {
-	    GetRandomLoot(irandom_range(2,3), "LOOTED ITEMS", [0,0,0,1,1,-1])
+	    GetRandomLoot(irandom_range(1,2), "LOOTED ITEMS", [0,0,0,1,1,-1])
 	    ds_list_add(global.notificationList, "Treasure Found!", "Your crew returns with barrels full of loot!")
 	    UpdateMorale(1, -1)
 		}
