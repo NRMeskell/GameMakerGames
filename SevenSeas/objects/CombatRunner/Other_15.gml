@@ -17,11 +17,6 @@ with Pirate
     }
     
 GameStatsController.enemiesDefeated += 1
-if irandom(2) == 0 and searchReputationType("renown")[0] - 2 < global.seaLevel + enemyLevel
-	{
-	AddReputation("renown", other.enemyLevel, "recent victories")
-	}
-
 event_user(12)
 
 instance_destroy()

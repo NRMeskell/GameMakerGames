@@ -1,7 +1,5 @@
 function JohnnyRaft() {
 	ds_list_add(global.notificationList, "Johnny sent off!", "he is given directions to the nearest port, and sent off!")
-
-	AddReputation("repute", -2, "stranding of johnny")
 	
 	with Pirate
 	    {

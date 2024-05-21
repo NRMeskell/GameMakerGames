@@ -1,3 +1,7 @@
+///@description LoseCargo(type, amount)
+///@param type
+///@param amount
+
 function LoseCargo(argument0, argument1) {
 	cargoLeft = argument1
 

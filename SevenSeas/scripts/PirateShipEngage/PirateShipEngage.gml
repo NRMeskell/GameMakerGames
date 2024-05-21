@@ -2,7 +2,8 @@ function PirateShipEngage() {
 	//engage
 	if global.seaType == global.seaNames[0] and !irandom(3){
 		ds_list_add(global.notificationList, "Cove Patrol intervenes!", "Captain Hardcoin intercepts your ship and prevents the attack")
-		AddReputation("patrol", -2, "illegal assult")
+		CoveCollector.myVar -= 1
+		
 		with EventDrawer
 			floatAway = true
 		newShip = instance_create(-1000,0,ShipEvent)

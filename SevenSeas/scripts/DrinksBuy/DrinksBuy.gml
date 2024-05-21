@@ -6,7 +6,6 @@ function DrinksBuy() {
 	    }
     
 	ds_list_add(global.notificationList, "good refreshments!", "the crew gains morale!")
-	AddReputation("repute", 1, "bought drinks")
 
 	script_execute(closeEventCode)
 }

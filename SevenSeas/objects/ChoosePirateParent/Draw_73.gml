@@ -92,7 +92,7 @@ else
 if overSelf
     draw_sprite(OverPirateChooseSpr, 0, xWindow, yWindow)
     
-draw_sprite_ext(MoraleSymbolSpr, myMainPer, xWindow, yWindow, size, size, 0, c_white, 1)
+draw_sprite_ext(MoraleSymbolSpr, myMainPer, xWindow + 87, yWindow+137, size, size, 0, c_white, 1)
 
 /* */
 ///Draw Bonuses

@@ -4,7 +4,7 @@ function SilverwheelRelent() {
 
 		myLoot = ds_list_create()
 		ds_list_add(myLoot, -1)
-		GetRandomLoot(4, "Offer", [-1])
+		GetRandomLoot(irandom_range(1,3), "Offer", [-1])
 
 		with StoreObjectParent
 		    selected = false
@@ -13,11 +13,9 @@ function SilverwheelRelent() {
 
 		with CaptainSilverwheel{
 		    myVar += 2
-		    event_user(1)
 		}
 	}
 	else{
-		AddReputation("repute", -1, "disrepect of silverwheel")
 		ds_list_add(global.notificationList, "Silverwheel insulted!", "She sails away, annoyed that you disrespected her offer.")
 
 	}

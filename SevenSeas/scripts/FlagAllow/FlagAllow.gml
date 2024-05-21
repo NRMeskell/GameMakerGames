@@ -7,8 +7,6 @@ function FlagAllow() {
 	        UpdateMorale(-1, -1)
 	    with Pirate
 	        UpdateMorale(-1, global.KEEN)
-			
-		AddReputation("fear", -1, "bad flag design")
 	    }
 	else
 	    {
@@ -19,9 +17,5 @@ function FlagAllow() {
 	        UpdateMorale(1, -1)
 	        UpdateMorale(1, global.KEEN)
 	        }
-		AddReputation("fear", 1, "good flag design")
 	    }
-
-
-
 }

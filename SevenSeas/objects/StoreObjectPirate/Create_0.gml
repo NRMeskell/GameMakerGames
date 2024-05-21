@@ -66,7 +66,7 @@ leftHandSelected = false
 
 drawOptionsSpr = 2
 
-cost = min(0, irandom_range(5,10) - (searchReputationType("repute")[0])*2)
+cost = min(0, irandom_range(5,10))
 
 ///Backstory
 backStart[0] = "Hello there captain! "

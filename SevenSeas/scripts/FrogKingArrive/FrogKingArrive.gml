@@ -5,8 +5,8 @@ function FrogKingArrive() {
 	    buttonNumber = 3
 	    ds_list_add(buttons, FrogKingLeave, FrogKingPay, FrogKingRefuse) 
 	    ds_list_add(buttonStats, 0, 0, 5) 
-	    ds_list_add(buttonRequires, 0, 0, global.eventDiff[5,max(0, min(3, 3 - searchReputationType("frog")[0] div 2))])
-	    ds_list_add(buttonCosts, 0, 10 + searchReputationType("frog")[0]*2, 0)
+	    ds_list_add(buttonRequires, 0, 0, global.eventDiff[5, 3])
+	    ds_list_add(buttonCosts, 0, 10, 0)
 	    ds_list_add(buttonText, "agree to leave", "pay passage fee", "request to stay free")
         
 		//check for crown

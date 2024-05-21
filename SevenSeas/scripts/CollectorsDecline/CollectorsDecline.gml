@@ -1,7 +1,5 @@
 function CollectorsDecline() {
 	//intimidate
-	AddReputation("patrol", -1, "payment delay")
-
 	if argument0
 	    {
 	    ds_list_add(global.notificationList, "convinced!", "the Patrol agree to let you pay the fee later.")

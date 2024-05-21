@@ -41,6 +41,5 @@ function FrogKingLeave() {
 	else
 		FrogKing.myState = "leave"
 
-	AddReputation("frog", 1, "peaceful withdrawal")
 	script_execute(closeEventCode)
 }

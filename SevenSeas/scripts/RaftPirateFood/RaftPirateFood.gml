@@ -7,7 +7,6 @@ function RaftPirateFood() {
 		}
 	else{
 		ds_list_add(global.notificationList, "Food delivered!", "the food lands safely on the raft. The sailor promises to tell everyone about your mercy on this day!")
-		AddReputation("repute", 2, "mercy to a drifting sailor")
 		}
     
 	script_execute(closeEventCode)

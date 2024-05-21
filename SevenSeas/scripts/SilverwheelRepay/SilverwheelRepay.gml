@@ -3,15 +3,15 @@ function SilverwheelRepay() {
 	    {
 	    myCharacter = 2
 	    buttonNumber = 2
-	    ds_list_add(buttons, SilverwheelDontPay, SilverwheelPay) 
-	    ds_list_add(buttonStats, 0, 0) 
-	    ds_list_add(buttonRequires, 0, 0)
-	    ds_list_add(buttonCosts, 0, CaptainSilverwheel.myVar*4)
-	    ds_list_add(buttonText, "refuse her offer", "argee to repay")
+	    ds_list_add(buttons, SilverwheelDontPay, SilverwheelDelayPay, SilverwheelPay) 
+	    ds_list_add(buttonStats, 0, 5, 0) 
+	    ds_list_add(buttonRequires, 0, global.eventDiff[5, 1], 0)
+	    ds_list_add(buttonCosts, 0, 0, CaptainSilverwheel.myVar*5)
+	    ds_list_add(buttonText, "refuse her offer", "delay the repayment", "argee to her request")
         
 	    global.allowSelect = false
 	    captionText = "Captain Silverwheel"
-	    eventText = "Now that you're a successful pirate, silverwheel asks for recognition and repayment for her earlier aid." 
+	    eventText = "Now that you're a successful pirate, silverwheel asks for repayment for her earlier aid." 
     
 	    myShip = instance_create(-1000,0,ShipEvent)
 	    with myShip
@@ -22,9 +22,4 @@ function SilverwheelRepay() {
 	        }
 	    global.moraleBoost = "Silverwheel"
 	    }
-
-
-
-
-
 }

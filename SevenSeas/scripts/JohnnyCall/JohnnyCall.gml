@@ -1,5 +1,5 @@
 function JohnnyCall() {
-	if irandom(2) > 0 and searchReputationType("repute")[0] > -3
+	if irandom(2) > 0
 	    {
 	    ds_list_add(global.notificationList, "Johnny returns!", "he's dissapointed to not go shopping, but returns to the ship.")
 	    with Pirate

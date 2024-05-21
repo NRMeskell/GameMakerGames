@@ -3,7 +3,7 @@ function CollectorsPay() {
     
 	ds_list_add(global.notificationList, "fee payed!", "the Patrol are grateful for your cooperation.")
 
-	AddReputation("patrol", 1, "cooperation with cove patrol")
+	CoveCollector.myVar += 1
 
 	script_execute(closeEventCode, 2)
 

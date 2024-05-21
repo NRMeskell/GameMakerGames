@@ -1,5 +1,22 @@
 myLayer = 1
 
+xSpot[0] = -50
+ySpot[0] = -50
+
+xSpot[1] = -50
+ySpot[1] = -50
+
+xSpot[0] = -50
+ySpot[0] = -50
+
+xSpot[1] = -50
+ySpot[1] = -50
+
+slotType = "bed"
+
+/*
+myLayer = 1
+
 xSpot[0] = 125
 ySpot[0] = 287
 

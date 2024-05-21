@@ -1,9 +1,8 @@
 function CollectorsRun() {
 	//engage
 	
-	AddReputation("patrol", -5, "escape from the cove patrol")
 	with CoveCollector
-		myState = "chase"
+		myVar -= 5
 
 	if argument0
 	    {

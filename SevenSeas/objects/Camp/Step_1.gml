@@ -5,9 +5,6 @@ if x!=-100
 	if sprite_index == CampFireSpr{
 		myName = "camp"
 		campPower = 3
-	}else if sprite_index = CampFireDyingSpr{
-		myName = "used camp"
-		campPower = 2
 	}else{
 		myName = "used camp"
 		campPower = 1

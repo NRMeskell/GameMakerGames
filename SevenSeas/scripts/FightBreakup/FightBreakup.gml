@@ -7,7 +7,6 @@ function FightBreakup() {
 		    UpdateMorale(1, global.JOLLY)
 			UpdateMorale(-1, global.FEARSOME)
 		}
-		AddReputation("repute", 1, "brawl negotiations")
 	}
 	else{
 		with myPirate
@@ -16,8 +15,6 @@ function FightBreakup() {
 	        myHealth -= irandom(5*global.seaLevel)
 	        }
 		ds_list_add(global.notificationList, "fight continues!", "neither party listens to reason, and the fight continues until the town guard arrives!")
-		AddReputation("repute", -1, "street brawl")
-		AddReputation("patrol", -1, "street brawl")
 	}
 	
 	script_execute(closeEventCode)

@@ -9,7 +9,6 @@ function CargoChase() {
 		UpdateMorale(-1, global.FEARSOME)
 		UpdateMorale(-1, global.KEEN)
 		ds_list_add(global.notificationList, "Confused chase!", "The theives ran a clever distraction, and got away with cargo:#" + stolenItems)
-		AddReputation("fear", -2, "escaped theives")
 	}
 	
 	script_execute(closeEventCode)

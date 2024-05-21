@@ -19,9 +19,6 @@ function EntertainWatch() {
 			UpdateMorale(1, global.JOLLY)
 			UpdateMorale(1, global.FEARSOME)
 			}
-		
-		AddReputation("repute", 2, "port performance")
-		AddReputation("fear", -1, "port performance")
 		}
 	else
 	    {

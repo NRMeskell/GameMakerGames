@@ -44,7 +44,7 @@ with Pirate
 enemyTurnsLeft = min(myHealth/(playerAverage + 1), enemyHealth/(playerAverage + 1))
 playerTurnsLeft = min(Ship.myHealth/(enemyAverage + 1), pirateHealth/(enemyAverage + 1))
 
-surrenderChance = (searchReputationType("fear")[0] div 2) * (power(1/enemyTurnsLeft, 2)) / (power(1/min(playerTurnsLeft, 2), 1/4))*irandom(1.25)
+surrenderChance = (power(1/enemyTurnsLeft, 2)) / (power(1/min(playerTurnsLeft, 2), 1/4))*irandom(1.25)
 
 //Decide how much cargo to surrender
 displayAmount = "1/2"

@@ -50,7 +50,7 @@ maxHealth = round(maxHealth * ((totalVar - enemyPower)+3)/5)
 myHealth = maxHealth
 
 ///Action Map
-
+/*
 actionTypeMap = ds_map_create()
 ds_map_add(actionTypeMap, ShipSwordAttack, "melle")
 ds_map_add(actionTypeMap, ShipHeavyBoardingAttack, "melle")
@@ -75,7 +75,7 @@ ds_map_add(actionTypeMap, SprayAttack, "cannon")
 ds_map_add(actionTypeMap, ShipShipChange, "ship")
 ds_map_add(actionTypeMap, ShipOutmaneuver, "ship")
 ds_map_add(actionTypeMap, ShipRamming, "ship")
-
+*/
 ///Create Action Runners
 
 indexType[0] = "melle"
@@ -212,6 +212,4 @@ with Pirate
     
 
 ///Begin Game
-alarm[4] = 1
-event_user(1)
-//instance_create(0,0,CollectionCounter)
+event_user(0)

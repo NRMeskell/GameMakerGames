@@ -1,6 +1,5 @@
 /// @description Vars
 
-myPrevState = "unknown"
 myState = "unmet"
 myVar = 0
 

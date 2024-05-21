@@ -1,7 +1,7 @@
 function DolphinsLetCrewPlay() {
 	result = irandom(9)
     
-	if result < 9 - 4*(global.seaType == "sea of monsters") + searchReputationType("nature")[0] {
+	if result < 9 - 4*(global.seaType == "sea of monsters") {
 		if result < 7{
 		    with Pirate 
 		        {
@@ -10,8 +10,6 @@ function DolphinsLetCrewPlay() {
 		        }
 
 		    ds_list_add(global.notificationList, "The crew play!" , "they had a grand time with the dolphins")
-			if irandom(1)
-				AddReputation("nature", 1, "dolphins games")
 		}
 		else if result < 9{
 		    with Pirate 

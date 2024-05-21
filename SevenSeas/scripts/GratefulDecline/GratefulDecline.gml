@@ -1,7 +1,5 @@
 function GratefulDecline() {
 	//intimidate
-	
-	AddReputation("patrol", -1, "cove payment delay")
 
 	if argument0
 	    {

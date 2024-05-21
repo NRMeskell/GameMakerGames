@@ -5,8 +5,6 @@ function MermaidGrab() {
 	    {
 	    myHealth -= irandom_range(10,30)
 	    }
-		
-	AddReputation("nature", -1, "attack on the mermaids")
     
 	if !argument0
 	    {

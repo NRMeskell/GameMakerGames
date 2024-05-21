@@ -7,8 +7,6 @@ function StowawayWalk() {
 	    }
     
 	ds_list_add(global.notificationList, "stowaway walks plank!", "the more fearsome crew members gain morale!")
-	AddReputation("repute", -1, "stowaway execution")
-	AddReputation("fear", 1, "stowaway execution")
 	script_execute(closeEventCode)
 
 

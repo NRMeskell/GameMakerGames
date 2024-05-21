@@ -1,3 +1,7 @@
+///@description AbleToStore(type, amount)
+///@param type
+///@param amount
+
 function AbleToStore(argument0, argument1) {
 	slotNumber = 0
 

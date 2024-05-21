@@ -24,9 +24,6 @@ function StowawayFlog() {
 	        {
 	        UpdateMorale(1, global.FEARSOME)
 	        }
-			
-			AddReputation("repute", -1, "stowaway execution")
-			AddReputation("fear", 1, "stowaway execution")
 	    }
     
 	script_execute(closeEventCode)

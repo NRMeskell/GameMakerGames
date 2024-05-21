@@ -6,8 +6,6 @@ function WildScare() {
 	    ds_list_add(global.notificationList, "scared away", "the animals scurry away, leaving the ship and crew unharmed.")
 	    with Pirate
 	        UpdateMorale(1, global.FEARSOME)
-			
-		AddReputation("nature", -2, "scared animals")
 	    }
 	else    
 	    {
@@ -16,8 +14,6 @@ function WildScare() {
 	        UpdateMorale(-1, -1)
 	        UpdateMorale(1, global.JOLLY)
 	        }
-			
-		AddReputation("repute", -1, "scared animals")
 	    }
 
 	script_execute(closeEventCode)

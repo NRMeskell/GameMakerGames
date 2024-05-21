@@ -1,7 +1,5 @@
 function RaftPirateLetFloat() {
 	
-	AddReputation("repute", -1, "adrift sailor refusal")
-	
 	with RaftEvent
 	    floatAway = true
 

@@ -17,9 +17,19 @@ else
     draw_sprite(EndCombatSpr, 0, xWindow + sprite_get_width(PirateSheetSpr)-2, yWindow+2)
 
 DrawPirate(xWindow+xPicture, yWindow+yPicture)
-    
-draw_sprite_ext(moraleSheet[stars], (min(7, morale) + 3), xWindow, yWindow, size, size, 0, c_white, 1)
-draw_sprite_ext(MoraleSymbolSpr, myMainPer, xWindow, yWindow, size, size, 0, c_white, 1)
+
+//draw morale markers
+moraleXLow = 52-2*stars;
+moraleXHigh = 122+2*stars;
+moraleY = 137;
+moraleXWidth = moraleXHigh-moraleXLow;
+w = (sprite_get_width(MoraleSymbolSpr)/2+4-stars)
+middle = moraleXLow + (moraleMax[stars]*w/moraleXWidth - 2*w/moraleXWidth + 2)/(moraleMax[stars]+2)*moraleXWidth
+draw_sprite_ext(MoraleSymbolSpr, myMainPer, xWindow  + middle, yWindow+moraleY, size, size, 0, c_white, 1)
+for(var i=-3; i<min(morale, 0); i++) draw_sprite(MoraleTicksSpr, 0, xWindow + moraleXLow + (3+i)*((middle-w - moraleXLow)/2), yWindow+moraleY)
+for(var i=min(morale, 0); i<0; i++) draw_sprite(MoraleTicksSpr, 1, xWindow + moraleXLow + (3+i)*((middle-w - moraleXLow)/2), yWindow+moraleY)
+for(var i=0; i<max(0, morale); i++)  draw_sprite(MoraleTicksSpr, 2, xWindow + (middle + w) + (i)*((moraleXHigh - (middle+w))/(moraleMax[stars]-1)), yWindow+moraleY)
+for(var i=max(0, morale); i<moraleMax[stars]; i++)  draw_sprite(MoraleTicksSpr, 3, xWindow + (middle + w) + (i)*((moraleXHigh - (middle+w))/(moraleMax[stars]-1)), yWindow+moraleY)
 
 if !injured
     draw_sprite(PirateLifeSpr, -1+sprite_get_number(PirateLifeSpr)*myHealth/maxHealth, xWindow, yWindow)
@@ -47,23 +57,6 @@ draw_sprite_ext(EquipSlotSpr, overRightHand or myRightHand.selected, xWindow+dra
 draw_sprite_ext(EquipSlotSpr, overLeftHand or myLeftHand.selected, xWindow+drawX2, yWindow+drawY2, size, size, 0, c_white, 1)
 draw_sprite_ext(EquipSlotSpr, overPants or myPants.selected, xWindow+drawX2, yWindow+drawY3, size, size, 0, c_white, 1)
 draw_sprite_ext(EquipSlotSpr, overPet or myPet.selected, xWindow+drawX1, yWindow+drawY3, size, size, 0, c_white, 1)
-
-/*if hatSelected = true or shirtSelected = true or leftHandSelected = true or rightHandSelected = true
-    {
-    //if AbleToStore(1, storeAmount)
-        //draw_sprite_ext(EquipSlotSpr, drawOptionsSpr, drawEquipOptionsX, drawEquipOptionsY, 1, 1, 0, drawColor0, 1)
-    draw_sprite_ext(EquipSlotSpr, drawOptionsSpr +1, drawEquipOptionsX, drawEquipOptionsY, 1, 1, 0, drawColor1, 1)
-    if hatSelected = true
-        {
-        draw_sprite_ext(EquipSlotSpr, drawOptionsSpr + 4, drawEquipOptionsX, drawEquipOptionsY, 1, 1, 0, -1, 1)
-        draw_sprite_ext(StatSymbolSpr, ds_map_find_value(myStatsSprDict, hatStat), drawEquipOptionsX + 20, drawEquipOptionsY-8, 0.5, 0.5, 0, -1, 1)
-        }
-    if shirtSelected = true
-        {
-        draw_sprite_ext(EquipSlotSpr, drawOptionsSpr + 4, drawEquipOptionsX, drawEquipOptionsY, 1, 1, 0, -1, 1)
-        draw_sprite_ext(StatSymbolSpr, ds_map_find_value(myStatsSprDict, shirtStat), drawEquipOptionsX - 34, drawEquipOptionsY-8, 0.5, 0.5, 0, -1, 1)
-        }
-    }*/
 
 if myHat.itemName != "none"
     {
