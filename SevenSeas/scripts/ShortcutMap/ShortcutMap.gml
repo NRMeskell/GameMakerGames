@@ -11,7 +11,7 @@ function ShortcutMap() {
 	else
 	    {
 	    with MapShip
-	        path_position = min(0.99, path_position + 0.25)
+	        path_position = min(1, path_position + 0.25)
 	    with Pirate
 	        UpdateMorale(1, global.KEEN)
 	    ds_list_add(global.notificationList, "Navigated!", "the helmsman used the map well and saved sailing time!")

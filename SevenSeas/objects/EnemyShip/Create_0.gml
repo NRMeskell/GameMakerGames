@@ -13,7 +13,7 @@ myShipTypes[3] = choose(4,5,6)
 shipType = myShipTypes[global.seaLevel]
 myShipHull = Ship.hullDict[shipType]
 flagColor = c_dkgray
-flagSprite = ColorFlagSpr
+flagSprite = PirateFlagSpr
 
 
 ///Common enemy vars

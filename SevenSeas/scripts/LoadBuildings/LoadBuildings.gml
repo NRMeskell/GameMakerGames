@@ -53,11 +53,11 @@ function LoadBuildings(argument0) {
 	    }
 	}
 
-	with MapShip.targetPort{
+	with MapShip if point_distance(x,y,targetPort.checkX, targetPort.checkY) < 1{
 	    for(i=0; i<3; i++){
-	        if slotBuild[i] != undefined{
-	            slotBuild[i].x = MapShip.slotX[slotBuild[i].mySlot]
-	            slotBuild[i].y = MapShip.slotY[slotBuild[i].mySlot]
+	        if targetPort.slotBuild[i] != undefined{
+	            targetPort.slotBuild[i].x = MapShip.slotX[targetPort.slotBuild[i].mySlot]
+	            targetPort.slotBuild[i].y = MapShip.slotY[targetPort.slotBuild[i].mySlot]
 	        }
 	    }
 	}

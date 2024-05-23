@@ -1,11 +1,34 @@
 /// @description Draw surfaces
-if view_current = 1
-    {
-    draw_background(seaBackground, mapStart, 0)
-    }
+if view_current = 1{
+	//updated visible surface
+	with LandingSpot if released{
+		if point_distance(checkX, checkY, MapShip.x, MapShip.y) < MapShip.viewDistance
+			visible = true;
+	}
+
+	if !surface_exists(seenSurface){
+		seenSurface = surface_create(seaSizeX, seaSizeY);
+		seenBackground = background_add(SaveGameRunner.gameName + "-MapSeenFile.png", false, false)
+	
+		surface_set_target(seenSurface);
+		draw_background(seenBackground, 0, 0);
+		surface_reset_target();
+		sprite_delete(seenBackground)
+	}	
+	surface_set_target(seenSurface);
+	draw_set_blend_mode(bm_subtract);
+	draw_circle(MapShip.x - mapStart, MapShip.y, MapShip.viewDistance, false);
+	draw_set_blend_mode(bm_normal);
+	surface_reset_target();
+		
+	draw_background(seaBackground, mapStart, 0)
+	draw_set_alpha(0.15)
+	draw_surface(seenSurface, mapStart, 0)
+	draw_set_alpha(1)
+	draw_background(islandBackground, mapStart, 0)
+}
 
 ///Draw Map Details
-
 with LandingSpot
     event_user(1)
     

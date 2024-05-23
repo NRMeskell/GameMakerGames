@@ -27,7 +27,7 @@ function GiantTurtleSpecialTake() {
 		    specialItem.myColor = color[irandom(array_length_1d(color)-1)]
     
 		    specialItem.itemPower = "medical ship"   
-		    specialItem.itemPowerDescription = "while sailing, equipped pirate slowly regains health and the ship slowly repairs damage"
+		    specialItem.itemPowerDescription = "while sailing, " + specialItem.itemName + " will repair the ship if damaged."
 		    } 
     
 		GetRandomLoot(1, "TURTLE GIFT", undefined)

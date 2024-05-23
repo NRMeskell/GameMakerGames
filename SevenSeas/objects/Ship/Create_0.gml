@@ -4,6 +4,7 @@ if global.modernRes
 	sceneBackground = surface_create(display_get_gui_width(), display_get_height())
 else
 	sceneBackground = surface_create(room_width, room_height)
+show_debug_overlay(true)
 
 global.myLayer = 0
 global.storeSize[0] = 100
@@ -88,19 +89,19 @@ shipSlots[1,5] = 3
 shipSlots[1,6] = 2
 
 //cargo
-shipSlots[3,0] = 4
-shipSlots[3,1] = 5
-shipSlots[3,2] = 5
-shipSlots[3,3] = 4
-shipSlots[3,4] = 6
-shipSlots[3,5] = 4
-shipSlots[3,6] = 5
+shipSlots[2,0] = 4
+shipSlots[2,1] = 4
+shipSlots[2,2] = 5
+shipSlots[2,3] = 4
+shipSlots[2,4] = 6
+shipSlots[2,5] = 4
+shipSlots[2,6] = 5
 
 //crew
 shipMaxCrew[0] = 4
-shipMaxCrew[1] = 4
+shipMaxCrew[1] = 5
 shipMaxCrew[2] = 4
-shipMaxCrew[3] = 5
+shipMaxCrew[3] = 4
 shipMaxCrew[4] = 6
 shipMaxCrew[5] = 6
 shipMaxCrew[6] = 6

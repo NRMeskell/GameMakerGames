@@ -2,8 +2,8 @@
 
 mouseOnMapX = 0
 mouseOnMapY = 0
-
-toPort = true
+moveX = x
+moveY = y
 
 slotX[0] = 290 + 48 + Ship.drawPortShiftX
 slotX[1] = 390 + 48 + Ship.drawPortShiftX
@@ -22,12 +22,13 @@ xPrev = x
 targetPort = instance_nearest(x,y,LandingSpot)
 islandPoints = ds_list_create()
 
-dotDistance = 8
-
+sailSpeedModifier = 0.05
+normalViewDistance = 40
+viewDistanceModifier = 0.15
+viewDistance = normalViewDistance
 sailPath = path_add()
 normalSailSpeed = 0.12
 sailSpeed = normalSailSpeed
-canSail = true
 
 image_speed = 0
 
@@ -65,3 +66,4 @@ with LandingSpot
 global.seaType = global.seaNames[0]
 global.seaLevel = 0
 
+alarm[0] = room_speed 
