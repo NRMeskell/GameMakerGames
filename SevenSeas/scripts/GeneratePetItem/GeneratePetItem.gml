@@ -27,8 +27,8 @@ function GeneratePetItem(argument0) {
 	        itemName = choose("bongo", "buster", "flopsy", "popsie", "flo", "wanky", "talullah", "gaga", "dopey", "coconut")
 	        itemInfo = "a cute climbing companion"
         
-	        itemPower = "morale gain"   
-	        itemPowerDescription = "equipped pirate gains 50% extra morale"
+	        itemPower = "morale loss"   
+	        itemPowerDescription = "equipped pirate cannot lose morale"
 	        }
 	    else if argument0 = 2
 	        {
@@ -37,7 +37,7 @@ function GeneratePetItem(argument0) {
 	        itemInfo = "a navagation tool to help sail the 7 seas"
         
 	        itemPower = "speed bonus"   
-	        itemPowerDescription = "if equipped pirate is at the helm, the ship sails 25% faster"
+	        itemPowerDescription = "if equipped pirate is at the helm, the ship sails 15% faster"
 	        }
 	    else if argument0 = 3
 	        {

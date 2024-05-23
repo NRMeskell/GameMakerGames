@@ -23,10 +23,11 @@ if !global.inPort
         }
     }
 
+draw_sprite_ext(MapMarkerSpr, 0, moveX, moveY, 1, 1, 0, -1, 1)   
 ///Draw Self
-
 draw_self()
-
-if path_position != 1 and !global.inPort
+if !global.inPort {
     draw_sprite_ext(MapFlavorSpr, 3, x, y, image_xscale, 1, 0, -1, 1)
+}
 
+draw_circle(targetPort.checkX, targetPort.checkY, 5, false)

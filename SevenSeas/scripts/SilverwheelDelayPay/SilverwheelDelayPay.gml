@@ -1,4 +1,4 @@
-function SilverwheelDeny() {
+function SilverwheelDelayPay() {
 	
 	if argument0{
 		ds_list_add(global.notificationList, "Payment delayed!", "The captain happily gives you time to gather gold, so long as you repay her kindness.")

@@ -4,6 +4,9 @@ with myButton
 
 if ds_list_size(global.notificationList) == 0{
 	instance_destroy()
+	
+	if (actionType == "cannon" and shipTarget == CombatRunner)
+		LoseCargo(2, 1);
 
 	if endRound
 	    with RealAttack

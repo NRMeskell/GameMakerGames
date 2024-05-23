@@ -5,10 +5,10 @@ if room == GameRoom{
     if (instance_exists(Defeat) or instance_exists(ConquerPannel) or instance_exists(PirateLeveler) or global.pirateSelected or (ds_list_size(global.notificationList) > 0) or global.mapPause or (global.eventOpen) or (instance_exists(Store) and !global.inPort) or ds_list_size(ItemRunner.floatingItems) != 0 or instance_exists(CombatRunner))
         alarm[1] = room_speed*3/4
         
-    if alarm[1] > 0 and (global.inPort == false or global.portType != 1)
-        global.doTime = false
-    else
+    if (alarm[1] <= 0 and MapShip.path_position < 1) or (global.inPort and global.portType == 1)
         global.doTime = true
+    else
+        global.doTime = false
     }
 else
     global.doTime = true

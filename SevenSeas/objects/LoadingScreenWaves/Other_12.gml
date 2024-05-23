@@ -1,5 +1,5 @@
 /// @description LoadGame
         
 room_goto(GameRoom)
-alarm[1] = 1
+alarm[1] = 2
 

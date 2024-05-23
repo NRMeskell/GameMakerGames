@@ -121,9 +121,6 @@ if myAction[2] != noone and myAction[2] != LostEyeAction
 /* */
 ///Injured/Heal
 
-if injured and (global.doTime and !global.inPort)
-    myHealth -= Ship.healSpeed
-
 if myHealth < 1{
 	event_user(2)
     }
@@ -315,8 +312,6 @@ if mouse_check_button_pressed(mb_left) and !instance_exists(DumpItem) and __view
         }
     }
     
-/*if keyboard_check_pressed(vk_escape)
-    event_user(0)
 
 
  
@@ -345,16 +340,13 @@ if selected
 /* */
 /*  */
 
-if (mySlot.slotType == "bed" or mySlot.slotType == "medical") and myHealth < maxHealth
+if (myHealth < maxHealth)
     {
-    healed += global.timeCycleRate * sqrt(1 + global.totalMedicalBonus)*global.doTime*Ship.healSpeed
+    myHealth += global.timeCycleRate * sqrt(1 + global.totalMedicalBonus)*global.doTime*Ship.healSpeed
     }
-else{
-	healed = 0
-	}
 		
 if (myPet.itemPower == "medical ship"){
-    Ship.myHealth += global.timeCycleRate * global.doTime*(Ship.maxHealth / 7200)
+    Ship.myHealth += global.timeCycleRate * sqrt(1 + global.totalMedicalBonus)*global.doTime*Ship.healSpeed
     }
 if myPet.itemPower == "heal" or myPet.itemPower = "medical ship"
     myHealth += global.timeCycleRate * global.doTime*Ship.healSpeed/2

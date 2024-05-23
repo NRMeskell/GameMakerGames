@@ -20,16 +20,20 @@ if x!=-100
 			myLight[0].flickering = true
 	        myLight[0].lightLayer = 3
 			}
-		else
-			myLight[0].myVolume = 15*(4-campPower)
-		}
 		else{
-		    if myLight[0] != noone{
-		        instance_destroy(myLight[0])
-		        myLight[0] = noone
-			}
+			if !instance_exists(myLight[0])
+				myLight[0] = noone
+			else
+				myLight[0].myVolume = 15*(4-campPower)
 		}
 	}
+	else{
+		if myLight[0] != noone{
+		    instance_destroy(myLight[0])
+		    myLight[0] = noone
+		}
+	}
+}
 else
     if campFireLight != noone{
         instance_destroy(campFireLight)

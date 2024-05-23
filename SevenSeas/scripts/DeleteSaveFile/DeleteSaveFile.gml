@@ -9,7 +9,8 @@ function DeleteSaveFile(argument0) {
 	        }
 	    else{
 	        file_delete(argument0 + "-MapSeaVarsFile.txt")
-	        file_delete(argument0 + "-MapSurfaceFile.png")
+	        file_delete(argument0 + "-MapIslandFile.png")
+			file_delete(argument0 + "-MapSeenFile.png")
 	        file_delete(argument0 + "-MapLandingFile.txt")
 	        file_delete(argument0 + "-BuildingFile.ini")
 	        file_delete(argument0 + "-characters.ini")

@@ -67,19 +67,17 @@ if drawMiniHeight > 0
 else
     depth = -10
 
-    
-if Clock.alarm[2] > 0 or instantClose
-    {
-    mapClose = true
-    drawMiniHeight = 0
-    __view_set( e__VW.HView, 1, drawMiniHeight )
-    __view_set( e__VW.HPort, 1, drawMiniHeight )
-    }
-
-if mapClose
+if mapClose or Clock.alarm[2] > 0 or instantClose
     {
     grabbed = false
     onBoat = true
+	
+	if instantClose{
+		drawMiniHeight = 0
+		__view_set( e__VW.HView, 1, 0 )
+        __view_set( e__VW.WView, 1, miniWidth*zoom )
+        __view_set( e__VW.HPort, 1, 0 )
+	}
     
     if drawMiniHeight > 0
         {

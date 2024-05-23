@@ -73,12 +73,14 @@ function PirateLevelUp(argument0, argument1) {
 	        captianActionList[0] = melleActions
 	        captianActionList[1] = rangedActions
 	        captianActionList[2] = cannonActions
-	        if object_index == ChooseCaptain
-	            {
+	        if object_index == ChooseCaptain {
 	            findAction = irandom(ds_list_size(shipActions)-1)
 	            myTempAction = ds_list_find_value(shipActions, findAction)
-	            ds_list_delete(shipActions, findAction)
-	            }
+				while instance_exists(myTempAction){
+					findAction = irandom(ds_list_size(shipActions)-1)
+					myTempAction = ds_list_find_value(shipActions, findAction)
+				}
+	        }
 	        else if object_index == ChooseFirstMate
 	            {
 	            myActionNumber = irandom(ds_list_size(global.attackTypeList) - 2)
