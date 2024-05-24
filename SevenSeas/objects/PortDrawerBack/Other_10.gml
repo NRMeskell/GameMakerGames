@@ -46,19 +46,20 @@ if global.inPort = true {
         DrawBackWithLighting(BeachBack, drawPortShiftX, drawPortShiftY, merge_color(c_white, Clock.cloudColor, 0.6), 1, drawLayer)
     }
     if global.portType = 4 {
-        DrawWithLighting(TallPalmSpr, animate, 389+drawPortShiftX, 114+drawPortShiftY, 0, c_white, 1, drawLayer)
+        DrawWithLighting(TallPalmSpr, animate, 389+drawPortShiftX, 130+drawPortShiftY, 0, c_white, 1, drawLayer)
         DrawWithLighting(TallPalm2Spr, animate+2, 442+drawPortShiftX, 109+drawPortShiftY, 0, c_white, 1, drawLayer)
         DrawWithLighting(TallPalmSpr, animate+2, 500+drawPortShiftX, 130+drawPortShiftY, 0, c_white, 1, drawLayer)
         DrawWithLighting(TallPalmSpr, animate+8, 532+drawPortShiftX, 101+drawPortShiftY, 0, c_white, 1, drawLayer)
         DrawWithLighting(TallPalm2Spr, animate+3, 599+drawPortShiftX, 78+drawPortShiftY, 0, c_white, 1, drawLayer)
-        DrawWithLighting(BigPalmSpr, animate, 262+drawPortShiftX, 149+drawPortShiftY, 0, c_white, 1, drawLayer)
+        //DrawWithLighting(BigPalmSpr, animate+2, 455+drawPortShiftX, 140+drawPortShiftY, 0, c_white, 1, drawLayer)  
         DrawBackWithLighting(JungleBack, drawPortShiftX, drawPortShiftY, merge_color(c_white, Clock.cloudColor, 0.6), 1, drawLayer)
         DrawWithLighting(JungleWaterSpr, animate, 437+drawPortShiftX, 158+drawPortShiftY, 0, c_white, 1, drawLayer)
-        DrawWithLighting(SmallPalmSpr, animate + 5, 389+drawPortShiftX, 158+drawPortShiftY, 0, c_white, 1, drawLayer)
-        DrawWithLighting(BigPalmSpr, animate+2, 455+drawPortShiftX, 140+drawPortShiftY, 0, c_white, 1, drawLayer)  
-        DrawWithLighting(SmallPalmSpr, animate, 200+drawPortShiftX, 182+drawPortShiftY, 0, c_white, 1, drawLayer)
+        DrawWithLighting(BigPalmSpr, animate, 262+drawPortShiftX, 220+drawPortShiftY, 0, c_white, 1, drawLayer)
+        
+		//DrawWithLighting(SmallPalmSpr, animate + 5, 389+drawPortShiftX, 158+drawPortShiftY, 0, c_white, 1, drawLayer)
+        //DrawWithLighting(SmallPalmSpr, animate, 200+drawPortShiftX, 182+drawPortShiftY, 0, c_white, 1, drawLayer)
         //DrawWithLighting(SmallPalmSpr, animate + 8, 514+drawPortShiftX, 143+drawPortShiftY, 0, c_white, 1, drawLayer)
-        DrawWithLighting(BigPalmSpr, animate+8, 583+drawPortShiftX, 113+drawPortShiftY, 0, c_white, 1, drawLayer) 
+        //DrawWithLighting(BigPalmSpr, animate+8, 583+drawPortShiftX, 113+drawPortShiftY, 0, c_white, 1, drawLayer) 
     }
     if global.portType = 5 {
         DrawWithLighting(TallPalmSpr, animate, 428+drawPortShiftX, 107+drawPortShiftY, 0, c_white, 1, drawLayer)
