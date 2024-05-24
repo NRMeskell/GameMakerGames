@@ -5,21 +5,21 @@
   "bbox_bottom":359,
   "bbox_left":0,
   "bbox_right":639,
-  "bbox_top":147,
+  "bbox_top":142,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f6f89c96-ce58-413f-877d-b07c9b630008","name":"f6f89c96-ce58-413f-877d-b07c9b630008","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"23aa3982-1427-46fd-8767-a31c2db46d24","name":"23aa3982-1427-46fd-8767-a31c2db46d24","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":360,
   "HTile":true,
   "layers":[
-    {"$GMImageLayer":"","%Name":"539a3880-7a79-4f4b-8a4c-95e68be0c492","blendMode":0,"displayName":"default","isLocked":false,"name":"539a3880-7a79-4f4b-8a4c-95e68be0c492","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"ed86d14f-741a-4967-bad3-12a1e0b30f8e","blendMode":0,"displayName":"default","isLocked":false,"name":"ed86d14f-741a-4967-bad3-12a1e0b30f8e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"JungleBack",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f6f89c96-ce58-413f-877d-b07c9b630008","path":"sprites/JungleBack/JungleBack.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"955c64ee-8d7c-4844-8764-861ef396660d","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"23aa3982-1427-46fd-8767-a31c2db46d24","path":"sprites/JungleBack/JungleBack.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"2a7edfbc-fbed-4018-af08-79673f928f0f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
