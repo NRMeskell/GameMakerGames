@@ -2,7 +2,7 @@
 
 ds_list_clear(actionList)
 if Ship.allowShipActions
-	ds_list_add(actionList, basicShipChange)
+	ds_list_add(actionList, basicShipChange, basicShipRun)
 if Ship.allowMelleActions
 	ds_list_add(actionList, basicMelleAttack)
 if Ship.allowRangedActions

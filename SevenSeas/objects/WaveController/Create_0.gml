@@ -14,6 +14,8 @@ waveOffsets = [irandom(room_width), irandom(room_width)]
 waveDirection = 1
 waveAmplifier = 1
 waveMovement = 1
+waveMin = 0
+waveMax = room_width
 
 surfaceHeight = waveBase + waveHeights[0] + waveHeights[1]
 

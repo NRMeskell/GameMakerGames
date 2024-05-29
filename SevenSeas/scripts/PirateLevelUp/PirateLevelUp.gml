@@ -110,7 +110,7 @@ function PirateLevelUp(argument0, argument1) {
 				if leveling == false and showMessage
 					ds_list_add(global.notificationList, "Pirates failed to level up!", "There is no grog to drink! Get grog to increase the skill of your crew.")
 				leveling = true
-				morale = 8
+				morale = Pirate.moraleMax[stars] + 1
 			}
 		}
 	}     
@@ -127,7 +127,7 @@ function PirateLevelUp(argument0, argument1) {
 				if leveling == false and showMessage
 					ds_list_add(global.notificationList, "Pirates failed to level up!", "some pirates were in bed and could not level up!")
 				leveling = true
-				morale = 8
+				morale = Pirate.moraleMax[stars] + 1
 				}
 			}  
 	    }

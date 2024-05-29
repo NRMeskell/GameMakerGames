@@ -272,7 +272,7 @@ drawPiratePostNumber = 4
 tagShift = 10
 
 global.crewList = ds_list_create()
-healSpeed = 1/(room_speed*60)
+healSpeed = 1/(room_speed*5)
 
 listPositionX = 36
 listPositionUpY = 60

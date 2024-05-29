@@ -352,8 +352,8 @@ if myPet.itemPower == "heal" or myPet.itemPower = "medical ship"
     myHealth += global.timeCycleRate * global.doTime*Ship.healSpeed/2
 }
 	
-if healed > 1 or (mySlot.slotType == "bed" and myHealth = maxHealth) {
+/*if healed > 1 or (mySlot.slotType == "bed" and myHealth = maxHealth) {
 	healed = 0
 	event_user(5) //return to main spot
 	myHealth = maxHealth
-}
+}*/

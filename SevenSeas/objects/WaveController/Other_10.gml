@@ -20,7 +20,7 @@ var foamTex = sprite_get_texture(FoamSpr, 0);
 var height = GetWaterLevel(id, 0)
 var waveAngle = 0
 var textureNum = waveOffsets[0]/sprite_get_width(WaveSpr)*wdw
-for(var r=0; r<room_width/wdw; r+=1){
+for(var r=waveMin; r<waveMax/wdw; r+=1){
 	var nextHeight = GetWaterLevel(id, (r+1)*wdw)
 	var nextWaveAngle = abs(power(GetWaterAngle(id, (r+1)*wdw), 2))/100
 	//nextWaveAngle = nextWaveAngle >= 0.5 ? nextWaveAngle : 0

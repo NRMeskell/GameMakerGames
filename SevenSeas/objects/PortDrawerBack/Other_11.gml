@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Draw extras behind camp, in front of background
 // You can write your code in this editor
 animate = Ship.animate
 drawPortShiftX = Ship.drawPortShiftX

@@ -75,7 +75,6 @@ if global.inPort = true {
         DrawWithLighting(OasisFlower2Spr, animate, 300+drawPortShiftX, 200+drawPortShiftY, 0, c_white, 1, drawLayer)
         DrawWithLighting(OasisFlower2Spr, animate+5, 340+drawPortShiftX, 220+drawPortShiftY, 0, c_white, 1, drawLayer)
         DrawWithLighting(OasisFlower1Spr, animate+19, 400+drawPortShiftX, 225+drawPortShiftY, 0, c_white, 1, drawLayer)
-        DrawWithWaterLighting(OasisWaterSpr, animate/2, 213+drawPortShiftX, 235+drawPortShiftY, 0, merge_color(c_gray, Clock.cloudColor, 0.5), 1, drawLayer)
     }
     if global.portType = 6 {
         DrawWithLighting(GrassSpr, animate+2, 372+drawPortShiftX, 184+drawPortShiftY, 0, c_white, 1, drawLayer)
