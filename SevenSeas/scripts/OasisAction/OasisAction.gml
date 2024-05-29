@@ -22,16 +22,14 @@ function OasisAction() {
 	    }
 	else
 	    {
-	    with Pirate
+		crewTarget = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+	    with crewTarget
 	        {
-	        UpdateMorale(1, -1)
-	        UpdateMorale(1, global.KEEN)
-			if irandom(1){
-				maxHealth += 15
-				myHealth += 15
-			}
+			UpdateMorale(1, -1)
+			maxHealth += 15
+			myHealth += 15
 		}
         
-	    ds_list_add(global.notificationList, "magical swim!", "the mystical clear water seems to have strengthed some of the crew!")
+	    ds_list_add(global.notificationList, "magical swim!", "the mystical clear water seems to have strengthed " + crewTarget.firstName + "!")
 	    }
 }

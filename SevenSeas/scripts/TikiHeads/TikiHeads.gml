@@ -2,7 +2,7 @@ function TikiHeads() {
 	//Get Treasure
 
 	global.moraleBoost = "idols"
-	result = irandom(campPower*2)
+	result = irandom(campPower)
 	
 	if result = 0 {
 		cursedCrew = instance_find(Pirate, irandom(instance_number(Pirate)-1))
@@ -11,7 +11,7 @@ function TikiHeads() {
 		}
 		ds_list_add(global.notificationList, "Cursed!", "The idols unlease a curse uopon the crew, crippling " + cursedCrew.name + "!")
 	}
-	else if result <= 2{
+	else if result <= 2 and irandom(1){
 		ds_list_add(global.notificationList, "No response", "Water drains from the idols, but nothing more appears to happen")
 	}
 	else {
