@@ -7,8 +7,8 @@ instantClose = false
 
 ///Create Sea Surfaces
 
-seaSizeX = 1752
-seaSizeY = 1536
+mapSizeX = 1752
+mapSizeY = 1536
 drawX = 0
 seaNumber = 7
 
@@ -25,36 +25,37 @@ landColor[? global.seaNames[5]] = make_color_rgb(85,25,1)
 landColor[? global.seaNames[6]] = make_color_rgb(0,15,100)
 
 mapStart = 640
+x = mapStart
+y = 0
+image_speed = 0
+image_index = 0
 
-
-seaSurface = surface_create(seaSizeX, seaSizeY)
+seaSurface = surface_create(mapSizeX, mapSizeY)
 surface_set_target(seaSurface)
 draw_set_color(seaColor)
-draw_background_ext(PirateChooseWater, 0, 0, seaSizeX/background_get_width(PirateChooseWater), seaSizeY/background_get_height(PirateChooseWater), 0, c_white, 1)
+draw_background_ext(PirateChooseWater, 0, 0, mapSizeX/background_get_width(PirateChooseWater), mapSizeY/background_get_height(PirateChooseWater), 0, c_white, 1)
 for(n=0; n<30*9; n++)
-    draw_sprite(MapWaveSpr, irandom(3), irandom(seaSizeX), irandom(seaSizeY))
+    draw_sprite(MapWaveSpr, irandom(3), irandom(mapSizeX), irandom(mapSizeY))
 surface_reset_target()
 
-seenSurface = surface_create(seaSizeX, seaSizeY)
+seenSurface = surface_create(mapSizeX, mapSizeY)
 surface_set_target(seenSurface)
 draw_set_color( make_color_rgb(82,45,16))
-draw_rectangle(0, 0, seaSizeX, seaSizeY, false)
+draw_rectangle(0, 0, mapSizeX, mapSizeY, false)
 surface_reset_target()
 
-islandSurface = surface_create(seaSizeX, seaSizeY)
-surf = surface_create(seaSizeX, seaSizeY)
+islandSurface = surface_create(mapSizeX, mapSizeY)
+surf = surface_create(mapSizeX, mapSizeY)
 
 
 /// Add to grid
 
-gridSize = 2
-global.mapGrid = mp_grid_create(mapStart, 0, seaSizeX div gridSize, seaSizeY div gridSize, gridSize, gridSize)
 
 
+gridSize = 8
+global.mapGrid = mp_grid_create(mapStart, 0, mapSizeX div gridSize, mapSizeY div gridSize, gridSize, gridSize)
 
 ///Create Islands
-
-
 
 restarts = 0
 restartLimit = 10000
@@ -128,8 +129,8 @@ for(n=0; n<seaNumber; n++)
         
         myDir = ds_list_find_value(islandDirs, irandom(ds_list_size(islandDirs)-1))
         myDis = (other.islandSize - (3/(islandShape[n*islandNumber+i] div 3 + 3))*sprite_get_height(IslandSpr))
-        getIslandX[n*islandNumber+i] = seaSizeX/2 + ds_map_find_value(seas[n], "x") + cos(myDir)*myDis//random_range(-other.islandSize, other.islandSize)
-        getIslandY[n*islandNumber+i]  = seaSizeY/2 + ds_map_find_value(seas[n], "y") + sin(myDir)*myDis //random_range(-other.islandSize, other.islandSize)
+        getIslandX[n*islandNumber+i] = mapSizeX/2 + ds_map_find_value(seas[n], "x") + cos(myDir)*myDis//random_range(-other.islandSize, other.islandSize)
+        getIslandY[n*islandNumber+i]  = mapSizeY/2 + ds_map_find_value(seas[n], "y") + sin(myDir)*myDis //random_range(-other.islandSize, other.islandSize)
          
     
         //Check if not too close to more than 2 other islands islands
@@ -230,7 +231,20 @@ for(n=0; n<seaNumber; n++)
     
 seaBackground = background_create_from_surface(seaSurface, 0, 0, surface_get_width(seaSurface), surface_get_height(seaSurface), false, false)
 seenBackground = background_create_from_surface(seenSurface, 0, 0, surface_get_width(seenSurface), surface_get_height(seenSurface), false, false)
-islandBackground = background_create_from_surface(islandSurface, 0, 0, surface_get_width(islandSurface), surface_get_height(islandSurface), false, false)
+sprite_index  = background_create_from_surface(islandSurface, 0, 0, surface_get_width(islandSurface), surface_get_height(islandSurface), false, false)
+
+//initiate grid
+GridPoint = {
+	pointX : 0,
+	pointY : 0,
+	parent : noone
+};
+
+for(i=0; i<mapSizeX div gridSize; i+=1)
+	for(j=0; j<mapSizeY div gridSize; j+=1)
+		mapGrid[i][j] = new GridPoint(mapStart + i*gridSize, j*gridSize, noone)
+
+//ResetGridPoints()
 
 ///Create Landing Spots
 spotTypes = ds_map_create()

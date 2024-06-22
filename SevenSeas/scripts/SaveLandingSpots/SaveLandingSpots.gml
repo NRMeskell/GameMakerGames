@@ -13,6 +13,8 @@ function SaveLandingSpots(argument0) {
 	ini_write_real("Ship", "Target", string(myTargetNumber)+chr(10))
 	ini_write_real("Ship", "x", MapShip.x)
 	ini_write_real("Ship", "y", MapShip.y)
+	ini_write_real("Ship", "moveX", MapShip.moveX)
+	ini_write_real("Ship", "moveY", MapShip.moveY)
 
 
 	for(n=0; n<instance_number(LandingSpot); n++){

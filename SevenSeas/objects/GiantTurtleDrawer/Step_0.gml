@@ -3,7 +3,7 @@
 image_angle = GetWaterAngle(Ship.middleWaves, placeX) 
 
 if floatAway{
-    placeX += 0.25*((Ship.waveShipSpeed + Ship.landSpeed)*!global.mapPause*Ship.rockScale*1.8 * global.gameSpeed)
+    placeX -= (Ship.middleWaves.waveSpeeds[0]/2)*!global.mapPause*global.gameSpeed
     placeY *= 1.012
     image_angle -= placeY*0.9
     }

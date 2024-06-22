@@ -143,8 +143,8 @@ image_angle = sin(current_time/1000)*6
 ///Change levels
 global.seaDistance = 10000
 for(i=0; i<MapCreator.seaNumber; i++){
-    seaX = MapCreator.mapStart + MapCreator.seaSizeX/2 + ds_map_find_value(MapCreator.seas[i], "x")
-    seaY = MapCreator.seaSizeY/2 + ds_map_find_value(MapCreator.seas[i], "y")
+    seaX = MapCreator.mapStart + MapCreator.mapSizeX/2 + ds_map_find_value(MapCreator.seas[i], "x")
+    seaY = MapCreator.mapSizeY/2 + ds_map_find_value(MapCreator.seas[i], "y")
     if point_distance(x,y,seaX, seaY) < global.seaDistance {
         global.seaDistance = point_distance(x,y,seaX, seaY)
         

@@ -602,6 +602,7 @@
     {"name":"script107","order":1,"path":"scripts/script107/script107.yy",},
     {"name":"script108","order":2,"path":"scripts/script108/script108.yy",},
     {"name":"script109","order":3,"path":"scripts/script109/script109.yy",},
+    {"name":"ResetGridPoints","order":6,"path":"scripts/ResetGridPoints/ResetGridPoints.yy",},
     {"name":"SearchWreckage","order":5,"path":"scripts/SearchWreckage/SearchWreckage.yy",},
     {"name":"SeaSickMedicine","order":1,"path":"scripts/SeaSickMedicine/SeaSickMedicine.yy",},
     {"name":"SeaSickPirates","order":2,"path":"scripts/SeaSickPirates/SeaSickPirates.yy",},

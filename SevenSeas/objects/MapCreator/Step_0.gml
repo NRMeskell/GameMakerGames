@@ -45,13 +45,13 @@ if drawMiniHeight = miniHeight
         
     if __view_get( e__VW.XView, 1 ) < mapStart
         __view_set( e__VW.XView, 1, mapStart )
-    if __view_get( e__VW.XView, 1 ) + __view_get( e__VW.WView, 1 ) > mapStart + seaSizeX
-        __view_set( e__VW.XView, 1, mapStart + seaSizeX - __view_get( e__VW.WView, 1 ) )
+    if __view_get( e__VW.XView, 1 ) + __view_get( e__VW.WView, 1 ) > mapStart + mapSizeX
+        __view_set( e__VW.XView, 1, mapStart + mapSizeX - __view_get( e__VW.WView, 1 ) )
         
     if __view_get( e__VW.YView, 1 ) < 0
         __view_set( e__VW.YView, 1, 0 )
-    if __view_get( e__VW.YView, 1 ) + __view_get( e__VW.HView, 1 ) > seaSizeY
-        __view_set( e__VW.YView, 1, seaSizeY - __view_get( e__VW.HView, 1 ) )
+    if __view_get( e__VW.YView, 1 ) + __view_get( e__VW.HView, 1 ) > mapSizeY
+        __view_set( e__VW.YView, 1, mapSizeY - __view_get( e__VW.HView, 1 ) )
     }
 
 ///Close Map
@@ -136,12 +136,12 @@ overBoatButton = point_in_circle(window_view_mouse_get_x(0), window_view_mouse_g
 
 if onBoat = true
     {
-    while __view_get( e__VW.XView, 1 ) < MapShip.x - (miniWidth*zoom)/2 and __view_get( e__VW.XView, 1 ) < mapStart + seaSizeX-(miniWidth*zoom)
+    while __view_get( e__VW.XView, 1 ) < MapShip.x - (miniWidth*zoom)/2 and __view_get( e__VW.XView, 1 ) < mapStart + mapSizeX-(miniWidth*zoom)
         __view_set_pp( e__VW.XView, 1, __view_get( e__VW.XView, 1 ) + 1 )
     while __view_get( e__VW.XView, 1 ) > MapShip.x - (miniWidth*zoom)/2 and __view_get( e__VW.XView, 1 ) > mapStart + 0
         __view_set_pp( e__VW.XView, 1, __view_get( e__VW.XView, 1 ) - 1 )
 
-    while __view_get( e__VW.YView, 1 ) < MapShip.y - (miniHeight*zoom)/2 and __view_get( e__VW.YView, 1 ) < seaSizeY-(miniHeight*zoom)
+    while __view_get( e__VW.YView, 1 ) < MapShip.y - (miniHeight*zoom)/2 and __view_get( e__VW.YView, 1 ) < mapSizeY-(miniHeight*zoom)
         __view_set_pp( e__VW.YView, 1, __view_get( e__VW.YView, 1 ) + 1 )
     while __view_get( e__VW.YView, 1 ) > MapShip.y - (miniHeight*zoom)/2 and __view_get( e__VW.YView, 1 ) > 0
         __view_set_pp( e__VW.YView, 1, __view_get( e__VW.YView, 1 ) - 1 )    
