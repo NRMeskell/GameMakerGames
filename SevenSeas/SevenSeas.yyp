@@ -744,6 +744,7 @@
     {"id":{"name":"script107","path":"scripts/script107/script107.yy",},},
     {"id":{"name":"script108","path":"scripts/script108/script108.yy",},},
     {"id":{"name":"script109","path":"scripts/script109/script109.yy",},},
+    {"id":{"name":"ResetGridPoints","path":"scripts/ResetGridPoints/ResetGridPoints.yy",},},
     {"id":{"name":"SearchWreckage","path":"scripts/SearchWreckage/SearchWreckage.yy",},},
     {"id":{"name":"SeaSickHold","path":"scripts/SeaSickHold/SeaSickHold.yy",},},
     {"id":{"name":"SeaSickMedicine","path":"scripts/SeaSickMedicine/SeaSickMedicine.yy",},},

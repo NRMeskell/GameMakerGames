@@ -3,9 +3,9 @@ function SaveMapSurface(argument0) {
 
 	//seen background also saved in SaveLandingSpots
 	surface_save(MapCreator.seenSurface, argument0 + "-MapSeenFile.png");
-	sprite_save(MapCreator.islandBackground, 0, argument0 + "-MapIslandFile.png");
+	sprite_save(MapCreator.sprite_index, 0, argument0 + "-MapIslandFile.png");
 
-	tempGrid = ds_grid_create(MapCreator.seaSizeX div MapCreator.gridSize, MapCreator.seaSizeY div MapCreator.gridSize)
+	tempGrid = ds_grid_create(MapCreator.mapSizeX div MapCreator.gridSize, MapCreator.mapSizeY div MapCreator.gridSize)
 	mp_grid_to_ds_grid(global.mapGrid, tempGrid)
 
 	ini_open(argument0 + "-mapGrid.ini")

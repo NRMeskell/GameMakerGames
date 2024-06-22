@@ -7,7 +7,7 @@ if view_current = 1{
 	}
 
 	if !surface_exists(seenSurface){
-		seenSurface = surface_create(seaSizeX, seaSizeY);
+		seenSurface = surface_create(mapSizeX, mapSizeY);
 		seenBackground = background_add(SaveGameRunner.gameName + "-MapSeenFile.png", false, false)
 	
 		surface_set_target(seenSurface);
@@ -25,7 +25,10 @@ if view_current = 1{
 	draw_set_alpha(0.15)
 	draw_surface(seenSurface, mapStart, 0)
 	draw_set_alpha(1)
-	draw_background(islandBackground, mapStart, 0)
+	draw_background(sprite_index, mapStart, 0)
+	for(i=0; i<mapSizeX div gridSize; i+=1)
+		for(j=0; j<mapSizeY div gridSize; j+=1)
+			draw_sprite(MapDotsSpr, 0, mapGrid[i][j].pointX, mapGrid[i][j].pointY)
 }
 
 ///Draw Map Details
@@ -55,10 +58,10 @@ if zoom == maxZoom
         draw_set_color(c_black)
         drawName = drawSeaType
         
-        draw_text_transformed(mapStart + seaSizeX/2 +drawX+2, seaSizeY/2 + drawY, string_hash_to_newline(drawName), zoom*1.2, zoom*1.2, 0)
-        draw_text_transformed(mapStart + seaSizeX/2 +drawX, seaSizeY/2 + drawY+2, string_hash_to_newline(drawName), zoom*1.2, zoom*1.2, 0)
-        draw_text_transformed(mapStart + seaSizeX/2 +drawX-2, seaSizeY/2 + drawY, string_hash_to_newline(drawName), zoom*1.2, zoom*1.2, 0)
-        draw_text_transformed(mapStart + seaSizeX/2 +drawX, seaSizeY/2 + drawY-2, string_hash_to_newline(drawName), zoom*1.2, zoom*1.2, 0)
+        draw_text_transformed(mapStart + mapSizeX/2 +drawX+2, mapSizeY/2 + drawY, string_hash_to_newline(drawName), zoom*1.2, zoom*1.2, 0)
+        draw_text_transformed(mapStart + mapSizeX/2 +drawX, mapSizeY/2 + drawY+2, string_hash_to_newline(drawName), zoom*1.2, zoom*1.2, 0)
+        draw_text_transformed(mapStart + mapSizeX/2 +drawX-2, mapSizeY/2 + drawY, string_hash_to_newline(drawName), zoom*1.2, zoom*1.2, 0)
+        draw_text_transformed(mapStart + mapSizeX/2 +drawX, mapSizeY/2 + drawY-2, string_hash_to_newline(drawName), zoom*1.2, zoom*1.2, 0)
         
         if ds_map_find_value(seas[i], "conquered") == false
             {
@@ -74,7 +77,7 @@ if zoom == maxZoom
         else
             draw_set_color(merge_color(make_color_rgb(10, 180, 10), c_dkgray, 0.4))
         
-        draw_text_transformed(mapStart + seaSizeX/2 +drawX, seaSizeY/2 + drawY, string_hash_to_newline(drawName), zoom*1.2, zoom*1.2, 0)
+        draw_text_transformed(mapStart + mapSizeX/2 +drawX, mapSizeY/2 + drawY, string_hash_to_newline(drawName), zoom*1.2, zoom*1.2, 0)
         }
     }
 

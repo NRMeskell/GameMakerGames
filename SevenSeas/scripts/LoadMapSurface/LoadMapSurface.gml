@@ -1,7 +1,8 @@
 function LoadMapSurface(argument0) {
-	MapCreator.islandBackground = background_add(argument0 + "-MapIslandFile.png", false, false)
+	MapCreator.sprite_index = background_add(argument0 + "-MapIslandFile.png", false, false)
+	
 	if !surface_exists(MapCreator.seenSurface){
-		MapCreator.seenSurface = surface_create(MapCreator.seaSizeX, MapCreator.seaSizeY);
+		MapCreator.seenSurface = surface_create(MapCreator.mapSizeX, MapCreator.mapSizeY);
 	}
 	
 	seenBackground = background_add(argument0 + "-MapSeenFile.png", false, false)
@@ -11,8 +12,7 @@ function LoadMapSurface(argument0) {
 	surface_reset_target();
 	sprite_delete(seenBackground)
 	
-		
-	tempGrid = ds_grid_create(MapCreator.seaSizeX div MapCreator.gridSize, MapCreator.seaSizeY div MapCreator.gridSize)
+	tempGrid = ds_grid_create(MapCreator.mapSizeX div MapCreator.gridSize, MapCreator.mapSizeY div MapCreator.gridSize)
 
 	mp_grid_clear_all(global.mapGrid)
 

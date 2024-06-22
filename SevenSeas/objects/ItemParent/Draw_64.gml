@@ -2,28 +2,28 @@
 
 if room != PirateChooserRoom and instance_exists(Pirate)
     {
-    canEquip = false
-    with Pirate
-        if selected
-            other.canEquip = true
-    
-    infoBoxY = 58
-    drawWidth = 40
-    drawHeight = 20
-    if state == "equipped"
-        drawX = Pirate.xWindow-sprite_get_width(ItemSheetSpr)
-    else if state == "floating"
-        drawX = room_width - sprite_get_width(ItemSheetSpr) - 20
-    else if state == "none"
-        drawX = room_width - sprite_get_width(ItemSheetSpr)/2
-    
-    drawY = Pirate.yWindow+drawHeight
-    infoTextSize = string_height_ext(string_hash_to_newline(itemInfo), 12, sprite_get_width(ItemSheetSpr)-drawWidth)
-    infoTextHeight = max(infoBoxY + 25, infoBoxY + 10 + infoTextSize div 2)
-    lineHeight = max(infoBoxY + 10 + string_height_ext(string_hash_to_newline(itemInfo), 12, sprite_get_width(ItemSheetSpr)-drawWidth), infoBoxY + 45)
-    
-    if selected or ds_list_find_value(ItemRunner.floatingItems, 0) == id or (state == "equipped" and overItem == true)
+	if selected or ds_list_find_value(ItemRunner.floatingItems, 0) == id or (state == "equipped" and overItem == true)
         {
+	    canEquip = false
+	    with Pirate
+	        if selected
+	            other.canEquip = true
+    
+	    infoBoxY = 58
+	    drawWidth = 40
+	    drawHeight = 20
+	    if state == "equipped"
+	        drawX = Pirate.xWindow-sprite_get_width(ItemSheetSpr)
+	    else if state == "floating"
+	        drawX = room_width - sprite_get_width(ItemSheetSpr) - 20
+	    else if state == "none"
+	        drawX = room_width - sprite_get_width(ItemSheetSpr)/2
+    
+	    drawY = Pirate.yWindow+drawHeight
+	    infoTextSize = string_height_ext(string_hash_to_newline(itemInfo), 12, sprite_get_width(ItemSheetSpr)-drawWidth)
+	    infoTextHeight = max(infoBoxY + 25, infoBoxY + 10 + infoTextSize div 2)
+	    lineHeight = max(infoBoxY + 10 + string_height_ext(string_hash_to_newline(itemInfo), 12, sprite_get_width(ItemSheetSpr)-drawWidth), infoBoxY + 45)
+    
         draw_set_color(c_yellow)
         //draw_text(100,50 + selected*25, itemNumber)
         draw_sprite(ItemSheetSpr, 0, drawX, drawY)

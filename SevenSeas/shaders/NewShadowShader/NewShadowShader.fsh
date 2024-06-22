@@ -37,7 +37,7 @@ void main()
         xPos = (v_vTexcoord.x - uvs[0])/(uvs[2] - uvs[0]);
         yPos = (v_vTexcoord.y - uvs[1])/(uvs[3] - uvs[1]);
 		
-        //find brightest light
+        //add light if bright
         for(i=0; i<10; i+=1){
 			brightness = 0.0;
             if (myVolume[i] > 0.0){
@@ -47,13 +47,13 @@ void main()
                 dist += 50.0*abs(myLayer-lightLayer[i]); //total distance
                 
                 dir = vec2(0.7*xDist/(uvs[6]) * (uvs[2] - uvs[0]), 0.7*yDist/(uvs[7]) * (uvs[3] - uvs[1]))/dist;
-                brightness = min(2.0, myVolume[i]/(dist*2.0));
-            
+                brightness = min(2.0, myVolume[i]/(dist*2.0));				
+				
                 //cast shadows
                 if (myLayer > lightLayer[i]){
                     for(j=0.15; j<0.5; j+=0.15){
-                        float checkX = v_vTexcoord.x + (dir*(j)).x;
-                        float checkY = v_vTexcoord.y + (dir*(j)).y;
+                        float checkX = floor((v_vTexcoord.x + (dir*(j)).x)/pixelSize.x)*pixelSize.x;
+                        float checkY = floor((v_vTexcoord.y + (dir*(j)).y)/pixelSize.y)*pixelSize.y;
                         
                         //Check if in my texture
                         if ((checkX > uvs[0]) && (checkX < uvs[2]) && (checkY > uvs[1]) && (checkY < uvs[3])){

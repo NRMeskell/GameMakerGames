@@ -57,6 +57,3 @@ surface_reset_target()
 
 DrawWaterSurfaceWithLighting(waterSurface, 0, (room_height-surfaceHeight), 1, 1, c_white, 1, waveLayer)
 surface_free(waterSurface)
-
-
-

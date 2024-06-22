@@ -1,10 +1,10 @@
 function FrogKingLeave() {
 	ds_list_add(global.notificationList, "Left Tropical Waters!", "The Frog King escorts you to the border of the Tropical Waters before sailing away.")
 
-	pSeaX = MapCreator.mapStart + MapCreator.seaSizeX/2 + ds_map_find_value(MapCreator.seas[0], "x")
-	pSeaY = MapCreator.seaSizeY/2 + ds_map_find_value(MapCreator.seas[0], "y")
-	tSeaX = MapCreator.mapStart + MapCreator.seaSizeX/2 + ds_map_find_value(MapCreator.seas[1], "x")
-	tSeaY = MapCreator.seaSizeY/2 + ds_map_find_value(MapCreator.seas[1], "y")
+	pSeaX = MapCreator.mapStart + MapCreator.mapSizeX/2 + ds_map_find_value(MapCreator.seas[0], "x")
+	pSeaY = MapCreator.mapSizeY/2 + ds_map_find_value(MapCreator.seas[0], "y")
+	tSeaX = MapCreator.mapStart + MapCreator.mapSizeX/2 + ds_map_find_value(MapCreator.seas[1], "x")
+	tSeaY = MapCreator.mapSizeY/2 + ds_map_find_value(MapCreator.seas[1], "y")
 
 
 	with MapShip{
