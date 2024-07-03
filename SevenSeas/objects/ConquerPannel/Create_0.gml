@@ -17,13 +17,17 @@ panelHeight = sprite_get_height(SeaConqueredMapSpr)/2 - 5
 
 drawTextY = - panelHeight
 
-audio_play_sound(OpenMapSnd, 1, false)
+if !instance_exists(LoadingScreenWaves)
+	audio_play_sound(OpenMapSnd, 1, false)
 
 overScroll = false
 open = true
 
 mySeaType = global.seaType
-myCurrentSea = MapCreator.currentSeaNumber
+for(var i=0; i<7; i++){
+	if mySeaType == global.seaNames[i]
+		myCurrentSea = i
+	}
 
 with Pirate
     selected = false

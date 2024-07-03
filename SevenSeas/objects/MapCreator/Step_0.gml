@@ -38,11 +38,6 @@ if drawMiniHeight = miniHeight
         __view_set( e__VW.YView, 1, windowGrabY + (mouseGrabY - window_view_mouse_get_y(0))*zoom )
         }
         
-    if mp_grid_get_cell(global.mapGrid, (mouse_x-mapStart) div gridSize, (mouse_y) div gridSize) = -1
-        overLand = true
-    else
-        overLand = false
-        
     if __view_get( e__VW.XView, 1 ) < mapStart
         __view_set( e__VW.XView, 1, mapStart )
     if __view_get( e__VW.XView, 1 ) + __view_get( e__VW.WView, 1 ) > mapStart + mapSizeX

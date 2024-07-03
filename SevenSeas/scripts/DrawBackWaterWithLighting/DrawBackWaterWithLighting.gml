@@ -71,7 +71,7 @@ function DrawBackWaterWithLighting(argument0, argument1, argument2, argument3, a
     
 	shader_set(shader)
 
-	if global.lighting > 1{
+	//if global.lighting > 1{
 		uni_lightX = shader_get_uniform(shader, "lightX")
 		uni_lightY = shader_get_uniform(shader, "lightY")
 		uni_cornerX = shader_get_uniform(shader, "myX")
@@ -102,7 +102,7 @@ function DrawBackWaterWithLighting(argument0, argument1, argument2, argument3, a
 		shader_set_uniform_f(uni_myLayer, myLayer)
 		shader_set_uniform_f_array(uni_uvs, uvs)
 		shader_set_uniform_i(uni_lightNumber, lightNumber)
-	}
+	//}
 
 	draw_sprite_ext(sprite, 0, xval, yval, xscale, yscale, 0, color, alpha)
 	shader_reset()
@@ -175,7 +175,7 @@ function DrawWaterSurfaceWithLighting(argument0, argument1, argument2, argument3
     
 	shader_set(shader)
 
-	if global.lighting > 1{
+	//if global.lighting > 1{
 		uni_lightX = shader_get_uniform(shader, "lightX")
 		uni_lightY = shader_get_uniform(shader, "lightY")
 		uni_cornerX = shader_get_uniform(shader, "myX")
@@ -190,7 +190,7 @@ function DrawWaterSurfaceWithLighting(argument0, argument1, argument2, argument3
 		uni_myLayer = shader_get_uniform(shader, "myLayer")
 		uni_lightNumber = shader_get_uniform(shader, "lightNumber")
 		uni_uvs = shader_get_uniform(shader, "uvs")
-
+		
 
 		shader_set_uniform_f_array(uni_lightX, lightX)
 		shader_set_uniform_f_array(uni_lightY, lightY)
@@ -206,7 +206,7 @@ function DrawWaterSurfaceWithLighting(argument0, argument1, argument2, argument3
 		shader_set_uniform_f(uni_myLayer, myLayer)
 		shader_set_uniform_f_array(uni_uvs, uvs)
 		shader_set_uniform_i(uni_lightNumber, lightNumber)
-	}
+	//}
 
 	draw_surface_ext(sprite, xval, yval, xscale, yscale, 0, color, alpha)
 	shader_reset()

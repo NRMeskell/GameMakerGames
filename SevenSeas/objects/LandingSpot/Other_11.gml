@@ -3,11 +3,16 @@
 /*if !visited and myIndex != 1
     sprite_index = UnknownStopSpr
 else*/
-    
-sprite_index = StopSpr
-image_index = myIndex
 
-if visible and released{
+
+image_index = myIndex
+if visited or image_index = 1
+	sprite_index = StopSpr
+else
+	sprite_index = UnknownStopSpr
+
+if released{
+	visible = true
     dir = point_direction(x, y, checkX, checkY)
     draw_sprite_general(MapFlavorSpr, 1, 0, 0, point_distance(x, y, checkX, checkY), sprite_get_height(MapFlavorSpr), x - sin(degtorad(dir))*sprite_get_height(MapFlavorSpr)/2, y-cos(degtorad(dir))*sprite_get_height(MapFlavorSpr)/2, 1, 1, dir, -1, -1, -1, -1, 1) 
     draw_sprite_ext(MapFlavorSpr, 2, checkX, checkY, drawSize, drawSize, 0, -1, 1)

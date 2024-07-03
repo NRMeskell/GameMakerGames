@@ -68,7 +68,7 @@ function DrawWithWaterLighting(argument0, argument1, argument2, argument3, argum
 	if global.lighting > 1
 		shader = WaterShader
 	else
-		shader = Shader
+		shader = NoShader
     
 	shader_set(shader)
 

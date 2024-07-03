@@ -25,13 +25,9 @@ function SaveLandingSpots(argument0) {
 		ini_write_real("Landing " +string(n), "checkY", myLanding.checkY)
 		ini_write_real("Landing " +string(n), "visited", myLanding.visited)
 		ini_write_real("Landing " +string(n), "myIndex", myLanding.myIndex)
-		ini_write_real("Landing " +string(n), "visible", myLanding.visible)
 		}
     
 	ini_close()
-
-	with MapCreator{
-		sprite_save(MapCreator.seenBackground, 0, argument0 + "-MapSeenFile.png");
-		event_user(2)
-	}
+	//surface_save(MapCreator.seenSurface, argument0 + "-MapSeenFile.png");
+	
 }

@@ -5,9 +5,9 @@ SaveMapSurface(gameName)
 SaveLandingSpots(gameName)
 SaveBuildings(gameName)
 SaveShip(gameName)
-SavePirates(gameName)
 SaveCharacters(gameName)
 //SaveGameStats(gameName)
+SavePirates(gameName)
 
 saveGameTimer = 0
 

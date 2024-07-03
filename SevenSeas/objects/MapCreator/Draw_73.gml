@@ -1,12 +1,7 @@
 /// @description Draw surfaces
 if view_current = 1{
-	//updated visible surface
-	with LandingSpot if released{
-		if point_distance(checkX, checkY, MapShip.x, MapShip.y) < MapShip.viewDistance
-			visible = true;
-	}
 
-	if !surface_exists(seenSurface){
+	/*if !surface_exists(seenSurface){
 		seenSurface = surface_create(mapSizeX, mapSizeY);
 		seenBackground = background_add(SaveGameRunner.gameName + "-MapSeenFile.png", false, false)
 	
@@ -20,15 +15,25 @@ if view_current = 1{
 	draw_circle(MapShip.x - mapStart, MapShip.y, MapShip.viewDistance, false);
 	draw_set_blend_mode(bm_normal);
 	surface_reset_target();
+	*/
+	
+	draw_background_part(seaBackground, background_get_width(seaBackground)-seaScroll, 0, seaScroll, background_get_height(seaBackground), mapStart, 0)
+	draw_background_part(seaBackground, 0, 0, background_get_width(seaBackground)-seaScroll, background_get_height(seaBackground), mapStart + seaScroll, 0)
 		
-	draw_background(seaBackground, mapStart, 0)
-	draw_set_alpha(0.15)
-	draw_surface(seenSurface, mapStart, 0)
-	draw_set_alpha(1)
+	shader_set( MapWaveShader );
+	texture_set_stage( disSampler, sampTexture );
+	draw_set_color(c_dkgray)
+	draw_background_ext(distanceBackground, mapStart, 0, 1, 1, 0, c_white, 0.35-((seaScroll/100) mod 0.35))
+	shader_reset();
+	
+	seaScroll += 0.08
+	if seaScroll > mapSizeX
+		seaScroll = 0
+	//draw_set_alpha(0.15)
+	//draw_surface(seenSurface, mapStart, 0)
+	//draw_set_alpha(1)
+	
 	draw_background(sprite_index, mapStart, 0)
-	for(i=0; i<mapSizeX div gridSize; i+=1)
-		for(j=0; j<mapSizeY div gridSize; j+=1)
-			draw_sprite(MapDotsSpr, 0, mapGrid[i][j].pointX, mapGrid[i][j].pointY)
 }
 
 ///Draw Map Details

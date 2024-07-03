@@ -3,7 +3,7 @@
   "%Name":"CrashFront",
   "bboxMode":0,
   "bbox_bottom":359,
-  "bbox_left":208,
+  "bbox_left":206,
   "bbox_right":639,
   "bbox_top":200,
   "collisionKind":1,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"81b9038b-52b6-40f8-b301-3de58a78b139","name":"81b9038b-52b6-40f8-b301-3de58a78b139","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"f8e9322c-f57c-4374-8041-81dbf9a561cf","name":"f8e9322c-f57c-4374-8041-81dbf9a561cf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":360,
   "HTile":true,
   "layers":[
-    {"$GMImageLayer":"","%Name":"4d97bc2f-6076-40e5-84d7-f77640853509","blendMode":0,"displayName":"default","isLocked":false,"name":"4d97bc2f-6076-40e5-84d7-f77640853509","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"a7466ef0-400c-46e7-8c28-7e0dcc656ea1","blendMode":0,"displayName":"default","isLocked":false,"name":"a7466ef0-400c-46e7-8c28-7e0dcc656ea1","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"CrashFront",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"81b9038b-52b6-40f8-b301-3de58a78b139","path":"sprites/CrashFront/CrashFront.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"5565f05e-f47a-427f-8e29-fe9c2714c440","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f8e9322c-f57c-4374-8041-81dbf9a561cf","path":"sprites/CrashFront/CrashFront.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"4074753e-91dd-410b-96b4-1784193a3ba2","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

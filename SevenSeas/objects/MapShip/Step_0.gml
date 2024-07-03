@@ -123,11 +123,11 @@ else
         if myPet.itemPower == "speed bonus" and mySlot.slotType == "wheel"
             other.sailSpeed *= 1.15
 			
-	sailSpeed *= 1+(sailSpeedModifier*global.totalRiggingBonus)
+	sailSpeed *= 1//+(sailSpeedModifier*global.totalRiggingBonus)
     path_speed = sailSpeed
 }
 
-viewDistance = normalViewDistance*(1+viewDistanceModifier*global.totalWheelBonus)
+viewDistance = normalViewDistance//*(1+viewDistanceModifier*global.totalWheelBonus)
 
 
 ///Ship Vars
@@ -141,6 +141,7 @@ xPrev = x
 image_angle = sin(current_time/1000)*6
 
 ///Change levels
+tempSeaType = ds_map_find_value(MapCreator.seas[0], "type")
 global.seaDistance = 10000
 for(i=0; i<MapCreator.seaNumber; i++){
     seaX = MapCreator.mapStart + MapCreator.mapSizeX/2 + ds_map_find_value(MapCreator.seas[i], "x")
@@ -156,8 +157,10 @@ for(i=0; i<MapCreator.seaNumber; i++){
 if tempSeaType != global.seaType{
     global.seaType = tempSeaType
     global.seaLevel = tempSeaLevel
-    ds_list_add(global.notificationList, "entering " + global.seaType + "!", "prepare for new encounters")
-    with EventController
+    with instance_create(room_width/2, room_height/2, ConquerPannel){
+        event_user(3)
+    }
+	with EventController
         event_user(0)
     with SoundController
         event_user(1)
@@ -168,8 +171,8 @@ if tempSeaType != global.seaType{
 if !MapCreator.overPause and !MapCreator.overBoatButton and !MapCreator.overZoomIn and !MapCreator.overZoomOut{
 	//check not dragging
 	if mouse_check_button_released(mb_left) and (abs(sqrt(power(MapCreator.mouseGrabX - window_view_mouse_get_x(0),2)+sqrt(power(MapCreator.mouseGrabY - window_view_mouse_get_y(0),2)))) < 2) and (MapCreator.onBoat = true or !point_in_circle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), MapCreator.miniX + MapCreator.miniWidth-11, MapCreator.miniY+11, 10)){
-		other.tryMoveX = mouseOnMapX
-		other.tryMoveY = mouseOnMapY
+		tryMoveX = 0
+		tryMoveY = 0
 	
 		with LandingSpot{
 		    if visible and (point_in_circle(other.mouseOnMapX, other.mouseOnMapY, x, y, sprite_get_height(StopSpr)/2) or point_in_circle(other.mouseOnMapX, other.mouseOnMapY, checkX, checkY, sprite_get_height(MapFlavorSpr)/2)){
@@ -179,7 +182,7 @@ if !MapCreator.overPause and !MapCreator.overBoatButton and !MapCreator.overZoom
 			}
 		}
 
-		if mp_grid_path(global.mapGrid, sailPath, x, y, tryMoveX, tryMoveY, true){
+		if FindPath(sailPath, x, y, tryMoveX, tryMoveY) {
 		    with DrawPort{
 		        x=-100
 		        y=-100

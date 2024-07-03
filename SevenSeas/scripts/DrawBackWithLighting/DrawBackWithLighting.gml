@@ -73,7 +73,7 @@ function DrawBackWithLighting(argument0, argument1, argument2, argument3, argume
         
 	    shader_set(shader)
     
-		if global.lighting > 0{
+		//if global.lighting > 0{
 		    uni_lightX = shader_get_uniform(shader, "lightX")
 		    uni_lightY = shader_get_uniform(shader, "lightY")
 		    uni_cornerX = shader_get_uniform(shader, "myX")
@@ -104,7 +104,7 @@ function DrawBackWithLighting(argument0, argument1, argument2, argument3, argume
 		    shader_set_uniform_f(uni_myLayer, myLayer)
 		    shader_set_uniform_f_array(uni_uvs, uvs)
 		    shader_set_uniform_i(uni_lightNumber, lightNumber)
-		}
+		//}
     
 	    draw_background_ext(sprite, xval, yval, 1, 1, 0, color, alpha)
 	    shader_reset()

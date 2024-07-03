@@ -2,8 +2,8 @@
   "$GMSprite":"",
   "%Name":"TropicalShipSpr",
   "bboxMode":0,
-  "bbox_bottom":82,
-  "bbox_left":0,
+  "bbox_bottom":88,
+  "bbox_left":2,
   "bbox_right":104,
   "bbox_top":0,
   "collisionKind":1,
@@ -12,16 +12,16 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"900694e7-ad27-411a-bd23-4f569767ee31","name":"900694e7-ad27-411a-bd23-4f569767ee31","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"29f45772-fcb4-4f87-a0af-a235507e3105","name":"29f45772-fcb4-4f87-a0af-a235507e3105","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"3b497706-8429-4d70-8ee8-1420b935d4be","name":"3b497706-8429-4d70-8ee8-1420b935d4be","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"69187a0b-8953-4688-bfbe-b6a4e384c8c1","name":"69187a0b-8953-4688-bfbe-b6a4e384c8c1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"06068b16-8d38-475e-a9da-df211f1b4823","name":"06068b16-8d38-475e-a9da-df211f1b4823","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"a7564d78-914f-4bfa-96ef-15c0a5e02132","name":"a7564d78-914f-4bfa-96ef-15c0a5e02132","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":83,
+  "height":89,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"8b1b1e77-0b34-4306-8872-29bf89fa897f","blendMode":0,"displayName":"default","isLocked":false,"name":"8b1b1e77-0b34-4306-8872-29bf89fa897f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"659cc73a-e331-4379-934d-546ad42c5c9a","blendMode":0,"displayName":"default","isLocked":false,"name":"659cc73a-e331-4379-934d-546ad42c5c9a","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"TropicalShipSpr",
   "nineSlice":null,
@@ -71,14 +71,14 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"900694e7-ad27-411a-bd23-4f569767ee31","path":"sprites/TropicalShipSpr/TropicalShipSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"e3a01f82-411d-43bd-86e8-1a8fc63e7fc3","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"69187a0b-8953-4688-bfbe-b6a4e384c8c1","path":"sprites/TropicalShipSpr/TropicalShipSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"bb1134e0-4466-449d-867a-3c70e10b9791","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"29f45772-fcb4-4f87-a0af-a235507e3105","path":"sprites/TropicalShipSpr/TropicalShipSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"59996a11-c247-4fc1-a3c4-c8fa4677eafe","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"06068b16-8d38-475e-a9da-df211f1b4823","path":"sprites/TropicalShipSpr/TropicalShipSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"eab83644-6e3f-4781-9534-6cea9b22399c","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3b497706-8429-4d70-8ee8-1420b935d4be","path":"sprites/TropicalShipSpr/TropicalShipSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"2ae62ced-4ddf-4019-b670-9b69a682f701","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a7564d78-914f-4bfa-96ef-15c0a5e02132","path":"sprites/TropicalShipSpr/TropicalShipSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"66ad1364-e7b3-4877-a421-d2847835f316","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

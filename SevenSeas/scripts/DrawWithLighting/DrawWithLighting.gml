@@ -71,7 +71,7 @@ function DrawWithLighting(argument0, argument1, argument2, argument3, argument4,
 		shader = NoShader
     
 	shader_set(shader)
-	if global.lighting > 0 {
+	//if global.lighting > 0 {
 		uni_lightX = shader_get_uniform(shader, "lightX")
 		uni_lightY = shader_get_uniform(shader, "lightY")
 		uni_cornerX = shader_get_uniform(shader, "myX")
@@ -102,7 +102,7 @@ function DrawWithLighting(argument0, argument1, argument2, argument3, argument4,
 		shader_set_uniform_f(uni_myLayer, myLayer)
 		shader_set_uniform_f_array(uni_uvs, uvs)
 		shader_set_uniform_i(uni_lightNumber, 2)
-	}
+	//}
 
 	draw_sprite_ext(sprite, index div 1, xval, yval, 1, 1, rot, color, alpha)
 

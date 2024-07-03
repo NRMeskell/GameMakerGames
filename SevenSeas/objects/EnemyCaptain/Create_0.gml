@@ -7,7 +7,7 @@ myHealth = maxHealth
 event_user(0)
 
 repeat(1+irandom(global.seaLevel+1))
-    ds_list_add(myStats, choose(0,1,5))
+    ds_list_add(myStats, choose(0,1))
     
 ds_list_add(myStats, 5)
 

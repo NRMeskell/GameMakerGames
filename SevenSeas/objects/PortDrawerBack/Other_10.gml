@@ -28,6 +28,12 @@ if global.inPort = true {
             DrawWithLighting(TallPalmSpr, animate+1, 438+drawPortShiftX, 113+drawPortShiftY, 0, c_white, 1, drawLayer)
             
         }
+		if global.seaType == global.seaNames[2]{
+			DrawBackWithLighting(Port3Back, drawPortShiftX, drawPortShiftY, merge_color(c_white, Clock.cloudColor, 0.6), 1, drawLayer)
+			DrawWithLighting(GrassSpr, animate + 4, 113+drawPortShiftX, 218+drawPortShiftY, 0, c_white, 1, drawLayer)
+            DrawWithLighting(GrassSpr, animate + 17, 543+drawPortShiftX, 155+drawPortShiftY, 0, c_white, 1, drawLayer)
+            DrawWithLighting(BridgeSpr, animate, drawPortShiftX+185, drawPortShiftY+218, 0, c_white, 1, drawLayer)
+		}
 	}
         
     if global.portType = 2 {
@@ -79,17 +85,17 @@ if global.inPort = true {
     if global.portType = 6 {
         DrawWithLighting(GrassSpr, animate+2, 372+drawPortShiftX, 184+drawPortShiftY, 0, c_white, 1, drawLayer)
         DrawWithLighting(GrassSpr, animate+4, 451+drawPortShiftX, 191+drawPortShiftY, 0, c_white, 1, drawLayer)
-        DrawWithLighting(CrashedShip1Spr, animate, 405+drawPortShiftX, 147+drawPortShiftY, 0, c_white, 1, drawLayer)
+        DrawWithLighting(CrashedShip1Spr, 0, 405+drawPortShiftX, 147+drawPortShiftY + GetWaterAngle(Ship.middleWaves, 405)/2, 0, c_white, 1, drawLayer)
         DrawBackWithLighting(CrashBack, drawPortShiftX,drawPortShiftY, merge_color(c_white, Clock.cloudColor, 0.6), 1, drawLayer)
-        DrawWithLighting(GrassSpr, animate+9, 289+drawPortShiftX, 199+drawPortShiftY, 0, c_white, 1, drawLayer)
-        DrawWithLighting(GrassSpr, animate, 541+drawPortShiftX, 171+drawPortShiftY, 0, c_white, 1, drawLayer)
+        DrawWithLighting(GrassSpr, animate+9, 279+drawPortShiftX, 191+drawPortShiftY, 0, c_white, 1, drawLayer)
+        DrawWithLighting(GrassSpr, animate, 537+drawPortShiftX, 160+drawPortShiftY, 0, c_white, 1, drawLayer)
         
 		//Draw floating barrels
-		DrawWithLighting(DumpedCargo, 0, 383+drawPortShiftX, GetWaterLevel(Ship.middleWaves, 383), 22, c_white, 1, drawLayer)
-		DrawWithLighting(DumpedCargo, 1, 275+drawPortShiftX, GetWaterLevel(Ship.middleWaves, 295), -10, c_white, 1, drawLayer)
-		DrawWithLighting(DumpedCargo, 0, 250+drawPortShiftX, GetWaterLevel(Ship.middleWaves, 300), 5, c_white, 1, drawLayer)
-		DrawWithLighting(DumpedCargo, 1, 338+drawPortShiftX, GetWaterLevel(Ship.middleWaves, 338), -22, c_white, 1, drawLayer)
-		DrawWithLighting(DumpedCargo, 1, 305+drawPortShiftX, GetWaterLevel(Ship.middleWaves, 325), 10, c_white, 1, drawLayer)
+		DrawWithLighting(DumpedCargo, 0, 233+drawPortShiftX, GetWaterLevel(Ship.frontWaves, 233), 22, c_white, 1, drawLayer)
+		DrawWithLighting(DumpedCargo, 1, 275+drawPortShiftX, GetWaterLevel(Ship.frontWaves, 295), -10, c_white, 1, drawLayer)
+		DrawWithLighting(DumpedCargo, 0, 250+drawPortShiftX, GetWaterLevel(Ship.frontWaves, 300), 5, c_white, 1, drawLayer)
+		DrawWithLighting(DumpedCargo, 1, 268+drawPortShiftX, GetWaterLevel(Ship.frontWaves, 268), -22, c_white, 1, drawLayer)
+		DrawWithLighting(DumpedCargo, 1, 400+drawPortShiftX, GetWaterLevel(Ship.frontWaves, 400), 10, c_white, 1, drawLayer)
 	}
 		
 	if global.portType = 7 {

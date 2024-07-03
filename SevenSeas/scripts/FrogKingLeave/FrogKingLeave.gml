@@ -22,8 +22,8 @@ function FrogKingLeave() {
 	        //reset islands
 	        event_user(0)
 	        targetPort = instance_find(LandingSpot, 0)
-	        if mp_grid_path(global.mapGrid, sailPath, x, y, targetPort.checkX, targetPort.checkY, true)
-	            {                    
+	        FindPath(sailPath, x, y, targetPort.checkX, targetPort.checkY)
+	        if path_get_number(sailPath) > 0 {                    
 	            toPort = true
 
 	            global.portType = targetPort.myIndex

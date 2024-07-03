@@ -2,7 +2,7 @@
 
 if room != PirateChooserRoom and instance_exists(Pirate)
     {
-	if selected or ds_list_find_value(ItemRunner.floatingItems, 0) == id or (state == "equipped" and overItem == true)
+	if ds_list_find_value(ItemRunner.floatingItems, 0) == id or (state == "equipped" and overItem == true)
         {
 	    canEquip = false
 	    with Pirate
@@ -114,7 +114,7 @@ if room != PirateChooserRoom and instance_exists(Pirate)
 
 ///Draw action info
 
-if selected or ds_list_find_value(ItemRunner.floatingItems, 0) == id or (state == "equipped" and overItem == true)
+if ds_list_find_value(ItemRunner.floatingItems, 0) == id or (state == "equipped" and overItem == true)
     {
     //draw actions
     if myAction != noone

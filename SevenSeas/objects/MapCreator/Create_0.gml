@@ -1,5 +1,6 @@
 /// @description Create Port Types
 
+//TEMP
 global.portBuilds = ds_list_create()
 ds_list_add(global.portBuilds, Tavern, Smithy, Taylors, ShipYard, TrinketShop)
 
@@ -12,8 +13,8 @@ mapSizeY = 1536
 drawX = 0
 seaNumber = 7
 
-seaColor = make_color_rgb(38,73,166)
 insideColor = make_color_rgb(165,90,32)
+seaColor = merge_color(insideColor, make_color_rgb(38,73,166), 0.5)
 
 landColor = ds_map_create()
 landColor[? global.seaNames[0]] = make_color_rgb(95,44,0)
@@ -29,31 +30,24 @@ x = mapStart
 y = 0
 image_speed = 0
 image_index = 0
-
+seaScroll = 0
 seaSurface = surface_create(mapSizeX, mapSizeY)
 surface_set_target(seaSurface)
 draw_set_color(seaColor)
 draw_background_ext(PirateChooseWater, 0, 0, mapSizeX/background_get_width(PirateChooseWater), mapSizeY/background_get_height(PirateChooseWater), 0, c_white, 1)
 for(n=0; n<30*9; n++)
-    draw_sprite(MapWaveSpr, irandom(3), irandom(mapSizeX), irandom(mapSizeY))
+    draw_sprite_ext(MapWaveSpr, irandom(3), irandom(mapSizeX), irandom(mapSizeY), 1, 1, 0, c_white, 0.5)
 surface_reset_target()
 
-seenSurface = surface_create(mapSizeX, mapSizeY)
+/*seenSurface = surface_create(mapSizeX, mapSizeY)
 surface_set_target(seenSurface)
 draw_set_color( make_color_rgb(82,45,16))
 draw_rectangle(0, 0, mapSizeX, mapSizeY, false)
-surface_reset_target()
+surface_reset_target()*/
 
+distanceSurface = surface_create(mapSizeX, mapSizeY)
 islandSurface = surface_create(mapSizeX, mapSizeY)
 surf = surface_create(mapSizeX, mapSizeY)
-
-
-/// Add to grid
-
-
-
-gridSize = 8
-global.mapGrid = mp_grid_create(mapStart, 0, mapSizeX div gridSize, mapSizeY div gridSize, gridSize, gridSize)
 
 ///Create Islands
 
@@ -61,10 +55,10 @@ restarts = 0
 restartLimit = 10000
 
 size = 1
-islandNumber = 12
+islandNumber = 9
 
-outlineSize = size*0.9
-grassSize = size*0.75
+outlineSize = size*1.1
+grassSize = size*0.8
 
 islandSize = 230
 
@@ -91,6 +85,7 @@ directions = ds_list_create()
 ds_list_add(directions, 0, pi/3, pi*2/3, pi*3/3, pi*4/3, pi*5/3)
 dir = ds_list_find_value(directions, irandom(ds_list_size(directions)-1))
 
+//Add Seas
 //Add Seas
 for(n=0; n<seaNumber; n++)
     {    
@@ -124,7 +119,7 @@ for(n=0; n<seaNumber; n++)
     while(i < islandNumber)
         {            
         flip[n*islandNumber+i] = choose(-size, size)
-        spin[n*islandNumber+i] = irandom(360)
+        spin[n*islandNumber+i] = choose(0, 45, 90, 135, 180, 225, 270, 315)
         islandShape[n*islandNumber+i] = irandom(sprite_get_number(IslandSpr)-1)
         
         myDir = ds_list_find_value(islandDirs, irandom(ds_list_size(islandDirs)-1))
@@ -152,10 +147,6 @@ for(n=0; n<seaNumber; n++)
         //Make island if not too far away
         if makeIsland
             {
-            surface_set_target(islandSurface)
-            draw_sprite_ext(IslandSpr, islandShape[n*islandNumber+i], getIslandX[n*islandNumber+i]-1, getIslandY[n*islandNumber+i], flip[n*islandNumber+i], size*1.2, spin[n*islandNumber+i], merge_color(seaColor, c_black, 8/20), 1)
-        
-            surface_reset_target()
             i++
             ds_list_delete(islandDirs, ds_list_find_index(islandDirs, myDir))
             }
@@ -178,73 +169,64 @@ for(n=0; n<seaNumber; n++)
     ///Draw black outline
     for(i=0; i<islandNumber; i++)
         {
-        surface_set_target(islandSurface)
-        draw_sprite_ext(IslandSpr, islandShape[n*islandNumber+i], getIslandX[n*islandNumber+i]-1, getIslandY[n*islandNumber+i], flip[n*islandNumber+i]*size, size, spin[n*islandNumber+i], c_black, 1)
-        draw_sprite_ext(IslandSpr, islandShape[n*islandNumber+i], getIslandX[n*islandNumber+i]+1, getIslandY[n*islandNumber+i], flip[n*islandNumber+i]*size, size, spin[n*islandNumber+i], c_black, 1)
-        draw_sprite_ext(IslandSpr, islandShape[n*islandNumber+i], getIslandX[n*islandNumber+i], getIslandY[n*islandNumber+i]+1, flip[n*islandNumber+i]*size, size, spin[n*islandNumber+i], c_black, 1)
-        draw_sprite_ext(IslandSpr, islandShape[n*islandNumber+i], getIslandX[n*islandNumber+i], getIslandY[n*islandNumber+i]-1, flip[n*islandNumber+i]*size, size, spin[n*islandNumber+i], c_black, 1)
-        
         newIsland = instance_create(mapStart+getIslandX[n*islandNumber+i], getIslandY[n*islandNumber+i], Island)
-        with newIsland
-            {
+        with newIsland{
             image_index = other.islandShape[other.n*other.islandNumber+other.i]
             image_speed = 0
             image_xscale = other.flip[other.n*other.islandNumber+other.i] * other.size
             image_yscale = other.size
             image_angle = other.spin[other.n*other.islandNumber+other.i]
-            }
-            
-        mp_grid_add_instances(global.mapGrid, newIsland, true)
+			image_blend = ds_map_find_value(other.landColor, ds_map_find_value(other.seas[other.n], "type"))
+			}
+	}
+}
 
-        instance_destroy(Island)
-        
-        surface_reset_target()
-        }
-    }
-for(n=0; n<seaNumber; n++)
-    {
-    for(i=0; i<islandNumber; i++)
-        {   
-        surface_set_target(islandSurface)
-        draw_sprite_ext(IslandSpr, islandShape[n*islandNumber+i], getIslandX[n*islandNumber+i], getIslandY[n*islandNumber+i], flip[n*islandNumber+i], size, spin[n*islandNumber+i], merge_color(ds_map_find_value(landColor, ds_map_find_value(seas[n], "type")), insideColor, 0), 1)
-        surface_reset_target()
-        }
-    }
-for(n=0; n<seaNumber; n++)
-    {
-    for(i=0; i<islandNumber; i++)
-        {
-        surface_set_target(islandSurface)    
-        draw_sprite_ext(IslandSpr, islandShape[n*islandNumber+i], getIslandX[n*islandNumber+i], getIslandY[n*islandNumber+i], flip[n*islandNumber+i]*outlineSize, size*outlineSize, spin[n*islandNumber+i], merge_color(ds_map_find_value(landColor, ds_map_find_value(seas[n], "type")), insideColor, 0.6), 1)
-        surface_reset_target()
-        }
-    }
-for(n=0; n<seaNumber; n++)
-    {
-    for(i=0; i<islandNumber; i++)
-        {
-        surface_set_target(islandSurface)   
-        draw_sprite_ext(IslandSpr, islandShape[n*islandNumber+i], getIslandX[n*islandNumber+i], getIslandY[n*islandNumber+i], flip[n*islandNumber+i]*grassSize, size*grassSize, spin[n*islandNumber+i], merge_color(ds_map_find_value(landColor, ds_map_find_value(seas[n], "type")), insideColor, 0.8), 1)
-        surface_reset_target()
-        }
-    }
-    
+surface_set_target(islandSurface)
+with Island{
+	draw_sprite_ext(IslandSpr, image_index, x-other.mapStart, y, image_xscale*other.outlineSize, image_yscale*other.outlineSize, image_angle, merge_color(image_blend, other.insideColor, 0), 1)
+}
+with Island
+	draw_sprite_ext(IslandSpr, image_index, x-other.mapStart, y, image_xscale, image_yscale, image_angle, merge_color(image_blend, other.insideColor, 0.6), 1)
+with Island
+	draw_sprite_ext(IslandSpr, image_index, x-other.mapStart, y, image_xscale*other.grassSize, image_yscale*other.grassSize, image_angle, merge_color(image_blend, other.insideColor, 0.8), 1)
+surface_reset_target()
+
+
+surface_set_target(distanceSurface)
+draw_set_color(c_white)
+with Island
+	for(var si=1; si<1.3; si+=0.03)
+		draw_sprite_ext(IslandSpr, image_index, x-other.mapStart, y, image_xscale*other.outlineSize*si, image_yscale*other.outlineSize*si, image_angle, c_black, 0.2)
+surface_reset_target()
+
+instance_destroy(Island)
+
+distanceBackground = background_create_from_surface(distanceSurface, 0, 0, surface_get_width(distanceSurface), surface_get_height(distanceSurface), false, false) 
 seaBackground = background_create_from_surface(seaSurface, 0, 0, surface_get_width(seaSurface), surface_get_height(seaSurface), false, false)
-seenBackground = background_create_from_surface(seenSurface, 0, 0, surface_get_width(seenSurface), surface_get_height(seenSurface), false, false)
-sprite_index  = background_create_from_surface(islandSurface, 0, 0, surface_get_width(islandSurface), surface_get_height(islandSurface), false, false)
+//seenBackground = background_create_from_surface(seenSurface, 0, 0, surface_get_width(seenSurface), surface_get_height(seenSurface), false, false)
+var tempBack = sprite_create_from_surface(islandSurface, 0, 0, surface_get_width(islandSurface), surface_get_height(islandSurface), true, false, 0, 0)
+surface_set_target(islandSurface)
+var outlineColor = make_color_rgb(5,5,5)
+draw_sprite_ext(tempBack, image_index, -1, 0, 1, 1, 0, outlineColor, 1)
+draw_sprite_ext(tempBack, image_index, 0, -1, 1, 1, 0, outlineColor, 1)
+draw_sprite_ext(tempBack, image_index, 1, 0,  1, 1, 0, outlineColor, 1)
+draw_sprite_ext(tempBack, image_index, 0, 1,  1, 1, 0, outlineColor, 1)
+draw_sprite_ext(tempBack, image_index, 0, 0,  1, 1, 0, c_white, 1)
+surface_reset_target()
+sprite_index = sprite_create_from_surface(islandSurface, 0, 0, surface_get_width(islandSurface), surface_get_height(islandSurface), true, false, 0, 0)
 
-//initiate grid
-GridPoint = {
-	pointX : 0,
-	pointY : 0,
-	parent : noone
-};
 
-for(i=0; i<mapSizeX div gridSize; i+=1)
-	for(j=0; j<mapSizeY div gridSize; j+=1)
-		mapGrid[i][j] = new GridPoint(mapStart + i*gridSize, j*gridSize, noone)
+surface_free(seaSurface)
+surface_free(islandSurface)
+surface_free(distanceSurface)
 
-//ResetGridPoints()
+//get distance sampler 
+SetWaveSampler()
+
+/// Add to grid
+gridSize = 4
+global.mapGrid = mp_grid_create(mapStart, 0, mapSizeX div gridSize, mapSizeY div gridSize, gridSize, gridSize)
+mp_grid_add_instances(global.mapGrid, MapCreator, true)
 
 ///Create Landing Spots
 spotTypes = ds_map_create()
@@ -278,7 +260,7 @@ for(n=0; n < seaNumber; n++)
         with instance_create(0, 0, LandingSpot)
             {
             //Set Port Type
-            if other.r < other.townNumber - other.n
+            if other.r < other.townNumber - ds_map_find_value(other.seas[other.n], "level")
                 {
                 image_index = 1
 				visible = true
@@ -310,14 +292,14 @@ for(n=0; n < seaNumber; n++)
                 myPlaceIsland = irandom(other.islandNumber - 1)
                 //myDir = random(2*pi)
                 //myDis = other.islandSize*power(random(1), 1/3)
-                placeX = other.mapStart + other.getIslandX[other.n*other.islandNumber+myPlaceIsland] + random_range(-10,10)
-                placeY = other.getIslandY[other.n*other.islandNumber+myPlaceIsland] + random_range(-10,10)
+                placeX = other.mapStart + other.getIslandX[other.n*other.islandNumber+myPlaceIsland] + random_range(-25,25) + random_range(-10, 10)
+                placeY = other.getIslandY[other.n*other.islandNumber+myPlaceIsland] + random_range(-25,25) + random_range(-10, 10)
                 closeLocation = instance_nearest(placeX, placeY, LandingSpot)
                 
                 placedWell = true
                 
                 //Dont place near others
-                if point_distance(closeLocation.x, closeLocation.y, placeX, placeY) < rad + 60*spreadOut
+                if point_distance(closeLocation.x, closeLocation.y, placeX, placeY) < rad + 60*spreadOut or place_meeting(placeX, placeY, LandingSpot)
                     {
                     placedWell = false
                     if rad > 20
@@ -397,7 +379,7 @@ for(n=0; n < seaNumber; n++)
         }
     
 path_delete(global.path)
-
+    
 /* */
 ///Minimap Vars
 
@@ -471,50 +453,50 @@ conquerButtonY = miniY + 1
 overConquer = false
     
 condAmount = 0
-condName = ds_map_create()
+condImage = ds_map_create()
 condDes = ds_map_create()
 condCritera = ds_map_create()
 
 //Cove
-ds_map_add(condName, global.seaNames[0], "Expert Crew")
-ds_map_add(condDes, global.seaNames[0], "Many ships sail Pirate Cove. To conquer this sea, you need to prove your crew's worth beyond a doubt!")
-ds_map_add(condCritera, global.seaNames[0], "Gain a total of four stars on your crew")
+ds_map_add(condDes, global.seaNames[0], "Prove your crew's worth beyond a doubt!")
+ds_map_add(condCritera, global.seaNames[0], "GET A 4-STAR CREW!")
+ds_map_add(condImage, global.seaNames[0], 0) 
 winCond[0] = 0
  
 //tropical islands
-ds_map_add(condName, global.seaNames[1], "Tropical Treasure")
-ds_map_add(condDes, global.seaNames[1], "Pearls be a hard treasure to find! Conquer the Tropical Waters by collecting more pearls than any pirate before!")
-ds_map_add(condCritera, global.seaNames[1], "Pearls collected: 0/10")
+ds_map_add(condDes, global.seaNames[1], "Collect more pearls than any ship before!")
+ds_map_add(condCritera, global.seaNames[1], "PEARLS COLLECTED: 0/10")
+ds_map_add(condImage, global.seaNames[1], 1) 
 winCond[1] = 0
 
 //rocky shores
-ds_map_add(condName, global.seaNames[2], "")
 ds_map_add(condDes, global.seaNames[2], "")
 ds_map_add(condCritera, global.seaNames[2], "")
+ds_map_add(condImage, global.seaNames[2], 2) 
 winCond[2] = 0
 
 //isles of the dead
-ds_map_add(condName, global.seaNames[3], "")
 ds_map_add(condDes, global.seaNames[3], "")
 ds_map_add(condCritera, global.seaNames[3], "")
+ds_map_add(condImage, global.seaNames[3], 3) 
 winCond[3] = 0
 
 //volcanic
-ds_map_add(condName, global.seaNames[4], "")
 ds_map_add(condDes, global.seaNames[4], "")
 ds_map_add(condCritera, global.seaNames[4], "")
+ds_map_add(condImage, global.seaNames[4], 4) 
 winCond[4] = 0
 
 //sea monsters
-ds_map_add(condName,  global.seaNames[5], "")
 ds_map_add(condDes, global.seaNames[5], "")
 ds_map_add(condCritera, global.seaNames[5], "")
+ds_map_add(condImage, global.seaNames[5], 5) 
 winCond[5] = 0
 
 //royal waters
-ds_map_add(condName, global.seaNames[6], "")
 ds_map_add(condDes, global.seaNames[6], "")
 ds_map_add(condCritera, global.seaNames[6], "")
+ds_map_add(condImage, global.seaNames[6], 6) 
 winCond[6] = 0
 
 /* */
