@@ -2,8 +2,8 @@
 
 if ds_list_size(global.notificationList) > 0 and !instance_exists(EnemyAttack)
     {
-    draw_set_color(c_black)
-    draw_set_font(global.PirateFont)
+    draw_set_color(make_color_rgb(149, 126, 1))
+    draw_set_font(global.LargePirateFont)
     draw_set_halign(fa_center)
     draw_set_valign(fa_middle)
     
@@ -11,8 +11,10 @@ if ds_list_size(global.notificationList) > 0 and !instance_exists(EnemyAttack)
     draw_sprite_part(NotifacationSpr, 0, 0, animationBorder + 20, sprite_get_width(NotifacationSpr), notificationSize, drawX - sprite_get_width(NotifacationSpr)/2, drawY - notificationSize/2)
     draw_sprite_part(NotifacationSpr, 0, 0, sprite_get_height(NotifacationSpr) - 20 - animationBorder, sprite_get_width(NotifacationSpr), 20 + animationBorder, drawX - sprite_get_width(NotifacationSpr)/2, drawY + notificationSize/2)
     
-    draw_text_ext_transformed(drawX, drawY - notificationSize/2 + captionSize/2, string_hash_to_newline(ds_list_find_value(global.notificationList, 0)), 12, sprite_get_width(NotifacationSpr) - 40 - animationBorder*2, 1.2, 1.2, 0)
+    draw_text_ext_transformed(drawX, drawY - notificationSize/2 + captionSize/2, string_hash_to_newline(ds_list_find_value(global.notificationList, 0)), 12, sprite_get_width(NotifacationSpr) - 40 - animationBorder*2, 0.9, 0.9, 0)
     
+	draw_set_color(c_black)
+    draw_set_font(global.PirateFont)
     draw_text_ext_transformed(drawX, drawY + captionSize/2 + 7, string_hash_to_newline(ds_list_find_value(global.notificationList, 1)), 12, sprite_get_width(NotifacationSpr) - 40 - animationBorder*2, 0.9, 0.9, 0)
     
     if onButton

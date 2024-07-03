@@ -302,24 +302,6 @@ animate = 0
 
 global.doTime = false
 
-portFrontMap = ds_map_create()
-portFrontMap[? global.seaNames[0]] = Port1Front
-portFrontMap[? global.seaNames[1]] = Port2Front
-portFrontMap[? global.seaNames[2]] = Port1Front
-portFrontMap[? global.seaNames[3]] = Port1Front
-portFrontMap[? global.seaNames[4]] = Port1Front
-portFrontMap[? global.seaNames[5]] = Port1Front
-portFrontMap[? global.seaNames[6]] = Port1Front
-
-portBackMap = ds_map_create()
-portBackMap[? global.seaNames[0]] = Port1Back
-portBackMap[? global.seaNames[1]] = Port2Back
-portBackMap[? global.seaNames[2]] = Port1Back
-portBackMap[? global.seaNames[3]] = Port1Back
-portBackMap[? global.seaNames[4]] = Port1Back
-portBackMap[? global.seaNames[5]] = Port1Back
-portBackMap[? global.seaNames[6]] = Port1Back
-
 
 ///Create Starting Pirates
 

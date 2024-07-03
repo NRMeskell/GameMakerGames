@@ -5,7 +5,7 @@ buttonNumber = ds_list_size(buttons)
 pirateEventText = eventText
    
 textBorder = 35
-captionY = 24 + (string_height_ext(string_hash_to_newline(captionText), 12, sprite_get_width(EventSpr) - textBorder*1.2)/2)*1.2
+captionY = 29 + (string_height_ext(string_hash_to_newline(captionText), 12, sprite_get_width(EventSpr) - textBorder*1.2)/2)*1.2
 buttonCenter = sprite_get_height(EventSpr) - buttonNumber/2*(buttonSpacing*2) + 7
     
 textTop = captionY + (string_height_ext(string_hash_to_newline(captionText), 12, sprite_get_width(EventSpr) - textBorder*1.2)/2)*1.2
@@ -64,17 +64,32 @@ for(i=-buttonNumber; i < buttonNumber; i+=2)
     }
         
     
-draw_set_color(make_color_rgb(149, 126, 1))
 draw_set_font(global.LargePirateFont)
+draw_set_color(make_color_rgb(149, 126, 1))
+
 if myCharacter == -1    
     {
-    draw_set_halign(fa_center)
-    draw_text_ext_transformed(drawX, drawY + captionY, string_hash_to_newline(captionText), 14, sprite_get_width(EventSpr) - textBorder*1.6, 1, 1, 0)
-    }
+	var captionWidth = string_width_ext(string_hash_to_newline(captionText), 14, sprite_get_width(EventSpr) - textBorder*1.6),
+		captionSize = min(1.2, (sprite_get_width(EventSpr) - textBorder*1.6)/captionWidth),
+		captionHeight = string_height_ext(string_hash_to_newline(captionText), 14, sprite_get_width(EventSpr) - textBorder*1.6)
+		
+	draw_set_halign(fa_center)
+	draw_sprite_part(ItemSheetSpr, 7, 0, 0, captionWidth*captionSize/2 + 16, 7, drawX - captionWidth*captionSize/2 - 16, drawY+captionY-captionHeight*captionSize/2-7)
+    draw_sprite_part(ItemSheetSpr, 7, sprite_get_width(ItemSheetSpr) - captionWidth*captionSize/2 - 16, 0, captionWidth*captionSize/2 + 16, 7, drawX, drawY+captionY-captionHeight*captionSize/2-7)
+    
+	draw_sprite_part(ItemSheetSpr, 7, 0, sprite_get_height(ItemSheetSpr) - 34 - captionHeight*captionSize, captionWidth*captionSize/2 + 16, captionHeight*captionSize+6, drawX - captionWidth*captionSize/2 - 16, drawY+captionY-captionHeight*captionSize/2)
+    draw_sprite_part(ItemSheetSpr, 7, sprite_get_width(ItemSheetSpr) - captionWidth*captionSize/2 - 16, sprite_get_height(ItemSheetSpr) - 34 - captionHeight*captionSize, captionWidth*captionSize/2 + 16, captionHeight*captionSize+6, drawX, drawY+captionY-captionHeight*captionSize/2)
+                   
+    draw_text_ext_transformed(drawX, drawY + captionY, string_hash_to_newline(captionText), 14, sprite_get_width(EventSpr) - textBorder*1.6, captionSize, captionSize, 0)
+	}
 else
     {
+	var captionWidth = string_width_ext(string_hash_to_newline(captionText), 14, sprite_get_width(EventSpr) - textBorder*1.2 - 57),
+		captionSize = captionWidth/(sprite_get_width(EventSpr) - textBorder*1.2 - 57),
+		captionHeight = string_height_ext(string_hash_to_newline(captionText), 14, sprite_get_width(EventSpr) - textBorder*1.2 - 57)
+	
     draw_set_halign(fa_left)
-    draw_text_ext_transformed(drawX - sprite_get_width(EventSpr)/2 + 57, drawY + captionY, string_hash_to_newline(captionText), 14, sprite_get_width(EventSpr) - textBorder*1.6, 1, 1, 0)
+    draw_text_ext_transformed(drawX - sprite_get_width(EventSpr)/2 + 57, drawY + captionY, string_hash_to_newline(captionText), 14, sprite_get_width(EventSpr) - textBorder*1.2 - 57, 1, 1, 0)
     draw_sprite(CharacterFrameSpr, myCharacter, drawX - sprite_get_width(EventSpr)/2 + 35, drawY + captionY - 2)
     }
 draw_set_halign(fa_center)

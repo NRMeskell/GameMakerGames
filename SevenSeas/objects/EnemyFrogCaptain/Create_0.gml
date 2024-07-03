@@ -7,7 +7,7 @@ myHealth = maxHealth
 
 event_user(0)
 
-ds_list_add(myStats, 5, 5)
+ds_list_add(myStats, 0, 5)
 
 repeat(1)
     ds_list_add(myStats, choose(0,1))

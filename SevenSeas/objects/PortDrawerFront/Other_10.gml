@@ -3,7 +3,6 @@
 animate = Ship.animate
 drawPortShiftX = Ship.drawPortShiftX
 drawPortShiftY = Ship.drawPortShiftY
-portFrontMap = Ship.portFrontMap
 drawLayer = 4
 
 //draw everything
@@ -22,14 +21,19 @@ if global.inPort = true
         {
         if global.seaType == "pirate cove"{
             DrawWithLighting(PalmTree1Spr, animate + 2, 240+drawPortShiftX, 203+drawPortShiftY, 0, c_white, 1, drawLayer)           
-            DrawBackWithLighting(portFrontMap[? global.seaType], drawPortShiftX, drawPortShiftY, merge_color(c_white, Clock.cloudColor, 0.5), 1, drawLayer)
+            DrawBackWithLighting(Port1Front, drawPortShiftX, drawPortShiftY, merge_color(c_white, Clock.cloudColor, 0.5), 1, drawLayer)
             }
         if global.seaType == "tropical islands"{
             DrawWithLighting(PalmTree2Spr, animate + 2, 258+drawPortShiftX, 190+drawPortShiftY, 0, c_white, 1, drawLayer)           
-            DrawBackWithLighting(portFrontMap[? global.seaType], drawPortShiftX, drawPortShiftY, merge_color(c_white, Clock.cloudColor, 0.5), 1, drawLayer)
+            DrawBackWithLighting(Port2Front, drawPortShiftX, drawPortShiftY, merge_color(c_white, Clock.cloudColor, 0.5), 1, drawLayer)
             DrawWithLighting(SmallPalmSpr, animate + 2, 374+drawPortShiftX, 217+drawPortShiftY, 0, c_white, 1, drawLayer)           
             DrawWithLighting(TallPalm2Spr, animate + 2, 462+drawPortShiftX, 174+drawPortShiftY, 0, c_white, 1, drawLayer)           
             }
+		if global.seaType == "shipwreck shores"{
+			DrawWithLighting(GrassSpr, animate, 278+drawPortShiftX, 235+drawPortShiftY, 0, c_white, 1, drawLayer)
+			DrawBackWithLighting(Port3Front, drawPortShiftX, drawPortShiftY, merge_color(c_white, Clock.cloudColor, 0.5), 1, drawLayer)
+            DrawWithLighting(BridgeSpr, animate+18, drawPortShiftX+487, drawPortShiftY+223, 0, c_white, 1, drawLayer)
+			}	
         }
         
     if global.portType = 2
@@ -88,7 +92,7 @@ if global.inPort = true
         DrawWithLighting(GrassSpr, animate, 456+drawPortShiftX, 216+drawPortShiftY, 0, c_white, 1, drawLayer)
 		DrawWithLighting(CrashedShip2Spr, animate, 340+drawPortShiftX, 265+drawPortShiftY, 235 + GetWaterLevel(Ship.middleWaves, 300), c_white, 1, drawLayer)
         DrawBackWithLighting(CrashFront, drawPortShiftX, drawPortShiftY,  merge_color(c_white, Clock.cloudColor, 0.5), 1, drawLayer)
-        DrawWithLighting(GrassSpr, animate+2, 411+drawPortShiftX, 242+drawPortShiftY, 0, c_white, 1, drawLayer)
+        //DrawWithLighting(GrassSpr, animate+2, 411+drawPortShiftX, 242+drawPortShiftY, 0, c_white, 1, drawLayer)
         }
 	if global.portType = 7
         {

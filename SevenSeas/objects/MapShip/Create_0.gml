@@ -24,7 +24,7 @@ islandPoints = ds_list_create()
 
 sailSpeedModifier = 0.05
 normalViewDistance = 40
-viewDistanceModifier = 0.15
+viewDistanceModifier = 0.2
 viewDistance = normalViewDistance
 sailPath = path_add()
 normalSailSpeed = 0.12
@@ -63,7 +63,7 @@ with LandingSpot
 
 ///Level Vars
 
-global.seaType = global.seaNames[0]
+global.seaType = ""
 global.seaLevel = 0
 
 alarm[0] = room_speed 

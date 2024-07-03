@@ -108,15 +108,7 @@ for(i=0; i<9; i++){
             statString[i] = "pirate -" + string(abs(stat[i])) + "#" + statString[i]
         }
     statTotal[i] = max(0, statTotal[i])
-    }
-    
-if myAction[0] != noone and myAction[0] != LostEyeAction
-    stars = 1
-if myAction[1] != noone and myAction[1] != LostEyeAction
-    stars = 2
-if myAction[2] != noone and myAction[2] != LostEyeAction
-    stars = 3    
-    
+    }   
 
 /* */
 ///Injured/Heal
@@ -351,9 +343,11 @@ if (myPet.itemPower == "medical ship"){
 if myPet.itemPower == "heal" or myPet.itemPower = "medical ship"
     myHealth += global.timeCycleRate * global.doTime*Ship.healSpeed/2
 }
-	
-/*if healed > 1 or (mySlot.slotType == "bed" and myHealth = maxHealth) {
-	healed = 0
-	event_user(5) //return to main spot
-	myHealth = maxHealth
-}*/
+
+stars = 0
+if myAction[0] != noone and myAction[0] != LostEyeAction
+    stars ++
+if myAction[1] != noone and myAction[1] != LostEyeAction
+    stars ++
+if myAction[2] != noone and myAction[2] != LostEyeAction
+    stars ++   

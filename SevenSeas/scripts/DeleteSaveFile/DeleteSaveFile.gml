@@ -19,13 +19,10 @@ function DeleteSaveFile(argument0) {
 	        for(p=0; p<10; p++)
 	            file_delete(argument0 + "-pirate" + string(p) + ".ini")
 	        file_delete(argument0 + "-ship.ini")
-	        file_delete(argument0 + "-mapGrid.ini")
+	        file_delete(argument0 + "-MapGrid.ini")
+			file_delete(argument0 + "-MapDistanceFile.png")
 	        }
 	    }
 
 	file_text_close(saveFile)
-
-
-
-
 }

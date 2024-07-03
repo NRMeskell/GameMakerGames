@@ -8,7 +8,7 @@ event_user(0)
 
 ds_list_add(myStats, 5)
 repeat(choose(1, 2))
-    ds_list_add(myStats, choose(1,5))
+    ds_list_add(myStats, choose(0,1))
     
 repeat(sign(irandom(global.seaLevel)))
     {

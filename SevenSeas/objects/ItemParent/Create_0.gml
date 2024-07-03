@@ -8,7 +8,6 @@ image_speed = 0
 image_alpha = 0
 
 //sword, gun, cannon, wheel, sailing, lookout, medic, barder, survival
-
 selected = false
 
 sprite_index = noone
