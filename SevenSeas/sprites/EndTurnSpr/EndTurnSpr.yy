@@ -27,7 +27,7 @@
   "origin":9,
   "parent":{
     "name":"Enemy",
-    "path":"folders/Sprites/Backgrounds/Land/Camps/PirateCove/Beach/Enemy.yy",
+    "path":"folders/Sprites/Enemy.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

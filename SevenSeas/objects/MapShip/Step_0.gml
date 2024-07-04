@@ -40,7 +40,7 @@ if path_position = 1 and global.inPort = false{
 					event_user(2)
 				}
 			}
-		    if ds_list_size(global.notificationList) == 0 and global.timeCycle != global.timeCycleLength*1/8{
+		    if alarm[0] == -1 and ds_list_size(global.notificationList) == 0 and global.timeCycle != global.timeCycleLength*1/8{
 		        with EventController alarm[0] = room_speed/2
 		    }
 		}
@@ -192,6 +192,9 @@ if !MapCreator.overPause and !MapCreator.overBoatButton and !MapCreator.overZoom
 			moveX = tryMoveX
 			moveY = tryMoveY
 			if global.inPort{
+				//set timer for NO port events (do not spam port)
+				alarm[0] = room_speed*10
+				
 				with Ship
 					animate = 0
 			    with Store

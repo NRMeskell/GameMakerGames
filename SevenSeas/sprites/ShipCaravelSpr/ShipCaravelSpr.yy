@@ -13,7 +13,7 @@
   "For3D":false,
   "frames":[
     {"$GMSpriteFrame":"","%Name":"2f7654c7-55f3-4103-8105-95d5ce0ac293","name":"2f7654c7-55f3-4103-8105-95d5ce0ac293","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"1bf9e0ed-3311-4060-9938-bb14f715ecb9","name":"1bf9e0ed-3311-4060-9938-bb14f715ecb9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"3463926c-daf0-4075-9e6d-2715d9740685","name":"3463926c-daf0-4075-9e6d-2715d9740685","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"cdb1805c-91ef-49fa-b2a7-bcfce8a461d6","name":"cdb1805c-91ef-49fa-b2a7-bcfce8a461d6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
@@ -74,8 +74,8 @@
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2f7654c7-55f3-4103-8105-95d5ce0ac293","path":"sprites/ShipCaravelSpr/ShipCaravelSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"91782434-de0a-4bcf-ad7e-904744678879","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1bf9e0ed-3311-4060-9938-bb14f715ecb9","path":"sprites/ShipCaravelSpr/ShipCaravelSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"7d7ecf34-8f94-4b74-ba75-2ef06de77460","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3463926c-daf0-4075-9e6d-2715d9740685","path":"sprites/ShipCaravelSpr/ShipCaravelSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"1fe671a4-e429-40b0-a4f2-32a30a9158f5","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"cdb1805c-91ef-49fa-b2a7-bcfce8a461d6","path":"sprites/ShipCaravelSpr/ShipCaravelSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"302729fd-8432-4286-82ce-30110cada968","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},

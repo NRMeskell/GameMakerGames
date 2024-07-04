@@ -87,7 +87,7 @@ enemyList[6] = ds_list_create()
 
 ds_list_add(enemyList[0], EnemyShip)
 ds_list_add(enemyList[1], EnemyShip, TropicalEnemy, TropicalEnemySword)
-ds_list_add(enemyList[2], EnemyShip)
+ds_list_add(enemyList[2], EnemyShip, ScavengerShip)
 ds_list_add(enemyList[3], EnemyShip)
 ds_list_add(enemyList[4], EnemyShip)
 ds_list_add(enemyList[5], EnemyShip)

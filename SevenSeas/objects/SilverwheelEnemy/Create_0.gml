@@ -11,6 +11,7 @@ flagSprite = SilverwheelFlagSpr
 
 ///Common enemy vars
 
+shipFocus = "jack"
 name = "Captain Silverwheel"
 maxHealth = (25 + global.gameDiff*25 + 50*random_range(0.75,1.5)) div 1
 myHealth = maxHealth

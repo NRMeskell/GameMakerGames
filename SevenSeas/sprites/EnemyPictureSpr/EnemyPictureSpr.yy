@@ -28,6 +28,9 @@
     {"$GMSpriteFrame":"","%Name":"6496277d-2cd4-41da-a55b-ac8d5c3acaf1","name":"6496277d-2cd4-41da-a55b-ac8d5c3acaf1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"f717a579-6ad0-4339-be55-fba328ac2a2b","name":"f717a579-6ad0-4339-be55-fba328ac2a2b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"b24648ac-d920-457c-9799-f9db461baf8d","name":"b24648ac-d920-457c-9799-f9db461baf8d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"2a38913a-472b-43a6-898f-e6633013eb70","name":"2a38913a-472b-43a6-898f-e6633013eb70","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"7c39ba8e-379a-4b9f-9119-b61f89867f99","name":"7c39ba8e-379a-4b9f-9119-b61f89867f99","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"58bf77ef-afb4-4af6-91b5-9028c2600222","name":"58bf77ef-afb4-4af6-91b5-9028c2600222","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -41,7 +44,7 @@
   "origin":4,
   "parent":{
     "name":"Enemy",
-    "path":"folders/Sprites/Backgrounds/Land/Camps/PirateCove/Beach/Enemy.yy",
+    "path":"folders/Sprites/Enemy.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -64,7 +67,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":16.0,
+    "length":19.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -131,6 +134,15 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b24648ac-d920-457c-9799-f9db461baf8d","path":"sprites/EnemyPictureSpr/EnemyPictureSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"37c9a150-81b2-4471-989f-4a37dd8b9ef6","IsCreationKey":false,"Key":15.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2a38913a-472b-43a6-898f-e6633013eb70","path":"sprites/EnemyPictureSpr/EnemyPictureSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"05acd644-ace3-4378-80d6-b756b265a780","IsCreationKey":false,"Key":16.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7c39ba8e-379a-4b9f-9119-b61f89867f99","path":"sprites/EnemyPictureSpr/EnemyPictureSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"0ba51316-5752-4742-a12e-cd2a0e90b779","IsCreationKey":false,"Key":17.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"58bf77ef-afb4-4af6-91b5-9028c2600222","path":"sprites/EnemyPictureSpr/EnemyPictureSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"ff299bbd-1bbb-4295-a665-4ce334eab1d5","IsCreationKey":false,"Key":18.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

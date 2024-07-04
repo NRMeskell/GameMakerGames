@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"Selected",
-    "path":"folders/Sprites/Backgrounds/Land/Camps/PirateCove/Beach/Enemy/Decorations/Selected.yy",
+    "path":"folders/Sprites/Enemy/Decorations/Selected.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -49,6 +49,9 @@ function DrawShip(argument0, argument1, argument2, argument3, argument4, argumen
 	else if argument0 == SilverwheelShipSpr{
 	    myFlagX = 75-65
 	    myFlagY = 29-96}
+	else if argument0 == ScavengerShipSpr{
+	    myFlagX = 0
+	    myFlagY = 25-96}
 
 	myLightX = xPos - (myFlagX*dcos(rotation) - myFlagY*dsin(rotation))/3
 	myLightY = yPos + (myFlagX*dsin(rotation) + myFlagY*dcos(rotation))/3
