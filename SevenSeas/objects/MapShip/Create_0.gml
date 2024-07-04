@@ -16,7 +16,6 @@ slotY[2] = 48 + 128 + Ship.drawPortShiftY
 targetPort = instance_nearest(x,y,LandingSpot)
 
 ///Vars
-
 xPrev = x
 
 targetPort = instance_nearest(x,y,LandingSpot)

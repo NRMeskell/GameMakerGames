@@ -51,7 +51,7 @@
   "origin":9,
   "parent":{
     "name":"cannon",
-    "path":"folders/Sprites/Backgrounds/Land/Camps/PirateCove/Beach/Enemy/Attacks/cannon.yy",
+    "path":"folders/Sprites/Enemy/Attacks/cannon.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

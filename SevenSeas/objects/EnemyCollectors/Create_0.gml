@@ -8,6 +8,7 @@ myStats[3] = 0
 myShipHull = PirateCollectorsSpr
 flagColor = c_white
 flagSprite = PirateCollectorFlag
+shipFocus = "cannon"
 
 ///Common enemy vars
 

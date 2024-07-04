@@ -48,7 +48,7 @@
   "origin":9,
   "parent":{
     "name":"ship",
-    "path":"folders/Sprites/Backgrounds/Land/Camps/PirateCove/Beach/Enemy/Attacks/ship.yy",
+    "path":"folders/Sprites/Enemy/Attacks/ship.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

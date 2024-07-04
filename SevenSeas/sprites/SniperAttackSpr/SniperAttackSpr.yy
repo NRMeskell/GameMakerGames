@@ -61,7 +61,7 @@
   "origin":9,
   "parent":{
     "name":"gun",
-    "path":"folders/Sprites/Backgrounds/Land/Camps/PirateCove/Beach/Enemy/Attacks/gun.yy",
+    "path":"folders/Sprites/Enemy/Attacks/gun.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

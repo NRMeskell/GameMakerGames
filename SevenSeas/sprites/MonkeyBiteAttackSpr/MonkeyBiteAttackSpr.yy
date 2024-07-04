@@ -31,7 +31,7 @@
   "origin":9,
   "parent":{
     "name":"Melle",
-    "path":"folders/Sprites/Backgrounds/Land/Camps/PirateCove/Beach/Enemy/Attacks/Melle.yy",
+    "path":"folders/Sprites/Enemy/Attacks/Melle.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

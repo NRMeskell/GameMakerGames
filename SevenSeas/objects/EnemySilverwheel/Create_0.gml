@@ -6,6 +6,7 @@ maxHealth = 125
 myHealth = maxHealth
 event_user(0)
 
+
 ds_list_add(myStats, 1,1,5)
 
 ds_list_add(myActions, HoldFastAction, LookoutAction)
