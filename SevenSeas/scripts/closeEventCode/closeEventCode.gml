@@ -1,11 +1,13 @@
 function closeEventCode() {
-	
-	global.allowSelect = true
+	with Event{
+		global.allowSelect = true
     
-	instance_destroy()
+		instance_destroy()
 
-	with DrawPort
-	    selected = false
+		with DrawPort
+		    selected = false
 		
-	
+		with EventDrawer
+			floatAway = true
+	}
 }

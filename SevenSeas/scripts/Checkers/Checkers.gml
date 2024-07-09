@@ -13,7 +13,7 @@ function Checkers(argument0) {
      
 	    global.allowSelect = false
 		myGame = choose("dice", "checkers", "chess")
-	    eventText = "I have been thinking of new " + myGame + " strategies. Can I try them on " + otherPirate.name + "?"
+	    eventText = "'I have been thinking of new " + myGame + " strategies. Can I try them on " + otherPirate.name + "?'"
 	    global.moraleBoost = myGame
 	    }
 

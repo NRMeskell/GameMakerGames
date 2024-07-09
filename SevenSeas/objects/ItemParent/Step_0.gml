@@ -19,7 +19,6 @@ if mouse_check_button_pressed(mb_left) and !instance_exists(DumpItem)
 	        audio_play_sound(CloseMenuSound, 1, false)
 	        while ds_list_find_index(ItemRunner.floatingItems, id) != -1
 	            ds_list_delete(ItemRunner.floatingItems, ds_list_find_index(ItemRunner.floatingItems, id))
-	        event_user(1)
 	        instance_destroy()
 	        }
 		}

@@ -1,5 +1,5 @@
 /// @description Lose Limb
-if global.moraleBoost != "meal" {
+if global.moraleBoost != "meal" and myPet.itemPower != "full health"{
 
 global.moraleBoost = "injury"
 

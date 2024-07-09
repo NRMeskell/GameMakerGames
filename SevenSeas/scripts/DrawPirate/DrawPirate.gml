@@ -71,6 +71,9 @@ function DrawPiratePart(argument0, argument1, argument2, argument3, argument4, a
 	if myHat.itemName != "none"
 	    DrawItem(PirateHatSpr, myHat.itemNumber, myHat.myColor, 0, 0, argument2, argument3, argument4, argument5)
 
+	if myPet.itemName != "none"
+	    DrawItem(PiratePetSpr, myPet.itemNumber, myPet.myColor, 0, 0, argument2, argument3, argument4, argument5)
+
 	surface_reset_target()
 	
 	draw_surface_ext(pirateSurface, argument0-1, argument1, 1, 1, 0, c_dkgray, 1)

@@ -59,32 +59,16 @@ if random(1) < surrenderChance and enemyLevel == 0{
         amount = other.amount
         }
     }
-	
-with Pirate{
-	if irandom(1){
-		stunned = false
-	    exposed = false
-	    bleeding = false
-    }
-}
-
-with Enemy{
-	if irandom(1){
-		stunned = false
-	    exposed = false
-	    bleeding = false
-    }
-}
 
 ///Update Action Stats
+
+event_user(1)
 
 with ActionParent{
     if waitLeft > 0
         waitLeft -= 1
     myTarget = noone
     }
-
-event_user(1)
 
 for(i=0; i<ds_list_size(actionList); i++)
     {
@@ -98,4 +82,5 @@ for(i=0; i<ds_list_size(actionList); i++)
         priority = irandom_range(priorityMin, priorityMax)
         }
     }
+
 

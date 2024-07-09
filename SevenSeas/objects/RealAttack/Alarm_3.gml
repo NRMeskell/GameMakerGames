@@ -1,6 +1,13 @@
 /// @description Switch turns
 with myButton
 	AttackEvents()
+	
+if myShipTarget == CombatRunner
+	with Pirate
+		stunned = false
+else
+	with Enemy
+		stunned = false
 
 if ds_list_size(global.notificationList) == 0{
 	instance_destroy()

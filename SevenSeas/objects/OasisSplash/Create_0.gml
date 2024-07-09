@@ -1,6 +1,6 @@
 /// @description vars
 
-inFront = true
+
 image_alpha = random(0.5)
 image_speed = 0.4
     

@@ -29,6 +29,7 @@ for(var i=0; i<instance_number(ActionParent); i++)
                 }
     }
 
+
 /* */
 ///Update Available Enemy Actions
 
@@ -47,6 +48,26 @@ for(i=0; i<instance_number(ActionParent); i++)
 					ds_list_add(enemyActionList, checkAction)
             }
     }
+	
+	
+// UPDATE STATS BEFORE CHOOSING DESIRABILITYS
+myStats[0] = 0
+myStats[1] = 0
+myStats[2] = 0
+myStats[3] = 0
+
+with Enemy
+    if stunned = false
+    {
+    for(i=0; i<ds_list_size(myStats); i++)
+        {
+        if ds_list_find_value(myStats, i) < 5
+            other.myStats[ds_list_find_value(myStats, i)] += 1
+        else
+            other.myStats[3] += 1
+        }
+    } 
+	
 
 /* */
 ///Choose Enemy Attacks
@@ -90,8 +111,8 @@ if myHealth > 0 and instance_number(Enemy) > 0
             }
         }
     }
-    
-//Chose Actions by desirability
+ 
+//Chose Actions by desirability (Top 4 Chosen)
 ds_list_clear(possibleEnemyActions)
 for(var i=0; i<4; i++){
     myAction = -1
@@ -109,9 +130,6 @@ for(var i=0; i<4; i++){
         ds_list_delete(desireList, myAction)
         }
     }
-
-/* */
-/*  */
 
 allowShipActions = true
 allowMelleActions = true

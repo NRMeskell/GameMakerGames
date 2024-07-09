@@ -459,7 +459,7 @@ condCritera = ds_map_create()
 
 //Cove
 ds_map_add(condDes, global.seaNames[0], "Prove your crew's worth beyond a doubt!")
-ds_map_add(condCritera, global.seaNames[0], "GET A 4-STAR CREW!")
+ds_map_add(condCritera, global.seaNames[0], "GET A 4-STAR CREW")
 ds_map_add(condImage, global.seaNames[0], 0) 
 winCond[0] = 0
  
@@ -470,8 +470,8 @@ ds_map_add(condImage, global.seaNames[1], 1)
 winCond[1] = 0
 
 //rocky shores
-ds_map_add(condDes, global.seaNames[2], "")
-ds_map_add(condCritera, global.seaNames[2], "")
+ds_map_add(condDes, global.seaNames[2], "Be the first ship to complete the perilous journey!")
+ds_map_add(condCritera, global.seaNames[2], "SAIL BETWEEN THE CRASHING ROCKS")
 ds_map_add(condImage, global.seaNames[2], 2) 
 winCond[2] = 0
 

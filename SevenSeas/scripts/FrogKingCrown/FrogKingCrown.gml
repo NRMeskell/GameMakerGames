@@ -5,10 +5,10 @@ function FrogKingCrown() {
 	FrogKing.myState = "frog gift"
 	
 	GetRandomLoot(4, "GIFTS", undefined)
-	CustomSeaLoot()
-	CustomSeaLoot()
-	CustomSeaLoot()
-	CustomSeaLoot()
+	CustomSeaLoot(true)
+	CustomSeaLoot(true)
+	CustomSeaLoot(true)
+	CustomSeaLoot(true)
 	
 	with ItemParent
 		if itemName == "Tropical Crown"{

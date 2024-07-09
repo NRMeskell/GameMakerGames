@@ -83,7 +83,7 @@ void main()
 		gl_FragColor.rgb = v_vColour.rgb*vec3(texture2D(gm_BaseTexture, v_vTexcoord).r*final[0], texture2D(gm_BaseTexture, v_vTexcoord).g*final[1], texture2D(gm_BaseTexture, v_vTexcoord).b*final[2]);
     }
 	else{	
-		alpha = texture2D( gm_BaseTexture, v_vTexcoord).a;
+		alpha = v_vColour.a*texture2D( gm_BaseTexture, v_vTexcoord).a;
 		
 		testPixel = texture2D( gm_BaseTexture, vec2(min(v_vTexcoord.x + pixelSize.x, uvs[2]), v_vTexcoord.y));
 		if (distance(testPixel.rgb, testColor) > 0.0){

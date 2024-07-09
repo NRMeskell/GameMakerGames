@@ -31,8 +31,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Events",
-    "path":"folders/Sprites/Events.yy",
+    "name":"Characters",
+    "path":"folders/Sprites/Events/Characters.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

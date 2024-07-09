@@ -204,6 +204,9 @@ if !MapCreator.overPause and !MapCreator.overBoatButton and !MapCreator.overZoom
 					global.timeCycle = global.timeCycleLength/16
 					FoodTimer.sunriseMeal = false
 				}
+				
+				repeat(irandom(2))
+					instance_create(irandom(room_width), 0, SailingDecor)
 			}
 				
 			//reset islands (for background drawing)
@@ -231,4 +234,6 @@ with LandingSpot{
         
 	image_yscale = drawSize
 }
+
+
 

@@ -6,7 +6,7 @@
   "name":"PlagueShip",
   "parent":{
     "name":"PlagueShip",
-    "path":"folders/Scripts/Events/SailingEvents/StandardEvents/PlagueShip.yy",
+    "path":"folders/Scripts/Events/SailingEvents/PirateEvents/PlagueShip.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

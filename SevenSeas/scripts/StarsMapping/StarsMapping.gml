@@ -9,7 +9,7 @@ function StarsMapping(argument0) {
 	    ds_list_add(buttons, StarsMappingAllow)    
 	    global.allowSelect = false
 
-	    eventText = "I'd like to map the stars! Can I have some equipment and time to draw diagrams?"
+	    eventText = "'I'd like to map the stars! Can I have some equipment and time to draw diagrams?'"
 	    global.moraleBoost = "map stars"
 	    }
 

@@ -55,7 +55,7 @@ function GetRandomLoot(argument0, argument1, argument2) {
 	with instance_create(room_width*5/6, room_height/2, Store)
 	    {
 	    items = other.itemList
-	    CustomSeaLoot()
+	    CustomSeaLoot(argument2[0] == -1)
     
 	    for(i=0; i< ds_list_size(items); i++)
 	        {

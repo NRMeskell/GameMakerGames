@@ -1,6 +1,5 @@
 /// @description Move bird-like
 
-inFront = true
 if irandom(1) or image_alpha = 1
     {
     direction = irandom_range(45, 135)

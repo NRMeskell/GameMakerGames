@@ -1,5 +1,6 @@
 /// @description vars
-inFront = true
+
+
 mySound = audio_play_sound(BatSnd, 1, true)
 audio_sound_set_track_position(mySound, irandom(1))
 audio_sound_gain(mySound, 0, 0)

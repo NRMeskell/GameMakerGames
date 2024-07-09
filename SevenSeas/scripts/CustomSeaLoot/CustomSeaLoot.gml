@@ -1,4 +1,4 @@
-function CustomSeaLoot() {
+function CustomSeaLoot(itemsAllowed) {
 
 	if global.seaType == global.seaNames[1]
 	    {
@@ -17,7 +17,10 @@ function CustomSeaLoot() {
             
 	        ds_list_replace(items, irandom(ds_list_size(items)-1), item)
 	        }
-		if irandom(19) == 0 and instance_exists(FrogKing){
+		}
+	if global.seaType == global.seaNames[1] or global.seaType == global.seaNames[2]
+	    {
+		if irandom(19) == 0 and instance_exists(FrogKing) and itemsAllowed{
 	        specialItem = instance_create(0,0,StoreObjectItem)
         
 	        specialItem = GenerateHatItem(0)

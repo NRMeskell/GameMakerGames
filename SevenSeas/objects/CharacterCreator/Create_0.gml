@@ -1,7 +1,7 @@
 /// @description Add Characters
 
 characters = ds_list_create()
-ds_list_add(characters, CoveCollector, JohnnyShortsticks, CaptainSilverwheel, FrogKing, GiantTurtle)
+ds_list_add(characters, CoveCollector, JohnnyShortsticks, CaptainSilverwheel, FrogKing, GiantTurtle, OldGabbler, CrashingRocks)
 characterNumber = ds_list_size(characters)
 
 for(var i=0; i<characterNumber; i++)

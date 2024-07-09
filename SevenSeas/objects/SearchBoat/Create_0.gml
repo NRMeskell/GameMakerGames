@@ -1,5 +1,6 @@
 /// @description vars
-inFront = false
+
+
 image_speed = 1.4
 rowingRight = true
 hasTreasure = false

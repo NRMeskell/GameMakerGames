@@ -19,9 +19,8 @@ function GiantTurtleMediumTake() {
 	    specialItem.itemInfo = "A natural covering from nature"
 	    } 
         
-	GetRandomLoot(1, "TURTLE GIFT", undefined)
+	GetRandomLoot(0, "TURTLE GIFT", undefined)
 	with Store{
-	    CustomSeaLoot()
 	    ds_list_add(items, specialItem)
 	    }
 		GiantTurtle.myVar = 0

@@ -8,7 +8,7 @@ function RaceUpMast(argument0) {
 	    buttonNumber = 2
 	    ds_list_add(buttons, RaceAllow) 
 	    global.allowSelect = false
-	    eventText = "I'd like a little excitement. Can I see how fast I can climb up the mast?"  
+	    eventText = "'I'd like a little excitement. Can I see how fast I can climb up the mast?'"  
     
 	    global.moraleBoost = "race"
 	    }

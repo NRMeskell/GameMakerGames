@@ -1,4 +1,5 @@
 /// @description Arive Vars
+alarm[1] = room_speed*random_range(3, 5)
 
 mouseOnMapX = 0
 mouseOnMapY = 0

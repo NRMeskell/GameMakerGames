@@ -6,7 +6,7 @@
   "name":"RaftPirateFood",
   "parent":{
     "name":"RaftPirate",
-    "path":"folders/Scripts/Events/SailingEvents/StandardEvents/RaftPirate.yy",
+    "path":"folders/Scripts/Events/SailingEvents/PirateEvents/RaftPirate.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

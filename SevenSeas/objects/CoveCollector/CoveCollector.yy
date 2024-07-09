@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"cove",
-    "path":"folders/Objects/Characters/cove.yy",
+    "path":"folders/Objects/Events/Characters/cove.yy",
   },
   "parentObjectId":{
     "name":"CharacterParent",

@@ -14,10 +14,10 @@ with CoveCollector
 specialItem = GeneratePetItem(0)
 specialItem.itemNumber = 11
 specialItem.itemName = "Cove Compass"
-specialItem.itemInfo = "A collectors' compass used to seek out other ships"
+specialItem.itemInfo = "Hardcoin's compass, used to traverse pirate cove"
 
-specialItem.itemPower = "summon ship"   
-specialItem.itemPowerDescription = "when discarded, immediately enter combat with a merchant ship"
+specialItem.itemPower = "speed bonus"   
+specialItem.itemPowerDescription = "if equipped pirate is at the helm, the ship sails 15% faster"
         
 with Store{
     replaceItem = ds_list_find_value(items, 0)
