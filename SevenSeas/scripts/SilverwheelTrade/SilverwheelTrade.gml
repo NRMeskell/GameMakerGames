@@ -11,7 +11,7 @@ function SilverwheelTrade() {
         
 	    global.allowSelect = false
 	    captionText = "Captain Silverwheel"
-	    eventText = "happy with your progress, the captain offers to trade at a fair price!" 
+	    eventText = "happy with your progress, she offers to trade at a fair price!" 
     
 	    myShip = instance_create(-1000,0,ShipEvent)
 	    with myShip

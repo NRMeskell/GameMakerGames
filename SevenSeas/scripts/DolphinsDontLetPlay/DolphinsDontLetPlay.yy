@@ -6,7 +6,7 @@
   "name":"DolphinsDontLetPlay",
   "parent":{
     "name":"Dolphins",
-    "path":"folders/Scripts/Events/SailingEvents/StandardEvents/Dolphins.yy",
+    "path":"folders/Scripts/Events/SailingEvents/TropicalEvents/Dolphins.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

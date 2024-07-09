@@ -6,7 +6,7 @@
   "name":"MerchantArrive",
   "parent":{
     "name":"Merchant",
-    "path":"folders/Scripts/Events/SailingEvents/StandardEvents/Merchant.yy",
+    "path":"folders/Scripts/Events/SailingEvents/PirateEvents/Merchant.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

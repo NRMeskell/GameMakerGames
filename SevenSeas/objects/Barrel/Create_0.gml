@@ -9,5 +9,4 @@ floatAway = false
 myLight = noone
 
 image_angle = irandom_range(-10,10)
-inFront = true
 

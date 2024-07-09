@@ -3,6 +3,9 @@ __b__ = action_if_variable(view_current, 0, 0);
 if __b__
 {
 {
+with SailingDecor if y == Ship.frontWaves.waveBase
+	event_user(0)
+	
 ///Draw Front Waves
 with frontWaves
 	event_user(0)

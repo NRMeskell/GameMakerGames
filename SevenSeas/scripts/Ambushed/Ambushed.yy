@@ -6,7 +6,7 @@
   "name":"Ambushed",
   "parent":{
     "name":"Ambushed",
-    "path":"folders/Scripts/Events/SailingEvents/StandardEvents/Ambushed.yy",
+    "path":"folders/Scripts/Events/SailingEvents/Ambushed.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

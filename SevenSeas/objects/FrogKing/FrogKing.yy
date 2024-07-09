@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Tropical",
-    "path":"folders/Objects/Characters/Tropical.yy",
+    "path":"folders/Objects/Events/Characters/Tropical.yy",
   },
   "parentObjectId":{
     "name":"CharacterParent",

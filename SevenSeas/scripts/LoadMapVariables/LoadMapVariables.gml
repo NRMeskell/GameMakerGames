@@ -32,7 +32,6 @@ function LoadMapVariables(argument0) {
 	    }
 	ds_map_destroy(tempSea)
 	
-	//MapCreator.seenBackground = background_add(argument0 + "-MapSeenFile.png", false, false)
-	/*if surface_exists(MapCreator.seenSurface)
-		surface_free(MapCreator.seenSurface)*/
+	global.seaType = ""
+	instance_destroy(ConquerPannel) 
 }

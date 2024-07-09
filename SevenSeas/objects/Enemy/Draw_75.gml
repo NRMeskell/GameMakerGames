@@ -39,8 +39,8 @@ if !instance_exists(Defeat){
             {
             myButtonType = ds_list_find_value(myActions, i)
             
-            //Draw action display    
-            DrawAction(myButtonType, x-1, y + drawHeight - (ds_list_size(myStats)*statSep + i*actionSep), 0.8)
+            //Draw action display
+			draw_sprite_ext(PlayerAttackActionsSpr, myButtonType.spriteNumber, x, y + drawHeight - (ds_list_size(myStats)*statSep + i*actionSep), -0.8, 0.8, 0, c_white, 0.8)
             
             //Draw action info
             if point_in_rectangle(mouse_x, mouse_y, x-13, y + drawHeight - (ds_list_size(myStats)*statSep + i*actionSep) - 13, x + 12, y + drawHeight - (ds_list_size(myStats)*statSep + i*actionSep) + 13) and __view_get( e__VW.XView, 0 ) = 0

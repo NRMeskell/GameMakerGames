@@ -3,7 +3,7 @@ function FishingAllow() {
 
 	if sign(irandom(2))
 	    {
-	    fishAmount = irandom_range(1, global.seaLevel + 1)
+	    fishAmount = irandom_range(1, instance_number(Pirate))
 	    ds_list_add(global.notificationList, "Fish caught!", myPirate.firstName + " was very good at fishing and caught " + string(fishAmount) + " fish!");
 	    StoreItem(6, fishAmount)
 	    }

@@ -6,7 +6,7 @@
   "name":"BirdsCatch",
   "parent":{
     "name":"Birds",
-    "path":"folders/Scripts/Events/SailingEvents/StandardEvents/Birds.yy",
+    "path":"folders/Scripts/Events/SailingEvents/TropicalEvents/Birds.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

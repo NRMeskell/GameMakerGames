@@ -6,7 +6,7 @@ global.healTimer = room_speed
 
 //Normal Events
 stillEventList = ds_list_create()
-normalEventList = ds_list_create()
+//normalEventList = ds_list_create()
 roughEventList = ds_list_create()
 
 eventList[0] = ds_list_create()
@@ -18,12 +18,13 @@ eventList[5] = ds_list_create()
 eventList[6] = ds_list_create()
 
 ds_list_add(stillEventList, RottenPlanks, CrazyPirateMaker, SpoiledFood, SpoiledFood)
-ds_list_add(normalEventList, Shortcut, SpoiledFood, RottenPlanks, BirdsArrive, PlagueShip, MerchantArrive, RaftPirate, DolphinsArrive, FloatingBarrel, FloatingBarrel)
 ds_list_add(roughEventList, SeaSickPirates, ManOverboard, SeaSickPirates, MastDamaged)
+//NORMAL EVENT LIST PHASED OUT!!!
 
-ds_list_add(eventList[0], SupplyBoxArrive, RaftPirate, PirateShipArrive, FloatingBarrel, FloatingBarrel, PirateShipArrive, TradingPostArrive, PirateShipArrive, TradingPostArrive)
-ds_list_add(eventList[1], MermaidRocks, TropicalFishArrive, BugsAttack, StrangeAnimal, TropicalHeat, FrogsArrive, BirdsArrive, DolphinsArrive, SpoiledFood, PirateShipArrive, RottenPlanks, RaftPirate, Stowaway)
-ds_list_add(eventList[2], FloatingBarrel, RaftPirate, PirateShipArrive, FloatingBarrel, )
+
+ds_list_add(eventList[0], Shortcut, BirdsArrive, Stowaway, SupplyBoxArrive, RaftPirate, PirateShipArrive, FloatingBarrel, FloatingBarrel, PirateShipArrive, TradingPostArrive, PirateShipArrive, TradingPostArrive, PlagueShip, MerchantArrive)
+ds_list_add(eventList[1], FloatingBarrel, MermaidRocks, TropicalFishArrive, BugsAttack, StrangeAnimal, TropicalHeat, FrogsArrive, BirdsArrive, DolphinsArrive, SpoiledFood, PirateShipArrive, RottenPlanks, MerchantArrive, BirdsArrive)
+ds_list_add(eventList[2], RottenPlanks, Shortcut, FloatingBarrel, RaftPirate, PirateShipArrive, FloatingBarrel, Stowaway, ScavengersArrive, DamagedShip, DolphinsArrive, RuinsArrive, FloatingDebris, FloatingDebris, MerchantArrive, PlagueShip)
 ds_list_add(eventList[3], DolphinsArrive)
 ds_list_add(eventList[4], DolphinsArrive)
 ds_list_add(eventList[5], DolphinsArrive)
@@ -71,7 +72,7 @@ for(i=0; i<7; i++)
 
 enemySeenList[0] = PirateShipArrive
 enemySeenList[1] = FrogsArrive
-enemySeenList[2] = PirateShipArrive
+enemySeenList[2] = ScavengersArrive
 enemySeenList[3] = PirateShipArrive
 enemySeenList[4] = PirateShipArrive
 enemySeenList[5] = PirateShipArrive

@@ -8,7 +8,7 @@ function LessNoise(argument0) {
 	    ds_list_add(buttons, NoiseAllow)
      
 	    global.allowSelect = false
-	    eventText = "The cabin is so noisy I can't even think. Can I ask the others to quiet down?"
+	    eventText = "'The cabin is so noisy I can't even think. Can I ask the others to quiet down?'"
 	    global.moraleBoost = "quiet"
 	    }
 

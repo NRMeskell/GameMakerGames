@@ -17,7 +17,7 @@ path_start(BirdPath, 1, path_action_restart, false)
 path_position = random(1)
 image_speed = .1
 image_index = irandom(image_number-1)
-inFront = true
+
 floatAway = false
 flyAwayDir = irandom_range(225, 315)
 

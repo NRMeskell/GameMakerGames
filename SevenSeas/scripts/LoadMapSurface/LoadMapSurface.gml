@@ -1,6 +1,6 @@
 function LoadMapSurface(argument0) {
 	MapCreator.sprite_index = sprite_add(argument0 + "-MapIslandFile.png", 0, true, false, 0, 0)
-	MapCreator.distanceBackground = background_add(argument0 + "-MapDistanceFile.png", true, false)
+	MapCreator.distanceBackground = background_add(argument0 + "-MapDistanceFile.png", false, false)
 	
 	MapCreator.x = MapCreator.mapStart 
 		

@@ -64,7 +64,7 @@ function GeneratePetItem(argument0) {
 	        itemInfo = "a 'clean' roll of cloth to help heal wounds"
         
 	        itemPower = "heal"   
-	        itemPowerDescription = "equipped pirate slowly regains health while sailing"
+	        itemPowerDescription = "equipped pirate provides an extra medical stat, no matter where they are on board."
 	        }
 	    else if argument0 = 6
 	        {

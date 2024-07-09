@@ -11,7 +11,7 @@ function BackflipRequest(argument0) {
 	    buttonNumber = 2
 	    ds_list_add(buttons, BackflipAllow) 
 	    global.allowSelect = false
-	    eventText = "Can I teach " + otherPirate.name + " to do a backflip? It would be so cool!"
+	    eventText = "'Can I teach " + otherPirate.name + " to do a backflip? It would be so cool!'"
     
 	    global.moraleBoost = "backflip"
 	    }

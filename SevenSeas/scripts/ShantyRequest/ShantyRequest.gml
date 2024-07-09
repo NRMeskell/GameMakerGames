@@ -8,7 +8,7 @@ function ShantyRequest(argument0) {
 	    ds_list_add(buttons, ShantiesAllow)
      
 	    global.allowSelect = false
-	    eventText = "The crew never joins in when I sing shanties! Can I enforce an hour of shanties?"
+	    eventText = "'The crew never joins in when I sing shanties! Can I enforce an hour of shanties?'"
 	    global.moraleBoost = "shanties"
 	    }
     

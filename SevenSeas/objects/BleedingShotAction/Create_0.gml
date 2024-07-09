@@ -2,7 +2,7 @@
 
 event_user(0)
 spriteNumber = 22
-rechargeTime = 3
+rechargeTime = 5
 priorityMin = 6
 priorityMax = 9
 

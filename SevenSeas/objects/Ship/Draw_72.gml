@@ -23,6 +23,9 @@ else
 
 ///Draw Back Waves
 
+with SailingDecor if y == Ship.backWaves.waveBase
+	event_user(0)
+
 with backWaves
 	event_user(0)
 	

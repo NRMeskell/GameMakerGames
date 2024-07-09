@@ -5,6 +5,5 @@ image_angle = irandom(360)
 image_speed = 0.2
 x = Ship.drawX + irandom_range(-50, 50) - 25
 y = Ship.drawY + irandom_range(10, 30) 
-inFront = true
 floatAway = false
 

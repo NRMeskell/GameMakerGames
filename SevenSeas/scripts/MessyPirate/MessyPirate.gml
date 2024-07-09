@@ -10,7 +10,7 @@ function MessyPirate(argument0) {
 	    ds_list_add(buttons, MessyAllow)
      
 	    global.allowSelect = false
-	    eventText = otherPirate.name + " is very messy. Can they please clean their living space?"
+	    eventText = "'" + otherPirate.name + " is very messy. Can they please clean their living space?'"
     
 	    global.moraleBoost = "messy"
 	    }

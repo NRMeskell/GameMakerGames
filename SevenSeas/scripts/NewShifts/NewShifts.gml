@@ -8,7 +8,7 @@ function NewShifts(argument0) {
 	    ds_list_add(buttons, ShiftsAllow) 
      
 	    global.allowSelect = false
-	    eventText = "Can I work a different shift? My current shift overlaps with my " + choose("lunch", "bed time", "dinner", "breakfast", "relaxation") + "."
+	    eventText = "'Can I work a different shift? My current shift overlaps with my " + choose("lunch", "bed time", "dinner", "breakfast", "relaxation") + ".'"
 	    global.moraleBoost = "new shift"
 	    }
 

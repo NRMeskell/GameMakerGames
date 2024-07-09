@@ -1,5 +1,6 @@
 /// @description vars
-inFront = true
+
+
 if id != instance_find(RopeHook, 0){
 	instance_destroy(instance_find(RopeHook, 0))
 	image_index = irandom_range(30, 35)

@@ -1,25 +1,13 @@
 /// @description Set Islands
+ds_list_clear(islandPoints)
 
-for(pathSpot = 0; pathSpot < 1; pathSpot += 0.01){
-    addSpot = false
+for(pathSpot = 0; pathSpot < 1; pathSpot += (normalSailSpeed/Ship.landSpeed*300)/path_get_length(sailPath)){
     posX = path_get_x(sailPath, pathSpot)
     posY = path_get_y(sailPath, pathSpot)
     
-    for(i=0; i<360; i += 6){
-        rad = 2
-        if collision_point(posX - MapCreator.mapStart + dcos(i)*rad, (posY + dsin(i)*rad), MapCreator, true, false){
-			addSpot = true
-		}
+    if collision_circle(posX, posY, 40, MapCreator, true, false){
+		ds_list_add(islandPoints, pathSpot)
     }
-        
-    for(i=0; i< ds_list_size(islandPoints); i++){
-        checkPos = ds_list_find_value(islandPoints, i)
-        if abs(pathSpot - checkPos) * ((path_get_length(sailPath)/sailSpeed)*Ship.landSpeed) < 300
-            addSpot = false
-    }
-        
-    if addSpot
-        ds_list_add(islandPoints, pathSpot)
 }
     
 ds_list_add(islandPoints, 1)

@@ -336,12 +336,6 @@ if (myHealth < maxHealth)
     {
     myHealth += global.timeCycleRate * sqrt(1 + global.totalMedicalBonus)*global.doTime*Ship.healSpeed
     }
-		
-if (myPet.itemPower == "medical ship"){
-    Ship.myHealth += global.timeCycleRate * sqrt(1 + global.totalMedicalBonus)*global.doTime*Ship.healSpeed
-    }
-if myPet.itemPower == "heal" or myPet.itemPower = "medical ship"
-    myHealth += global.timeCycleRate * global.doTime*Ship.healSpeed/2
 }
 
 stars = 0

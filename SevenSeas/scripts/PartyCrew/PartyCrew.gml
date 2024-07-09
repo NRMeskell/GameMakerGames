@@ -8,7 +8,7 @@ function PartyCrew(argument0) {
 	    ds_list_add(buttons, PartyAllow)
      
 	    global.allowSelect = false
-	    eventText = "I'm in the mood for celebrations! May I have some grog to throw a party?"
+	    eventText = "'I'm in the mood for celebrations! May I have some grog to throw a party?'"
 	    global.moraleBoost = "party"
 	    }
 

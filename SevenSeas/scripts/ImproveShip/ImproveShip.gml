@@ -10,7 +10,7 @@ function ImproveShip(argument0) {
 	    ds_list_add(buttons, ImproveAllow)    
 	    global.allowSelect = false
 
-	    eventText = "This ship is quite disappointing. Can I try to upgrade the hull?"
+	    eventText = "'This ship is quite disappointing. Can I try to upgrade the hull?'"
 	    global.moraleBoost = "upgrade"
 	    }
 

@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Characters",
-    "path":"folders/Objects/Characters.yy",
+    "path":"folders/Objects/Events/Characters.yy",
   },
   "parentObjectId":null,
   "persistent":false,

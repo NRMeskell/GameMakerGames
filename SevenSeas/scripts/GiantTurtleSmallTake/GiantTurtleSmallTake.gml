@@ -5,7 +5,7 @@ function GiantTurtleSmallTake() {
     
 		GetRandomLoot(1, "TURTLE GIFT", undefined)
 		with Store
-		    CustomSeaLoot()
+		    CustomSeaLoot(false)
 		GiantTurtle.myVar = 0
 	}
 	else{

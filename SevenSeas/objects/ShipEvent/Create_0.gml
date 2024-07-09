@@ -15,7 +15,6 @@ myFlagX = Ship.flagX[shipType]
 myFlagY = Ship.flagY[shipType]
 
 image_speed = 0
-inFront = false
 placeX = 65
 myFlag = PirateFlagSpr
 

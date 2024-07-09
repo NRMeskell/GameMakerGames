@@ -18,7 +18,7 @@ if ds_list_size(global.notificationList) > 0
         }
     eventTimer -= 1
     
-    captionSize = string_height_ext(string_hash_to_newline(ds_list_find_value(global.notificationList, 0)), 12, sprite_get_width(NotifacationSpr)-20)*1.2
+    captionSize = string_height_ext(string_hash_to_newline(ds_list_find_value(global.notificationList, 0)), 14, sprite_get_width(NotifacationSpr)-20)*1.2
     textSize = string_height_ext(string_hash_to_newline(ds_list_find_value(global.notificationList, 1)), 12, sprite_get_width(NotifacationSpr)-20);
     
     notificationSize = captionSize + textSize*(ds_list_find_value(global.notificationList, 1) != 0) + 40

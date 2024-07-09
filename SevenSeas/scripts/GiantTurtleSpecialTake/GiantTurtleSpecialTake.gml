@@ -10,7 +10,7 @@ function GiantTurtleSpecialTake() {
 		    specialItem.itemName = "Life Shell"
 		    specialItem.itemInfo = "A shell full of the ocean's plentiful life"
 		    specialItem.itemPower = "full health"   
-		    specialItem.itemPowerDescription = "when discarded, all crew members gain half their health back"
+		    specialItem.itemPowerDescription = "Equipped crew member will never gain an injury."
 		    }    
 		if item == 1{
 		    //Special Item
@@ -27,12 +27,11 @@ function GiantTurtleSpecialTake() {
 		    specialItem.myColor = color[irandom(array_length_1d(color)-1)]
     
 		    specialItem.itemPower = "medical ship"   
-		    specialItem.itemPowerDescription = "while sailing, " + specialItem.itemName + " will repair the ship if damaged."
+		    specialItem.itemPowerDescription = "when taking an action at camp, " + specialItem.itemName + " will help repair the ship."
 		    } 
     
-		GetRandomLoot(1, "TURTLE GIFT", undefined)
+		GetRandomLoot(0, "TURTLE GIFT", undefined)
 		with Store{
-		    CustomSeaLoot()
 		    ds_list_add(items, specialItem)
 		    }   
 		GiantTurtle.myVar = 0

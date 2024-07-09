@@ -122,6 +122,8 @@ for(i=0; i<instance_number(Pirate); i++)
             global.totalMedicalBonus += checkPirate.statTotal[6]
             global.totalMedicalBonus ++
             }
+		if checkPirate.myPet.itemPower == "heal"
+			global.totalMedicalBonus ++
         }
     }
     

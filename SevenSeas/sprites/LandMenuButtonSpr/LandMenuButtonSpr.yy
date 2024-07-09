@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"GeneralFlavor",
-    "path":"folders/Sprites/Backgrounds/Land/Camps/GeneralFlavor.yy",
+    "name":"Buttons",
+    "path":"folders/Sprites/Buttons.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

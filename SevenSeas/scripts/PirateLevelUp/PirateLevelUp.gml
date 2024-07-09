@@ -1,4 +1,4 @@
-/// @description Level Up
+/// @description PirateLevelUp(show_gui, needs_rum)
 //@param show_gui 
 //@param needs_rum
 

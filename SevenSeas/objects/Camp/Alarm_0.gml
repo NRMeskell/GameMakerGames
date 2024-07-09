@@ -1,4 +1,7 @@
 /// @description AnimateAction
+if Pirate.myPet.itemPower = "medical ship"{
+	Ship.myHealth += Ship.maxHealth div 5
+}
 
 if Clock.alarm[2] > myAnimationTimes[1]
 	alarm[0] = myAnimationTimes[0]

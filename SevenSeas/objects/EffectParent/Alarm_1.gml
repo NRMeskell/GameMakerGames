@@ -1,6 +1,5 @@
 /// @description Create sparkles
 
-inFront = true
 
 sparkleNumber = abs(log2(multiplier))*10
 for(i=0; i<sparkleNumber; i++)

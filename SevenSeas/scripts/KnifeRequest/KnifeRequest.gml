@@ -9,7 +9,7 @@ function KnifeRequest(argument0) {
 	    ds_list_add(buttons, RaceAllow) 
 	    global.allowSelect = false
 		activity = choose("juggling", "throwing", "spinning")
-	    eventText = "the crew found me " + activity + " knives, and said it's too dangerous! I promise it's not, Can I keep " + activity + "?"  
+	    eventText = "'the crew found me " + activity + " knives, and said it's too dangerous! I promise it's not, Can I keep " + activity + "?'"  
     
 	    global.moraleBoost = "knives"
 	    }

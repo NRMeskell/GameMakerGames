@@ -6,7 +6,7 @@
   "name":"RottenJuryRig",
   "parent":{
     "name":"RottenPlanks",
-    "path":"folders/Scripts/Events/SailingEvents/StandardEvents/RottenPlanks.yy",
+    "path":"folders/Scripts/Events/SailingEvents/PirateEvents/RottenPlanks.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

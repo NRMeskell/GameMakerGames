@@ -6,22 +6,22 @@ if global.doTime and !global.inPort and MapShip.path_position < 0.98
     eventTimer -= 1
     }
     
-if eventTimer <= 0
+if eventTimer <= 0 
     {
     eventTimer = random_range(1,2)*eventTimeAmount
     
     //calm events
     if global.weather == 1
         {
-        eventType = choose("Event", "Special Event", "Special Event", "Character", "Ambush", "Request")
+        eventType = choose("Special Event", "Special Event", "Special Event", "Character", "Ambush", "Request")
         if eventType == "Request" and instance_number(Pirate) < 2
-			eventType = choose("Event", "Special Event", "Character")
+			eventType = choose("Special Event", "Character")
 		
 		//Events
         if eventType == "Event"{
             event_user(1)
-            chosenEvent = ds_list_find_value(normalEventList, irandom(ds_list_size(normalEventList)-1))
-            script_execute(chosenEvent)
+            //chosenEvent = ds_list_find_value(normalEventList, irandom(ds_list_size(normalEventList)-1))
+            //script_execute(chosenEvent)
             }
         //Requests
         else if eventType == "Request"{
@@ -56,7 +56,7 @@ if eventTimer <= 0
                     avoidAmbush = true
                     
             if avoidAmbush and irandom(1)
-                ds_list_add(global.notificationList, "ambush avoided!", "the enemy was spotted with a spyglass and the confrontation avoided!")
+                ds_list_add(global.notificationList, "ambush avoided!", "an enemy was spotted with a spyglass and confrontation be avoided!")
             else
                 {
                 //getSeaNumber

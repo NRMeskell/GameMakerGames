@@ -107,5 +107,4 @@ function DrawWithLighting(argument0, argument1, argument2, argument3, argument4,
 	draw_sprite_ext(sprite, index div 1, xval, yval, 1, 1, rot, color, alpha)
 
 	shader_reset()
-
 }

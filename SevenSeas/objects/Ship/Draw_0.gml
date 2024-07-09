@@ -10,12 +10,11 @@ if __b__
 {
 ///Draw Behind Events
 
-with EventDrawer
-    if !inFront
-        {
-        myLayer = 2
-        event_user(0)
-        }
+with EventDrawer{
+    myLayer = 2
+    event_user(0)
+}
+
        
 if global.weather == 2
     draw_sprite(RainSpr, flagSpr, 0, 0)
@@ -31,12 +30,10 @@ DrawShip(hullDict[shipType], sprite_get_number(ShipSloopSpr)*(1-max(0.01,((myHea
 
 ///Draw Front Events
 
-with EventDrawer
-    if inFront
-        {
-        myLayer = 3
-        event_user(0)
-        }
+with EventDrawer{
+    myLayer = 3
+    event_user(1)
+}
                
 if global.weather == 2
     draw_sprite(RainSpr, flagSpr + 2, 0, 0)

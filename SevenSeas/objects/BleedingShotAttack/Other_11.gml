@@ -1,11 +1,7 @@
 /// @description Animate
 
-repeat(damage)
-    {
-    i = irandom(instance_number(crewTarget)-1)
-    newTargetPirate = instance_find(crewTarget, i)
-    newTargetPirate.myHealth -= UpdateCrewDamage(1, newTargetPirate)
-    }     
+ApplyCrewEffect("stun", targetPirate)
+targetPirate.myHealth -= UpdateCrewDamage(1, targetPirate)
     
 if !instance_exists(targetPirate){
     with instance_create(0, 0, object_index){
@@ -20,9 +16,5 @@ if !instance_exists(targetPirate){
         attackPower = other.attackPower  
         event_user(3)
     }
-}
-else{
-	ApplyCrewEffect("stun", targetPirate)
-}
-    
+} 
 
