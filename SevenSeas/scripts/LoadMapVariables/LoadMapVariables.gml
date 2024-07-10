@@ -3,7 +3,7 @@ function LoadMapVariables(argument0) {
 
 	for(n=0; n<MapCreator.seaNumber; n++){
 	    currentLine = file_text_readln(writeFile)
-	    currentData = SplitLine(currentLine)
+	    currentData = SplitLine(currentLine, ",")
 	    ds_map_replace(MapCreator.seas[n], "x", real(currentData[0]))
 	    ds_map_replace(MapCreator.seas[n], "y", real(currentData[1]))
 	    ds_map_replace(MapCreator.seas[n], "dir", real(currentData[2]))
@@ -14,7 +14,7 @@ function LoadMapVariables(argument0) {
 	    }
  
 	currentLine = file_text_readln(writeFile)
-	currentData = SplitLine(currentLine)   
+	currentData = SplitLine(currentLine, ",")   
 	for(i=0; i<array_length_1d(MapCreator.winCond); i++){
 	    MapCreator.winCond[i] = real(currentData[i])
 	    }

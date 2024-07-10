@@ -1,5 +1,5 @@
 /// @description Update info
 
-name = "cruel riposte"
-description = "deals " + GetDamage(myAttack) + " damage to enemy crew for each damage taken so far this round."
+name = "bloody assault"
+description = "deals " + GetDamage(myAttack) + " damage. if no enemies are killed, deal " + GetModifiedDamage(myAttack, 0.25) + " to your crew."
 

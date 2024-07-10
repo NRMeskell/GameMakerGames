@@ -2,7 +2,7 @@
 /// @param item object_index
 function LoadItem(argument0) {
 
-	itemVars = SplitLine(argument0)
+	itemVars = SplitLine(argument0, ";")
 	if itemVars[0] == "item"
 	    {
 	    item = instance_create(0,0,ItemParent)

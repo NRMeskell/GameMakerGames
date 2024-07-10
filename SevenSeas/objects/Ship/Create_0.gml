@@ -4,7 +4,7 @@ if global.modernRes
 	sceneBackground = surface_create(display_get_gui_width(), display_get_height())
 else
 	sceneBackground = surface_create(room_width, room_height)
-show_debug_overlay(true)
+//show_debug_overlay(true)
 
 global.myLayer = 0
 global.storeSize[0] = 100
@@ -272,7 +272,7 @@ drawPiratePostNumber = 4
 tagShift = 10
 
 global.crewList = ds_list_create()
-healSpeed = 1/(room_speed*5)
+healSpeed = 1/room_speed
 
 listPositionX = 36
 listPositionUpY = 60

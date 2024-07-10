@@ -3,6 +3,7 @@ function GetRandomLoot(argument0, argument1, argument2) {
 	itemNames = ds_list_create()
 	itemLevel = irandom(global.seaLevel div 2) + choose(-1,0)
 	itemList = ds_list_create()
+	lootList = [3]
 	//Generate Loot
 	repeat(argument0)
 	    {
@@ -55,7 +56,7 @@ function GetRandomLoot(argument0, argument1, argument2) {
 	with instance_create(room_width*5/6, room_height/2, Store)
 	    {
 	    items = other.itemList
-	    CustomSeaLoot(argument2[0] == -1)
+	    CustomSeaLoot(other.lootList[0] == -1)
     
 	    for(i=0; i< ds_list_size(items); i++)
 	        {

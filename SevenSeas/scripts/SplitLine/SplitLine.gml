@@ -1,4 +1,4 @@
-function SplitLine(argument0) {
+function SplitLine(argument0, argument1) {
 	//Split Line @description SplitLine(comma seperated string)
 
 	totalString = argument0
@@ -6,7 +6,7 @@ function SplitLine(argument0) {
 	while totalString != ""{
 	    currentString = ""
 	    i = 1
-	    while (string_char_at(totalString, i) != ",") and (string_char_at(totalString, i) != chr(10) and (string_char_at(totalString, i) != "")){
+	    while (string_char_at(totalString, i) != argument1) and (string_char_at(totalString, i) != chr(10) and (string_char_at(totalString, i) != "")){
 	        currentString = currentString + string_char_at(totalString, i)
 	        i++
 	        }

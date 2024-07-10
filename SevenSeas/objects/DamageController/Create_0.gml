@@ -25,9 +25,9 @@ damageMin[? ShipScoutAttack] = 0.8
 damageMax[? ShipScoutAttack] = 1.1
 damageScaler[? ShipScoutAttack] = 8
 //Stab Melle
-damageMin[? ShipFinishingAttack] = 1
+damageMin[? ShipFinishingAttack] = 0.75
 damageMax[? ShipFinishingAttack] = 1.5
-damageScaler[? ShipFinishingAttack] = 1
+damageScaler[? ShipFinishingAttack] = 18
 //Hold Fast Melle
 damageMin[? ShipHoldFastAttack] = 0.8
 damageMax[? ShipHoldFastAttack] = 1.2

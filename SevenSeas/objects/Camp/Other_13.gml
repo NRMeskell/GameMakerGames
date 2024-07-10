@@ -14,7 +14,7 @@ else if myPortType = 2{
 	}
 else if myPortType = 3{
     mySpecialAction = DigForTreasure
-	myAnimationTimes = [Clock.campTime, room_speed]
+	myAnimationTimes = [room_speed*7, room_speed*7]
 	myAnimation = [[430, 430], [275, 275], TreasureChest]
 }
 else if myPortType = 4

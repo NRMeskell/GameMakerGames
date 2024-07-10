@@ -39,10 +39,10 @@ function DrawShip(argument0, argument1, argument2, argument3, argument4, argumen
 	    myFlagY = 6-sprite_get_yoffset(argument0)}
 	else if argument0 == TropicalShipSpr or argument0 == FrogShipRoyalSpr or argument0 == FrogKingShipSpr{
 	    myFlagX = sprite_get_xoffset(argument0)-55
-	    myFlagY = 7-sprite_get_yoffset(argument0)}
+	    myFlagY = 13-sprite_get_yoffset(argument0)}
 	else if argument0 == TropicalSwordShipSpr{
-	    myFlagX = sprite_get_xoffset(argument0)-47
-	    myFlagY = 7-sprite_get_yoffset(argument0)}
+	    myFlagX = sprite_get_xoffset(argument0)-55
+	    myFlagY = 13-sprite_get_yoffset(argument0)}
 	else if argument0 == PirateCollectorsSpr{
 	    myFlagX = 14
 	    myFlagY = 25-96}

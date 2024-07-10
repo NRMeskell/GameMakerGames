@@ -334,7 +334,7 @@ if selected
 
 if (myHealth < maxHealth)
     {
-    myHealth += global.timeCycleRate * sqrt(1 + global.totalMedicalBonus)*global.doTime*Ship.healSpeed
+    myHealth += global.timeCycleRate * sqrt(global.totalMedicalBonus)*global.doTime*Ship.healSpeed
     }
 }
 

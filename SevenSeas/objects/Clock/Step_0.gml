@@ -25,6 +25,8 @@ if alarm[2] > 0{
 		global.timeCycleRate = campingSpeed * pi/2*sin(alarm[2]/(campTime) * pi)
 		with Cloud
 			x += moveSpeed*2*(other.timeSpeed * other.campingSpeed * pi/2*sin(other.alarm[2]/(other.campTime) * pi))
+		with Pirate
+			myHealth += 0.5*(other.timeSpeed * other.campingSpeed * pi/2*sin(other.alarm[2]/(other.campTime) * pi)) * sqrt(global.totalMedicalBonus)*Ship.healSpeed
 	}
 	else
 		alarm[2] += 1
