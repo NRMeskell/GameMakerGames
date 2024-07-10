@@ -9,5 +9,5 @@ if floatAway{
     }
 	
 x = Ship.drawX + placeX
-y = GetWaterLevel(Ship.middleWaves, x) - 30 + placeY
+y = GetWaterLevel(Ship.middleWaves, x) + placeY
 

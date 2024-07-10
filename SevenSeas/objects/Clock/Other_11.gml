@@ -27,8 +27,9 @@ if view_current = 0
 	draw_background_ext(Sunset, 0, 0, 1, 1, 0, -1, sunset)  
 	draw_sprite_ext(SunSpr, 0, SunLight.x, SunLight.y, 1, 1, SunLight.image_angle/2 + 45, -1, 1)
     draw_sprite_ext(MoonSpr, MoonLight.image_index, MoonLight.x, MoonLight.y, 1, 1, MoonLight.image_angle/2 + 45, -1, 1)
+	
 	with Cloud
         draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, 0, merge_color(other.cloudColor, c_white, 0.2), image_alpha)
-    }    
+	}    
     
 

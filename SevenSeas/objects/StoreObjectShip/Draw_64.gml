@@ -8,16 +8,16 @@ if __b__
 draw_sprite(CargoSheetPreviewSpr, 0, xWindow, yWindow)
 draw_sprite(ShipIconSpr, myShipType, xWindow + 27, yWindow + 26)
 
-draw_sprite(StatSymbolSpr, 3, xWindow + 40, yWindow + 88)
-draw_sprite(StatSymbolSpr, 2, xWindow + 87, yWindow + 88)
-draw_sprite(StatSymbolSpr, 6, xWindow + 134, yWindow + 88)
+draw_sprite(StatSymbolSpr, 3, xWindow + 40 - sprite_get_width(StatSymbolSpr)/2, yWindow + 88 - sprite_get_width(StatSymbolSpr)/2)
+draw_sprite(StatSymbolSpr, 2, xWindow + 87 - sprite_get_width(StatSymbolSpr)/2, yWindow + 88 - sprite_get_width(StatSymbolSpr)/2)
+draw_sprite(StatSymbolSpr, 9, xWindow + 134 - sprite_get_width(StatSymbolSpr)/2, yWindow + 88 - sprite_get_width(StatSymbolSpr)/2)
 
 draw_set_valign(fa_center)
 draw_set_color(c_black)
 draw_set_halign(fa_left)
 draw_text(xWindow + 59, yWindow + 26, string_hash_to_newline(name))
 draw_set_halign(fa_center)
-draw_text(xWindow + 87, yWindow + 47, string_hash_to_newline("Slots:"))
+draw_text(xWindow + 87, yWindow + 55, string_hash_to_newline("Slots:"))
 
 draw_text(xWindow + 40, yWindow + 112, string_hash_to_newline(myRigging))
 draw_text(xWindow + 87, yWindow + 112, string_hash_to_newline(myCannons))

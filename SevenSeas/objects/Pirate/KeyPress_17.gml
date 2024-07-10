@@ -2,4 +2,4 @@
 // You can write your code in this editor
 
 if selected
-	PirateLevelUp(id, true)
+	myHealth -= 20

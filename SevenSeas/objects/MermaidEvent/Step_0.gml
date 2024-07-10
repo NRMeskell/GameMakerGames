@@ -1,7 +1,7 @@
 with (other) {
 ///Move
 x = Ship.drawX + placeX
-y = GetWaterLevel(Ship.middleWaves, x)    
+y = Ship.middleWaves.waveBase + placeY
 
 if x < -6000
     instance_destroy()

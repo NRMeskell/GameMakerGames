@@ -39,7 +39,7 @@ function LoadPirate(argument0) {
 	ds_map_clear(pirate.myPirateDict)
 	for (r=0; r<100; r++) {
 	    if ini_key_exists("speech", "key" + string(i)){
-	        var entry = SplitLine(ini_read_string("speech", "key" + string(i), "none"))
+	        var entry = SplitLine(ini_read_string("speech", "key" + string(i), "none"), ",")
 	        ds_map_add(pirate.myPirateDict, entry[0], entry[1])
 	        }
 	    }

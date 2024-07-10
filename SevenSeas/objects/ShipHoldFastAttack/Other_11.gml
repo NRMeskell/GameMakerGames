@@ -2,5 +2,3 @@
 
 shipTarget.allowMelleActions = false;
 
-    
-

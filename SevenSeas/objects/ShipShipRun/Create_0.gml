@@ -1,7 +1,7 @@
 /// @description Sound vars
 
 mySound = ShipCreakSnd
-myAnimationSound = noone
+myAnimationSound = ShipCreakSnd
 lowRange = 1.2
 highRange = 1.5
 

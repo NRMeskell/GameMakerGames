@@ -28,9 +28,6 @@ with CreatePirate(false)
     legLostLeft = other.legLostLeft
     
     legsLost = other.legsLost
-    
-    ds_map_clear(myPirateDict)
-    ds_map_copy(myPirateDict, other.myPirateDict)
 	
     myMainPer = other.myMainPer
     mySecondPer = other.mySecondPer
