@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"GabblerFoundJack",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"GabblerFoundJack",
+  "parent":{
+    "name":"OldGabbler",
+    "path":"folders/Scripts/Events/Characters/OldGabbler.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

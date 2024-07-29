@@ -66,12 +66,14 @@ hatInfo[17] = "a fashionable feather-covered hat"
 
 pantsLevel[0] = ds_list_create()
 pantsLevel[1] = ds_list_create()
+pantsLevel[2] = ds_list_create()
 
-ds_list_add(pantsLevel[0], 0,1,2,3,4,5,8,9,10)
-ds_list_add(pantsLevel[1], 6,7,11,12,13,14,15,16,17)
+ds_list_add(pantsLevel[0], 0,2,3)
+ds_list_add(pantsLevel[1], 1,4,5,6,7,8,9)
+ds_list_add(pantsLevel[2], 10,11,12,13,14,15,16,17)
 
 deckhandPants = ds_list_create()
-ds_list_add(deckhandPants, 0,1,2,3, 6,7,8,9, 12,13,14,15)
+ds_list_add(deckhandPants, 0,1,2,7,8,9,12,13,14,15)
 
 //names
 pantsNames[0] = "shorts"
@@ -124,12 +126,14 @@ pantsInfo[17] = "flashy and fancy"
 
 shirtLevel[0] = ds_list_create()
 shirtLevel[1] = ds_list_create()
+shirtLevel[2] = ds_list_create()
 
-ds_list_add(shirtLevel[0], 0,1,2,3,4,5,6,7,8,10,11,13,15)
-ds_list_add(shirtLevel[1], 9,12,14,16,17,18,19,20,21,22,23,24,25,26)
+ds_list_add(shirtLevel[0], 0,2,3,5)
+ds_list_add(shirtLevel[1], 1,4,6,7,8,10,11,12,13,14)
+ds_list_add(shirtLevel[2], 9,15,16,17,18,19,20,21,22,23,24,25,26)
 
 deckhandShirts = ds_list_create()
-ds_list_add(deckhandShirts, 0,1,2,3,4,5,9,10,11,12,13,14,18,19,20,21,22,23)
+ds_list_add(deckhandShirts, 0,1,3,4,5,9,10,11,12,13,14,18,19,20,21,22,23)
 
 //names
 shirtNames[0] = "cotton shirt"
@@ -296,7 +300,7 @@ cargoCost[2] = 2
 cargoCost[3] = 1
 cargoCost[4] = 1
 cargoCost[5] = 4
-cargoCost[6] = 2
+cargoCost[6] = 3
 
 cargoName[0] = "gold"
 cargoName[1] = "jewels"

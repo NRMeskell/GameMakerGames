@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"ScavengersArrive",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ScavengersArrive",
+  "parent":{
+    "name":"ShipwreckEvents",
+    "path":"folders/Scripts/Events/SailingEvents/ShipwreckEvents.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

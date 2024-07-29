@@ -158,7 +158,7 @@ else
 
 overPause = point_in_circle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), miniX + miniWidth - buttonWidth*0.5, miniY+buttonHeight, 10)
 
-if overPause and mouse_check_button_pressed(mb_left) and !global.inPort
+if overPause and mouse_check_button_pressed(mb_left) and !global.inPort or keyboard_check_pressed(vk_space)
     global.mapPause = true - global.mapPause
 
 
@@ -171,7 +171,7 @@ overZoomOut = point_in_circle(window_view_mouse_get_x(0), window_view_mouse_get_
 
 if overMap
     {
-    if ((overZoomOut and mouse_check_button_pressed(mb_left))) and zoom < maxZoom and !mapClose
+    if ((overZoomOut and mouse_check_button_pressed(mb_left)) or mouse_wheel_down()) and zoom < maxZoom and !mapClose
         {
         zoom += 0.25
         __view_set( e__VW.XView, 1, __view_get( e__VW.XView, 1 ) - ((miniWidth*zoom - __view_get( e__VW.WView, 1 ))/2) )
@@ -180,7 +180,7 @@ if overMap
         __view_set( e__VW.WView, 1, miniWidth*zoom )
         onBoat = false
         }
-    if ((overZoomIn and mouse_check_button_pressed(mb_left))) and zoom > minZoom and !mapClose
+    if ((overZoomIn and mouse_check_button_pressed(mb_left)) or mouse_wheel_up()) and zoom > minZoom and !mapClose
         {
         zoom -= 0.25
         __view_set( e__VW.XView, 1, __view_get( e__VW.XView, 1 ) - ((miniWidth*zoom - __view_get( e__VW.WView, 1 ))/2) )

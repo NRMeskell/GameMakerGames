@@ -28,9 +28,8 @@ if path_position = 1 and global.inPort = false{
             
 		    //Heal Pirates
 		    with Pirate{
-		        maxHealth = normHealth
 		        myHealth = maxHealth
-		        injured = false
+				healthDiff = maxHealth
 		    }
 			
 			with Pirate{
@@ -117,13 +116,13 @@ else
     {
     sailSpeed = normalSailSpeed
     if global.weather = 0 or global.weather = 2
-        sailSpeed = 0
+        sailSpeed = normalSailSpeed*0.25
     
     with Pirate
         if myPet.itemPower == "speed bonus" and mySlot.slotType == "wheel"
             other.sailSpeed *= 1.15
 			
-	sailSpeed *= 1//+(sailSpeedModifier*global.totalRiggingBonus)
+	//sailSpeed *= 1+(sailSpeedModifier*global.totalRiggingBonus)
     path_speed = sailSpeed
 }
 

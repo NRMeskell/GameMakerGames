@@ -19,9 +19,14 @@ function LoseRandomCargo(argument0) {
     
 	for(i=0; i<array_length_1d(numberCargoLost); i++)
 	    {
-	    if numberCargoLost[i] > 0
-	        lostCargo += string(numberCargoLost[i]) + " " + ItemRunner.cargoName[i] + "#"
-	    }
+	    if i < array_length_1d(numberCargoLost) - 1{
+			lostCargo += string(numberCargoLost[i]) + " " + ItemRunner.cargoName[i] + ", "
+			if i == array_length_1d(numberCargoLost) - 2
+				lostCargo += "and "
+		}
+		else if i == array_length_1d(numberCargoLost) -1
+			lostCargo += string(numberCargoLost[i]) + " " + ItemRunner.cargoName[i]
+		}
     
 	return lostCargo
 

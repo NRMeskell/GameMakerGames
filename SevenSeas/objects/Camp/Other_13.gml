@@ -42,5 +42,7 @@ else if myPortType = 7
 	myAnimation = [[Ship.drawX+1, Ship.drawX+1], [Ship.drawY, Ship.drawY], TikiOffer]
 }
 
-sprite_index = CampFireDeadSpr
-
+if sprite_index = CampFireSpr
+	sprite_index = CampFireDyingSpr
+else
+	sprite_index = CampFireDeadSpr

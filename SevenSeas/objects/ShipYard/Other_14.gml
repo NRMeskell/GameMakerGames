@@ -11,7 +11,7 @@ for(i=0; i<supNumber; i++)
         if itemNumber = 2
             amount = irandom_range(5,10)
         else
-            amount = irandom_range(5,12)
+            amount = irandom_range(5,10)
         cost = ItemRunner.cargoCost[itemNumber] + irandom(2) + ItemRunner.cargoCost[itemNumber]*amount        
         selected = false
         }

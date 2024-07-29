@@ -4,8 +4,8 @@ buttonNumber = 3
 event_user(0)
 myName = "traders"
 
-button[0] = "buy#items"
-button[1] = "buy#cargo"
+button[0] = "purchase#items"
+button[1] = "purchase#cargo"
 button[2] = "sell#cargo"
 
 event_user(4)

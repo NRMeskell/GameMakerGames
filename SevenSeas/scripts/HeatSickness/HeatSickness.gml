@@ -7,10 +7,7 @@ function HeatSickness() {
 	with Pirate
 	    if irandom(1)
 	        {
-	        if irandom(4) == 0
-	            injured = true
-	        else
-	            myHealth -= 20
+	        myHealth -= 20
             
 	        UpdateMorale(-1, -1)
 	        }

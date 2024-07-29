@@ -181,5 +181,14 @@ drawPictureRealy = 21 - realHeight/2
 cost = irandom_range(5,10)
 
 alarm[1] = 2
+alarm[2] = 1
 previewName = ""
+
+fullPirateSurface = surface_create(sprite_get_width(PirateManSkinSpr), sprite_get_height(PirateManSkinSpr))
+smallPirateSurface = surface_create(realWidth, realHeight);
+tagPirateSurface = undefined
+
+MakePirateSurface(fullPirateSurface, xWindow + xPicture, yWindow + yPicture) 
+MakePirateSurface(smallPirateSurface, drawPictureRealx, drawPictureRealy) 
+
 

@@ -1,3 +1,3 @@
 /// @description TEMP
 
-//ThickFogArrive()
+with Pirate if selected	myHealth -= 10

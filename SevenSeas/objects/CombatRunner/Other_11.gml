@@ -2,7 +2,7 @@
 
 ds_list_clear(actionList)
 if Ship.allowShipActions
-	ds_list_add(actionList, basicShipChange, basicShipRun)
+	ds_list_add(actionList, basicShipChange)
 if Ship.allowMelleActions
 	ds_list_add(actionList, basicMelleAttack)
 if Ship.allowRangedActions
@@ -15,7 +15,7 @@ for(var i=0; i<instance_number(ActionParent); i++)
     checkAction = instance_find(ActionParent,i)
     if instance_exists(checkAction.myPirate) 
         if checkAction.myPirate.object_index == Pirate and checkAction.pirateDrawTest == false and checkAction.object_index != LostEyeAction
-            if checkAction.myPirate.injured < 1 and checkAction.myPirate.stunned = false
+            if checkAction.myPirate.stunned = false
                 {
                 //Check action requirements
                 available = false
@@ -40,7 +40,7 @@ for(i=0; i<instance_number(ActionParent); i++)
     checkAction = instance_find(ActionParent,i)
     
     if instance_exists(checkAction.myPirate) and checkAction.pirateDrawTest == false
-        if (checkAction.myPirate.object_index != Pirate and checkAction.myPirate.object_index != Ship)
+        if (checkAction.myPirate.object_index == CombatRunner or ((checkAction.myPirate.object_index != Pirate and checkAction.myPirate.object_index != Ship) and checkAction.myPirate.stunned == false))
             {
             //Check action requirements
             if checkAction.waitLeft = 0 and ((checkAction.zoneRequired == -1) or (checkAction.zoneRequired == 0 and closeRange = true) or (checkAction.zoneRequired == 1 and closeRange = false))

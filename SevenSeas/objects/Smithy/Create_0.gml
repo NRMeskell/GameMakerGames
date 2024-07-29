@@ -4,9 +4,9 @@ buttonNumber = 3
 event_user(0)
 myName = "smithy"
 
-button[0] = "buy#swords"
-button[1] = "buy#guns"
-button[2] = "buy#rifles"
+button[0] = "purchase#swords"
+button[1] = "purchase#guns"
+button[2] = "purchase#rifles"
 
 event_user(4)
 

@@ -62,7 +62,7 @@ function LoadPirate(argument0) {
 	pirate.handLostLeft = bool(ini_read_string("stats", "lhand", pirate.handLostLeft))
 	pirate.maxHealth = real(ini_read_string("stats", "maxHealth", pirate.maxHealth))
 	pirate.myHealth = real(ini_read_string("stats", "myHealth", pirate.myHealth))
-	pirate.injured = bool(ini_read_string("stats", "injured", pirate.injured))
+	//pirate.injured = bool(ini_read_string("stats", "injured", pirate.injured))
 	pirate.morale = real(ini_read_string("stats", "morale", pirate.morale))
 	pirate.prevMorale = pirate.morale
 	pirate.healthDiff = pirate.myHealth

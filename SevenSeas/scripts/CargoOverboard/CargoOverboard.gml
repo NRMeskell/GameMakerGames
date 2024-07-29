@@ -2,11 +2,11 @@ function CargoOverboard() {
 	with instance_create(0,0,Event)
 	    {
 	    buttonNumber = 3
-	    ds_list_add(buttons, CargoOverboardLetGo, CargoOverboardSaveSome, CargoOverboardSaveAll)
-	    ds_list_add(buttonStats, 0, 3, )
+	    ds_list_add(buttons, CargoOverboardLetGo, CargoOverboardSave)
+	    ds_list_add(buttonStats, 0, 3)
 	    ds_list_add(buttonRequires, 0, global.eventDiff[3,1], global.eventDiff[3,3])
-	    ds_list_add(buttonCosts, 0, 0, )
-	    ds_list_add(buttonText, "hold fast!", "Secure easy cargo!", "Secure all cargo")
+	    ds_list_add(buttonCosts, 0, 0)
+	    ds_list_add(buttonText, "hold fast!", "Secure the cargo!")
         
 	    global.allowSelect = false
 	    eventValue = irandom_range(script_execute(CargoAmount, -1) div 8, script_execute(CargoAmount, -1) div 5)
@@ -28,52 +28,23 @@ function CargoOverboardLetGo() {
 	script_execute(closeEventCode, 2)
 }
 
-function CargoOverboardSaveSome() {
+function CargoOverboardSave() {
 	//save all cargo	
+	var pirateText = ""
+	if irandom(1){
+		overboardPirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+		pirateText = " " + overboardPirate.name + " was hurt during the chaos!"
+		overboardPirate.myHealth = 20 + global.seaLevel * 20
+	}
+	
 	if argument0{
-		cargoLost = eventValue
-		cargoLostNames = LoseRandomCargo(cargoLost) div 2
-		ds_list_add(global.notificationList, "Some cargo is secured!", "The crew managed to secure half the cargo, and only " + string(cargoLost) + " cargo was lost")
-
+		ds_list_add(global.notificationList, "The cargo is secured!", "The crew managed to secure the cargo." + pirateText)
 	}
 	else{
-		//Injure pirates
 		cargoLost = eventValue
 		cargoLostNames = LoseRandomCargo(cargoLost)
-		
-		piratesInjured = 0
-		with Pirate 
-		    if irandom(1)
-		        {
-		        myHealth -= irandom_range(10, 30)
-		        other.piratesInjured ++
-		        }
+		ds_list_add(global.notificationList, "The cargo is lost!", cargoLostNames + " tumbled overboard!" + pirateText)
+	}
 	
-		ds_list_add(global.notificationList, "Crew hurt!", string(piratesInjured) + " pirates were crushed by tumbling cargo, and all " + string(cargoLost) + " cargo was lost!")
-	}
-	script_execute(closeEventCode, 2)
-}
-
-function CargoOverboardSaveAll() {
-	//save all cargo	
-	if argument0{
-		ds_list_add(global.notificationList, "All cargo secured!", "The crew managed to secure the cargo, and none was lost.")
-
-	}
-	else{
-		//Injure pirates
-		cargoLost = eventValue
-		cargoLostNames = LoseRandomCargo(cargoLost)
-		
-		piratesInjured = 0
-		with Pirate 
-		    if irandom(1)
-		        {
-		        myHealth -= irandom_range(10, 30)
-		        other.piratesInjured ++
-		        }
-	
-		ds_list_add(global.notificationList, "Crew hurt!", string(piratesInjured) + " pirates were crushed by tumbling cargo, and all " + string(cargoLost) + " cargo was lost!")
-	}
 	script_execute(closeEventCode, 2)
 }

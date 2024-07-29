@@ -26,4 +26,3 @@ else
     madeAttacks = 0
     animationLength = room_speed/2
     }
-

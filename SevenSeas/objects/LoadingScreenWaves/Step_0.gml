@@ -25,6 +25,8 @@ else
         }
     else
         {
+		with ActionParent
+			instance_destroy()
         instance_destroy()
         }
     }

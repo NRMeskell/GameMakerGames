@@ -10,7 +10,7 @@ GetRandomLoot((lootMod*(2 + enemyLevel + irandom(1))) div 1, "LOOT", undefined)
 with Pirate
     {
     UpdateMorale(other.enemyLevel + irandom(1), -1)
-    event_user(5)
+    //event_user(5)
 	stunned = false
     exposed = false
     bleeding = false

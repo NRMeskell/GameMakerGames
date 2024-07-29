@@ -20,9 +20,14 @@ pirateEventText = PirateTalkTranslator(eventText, myPirate)
     draw_set_halign(fa_center)
     draw_set_valign(fa_center)
     
-    with myPirate
-        DrawPiratePart(other.drawX + other.pictureX, other.drawY + other.pictureY, drawPictureRealx, drawPictureRealy, realWidth, realHeight)
-    draw_sprite(ShipSlotSpr, 0, drawX + pictureX - 1, drawY + pictureY - 2)  
+    with myPirate{
+		if !surface_exists(smallPirateSurface){
+			smallPirateSurface = surface_create(realWidth, realHeight)
+			MakePirateSurface(smallPirateSurface, drawPictureRealx, drawPictureRealy) 
+		}
+        DrawPirateSurface(smallPirateSurface, other.drawX + other.pictureX, other.drawY + other.pictureY)
+	}
+   draw_sprite(ShipSlotSpr, 0, drawX + pictureX - 1, drawY + pictureY - 2)  
     
     if overButton[0]
         draw_sprite(ButtonSpr, 11, drawX, drawY + buttonCenter)

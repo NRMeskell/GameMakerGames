@@ -5,7 +5,6 @@ if instance_number(Cloud) < cloudNumber
 
 if room = GameRoom{
 	if !global.inPort{
-    Ship.rockScale = 0.1 + power(global.weather, 1.4)*0.4
     if global.doTime
         weatherTimer -= 1+(global.seaType==global.seaNames[2])
     }

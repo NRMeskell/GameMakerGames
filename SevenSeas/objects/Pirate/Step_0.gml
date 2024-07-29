@@ -120,7 +120,8 @@ if myHealth < 1{
 if myHealth > maxHealth - legLostHealth*maxHealth*(legLostRight + legLostLeft)
     {
     myHealth = maxHealth - legLostHealth*maxHealth*(legLostRight + legLostLeft)
-    }
+    healthDiff = maxHealth - legLostHealth*maxHealth*(legLostRight + legLostLeft)
+	}
     
 if !instance_exists(CombatRunner)
     stunned = false
@@ -135,7 +136,7 @@ if (eyeLostRight and eyeLostLeft) and myAction[1] != LostEyeAction
 //UpdateHealthDiff
 if abs(healthDiff - myHealth) > 1
     {
-	if healthDiffTimer == 0 and myHealth < healthDiff and (random(1)+random(1))/2 < (healthDiff - myHealth)/healthDiff{
+	if healthDiffTimer == 0 and myHealth < healthDiff and ((random(1)+random(1))/2 < (healthDiff - myHealth)/healthDiff){
         event_user(3)
         global.moraleBoost = "injured"
         UpdateMorale(-2, -1)

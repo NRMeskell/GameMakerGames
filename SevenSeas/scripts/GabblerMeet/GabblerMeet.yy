@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"GabblerMeet",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"GabblerMeet",
+  "parent":{
+    "name":"OldGabbler",
+    "path":"folders/Scripts/Events/Characters/OldGabbler.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -2,7 +2,6 @@
 
 with myDump
     {
-    injured = true
     myHealth = 0
     walkPlank = true
     }

@@ -4,10 +4,12 @@ if x!=-100
     {		
 	if sprite_index == CampFireSpr{
 		myName = "camp"
-		campPower = 3
-	}else{
+	}else if sprite_index = CampFireDyingSpr{
 		myName = "used camp"
-		campPower = 1
+	}
+	else{
+		myName = "dead camp"
+		campPower = 0
 	}
 	
 	if x!=-100{

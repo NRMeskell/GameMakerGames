@@ -4,7 +4,7 @@ function ManOverboardSave() {
 	if !argument0
 	    {
 	    pirateOverboard.myHealth = 0
-	    ds_list_add(global.notificationList, pirateOverboard.name + " hit by the ship!", "They disappear beneath the hull, and do not emerge from under the waves.") 
+	    ds_list_add(global.notificationList, pirateOverboard.name + " smashes into the ship!", "A large wave drags them under the hull, and they disappear from view.") 
 	    }
 	else
 	    {

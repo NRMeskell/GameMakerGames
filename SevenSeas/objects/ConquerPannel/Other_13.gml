@@ -1,4 +1,4 @@
-/// @description Check sea
+/// @description Draw Text and Check sea
 
 name = mySeaType
 des = ds_map_find_value(MapCreator.condDes, mySeaType)
@@ -24,6 +24,8 @@ draw_text_transformed(panelWidth, 50, name, 1.2, 1.2, 0)
 //draw description
 draw_set_color(c_black)
 draw_set_font(global.PirateFont)
+draw_text(panelWidth, 85, "Level: " + string(global.seaLevel+1))
+
 draw_text_ext(panelWidth, 128, des, 14, panelWidth*2 - 40)
 
 //draw criteria

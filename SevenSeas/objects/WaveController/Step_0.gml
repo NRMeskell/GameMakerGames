@@ -6,16 +6,16 @@ if room == MainMenuRoom or !global.mapPause
 	waveOffsets[0] += waveSpeeds[0]*waveDirection*waveMovement
 
 waveDirection = 1
-waveMovement = 1
-waveAmplifier = 1
+waveMovement = 0.4+0.6*global.weather
+waveAmplifier = 0.4+0.6*global.weather
 if room != MainMenuRoom{
-	if !global.doTime {
-		waveMovement = 0.5
-		}
 	if global.inPort{
 		waveMovement = 0.3
 		waveAmplifier = 0.25
 		waveDirection = -1
+	}
+	else if !global.doTime {
+		waveMovement *= 0.5
 	}
 }
 	

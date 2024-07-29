@@ -17,12 +17,20 @@ function EquipItem(argument0, argument1) {
 	            }
 	        else if !argument0.handLostRight
 	            {
-	            UnequipItem(argument0.myRightHand)
-	            if argument0.myRightHand.twoHanded == true
-	                argument0.myLeftHand = instance_create(0,0,ItemParent)
+				//choose right hand
+				if irandom(1) or argument0.myRightHand.twoHanded == true{
+		            UnequipItem(argument0.myRightHand)
+		            if argument0.myRightHand.twoHanded == true
+		                argument0.myLeftHand = instance_create(0,0,ItemParent)
                 
-	            argument0.myRightHand = argument1
-	            isEquipped = true
+		            argument0.myRightHand = argument1
+		            isEquipped = true
+					}
+				else{
+					UnequipItem(argument0.myLeftHand)
+		            argument0.myLeftHand = argument1
+		            isEquipped = true
+					}
 	            }
 	        else if !argument0.handLostLeft
 	            {
@@ -94,9 +102,14 @@ function EquipItem(argument0, argument1) {
 	    while ds_list_find_index(ItemRunner.floatingItems, argument1) != -1
 	        ds_list_delete(ItemRunner.floatingItems, ds_list_find_index(ItemRunner.floatingItems, argument1))
 	    }
-    
+		
+    with argument0{
+		if surface_exists(fullPirateSurface)
+			MakePirateSurface(fullPirateSurface, 0, 0)
+		if surface_exists(smallPirateSurface)
+			MakePirateSurface(smallPirateSurface, drawPictureRealx, drawPictureRealy)
+		if surface_exists(tagPirateSurface)
+			MakePirateSurface(tagPirateSurface, drawTagSpriteX, drawTagSpriteY)
+	}
 	return isEquipped
-
-
-
 }

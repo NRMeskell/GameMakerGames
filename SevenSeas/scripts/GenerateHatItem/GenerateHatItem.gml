@@ -2,11 +2,6 @@ function GenerateHatItem(argument0) {
 	newItem = instance_create(0,0,StoreObjectItem)
 	with newItem
 	    {   
-	    if argument0 == -1
-	        {
-	        argument0 ++
-	        doLevel = false
-	        }
 	    color[0] = make_color_rgb(155,0,0)
 	    color[1] = make_color_rgb(128,0,0)
 	    color[2] = make_color_rgb(0,44,119)
@@ -25,7 +20,7 @@ function GenerateHatItem(argument0) {
     
 	    itemBonuses = 1+argument0
     
-	    for(i=0; i<itemBonuses and doLevel; i++)
+	    for(i=0; i<itemBonuses; i++)
 	        {
 	        if ds_list_find_index(ItemRunner.deckhandHats, itemNumber) != -1  
 	            bonus[irandom_range(2,3)] ++

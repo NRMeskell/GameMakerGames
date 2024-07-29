@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"CrashingRocksArrive",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"CrashingRocksArrive",
+  "parent":{
+    "name":"CrashingRocks",
+    "path":"folders/Scripts/Events/Characters/CrashingRocks.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

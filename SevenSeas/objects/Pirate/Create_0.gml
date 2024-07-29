@@ -12,6 +12,7 @@ global.DARING = 3
 moraleMax[0] = 8;
 moraleMax[1] = 12;
 moraleMax[2] = 16;
+moraleMax[3] = 16;
 
 moraleXLow = 50;
 moraleXHigh = 124;
@@ -110,7 +111,6 @@ realHeight = 24
 drawPictureRealx = 47 - realWidth/2
 drawPictureRealy = 21 - realHeight/2
 
-
 ///Name Tag Vars
 
 myTagPlace = 0
@@ -132,14 +132,20 @@ draw_set_font(global.PirateFont)
 nameTagStart = 20
 nameTagMin = nameTagStart + 60
 nameTagLength = nameTagMin
-nameTagMax = sprite_get_width(PirateListSpr)
+//nameTagMax = sprite_get_width(PirateListSpr)
+
+//drawing surfaces
+smallPirateSurface = surface_create(realWidth, realHeight)
+fullPirateSurface = surface_create(sprite_get_width(PirateManSkinSpr), sprite_get_height(PirateManSkinSpr))
+tagPirateSurface = surface_create(drawTagPictureWidth, drawTagPictureHeight)
+
+
 
 ///Stats
 
 drawHeal = false
 hungry = false
 
-injured = false
 stunned = false
 exposed = false
 bleeding = false

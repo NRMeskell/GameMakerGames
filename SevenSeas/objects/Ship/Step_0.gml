@@ -89,7 +89,7 @@ for(i=0; i<instance_number(Pirate); i++)
     checkPirate = instance_find(Pirate, i)
     checkPirateSlot = checkPirate.mySlot
     
-    if checkPirate.injured < 1 and checkPirate.stunned == false
+    if checkPirate.stunned == false
         {
         global.totalSwordBonus += checkPirate.statTotal[0]
         global.totalGunBonus += checkPirate.statTotal[1]

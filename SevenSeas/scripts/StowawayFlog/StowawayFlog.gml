@@ -9,7 +9,6 @@ function StowawayFlog() {
 	        {
 	        UpdateMorale(-3, -1)
 	        UpdateMorale(1, global.FEARSOME)
-	        injured = true
 			myGoal = "leave"
 	        }
 	    with Pirate

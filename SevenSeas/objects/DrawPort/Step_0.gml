@@ -1,6 +1,6 @@
 /// @description Scrolling
 
-if overButton and MapCreator.mapClose = true and !instance_exists(Defeat)
+if overButton and MapCreator.mapClose = true and !instance_exists(Defeat) and sprite_index != CampFireDeadSpr
     {
     if currentHeight < sprite_get_height(LandMenuSpr)
         {

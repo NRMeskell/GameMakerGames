@@ -6,8 +6,4 @@ function PlagueShipPass() {
 
 	UpdateMorale(-1, global.DARING)
 	UpdateMorale(1, global.KEEN)
-
-
-
-
 }

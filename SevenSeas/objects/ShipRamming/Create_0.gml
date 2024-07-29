@@ -27,7 +27,7 @@ y = myShipTarget.drawY + animationY
 
 endRound = true
 
-showDamage = true
+showDamage = false
 hasAnimation = true
 if myShipTarget = Ship
     {

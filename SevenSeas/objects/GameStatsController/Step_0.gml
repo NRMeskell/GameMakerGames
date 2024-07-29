@@ -5,14 +5,6 @@ if !instance_exists(Defeat){
     if instance_number(Pirate) == 0
         defeat = true
     
-    //all pirates injured   
-    piratesInjured = true
-    with Pirate
-        if !injured
-            other.piratesInjured = false
-    if piratesInjured
-        defeat = true
-    
     //ship destroyed
     if Ship.myHealth < 1{
 		instance_destroy(RealAttack)

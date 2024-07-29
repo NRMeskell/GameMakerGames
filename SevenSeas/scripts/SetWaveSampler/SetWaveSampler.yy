@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"SetWaveSampler",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SetWaveSampler",
+  "parent":{
+    "name":"Lighting",
+    "path":"folders/Scripts/Lighting.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

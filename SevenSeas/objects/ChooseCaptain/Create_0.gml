@@ -1,5 +1,10 @@
 /// @description Make Pirate Traits
 
+smallPirateSurface = undefined
+fullPirateSurface = surface_create(sprite_get_width(PirateManSkinSpr), sprite_get_height(PirateManSkinSpr))
+tagPirateSurface = undefined
+
+
 GenerateAllPirateTraits()
 
 ///Limbs
@@ -57,7 +62,6 @@ selectedSpeedChange = 1
 drawHeal = false
 hungry = false
 
-injured = false
 healed = 0
 healModifier = 0
 
@@ -177,11 +181,6 @@ myPants = MakeRandomPantsItem(-1)
         
 instance_destroy(tempAction)
      
-if irandom(1)
-    myHat = MakeRandomHatItem(-1)
 myItem = MakeRandomHandItem(0)
 EquipItem(id, myItem)
 myItem.selected = false
-
-
-
