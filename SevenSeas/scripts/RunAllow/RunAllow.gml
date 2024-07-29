@@ -15,10 +15,10 @@ function RunAllow() {
 	else{
 		cargoAmount = irandom_range(1,3)
 		switch(irandom(3)){
-			case 0: ds_list_add(ItemRunner.floatingItems, MakeRandomHandItem(global.seaLevel)) break;
-			case 1: ds_list_add(ItemRunner.floatingItems, MakeRandomHatItem(global.seaLevel)) break;
-			case 2: ds_list_add(ItemRunner.floatingItems, MakeRandomPantsItem(global.seaLevel)) break;
-			case 3: ds_list_add(ItemRunner.floatingItems, MakeRandomShirtItem(global.seaLevel)) break;
+			case 0: ds_list_add(ItemRunner.floatingItems, MakeRandomHandItem(global.seaLevel div 2)) break;
+			case 1: ds_list_add(ItemRunner.floatingItems, MakeRandomHatItem(global.seaLevel div 2)) break;
+			case 2: ds_list_add(ItemRunner.floatingItems, MakeRandomPantsItem(global.seaLevel div 2)) break;
+			case 3: ds_list_add(ItemRunner.floatingItems, MakeRandomShirtItem(global.seaLevel div 2)) break;
 		}
 	    ds_list_add(global.notificationList, "Item Found!", myPirate.firstName + " found an unclaimed item burried beneath stacks of cargo.")
 	    

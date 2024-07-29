@@ -1,7 +1,8 @@
 /// @description Fonts
-//display_set_gui_size(view_wview[0], view_hview[0]);
 
-
+smallPirateSurface = undefined
+fullPirateSurface = surface_create(sprite_get_width(PirateManSkinSpr), sprite_get_height(PirateManSkinSpr))
+tagPirateSurface = undefined
 
 ///Make Pirate Traits
 
@@ -54,7 +55,6 @@ selectedSpeedChange = 1
 drawHeal = false
 hungry = false
 
-injured = false
 healed = 0
 healModifier = 0
 
@@ -171,8 +171,6 @@ while true{
     
 myPants = MakeRandomPantsItem(-1)
     
-if irandom(1)
-    myHat = MakeRandomHatItem(-1)
 myItem = MakeRandomHandItem(0)
 EquipItem(id, myItem)
 myItem.selected = false

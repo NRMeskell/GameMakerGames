@@ -1,4 +1,4 @@
-/// @description Check Death
+/// @description Run Turn
 
 if alarm[0] != -1 or instance_exists(Defeat){
     with RealAttack
@@ -7,7 +7,6 @@ if alarm[0] != -1 or instance_exists(Defeat){
     exit;
     }
 
-with (CombatRunner) {
 ///Run Turn
 
 maxPri = -1
@@ -25,12 +24,14 @@ if firstAttack != noone{
         skip = false
         if (actionType == "cannon" and CombatRunner.closeRange)
             skip = true
-        if (actionType == "melle" and !CombatRunner.closeRange)
+        else if (actionType == "melle" and !CombatRunner.closeRange)
             skip = true
-        if (actionType == "ship" and CombatRunner.myStats[3] == 0)
+        else if (actionType == "ship" and CombatRunner.myStats[3] == 0)
             skip = true
-        if !instance_exists(myPirate)
+        else if !instance_exists(myPirate)
             skip = true
+		else if (myPirate.object_index != CombatRunner and myPirate.object_index != Ship) and myPirate.stunned == true
+			skip = true
             
         if !skip{
             alarm[2] = 5
@@ -44,8 +45,13 @@ if firstAttack != noone{
         }
     }
 else{
+	if hasPlayerAttack = false
+		with Pirate stunned = false
+	if hasEnemyAttack = false
+		with Enemy stunned = false
+		
     combatView = false
     event_user(0)
     }
 
-}
+

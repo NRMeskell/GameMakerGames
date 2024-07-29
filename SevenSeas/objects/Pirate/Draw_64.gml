@@ -16,7 +16,11 @@ if overClose
 else
     draw_sprite(EndCombatSpr, 0, xWindow + sprite_get_width(PirateSheetSpr)-2, yWindow+2)
 
-DrawPirate(xWindow+xPicture, yWindow+yPicture)
+if !surface_exists(fullPirateSurface){
+	fullPirateSurface = surface_create(sprite_get_width(PirateManSkinSpr), sprite_get_height(PirateManSkinSpr))
+	MakePirateSurface(fullPirateSurface, 0, 0)
+}	
+DrawPirateSurface(fullPirateSurface, xWindow+xPicture, yWindow+yPicture)
 
 //draw morale markers
 moraleXLow = 52-2*stars;
@@ -31,11 +35,7 @@ for(var i=min(morale, 0); i<0; i++) draw_sprite(MoraleTicksSpr, 1, xWindow + mor
 for(var i=0; i<max(0, morale); i++)  draw_sprite(MoraleTicksSpr, 2, xWindow + (middle + w) + (i)*((moraleXHigh - (middle+w))/(moraleMax[stars]-1)), yWindow+moraleY)
 for(var i=max(0, morale); i<moraleMax[stars]; i++)  draw_sprite(MoraleTicksSpr, 3, xWindow + (middle + w) + (i)*((moraleXHigh - (middle+w))/(moraleMax[stars]-1)), yWindow+moraleY)
 
-if !injured
-    draw_sprite(PirateLifeSpr, -1+sprite_get_number(PirateLifeSpr)*myHealth/maxHealth, xWindow, yWindow)
-else
-    draw_sprite(PirateLifeInjuredSpr, -1+sprite_get_number(PirateLifeSpr)*myHealth/maxHealth, xWindow, yWindow)
-
+draw_sprite(PirateLifeSpr, -1+sprite_get_number(PirateLifeSpr)*myHealth/maxHealth, xWindow, yWindow)
 draw_sprite(PirateLifeLegsSpr, legLostRight + legLostLeft, xWindow, yWindow)
 
 /* */

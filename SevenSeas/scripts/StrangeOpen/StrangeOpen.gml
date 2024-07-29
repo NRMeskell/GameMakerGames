@@ -12,7 +12,7 @@ function StrangeOpen() {
 	else if result == 3
 	    {
 	    petType = irandom(1)
-	    ds_list_add(ItemRunner.floatingItems, MakeRandomHandItem(petType))
+	    ds_list_add(ItemRunner.floatingItems, MakeRandomPetItem(petType))
 	    if petType
 	        petName = "monkey"
 	    else

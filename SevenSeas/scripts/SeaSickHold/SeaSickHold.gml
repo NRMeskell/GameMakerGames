@@ -1,25 +1,8 @@
 function SeaSickHold() {
 	//swim back
-
-	sickPirates = 0
-
-	with Pirate
-	    {
-	    if irandom(2) == 0
-	        {
-	        myHealth -= irandom_range(10,15)
-	        UpdateMorale(-1, -1)
-	        other.sickPirates ++
-	        }
-	    }
     
-	ds_list_add(global.notificationList, "The crew is very ill!",  string(sickPirates) + "lost health and morale")
-
+	with sickPirate
+		UpdateMorale(-3, -1)
+	ds_list_add(global.notificationList, sickPirate.firstName + " is very ill!",  "the nausea is horrible, and they lose significant morale")
 	script_execute(closeEventCode, 2)
-
-
-
-
-
-
 }

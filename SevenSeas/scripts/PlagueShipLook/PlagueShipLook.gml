@@ -18,7 +18,4 @@ function PlagueShipLook() {
 			condition = PlagueCrewmate
     
 	script_execute(closeEventCode, 2)
-
-
-
 }

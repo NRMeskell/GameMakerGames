@@ -52,8 +52,10 @@ function PirateLevelUp(argument0, argument1) {
 	if (object_index == Pirate and (HasStored(5,1)) and mySlot.slotType != "bed") or !argument1
 	    {
 	    morale = 0
+		prevMorale = morale
 	    maxHealth += power(2,global.seaLevel) * 20
 	    myHealth += power(2,global.seaLevel) * 20
+		healthDiff = myHealth
     
 	    //In-game Pirate Level-up
 	    if argument0 == true
@@ -80,6 +82,7 @@ function PirateLevelUp(argument0, argument1) {
 					findAction = irandom(ds_list_size(shipActions)-1)
 					myTempAction = ds_list_find_value(shipActions, findAction)
 				}
+				instance_create(-50, -50, myTempAction)
 	        }
 	        else if object_index == ChooseFirstMate
 	            {
@@ -131,8 +134,4 @@ function PirateLevelUp(argument0, argument1) {
 				}
 			}  
 	    }
-
-
-
-
 }

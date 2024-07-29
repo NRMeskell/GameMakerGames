@@ -6,10 +6,9 @@ function MalariaCrewmate() {
 	global.moraleBoost = "Malaria"
 	with myPirate
 	    {
-	    if injured != true
-	        injured = true
-	    else
-	        myHealth -= 25
+	    // if injured != true
+	        //injured = true
+	    myHealth -= 25
 	    UpdateMorale(-2, -1)
 	    }
     

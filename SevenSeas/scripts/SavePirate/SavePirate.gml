@@ -42,7 +42,6 @@ function SavePirate(argument0, argument1) {
 	ini_write_string("stats", "lhand", pirate.handLostLeft)
 	ini_write_string("stats", "maxHealth", pirate.maxHealth)
 	ini_write_string("stats", "myHealth", pirate.myHealth)
-	ini_write_string("stats", "injured", pirate.injured)
 	ini_write_string("stats", "morale", pirate.morale)
 	
 	ini_write_string("requests", "num", ds_list_size(pirate.myRequestList))

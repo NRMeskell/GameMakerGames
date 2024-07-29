@@ -2,6 +2,8 @@
 
 if (global.doTime or global.inPort) and ds_list_size(global.notificationList) == 0
     {
+	global.moraleBoost = "conquering"
+	UpdateMorale(3, -1)
 	ds_map_replace(seas[currentSea], "conquered", true)
 	GameStatsController.seasConquered ++	
 		

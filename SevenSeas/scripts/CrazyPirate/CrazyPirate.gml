@@ -36,7 +36,6 @@ function CrazyPirate(argument0) {
     
 	    with myPirate
 	        {
-	        injured = true
 	        myHealth = -20
 	        }
 	    instance_destroy()

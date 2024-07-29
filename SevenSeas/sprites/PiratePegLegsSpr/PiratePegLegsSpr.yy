@@ -3,7 +3,7 @@
   "%Name":"PiratePegLegsSpr",
   "bboxMode":0,
   "bbox_bottom":95,
-  "bbox_left":29,
+  "bbox_left":30,
   "bbox_right":68,
   "bbox_top":73,
   "collisionKind":1,

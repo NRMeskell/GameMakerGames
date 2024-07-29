@@ -1,8 +1,8 @@
 /// @description Draw Water
 // You can write your code in this editor
 
-if surfaceHeight != waveBase + waveHeights[0] + waveHeights[1]
-	surfaceHeight = waveBase + waveHeights[0] + waveHeights[1]
+if surfaceHeight != waveBase + 2*(waveHeights[0] + waveHeights[1])
+	surfaceHeight = waveBase + 2*(waveHeights[0] + waveHeights[1])
 waterSurface = surface_create(room_width, surfaceHeight)
 surface_set_target(waterSurface)
 
@@ -15,7 +15,6 @@ var foam = merge_color(merge_color(c_white, Clock.skyColor, 0.5+0.3*(global.ligh
 	
 var tex = sprite_get_texture(WaveSpr, 0);
 var waveDis = texture_get_texel_width(tex)*20*0.8
-var foamTex = sprite_get_texture(FoamSpr, 0);
 	
 var height = GetWaterLevel(id, 0)
 var waveAngle = 0

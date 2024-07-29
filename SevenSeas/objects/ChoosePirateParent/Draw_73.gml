@@ -2,12 +2,13 @@
 
 draw_sprite_ext(PirateSheetSpr, 0, xWindow, yWindow, size, size, 0, c_white, 1)
 
-DrawPirate(xWindow + xPicture, yWindow + yPicture)
+if !surface_exists(fullPirateSurface){
+	fullPirateSurface = surface_create(sprite_get_width(PirateManSkinSpr), sprite_get_height(PirateManSkinSpr))
+	MakePirateSurface(fullPirateSurface, 0, 0)
+}	
+DrawPirateSurface(fullPirateSurface, xWindow + xPicture, yWindow + yPicture)
 
-if !injured
-    draw_sprite(PirateLifeSpr, -1+sprite_get_number(PirateLifeSpr)*myHealth/maxHealth, xWindow, yWindow)
-else
-    draw_sprite(PirateLifeInjuredSpr, -1+sprite_get_number(PirateLifeSpr)*myHealth/maxHealth, xWindow, yWindow)
+draw_sprite(PirateLifeSpr, -1+sprite_get_number(PirateLifeSpr)*myHealth/maxHealth, xWindow, yWindow)
 
 /* */
 ///Draw Name Menu

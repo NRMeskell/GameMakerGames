@@ -1,18 +1,17 @@
 function SeaSickMedicine() {
 	//guide back
 
-	if !argument0
-	    {
-	    with Pirate
-	        if irandom(1)
-	            myHealth -= 10 + 5*global.seaLevel
+	if !argument0{
+	    with sickPirate{
+			myHealth -= 20 + 10*global.seaLevel
+			UpdateMorale(-2, -1)
+		}
     
-	    ds_list_add(global.notificationList, "The medicine is bad!",  "the pirates become more ill and lose health!")
-	    }
-	else
-	    {
-	    ds_list_add(global.notificationList, "The medicine works!", "The sick crew members feel much better!")
-	    }
+	    ds_list_add(global.notificationList, "The medicine is bad!", sickPirate.name + " becomes more ill and loses health and morale!")
+	}
+	else {
+	    ds_list_add(global.notificationList, "The medicine works!", sickPirate.name + " feels much better!")
+	}
 
 	script_execute(closeEventCode, 2)
 

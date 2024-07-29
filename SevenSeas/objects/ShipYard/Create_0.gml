@@ -4,8 +4,8 @@ buttonNumber = 3
 event_user(0)
 myName = "ship yard"
 
-button[0] = "buy#ships"
-button[1] = "buy#supplies"
+button[0] = "purchase#ships"
+button[1] = "purchase#supplies"
 button[2] = "get#repairs"
 
 event_user(4)

@@ -6,6 +6,13 @@ if __b__
 with SailingDecor if y == Ship.frontWaves.waveBase
 	event_user(0)
 	
+if global.weather == 2
+	with WeatherController
+		event_user(3)
+		
+with Cloud
+	event_user(0)
+	
 ///Draw Front Waves
 with frontWaves
 	event_user(0)

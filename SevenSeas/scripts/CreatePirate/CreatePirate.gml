@@ -24,8 +24,6 @@ function CreatePirate(argument0) {
 	            EquipItem(id, MakeRandomShirtItem(-1))
 	            EquipItem(id, MakeRandomPantsItem(-1))
 	            if irandom(1)
-	                EquipItem(id, MakeRandomHatItem(-1))
-	            if irandom(1)
 					EquipItem(id, MakeRandomHandItem(0))
 	            }
 				

@@ -2,12 +2,12 @@
 
 event_user(0)
 spriteNumber = 29
-rechargeTime = 5
+rechargeTime = 6
 myType = "ship"
 
 myAttack = ShipSurpriseAttack
-priorityMin = 6
-priorityMax = 10
+priorityMin = 4
+priorityMax = 8
 
 requiredSlot[0] = "wheel"
 

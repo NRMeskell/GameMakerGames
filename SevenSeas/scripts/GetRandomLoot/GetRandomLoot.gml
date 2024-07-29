@@ -1,7 +1,7 @@
 function GetRandomLoot(argument0, argument1, argument2) {
 	//Get Loot
 	itemNames = ds_list_create()
-	itemLevel = irandom(global.seaLevel div 2) + choose(-1,0)
+	itemLevel = irandom(global.seaLevel div 2) + choose(0)
 	itemList = ds_list_create()
 	lootList = [3]
 	//Generate Loot
@@ -22,7 +22,7 @@ function GetRandomLoot(argument0, argument1, argument2) {
 	        {
 	        type = choose(0,1,1,1,1,2,2,3,3)
 	        if type == 0 
-	            newItem = GenerateHatItem(itemLevel)
+	            newItem = GenerateHatItem(min(0, itemLevel))
 	        else if type == 1
 	            newItem = GenerateShirtItem(itemLevel)
 	        else if type == 2
@@ -68,13 +68,13 @@ function GetRandomLoot(argument0, argument1, argument2) {
 	            preview = false
 				}
 				
-			if addItem.object_index == StoreObjectStorable{
+			/*if addItem.object_index == StoreObjectStorable{
 				if ds_list_find_index(other.itemNames, addItem.itemNumber) == -1
 					ds_list_add(other.itemNames, addItem.itemNumber)
 			} else{
 				if ds_list_find_index(other.itemNames, -1) == -1
 					ds_list_add(other.itemNames, -1)
-			}
+			}*/
 		}
     
 		storeName = argument1

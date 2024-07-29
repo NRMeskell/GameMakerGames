@@ -5,7 +5,7 @@ function AttackEvents(){
 	//boom stick explodes
 	if myType == "ranged"{
 		if irandom(20) == 0
-		with ItemParent if image_index == 18 and myPirate.injured == false{	
+		with ItemParent if image_index == 18{	
 			ds_list_add(global.notificationList, "Gun Explodes!", "A boomstick held by " + myPirate.firstName + " exploded, hurting the pirate and destroying the weapon!")
 			with myPirate
 				myHealth -= 20

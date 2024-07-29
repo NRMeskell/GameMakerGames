@@ -3,7 +3,7 @@
 moveTotal = 0
 
 if !global.inPort{
-	for(var i=0; i<1; i+=15/path_get_length(sailPath)){
+	for(var i=0; i<1; i+=12/path_get_length(sailPath)){
 		if path_position < i{
 			var path_angle = point_direction(path_get_x(sailPath, i), path_get_y(sailPath, i), path_get_x(sailPath, i+0.1), path_get_y(sailPath, i+0.1))
 			draw_sprite_ext(MapDotsSpr, 0, path_get_x(sailPath, i), path_get_y(sailPath, i), 1, 1, path_angle, c_white, 0.8)

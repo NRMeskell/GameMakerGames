@@ -28,13 +28,17 @@ for(i=0; i<pirateNumber; i++)
             }
         
         
-        myShirt = MakeRandomShirtItem(irandom_range(-1,0))
+        myShirt = MakeRandomShirtItem(irandom(global.seaLevel div 2) + irandom_range(-1, 0))
         cost += round(myShirt.cost*.75)
         
-        myPants = MakeRandomPantsItem(-1)
+        myPants = MakeRandomPantsItem((irandom(global.seaLevel div 2) + irandom_range(-1, 0)))
+        cost += round(myPants.cost*.75)
         
-        myHat = MakeRandomHatItem(-1)
-        
+		repeat(irandom(global.seaLevel) div 2){
+			PirateLevelUp(false, false)
+			cost += 25
+		}
+		
         if irandom(1)
             {
 			handItem = MakeRandomHandItem(0)
@@ -58,7 +62,7 @@ for(i=0; i<foodNumber; i++)
     newFood.myLocation = id
     with newFood
         {        
-        itemNumber = choose(4,5,6)
+        itemNumber = choose(4,6)
         if itemNumber = 4
             amount = irandom_range(3,10)
         else

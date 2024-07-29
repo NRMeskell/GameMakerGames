@@ -12,8 +12,11 @@ draw_sprite_ext(PirateSheetPreviewSpr, 0, xWindow, yWindow, size, size, 0, c_whi
 else
     draw_sprite(EndCombatSpr, 0, xWindow + sprite_get_width(PirateSheetSpr)-2, yWindow+2)
 */
-
-DrawPirate(xWindow + xPicture, yWindow + yPicture)
+if !surface_exists(fullPirateSurface){
+	fullPirateSurface = surface_create(sprite_get_width(PirateManSkinSpr), sprite_get_height(PirateManSkinSpr))
+	MakePirateSurface(fullPirateSurface, 0, 0)
+}	
+DrawPirateSurface(fullPirateSurface, xWindow + xPicture, yWindow + yPicture)
 
 /* */
 ///Draw Name Menu

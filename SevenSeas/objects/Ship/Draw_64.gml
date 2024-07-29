@@ -185,22 +185,21 @@ with Pirate
         
         draw_sprite(StarsSpr, stars, Ship.drawTagX, Ship.drawTagY + myTagPlace + tagShift - 6)
         
-        if injured
-                draw_sprite(PirateInjuredSpr, 0, Ship.drawTagX + 51, Ship.drawTagY + myTagPlace + 4 + tagShift)
-        
         if stunned
             draw_sprite(PirateInjuredSpr, 3, Ship.drawTagX + 51, Ship.drawTagY + myTagPlace + 4 + tagShift)
         else if bleeding
             draw_sprite(PirateInjuredSpr, 2, Ship.drawTagX + 51, Ship.drawTagY + myTagPlace + 4 + tagShift)
         else if exposed
             draw_sprite(PirateInjuredSpr, 4, Ship.drawTagX + 51, Ship.drawTagY + myTagPlace + 4 + tagShift)
-        else if injured
-            draw_sprite(PirateInjuredSpr, 1, Ship.drawTagX + 51, Ship.drawTagY + myTagPlace + 4 + tagShift)
-        }
+		}
         
     if drawable
         {
-        DrawPiratePart(Ship.drawTagX + drawTagPictureX, Ship.drawTagY + drawTagPictureY + myTagPlace + tagShift, drawTagSpriteX, drawTagSpriteY, drawTagPictureWidth, drawTagPictureHeight)
+		if !surface_exists(tagPirateSurface){
+			tagPirateSurface = surface_create(drawTagPictureWidth, drawTagPictureHeight)
+			MakePirateSurface(tagPirateSurface, drawTagSpriteX, drawTagSpriteY) 
+		}
+        DrawPirateSurface(tagPirateSurface, Ship.drawTagX + drawTagPictureX, Ship.drawTagY + drawTagPictureY + myTagPlace + tagShift)
         }
     }
 }

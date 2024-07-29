@@ -8,7 +8,11 @@ if __b__
 ///Draw Real Pirate 
 if (Ship.portSelect = true or global.inPort = false)
     {
-    DrawPiratePart(xReal, yReal, drawPictureRealx, drawPictureRealy+1, realWidth, realHeight)
+	if !surface_exists(smallPirateSurface){
+		smallPirateSurface = surface_create(realWidth, realHeight)
+		MakePirateSurface(smallPirateSurface, drawPictureRealx, drawPictureRealy) 
+	}
+	DrawPirateSurface(smallPirateSurface, xReal, yReal+1)
         
     draw_sprite(PirateInjuredTimerBackSpr, 0, xReal-1, yReal-1)
 	if myHealth <= healthDiff{
@@ -23,18 +27,13 @@ if (Ship.portSelect = true or global.inPort = false)
 		draw_sprite_ext(PirateInjuredTimerSpr, max(0, -1+sprite_get_number(PirateInjuredTimerSpr)*healed), xReal-1, yReal, 1, 1, 0, c_lime, 1)
 	}
 	
-	
-    if injured
-            draw_sprite(PirateInjuredSpr, 0, xReal + 28, yReal -2)
-    
+
     if stunned
         draw_sprite(PirateInjuredSpr, 3, xReal + 28, yReal - 2)
     else if bleeding
         draw_sprite(PirateInjuredSpr, 2, xReal + 28, yReal - 2)
     else if exposed
         draw_sprite(PirateInjuredSpr, 4, xReal + 28, yReal - 2)
-    else if injured
-        draw_sprite(PirateInjuredSpr, 1, xReal + 28, yReal - 2)
     }
 
 }

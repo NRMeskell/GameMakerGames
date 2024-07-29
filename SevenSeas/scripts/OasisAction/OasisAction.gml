@@ -3,7 +3,7 @@ function OasisAction() {
 
 	global.moraleBoost = "swimming"
 
-	if irandom(campPower + global.pirateNum[global.FEARSOME]) == 0
+	if irandom(3) == 0
 	    {
 	    with Pirate
 	        {
@@ -11,7 +11,7 @@ function OasisAction() {
 	        }
 		ds_list_add(global.notificationList, "fish attack!", "tropical fish were able to surprise and attack the crew!")
 		}
-	else if irandom(2 + global.pirateNum[global.DARING]) = 0
+	else if irandom(1) == 0
 	    {
 	    with Pirate
 	        {
@@ -25,11 +25,11 @@ function OasisAction() {
 		crewTarget = instance_find(Pirate, irandom(instance_number(Pirate)-1))
 	    with crewTarget
 	        {
-			UpdateMorale(1, -1)
-			maxHealth += 15
-			myHealth += 15
+			UpdateMorale(2, -1)
+			maxHealth += 20
+			myHealth += 20
 		}
         
-	    ds_list_add(global.notificationList, "magical swim!", "the mystical clear water seems to have strengthed " + crewTarget.firstName + "!")
+	    ds_list_add(global.notificationList, "magical swim!", "the mystical clear water seems to have strengthed " + crewTarget.firstName + ", and increased their maximum health!")
 	    }
 }

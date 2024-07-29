@@ -6,7 +6,7 @@ repeat(irandom_range(2,4))
     {
     type = irandom(4)
     if type == 0 
-        newItem = GenerateHatItem(irandom(global.seaLevel div 2) + choose(-1,1))
+        newItem = GenerateHatItem(irandom(global.seaLevel div 2) + choose(0,1))
     else if type == 1
         newItem = GenerateShirtItem(irandom(global.seaLevel div 2) + choose(-1,1))
     else if type == 2

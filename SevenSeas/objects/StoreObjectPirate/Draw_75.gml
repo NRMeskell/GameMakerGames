@@ -4,7 +4,11 @@ if viewed
     {
     draw_sprite(StoreItemSpr, (overButton or previewSelect) + selected*2, drawX, drawY)
     
-    DrawPiratePart(drawX - realWidth/2, drawY- realHeight/2, drawPictureRealx, drawPictureRealy, realWidth, realHeight)
+	if !surface_exists(fullPirateSurface){
+		fullPirateSurface = surface_create(sprite_get_width(PirateManSkinSpr), sprite_get_height(PirateManSkinSpr))
+		MakePirateSurface(fullPirateSurface, 0, 0)
+	}	
+    DrawPirateSurface(smallPirateSurface, drawX - realWidth/2, drawY- realHeight/2)
         
     draw_set_valign(fa_center)
     draw_set_halign(fa_left)

@@ -15,7 +15,7 @@ with instance_create(room_width*5/6, room_height/2, Store)
             }
         }
     
-    storeName = "PURCHASE SUPPLIES"
+    storeName = "BUY SUPPLIES"
     leftButtonText = "buy"
     rightButtonText = "exit"
     }

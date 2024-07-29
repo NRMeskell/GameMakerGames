@@ -1,5 +1,7 @@
 /// @description Vars
 
+instance_destroy(ActionParent)
+
 wantsClose = false
 startX = room_width - sprite_get_width(EnemyFrameSpr)*1.2
 startY = sprite_height*1.1
@@ -49,33 +51,6 @@ for (i = 0; i<abs(change); i++){
 maxHealth = round(maxHealth * ((totalVar - enemyPower)+3)/5)
 myHealth = maxHealth
 
-///Action Map
-/*
-actionTypeMap = ds_map_create()
-ds_map_add(actionTypeMap, ShipSwordAttack, "melle")
-ds_map_add(actionTypeMap, ShipHeavyBoardingAttack, "melle")
-ds_map_add(actionTypeMap, ShipSwarmAttack, "melle")
-ds_map_add(actionTypeMap, ShipHammerAttack, "melle")
-ds_map_add(actionTypeMap, ShipScoutAttack, "melle")
-ds_map_add(actionTypeMap, ShipFinishingAttack, "melle")
-ds_map_add(actionTypeMap, ShipHoldFastAttack, "melle")
-
-ds_map_add(actionTypeMap, ShipGunAttack, "ranged")
-ds_map_add(actionTypeMap, ShipBarrageAttack, "ranged")
-ds_map_add(actionTypeMap, ShipLookoutAttack, "ranged")
-ds_map_add(actionTypeMap, ShipChaosAttack, "ranged")
-ds_map_add(actionTypeMap, ShipSniperAttack, "ranged")
-ds_map_add(actionTypeMap, ShipTargetedAttack, "ranged")
-
-ds_map_add(actionTypeMap, ShipWarningAttack, "cannon")
-ds_map_add(actionTypeMap, ShipCannonAttack, "cannon")
-ds_map_add(actionTypeMap, BroadsideAttack, "cannon")
-ds_map_add(actionTypeMap, SprayAttack, "cannon")
-
-ds_map_add(actionTypeMap, ShipShipChange, "ship")
-ds_map_add(actionTypeMap, ShipOutmaneuver, "ship")
-ds_map_add(actionTypeMap, ShipRamming, "ship")
-*/
 ///Create Action Runners
 
 indexType[0] = "melle"
@@ -102,6 +77,9 @@ for(i=0;i<4;i++)
 actionList = ds_list_create()
 turnCounter = 0
 playerTurn = true
+stunned = false
+hasPlayerAttack = false
+hasEnemyAttack = false
 
 basicMelleAttack = instance_create(-100,-100,BasicMelleAction)
 basicRangedAttack = instance_create(-100,-100,BasicRangedAction)
@@ -146,8 +124,9 @@ desireList = ds_list_create()
 possibleEnemyActions = ds_list_create()
 
 for(i=0; i<ds_list_size(myBasicActions); i++)
-    with instance_create(-50, -50, ds_list_find_value(myBasicActions, i))
-            myPirate = other.id
+    with instance_create(-50, -50, ds_list_find_value(myBasicActions, i)){
+		myPirate = CombatRunner.id
+	}
             
 for(i=0; i<instance_number(Enemy); i++)
     {

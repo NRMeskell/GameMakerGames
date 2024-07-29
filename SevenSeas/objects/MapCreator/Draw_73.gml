@@ -67,24 +67,20 @@ if zoom == maxZoom
         draw_text_transformed(mapStart + mapSizeX/2 +drawX, mapSizeY/2 + drawY+2, string_hash_to_newline(drawName), zoom*1.2, zoom*1.2, 0)
         draw_text_transformed(mapStart + mapSizeX/2 +drawX-2, mapSizeY/2 + drawY, string_hash_to_newline(drawName), zoom*1.2, zoom*1.2, 0)
         draw_text_transformed(mapStart + mapSizeX/2 +drawX, mapSizeY/2 + drawY-2, string_hash_to_newline(drawName), zoom*1.2, zoom*1.2, 0)
+        draw_set_color(merge_color(landColor[? drawName], c_white, 0.25))
+		draw_text_transformed(mapStart + mapSizeX/2 +drawX, mapSizeY/2 + drawY, string_hash_to_newline(drawName), zoom*1.2, zoom*1.2, 0)
         
-        if ds_map_find_value(seas[i], "conquered") == false
-            {
-            if ds_map_find_value(seas[i], "level") == 0
-                draw_set_color(make_color_rgb(110, 110, 110))
-            else if ds_map_find_value(seas[i], "level") == 1
-                draw_set_color(make_color_rgb(154, 122, 2))
-            else if ds_map_find_value(seas[i], "level") == 2
-                draw_set_color(make_color_rgb(175, 100, 20))
-            else
-                draw_set_color(make_color_rgb(180, 15, 15))
-            }
-        else
-            draw_set_color(merge_color(make_color_rgb(10, 180, 10), c_dkgray, 0.4))
-        
-        draw_text_transformed(mapStart + mapSizeX/2 +drawX, mapSizeY/2 + drawY, string_hash_to_newline(drawName), zoom*1.2, zoom*1.2, 0)
-        }
-    }
+		draw_set_color(c_black)
+		draw_text_transformed(mapStart + mapSizeX/2 + drawX -2, mapSizeY/2 + drawY-2 + 24, "level: " + string(ds_map_find_value(seas[i], "level")+1), zoom, zoom, 0)
+		draw_text_transformed(mapStart + mapSizeX/2 + drawX +2, mapSizeY/2 + drawY-2 + 24, "level: " + string(ds_map_find_value(seas[i], "level")+1), zoom, zoom, 0)
+		draw_text_transformed(mapStart + mapSizeX/2 + drawX, mapSizeY/2 + drawY-2 + 22, "level: " + string(ds_map_find_value(seas[i], "level")+1), zoom, zoom, 0)
+		draw_text_transformed(mapStart + mapSizeX/2 + drawX, mapSizeY/2 + drawY-2 + 26, "level: " + string(ds_map_find_value(seas[i], "level")+1), zoom, zoom, 0)
+	
+		draw_set_color(make_color_rgb(100, 100, 100))
+		draw_text_transformed(mapStart + mapSizeX/2 + drawX, mapSizeY/2 + drawY-2 + 24, "level: " + string(ds_map_find_value(seas[i], "level")+1), zoom, zoom, 0)
+		draw_set_color(c_black)
+	}
+}
 
 draw_set_font(global.PirateFont)
 
