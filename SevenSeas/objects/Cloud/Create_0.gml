@@ -11,7 +11,7 @@ image_xscale = (random_range(0.5,1.0))*choose(-1, 1)
 image_yscale = abs(image_xscale)
 moveSpeed = random_range(0.10, 0.15)*abs(image_xscale)
 image_speed = 0
-image_alpha = random_range(0.85, 1)*sqrt(abs(image_xscale))+0.2
+image_alpha = random_range(0.7, 1.0)*sqrt(abs(image_xscale))
 
 
 if place_meeting(x, y, Cloud)

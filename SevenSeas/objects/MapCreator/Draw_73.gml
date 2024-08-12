@@ -34,6 +34,10 @@ if view_current = 1{
 	//draw_set_alpha(1)
 	
 	draw_background(sprite_index, mapStart, 0)
+	
+	/*draw_set_alpha(0.5)
+	mp_grid_draw(global.mapGrid)
+	draw_set_alpha(1)*/
 }
 
 ///Draw Map Details

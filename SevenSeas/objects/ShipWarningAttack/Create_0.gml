@@ -15,7 +15,7 @@ animationHeight = 2
 animationWidth = 5
 rotate = false
 
-endRound = true
+endRound = false
 actionType = "cannon"
 
 x = Ship.drawX + animationX + irandom_range(-animationWidth,animationWidth)
@@ -24,5 +24,6 @@ y = Ship.drawY + animationY + irandom_range(-animationHeight,animationHeight) + 
 attackPower = global.totalCannonBonus
 event_user(0)
 singleAttack = true
+showDamage = false
 
 

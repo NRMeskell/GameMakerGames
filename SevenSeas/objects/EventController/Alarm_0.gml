@@ -7,7 +7,8 @@ with Pirate
 
 if desertPossible
     {
-    with Pirate
+	checkPirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+    with checkPirate
         if morale <= irandom_range(-3, -2)
             {
             ds_list_add(global.notificationList, name + " deserted!", "Their morale be too low and they left our crew!")

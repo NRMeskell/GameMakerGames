@@ -51,7 +51,7 @@ function GenerateHandItem(argument0) {
 	        bonus[1] = bonusNum
 	        }
            
-	    itemCost = 3 + bonusNum*10 + irandom_range(-2,2) + 10*(ds_list_find_index(ItemRunner.twoHandedList, itemNumber) != -1)
+	    itemCost = 10 + bonusNum*10 + irandom_range(-2,2) + 3*(ds_list_find_index(ItemRunner.twoHandedList, itemNumber) != -1)
 	    }
     
 	return newItem

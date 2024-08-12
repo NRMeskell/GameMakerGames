@@ -7,13 +7,13 @@ if __b__
 //Check to see if availible
 //if myType = "melle" and CombatRunner.closeRange == false
   //  canUseActions = false
-if myType = "cannon" and (HasStored(2,1) == false or !Ship.allowCannonActions) //(CombatRunner.closeRange == true) or 
+if myType = "cannon" and (global.totalCannonBonus == 0 or HasStored(2,1) == false or !Ship.allowCannonActions) //(CombatRunner.closeRange == true) or 
     canUseActions = false
 if myType = "ship" and (global.totalWheelBonus == 0 or !Ship.allowShipActions)
     canUseActions = false
-if myType = "melle" and (!Ship.allowMelleActions)
+if myType = "melle" and (global.totalSwordBonus == 0 or !Ship.allowMelleActions)
     canUseActions = false
-if myType = "ranged" and (!Ship.allowRangedActions)
+if myType = "ranged" and (global.totalGunBonus == 0 or!Ship.allowRangedActions)
     canUseActions = false
 if CombatRunner.alarm[1] > 0
 	canUseActions = false

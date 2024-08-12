@@ -1,7 +1,7 @@
 /// @description ///Draw Menu Options
 // You can write your code in this editor
 
-if !instance_exists(CombatRunner) and room != PirateChooserRoom{
+if (!instance_exists(CombatRunner) or instance_exists(Defeat)) and room != PirateChooserRoom{
 	draw_sprite(OptionsSpr, overMenuButton, menuButtonX, menuButtonY)
 	
 	if overMenuButton and mouse_check_button_pressed(mb_left){

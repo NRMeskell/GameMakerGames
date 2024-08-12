@@ -2,7 +2,7 @@
 
 if myVar < 2
 	myState = "unmet"
-else if myVar < 4
+else if myVar < 3
 	myState = "trade"
 else if myVar < 5
 	myState = "repay"

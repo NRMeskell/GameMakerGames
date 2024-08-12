@@ -19,10 +19,12 @@ if playerTurn and !instance_exists(Event)
             alarm[3] = room_speed/2
             alarm[4] = room_speed*2
             
+			skipped = true
             with ActionParent
                 {
                 if selected == true
                     {
+					other.skipped = false
                     waitLeft = rechargeTime + 1
                     if myPirate != noone and myPirate != Ship
                         {
@@ -35,6 +37,8 @@ if playerTurn and !instance_exists(Event)
                     event_user(1)
                     }
                 }
+			if skipped
+				Pirate.stunned = false
             }
         }
         

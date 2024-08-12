@@ -11,7 +11,7 @@ currentLast = 0
 //Create Possible Names
 firstNames = ds_list_create()
 lastNames = ds_list_create()
-ds_list_add(firstNames, "Black", "White", "Blue", "Red", "Barbaric", "Rusty", "Bloody", "Broken", "Drunken", "Cursed", "Golden", "Grand", "Jolly", "Lost", "Old", "Salty", "Sea", "Speedy", "Wild")
+ds_list_add(firstNames, "Black", "White", "Blue", "Red", "Rusty", "Bloody", "Broken", "Drunk", "Cursed", "Golden", "Grand", "Jolly", "Lost", "Old", "Salty", "Sea", "Speedy", "Wild")
 ds_list_add(lastNames, "Skull", "Pearl", "Ghost", "Secret", "Wind", "Serpent", "Hook", "Mermaid", "Anchor", "Dragon", "Timber", "Plank", "Night", "Squid", "Shark", "Death", "Whale", "Thief", "Revenge")
 
 myNames = ReadAllSaveFiles()

@@ -226,7 +226,24 @@ SetWaveSampler()
 /// Add to grid
 gridSize = 4
 global.mapGrid = mp_grid_create(mapStart, 0, mapSizeX div gridSize, mapSizeY div gridSize, gridSize, gridSize)
-mp_grid_add_instances(global.mapGrid, MapCreator, true)
+for(i=0; i<mapSizeX div gridSize; i++){
+	for(j=0; j<mapSizeY div gridSize; j++){
+		var hitPoints = 0
+		if collision_point(mapStart + i*gridSize + gridSize/2, j*gridSize, MapCreator, true, false)
+			hitPoints ++
+		if collision_point(mapStart + i*gridSize + gridSize/2, j*gridSize + gridSize, MapCreator, true, false)
+			hitPoints ++
+		if collision_point(mapStart + i*gridSize, j*gridSize + gridSize/2, MapCreator, true, false)
+			hitPoints ++
+		if collision_point(mapStart + i*gridSize + gridSize, j*gridSize + gridSize/2, MapCreator, true, false)
+			hitPoints ++
+		
+		if hitPoints > 2
+			mp_grid_add_cell(global.mapGrid, i, j)
+	}
+}
+
+//mp_grid_add_instances(global.mapGrid, MapCreator, true)
 
 ///Create Landing Spots
 spotTypes = ds_map_create()
@@ -470,8 +487,8 @@ ds_map_add(condImage, global.seaNames[1], 1)
 winCond[1] = 0
 
 //rocky shores
-ds_map_add(condDes, global.seaNames[2], "Be the first ship to complete the perilous journey!")
-ds_map_add(condCritera, global.seaNames[2], "SAIL BETWEEN THE CRASHING ROCKS")
+ds_map_add(condDes, global.seaNames[2], "Be the first ship to make it through the passage!")
+ds_map_add(condCritera, global.seaNames[2], "SAIL THE CRASHING ROCKS")
 ds_map_add(condImage, global.seaNames[2], 2) 
 winCond[2] = 0
 

@@ -70,4 +70,9 @@ if newInjury = "eye"
     }
 }
 
-
+if surface_exists(fullPirateSurface)
+	MakePirateSurface(fullPirateSurface, 0, 0)
+if surface_exists(smallPirateSurface)
+	MakePirateSurface(smallPirateSurface, drawPictureRealx, drawPictureRealy)
+if surface_exists(tagPirateSurface)
+	MakePirateSurface(tagPirateSurface, drawTagSpriteX, drawTagSpriteY)

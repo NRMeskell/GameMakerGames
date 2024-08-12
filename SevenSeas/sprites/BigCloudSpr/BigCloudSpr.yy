@@ -29,8 +29,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Events",
-    "path":"folders/Sprites/Events.yy",
+    "name":"Sky",
+    "path":"folders/Sprites/Backgrounds/Sailing Backgrounds/Sky.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

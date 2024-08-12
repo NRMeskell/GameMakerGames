@@ -23,8 +23,7 @@ function CreatePirate(argument0) {
 	            {
 	            EquipItem(id, MakeRandomShirtItem(-1))
 	            EquipItem(id, MakeRandomPantsItem(-1))
-	            if irandom(1)
-					EquipItem(id, MakeRandomHandItem(0))
+	            EquipItem(id, MakeRandomHandItem(0))
 	            }
 				
 			event_user(4)

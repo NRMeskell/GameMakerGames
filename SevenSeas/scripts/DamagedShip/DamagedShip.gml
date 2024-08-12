@@ -38,7 +38,7 @@ function DamagedShipSearch() {
 	    if irandom(1)
 			ds_list_add(global.notificationList, "Nothing Found!", "The ship is too damaged to explore, and the crew returns empty-handed.")
 		else{
-			if global.seaType == MapCreator.seaNames[2]{
+			if global.seaType == global.seaNames[2]{
 				ds_list_add(global.notificationList, "TRAP!", "The damaged ship was bait, and a scavenger ship appears from behind a rock!")
 				instance_create(0,0,ScavengerShip)
 			}	
@@ -46,4 +46,6 @@ function DamagedShipSearch() {
 	}
 	with EventDrawer
 		floatAway = true
+		
+	closeEventCode()
 }

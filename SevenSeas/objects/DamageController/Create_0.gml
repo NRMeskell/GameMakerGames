@@ -7,15 +7,15 @@ damageScaler = ds_map_create()
 //Basic Melle
 damageMin[? ShipSwordAttack] = 0.9
 damageMax[? ShipSwordAttack] = 1.1
-damageScaler[? ShipSwordAttack] = 10
+damageScaler[? ShipSwordAttack] = 8
 //Heavy Melle
 damageMin[? ShipHeavyBoardingAttack] = 0.75
 damageMax[? ShipHeavyBoardingAttack] = 1.25
-damageScaler[? ShipHeavyBoardingAttack] = 15
+damageScaler[? ShipHeavyBoardingAttack] = 12
 //Swarm Melle
 damageMin[? ShipSwarmAttack] = 0.75
 damageMax[? ShipSwarmAttack] = 1.5
-damageScaler[? ShipSwarmAttack] = 6
+damageScaler[? ShipSwarmAttack] = 5
 //Hammer Melle
 damageMin[? ShipHammerAttack] = 0.9
 damageMax[? ShipHammerAttack] = 1.1
@@ -23,11 +23,11 @@ damageScaler[? ShipHammerAttack] = 3
 //Scout Melle
 damageMin[? ShipScoutAttack] = 0.8
 damageMax[? ShipScoutAttack] = 1.1
-damageScaler[? ShipScoutAttack] = 8
+damageScaler[? ShipScoutAttack] = 6
 //Stab Melle
 damageMin[? ShipFinishingAttack] = 0.75
 damageMax[? ShipFinishingAttack] = 1.5
-damageScaler[? ShipFinishingAttack] = 18
+damageScaler[? ShipFinishingAttack] = 15
 //Hold Fast Melle
 damageMin[? ShipHoldFastAttack] = 0.8
 damageMax[? ShipHoldFastAttack] = 1.2
@@ -48,8 +48,8 @@ damageMax[? ShipBarrageAttack] = 1.3
 damageScaler[? ShipBarrageAttack] = 6
 //Lookout Ranged
 damageMin[? ShipLookoutAttack] = 0.8
-damageMax[? ShipLookoutAttack] = 1.1
-damageScaler[? ShipLookoutAttack] = 0
+damageMax[? ShipLookoutAttack] = 1.0
+damageScaler[? ShipLookoutAttack] = 4
 //Target Ranged
 damageMin[? ShipTargetedAttack] = 0.75
 damageMax[? ShipTargetedAttack] = 1.5

@@ -11,4 +11,5 @@ flyAwayDir = irandom_range(45, 135)
 
 inFront = choose(true, true, false)
 alphaShift = irandom(1000000)
+image_alpha = random(0.5)+0.25
 

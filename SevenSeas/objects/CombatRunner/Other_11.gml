@@ -15,7 +15,7 @@ for(var i=0; i<instance_number(ActionParent); i++)
     checkAction = instance_find(ActionParent,i)
     if instance_exists(checkAction.myPirate) 
         if checkAction.myPirate.object_index == Pirate and checkAction.pirateDrawTest == false and checkAction.object_index != LostEyeAction
-            if checkAction.myPirate.stunned = false
+            if checkAction.myPirate.stunned == false
                 {
                 //Check action requirements
                 available = false

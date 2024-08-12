@@ -46,42 +46,44 @@ function RuinsSearch() {
 
 function RuinsHelp() {
 	if argument0{
-		if (instance_number(Pirate) == Ship.maxCrew or OldGabbler.myVar != 1){
-			ds_list_add(global.notificationList, "Old Skeleton!", "The crew navigates to the cage, but find nothing but an old dry skeleton.")
-		}else{
-			ds_list_add(global.notificationList, "Ol' Jack Grayhair!", "The crew is shocked to discover and invite aboard the legendary 'Jack Grayhair'.")
-			OldGabbler.myVar = 2
+		ds_list_add(global.notificationList, "Ol' Jack Grayhair!", "The crew is shocked to discover and invite aboard the legendary 'Jack Grayhair'.")
+		OldGabbler.myVar = 2
 			
-			with CreatePirate(false){
-				myMainPer = global.DARING
-				face = myMainPer*2
-				body = 1
-				myGender = 1
-				hair = 5
-				beard = 7
-				face = 
-				skinDark = random(0.4)
-				skinColor = merge_color(c_white, merge_color(c_black, c_red, 0.2), skinDark)
-				hairColor = make_color_rgb(50,50,50)
+		grayhair = instance_create(0,0,StoreObjectPirate)
+		with grayhair{
+			myMainPer = global.DARING
+			face = myMainPer*2
+			body = 1
+			myGender = 1
+			hair = 5
+			beard = 7
+			face = 
+			skinDark = random(0.4)
+			skinColor = merge_color(c_white, merge_color(c_black, c_red, 0.2), skinDark)
+			hairColor = make_color_rgb(50,50,50)
 				
-				firstName = "Ol' Jack"
-				lastName = "Grayhair"
-				name = firstName + " " + lastName
+			firstName = "Ol' Jack"
+			lastName = "Grayhair"
+			name = firstName + " " + lastName
 				
-				EquipItem(id, MakeRandomHandItem(2))
-				EquipItem(id, MakeRandomPantsItem(1))
-				EquipItem(id, MakeRandomShirtItem(2))
-				EquipItem(id, MakeRandomHatItem(2))
+			EquipItem(id, MakeRandomHandItem(2))
+			EquipItem(id, MakeRandomPantsItem(1))
+			EquipItem(id, MakeRandomShirtItem(2))
+			EquipItem(id, MakeRandomHatItem(2))
 				
-				PirateLevelUp(false, false)
-				PirateLevelUp(false, false)
-				PirateLevelUp(false, false)
-			}
-			with ItemParent{
-				if ds_list_find_index(ItemRunner.floatingItems, id) != -1{
-					ds_list_delete(ItemRunner.floatingItems, ds_list_find_index(ItemRunner.floatingItems, id))
-					instance_destroy()
-				}
+			PirateLevelUp(false, false)
+			PirateLevelUp(false, false)
+			PirateLevelUp(false, false)
+			cost = 0
+		}
+		
+		with instance_create(0,0,Store)
+			ds_list_add(items, grayhair)
+			
+		with ItemParent{
+			if ds_list_find_index(ItemRunner.floatingItems, id) != -1{
+				ds_list_delete(ItemRunner.floatingItems, ds_list_find_index(ItemRunner.floatingItems, id))
+				instance_destroy()
 			}
 		}
 	}
