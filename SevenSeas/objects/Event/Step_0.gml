@@ -32,6 +32,7 @@ for(r=0; r<buttonNumber; r++)
 			catch( _exception){
 				showException( _exception)
 				}
+				closeEventCode()
 			}
         }
     }

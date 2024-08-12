@@ -26,6 +26,7 @@ pirateEventText = PirateTalkTranslator(eventText, myPirate)
 			MakePirateSurface(smallPirateSurface, drawPictureRealx, drawPictureRealy) 
 		}
         DrawPirateSurface(smallPirateSurface, other.drawX + other.pictureX, other.drawY + other.pictureY)
+		surface_free(smallPirateSurface)
 	}
    draw_sprite(ShipSlotSpr, 0, drawX + pictureX - 1, drawY + pictureY - 2)  
     

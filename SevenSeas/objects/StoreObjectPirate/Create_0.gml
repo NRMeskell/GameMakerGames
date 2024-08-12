@@ -1,6 +1,19 @@
 /// @description Make Pirate Traits
 
+depth = -101
 GenerateAllPirateTraits()
+
+for(var i=0; i<9; i++)
+    {
+    statTotal[i] = 0
+    stat[i] = 0
+    }
+	
+for(var i=0; i<3; i++)
+    {
+    myAction[i] = noone
+    }
+
 
 ///Limbs
 

@@ -8,7 +8,7 @@ function LoseRandomCargo(argument0) {
 
 	while lostCargoAmount > 0
 	    {
-	    cargoType = irandom(sprite_get_number(CargoSpr)-1)
+	    cargoType = irandom(sprite_get_number(CargoSpr)-2)
 	    if HasStored(cargoType, 1)
 	        {
 	        LoseCargo(cargoType, 1)
@@ -19,17 +19,12 @@ function LoseRandomCargo(argument0) {
     
 	for(i=0; i<array_length_1d(numberCargoLost); i++)
 	    {
-	    if i < array_length_1d(numberCargoLost) - 1{
+		if (numberCargoLost[i] != 0){
 			lostCargo += string(numberCargoLost[i]) + " " + ItemRunner.cargoName[i] + ", "
 			if i == array_length_1d(numberCargoLost) - 2
 				lostCargo += "and "
 		}
-		else if i == array_length_1d(numberCargoLost) -1
-			lostCargo += string(numberCargoLost[i]) + " " + ItemRunner.cargoName[i]
-		}
+	}
     
-	return lostCargo
-
-
-
+	return string_delete(lostCargo, string_length(lostCargo - 1), 2)
 }

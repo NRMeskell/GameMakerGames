@@ -7,7 +7,7 @@ for(i=0; i<pirateNumber; i++)
     newPirate.myLocation = id
     with newPirate
         {   
-		cost = 30
+		cost = 20
         limbsLost = choose(0,0,0,0,1,1,2)
         for(r=0; r<limbsLost; r++){
             myLimb = irandom(5)
@@ -29,21 +29,21 @@ for(i=0; i<pirateNumber; i++)
         
         
         myShirt = MakeRandomShirtItem(irandom(global.seaLevel div 2) + irandom_range(-1, 0))
-        cost += round(myShirt.cost*.75)
+        cost += round(myShirt.cost*.5)
         
         myPants = MakeRandomPantsItem((irandom(global.seaLevel div 2) + irandom_range(-1, 0)))
-        cost += round(myPants.cost*.75)
+        cost += round(myPants.cost*.5)
         
-		repeat(irandom(global.seaLevel) div 2){
+		repeat(min(0, irandom(global.seaLevel) - 1)){
 			PirateLevelUp(false, false)
 			cost += 25
 		}
 		
-        if irandom(1)
+        if irandom(3) > 0
             {
 			handItem = MakeRandomHandItem(0)
             if EquipItem(id, handItem)
-                cost += handItem.cost*0.75
+                cost += handItem.cost*0.5
             }
             
         selected = false

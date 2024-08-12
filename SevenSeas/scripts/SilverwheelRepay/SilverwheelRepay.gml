@@ -11,7 +11,7 @@ function SilverwheelRepay() {
         
 	    global.allowSelect = false
 	    captionText = "Captain Silverwheel"
-	    eventText = "Now that you're a successful pirate, silverwheel asks for repayment for her earlier aid." 
+	    eventText = "Silverwheel arrives, and requests repayment for her aid." 
     
 	    myShip = instance_create(-1000,0,ShipEvent)
 	    with myShip

@@ -1,5 +1,6 @@
 function EncounterCharacter(argument0) {
 	with argument0{
+		myAlarm = room_speed*20
 		ds_list_clear(locations)
 		event_user(0)
 	}
@@ -14,7 +15,4 @@ function EncounterCharacter(argument0) {
 	    var thisEvent = ds_list_find_value(argument0.myPortEvents, irandom(ds_list_size(argument0.myPortEvents)-1))
 	    script_execute(thisEvent)
 	    }
-
-
-
 }

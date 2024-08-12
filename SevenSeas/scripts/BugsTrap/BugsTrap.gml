@@ -18,4 +18,6 @@ function BugsTrap() {
 		with instance_create(0,0,ConditionTimer)
 	        condition = MalariaCrewmate
 	}
+	
+	script_execute(closeEventCode)
 }

@@ -1,9 +1,11 @@
 /// @description Animate
 
-ApplyCrewEffect("stun", targetPirate)
-targetPirate.myHealth -= UpdateCrewDamage(1, targetPirate)
+targetPirate.myHealth -= UpdateCrewDamage(damage, targetPirate)
     
-if !instance_exists(targetPirate){
+if targetPirate.myHealth < 1{
+	with targetPirate
+		event_user(5)
+		
     with instance_create(0, 0, object_index){
         priority = other.priority
         crewTarget = other.crewTarget

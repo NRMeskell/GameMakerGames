@@ -45,11 +45,6 @@ if firstAttack != noone{
         }
     }
 else{
-	if hasPlayerAttack = false
-		with Pirate stunned = false
-	if hasEnemyAttack = false
-		with Enemy stunned = false
-		
     combatView = false
     event_user(0)
     }

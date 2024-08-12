@@ -1,5 +1,6 @@
 /// @description Vars
 
+depth = -101
 spriteIndex = CargoSpr
 itemNumber = 0
 

@@ -2,7 +2,7 @@ function TikiHeads() {
 	//Get Treasure
 
 	global.moraleBoost = "idols"
-	result = irandom(campPower)
+	result = irandom(3)
 	
 	if result = 0 {
 		cursedCrew = instance_find(Pirate, irandom(instance_number(Pirate)-1))

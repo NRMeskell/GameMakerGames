@@ -15,7 +15,7 @@ function OasisAction() {
 	    {
 	    with Pirate
 	        {
-	        UpdateMorale(other.campPower-1, -1)
+	        UpdateMorale(1, -1)
 	        UpdateMorale(1, global.JOLLY)
 	        }
 		ds_list_add(global.notificationList, "beautiful swim!", "the crew had a grand time and gained moral")

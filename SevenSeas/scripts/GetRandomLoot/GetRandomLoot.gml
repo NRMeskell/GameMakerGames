@@ -44,7 +44,7 @@ function GetRandomLoot(argument0, argument1, argument2) {
 	        with newItem
 	            {        
 	            itemNumber = other.randomVal
-	            amount = floor((irandom_range(3,5) + (3*(global.seaLevel)))/ItemRunner.cargoCost[itemNumber]) + 1 + irandom(global.seaLevel)
+	            amount = floor((irandom_range(3,5) + 2*(itemNumber==0) + (2*(global.seaLevel)))/ItemRunner.cargoCost[itemNumber]) + 1 + irandom(global.seaLevel)
 	            cost = 0     
 	            selected = false
 	            }
@@ -68,13 +68,13 @@ function GetRandomLoot(argument0, argument1, argument2) {
 	            preview = false
 				}
 				
-			/*if addItem.object_index == StoreObjectStorable{
+			if addItem.object_index == StoreObjectStorable{
 				if ds_list_find_index(other.itemNames, addItem.itemNumber) == -1
 					ds_list_add(other.itemNames, addItem.itemNumber)
 			} else{
 				if ds_list_find_index(other.itemNames, -1) == -1
 					ds_list_add(other.itemNames, -1)
-			}*/
+			}
 		}
     
 		storeName = argument1

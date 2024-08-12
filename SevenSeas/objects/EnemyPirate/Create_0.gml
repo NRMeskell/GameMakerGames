@@ -2,7 +2,7 @@
 
 image_index = 0
 
-maxHealth = 30
+maxHealth = 30+10*global.seaLevel
 myHealth = maxHealth
 
 event_user(0)

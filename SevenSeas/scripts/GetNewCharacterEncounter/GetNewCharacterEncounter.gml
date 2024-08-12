@@ -6,7 +6,7 @@ function GetNewCharacterEncounter() {
 	    if !global.inPort
 	        {
 	        with CharacterParent{
-	            if ds_list_find_index(locations, global.seaType) != -1 and ds_list_size(myEvents) > 0{
+	            if ds_list_find_index(locations, global.seaType) != -1 and ds_list_size(myEvents) > 0 and myAlarm == 0{
 	                ds_list_add(other.chars, id)
 	                }
 	            }

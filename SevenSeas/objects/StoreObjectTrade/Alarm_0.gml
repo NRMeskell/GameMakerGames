@@ -13,7 +13,7 @@ if type = 1
 else
     {
     sellAmount = max(maxAmount, choose(CargoAmount(type) div 2, CargoAmount(type)))
-    amount = max(1, irandom_range(sellAmount*(ItemRunner.cargoCost[type]*0.5) div 1, sellAmount*ItemRunner.cargoCost[type]*0.8 div 1))
+    amount = max(1, irandom_range(sellAmount*(ItemRunner.cargoCost[type]*0.75) div 1, sellAmount*ItemRunner.cargoCost[type]*0.8 div 1))
     }
     
 name = string(sellAmount) + " " + ItemRunner.cargoName[type]

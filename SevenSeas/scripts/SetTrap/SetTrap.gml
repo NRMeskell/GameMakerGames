@@ -9,7 +9,7 @@ function SetTrap() {
 	else
 	    {
 	    petType = irandom(1)
-	    ds_list_add(ItemRunner.floatingItems, MakeRandomHandItem(petType))
+	    ds_list_add(ItemRunner.floatingItems, MakeRandomPetItem(petType))
     
 	    if petType
 	        petName = "monkey"
@@ -17,7 +17,6 @@ function SetTrap() {
 	        petName = "parrot"
         
 	    ds_list_add(global.notificationList, petName + " caught on board!", "A monkey caught outside the container! After being freed, it joins the crew.")
-	    MakeRandomPetItem(1)
 	    global.moraleBoost = petName + " caught"
 	    with Pirate
 	        UpdateMorale(1, global.JOLLY)

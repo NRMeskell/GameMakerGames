@@ -734,7 +734,7 @@
     {"name":"BatSpr","order":3,"path":"sprites/BatSpr/BatSpr.yy",},
     {"name":"BeachBack","order":4,"path":"sprites/BeachBack/BeachBack.yy",},
     {"name":"BeachFront","order":5,"path":"sprites/BeachFront/BeachFront.yy",},
-    {"name":"BigCloudSpr","order":11,"path":"sprites/BigCloudSpr/BigCloudSpr.yy",},
+    {"name":"BigCloudSpr","order":5,"path":"sprites/BigCloudSpr/BigCloudSpr.yy",},
     {"name":"BirdsSpr","order":2,"path":"sprites/BirdsSpr/BirdsSpr.yy",},
     {"name":"BleedingShotSpr","order":5,"path":"sprites/BleedingShotSpr/BleedingShotSpr.yy",},
     {"name":"BridgeSpr","order":6,"path":"sprites/BridgeSpr/BridgeSpr.yy",},

@@ -2,7 +2,7 @@ function CollectorsRun() {
 	//engage
 	
 	with CoveCollector
-		myVar -= 5
+		myVar = -1
 
 	if argument0
 	    {
@@ -22,11 +22,4 @@ function CollectorsRun() {
 	    }
        
 	script_execute(closeEventCode, 2)
-
-
-
-
-
-
-
 }
