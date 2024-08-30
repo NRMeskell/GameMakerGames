@@ -20,7 +20,7 @@ changeZones = false
 endRound = false
 
 event_user(0)
-showDamage = true
+showDamage = false
 hasAnimation = false
 
 x = myShipTarget.drawX

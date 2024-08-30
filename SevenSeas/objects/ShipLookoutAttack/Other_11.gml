@@ -1,7 +1,15 @@
 /// @description Do attack
 
 shipTarget.allowRangedActions = false;
-    
+
+repeat(damage*priority)
+    {
+    i = irandom(instance_number(crewTarget)-1)
+    targetPirate = instance_find(crewTarget, i)
+    targetPirate.myHealth -= UpdateCrewDamage(1, targetPirate)
+    }
+
+
 //Add damage multiplier
 with instance_create(50,50,EffectParent)
     {
@@ -12,6 +20,6 @@ with instance_create(50,50,EffectParent)
 
     effect = "damageMultiplier"
     multiplier = 1.5
-    duration = 2
+    duration = 1
     }
 

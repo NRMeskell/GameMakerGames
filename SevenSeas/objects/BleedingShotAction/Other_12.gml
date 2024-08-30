@@ -1,6 +1,6 @@
 /// @description Update Info
 
 name = "finishing shots"
-description = "stun and deal " + GetDamage(myAttack) + " to target. If target is killed, this attack is repeated with a random target."
+description = "deal " + GetDamage(myAttack) + " to target. if target is killed, attacks deal 200% damage for 2 rounds."
 
 

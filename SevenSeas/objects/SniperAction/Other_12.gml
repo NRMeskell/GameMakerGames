@@ -2,7 +2,7 @@
 
 
 name = "sniper"
-description = "deals " + GetDamage(myAttack) + " damage to target. If target has one or fewer adjacent enemies, deal double damage."
+description = "deals " + GetDamage(myAttack) + " damage to target."
 
 
 

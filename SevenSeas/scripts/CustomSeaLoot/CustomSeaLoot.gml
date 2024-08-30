@@ -8,7 +8,7 @@ function CustomSeaLoot(itemsAllowed) {
 	        with item
 	            {
 	            name = "pearl"
-	            description = "A rare, beautiful pearl found in the Tropical Waters"
+	            description = "A rare pearl, small enough to not need storage space!"
 	            previewName = "pearl"
 	            amount = 1
 	            itemType = 0       
