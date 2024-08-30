@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"MysteryFog",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"MysteryFog",
+  "parent":{
+    "name":"SeaOfDead",
+    "path":"folders/Scripts/Events/SailingEvents/SeaOfDead.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
