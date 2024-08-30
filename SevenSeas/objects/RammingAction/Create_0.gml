@@ -5,8 +5,8 @@ spriteNumber = 10
 rechargeTime = 6
 myType = "ship"
 
-priorityMin = 3
-priorityMax = 6
+priorityMin = 4
+priorityMax = 7
 
 myAttack = ShipRamming
 

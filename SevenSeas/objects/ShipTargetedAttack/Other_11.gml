@@ -2,15 +2,6 @@
 
 repeat(damage)
     {
-    i = irandom(instance_number(crewTarget)-1)
-    nextTargetPirate = instance_find(crewTarget, i)
-    while !AreAdjacent(targetPirate, nextTargetPirate)
-        {
-        i = irandom(instance_number(crewTarget)-1)
-        nextTargetPirate = instance_find(crewTarget, i)
-        }
-
-    nextTargetPirate.myHealth -= UpdateCrewDamage(1, nextTargetPirate)
+	with crewTarget if AreAdjacent(targetPirate, id)
+        myHealth -= UpdateCrewDamage(1, id)
     }
-
-ApplyCrewEffect("stun", targetPirate)

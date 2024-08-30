@@ -37,7 +37,7 @@ function GabblerTellTales(){
 		result += " Your purse be about " + string(coins) + " gold lighter..."
 		LoseCargo(0, coins)
 	}
-	UpdateMorale(choose(1,2), -1)
+	UpdateMorale(choose(1,2,2,3), -1)
 	ds_list_add(global.notificationList, "Grand Tale!", result)
 	closeEventCode()
 }
@@ -50,7 +50,7 @@ function GabblerIgnore(){
 
 
 function GabblerJack(){
-	var result = "She tells of Ol' Jack Grayhair, A great pirate who patrolled the seas long ago. Legends say he still lives, caged by in an ancient tower." 
+	var result = "She gives a key to a cage which supposedly holds Ol' Jack Grayhair, the legendary pirate who was locked away!" 
 	OldGabbler.myVar = 1
 	if irandom(1) and HasStored(0, 1){
 		var coins = min(irandom_range(1,5), CargoAmount(0))
@@ -59,11 +59,23 @@ function GabblerJack(){
 	}
 	UpdateMorale(choose(1,2), -1)
 	ds_list_add(global.notificationList, "Grand Tale!", result)
+	
+	with instance_create(0,0,Store){
+		//Special Item
+		specialItem = GeneratePetItem(0)
+		specialItem.itemNumber = 15
+		specialItem.itemName = "Ancient Key"
+		specialItem.itemInfo = "A key supposedly for the cage Ol' Jack Grayhair is trapped inside."
+		specialItem.itemPower = "jack grayhair"   
+		specialItem.itemPowerDescription = "Will automatically open the cage in the Old Ruins."
+		ds_list_add(items, specialItem)
+		}
+	
 	closeEventCode()
 }
 
 function GabblerCrown(){
-	var result = "The Gabbler tells of the lost tropical crown, an heirloom of the royal frogs. How the Frog King would rejoice it's return!" 
+	var result = "The Gabbler tells of the lost tropical crown. How the Frog King would rejoice its return!" 
 
 	if irandom(1) and HasStored(0, 1){
 		var coins = min(irandom_range(1,5), CargoAmount(0))
@@ -76,9 +88,9 @@ function GabblerCrown(){
 }
 
 function GabblerRocks(){
-	result = "The Gabbler produces an old stone. Tales say it clicks when the crashing rocks are safe to pass, but who knows if that's true?" 
+	result = "The Gabbler shows you an old rock, who some say clicks when the crashing rocks are safe to pass!" 
 
-	if item == 0{
+	with instance_create(0,0,Store){
 		//Special Item
 		specialItem = GeneratePetItem(0)
 		specialItem.itemNumber = 14
@@ -86,6 +98,7 @@ function GabblerRocks(){
 		specialItem.itemInfo = "Stones which click when the crashing rocks are calm."
 		specialItem.itemPower = "crashing rocks"   
 		specialItem.itemPowerDescription = "Increases the chance of navigating the Crashing Rocks."
+		ds_list_add(items, specialItem)
 		}
 
 	if irandom(1) and HasStored(0, 1){

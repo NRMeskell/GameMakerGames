@@ -30,7 +30,7 @@ itemList[1] = ds_list_create()
 //Generate Loot
 repeat(irandom_range(2,4))
     {
-    type = irandom_range(2,sprite_get_number(CargoSpr)-1)
+    type = irandom_range(2,5)
     newItem = instance_create(0,0,StoreObjectStorable)
     with newItem
         {        

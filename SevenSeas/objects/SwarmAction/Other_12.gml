@@ -2,5 +2,5 @@
 
 
 name = "swarm"
-description = "deals " + GetDamage(myAttack) + " to target and adjacent enemies. Stun targeted enemy."
+description = "deals " + GetDamage(myAttack) + " to a random enemy."
 

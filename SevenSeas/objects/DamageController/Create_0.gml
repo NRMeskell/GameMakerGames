@@ -49,14 +49,14 @@ damageScaler[? ShipBarrageAttack] = 6
 //Lookout Ranged
 damageMin[? ShipLookoutAttack] = 0.8
 damageMax[? ShipLookoutAttack] = 1.0
-damageScaler[? ShipLookoutAttack] = 4
+damageScaler[? ShipLookoutAttack] = 1
 //Target Ranged
 damageMin[? ShipTargetedAttack] = 0.75
-damageMax[? ShipTargetedAttack] = 1.5
-damageScaler[? ShipTargetedAttack] = 4
+damageMax[? ShipTargetedAttack] = 1.2
+damageScaler[? ShipTargetedAttack] = 2
 //Sniper Ranged
-damageMin[? ShipSniperAttack] = 0.9
-damageMax[? ShipSniperAttack] = 1.1
+damageMin[? ShipSniperAttack] = 0.34
+damageMax[? ShipSniperAttack] = 2.0
 damageScaler[? ShipSniperAttack] = 3
 //Chaos Ranged
 damageMin[? ShipChaosAttack] = 0

@@ -9,12 +9,12 @@ function GabblerFoundJack(){
 
 function GabblerGiveCrown(){
 	global.moraleBoost = "Old gabbler"
-	ds_list_add(global.notificationList, "Old Gabbler Sees Crown!", "She refuses to tell any tales until you return the crown to it's rightful owners.")
+	ds_list_add(global.notificationList, "Old Gabbler Sees Crown!", "She refuses to tell any tales until you return the crown to the Frog King.")
 	
 }
 
 function GabblerSailedRocks(){
 	global.moraleBoost = "Old gabbler"
-	ds_list_add(global.notificationList, "Old Gabbler Impressed!", "The Old Gabbler sits to talk, but has no tales to 'impress the crew who sailed the crashing rocks!'")
+	ds_list_add(global.notificationList, "Old Gabbler Impressed!", "The Old Gabbler has no tales which could 'impress a crew who sailed the crashing rocks!'")
 	UpdateMorale(1, -1)
 }

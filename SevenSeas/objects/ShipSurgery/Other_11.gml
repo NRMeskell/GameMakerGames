@@ -1,10 +1,23 @@
 /// @description heal
 
-with myCrewTarget
+with ActionParent 
+    {
+    if other.myShipTarget == Ship and enemyAction == false{
+        if waitLeft > 1 waitLeft -= 1
+	}
+		
+	if other.myShipTarget == CombatRunner and enemyAction == true
+        if waitLeft > 1 waitLeft -= 1
+	}
+
+with instance_create(50, 50, EffectParent)
     {
     if other.myShipTarget = Ship
-        myHealth += ceil((round(1+global.totalMedicalBonus)*other.priority))
+        team = "pirate"
     else
-        myHealth += ceil((round(1+CombatRunner.stats[3])*other.priority))
+        team = "enemy"
+        
+    effect = "damageMultiplier"
+    multiplier = 1.5
+    duration = 1
     }
-

@@ -45,8 +45,12 @@ function RuinsSearch() {
 }
 
 function RuinsHelp() {
-	if argument0{
-		ds_list_add(global.notificationList, "Ol' Jack Grayhair!", "The crew is shocked to discover and invite aboard the legendary 'Jack Grayhair'.")
+	open = false
+	with ItemParent if itemPower == "jack grayhair"
+		other.open = true
+		
+	if argument0 or open{
+		ds_list_add(global.notificationList, "Ol' Jack Grayhair!", "The crew invites aboard the legendary 'Jack Grayhair'!")
 		OldGabbler.myVar = 2
 			
 		grayhair = instance_create(0,0,StoreObjectPirate)

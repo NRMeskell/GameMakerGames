@@ -12,6 +12,6 @@ requiredSlot[0] = "rigging"
 myType = "melle"
 level = 0
 
-needsTarget = true
+needsTarget = false
 
 
