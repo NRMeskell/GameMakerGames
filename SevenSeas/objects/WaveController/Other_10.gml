@@ -6,12 +6,15 @@ if surfaceHeight != waveBase + 2*(waveHeights[0] + waveHeights[1])
 waterSurface = surface_create(room_width, surfaceHeight)
 surface_set_target(waterSurface)
 
+if room == GameRoom
+	waveColor = oceanColor[? global.seaType]
+
 if global.lighting < 2
 	var wave_color = make_color_hsv(colour_get_hue(waveColor), colour_get_saturation(waveColor), (color_get_value(waveColor)+colour_get_value(Clock.skyColor))/2)
 else
 	var wave_color = waveColor
-	
-var foam = merge_color(merge_color(c_white, Clock.skyColor, 0.5+0.3*(global.lighting != 2)), waveColor, max(0, 0.6-0.2*(global.lighting != 2)))
+
+var foam = merge_color(merge_color(c_white, Clock.skyColor, 0.5+0.3*(global.lighting != 2)), wave_color, max(0, 0.6-0.2*(global.lighting != 2)))
 	
 var tex = sprite_get_texture(WaveSpr, 0);
 var waveDis = texture_get_texel_width(tex)*20*0.8
@@ -27,10 +30,10 @@ for(var r=waveMin; r<waveMax/wdw; r+=1){
 	//draw wave
 	var startTex = (waveDis*textureNum) mod 0.8
 	draw_primitive_begin_texture(pr_trianglestrip, tex);
-	draw_vertex_texture_color(r*wdw, height - (room_height-surfaceHeight), startTex, 0, waveColor, waveAlpha);
-	draw_vertex_texture_color((r+1)*wdw, nextHeight - (room_height-surfaceHeight), startTex + waveDis, 0, waveColor, waveAlpha);
-	draw_vertex_texture_color(r*wdw, 300, startTex, 1, waveColor, waveAlpha);
-	draw_vertex_texture_color((r+1)*wdw, 300, startTex + waveDis, 1, waveColor, waveAlpha);
+	draw_vertex_texture_color(r*wdw, height - (room_height-surfaceHeight), startTex, 0, wave_color, waveAlpha);
+	draw_vertex_texture_color((r+1)*wdw, nextHeight - (room_height-surfaceHeight), startTex + waveDis, 0, wave_color, waveAlpha);
+	draw_vertex_texture_color(r*wdw, 300, startTex, 1, wave_color, waveAlpha);
+	draw_vertex_texture_color((r+1)*wdw, 300, startTex + waveDis, 1, wave_color, waveAlpha);
 	draw_primitive_end();
 
 

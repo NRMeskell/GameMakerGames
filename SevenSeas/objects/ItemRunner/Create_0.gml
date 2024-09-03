@@ -301,6 +301,7 @@ cargoCost[3] = 1
 cargoCost[4] = 1
 cargoCost[5] = 4
 cargoCost[6] = 3
+cargoCost[7] = 10
 
 cargoName[0] = "gold"
 cargoName[1] = "jewels"
@@ -309,4 +310,5 @@ cargoName[3] = "planks"
 cargoName[4] = "food"
 cargoName[5] = "grog"
 cargoName[6] = "food"
+cargoName[6] = "pearls"
 

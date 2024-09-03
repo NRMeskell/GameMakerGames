@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"PlagueShipLook",
   "parent":{
-    "name":"SevenSeas",
-    "path":"SevenSeas.yyp",
+    "name":"PlagueShip",
+    "path":"folders/Scripts/Events/SailingEvents/PirateEvents/PlagueShip.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -7,5 +7,8 @@ function KnifeGamesAllow() {
 			KnifeGamePirate = other.myPirate
 		}
 
-	ds_list_add(global.notificationList, myPirate.firstName + " relieved!", "They continue to play their knife games in their free time.")
+	with otherPirate
+		UpdateMorale(-1, -1)
+		
+	ds_list_add(global.notificationList, myPirate.firstName + " relieved!", "They continue to play their knife games, annoying " + otherPirate.firstName + ".")
 }

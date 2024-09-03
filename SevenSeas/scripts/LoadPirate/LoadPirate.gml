@@ -27,13 +27,6 @@ function LoadPirate(argument0) {
 	    pirate.mySkin = PirateWomanSkinSpr
 	    pirate.myFace = PirateWomanFaceSpr
 	    }
-		
-	ds_list_clear(pirate.myRequestList)
-	var readReqNum = min(2, ini_read_real("requests", "num", 2))
-	for(var i=0; i<readReqNum; i++){
-		request = asset_get_index(ini_read_string("requests", "req" + string(i), script_get_name(EventController.requestLists[pirate.myMainPer][irandom(2)])))
-		ds_list_add(pirate.myRequestList, request)
-	}
 
 	//speech
 	ds_map_clear(pirate.myPirateDict)

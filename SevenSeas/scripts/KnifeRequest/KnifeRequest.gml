@@ -4,19 +4,17 @@ function KnifeRequest(argument0) {
 	with instance_create(0,0,Request)
 	    {
 	    myPirate = argument0
+		otherPirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+	    while otherPirate == myPirate and instance_number(Pirate) > 1
+	        otherPirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
 			
 	    buttonNumber = 2
-	    ds_list_add(buttons, RaceAllow) 
+	    ds_list_add(buttons, KnifeGamesAllow) 
 	    global.allowSelect = false
-		activity = choose("juggling", "throwing", "spinning")
-	    eventText = "'the crew found me " + activity + " knives, and said it's too dangerous! I promise it's not, Can I keep " + activity + "?'"  
+		activity = choose("throwing", "spinning", "twirling")
+	    eventText = otherPirate.name + "' found me " + activity + " knives, and told me to stop! do I have to?'"  
     
 	    global.moraleBoost = "knives"
 	    }
-
-
-
-
-
 
 }

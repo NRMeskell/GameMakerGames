@@ -476,13 +476,13 @@ condCritera = ds_map_create()
 
 //Cove
 ds_map_add(condDes, global.seaNames[0], "Prove your crew's worth beyond a doubt!")
-ds_map_add(condCritera, global.seaNames[0], "GET A 4-STAR CREW")
+ds_map_add(condCritera, global.seaNames[0], "TRAIN A 4-STAR CREW")
 ds_map_add(condImage, global.seaNames[0], 0) 
 winCond[0] = 0
  
 //tropical islands
-ds_map_add(condDes, global.seaNames[1], "Collect more pearls than any ship before!")
-ds_map_add(condCritera, global.seaNames[1], "PEARLS COLLECTED: 0/10")
+ds_map_add(condDes, global.seaNames[1], "Gain the trust of the territorial locals!")
+ds_map_add(condCritera, global.seaNames[1], "BEFRIEND THE FROG KING")
 ds_map_add(condImage, global.seaNames[1], 1) 
 winCond[1] = 0
 

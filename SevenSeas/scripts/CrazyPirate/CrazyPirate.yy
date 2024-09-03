@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"CrazyPirate",
   "parent":{
-    "name":"Conditions",
-    "path":"folders/Scripts/Events/Conditions.yy",
+    "name":"RaftPirate",
+    "path":"folders/Scripts/Events/SailingEvents/PirateEvents/RaftPirate.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

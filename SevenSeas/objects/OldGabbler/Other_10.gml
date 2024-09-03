@@ -12,11 +12,8 @@ if myState != "unmet"{
 	}
 	
 	//Possess Frog King's Crown
-	with ItemParent{
-		if itemName == "Tropical Crown"{
-			with other
-				UpdateCharacterPortEvents(GabblerGiveCrown);
-		}
+	if ItemExists("Tropical Crown"){
+		UpdateCharacterPortEvents(GabblerGiveCrown);
 	}
 	
 	//Have sailed the rocks (sea conquered)

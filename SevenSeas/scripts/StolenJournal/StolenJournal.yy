@@ -6,7 +6,7 @@
   "name":"StolenJournal",
   "parent":{
     "name":"MissingJournal",
-    "path":"folders/Scripts/Events/Requests/fearsome/MissingJournal.yy",
+    "path":"folders/Scripts/Events/Requests/keen/MissingJournal.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

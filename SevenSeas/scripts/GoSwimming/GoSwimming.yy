@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"GoSwimming",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"GoSwimming",
+  "parent":{
+    "name":"GoSwimming",
+    "path":"folders/Scripts/Events/Requests/Jolly/GoSwimming.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

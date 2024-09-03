@@ -11,6 +11,15 @@ waveSpeeds = [1, 0.5]
 waveWidths = [70, 30]
 waveOffsets = [irandom(room_width), irandom(room_width)]
 
+oceanColor = ds_map_create()
+oceanColor[? global.seaNames[0]] = make_color_rgb(36, 51, 182)
+oceanColor[? global.seaNames[1]] = make_color_rgb(23, 123, 130)
+oceanColor[? global.seaNames[2]] = make_color_rgb(80, 86, 138)
+oceanColor[? global.seaNames[3]] = make_color_rgb(104, 69, 150)
+oceanColor[? global.seaNames[4]] = make_color_rgb(95,10,1)
+oceanColor[? global.seaNames[5]] = make_color_rgb(85,25,1)
+oceanColor[? global.seaNames[6]] = make_color_rgb(0,15,100)
+
 waveDirection = 1
 waveAmplifier = 1
 waveMovement = 1

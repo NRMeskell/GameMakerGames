@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"RottedPlanks",
   "parent":{
-    "name":"Conditions",
-    "path":"folders/Scripts/Events/Conditions.yy",
+    "name":"RottenPlanks",
+    "path":"folders/Scripts/Events/SailingEvents/PirateEvents/RottenPlanks.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

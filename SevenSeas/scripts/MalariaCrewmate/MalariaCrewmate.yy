@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"MalariaCrewmate",
   "parent":{
-    "name":"Conditions",
-    "path":"folders/Scripts/Events/Conditions.yy",
+    "name":"Bugs",
+    "path":"folders/Scripts/Events/SailingEvents/TropicalEvents/Bugs.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

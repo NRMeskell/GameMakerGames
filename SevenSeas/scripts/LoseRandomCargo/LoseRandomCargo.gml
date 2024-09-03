@@ -8,7 +8,7 @@ function LoseRandomCargo(argument0) {
 
 	while lostCargoAmount > 0
 	    {
-	    cargoType = irandom(sprite_get_number(CargoSpr)-2)
+	    cargoType = irandom(sprite_get_number(CargoSpr)-1)
 	    if HasStored(cargoType, 1)
 	        {
 	        LoseCargo(cargoType, 1)

@@ -8,7 +8,7 @@ function BlackSpotArrives() {
 	    ds_list_add(buttonStats, 0, 6)
 	    ds_list_add(buttonRequires, 0, global.eventDiff[6,2])
 	    ds_list_add(buttonCosts, 0, 0)
-	    ds_list_add(buttonText, "hope it goes away", "try to remove the spot")
+	    ds_list_add(buttonText, "hope it goes away", "remove the spot")
         
 		myPirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
 	    global.allowSelect = false
@@ -25,6 +25,10 @@ function BlackSpotLeave() {
 		UpdateMorale(-1, -1)
 		UpdateMorale(-1, global.JOLLY)
 	}
+	with instance_create(0,0, ConditionTimer){
+		myPirate = other.myPirate
+		myEvent = BlackSpotResolve
+	}
 }
 
 function BlackSpotRemove() {
@@ -32,11 +36,14 @@ function BlackSpotRemove() {
 		ds_list_add(global.notificationList, "Black spot removed!", "It appears to have been some dirt.")
 	}
 	else{
-		ds_list_add(global.notificationList, "black spot remains", "It stays, no matter how hard the area is scrubbed. Even cutting it off doesn't seem to work...")
-		myPirate.myHealth -= 10
-		with myPirate
-			UpdateMorale(-2, -1)
-			
+		ds_list_add(global.notificationList, "black spot remains", "No matter how hard the area is scrubbed and cut, the spot doesn't come off! The crew begin to worry...")
+		myPirate.myHealth -= 15
+		with myPirate{
+			UpdateMorale(-1, -1)
+			UpdateMorale(-1, global.JOLLY)
+		}
+		UpdateMorale(-1, -1)
+		
 		with instance_create(0,0, ConditionTimer){
 			myPirate = other.myPirate
 			myEvent = BlackSpotResolve
@@ -45,9 +52,14 @@ function BlackSpotRemove() {
 }
 
 function BlackSpotResolve(){
-	with myPirate{
-		event_user(3)
+	if irandom(1){
+		with myPirate{
+			event_user(3)
+		}
+		ds_list_add(global.notificationList, "Black Spot!", myPirate.name + "'s black spot grows larger, and then disappears... along with a part of their body!")
 	}
-	ds_list_add(global.notificationList, "Black Spot!", myPirate.name + "'s black spot grows larger, and then disappears...alone with a part of their body!")
+	else{
+		ds_list_add(global.notificationList, "Black Spot Gone!", myPirate.name + "'s black spot has gone away in the night. They hope it doesn't come back!")
+	}
 }
 

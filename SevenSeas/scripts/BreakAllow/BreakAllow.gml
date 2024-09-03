@@ -11,8 +11,4 @@ function BreakAllow() {
 	    }
     
 	ds_list_add(global.notificationList, "restful break", "some of the crew were annoyed, but " + myPirate.firstName + " had a nice nap.")
-    
-
-
-
 }

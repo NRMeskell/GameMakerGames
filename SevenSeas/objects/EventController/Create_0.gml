@@ -2,7 +2,7 @@
 
 eventTimeAmount = room_speed*5
 eventTimer = random_range(1,2)*eventTimeAmount
-global.healTimer = room_speed
+//global.healTimer = room_speed
 
 //Normal Events
 stillEventList = ds_list_create()
@@ -22,10 +22,10 @@ ds_list_add(roughEventList, SeaSickPirates, ManOverboard, SeaSickPirates, MastDa
 //NORMAL EVENT LIST PHASED OUT!!!
 
 
-ds_list_add(eventList[0], Shortcut, BirdsArrive, Stowaway, SupplyBoxArrive, RaftPirate, PirateShipArrive, FloatingBarrel, FloatingBarrel, PirateShipArrive, TradingPostArrive, PirateShipArrive, TradingPostArrive, PlagueShip, MerchantArrive)
-ds_list_add(eventList[1], FloatingBarrel, MermaidRocks, TropicalFishArrive, BugsAttack, StrangeAnimal, TropicalHeat, FrogsArrive, BirdsArrive, DolphinsArrive, SpoiledFood, PirateShipArrive, RottenPlanks, MerchantArrive, BirdsArrive)
-ds_list_add(eventList[2], RottenPlanks, Shortcut, FloatingBarrel, RaftPirate, PirateShipArrive, FloatingBarrel, Stowaway, ScavengersArrive, DamagedShip, ThickFogArrive, RuinsArrive, FloatingDebris, FloatingDebris, MerchantArrive, PlagueShip)
-ds_list_add(eventList[3], ThickFogArrive, MysteryFogArrive)
+ds_list_add(eventList[0], Shortcut, BirdsArrive, Stowaway, SupplyBoxArrive, RaftPirate, FloatingBarrel, FloatingBarrel, PirateShipArrive, TradingPostArrive, PirateShipArrive, PlagueShip, MerchantArrive)
+ds_list_add(eventList[1], FloatingBarrel, MermaidRocks, TropicalFishArrive, BugsAttack, StrangeAnimal, TropicalHeat, FrogsArrive, BirdsArrive, DolphinsArrive, SpoiledFood, RottenPlanks, BirdsArrive, MerchantArrive)
+ds_list_add(eventList[2], Shortcut, FloatingBarrel, RaftPirate, PirateShipArrive, Stowaway, ScavengersArrive, DamagedShip, ThickFogArrive, RuinsArrive, FloatingDebris, FloatingDebris, MerchantArrive)
+ds_list_add(eventList[3], ThickFogArrive, MysteryFogArrive, FloatingLights, BlackSpotArrives, RuinsArrive, FloatingBarrel, HowlingWinds, SkelRaftPirate, SpoiledFood, MerchantArrive)
 ds_list_add(eventList[4], DolphinsArrive)
 ds_list_add(eventList[5], DolphinsArrive)
 ds_list_add(eventList[6], DolphinsArrive)
@@ -54,7 +54,7 @@ eventListPort[6] = ds_list_create()
 ds_list_add(eventListPort[0], FoundItems, PortFight, RefreshmentStand, Entertainers)
 ds_list_add(eventListPort[1], CargoStolen, HostileLocals, WildAnimals, FruitBaskets, RefreshmentStand)
 ds_list_add(eventListPort[2], TeasingLocals, CargoStolen, PortFight, PoorLanding, Entertainers)
-ds_list_add(eventListPort[3], CargoStolen, )
+ds_list_add(eventListPort[3], CargoStolen, SkeletalArmArrives, )
 ds_list_add(eventListPort[4], PoorLanding)
 ds_list_add(eventListPort[5], CargoStolen)
 ds_list_add(eventListPort[6], Entertainers, HostileLocals)
@@ -114,10 +114,10 @@ event_user(1)*/
 
 
 ///Request lists
-requestLists[0] = [BreakRequest, PartyCrew, InstrumentLearn, NewShifts, ShantyRequest]
-requestLists[1] = [Checkers, MessyPirate, LessNoise, StarsMapping, ImproveShip, CookLearn]
-requestLists[2] = [BugSquash, FlagDesign, StolenJournal, KnifeKitchen, HardenedTraining, NewWeaponRequest]
-requestLists[3] = [RaceUpMast, SpearFishing, BackflipRequest, KnifeRequest, RunAround]
+requestLists[0] = [BreakRequest, GoSwimming, InstrumentLearn, NewShifts, ShantyRequest]
+requestLists[1] = [Checkers, MessyPirate, FlagDesign, StolenJournal, StarsMapping]
+requestLists[2] = [BugSquash, KnifeKitchen, LessNoise, RunAround, HardenedTraining]
+requestLists[3] = [RaceUpMast, SpearFishing, BackflipRequest, KnifeRequest, CargoJuggle]
 
 
 //Reputation

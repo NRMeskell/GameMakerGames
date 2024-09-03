@@ -12,7 +12,7 @@ function SkeletalArmArrives() {
 	    ds_list_add(buttonText, "leave the " + skelType + " be", "smash the " + skelType, "give the " + skelType + " food")
         
 	    global.allowSelect = false
-	    captionText = "Skeletal " + skelType + " found!"
+	    captionText = "Skeletal " + skelType + "!"
     
 	    eventText = "a detached, skeletal " + skelType + " is found scraping around the deck!"
 	    global.moraleBoost = "skeleton"  
@@ -20,7 +20,7 @@ function SkeletalArmArrives() {
 }
 
 function SkeletalArmLeave() {
-	ds_list_add(global.notificationList, "the creepy " + skelType + " wanders about the ship before climbing back overboard.")
+	ds_list_add(global.notificationList, "skeleton leaves", "the creepy " + skelType + " wanders about the ship before climbing back overboard.")
 	UpdateMorale(-2, -1)
 	UpdateMorale(1, global.DARING)
 }

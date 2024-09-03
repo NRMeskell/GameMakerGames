@@ -6,7 +6,7 @@
   "name":"NoiseAllow",
   "parent":{
     "name":"LessNoise",
-    "path":"folders/Scripts/Events/Requests/keen/LessNoise.yy",
+    "path":"folders/Scripts/Events/Requests/fearsome/LessNoise.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -15,6 +15,7 @@
     {"$GMSpriteFrame":"","%Name":"910ffafb-b062-4dd5-85f7-ee1e91dc3192","name":"910ffafb-b062-4dd5-85f7-ee1e91dc3192","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"38d77e03-75c0-465f-b06a-8b2037e34c58","name":"38d77e03-75c0-465f-b06a-8b2037e34c58","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"b656d01e-55f9-49fe-9680-ec4931a875ad","name":"b656d01e-55f9-49fe-9680-ec4931a875ad","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"1f3a838c-684f-43da-aa86-623a7be3a249","name":"1f3a838c-684f-43da-aa86-623a7be3a249","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -35,7 +36,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"",
+    "%Name":"PirateWomanSkinSpr",
     "autoRecord":true,
     "backdropHeight":1080,
     "backdropImageOpacity":0.5,
@@ -51,7 +52,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":3.0,
+    "length":4.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -59,7 +60,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"",
+    "name":"PirateWomanSkinSpr",
     "playback":1,
     "playbackSpeed":1.0,
     "playbackSpeedType":1,
@@ -79,6 +80,9 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b656d01e-55f9-49fe-9680-ec4931a875ad","path":"sprites/PirateWomanSkinSpr/PirateWomanSkinSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"e9707301-f298-4c4a-abe7-c85c99a53867","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1f3a838c-684f-43da-aa86-623a7be3a249","path":"sprites/PirateWomanSkinSpr/PirateWomanSkinSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"e30986a2-5cf0-47be-9c67-8bde800805fb","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

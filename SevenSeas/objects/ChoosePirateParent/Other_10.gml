@@ -31,9 +31,6 @@ with CreatePirate(false)
 	
     myMainPer = other.myMainPer
     mySecondPer = other.mySecondPer
-	
-	ds_list_clear(myRequestList)
-    ds_list_copy(myRequestList, other.myRequestList)
     
     EquipItem(id, other.myShirt)
     EquipItem(id, other.myPants)

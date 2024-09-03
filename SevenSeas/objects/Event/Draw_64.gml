@@ -23,7 +23,7 @@ for(i=-buttonNumber; i < buttonNumber; i+=2)
     {    
     requiredAmount = ds_list_find_value(buttonRequires, (i+buttonNumber)/2)
     requiredCost = ds_list_find_value(buttonCosts, (i+buttonNumber)/2)
-    haveAmount = Ship.myStatsNumList[ds_list_find_value(buttonStats, (i+buttonNumber)/2)]
+    haveAmount = (requiredCost > 0) or Ship.myStatsNumList[ds_list_find_value(buttonStats, (i+buttonNumber)/2)]
     haveCost = CargoAmount(ds_list_find_value(buttonStats, (i+buttonNumber)/2))
     successChance  = (requiredAmount == 0) ? 100 : min(round(200/(1+exp(-(haveAmount/requiredAmount-0.6)*4)) div 2), 99)
         

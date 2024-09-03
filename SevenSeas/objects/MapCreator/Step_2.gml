@@ -37,14 +37,6 @@ for(currentSea=0; currentSea<seaNumber; currentSea++){
         if stars > 3 and ds_map_find_value(seas[currentSea], "conquered") == false
             event_user(1)
         }
-        
-    //Tropical conquering
-    else if currentSeaType == global.seaNames[1]  
-        {
-        ds_map_replace(condCritera, global.seaNames[1], "Collected pearls: " + string(winCond[1]) + "/10")
-        if winCond[1] > 9 and ds_map_find_value(seas[currentSea], "conquered") == false
-            event_user(1)
-        }
 }
 
 ///Release new seas
