@@ -11,7 +11,7 @@ function TropicalHeat() {
 	    ds_list_add(buttonText, "keep working", "take a break", "provide food and water")
         
 	    global.allowSelect = false
-	    captionText = "Tropical Heat!"
+	    captionText = "Blazing Heat!"
     
 	    eventText = "The crew is exhuasted, overheating, and tired!" 
 	    global.moraleBoost = "heat"

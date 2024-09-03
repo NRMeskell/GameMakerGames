@@ -11,7 +11,7 @@ for(r=0; r<buttonNumber; r++)
     {   
     requiredAmount = max(ds_list_find_value(buttonRequires, r), 1)
     requiredCost = ds_list_find_value(buttonCosts, r)
-    haveAmount = Ship.myStatsNumList[ds_list_find_value(buttonStats, r)]
+    haveAmount = (requiredCost > 0) or Ship.myStatsNumList[ds_list_find_value(buttonStats, r)]
     haveCost = CargoAmount(ds_list_find_value(buttonStats, r))
     successChance = (requiredAmount == 0) ? 100 : min(round(200/(1+exp(-(haveAmount/requiredAmount-0.6)*4)) div 2), 99)
         

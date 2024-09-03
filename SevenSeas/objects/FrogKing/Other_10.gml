@@ -6,10 +6,7 @@ if myState == "unmet" or myState == "free" or myState == "payment" or myState ==
     UpdateCharacterEvents(FrogKingArrive)
     }
 else if myState = "annoyed"{
-    UpdateCharacterEvents(FrogKingDemandLeave)
-    }
-else if myState = "war"{   
-    UpdateCharacterEvents(FrogKingAttack)
+    UpdateCharacterEvents(choose(FrogKingArrive, FrogKingAttack))
     }
 else{
 	UpdateCharacterEvents(FrogKingArrive)

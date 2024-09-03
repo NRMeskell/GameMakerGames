@@ -3,11 +3,13 @@ function ShiftsAllow() {
 
 	with Pirate
 	    {
-	    UpdateMorale(-1, global.KEEN)
-	    UpdateMorale(-2, global.FEARSOME)
+	    UpdateMorale(1, global.KEEN)
+	    UpdateMorale(-1, global.FEARSOME)
+		UpdateMorale(-1, global.DARING)
+		UpdateMorale(choose(-1, 0), global.JOLLY)
 	    }
     
-	ds_list_add(global.notificationList, "Shifts changed!", "new shifts have been implimented, and the crew adjusts to the new pattern of life")
+	ds_list_add(global.notificationList, "Shifts changed!", "the crew adjusts to the new pattern of life")
 
 
 

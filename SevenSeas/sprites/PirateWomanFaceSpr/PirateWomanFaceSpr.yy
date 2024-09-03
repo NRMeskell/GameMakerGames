@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"PirateWomanFaceSpr",
   "bboxMode":0,
-  "bbox_bottom":29,
+  "bbox_bottom":31,
   "bbox_left":40,
   "bbox_right":54,
   "bbox_top":11,
@@ -20,6 +20,7 @@
     {"$GMSpriteFrame":"","%Name":"e2d041d1-1c41-46a7-a380-fe10d10573a5","name":"e2d041d1-1c41-46a7-a380-fe10d10573a5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"0430f0f5-434f-4842-9467-83728bbe083b","name":"0430f0f5-434f-4842-9467-83728bbe083b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"68a22c13-b261-48a5-a1f0-5aad349a2f9b","name":"68a22c13-b261-48a5-a1f0-5aad349a2f9b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"73301b4e-d43f-46d0-88dd-44f11f029a57","name":"73301b4e-d43f-46d0-88dd-44f11f029a57","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -27,6 +28,7 @@
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"30adf34d-89af-4702-9cb8-9ecb1fcf380e","blendMode":0,"displayName":"default","isLocked":false,"name":"30adf34d-89af-4702-9cb8-9ecb1fcf380e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"c0ec32d0-5be2-4de6-86e6-f4c1e427b4c9","blendMode":0,"displayName":"default","isLocked":false,"name":"c0ec32d0-5be2-4de6-86e6-f4c1e427b4c9","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
   ],
   "name":"PirateWomanFaceSpr",
   "nineSlice":null,
@@ -40,7 +42,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"",
+    "%Name":"PirateWomanFaceSpr",
     "autoRecord":true,
     "backdropHeight":1080,
     "backdropImageOpacity":0.5,
@@ -56,7 +58,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":8.0,
+    "length":9.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -64,7 +66,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"",
+    "name":"PirateWomanFaceSpr",
     "playback":1,
     "playbackSpeed":1.0,
     "playbackSpeedType":1,
@@ -99,6 +101,9 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"68a22c13-b261-48a5-a1f0-5aad349a2f9b","path":"sprites/PirateWomanFaceSpr/PirateWomanFaceSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"97674e01-9919-4a78-88cc-433702341afc","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"73301b4e-d43f-46d0-88dd-44f11f029a57","path":"sprites/PirateWomanFaceSpr/PirateWomanFaceSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"7033a845-60eb-4b83-bbbc-3424671d0540","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

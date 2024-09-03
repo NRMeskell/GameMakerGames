@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"HeatSickness",
   "parent":{
-    "name":"Conditions",
-    "path":"folders/Scripts/Events/Conditions.yy",
+    "name":"Heat",
+    "path":"folders/Scripts/Events/SailingEvents/TropicalEvents/Heat.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -9,8 +9,8 @@ function RunAllow() {
 	else if irandom(1)
 	    {
 		cargoAmount = irandom_range(1,3)
-		LoseRandomCargo(cargoAmount)
-	    ds_list_add(global.notificationList, "Cargo overboard!", myPirate.firstName + " threw " + string(cargoAmount) + " off the ship to make room!")
+		cargoLost = LoseRandomCargo(cargoAmount)
+	    ds_list_add(global.notificationList, "Cargo overboard!", myPirate.firstName + " threw " + string(cargoLost) + " off the ship to make room!")
 	    }
 	else{
 		cargoAmount = irandom_range(1,3)

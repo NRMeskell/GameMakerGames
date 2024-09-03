@@ -44,10 +44,6 @@ function SavePirate(argument0, argument1) {
 	ini_write_string("stats", "myHealth", pirate.myHealth)
 	ini_write_string("stats", "morale", pirate.morale)
 	
-	ini_write_string("requests", "num", ds_list_size(pirate.myRequestList))
-	for(i=0; i<ds_list_size(pirate.myRequestList); i++)
-		ini_write_string("requests", "req" + string(i), script_get_name(ds_list_find_value(pirate.myRequestList,i)))
-
 	//equipment
 	ini_write_string("equipment", "shirt", SaveItem(pirate.myShirt))
 	ini_write_string("equipment", "pants", SaveItem(pirate.myPants))

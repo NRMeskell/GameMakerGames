@@ -61,7 +61,7 @@ function GeneratePirateLooks() {
 	skinColor = merge_color(c_white, merge_color(c_black, c_red, 0.2), skinDark)
 
 	face = myMainPer * 2 + irandom(1)
-	body = irandom(sprite_get_number(PirateManSkinSpr)-1)
+	body = irandom(sprite_get_number(PirateManSkinSpr)-2)
 
 	beard = beardType[myMainPer]
 	hair = hairType[myMainPer]

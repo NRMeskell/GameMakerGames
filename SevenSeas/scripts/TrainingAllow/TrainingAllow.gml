@@ -13,15 +13,12 @@ function TrainingAllow() {
 	else if irandom(1)
 	    {
 	    pirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
-	    training = choose("swordsmanship", "gunmanship")
-	    ds_list_add(global.notificationList, "hardened crew!", "the crew trains hard, and " + pirate.name + " improved their " + training + "!")
+	    ds_list_add(global.notificationList, "hardened crew!", "the crew trains hard, and " + pirate.name + " improved their maximum health!")
     
 	    with pirate
 	        {
-	        if other.training == "swordsmanship"
-	            stat[0] ++
-	        else
-	            stat[1] ++
+	        maxHealth = (maxHealth*1.2) div 1
+			myHealth = (myHealth*1.2) div 1
 	        }
 	    }
 	else{

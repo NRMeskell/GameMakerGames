@@ -27,19 +27,10 @@ if eventTimer <= 0
         else if eventType == "Request"{
             //get pirate
 			requestPirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
-			
+			currentRequest = requestLists[requestPirate.myMainPer][irandom(array_length(requestLists[requestPirate.myMainPer])-1)]
 			//choose request 
-			currentRequest = ds_list_find_value(requestPirate.myRequestList, irandom(ds_list_size(requestPirate.myRequestList)-1))
 			script_execute(currentRequest, requestPirate)  
-			
-			//update pirate requests
-			if irandom(ds_list_size(requestPirate.myRequestList)) <= 3
-				addNum = irandom(2)
-			else
-				addNum = irandom_range(3, array_length(requestLists[requestPirate.myMainPer])-1)
-	
-			ds_list_add(requestPirate.myRequestList, requestLists[requestPirate.myMainPer][addNum])
-            }
+			}
         //Special Events
         else if eventType == "Special Event"{
             script_execute(ds_list_find_value(ds_map_find_value(specialEventMap, global.seaType), irandom(ds_list_size(ds_map_find_value(specialEventMap, global.seaType))-1)))

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"CargoJuggle",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"CargoJuggle",
+  "parent":{
+    "name":"CargoJuggle",
+    "path":"folders/Scripts/Events/Requests/daring/CargoJuggle.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

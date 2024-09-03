@@ -65,8 +65,11 @@ for(i=0; i<tradeNumber; i++)
     with newTrade
         {
         type = irandom_range(2,5)
-        while ds_list_find_index(other.types, type) != -1
+        while ds_list_find_index(other.types, type) != -1{
             type = irandom_range(2,5)
+			if global.seaType = "tropical waters" and irandom(1)
+				type = 7
+		}
         
         ds_list_add(other.types, type)
         myLocation = other.id

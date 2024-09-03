@@ -8,15 +8,14 @@ function SupplyBoxDeposit() {
 	for(i=0; i<tradeNumber; i++)
 	    {
 	    newTrade = instance_create(-50,-50,StoreObjectTrade)
-	    with newTrade
-	        {
+	    with newTrade {
 	        type = irandom_range(2,5)
 	        while ds_list_find_index(other.types, type) != -1
 	            type = irandom_range(2,5)
         
 	        ds_list_add(other.types, type)
 	        selected = false
-	        }
+	    }
         
 	    ds_list_add(tradeList, newTrade)
 	    }

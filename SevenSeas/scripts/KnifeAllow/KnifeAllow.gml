@@ -8,7 +8,7 @@ function KnifeAllow() {
 	    preview.itemName = "Butcher knife"
 	    preview.itemInfo = "A large beautiful kitchen knife"
 	    preview.twoHanded = false
-	    preview.bonus[0] = 2
+	    preview.bonus[0] = global.seaLevel div 2 + 1
 	    preview.bonus[1] = 0
 	    ds_list_add(ItemRunner.floatingItems, MakeHandItem(preview))
 	    instance_destroy(preview)

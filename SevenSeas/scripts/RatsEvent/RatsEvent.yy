@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"RatsEvent",
   "parent":{
-    "name":"Conditions",
-    "path":"folders/Scripts/Events/Conditions.yy",
+    "name":"FloatingBarrel",
+    "path":"folders/Scripts/Events/SailingEvents/PirateEvents/FloatingBarrel.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

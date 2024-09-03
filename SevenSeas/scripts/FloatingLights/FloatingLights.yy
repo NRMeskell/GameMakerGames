@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"FloatingLights",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"FloatingLights",
+  "parent":{
+    "name":"SeaOfDead",
+    "path":"folders/Scripts/Events/SailingEvents/SeaOfDead.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

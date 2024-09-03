@@ -12,10 +12,4 @@ function SpearFishing(argument0) {
     
 	    global.moraleBoost = "fishing"
 	    }
-
-
-
-
-
-
 }

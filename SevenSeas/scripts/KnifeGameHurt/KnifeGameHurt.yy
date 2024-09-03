@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"KnifeGameHurt",
   "parent":{
-    "name":"Conditions",
-    "path":"folders/Scripts/Events/Conditions.yy",
+    "name":"KnifeGames",
+    "path":"folders/Scripts/Events/Requests/daring/KnifeGames.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
