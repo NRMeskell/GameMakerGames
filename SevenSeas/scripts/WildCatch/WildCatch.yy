@@ -6,7 +6,7 @@
   "name":"WildCatch",
   "parent":{
     "name":"WildAnimals",
-    "path":"folders/Scripts/Events/LandingEvents/PortEvents/Events/WildAnimals.yy",
+    "path":"folders/Scripts/Events/LandingEvents/Events/WildAnimals.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"WellermanSnd",
+  "soundFile":"WellermanSnd.wav",
   "type":0,
-  "volume":0.2,
+  "volume":1.0,
 }

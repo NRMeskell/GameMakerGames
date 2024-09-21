@@ -9,7 +9,7 @@ function GetRandomLoot(argument0, argument1, argument2) {
 	    {
 	    if argument2 == undefined
 	        {
-	        lootList = [-1,0,0,0,0,irandom(6)]
+	        lootList = [-1,0,0,0,1,irandom(6)]
 	        }
 	    else
 	        {
@@ -20,7 +20,7 @@ function GetRandomLoot(argument0, argument1, argument2) {
 				
 	    if randomVal < 0
 	        {
-	        type = choose(0,1,1,1,1,2,2,3,3)
+	        type = choose(1,1,2,3,0,4)
 	        if type == 0 
 	            newItem = GenerateHatItem(min(0, itemLevel))
 	        else if type == 1
@@ -29,6 +29,8 @@ function GetRandomLoot(argument0, argument1, argument2) {
 	            newItem = GeneratePantsItem(max(itemLevel, 0))
 	        else if type == 3
 	            newItem = GenerateHandItem(irandom(global.seaLevel div 2))
+			else if type == 4
+	            newItem = GeneratePetItem(choose(choose(0,1),2,2))
                 
 	        with newItem
 	            {

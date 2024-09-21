@@ -4,17 +4,18 @@ function AttackEvents(){
 	
 	//boom stick explodes
 	if myType == "ranged"{
-		if irandom(20) == 0
-		with ItemParent if image_index == 18{	
-			ds_list_add(global.notificationList, "Gun Explodes!", "A boomstick held by " + myPirate.firstName + " exploded, hurting the pirate and destroying the weapon!")
-			with myPirate
-				myHealth -= 20
+		if irandom(20) == 0{
+			with ItemParent if itemName == "Hand Cannon"{	
+				ds_list_add(global.notificationList, "Gun Explodes!", "A weapon held by " + myPirate.firstName + " exploded, hurting the pirate and destroying the weapon!")
+				with myPirate
+					myHealth -= 20
 			
-			//destroy boomstick
-			UnequipItem(id)
-			while ds_list_find_index(ItemRunner.floatingItems, id) != -1
-			    ds_list_delete(ItemRunner.floatingItems, ds_list_find_index(ItemRunner.floatingItems, self.id))   
-			instance_destroy()
+				//destroy boomstick
+				UnequipItem(id)
+				while ds_list_find_index(ItemRunner.floatingItems, id) != -1
+				    ds_list_delete(ItemRunner.floatingItems, ds_list_find_index(ItemRunner.floatingItems, self.id))   
+				instance_destroy()
+			}
 		}
 	}
 }

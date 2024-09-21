@@ -11,7 +11,7 @@ function GiantTurtleSpecial() {
         
 	    global.allowSelect = false
 	    captionText = "Giant Sea Turtle"
-	    eventText = "the sea turtle returns, with a strange gift on it's back" 
+	    eventText = "the sea turtle returns, with a strange gift on its back" 
         
 	    with instance_create(0,0,GiantTurtleDrawer)
 	        {

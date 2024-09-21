@@ -48,7 +48,7 @@
   "origin":9,
   "parent":{
     "name":"ship",
-    "path":"folders/Sprites/Enemy/Attacks/ship.yy",
+    "path":"folders/Sprites/Combat/Attacks/ship.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

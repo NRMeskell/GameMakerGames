@@ -25,7 +25,7 @@ ds_list_add(roughEventList, SeaSickPirates, ManOverboard, SeaSickPirates, MastDa
 ds_list_add(eventList[0], Shortcut, BirdsArrive, Stowaway, SupplyBoxArrive, RaftPirate, FloatingBarrel, FloatingBarrel, PirateShipArrive, TradingPostArrive, PirateShipArrive, PlagueShip, MerchantArrive)
 ds_list_add(eventList[1], FloatingBarrel, MermaidRocks, TropicalFishArrive, BugsAttack, StrangeAnimal, TropicalHeat, FrogsArrive, BirdsArrive, DolphinsArrive, SpoiledFood, RottenPlanks, BirdsArrive, MerchantArrive)
 ds_list_add(eventList[2], Shortcut, FloatingBarrel, RaftPirate, PirateShipArrive, Stowaway, ScavengersArrive, DamagedShip, ThickFogArrive, RuinsArrive, FloatingDebris, FloatingDebris, MerchantArrive)
-ds_list_add(eventList[3], ThickFogArrive, MysteryFogArrive, FloatingLights, BlackSpotArrives, RuinsArrive, FloatingBarrel, HowlingWinds, SkelRaftPirate, SpoiledFood, MerchantArrive)
+ds_list_add(eventList[3], ThickFogArrive, MysteryFogArrive, FloatingLights, BlackSpotArrives, RuinsArrive, FloatingBarrel, HowlingWinds, SkelRaftPirate, SpoiledFood, MerchantArrive, SkeletonsArrive)
 ds_list_add(eventList[4], DolphinsArrive)
 ds_list_add(eventList[5], DolphinsArrive)
 ds_list_add(eventList[6], DolphinsArrive)
@@ -51,12 +51,12 @@ eventListPort[6] = ds_list_create()
 //Add to lists
 //ds_list_add(eventListPortNormal, CargoStolen, RefreshmentStand, PortFight)
 
-ds_list_add(eventListPort[0], FoundItems, PortFight, RefreshmentStand, Entertainers)
-ds_list_add(eventListPort[1], CargoStolen, HostileLocals, WildAnimals, FruitBaskets, RefreshmentStand)
-ds_list_add(eventListPort[2], TeasingLocals, CargoStolen, PortFight, PoorLanding, Entertainers)
-ds_list_add(eventListPort[3], CargoStolen, SkeletalArmArrives, )
+ds_list_add(eventListPort[0], FoundItems, RefreshmentStand, Entertainers)
+ds_list_add(eventListPort[1], HostileLocals, FruitBaskets, RefreshmentStand)
+ds_list_add(eventListPort[2], CargoStolen, PortFight, PoorLanding)
+ds_list_add(eventListPort[3], ScaryLocals, SkeletalArmArrives, SkeletonDrink)
 ds_list_add(eventListPort[4], PoorLanding)
-ds_list_add(eventListPort[5], CargoStolen)
+ds_list_add(eventListPort[5], WildAnimals)
 ds_list_add(eventListPort[6], Entertainers, HostileLocals)
 
 
@@ -73,7 +73,7 @@ for(i=0; i<7; i++)
 enemySeenList[0] = PirateShipArrive
 enemySeenList[1] = FrogsArrive
 enemySeenList[2] = ScavengersArrive
-enemySeenList[3] = PirateShipArrive
+enemySeenList[3] = SkeletonsArrive
 enemySeenList[4] = PirateShipArrive
 enemySeenList[5] = PirateShipArrive
 enemySeenList[6] = PirateShipArrive
@@ -87,9 +87,9 @@ enemyList[5] = ds_list_create()
 enemyList[6] = ds_list_create()
 
 ds_list_add(enemyList[0], EnemyShip)
-ds_list_add(enemyList[1], TropicalEnemy, TropicalEnemySword)
-ds_list_add(enemyList[2], EnemyShip, ScavengerShip)
-ds_list_add(enemyList[3], EnemyShip)
+ds_list_add(enemyList[1], TropicalEnemy)
+ds_list_add(enemyList[2], ScavengerShip)
+ds_list_add(enemyList[3], SkeletonShip)
 ds_list_add(enemyList[4], EnemyShip)
 ds_list_add(enemyList[5], EnemyShip)
 ds_list_add(enemyList[6], EnemyShip)

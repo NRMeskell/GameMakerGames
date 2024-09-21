@@ -35,6 +35,7 @@ drawInfo = false
 petAction = false
 canUse = true
 priority = -1
+changeZones = false
 
 arrowHeightTimer = 0
 

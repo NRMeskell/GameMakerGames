@@ -1,5 +1,5 @@
 function GiantTurtleJewel() {
-	ds_list_add(global.notificationList, "Jewel Given!", "The turtle bows it's head and returns to the ocean.")
+	ds_list_add(global.notificationList, "Jewel Given!", "The turtle bows its head and returns to the ocean.")
 
 	with GiantTurtle{
 		myVar += 3

@@ -17,7 +17,7 @@ lineHeight = max(infoBoxY + 10 + string_height_ext(string_hash_to_newline(itemIn
 draw_set_color(c_yellow)
 //draw_text(100,50 + selected*25, itemNumber)
 draw_sprite(ItemSheetSpr, 0, xWindow, yWindow)
-DrawItem(spriteIndex, itemNumber, myColor, xWindow+28-13, yWindow + 34-13, 0, 0, sprite_get_width(spriteIndex), sprite_get_height(spriteIndex))
+DrawItem(spriteIndex, itemNumber, myColor, xWindow+28-11, yWindow + 34-11, 0, 0, sprite_get_width(spriteIndex), sprite_get_height(spriteIndex))
 
 draw_set_halign(fa_left)
 draw_set_valign(fa_center)

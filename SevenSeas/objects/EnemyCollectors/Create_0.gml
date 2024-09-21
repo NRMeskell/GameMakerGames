@@ -21,12 +21,13 @@ enemyLevel = 0
 myBasicActions = ds_list_create()
 ds_list_add(myBasicActions, BasicMelleAction, BasicRangedAction, BasicCannonAction, BasicShipAction)
 
+instance_create(0,0,EnemyCollector)
+
+instance_create(0,0,EnemyCannonier)
+
 repeat(2)
     instance_create(0,0,EnemyPirate)
 
-instance_create(0,0,EnemyCannonier)
-    
-instance_create(0,0,EnemyCollector)
 
 event_user(2)
 

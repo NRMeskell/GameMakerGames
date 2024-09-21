@@ -1,15 +1,15 @@
 /// @description Sound vars
 
 mySound = ShipCreakSnd
-myAnimationSound = SwordSnd
+myAnimationSound = undefined
 lowRange = 0.9
 highRange = 1.1
 
 ///vars
 
 myButton = EngageAction
-animationY = 0
-animationX = 20
+animationY = -40
+animationX = -20
 animationHeight = 1
 animationWidth = 1
 
@@ -21,6 +21,6 @@ endRound = false
 
 event_user(0)
 hasAnimation = false
-showDamage = false
+showDamage = true
 
 

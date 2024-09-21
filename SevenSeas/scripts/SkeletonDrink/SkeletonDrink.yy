@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"SkeletonDrink",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SkeletonDrink",
+  "parent":{
+    "name":"Events",
+    "path":"folders/Scripts/Events/LandingEvents/Events.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

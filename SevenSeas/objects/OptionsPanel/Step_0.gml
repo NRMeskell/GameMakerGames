@@ -30,6 +30,7 @@ if x > room_width + 10{
 	
 if mouse_check_button_pressed(mb_left){
 	if mouseOverOption[0]{
+		
 		global.gameDiff = (global.gameDiff + 1) % 3
 	}
 	if mouseOverOption[1]{
@@ -53,6 +54,7 @@ if mouse_check_button_pressed(mb_left){
 			with SaveGameRunner
 				event_user(1)
 		instance_create(0, 0, MainMenuCheck)
+		audio_play_sound(StoreSelectSnd, 1, false)
 	}
 }
 

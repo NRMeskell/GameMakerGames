@@ -1,5 +1,5 @@
 function GiantTurtleFeed() {
-	ds_list_add(global.notificationList, "Turtle Fed!", "The turtle bows it's head and returns to the ocean.")
+	ds_list_add(global.notificationList, "Turtle Fed!", "The turtle bows its head and returns to the ocean.")
 
 	with GiantTurtle{
 		myVar += 1

@@ -2,6 +2,6 @@
 
 repeat(damage)
     {
-	with crewTarget if AreAdjacent(targetPirate, id)
+	with crewTarget if AreAdjacent(other.targetPirate, id)
         myHealth -= UpdateCrewDamage(1, id)
     }

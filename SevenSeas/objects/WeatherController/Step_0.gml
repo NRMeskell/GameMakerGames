@@ -30,7 +30,7 @@ if room = GameRoom{
 			}
 	    else if global.weather = 2
 	        {
-	        ds_list_add(global.notificationList, "The seas be rough!", "prepair for stormy weather!")
+	        ds_list_add(global.notificationList, "The seas be rough!", "prepare for stormy weather!")
 	        weatherTimer = irandom_range(room_speed*10, room_speed*30)
 	        }
         

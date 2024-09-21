@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"ScaryLocals",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ScaryLocals",
+  "parent":{
+    "name":"Notifications",
+    "path":"folders/Scripts/Events/LandingEvents/Notifications.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

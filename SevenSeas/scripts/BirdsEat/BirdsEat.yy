@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"BirdsEat",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"BirdsEat",
+  "parent":{
+    "name":"Birds",
+    "path":"folders/Scripts/Events/SailingEvents/TropicalEvents/Birds.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

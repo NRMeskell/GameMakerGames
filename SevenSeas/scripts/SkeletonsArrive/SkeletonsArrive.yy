@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"SkeletonsArrive",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SkeletonsArrive",
+  "parent":{
+    "name":"SeaOfDead",
+    "path":"folders/Scripts/Events/SailingEvents/SeaOfDead.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

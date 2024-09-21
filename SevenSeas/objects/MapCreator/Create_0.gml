@@ -493,8 +493,8 @@ ds_map_add(condImage, global.seaNames[2], 2)
 winCond[2] = 0
 
 //isles of the dead
-ds_map_add(condDes, global.seaNames[3], "")
-ds_map_add(condCritera, global.seaNames[3], "")
+ds_map_add(condDes, global.seaNames[3], "gather the infamous Dead Man's Treasure!")
+ds_map_add(condCritera, global.seaNames[3], "COLLECT ALL 3 CURSED ITEMS")
 ds_map_add(condImage, global.seaNames[3], 3) 
 winCond[3] = 0
 
@@ -522,7 +522,7 @@ released = ds_map_create()
 ds_map_add(released, global.seaNames[0], true)
 ds_map_add(released, global.seaNames[1], true)
 ds_map_add(released, global.seaNames[2], true)
-ds_map_add(released, global.seaNames[3], false)
+ds_map_add(released, global.seaNames[3], true)
 ds_map_add(released, global.seaNames[4], false)
 ds_map_add(released, global.seaNames[5], false)
 ds_map_add(released, global.seaNames[6], false)

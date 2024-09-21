@@ -6,6 +6,8 @@ if __b__
 {
 ///Draw Ship Menu
 
+//draw_text(100, 100, instance_number(ItemParent))
+
 if portSelect = true or global.inPort = false
     {
     draw_sprite_ext(menuShipSprs[shipType], global.menuShipLayer, xWindow, yWindow, menuSize, menuSize, 0, -1, 1) 

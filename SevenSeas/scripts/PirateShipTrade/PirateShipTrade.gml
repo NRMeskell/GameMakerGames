@@ -8,12 +8,13 @@ function PirateShipTrade() {
 	    }
 	else
 	    {
-	    ds_list_add(global.notificationList, "attacked!", "the rival ship is unimpressed and they attacked!")
+	    ds_list_add(global.notificationList, "attacked!", "the rival ship lures you in, and springs a suprise attack!")
 	    with instance_create(0,0,EnemyShip)
 	        {
 	        flagColor = other.myShip.flagColor
 	        myShipHull = other.myShip.myShipHull
 	        shipType = other.myShip.shipType
+			CombatRunner.closeRange = true
 	        }
         
 	    instance_destroy(EventDrawer)

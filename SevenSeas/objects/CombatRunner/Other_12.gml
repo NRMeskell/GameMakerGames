@@ -24,7 +24,7 @@ totalVar = 2*global.gameDiff + 2
 //Update Difficulty
 enemyPower = irandom_range(totalVar/2-1,totalVar/2+1)
 
-enemyNumber = round(instance_number(Enemy)*(enemyPower+3)/5)
+/*enemyNumber = round(instance_number(Enemy)*(enemyPower+3)/5)
 change = enemyNumber - instance_number(Enemy)
 for (i = 0; i<abs(change); i++){
 	foundDup = false
@@ -46,8 +46,8 @@ for (i = 0; i<abs(change); i++){
 			x = other.dupEnemy.x - xGap
 	else
 		instance_destroy(dupEnemy)
-}
-	
+}*/
+
 maxHealth = round(maxHealth * ((totalVar - enemyPower)+3)/5)
 myHealth = maxHealth
 

@@ -94,7 +94,7 @@ else // combat view
 combatZoomSpeed = 0.01
 combatXShift = 3.5
 combatYShift = 1
-if combatView
+if combatView and !instance_exists(Defeat)
     {
     //zoom
     if __view_get( e__VW.WView, 0 ) > room_width * 0.9

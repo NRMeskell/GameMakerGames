@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":139.99892,
+  "duration":140.99738,
   "name":"AwayRioTropicalSnd",
   "parent":{
     "name":"Tropical",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"AwayRioTropicalSnd",
+  "soundFile":"AwayRioTropicalSnd.wav",
   "type":0,
-  "volume":0.5,
+  "volume":1.0,
 }

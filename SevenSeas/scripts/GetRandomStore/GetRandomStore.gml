@@ -38,7 +38,7 @@ function GetRandomStore(argument0, argument1) {
 	        else if type == 3
 	            newItem = GenerateHandItem(irandom(global.seaLevel div 2))
 	        else if type == 4
-	            newItem = GeneratePetItem(irandom(1))
+	            newItem = GeneratePetItem(choose(0,1,2))
             
 	        with newItem
 	            {

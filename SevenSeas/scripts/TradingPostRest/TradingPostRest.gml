@@ -7,7 +7,7 @@ function TradingPostRest() {
 	    UpdateMorale(1, -1)
 	    }
     
-	while HasStored(3,1) and (Ship.myHealth != Ship.maxHealth)
+	while HasStored(3,1) and (Ship.myHealth < Ship.maxHealth)
 	    {
 	    Ship.myHealth += min(25, Ship.maxHealth - Ship.myHealth)
 	    LoseCargo(3,1)

@@ -41,11 +41,11 @@ piratePirate[2] = EnemyAdmiral
 piratePirate[3] = EnemyAdmiral
 
 crewSize = irandom_range((global.seaLevel + 2), (global.seaLevel + 1)*2 + 1)
+   
+instance_create(0,0,piratePirate[irandom(global.seaLevel)])
 
 repeat(global.seaLevel+2)
     instance_create(0,0,pirateCrew[irandom(global.seaLevel)])
-   
-instance_create(0,0,piratePirate[irandom(global.seaLevel)])
 
 event_user(2)
 

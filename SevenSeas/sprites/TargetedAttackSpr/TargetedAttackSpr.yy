@@ -49,7 +49,7 @@
   "origin":9,
   "parent":{
     "name":"gun",
-    "path":"folders/Sprites/Enemy/Attacks/gun.yy",
+    "path":"folders/Sprites/Combat/Attacks/gun.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

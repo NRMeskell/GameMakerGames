@@ -21,7 +21,7 @@ if path_position = 1 and global.inPort = false{
 		//Land in Town
 		if targetPort.image_index == 1{        
 		    //Fix Ship
-		    while HasStored(3,1) and (Ship.myHealth != Ship.maxHealth){
+		    while HasStored(3,1) and (Ship.myHealth < Ship.maxHealth){
 		        Ship.myHealth += min(50, Ship.maxHealth - Ship.myHealth)
 		        LoseCargo(3,1)
 		    }
@@ -61,9 +61,9 @@ if path_position = 1 and global.inPort = false{
 	                slotBuild[i].x = MapShip.slotX[slotBuild[i].mySlot]
 	                slotBuild[i].y = MapShip.slotY[slotBuild[i].mySlot]
 	                slotBuild[i].image_speed = 0.2
-					with slotBuild[i]
+					/*with slotBuild[i]
 						if object_index != Camp 
-							event_user(4)
+							event_user(4)*/
 	            }
 	        }
 	    }

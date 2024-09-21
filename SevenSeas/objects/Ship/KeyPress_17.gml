@@ -1,2 +1,2 @@
 
-MapShip.path_position = 0.75
+GetRandomLoot(irandom(4), "TEST", undefined)

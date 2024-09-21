@@ -54,11 +54,13 @@ if mouse_check_button_pressed(mb_left){
     //check left arrows pressed
     if drawFirstY = 0{
         if overLeftUp{
+			audio_play_sound(OpenMapSnd, 1, false)
             drawFirstY = drawDistance
             currentFirst --
             }
             
         if overLeftDown{
+			audio_play_sound(OpenMapSnd, 1, false)
             drawFirstY = -drawDistance
             currentFirst ++
             }
@@ -67,10 +69,12 @@ if mouse_check_button_pressed(mb_left){
     //check right arrows pressed
     if drawSecondY = 0{
         if overRightUp{
+			audio_play_sound(OpenMapSnd, 1, false)
             drawSecondY = drawDistance
             currentLast --
             }
         if overRightDown{
+			audio_play_sound(OpenMapSnd, 1, false)
             drawSecondY = -drawDistance
             currentLast ++
             }
@@ -98,12 +102,15 @@ if drawSecondY != 0{
 
 if mouse_check_button_pressed(mb_left){
     if overBack{
+		audio_play_sound(StoreSelectSnd, 1, false)
+            
         dropY = room_height*2
         dropSpeed = 2
         with MenuButtonMaker
             event_user(0)
         }
     if overEnter{
+		audio_play_sound(StoreSelectSnd, 1, false)
         SaveGameRunner.gameName = ds_list_find_value(firstNames, currentFirst) + " " + ds_list_find_value(lastNames, currentLast)
         with instance_create(0,0,LoadingScreenWaves)
             myEvent = 1

@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":132.7659,
+  "duration":129.35837,
   "name":"LeaveHerSnd",
   "parent":{
     "name":"PirateCove",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"LeaveHerSnd",
+  "soundFile":"LeaveHerSnd.wav",
   "type":0,
-  "volume":0.1,
+  "volume":1.0,
 }

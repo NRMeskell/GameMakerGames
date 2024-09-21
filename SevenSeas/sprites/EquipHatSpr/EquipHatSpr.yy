@@ -2,8 +2,8 @@
   "$GMSprite":"",
   "%Name":"EquipHatSpr",
   "bboxMode":0,
-  "bbox_bottom":24,
-  "bbox_left":3,
+  "bbox_bottom":22,
+  "bbox_left":2,
   "bbox_right":24,
   "bbox_top":6,
   "collisionKind":1,
@@ -32,10 +32,11 @@
     {"$GMSpriteFrame":"","%Name":"ba315cd5-a110-4148-ad9e-c7beb2c42bd6","name":"ba315cd5-a110-4148-ad9e-c7beb2c42bd6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"59bd8c03-0f0a-4604-a144-fe8efffeed47","name":"59bd8c03-0f0a-4604-a144-fe8efffeed47","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"a9fa4378-a485-477f-a9b2-e3e533f1f64a","name":"a9fa4378-a485-477f-a9b2-e3e533f1f64a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"e620d274-025f-47e1-ae92-e953093a59aa","name":"e620d274-025f-47e1-ae92-e953093a59aa","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":27,
+  "height":26,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"3beae1e7-8988-44bf-9316-167491305281","blendMode":0,"displayName":"default","isLocked":false,"name":"3beae1e7-8988-44bf-9316-167491305281","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -68,7 +69,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":20.0,
+    "length":21.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -147,6 +148,9 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a9fa4378-a485-477f-a9b2-e3e533f1f64a","path":"sprites/EquipHatSpr/EquipHatSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"324dd5e4-0569-4aaa-a249-bf45081dbd6b","IsCreationKey":false,"Key":19.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e620d274-025f-47e1-ae92-e953093a59aa","path":"sprites/EquipHatSpr/EquipHatSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"2c5b3324-4e09-44e1-abba-64e9565a4c0a","IsCreationKey":false,"Key":20.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -162,5 +166,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":27,
+  "width":26,
 }

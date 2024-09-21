@@ -43,6 +43,7 @@ image_yscale = image_xscale
 ///Click Button
 
 if overButton and mouse_check_button_pressed(mb_left){
-    event_user(myAction)
+    audio_play_sound(StoreSelectSnd, 1, false)
+	event_user(myAction)
 }
 

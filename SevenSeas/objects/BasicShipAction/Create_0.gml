@@ -11,5 +11,6 @@ myAttack = ShipShipChange
 myType = "ship"
 
 requiredSlot[0] = "wheel"
+changeZones = true
 
 

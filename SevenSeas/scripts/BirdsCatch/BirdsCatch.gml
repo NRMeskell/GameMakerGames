@@ -28,4 +28,4 @@ function BirdsCatch() {
     
 	EventDrawer.floatAway = true
 	script_execute(closeEventCode)
-	}
+}

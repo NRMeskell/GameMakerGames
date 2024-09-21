@@ -23,15 +23,15 @@ myBasicActions = ds_list_create()
 ds_list_add(myBasicActions, BasicMelleAction, BasicRangedAction, BasicCannonAction, BasicShipAction)
 
 //Create Crew
-instance_create(0,0, EnemyFrogCrew)
-instance_create(0,0,EnemyFrogGunner)  
-instance_create(0,0,EnemyFrogCannon)
+instance_create(0,0,EnemyFrogCaptain)
 
 if instance_exists(FrogKing)
     if FrogKing.myState == "war"
         instance_create(0,0,EnemyRoyalFrogCrew)
-    
-instance_create(0,0,EnemyFrogCaptain)
+
+instance_create(0,0,choose(EnemyFrogGunner, EnemyFrogCannon))
+instance_create(0,0,choose(EnemyFrogGunner, EnemyFrogCrew))  
+instance_create(0,0, EnemyFrogCrew)
 
 event_user(2)
 

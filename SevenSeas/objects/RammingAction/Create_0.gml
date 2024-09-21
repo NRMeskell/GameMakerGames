@@ -13,5 +13,6 @@ myAttack = ShipRamming
 requiredSlot[0] = "wheel"
 requiredSlot[1] = "rigging"
 zoneRequired = 1
+changeZones = true
 
 

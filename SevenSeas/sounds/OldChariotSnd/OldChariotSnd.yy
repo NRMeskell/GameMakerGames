@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"OldChariotSnd.wav",
   "type":0,
-  "volume":0.07,
+  "volume":1.0,
 }

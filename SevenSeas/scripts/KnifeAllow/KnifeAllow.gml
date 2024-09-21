@@ -1,5 +1,5 @@
 function KnifeAllow() {
-	if sign(irandom(2))
+	if sign(irandom(1))
 	    {
 	    ds_list_add(global.notificationList, "New Knife!", myPirate.firstName + " presents a large knife, ready for battle.")
 	    preview = GenerateHandItem(0)
@@ -16,7 +16,7 @@ function KnifeAllow() {
 	else
 	    {
 	    ds_list_add(global.notificationList, "damaged knife!", "the knife is poor for combat and is ruined. Meal quality lowers without a knife!")
-	    global.foodQuality -= 0.2
+	    global.foodQuality -= 0.25
 	    }
 
 

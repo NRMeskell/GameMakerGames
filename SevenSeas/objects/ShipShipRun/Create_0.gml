@@ -24,21 +24,16 @@ endRound = false
 event_user(0)
 
 showDamage = true
-hasAnimation = true
+hasAnimation = false
 
 runSuccess = false
-if myShipTarget = Ship
-    successRate = min(100, 30 + global.totalWheelBonus*5)/100
-else
-    successRate = min(100, 30 + CombatRunner.stats[3]*5)/100
-
-if random(1) < successRate + 0.01
+if irandom(1)
     {
     damage = "success"
     runSuccess = true
     }
 else
-    damage = "fail"
+    damage = "failure"
 
 
 

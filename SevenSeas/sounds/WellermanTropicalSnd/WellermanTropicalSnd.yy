@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":0.0,
+  "duration":113.330795,
   "name":"WellermanTropicalSnd",
   "parent":{
     "name":"Tropical",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"WellermanTropicalSnd",
+  "soundFile":"WellermanTropicalSnd.wav",
   "type":0,
   "volume":1.0,
 }

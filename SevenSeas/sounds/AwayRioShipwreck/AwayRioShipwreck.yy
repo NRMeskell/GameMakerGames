@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"AwayRioShipwreck",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":192,
+  "compression":0,
+  "conversionMode":0,
+  "duration":140.99738,
+  "name":"AwayRioShipwreck",
+  "parent":{
+    "name":"Shipwreck",
+    "path":"folders/Sounds/music/Shipwreck.yy",
+  },
+  "preload":true,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"AwayRioShipwreck.wav",
+  "type":0,
+  "volume":1.0,
+}

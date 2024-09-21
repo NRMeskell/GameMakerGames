@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"ChaosAttackSpr",
-    "path":"sprites/ChaosAttackSpr/ChaosAttackSpr.yy",
+    "name":"ShipWindSpr",
+    "path":"sprites/ShipWindSpr/ShipWindSpr.yy",
   },
   "spriteMaskId":null,
   "visible":true,

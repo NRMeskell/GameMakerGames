@@ -4,8 +4,8 @@
   "bboxMode":0,
   "bbox_bottom":217,
   "bbox_left":0,
-  "bbox_right":1199,
-  "bbox_top":9,
+  "bbox_right":567,
+  "bbox_top":14,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -19,6 +19,7 @@
   "height":218,
   "HTile":true,
   "layers":[
+    {"$GMImageLayer":"","%Name":"baca53ab-dc9b-4b62-ae90-bb3056505702","blendMode":0,"displayName":"Shadow","isLocked":false,"name":"baca53ab-dc9b-4b62-ae90-bb3056505702","opacity":20.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"2f3f309b-dd64-4dc9-8f4f-5a9b035ed11f","blendMode":0,"displayName":"default","isLocked":false,"name":"2f3f309b-dd64-4dc9-8f4f-5a9b035ed11f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"PirateCoveLand",
@@ -95,5 +96,5 @@
   },
   "type":0,
   "VTile":true,
-  "width":1200,
+  "width":568,
 }

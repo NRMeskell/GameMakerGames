@@ -6,12 +6,6 @@ display_set_gui_size(room_width, room_height);
 
 landMap = ds_map_create()
 landMap[? global.seaNames[0]] = PirateCoveLand
-landMap[? global.seaNames[1]] = TropicalIslandLand
-landMap[? global.seaNames[2]] = PirateCoveLand
-landMap[? global.seaNames[3]] = PirateCoveLand
-landMap[? global.seaNames[4]] = PirateCoveLand
-landMap[? global.seaNames[5]] = PirateCoveLand
-landMap[? global.seaNames[6]] = PirateCoveLand
 
 //land
 landX = 0
@@ -20,9 +14,7 @@ landYShift = -30
 landDrawShift = 0
 islandPoint[0] = 0
 islandPoint[1] = 298
-islandPoint[2] = 562
-islandPoint[3] = 883
-islandPoint[4] = 1200
+islandPoint[2] = 568
 
 skyAmount = 0.5
 

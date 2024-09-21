@@ -6,13 +6,13 @@ function FloatingBarrelCheck() {
 	if argument0{
 		if result < 7
 		    {
-		    ds_list_add(global.notificationList, "the barrel is full of loot!", "it's is brought aboard by the crew")
+		    ds_list_add(global.notificationList, "the barrel is full of loot!", "it is brought aboard by the crew")
 			GetRandomLoot(irandom_range(0,2), "BARREL CONTENTS", undefined)
 			instance_destroy(Barrel)
 			}
 		else
 		    {
-		    ds_list_add(global.notificationList, "The barrel was filled with rats!", "it's is allowed to float away")
+		    ds_list_add(global.notificationList, "The barrel was filled with rats!", "it is allowed to float away")
 			with Barrel
 				floatAway = true
 			}

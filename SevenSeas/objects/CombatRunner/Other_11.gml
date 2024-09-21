@@ -2,7 +2,7 @@
 
 ds_list_clear(actionList)
 if Ship.allowShipActions
-	ds_list_add(actionList, basicShipChange)
+	ds_list_add(actionList, basicShipRun, basicShipChange)
 if Ship.allowMelleActions
 	ds_list_add(actionList, basicMelleAttack)
 if Ship.allowRangedActions
@@ -104,9 +104,11 @@ if myHealth > 0 and instance_number(Enemy) > 0
                 ds_list_add(desireList, 0)
             }
         else{                               //add ship attack 
-            if closeRange != wantsClose and myStats[3] > 0
-                ds_list_add(desireList, sqrt(currentAction.rechargeTime)*(cannonDamage + melleDamage + cannonDamage)*3)
-            else
+            if currentAction.changeZones and closeRange != wantsClose and myStats[3] > 0
+                ds_list_add(desireList, sqrt(currentAction.rechargeTime)*abs(cannonDamage-melleDamage)*5)
+            else if !currentAction.changeZones and myStats[3] > 0
+				ds_list_add(desireList, sqrt(currentAction.rechargeTime)*8)
+			else
                 ds_list_add(desireList, 0)
             }
         }

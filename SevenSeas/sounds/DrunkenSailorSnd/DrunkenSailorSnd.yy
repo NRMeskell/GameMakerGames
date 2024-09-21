@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"DrunkenSailorSnd",
+  "soundFile":"DrunkenSailorSnd.wav",
   "type":0,
-  "volume":0.12,
+  "volume":1.0,
 }

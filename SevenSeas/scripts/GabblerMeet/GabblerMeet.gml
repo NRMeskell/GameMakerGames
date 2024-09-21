@@ -7,7 +7,7 @@ function GabblerMeet() {
 			ds_list_add(buttons, GabblerIgnore, GabblerTellTales)
 		}
 		else {
-			ds_list_add(buttons, GabblerIgnore, choose(GabblerTellTales, GabblerRocks, GabblerJack, GabblerCrown))
+			ds_list_add(buttons, GabblerIgnore, choose(GabblerTellTales, GabblerRocks, GabblerJack))
 		}
 		
 	    ds_list_add(buttonStats, 0, 0)

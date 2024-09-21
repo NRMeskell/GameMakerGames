@@ -22,14 +22,17 @@ enemyLevel = 1
 myBasicActions = ds_list_create()
 ds_list_add(myBasicActions, BasicMelleAction, BasicRangedAction, BasicCannonAction, BasicShipAction)
 
+
+
 //Create Crew
-repeat(choose(2,3))
-	instance_create(0,0,ScavengerCrew)
-	
-if instance_number(ScavengerCrew) < 3 and irandom(1)
-	instance_create(0,0, ScavengerSniper)
-    
 instance_create(0,0, ScavengerCaptian)
 
+if irandom(1)
+	instance_create(0,0, ScavengerSniper)
+
+repeat(choose(2,4-instance_number(Enemy)))
+	instance_create(0,0,ScavengerCrew)
+	
+	
 event_user(2)
 

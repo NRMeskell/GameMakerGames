@@ -6,7 +6,7 @@
   "name":"FruitLeave",
   "parent":{
     "name":"Fruit",
-    "path":"folders/Scripts/Events/LandingEvents/PortEvents/Events/Fruit.yy",
+    "path":"folders/Scripts/Events/LandingEvents/Events/Fruit.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
