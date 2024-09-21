@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"SwordAttackSpr",
-    "path":"sprites/SwordAttackSpr/SwordAttackSpr.yy",
+    "name":"ShipWindSpr",
+    "path":"sprites/ShipWindSpr/ShipWindSpr.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -69,10 +69,10 @@ if playerTurn and __view_get( e__VW.XView, 0 ) = 0
     drawOptionsX = room_width-45
     drawOptionsY = 128
     drawOptionsDis = 40
-	var overI = false
     
     if !instance_exists(Event){
         for(var i=0; i<ds_list_size(possibleEnemyActions); i++){
+			overAction[i] = false
             draw_set_halign(fa_right)
             draw_set_valign(fa_center)
             draw_set_color(make_color_rgb(50, 50, 50))
@@ -80,7 +80,7 @@ if playerTurn and __view_get( e__VW.XView, 0 ) = 0
             
             //draw possible actions
             showAction = ds_list_find_value(possibleEnemyActions, i) 
-			if (i>1 or !overI){
+			if (i>1){
 				draw_set_color(merge_color(c_yellow,c_black,0.4))
 				draw_text(drawOptionsX - 20, drawOptionsY + i*drawOptionsDis, string_hash_to_newline(string(showAction.priorityMin) + "-" + string(showAction.priorityMax)))
 			}
@@ -92,10 +92,7 @@ if playerTurn and __view_get( e__VW.XView, 0 ) = 0
 			if canHover and point_in_rectangle(mouse_x, mouse_y, drawOptionsX-20, drawOptionsY + i*drawOptionsDis - 20, drawOptionsX+20, drawOptionsY + i*drawOptionsDis + 20){
 				draw_sprite_ext(PlayerAttackFrameSpr, 0, drawOptionsX, drawOptionsY + i*drawOptionsDis, -1, 1, 0, c_ltgray, 1)
 				draw_sprite_ext(PlayerAttackActionsSpr, showAction.spriteNumber, drawOptionsX, drawOptionsY + i*drawOptionsDis, -1, 1, 0, c_ltgray, 1)
-				drawActionInfoX = drawOptionsX - sprite_get_width(ActionInfoSpr) - 4
-	            drawActionInfoY = drawOptionsY + 20
-	            DrawActionInfo(showAction.object_index, drawActionInfoX, drawActionInfoY, false, "enemy", undefined)
-				overI = true
+				overAction[i] = true
 			}
 			else{
 				draw_sprite_ext(PlayerAttackFrameSpr, 0, drawOptionsX, drawOptionsY + i*drawOptionsDis, -1, 1, 0, c_white, 1)

@@ -86,6 +86,7 @@ if mouse_check_button_pressed(mb_left){
 			
 			with instance_create(0,0,LoadingScreenWaves)
                 myEvent = 2
+				
             dropY = room_height*2
             dropSpeed = 2
             }

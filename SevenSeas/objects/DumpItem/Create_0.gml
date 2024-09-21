@@ -28,4 +28,7 @@ caption = ""
 myEvent = 0
 myDump = undefined
 
+with Pirate 
+	event_user(0)
+
 

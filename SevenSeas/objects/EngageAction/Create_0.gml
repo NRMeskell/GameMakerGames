@@ -12,5 +12,6 @@ priorityMax = 5
 
 requiredSlot[0] = "wheel"
 zoneRequired = 1
+changeZones = true
 
 

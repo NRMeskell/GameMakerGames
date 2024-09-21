@@ -14,7 +14,7 @@ repeat(irandom_range(2,4))
     else if type == 3
         newItem = GenerateHandItem(irandom(global.seaLevel div 2) + choose(0,1))
     else if type == 4
-        newItem = GeneratePetItem(choose(0,1))
+        newItem = GeneratePetItem(choose(0,1,2))
         
     with newItem
         {

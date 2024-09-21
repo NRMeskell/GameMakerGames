@@ -30,6 +30,8 @@
     {"$GMSpriteFrame":"","%Name":"33dc1515-1b54-4535-b59e-f94ebf2a5898","name":"33dc1515-1b54-4535-b59e-f94ebf2a5898","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"3adf07e8-da40-4160-bda9-109fc19d6ec6","name":"3adf07e8-da40-4160-bda9-109fc19d6ec6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"a57a6341-4a68-48f6-bf65-1d979f324140","name":"a57a6341-4a68-48f6-bf65-1d979f324140","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"173d1909-31c2-4f6f-a98d-29b76c5810ec","name":"173d1909-31c2-4f6f-a98d-29b76c5810ec","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"995b27ad-ef62-430d-bf4b-03b6ca24481f","name":"995b27ad-ef62-430d-bf4b-03b6ca24481f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -67,7 +69,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":18.0,
+    "length":20.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -140,6 +142,12 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a57a6341-4a68-48f6-bf65-1d979f324140","path":"sprites/PiratePantsSpr/PiratePantsSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"021e82ab-9626-40ef-a769-3ab78b060339","IsCreationKey":false,"Key":17.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"173d1909-31c2-4f6f-a98d-29b76c5810ec","path":"sprites/PiratePantsSpr/PiratePantsSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"527386ce-18aa-4604-916a-af867f3b72a3","IsCreationKey":false,"Key":18.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"995b27ad-ef62-430d-bf4b-03b6ca24481f","path":"sprites/PiratePantsSpr/PiratePantsSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"6ccf19ff-534e-42ef-bf33-c240fc722c6f","IsCreationKey":false,"Key":19.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

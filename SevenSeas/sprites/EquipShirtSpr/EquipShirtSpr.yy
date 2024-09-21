@@ -2,10 +2,10 @@
   "$GMSprite":"",
   "%Name":"EquipShirtSpr",
   "bboxMode":0,
-  "bbox_bottom":23,
-  "bbox_left":3,
-  "bbox_right":23,
-  "bbox_top":3,
+  "bbox_bottom":22,
+  "bbox_left":2,
+  "bbox_right":22,
+  "bbox_top":2,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -41,10 +41,11 @@
     {"$GMSpriteFrame":"","%Name":"c8fbead3-8386-4ab0-958c-e072f2cb5c6e","name":"c8fbead3-8386-4ab0-958c-e072f2cb5c6e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"46cdddda-6547-47aa-acbd-8fe1868b8d3b","name":"46cdddda-6547-47aa-acbd-8fe1868b8d3b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"ba81df74-ae9c-4fd1-945f-23bdc3b1c7d8","name":"ba81df74-ae9c-4fd1-945f-23bdc3b1c7d8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"e3139e61-2642-4c67-8b9a-aa807eb638fe","name":"e3139e61-2642-4c67-8b9a-aa807eb638fe","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":27,
+  "height":26,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"9c1ff3bd-683e-46c1-873e-20f298b7f57d","blendMode":0,"displayName":"default","isLocked":false,"name":"9c1ff3bd-683e-46c1-873e-20f298b7f57d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -77,7 +78,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":29.0,
+    "length":30.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -183,6 +184,9 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ba81df74-ae9c-4fd1-945f-23bdc3b1c7d8","path":"sprites/EquipShirtSpr/EquipShirtSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"42d805f6-d60f-424e-bc97-ae74081c399f","IsCreationKey":false,"Key":28.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e3139e61-2642-4c67-8b9a-aa807eb638fe","path":"sprites/EquipShirtSpr/EquipShirtSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"0df081ac-50da-43a2-8b82-510359bdcd76","IsCreationKey":false,"Key":29.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -198,5 +202,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":27,
+  "width":26,
 }

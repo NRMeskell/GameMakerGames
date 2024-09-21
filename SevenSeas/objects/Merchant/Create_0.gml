@@ -46,10 +46,11 @@ myCrew[3] = ShipGaurd
 
 crewSize = irandom_range((global.seaLevel + 2), (global.seaLevel + 1)*2)
 
+instance_create(0,0,MerchantCaptain)
+
 repeat((global.seaLevel*2+1+irandom(1)))
     instance_create(0,0,myCrew[irandom(global.seaLevel)])
-    
-instance_create(0,0,MerchantCaptain)
+   
 
 event_user(2)
 

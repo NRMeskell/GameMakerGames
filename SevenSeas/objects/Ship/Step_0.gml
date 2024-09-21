@@ -117,13 +117,24 @@ for(i=0; i<instance_number(Pirate); i++)
             global.totalRiggingBonus += checkPirate.statTotal[3]
             global.totalRiggingBonus ++
             }
+		//deck rope item
+		else if checkPirate.myPet.itemPower == "medical"{
+			global.totalRiggingBonus += checkPirate.statTotal[3]
+		}
         if checkPirateSlot.slotType = "medical" and checkPirateSlot.damaged == false
             {
             global.totalMedicalBonus += checkPirate.statTotal[6]
             global.totalMedicalBonus ++
             }
-		if checkPirate.myPet.itemPower == "heal"
+		//medical item (bandages)
+		if checkPirate.myPet.itemPower == "medical"
 			global.totalMedicalBonus ++
+		//wheel item (lookout)
+		if checkPirate.myPet.itemPower == "wheel"
+			global.totalWheelBonus ++
+		//wheel item (lookout)
+		if checkPirate.myPet.itemPower == "rigging"
+			global.totalRiggingBonus ++
         }
     }
     

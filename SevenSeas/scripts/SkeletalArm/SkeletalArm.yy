@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"SkeletalArm",
   "parent":{
-    "name":"SeaOfDead",
-    "path":"folders/Scripts/Events/SailingEvents/SeaOfDead.yy",
+    "name":"Events",
+    "path":"folders/Scripts/Events/LandingEvents/Events.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

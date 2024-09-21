@@ -6,7 +6,7 @@
   "name":"DrinksFree",
   "parent":{
     "name":"DrinkStand",
-    "path":"folders/Scripts/Events/LandingEvents/PortEvents/Events/DrinkStand.yy",
+    "path":"folders/Scripts/Events/LandingEvents/Events/DrinkStand.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

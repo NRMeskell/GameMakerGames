@@ -1,7 +1,7 @@
 /// @description Add Enemy Attack
 
 chosenAttack = noone
-if ds_list_size(possibleEnemyActions)+2 > irandom(ds_list_size(possibleEnemyActions)+2){
+if irandom(power(ds_list_size(possibleEnemyActions),2)) > 0{
 
 	chosenAttack = ds_list_find_value(possibleEnemyActions, max(0,round(choose(0, 0, 0, 0.3, 0.3, 0.6, 1)*(ds_list_size(possibleEnemyActions)-1))))
      

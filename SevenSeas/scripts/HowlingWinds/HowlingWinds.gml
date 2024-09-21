@@ -19,44 +19,44 @@ function HowlingWinds() {
 }
 
 function HowlHoldFast() {
-	ds_list_add(global.notificationList, "biting air", "the wind bites through the crew and deck, scaring and injuring the crew!")
+	ds_list_add(global.notificationList, "biting air", "the wind bites through the crew and deck!")
 	UpdateMorale(-1, -1)
 	with Pirate 
-		myHealth -= 10
+		myHealth -= 20
 	with Ship 
-		myHealth *= 0.9
+		myHealth -= 80
 }
 
 function HowlSail() {
 	if argument0{
-		ds_list_add(global.notificationList, "Sudden Arrival!", "The winds catch the sails and the crew quickly find themselves, quite mysteriously, at shore.")
+		ds_list_add(global.notificationList, "Sudden Arrival!", "The winds catch the sails and the crew find themselves suddenly at shore.")
 		UpdateMorale(1, -1)
 	}
 	else{
-		ds_list_add(global.notificationList, "biting air", "the wind bites through the crew and deck, scaring and injuring the exposed crew as they climb the masts!")
+		ds_list_add(global.notificationList, "biting air", "the wind bites through the exposed crew as they climb the masts!")
 		UpdateMorale(-1, -1)
 		with Pirate 
-			myHealth -= 20
+			myHealth -= 35
 		with Ship 
-			myHealth *= 0.9
+			myHealth -= 150
 	}
 	closeEventCode()
 }
 
 function HowlBelowDeck(){
 	if argument0{
-		ds_list_add(global.notificationList, "spooky sounds!", "The winds blows across the deck, howling and biting the wood in an unnatural way.")
+		ds_list_add(global.notificationList, "spooky sounds!", "The winds blows across the deck, howling and biting into the wood.")
 		UpdateMorale(1, -1)
 		with Ship 
-			myHealth *= 0.9
+			myHealth -= 150
 	}
 	else{
 		ds_list_add(global.notificationList, "crew paralyzed", "the howls captivate the crew, who are compelled to stand exposed in the biting winds!")
 		UpdateMorale(-1, -1)
 		with Pirate 
-			myHealth -= 20
+			myHealth -= 35
 		with Ship 
-			myHealth *= 0.9
+			myHealth -= 150
 	}
 	closeEventCode()
 }

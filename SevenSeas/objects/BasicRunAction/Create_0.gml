@@ -11,4 +11,5 @@ myAttack = ShipShipRun
 
 requiredSlot[0] = "wheel"
 zoneRequired = 1
+changeZones = false
 

@@ -6,7 +6,7 @@
   "name":"EntertainWatch",
   "parent":{
     "name":"Entertainers",
-    "path":"folders/Scripts/Events/LandingEvents/PortEvents/Events/Entertainers.yy",
+    "path":"folders/Scripts/Events/LandingEvents/Events/Entertainers.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -3,8 +3,7 @@ function GeneratePetItem(argument0) {
 	with newItem
 	    {   
 	    color[0] = c_white
-	    if argument0 == 0
-	        {
+	    if argument0 == 0 {
 	        color[0] = make_color_rgb(155,0,0)
 	        color[1] = make_color_rgb(190,0,0)
 	        color[2] = make_color_rgb(0,68,180)
@@ -16,9 +15,8 @@ function GeneratePetItem(argument0) {
         
 	        itemPower = "morale loss"   
 	        itemPowerDescription = "equipped pirate cannot lose morale"
-	        }
-	    else if argument0 = 1
-	        {
+	    }
+	    else if argument0 = 1 {
 	        color[0] = make_colour_rgb(165,165,165)
 	        color[1] = make_color_rgb(25,25,25)
 	        color[2] = make_color_rgb(146,82,0)
@@ -29,69 +27,71 @@ function GeneratePetItem(argument0) {
         
 	        itemPower = "morale loss"   
 	        itemPowerDescription = "equipped pirate cannot lose morale"
-	        }
-	    else if argument0 = 2
-	        {
-	        itemNumber = 6
-	        itemName = "Compass"
-	        itemInfo = "a navagation tool to help sail the 7 seas"
-        
-	        itemPower = "speed bonus"   
-	        itemPowerDescription = "if equipped pirate is at the helm, the ship sails 15% faster"
-	        }
-	    else if argument0 = 3
-	        {
-	        itemNumber = 7
-	        itemName = "spyglass"
-	        itemInfo = "a telescoping lens to increase a pirate's vision"
-        
-	        itemPower = "avoid"   
-	        itemPowerDescription = "if equipped pirate is in a rigging slot, 30% of ambushes are avoided."
-	        }
-	    else if argument0 = 4
-	        {
-	        itemNumber = 8
-	        itemName = "rum flask"
-	        itemInfo = "a small container containing liquid energy"
-        
-	        itemPower = "recharge"   
-	        itemPowerDescription = "equipped pirate's combat skills take one less turn to recharge"
-	        }
-	    else if argument0 = 5
-	        {
-	        itemNumber = 9
-	        itemName = "bandages"
-	        itemInfo = "a 'clean' roll of cloth to help heal wounds"
-        
-	        itemPower = "heal"   
-	        itemPowerDescription = "equipped pirate provides an extra medical stat, no matter where they are on board."
-	        }
-	    else if argument0 = 6
-	        {
-	        itemNumber = 10
-	        itemName = "deck gloves"
-	        itemInfo = "great for moving about the ship safely"
-        
-	        itemPower = "combat move"   
-	        itemPowerDescription = "equipped pirate can move freely during combat"
-        
-	        color[0] = make_color_rgb(155,0,0)
-	        color[1] = make_color_rgb(128,0,0)
-	        color[2] = make_color_rgb(0,44,119)
-	        color[3] = make_colour_rgb(200,200,200)
-	        color[4] = make_color_rgb(25,25,25)
-	        color[5] = make_color_rgb(158,126,2)
-	        color[6] = make_color_rgb(140,0,145)
-	        color[7] = make_color_rgb(2,98,0)
-	        }
-    
-	    myColor = color[irandom(array_length_1d(color)-1)]
-	    spriteIndex = EquipPetSpr          
-	    itemCost = 30 + irandom_range(-5,5)
 	    }
+	    else{
+			var chooseType = irandom(6)
+			if chooseType == 0 {
+		        itemNumber = 16
+		        itemName = "spare rope"
+		        itemInfo = "allows a pirate to handle the sails from unlikely places"
+        
+		        itemPower = "rigging"   
+		        itemPowerDescription = "equipped pirate provides their rigging bonus, no matter where they are on board."
+		    }
+		    else if chooseType == 1 {
+		        itemNumber = 7
+		        itemName = "spyglass"
+		        itemInfo = "a telescoping lens to increase a pirate's vision"
+        
+		        itemPower = "wheel"   
+		        itemPowerDescription = "equipped pirate provides one wheel bonus, no matter where they are on the ship."
+		    }
+		    else if chooseType == 2 {
+		        itemNumber = 8
+		        itemName = "rum flask"
+		        itemInfo = "a small container containing liquid energy"
+        
+		        itemPower = "recharge"   
+		        itemPowerDescription = "equipped pirate's combat skills take one less turn to recharge"
+		    }
+		    else if chooseType == 3 {
+		        itemNumber = 9
+		        itemName = "bandages"
+		        itemInfo = "a 'clean' roll of cloth to help heal wounds"
+        
+		        itemPower = "medical"   
+		        itemPowerDescription = "equipped pirate provides one medical bonus, no matter where they are on board."
+		    }
+		    else if chooseType == 4 {
+		        itemNumber = 10
+		        itemName = "deck gloves"
+		        itemInfo = "great for moving about the ship safely"
+        
+		        itemPower = "combat move"   
+		        itemPowerDescription = "equipped pirate can move freely during combat"
+        
+		        color[0] = make_color_rgb(155,0,0)
+		        color[1] = make_color_rgb(128,0,0)
+		        color[2] = make_color_rgb(0,44,119)
+		        color[3] = make_colour_rgb(200,200,200)
+		        color[4] = make_color_rgb(25,25,25)
+		        color[5] = make_color_rgb(158,126,2)
+		        color[6] = make_color_rgb(140,0,145)
+		        color[7] = make_color_rgb(2,98,0)
+		    }
+			if chooseType == 5 {
+		        itemNumber = 6
+		        itemName = "Compass"
+		        itemInfo = "a navagation tool to help sail the 7 seas"
+        
+		        itemPower = "speed bonus"   
+		        itemPowerDescription = "if equipped pirate is at the helm, the ship sails 15% faster"
+		    }
     
+		}
+		myColor = color[irandom(array_length_1d(color)-1)]
+		spriteIndex = EquipPetSpr          
+		itemCost = 30 + irandom_range(-5,5)
+	}
 	return newItem
-
-
-
 }

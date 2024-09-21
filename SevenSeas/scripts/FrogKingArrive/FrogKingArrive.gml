@@ -45,6 +45,7 @@ function FrogKingArrive() {
 		event_user(1)
 }
 
+
 function FrogKingPay() {
 	ds_list_add(global.notificationList, "Payment Accepted!", "The king accepts the payment, and will allow you to remain in his sea.")
 	FrogKing.myState = "payment"
@@ -71,7 +72,6 @@ function FrogKingBefreind(){
 
 
 function FrogKingRequest() {
-	
 	if argument0{
 		ds_list_add(global.notificationList, "Request accepted!", "The Frog King allows you to sail freely, but will return if you linger too long.")
 		FrogKing.myState = "free"
@@ -117,9 +117,9 @@ function FrogKingRequest() {
 		else
 			FrogKing.myState = "leave"
 	}
-    
 	script_execute(closeEventCode)
 }
+
 
 function FrogKingAttack() {
 	with instance_create(0, 0, TropicalEnemyRoyal){
@@ -131,12 +131,11 @@ function FrogKingAttack() {
 	ds_list_add(global.notificationList, "Royal Ambush!", "A Royal Frog Ship, sent by the King himself, has been sent to sink your ship!")
 }
 
+
 function FrogKingCrown() {	
 	
 	ds_list_add(global.notificationList, "Crown Returned!", "The frog king leaps in delight! He promises free passage and presents a royal gift!")
-
 	FrogKing.myState = "frog gift"
-	
 	GetRandomLoot(4, "GIFTS", undefined)
 	CustomSeaLoot(true)
 	CustomSeaLoot(true)

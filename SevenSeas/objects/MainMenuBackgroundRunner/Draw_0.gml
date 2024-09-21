@@ -8,7 +8,7 @@ with MenuCloud
         draw_sprite_ext(sprite_index, image_index, x, y, 1, 1, 0, merge_color(Clock.cloudColor, c_white, 0.2), image_alpha)
         
 draw_background_ext(PirateCoveLand, 0, room_height/2 + landYShift + 10, 1, 1, 0, c_ltgray, 1)
-draw_background_ext(BackgroundLandShading,  0, room_height/2 + landYShift, 1, 1, 0, merge_color(Clock.cloudColor, c_white, 0.6), 1)
+//draw_background_ext(BackgroundLandShading,  0, room_height/2 + landYShift, 1, 1, 0, merge_color(Clock.cloudColor, c_white, 0.6), 1)
 
 ///Draw Waves
 with backWaves

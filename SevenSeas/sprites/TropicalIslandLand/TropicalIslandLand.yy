@@ -4,22 +4,23 @@
   "bboxMode":0,
   "bbox_bottom":217,
   "bbox_left":0,
-  "bbox_right":1199,
-  "bbox_top":1,
+  "bbox_right":567,
+  "bbox_top":5,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d1f932a8-7040-4844-acf3-11683f077783","name":"d1f932a8-7040-4844-acf3-11683f077783","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"cc186728-1760-45ae-a0a6-fbab15efa207","name":"cc186728-1760-45ae-a0a6-fbab15efa207","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":218,
   "HTile":true,
   "layers":[
-    {"$GMImageLayer":"","%Name":"11c54259-7b32-4db2-adf9-d27cd2dafd25","blendMode":0,"displayName":"default","isLocked":false,"name":"11c54259-7b32-4db2-adf9-d27cd2dafd25","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"8a82233b-c263-4878-aa46-876ff214dcc6","blendMode":0,"displayName":"Shadow","isLocked":false,"name":"8a82233b-c263-4878-aa46-876ff214dcc6","opacity":21.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"b001afb2-8707-44ef-b922-ba2fb5adcec5","blendMode":0,"displayName":"default","isLocked":false,"name":"b001afb2-8707-44ef-b922-ba2fb5adcec5","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"TropicalIslandLand",
   "nineSlice":null,
@@ -69,8 +70,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d1f932a8-7040-4844-acf3-11683f077783","path":"sprites/TropicalIslandLand/TropicalIslandLand.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"5615009c-d8df-4566-89e7-2081d870e0d5","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"cc186728-1760-45ae-a0a6-fbab15efa207","path":"sprites/TropicalIslandLand/TropicalIslandLand.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"422f732e-6cdc-4386-b714-9d05cb0ad4d7","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -95,5 +96,5 @@
   },
   "type":0,
   "VTile":true,
-  "width":1200,
+  "width":568,
 }

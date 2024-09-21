@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"TavernOfBones",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"TavernOfBones",
+  "parent":{
+    "name":"SeaOfDead",
+    "path":"folders/Scripts/Events/SailingEvents/SeaOfDead.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

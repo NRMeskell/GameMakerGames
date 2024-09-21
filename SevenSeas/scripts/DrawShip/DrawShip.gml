@@ -52,6 +52,9 @@ function DrawShip(argument0, argument1, argument2, argument3, argument4, argumen
 	else if argument0 == ScavengerShipSpr{
 	    myFlagX = 0
 	    myFlagY = 25-96}
+	else if argument0 == SkeletalShipSpr{
+	    myFlagX = sprite_get_xoffset(argument0)-76
+	    myFlagY = 30-sprite_get_yoffset(argument0)}
 
 	myLightX = xPos - (myFlagX*dcos(rotation) - myFlagY*dsin(rotation))/3
 	myLightY = yPos + (myFlagX*dsin(rotation) + myFlagY*dcos(rotation))/3
@@ -70,8 +73,8 @@ function DrawShip(argument0, argument1, argument2, argument3, argument4, argumen
 	with myLight
 	    event_user(1)
 
-	DrawWithLighting(argument0, argument1, xPos, yPos, rotation, merge_color(argument5, merge_color(c_white, Clock.cloudColor, 0.6), 0.5), 1, argument8)
 	DrawWithLighting(argument6, Ship.animate/(2+global.inPort), xPos - (myFlagX*dcos(rotation) - myFlagY*dsin(rotation)), yPos + myFlagX*dsin(rotation) + myFlagY*dcos(rotation), rotation, merge_color(merge_color(argument7, argument5, 0.3), merge_color(c_white, Clock.cloudColor, 0.6), 0.5), 1, argument8)
-	
+	DrawWithLighting(argument0, argument1, xPos, yPos, rotation, merge_color(argument5, merge_color(c_white, Clock.cloudColor, 0.6), 0.5), 1, argument8)
+
 	instance_destroy(myLight)
 }

@@ -66,14 +66,14 @@
   "height":90,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"c170d532-0f6f-4442-b38c-25aafda08833","blendMode":0,"displayName":"default","isLocked":false,"name":"c170d532-0f6f-4442-b38c-25aafda08833","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"c170d532-0f6f-4442-b38c-25aafda08833","blendMode":0,"displayName":"default","isLocked":false,"name":"c170d532-0f6f-4442-b38c-25aafda08833","opacity":61.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"SurgerySpr",
   "nineSlice":null,
   "origin":9,
   "parent":{
     "name":"ship",
-    "path":"folders/Sprites/Enemy/Attacks/ship.yy",
+    "path":"folders/Sprites/Combat/Attacks/ship.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

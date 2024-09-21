@@ -24,13 +24,11 @@ myBasicActions = ds_list_create()
 ds_list_add(myBasicActions, BasicMelleAction, BasicRangedAction, BasicCannonAction, BasicShipAction)
 
 //Create Crew
-
-instance_create(0,0,choose(EnemyFrogCrew,EnemyFrogGunner))
-instance_create(0,0,EnemyRoyalFrogCrew)
-instance_create(0,0,choose(EnemyRoyalFrogCrew, EnemyRoyalFrogCannon))
-instance_create(0,0,EnemyRoyalFrogCannon)
-
 instance_create(0,0,EnemyFrogCaptain)
+instance_create(0,0,EnemyRoyalFrogCannon)
+instance_create(0,0,choose(EnemyRoyalFrogCrew, EnemyRoyalFrogCannon))
+instance_create(0,0,EnemyRoyalFrogCrew)
+instance_create(0,0,choose(EnemyFrogCrew,EnemyFrogGunner))
 
 event_user(2)
 

@@ -1,7 +1,7 @@
 /// @description Sound vars
 
 mySound = ShipCreakSnd
-myAnimationSound = noone
+myAnimationSound = undefined
 lowRange = 1.25
 highRange = 1.5
 
@@ -10,8 +10,8 @@ highRange = 1.5
 myButton = SurgeryAction
 animationY = 0
 animationX = 20
-animationHeight = 1
-animationWidth = 1
+animationHeight = 20
+animationWidth = 50
 
 actionType = "ship"
 
@@ -21,7 +21,7 @@ endRound = false
 
 event_user(0)
 showDamage = false
-hasAnimation = false
+hasAnimation = true
 
 x = myShipTarget.drawX
 y = myShipTarget.drawY

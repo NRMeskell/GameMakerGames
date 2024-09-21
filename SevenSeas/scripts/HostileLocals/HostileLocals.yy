@@ -6,7 +6,7 @@
   "name":"HostileLocals",
   "parent":{
     "name":"Notifications",
-    "path":"folders/Scripts/Events/LandingEvents/PortEvents/Notifications.yy",
+    "path":"folders/Scripts/Events/LandingEvents/Notifications.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

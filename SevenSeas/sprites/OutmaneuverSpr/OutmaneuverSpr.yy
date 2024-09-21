@@ -78,14 +78,14 @@
   "height":90,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"7760ac40-ee4c-4e14-b772-7b493a5fbd9a","blendMode":0,"displayName":"default","isLocked":false,"name":"7760ac40-ee4c-4e14-b772-7b493a5fbd9a","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"7760ac40-ee4c-4e14-b772-7b493a5fbd9a","blendMode":0,"displayName":"default","isLocked":false,"name":"7760ac40-ee4c-4e14-b772-7b493a5fbd9a","opacity":51.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"OutmaneuverSpr",
   "nineSlice":null,
   "origin":9,
   "parent":{
     "name":"ship",
-    "path":"folders/Sprites/Enemy/Attacks/ship.yy",
+    "path":"folders/Sprites/Combat/Attacks/ship.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

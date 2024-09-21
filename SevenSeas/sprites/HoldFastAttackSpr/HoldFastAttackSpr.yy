@@ -47,7 +47,7 @@
   "origin":9,
   "parent":{
     "name":"Melle",
-    "path":"folders/Sprites/Enemy/Attacks/Melle.yy",
+    "path":"folders/Sprites/Combat/Attacks/Melle.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -26,7 +26,7 @@
   "origin":9,
   "parent":{
     "name":"Selected",
-    "path":"folders/Sprites/Enemy/Decorations/Selected.yy",
+    "path":"folders/Sprites/Combat/Decorations/Selected.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

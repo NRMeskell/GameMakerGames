@@ -14,6 +14,10 @@ global.storeSize[3] = 10
 global.storeSize[4] = 10
 global.storeSize[5] = 10
 global.storeSize[6] = 10
+global.storeSize[7] = 10
+global.storeSize[8] = 10
+global.storeSize[9] = 10
+global.storeSize[10] = 10
 
 randomize();
 
@@ -69,6 +73,9 @@ hullDict[0] = ShipSloopSpr
 hullDict[1] = ShipScoonerSpr
 hullDict[2] = ShipCaravelSpr
 hullDict[3] = ShipBrigSpr
+hullDict[4] = ShipScoonerSpr
+hullDict[5] = ShipCaravelSpr
+hullDict[6] = ShipBrigSpr
 
 //rigging
 shipSlots[0,0] = 2
@@ -145,8 +152,8 @@ flagY[3] = 29-96
 landMap = ds_map_create()
 landMap[? global.seaNames[0]] = PirateCoveLand
 landMap[? global.seaNames[1]] = TropicalIslandLand
-landMap[? global.seaNames[2]] = PirateCoveLand
-landMap[? global.seaNames[3]] = PirateCoveLand
+landMap[? global.seaNames[2]] = ShipwreckShoreLand
+landMap[? global.seaNames[3]] = SeaOfDeadLand
 landMap[? global.seaNames[4]] = PirateCoveLand
 landMap[? global.seaNames[5]] = PirateCoveLand
 landMap[? global.seaNames[6]] = PirateCoveLand
@@ -158,9 +165,7 @@ landYShift = -30
 landDrawShift = 0
 islandPoint[0] = 0
 islandPoint[1] = 298
-islandPoint[2] = 562
-islandPoint[3] = 883
-islandPoint[4] = 1200
+islandPoint[2] = 568
 
 skyAmount = 0.5
 

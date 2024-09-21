@@ -47,6 +47,8 @@
     {"$GMSpriteFrame":"","%Name":"e7f1aae5-26bd-4c2e-876c-8a596e033931","name":"e7f1aae5-26bd-4c2e-876c-8a596e033931","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"e3a839fa-868e-4439-8148-a72e8711e54b","name":"e3a839fa-868e-4439-8148-a72e8711e54b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"40b26b66-6b06-4bfc-a3f9-0ae7bae6485b","name":"40b26b66-6b06-4bfc-a3f9-0ae7bae6485b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"3d05aac2-5fab-44e8-a4ef-661af17e7565","name":"3d05aac2-5fab-44e8-a4ef-661af17e7565","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"71db7ab1-f7d4-4611-82a8-2f9556e0d687","name":"71db7ab1-f7d4-4611-82a8-2f9556e0d687","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -59,8 +61,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Enemy",
-    "path":"folders/Sprites/Enemy.yy",
+    "name":"Combat",
+    "path":"folders/Sprites/Combat.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -83,7 +85,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":35.0,
+    "length":37.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -207,6 +209,12 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"40b26b66-6b06-4bfc-a3f9-0ae7bae6485b","path":"sprites/PlayerAttackActionsSpr/PlayerAttackActionsSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"7748cc00-36f8-4fe1-b2cd-4a13f8c90bf5","IsCreationKey":false,"Key":34.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3d05aac2-5fab-44e8-a4ef-661af17e7565","path":"sprites/PlayerAttackActionsSpr/PlayerAttackActionsSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"fe83519a-9b81-46c3-b549-f140a97bb1cc","IsCreationKey":false,"Key":35.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"71db7ab1-f7d4-4611-82a8-2f9556e0d687","path":"sprites/PlayerAttackActionsSpr/PlayerAttackActionsSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"a195b632-aa69-4c47-b311-ec7a2132d1df","IsCreationKey":false,"Key":36.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":0.0,
+  "duration":129.35837,
   "name":"LeaveHerTropicalSnd",
   "parent":{
     "name":"Tropical",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"LeaveHerTropicalSnd",
+  "soundFile":"LeaveHerTropicalSnd.wav",
   "type":0,
   "volume":1.0,
 }

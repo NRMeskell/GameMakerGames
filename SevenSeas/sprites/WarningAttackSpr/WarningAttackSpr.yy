@@ -63,7 +63,7 @@
   "origin":9,
   "parent":{
     "name":"cannon",
-    "path":"folders/Sprites/Enemy/Attacks/cannon.yy",
+    "path":"folders/Sprites/Combat/Attacks/cannon.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

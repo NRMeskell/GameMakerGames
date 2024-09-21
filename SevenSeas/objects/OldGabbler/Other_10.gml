@@ -11,11 +11,6 @@ if myState != "unmet"{
 		myVar = 3;
 	}
 	
-	//Possess Frog King's Crown
-	if ItemExists("Tropical Crown"){
-		UpdateCharacterPortEvents(GabblerGiveCrown);
-	}
-	
 	//Have sailed the rocks (sea conquered)
 	if ds_map_find_value(MapCreator.seas[2], "conquered"){
 		UpdateCharacterPortEvents(GabblerSailedRocks)
