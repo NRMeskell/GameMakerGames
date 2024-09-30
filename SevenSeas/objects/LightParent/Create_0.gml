@@ -2,8 +2,8 @@
 
 ///Intensity
 
-lightX = mouse_x;
-lightY = mouse_y;
+lightX = window_view_mouse_get_x(0);
+lightY = window_view_mouse_get_y(0);
 
 red = 0
 green = 0

@@ -1,5 +1,7 @@
 /// @description Draw Pirate Menu
 
+if (view_current == 0)
+{
 draw_sprite_ext(PirateSheetSpr, 0, xWindow, yWindow, size, size, 0, c_white, 1)
 
 if !surface_exists(fullPirateSurface){
@@ -138,7 +140,7 @@ for(i=0; i < array_length_1d(bonus); i++)
         }
     }
 
-
+}
 
 /* */
 /*  */

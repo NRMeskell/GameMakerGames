@@ -1,11 +1,6 @@
 //temp
 
-//draw_sprite(TikiHead1Spr, 0, mouse_x, mouse_y)
-//draw_text(100, 100, string(mouse_x) + ", " + string(mouse_y))
-
-var __b__;
-__b__ = action_if_variable(view_current, 0, 0);
-if __b__
+if (view_current == 0)
 {
 {
 ///Draw Behind Events
@@ -64,6 +59,18 @@ with PortDrawerBack
     myLayer = 3
     event_user(0)
     }
+	
+	
+with BirdEvent{
+    myLayer = 3
+    event_user(1)
+} 
+
+with LandFlavor{
+    myLayer = 3
+    event_user(1)
+} 
+
 }	
 }
 

@@ -1,5 +1,6 @@
 /// @description Fall
-
+if (view_current == 0)
+{
 if dropSpeed != 0{
     dropSpeed += myGrav
     y += dropSpeed
@@ -24,12 +25,12 @@ if y > room_height + 100
 ///Check Buttons
 
 if y = dropY and !instance_exists(DumpItem){
-    overLeftUp = point_in_rectangle(mouse_x, mouse_y, x-farHor, y-farVer, x-nearHor, y-nearVer) 
-    overLeftDown = point_in_rectangle(mouse_x, mouse_y, x-farHor, y+nearVer, x-nearHor, y+farVer) 
-    overRightUp = point_in_rectangle(mouse_x, mouse_y, x+nearHor, y-farVer, x+farHor, y-nearVer)
-    overRightDown = point_in_rectangle(mouse_x, mouse_y, x+nearHor, y+nearVer, x+farHor, y+farVer)
-    overBack = point_in_rectangle(mouse_x, mouse_y, x-lowButtonFar, y+lowButtonTop, x-lowButtonNear, y+lowButtonBottom)
-    overEnter = point_in_rectangle(mouse_x, mouse_y, x+lowButtonNear, y+lowButtonTop, x+lowButtonFar, y+lowButtonBottom)
+    overLeftUp = point_in_rectangle(window_view_mouse_get_x(0), mouse_y, x-farHor, y-farVer, x-nearHor, y-nearVer) 
+    overLeftDown = point_in_rectangle(window_view_mouse_get_x(0), mouse_y, x-farHor, y+nearVer, x-nearHor, y+farVer) 
+    overRightUp = point_in_rectangle(window_view_mouse_get_x(0), mouse_y, x+nearHor, y-farVer, x+farHor, y-nearVer)
+    overRightDown = point_in_rectangle(window_view_mouse_get_x(0), mouse_y, x+nearHor, y+nearVer, x+farHor, y+farVer)
+    overBack = point_in_rectangle(window_view_mouse_get_x(0), mouse_y, x-lowButtonFar, y+lowButtonTop, x-lowButtonNear, y+lowButtonBottom)
+    overEnter = point_in_rectangle(window_view_mouse_get_x(0), mouse_y, x+lowButtonNear, y+lowButtonTop, x+lowButtonFar, y+lowButtonBottom)
     
     if overLeftUp image_index = 1
     else if overRightUp image_index = 2
@@ -120,4 +121,4 @@ if mouse_check_button_pressed(mb_left){
         AddSaveFile(SaveGameRunner.gameName)
         }
     }
-
+}

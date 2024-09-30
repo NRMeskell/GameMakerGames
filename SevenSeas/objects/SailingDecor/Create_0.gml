@@ -1,5 +1,8 @@
 /// @description Pirate Ship Vars
 
+mySound = audio_play_sound(SplashSnd, 0, false)
+audio_stop_sound(mySound)
+
 if place_meeting(x,y,SailingDecor)
 	instance_destroy()
 

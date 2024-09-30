@@ -8,4 +8,4 @@ floatAway = false
 
 enemyLevel = 0
 
-
+mySound = audio_play_sound(EventSplashingSnd, 0, true)

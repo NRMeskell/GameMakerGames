@@ -10,7 +10,7 @@ if sailing and alarm[0] > 0{
 	sailingSail = true
 }
 
-if sailingSail{
+if sailingSail{	
 	placeX -= (Ship.middleWaves.waveSpeeds[0])*!global.mapPause*global.gameSpeed
 	Ship.middleWaves.waveOffsets[0] += Ship.middleWaves.waveSpeeds[0]
 	Ship.frontWaves.waveOffsets[0] += Ship.frontWaves.waveSpeeds[0]

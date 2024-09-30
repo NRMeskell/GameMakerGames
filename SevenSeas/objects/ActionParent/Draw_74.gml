@@ -17,7 +17,7 @@ shiftX = -4
 timerX = sprite_get_width(ActionInfoSpr) - 40
 startX = 256+40
 drawColor = c_white
-if point_in_rectangle(mouse_x, mouse_y, x - sprite_width/2, y - sprite_height/2, x + sprite_width/2, y + sprite_height/2)
+if point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), x - sprite_width/2, y - sprite_height/2, x + sprite_width/2, y + sprite_height/2)
     {
     drawColor = c_ltgray
     event_user(2)

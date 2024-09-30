@@ -15,10 +15,10 @@ for(i=0; i<ds_list_size(seaMusic); i++)
 //replace song
 if currentSongMap != undefined
     {
-    myPlace = audio_sound_get_track_position(currentSong)
+    myPlace = audio_sound_get_track_position(currentSong)/audio_sound_length(currentSong)
     audio_stop_sound(currentSong)
     currentSong = audio_play_sound(currentSongMap[? global.seaType], 1, false)
-    audio_sound_set_track_position(currentSong, myPlace) 
+    audio_sound_set_track_position(currentSong, myPlace*audio_sound_length(currentSong)) 
     }
 
 

@@ -4,7 +4,7 @@ if !instance_exists(Defeat) and (Ship.portSelect = true or global.inPort = false
     {
     if mouse_check_button_pressed(mb_left) and !instance_exists(DumpItem)
         {
-        overButton = point_in_rectangle(mouse_x, mouse_y, xReal-realWidth/2, yReal-realHeight/2, xReal + realWidth/2, yReal + realHeight/2)
+        overButton = point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), xReal-realWidth/2, yReal-realHeight/2, xReal + realWidth/2, yReal + realHeight/2)
         
         if overButton and global.menuShipLayer = 2
             {
@@ -34,7 +34,7 @@ if selected = true
     if mouse_check_button_pressed(mb_left)  and !instance_exists(DumpItem)
         with ShipSlot
             {
-            if point_in_rectangle(mouse_x, mouse_y, x, y, x+24, y+24)
+            if point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), x, y, x+24, y+24)
                 {
                 if occupied = false and global.menuShipLayer = myLayer and slotType = "storage"
                     {
@@ -66,7 +66,7 @@ yReal = mySlot.y + 1 + realHeight/2
 
 ///Dump
 
-overDump = point_in_rectangle(mouse_x, mouse_y, dumpX, dumpY, dumpX+realWidth+2, dumpY+realHeight+2)
+overDump = point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), dumpX, dumpY, dumpX+realWidth+2, dumpY+realHeight+2)
 
 if selected
     {

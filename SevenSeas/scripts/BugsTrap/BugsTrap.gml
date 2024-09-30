@@ -19,5 +19,6 @@ function BugsTrap() {
 	        condition = MalariaCrewmate
 	}
 	
+	audio_stop_sound(BugsBuzzingSnd)
 	script_execute(closeEventCode)
 }

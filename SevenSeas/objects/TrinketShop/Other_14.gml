@@ -6,13 +6,13 @@ repeat(irandom_range(2,4))
     {
     type = irandom(4)
     if type == 0 
-        newItem = GenerateHatItem(irandom(global.seaLevel div 2) + choose(0,1))
+        newItem = GenerateHatItem(irandom(global.seaLevel div 2))
     else if type == 1
-        newItem = GenerateShirtItem(irandom(global.seaLevel div 2) + choose(-1,1))
+        newItem = GenerateShirtItem(irandom(global.seaLevel div 2) + choose(-1,0))
     else if type == 2
-        newItem = GeneratePantsItem(irandom(global.seaLevel div 2) + choose(-1,1))
+        newItem = GeneratePantsItem(irandom(global.seaLevel div 2) + choose(-1,0))
     else if type == 3
-        newItem = GenerateHandItem(irandom(global.seaLevel div 2) + choose(0,1))
+        newItem = GenerateHandItem(irandom(global.seaLevel div 2))
     else if type == 4
         newItem = GeneratePetItem(choose(0,1,2))
         
@@ -22,6 +22,7 @@ repeat(irandom_range(2,4))
         cost = itemCost
         }
     ds_list_add(itemList[0], newItem)
+	instance_deactivate_object(newItem)
     }
 
 ///make Cargo
@@ -41,6 +42,7 @@ repeat(irandom_range(2,4))
         selected = false
         }
     ds_list_add(itemList[1], newItem)
+	instance_deactivate_object(newItem)
     }
 
 ///Make Trades
@@ -56,6 +58,7 @@ with newTrade
     selected = false
     }
 ds_list_add(itemList[2], newTrade)
+instance_deactivate_object(newTrade)
 
 
 tradeNumber = irandom_range(1,3)
@@ -77,5 +80,6 @@ for(i=0; i<tradeNumber; i++)
         }
         
     ds_list_add(itemList[2], newTrade)
+	instance_deactivate_object(newTrade)
     }
 

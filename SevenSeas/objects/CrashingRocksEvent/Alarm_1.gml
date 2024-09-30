@@ -3,7 +3,8 @@
 
 alarm[0] = irandom_range(room_speed, room_speed*3)
 
-if sailingSail{
+if sailingSail and ds_list_size(global.notificationList) == 0{
+	sailingSail = false
 	ds_list_add(global.notificationList, result, description)
 
 	if !success{
@@ -26,7 +27,5 @@ if sailingSail{
 	instance_destroy(Event)
 	closeEventCode()
 	floatAway = true
-	
-	sailingSail = false
 	sailing = false
 }

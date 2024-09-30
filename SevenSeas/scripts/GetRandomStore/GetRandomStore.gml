@@ -30,11 +30,11 @@ function GetRandomStore(argument0, argument1) {
 	    else if irandom(2) == 0{
 	        type = irandom(4)
 	        if type == 0 
-	            newItem = GenerateHatItem(irandom(global.seaLevel div 2) + choose(0,1))
+	            newItem = GenerateHatItem(irandom(global.seaLevel div 2))
 	        else if type == 1
-	            newItem = GenerateShirtItem(irandom(global.seaLevel div 2) + choose(-1,1))
+	            newItem = GenerateShirtItem(irandom(global.seaLevel div 2) + choose(-1,0))
 	        else if type == 2
-	            newItem = GeneratePantsItem(irandom(global.seaLevel div 2) + choose(-1,1))
+	            newItem = GeneratePantsItem(irandom(global.seaLevel div 2) + choose(-1,0))
 	        else if type == 3
 	            newItem = GenerateHandItem(irandom(global.seaLevel div 2))
 	        else if type == 4
@@ -83,7 +83,4 @@ function GetRandomStore(argument0, argument1) {
 	    leftButtonText = "trade"
 	    rightButtonText = "exit"
 	    }
-
-
-
 }

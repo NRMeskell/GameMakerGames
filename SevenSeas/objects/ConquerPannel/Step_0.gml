@@ -13,7 +13,7 @@ if scrollWidth == panelWidth
 if animation > sprite_get_number(SeaConqueredSignSpr)-1 or animation < swordLength
     animation = swordLength
 
-overScroll = !animating and point_in_rectangle(mouse_x, mouse_y, x - scrollWidth - edgeWidth, y-panelHeight, x + scrollWidth + edgeWidth, y+panelHeight-5)
+overScroll = !animating and point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), x - scrollWidth - edgeWidth, y-panelHeight, x + scrollWidth + edgeWidth, y+panelHeight-5)
 
 //close panel
 if overScroll and mouse_check_button_pressed(mb_left)

@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Arch",
-    "path":"folders/Sprites/Backgrounds/Land/Camps/RockyIslands/Arch.yy",
+    "path":"folders/Sprites/Backgrounds/Land/Camps/Shipwreck/Arch.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

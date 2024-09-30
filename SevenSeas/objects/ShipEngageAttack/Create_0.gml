@@ -20,7 +20,7 @@ changeZones = true
 endRound = false
 
 event_user(0)
-hasAnimation = false
-showDamage = true
+hasAnimation = true
+showDamage = false
 
 

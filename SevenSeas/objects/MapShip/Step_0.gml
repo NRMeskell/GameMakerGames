@@ -1,6 +1,6 @@
 ///Set as Target
-mouseOnMapX = (mouse_x - __view_get( e__VW.XPort, 1 ))*MapCreator.zoom + __view_get( e__VW.XView, 1 )
-mouseOnMapY = (mouse_y - __view_get( e__VW.YPort, 1 ))*MapCreator.zoom + __view_get( e__VW.YView, 1 )
+mouseOnMapX = (window_view_mouse_get_x(0) - __view_get( e__VW.XPort, 1 ))*MapCreator.zoom + __view_get( e__VW.XView, 1 )
+mouseOnMapY = (window_view_mouse_get_y(0) - __view_get( e__VW.YPort, 1 ))*MapCreator.zoom + __view_get( e__VW.YView, 1 )
 
 ///Stop sailing / create ports
 
@@ -14,6 +14,17 @@ if path_position = 1 and global.inPort = false{
     
 		with EventDrawer
 		    instance_destroy()
+		
+		var birdNum = irandom_range(2,3)
+		for(var sg=0; sg < birdNum; sg++){
+			with instance_create(0,0, BirdEvent){
+				x = irandom_range(room_width/2-200, room_width/2-100) + sg*75
+				y = irandom_range(room_height/2-50, room_height/2 - 80) - sg*15
+				path_start(BirdPath, 0.5, path_action_restart, false)
+				path_scale = random_range(1.5,3)
+				path_position = random(1)
+			}
+		}
         
 		targetPort.sprite_index = StopSpr
 		targetPort.image_index = targetPort.myIndex
@@ -22,7 +33,7 @@ if path_position = 1 and global.inPort = false{
 		if targetPort.image_index == 1{        
 		    //Fix Ship
 		    while HasStored(3,1) and (Ship.myHealth < Ship.maxHealth){
-		        Ship.myHealth += min(50, Ship.maxHealth - Ship.myHealth)
+		        Ship.myHealth += min(Ship.maxHealth div 15, Ship.maxHealth - Ship.myHealth)
 		        LoseCargo(3,1)
 		    }
             
@@ -34,7 +45,7 @@ if path_position = 1 and global.inPort = false{
 			
 			with Pirate{
 				if myGoal == "leave"{
-					ds_list_add(global.notificationList, firstName + " departs!", "They thank the crew for their kindness and ride to land, and depart into the crowd")
+					ds_list_add(global.notificationList, firstName + " leaves!", "They thank the crew and depart into the crowd")
 					deserter = true
 					event_user(2)
 				}
@@ -187,6 +198,8 @@ if !MapCreator.overPause and !MapCreator.overBoatButton and !MapCreator.overZoom
 		        y=-100
 		        image_speed = 0
 		    }
+			
+			instance_destroy(EventDrawer)
 			
 			moveX = tryMoveX
 			moveY = tryMoveY

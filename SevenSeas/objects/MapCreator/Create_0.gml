@@ -256,9 +256,9 @@ spotTypes[? global.seaNames[5]] = ds_list_create()
 spotTypes[? global.seaNames[6]] = ds_list_create()
 
 ds_list_add(spotTypes[? global.seaNames[0]], 0,2,3)
-ds_list_add(spotTypes[? global.seaNames[1]], 4,3,5)
+ds_list_add(spotTypes[? global.seaNames[1]], 3,4,5)
 ds_list_add(spotTypes[? global.seaNames[2]], 2,6,7)
-ds_list_add(spotTypes[? global.seaNames[3]], 0,2,3)
+ds_list_add(spotTypes[? global.seaNames[3]], 0,8,9)
 ds_list_add(spotTypes[? global.seaNames[4]], 0,2,3)
 ds_list_add(spotTypes[? global.seaNames[5]], 0,2,3)
 ds_list_add(spotTypes[? global.seaNames[6]], 0,2,3)
@@ -448,7 +448,7 @@ __view_set( e__VW.YPort, 1, miniY )
 __view_set( e__VW.WPort, 1, miniPortWidth )
 __view_set( e__VW.HPort, 1, drawMiniHeight )
 
-__view_set( e__VW.Visible, 0, true )
+/*__view_set( e__VW.Visible, 0, true )
 __view_set( e__VW.XView, 0, 0 )
 __view_set( e__VW.YView, 0, 0 )
 __view_set( e__VW.HView, 0, room_height )
@@ -456,7 +456,7 @@ __view_set( e__VW.WView, 0, room_width )
 __view_set( e__VW.XPort, 0, 0 )
 __view_set( e__VW.YPort, 0, 0 )
 __view_set( e__VW.WPort, 0, room_width )
-__view_set( e__VW.HPort, 0, room_height )
+__view_set( e__VW.HPort, 0, room_height )*/
 
 windowGrabX = __view_get( e__VW.XView, 1 )
 windowGrabY = __view_get( e__VW.YView, 1 )
@@ -493,8 +493,8 @@ ds_map_add(condImage, global.seaNames[2], 2)
 winCond[2] = 0
 
 //isles of the dead
-ds_map_add(condDes, global.seaNames[3], "gather the infamous Dead Man's Treasure!")
-ds_map_add(condCritera, global.seaNames[3], "COLLECT ALL 3 CURSED ITEMS")
+ds_map_add(condDes, global.seaNames[3], "lift the curse from the Dead Man's Treasure!")
+ds_map_add(condCritera, global.seaNames[3], "COLLECT ALL 5 CURSED JEWELS")
 ds_map_add(condImage, global.seaNames[3], 3) 
 winCond[3] = 0
 

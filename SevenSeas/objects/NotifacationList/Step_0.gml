@@ -23,7 +23,7 @@ if ds_list_size(global.notificationList) > 0
     
     notificationSize = captionSize + textSize*(ds_list_find_value(global.notificationList, 1) != 0) + 40
     
-    onButton = !instance_exists(DumpItem) and point_in_rectangle(mouse_x, mouse_y, drawX - sprite_get_width(ButtonSpr)/3, drawY - sprite_get_height(ButtonSpr)/2.5 + (notificationSize)/2 + 20, drawX + sprite_get_width(ButtonSpr)/3, drawY + sprite_get_height(ButtonSpr)/2.5 + (notificationSize)/2 + 20)
+    onButton = !instance_exists(DumpItem) and point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), drawX - sprite_get_width(ButtonSpr)/3, drawY - sprite_get_height(ButtonSpr)/2.5 + (notificationSize)/2 + 20, drawX + sprite_get_width(ButtonSpr)/3, drawY + sprite_get_height(ButtonSpr)/2.5 + (notificationSize)/2 + 20)
     
     if (mouse_check_button_pressed(mb_left) and onButton)// or eventTimer < 1
         {

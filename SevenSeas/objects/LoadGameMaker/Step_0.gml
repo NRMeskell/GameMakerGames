@@ -33,13 +33,13 @@ returnTop = 90
 returnBottom = 115
 
 if dropSpeed = 0 and !instance_exists(DumpItem){
-    overUp = point_in_rectangle(mouse_x, mouse_y, x + nearHor, y - farVer, x + farHor, y - nearVer)
-    overDown = point_in_rectangle(mouse_x, mouse_y, x + nearHor, y + nearVer, x + farHor, y + farVer)
-    overBack = point_in_rectangle(mouse_x, mouse_y, x-returnWidth, y + returnTop, x+returnWidth, y+returnBottom)
+    overUp = point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), x + nearHor, y - farVer, x + farHor, y - nearVer)
+    overDown = point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), x + nearHor, y + nearVer, x + farHor, y + farVer)
+    overBack = point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), x-returnWidth, y + returnTop, x+returnWidth, y+returnBottom)
     
     for(i=0; i<ds_list_size(myGames); i++){
-        overButton[i] = point_in_rectangle(mouse_x, mouse_y, x-buttonAlign-15, y - buttonStartY + buttonDistance*(i-buttonPos)-14, x-buttonAlign-15+buttonSplit-8, y - buttonStartY + buttonDistance*(i-buttonPos)+14)
-        overTrash[i] = point_in_rectangle(mouse_x, mouse_y, x-buttonAlign-15+buttonSplit+5, y - buttonStartY + buttonDistance*(i-buttonPos)-14, x-buttonAlign-15+buttonSplit+27, y - buttonStartY + buttonDistance*(i-buttonPos)+14)
+        overButton[i] = point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), x-buttonAlign-15, y - buttonStartY + buttonDistance*(i-buttonPos)-14, x-buttonAlign-15+buttonSplit-8, y - buttonStartY + buttonDistance*(i-buttonPos)+14)
+        overTrash[i] = point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), x-buttonAlign-15+buttonSplit+5, y - buttonStartY + buttonDistance*(i-buttonPos)-14, x-buttonAlign-15+buttonSplit+27, y - buttonStartY + buttonDistance*(i-buttonPos)+14)
         
 		overButton[i] = overButton[i] && (i - buttonPos < 4) && (i - buttonPos >= 0)
 		overTrash[i] = overTrash[i] && (i - buttonPos < 4) && (i - buttonPos >= 0)
@@ -58,14 +58,17 @@ else image_index = 0
 
 ///Click Buttons
 
-if mouse_check_button_pressed(mb_left){
+if mouse_check_button_pressed(mb_left) and !instance_exists(DumpItem){
     if overUp{
+		audio_play_sound(OpenMapSnd, 0, false)
         buttonPos --
         }
     if overDown{
+		audio_play_sound(OpenMapSnd, 0, false)
         buttonPos ++
         }
     if overBack{
+		audio_play_sound(StoreSelectSnd, 0, false)
         dropY = room_height*2
         dropSpeed = 2
         with MenuButtonMaker
@@ -75,6 +78,7 @@ if mouse_check_button_pressed(mb_left){
 
     for(r=0; r<ds_list_size(myGames); r++){
         if overButton[r]{
+			audio_play_sound(StoreBuySnd, 0, false)
 			
 			SaveGameRunner.gameName = ds_list_find_value(myGames, r)
 			saveFile = file_text_open_write("saveGames.txt")
@@ -91,11 +95,12 @@ if mouse_check_button_pressed(mb_left){
             dropSpeed = 2
             }
         if overTrash[r]{
-            DeleteSaveFile(ds_list_find_value(myGames, r))
-            ds_list_delete(myGames, r)
-            }
+			with instance_create(0,0,DeleteAreYouSure){
+				myEvent = other.r
+			}
         }
     }
+}
     
 if (buttonPos + 4) > ds_list_size(myGames)
     buttonPos --

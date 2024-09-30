@@ -21,6 +21,8 @@ itemPower = "none"
 itemPowerDescription = "none"
 myColor = c_white
 myPirate = noone
+
+marked = false
         
 
 cost = 0

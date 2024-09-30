@@ -26,10 +26,12 @@ if instance_exists(CombatRunner){
 		    sprite_index = other.sprite_index
 		    image_blend = other.image_blend
 		    image_angle = other.image_angle
-		    myActualAnimationSound = audio_play_sound(other.myAnimationSound, 1, false)
-		    audio_sound_pitch(myActualAnimationSound, random_range(other.lowRange, other.highRange))
-		    lightType = "ship"
-		    }
+			if other.myAnimationSound != undefined and other.myAnimationSound != noone{
+			    myActualAnimationSound = audio_play_sound(other.myAnimationSound, 1, false)
+			    audio_sound_pitch(myActualAnimationSound, random_range(other.lowRange, other.highRange))
+			}
+			lightType = "ship"
+		}
 
 	event_user(3)
 	event_user(1)

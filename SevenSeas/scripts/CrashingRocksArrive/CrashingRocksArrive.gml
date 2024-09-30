@@ -44,6 +44,9 @@ function CrashingSailPass(){
 }
 
 function CrashingRace(){
+	with CrashingRocksEvent
+		goBetween = true
+		
 	if argument0{
 		CrashingRocksEvent.result = "Successful Passage!"
 		CrashingRocksEvent.description = "The crew expertly speeds through the rough water, and escape from between the stones just before they crash together!"
@@ -64,6 +67,8 @@ function CrashingRace(){
 
 
 function CrashingNavigate(){
+	with CrashingRocksEvent
+		goBetween = true
 	if argument0{
 		CrashingRocksEvent.result = "Successful Passage!"
 		CrashingRocksEvent.description = "The crew expertly navigate the rocky passage, and time their run perfectly to avoid the crash!"

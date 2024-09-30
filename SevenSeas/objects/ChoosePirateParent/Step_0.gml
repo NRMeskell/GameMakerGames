@@ -47,7 +47,7 @@ if myAction[2] != noone
 
 ///Choose Pirate
 
-overSelf = point_in_rectangle(mouse_x, mouse_y, xWindow, yWindow, xWindow + sprite_width, yWindow + sprite_height) and alarm[0] == -1
+overSelf = point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), xWindow, yWindow, xWindow + sprite_width, yWindow + sprite_height) and alarm[0] == -1
 
 if overSelf
     {

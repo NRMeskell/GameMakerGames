@@ -1,4 +1,7 @@
 /// @description Draw Background Land
+
+if (view_current == 0)
+{
 with Clock
 	event_user(1)
 
@@ -20,4 +23,4 @@ with frontWaves
 	
 //Draw Wheel
 draw_background_ext(MenuBackWheel, 0, 0, 1, 1, 0, merge_color(c_white, Clock.cloudColor, 0.4), 1)
-
+}

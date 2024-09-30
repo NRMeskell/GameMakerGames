@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"OasisSnd",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":192,
+  "compression":3,
+  "conversionMode":0,
+  "duration":53.83758,
+  "name":"OasisSnd",
+  "parent":{
+    "name":"background",
+    "path":"folders/Sounds/background.yy",
+  },
+  "preload":true,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"OasisSnd.wav",
+  "type":0,
+  "volume":1.0,
+}

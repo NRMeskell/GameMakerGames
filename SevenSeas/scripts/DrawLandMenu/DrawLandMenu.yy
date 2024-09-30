@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"DrawLandMenu",
   "parent":{
-    "name":"LandPort",
-    "path":"folders/Scripts/LandPort.yy",
+    "name":"Land",
+    "path":"folders/Scripts/Land.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

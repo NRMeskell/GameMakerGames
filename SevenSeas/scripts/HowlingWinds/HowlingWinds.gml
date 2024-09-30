@@ -4,17 +4,19 @@ function HowlingWinds() {
 	with instance_create(0,0,Event)
 	    {
 	    buttonNumber = 3
-	    ds_list_add(buttons, HowlHoldFast, HowlSail, HowlBelowDeck)
-	    ds_list_add(buttonStats, 0, 3, 5)
-	    ds_list_add(buttonRequires, 0, global.eventDiff[3, 3], global.eventDiff[5, 1])
+	    ds_list_add(buttons, HowlHoldFast, HowlBelowDeck, HowlSail)
+	    ds_list_add(buttonStats, 0, 5, 3)
+	    ds_list_add(buttonRequires, 0, global.eventDiff[5, 1], global.eventDiff[3, 3])
 	    ds_list_add(buttonCosts, 0, 0, 0)
-	    ds_list_add(buttonText, "hold fast", "sail on the wind", "get the crew below decks")
+	    ds_list_add(buttonText, "hold fast to save ship", "get crew below decks", "sail on the wind")
         
 	    global.allowSelect = false
 	    captionText = "Moaning Winds!"
     
 	    eventText = "An unnatural wind blows across the deck with a strange bite and unsettling cry."
 	    global.moraleBoost = "wind"  
+		
+		mySound = audio_play_sound(HowlingWindSnd, 0, true)
 	    }
 }
 
@@ -25,6 +27,8 @@ function HowlHoldFast() {
 		myHealth -= 20
 	with Ship 
 		myHealth -= 80
+		
+	audio_stop_sound(mySound)
 }
 
 function HowlSail() {
@@ -40,6 +44,7 @@ function HowlSail() {
 		with Ship 
 			myHealth -= 150
 	}
+	audio_stop_sound(mySound)
 	closeEventCode()
 }
 
@@ -58,6 +63,7 @@ function HowlBelowDeck(){
 		with Ship 
 			myHealth -= 150
 	}
+	audio_stop_sound(mySound)
 	closeEventCode()
 }
 

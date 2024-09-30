@@ -121,7 +121,7 @@ if ds_list_find_value(ItemRunner.floatingItems, 0) == id or (state == "equipped"
         {
         //Draw action info
         if instance_exists(Pirate)
-        if point_in_rectangle(mouse_x, mouse_y, drawX + sprite_get_width(ItemSheetSpr)/2 - 16, drawStartY + drawStatDisY*((r div 3)+1) + 20 - 16, drawX + sprite_get_width(ItemSheetSpr)/2 + 16, drawStartY + drawStatDisY*((r div 3)+1) + 20 + 16)
+        if point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), drawX + sprite_get_width(ItemSheetSpr)/2 - 16, drawStartY + drawStatDisY*((r div 3)+1) + 20 - 16, drawX + sprite_get_width(ItemSheetSpr)/2 + 16, drawStartY + drawStatDisY*((r div 3)+1) + 20 + 16)
             {
             startX = 10 + ((state != "equipped") * 20) + Pirate.xWindow - sprite_get_width(ActionInfoSpr)/2 + 8 + sprite_get_width(PirateSheetSpr)/2
             drawInfoY = Pirate.yWindow + 215+16 - 60

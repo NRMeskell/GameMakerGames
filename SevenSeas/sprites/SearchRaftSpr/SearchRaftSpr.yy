@@ -35,7 +35,7 @@
   "origin":9,
   "parent":{
     "name":"Crash",
-    "path":"folders/Sprites/Backgrounds/Land/Camps/RockyIslands/Crash.yy",
+    "path":"folders/Sprites/Backgrounds/Land/Camps/Shipwreck/Crash.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

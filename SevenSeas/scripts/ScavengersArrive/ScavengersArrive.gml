@@ -67,7 +67,7 @@ function ScavengersTrap() {
 			flagColor = other.myShip.flagColor
 			myShipHull = other.myShip.myShipHull
 			shipType = other.myShip.shipType
-			CombatRunner.closeRange = true
+			//CombatRunner.closeRange = true
 			}
 		instance_destroy(EventDrawer)
 	}

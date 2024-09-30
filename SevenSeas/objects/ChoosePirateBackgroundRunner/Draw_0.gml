@@ -1,5 +1,7 @@
 /// @description Draw Background
 
+if (view_current == 0)
+{
 draw_background(PirateChooseWater, drawX - background_get_width(PirateChooseWater), 0)
 draw_background(PirateChooseWater, drawX, 0)
 
@@ -34,5 +36,4 @@ if drawBanner
         draw_text(room_width/2, 33, string_hash_to_newline("Choose your captain"))
     draw_set_font(global.PirateFont)
     }
-    
-
+}

@@ -6,7 +6,7 @@ function FloatingDebris() {
 	    buttonNumber = 3
 	    ds_list_add(buttons, DebrisAvoid, DebrisSearch, DebrisDive)
 	    ds_list_add(buttonStats, 5, 3, 3)
-	    ds_list_add(buttonRequires, global.eventDiff[5, 0], global.eventDiff[3, 1], global.eventDiff[3,3])
+	    ds_list_add(buttonRequires, global.eventDiff[5, 0], global.eventDiff[3, 2], global.eventDiff[3,3])
 	    ds_list_add(buttonCosts, 0, 0, 0)
 	    ds_list_add(buttonText, "avoid the debris", "search for supplies", "dive for treasure" )
         
@@ -33,7 +33,7 @@ function DebrisAvoid() {
 	}
 	else{
 		ds_list_add(global.notificationList, "Debris stike!", "several large chunks of debris hit the ship, damaging the hull.")
-		Ship.myHealth -= irandom_range(20, 45) div 5 * 5
+		Ship.myHealth -= irandom_range(50, 150) div 5 * 5
 	}
 	closeEventCode()
 }

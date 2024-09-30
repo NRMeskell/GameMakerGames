@@ -17,7 +17,7 @@ function GoSwimming(){
 
 function SwimmingAllow(){
 	if sign(irandom(3)) {
-		ds_list_add(global.notificationList, myPirate.firstName + " had a nice swim!")
+		ds_list_add(global.notificationList, myPirate.firstName + " had a nice swim!", "The water was very refreshing, and they enjoyed the break!")
 		with myPirate 
 			UpdateMorale(1, -1)
 	}

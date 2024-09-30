@@ -5,8 +5,8 @@ textSize = 0
 
 notificationSize = captionSize
 
-onButtonLeft = point_in_rectangle(mouse_x, mouse_y, drawX - buttonShift - sprite_get_width(ButtonSpr)/4, drawY - sprite_get_height(ButtonSpr)/2.5 + (notificationSize)/2 + 20, drawX - buttonShift + sprite_get_width(ButtonSpr)/4, drawY + sprite_get_height(ButtonSpr)/2.5 + (notificationSize)/2 + 20)
-onButtonRight = point_in_rectangle(mouse_x, mouse_y, drawX + buttonShift - sprite_get_width(ButtonSpr)/4, drawY - sprite_get_height(ButtonSpr)/2.5 + (notificationSize)/2 + 20, drawX + buttonShift + sprite_get_width(ButtonSpr)/4, drawY + sprite_get_height(ButtonSpr)/2.5 + (notificationSize)/2 + 20)
+onButtonLeft = point_in_rectangle(window_view_mouse_get_x(0), mouse_y, drawX - buttonShift - sprite_get_width(ButtonSpr)/4, drawY - sprite_get_height(ButtonSpr)/2.5 + (notificationSize)/2 + 20, drawX - buttonShift + sprite_get_width(ButtonSpr)/4, drawY + sprite_get_height(ButtonSpr)/2.5 + (notificationSize)/2 + 20)
+onButtonRight = point_in_rectangle(window_view_mouse_get_x(0), mouse_y, drawX + buttonShift - sprite_get_width(ButtonSpr)/4, drawY - sprite_get_height(ButtonSpr)/2.5 + (notificationSize)/2 + 20, drawX + buttonShift + sprite_get_width(ButtonSpr)/4, drawY + sprite_get_height(ButtonSpr)/2.5 + (notificationSize)/2 + 20)
 
 if (mouse_check_button_pressed(mb_left) and (onButtonRight or onButtonLeft))// or eventTimer < 1
     {

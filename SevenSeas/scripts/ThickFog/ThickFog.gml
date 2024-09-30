@@ -35,7 +35,7 @@ function ThickFogSail() {
 	else{
 		ds_list_add(global.notificationList, "rocks hit!", "the ship crashes into several unseen rocks before emerging from the fog.")
 		with Ship
-			myHealth -= irandom(10) + 40
+			myHealth -= irandom(25) + 50
 	}
 	closeEventCode()
 }

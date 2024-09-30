@@ -1,5 +1,5 @@
 /// @description update Stats
 
 name = "Retreat"
-description = "ends combat with a 50% success rate." 
+description = "Ends combat 30% of the time." 
 

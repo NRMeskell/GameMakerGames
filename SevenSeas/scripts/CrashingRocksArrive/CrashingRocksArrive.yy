@@ -6,7 +6,7 @@
   "name":"CrashingRocksArrive",
   "parent":{
     "name":"CrashingRocks",
-    "path":"folders/Scripts/Events/Characters/CrashingRocks.yy",
+    "path":"folders/Scripts/Events/Characters/Shipwreck/CrashingRocks.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

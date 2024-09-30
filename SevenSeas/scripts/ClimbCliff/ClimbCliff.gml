@@ -9,7 +9,7 @@ function ClimbCliff() {
 	
 	}
 	else{
-		ds_list_add(global.notificationList, "Safe Climb!", "The crew  return with " + lootText + "!")
+		ds_list_add(global.notificationList, "Safe Climb!", "The crew return with " + lootText + "!")
 	}
 	
 }

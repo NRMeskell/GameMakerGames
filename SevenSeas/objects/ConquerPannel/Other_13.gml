@@ -26,7 +26,7 @@ draw_set_color(c_black)
 draw_set_font(global.PirateFont)
 draw_text(panelWidth, 85, "Level: " + string(global.seaLevel+1))
 
-draw_text_ext(panelWidth, 128, des, 14, panelWidth*2 - 40)
+draw_text_ext(panelWidth, 128, des, 14, panelWidth*2 - 46)
 
 //draw criteria
 draw_set_font(global.PirateFont)

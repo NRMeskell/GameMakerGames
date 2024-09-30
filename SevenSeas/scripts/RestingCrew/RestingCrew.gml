@@ -18,7 +18,7 @@ function RestingCrew() {
 	boards = 0
 	while HasStored(3,1) and (Ship.myHealth < Ship.maxHealth)
 	    {
-	    Ship.myHealth = min(Ship.myHealth + (Ship.maxHealth div 10), Ship.maxHealth)
+	    Ship.myHealth = min(Ship.myHealth + (Ship.maxHealth div 15), Ship.maxHealth)
 	    boards += 1
 	    LoseCargo(3,1)
 	    }

@@ -8,6 +8,7 @@ if global.doTime and !global.inPort and MapShip.path_position < 0.98
     
 if eventTimer <= 0 
     {
+	event_user(0)
     eventTimer = random_range(1,2)*eventTimeAmount
     
     //calm events

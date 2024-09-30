@@ -1,6 +1,4 @@
-var __b__;
-__b__ = action_if_variable(view_current, 0, 0);
-if __b__
+if (view_current == 0)
 {
 {
 with SailingDecor if y == Ship.frontWaves.waveBase

@@ -1,5 +1,11 @@
 /// @description Rotate
 
+if (image_angle div 90 == 0) and (image_angle div 180 != 0) {
+	mySound = audio_play_sound(SplashSnd, 0, false)
+	audio_sound_pitch(mySound, random_range(0.7, 1.4))
+	audio_sound_gain(mySound, random_range(0.5, 1) * x/(room_width/2), 0)
+}
+
 image_angle -= spinSpeed
 
 if image_angle < -180

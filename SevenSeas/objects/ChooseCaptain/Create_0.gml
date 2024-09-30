@@ -147,7 +147,7 @@ drawOptionsSpr = 2
 
 tempAction = instance_create(-100, -100, myAction[0])
 
-myShirt = MakeRandomShirtItem(0)
+EquipItem(id, MakeRandomShirtItem(0))
     
 while true{
     var breakLoop = false
@@ -173,14 +173,15 @@ while true{
         }
     if breakLoop
         break
-    else
-        myShirt = MakeRandomShirtItem(0)
-    }
+    else{
+		instance_destroy(myShirt)
+		myShirt = instance_create(0,0,ItemParent)
+        EquipItem(id, MakeRandomShirtItem(0))
+	}
+}
     
-myPants = MakeRandomPantsItem(-1)     
+EquipItem(id,MakeRandomPantsItem(-1))  
         
 instance_destroy(tempAction)
      
-myItem = MakeRandomHandItem(0)
-EquipItem(id, myItem)
-myItem.selected = false
+EquipItem(id, MakeRandomHandItem(0))

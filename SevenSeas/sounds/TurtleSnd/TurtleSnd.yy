@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"TurtleSnd",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":14.616625,
+  "name":"TurtleSnd",
+  "parent":{
+    "name":"Events",
+    "path":"folders/Sounds/game/Events.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"TurtleSnd.wav",
+  "type":0,
+  "volume":1.0,
+}

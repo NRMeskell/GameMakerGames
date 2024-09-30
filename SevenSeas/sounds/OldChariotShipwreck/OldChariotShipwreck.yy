@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":129.99692,
+  "duration":0.0,
   "name":"OldChariotShipwreck",
   "parent":{
     "name":"Shipwreck",

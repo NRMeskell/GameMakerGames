@@ -60,7 +60,7 @@ function FloatingLightsChase() {
 	else{
 		ds_list_add(global.notificationList, "lights attack!", "The lights begin to swarm and attack the crew, burning their skin when close!")
 		with Pirate
-			myHealth -= 20 + irandom(10)
+			myHealth -= 30 + irandom(10)
 	}
 }
 

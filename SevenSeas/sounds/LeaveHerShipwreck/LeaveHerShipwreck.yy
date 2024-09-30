@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":129.35837,
+  "duration":0.0,
   "name":"LeaveHerShipwreck",
   "parent":{
     "name":"Shipwreck",

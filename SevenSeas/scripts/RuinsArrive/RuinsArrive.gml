@@ -38,7 +38,7 @@ function RuinsSearch() {
 		else{
 			var injuredPirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
 			ds_list_add(global.notificationList, "Ruins collapse!", "An old stairwell breaks underfoot, injuring " + injuredPirate.firstName)
-			injuredPirate.myHealth -= 20
+			injuredPirate.myHealth -= 25
 		}
 	}
 	closeEventCode()
@@ -94,7 +94,7 @@ function RuinsHelp() {
 	else{
 		var injuredPirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
 		ds_list_add(global.notificationList, "Ruins collapse!", "The stairwell to the cage breaks underfoot, injuring " + injuredPirate.firstName)
-		injuredPirate.myHealth -= 20
+		injuredPirate.myHealth -= 25
 	}
 	closeEventCode()
 }

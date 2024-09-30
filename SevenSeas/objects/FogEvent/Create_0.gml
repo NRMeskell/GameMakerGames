@@ -1,5 +1,8 @@
 /// @description Vars
 
+mySound = audio_play_sound(SplashSnd, 0, false)
+audio_stop_sound(mySound)
+
 x = Ship.drawX + irandom_range(-100, 100)
 y = Ship.drawY + irandom_range(0, -100) 
 path_start(BirdPath, 0.1, path_action_restart, false)

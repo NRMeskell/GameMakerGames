@@ -31,7 +31,7 @@ with ActionParent
 
 scrollSpeed = 8
 
-if (canUseActions and point_in_rectangle(mouse_x, mouse_y, xMin, yMin, xMax, yMax) or actionSelected) and CombatRunner.playerTurn and !instance_exists(Event) and __view_get( e__VW.XView, 0 ) == 0
+if (canUseActions and point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), xMin, yMin, xMax, yMax) or actionSelected) and CombatRunner.playerTurn and !instance_exists(Event) and __view_get( e__VW.XView, 0 ) == 0
     {
     //Update List
     if refreshed = false

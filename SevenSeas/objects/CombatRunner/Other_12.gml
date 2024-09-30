@@ -189,6 +189,7 @@ global.moraleBoost = "combat"
 with Pirate
     UpdateMorale(1, global.FEARSOME)
     
+overAction[0] = false
 
 ///Begin Game
 event_user(0)

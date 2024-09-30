@@ -6,7 +6,7 @@
   "name":"RestingCrew",
   "parent":{
     "name":"CampFireChoices",
-    "path":"folders/Scripts/LandPort/CampFireChoices.yy",
+    "path":"folders/Scripts/Land/CampFireChoices.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

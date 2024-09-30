@@ -8,5 +8,4 @@ draw_set_color(c_gray)
 draw_set_font(global.LargePirateFont)
 draw_text_transformed(drawX[0] + room_width/2, room_height/2, string_hash_to_newline("LOADING..."), 1.2, 1.2, 0)
 draw_set_font(global.PirateFont)
-    
 

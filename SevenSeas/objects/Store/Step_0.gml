@@ -17,7 +17,7 @@ for(i=currentView; i<min(ds_list_size(items), currentView + maxView); i++)
 		}
     }
     
-if point_in_rectangle(mouse_x, mouse_y, x - sprite_width/2, y - sprite_height/2, x + sprite_width/2, y + sprite_height/2)
+if point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), x - sprite_width/2, y - sprite_height/2, x + sprite_width/2, y + sprite_height/2)
     {
     if mouse_wheel_down() and (currentView + maxView < ds_list_size(items))
         currentView ++
@@ -27,8 +27,8 @@ if point_in_rectangle(mouse_x, mouse_y, x - sprite_width/2, y - sprite_height/2,
 
 ///Over Buttons
 
-overLeft = point_in_rectangle(mouse_x, mouse_y, x-sprite_get_width(sprite_index)/2, y + sprite_get_height(sprite_index)/2 - 30, x-1, y+sprite_get_height(sprite_index)/2)
-overRight = point_in_rectangle(mouse_x, mouse_y, x+1, y + sprite_get_height(sprite_index)/2 - 30, x+sprite_get_width(sprite_index)/2, y+sprite_get_height(sprite_index)/2)
+overLeft = point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), x-sprite_get_width(sprite_index)/2, y + sprite_get_height(sprite_index)/2 - 30, x-1, y+sprite_get_height(sprite_index)/2)
+overRight = point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), x+1, y + sprite_get_height(sprite_index)/2 - 30, x+sprite_get_width(sprite_index)/2, y+sprite_get_height(sprite_index)/2)
 
 if overLeft and !instance_exists(DumpItem)
     {

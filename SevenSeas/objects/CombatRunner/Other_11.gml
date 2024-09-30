@@ -116,22 +116,28 @@ if myHealth > 0 and instance_number(Enemy) > 0
  
 //Chose Actions by desirability (Top 4 Chosen)
 ds_list_clear(possibleEnemyActions)
+var totalDesire = 0
 for(var i=0; i<4; i++){
-    myAction = -1
-    maxDesire = 0
+    var myAction = -1
+    var maxDesire = 0
     for(var r=0; r<ds_list_size(desireList); r++){
         if ds_list_find_value(desireList, r) > maxDesire{
             myAction = r
             maxDesire = ds_list_find_value(desireList, r)
-            }
-        }
-        
-    if myAction > -1{
-        ds_list_add(possibleEnemyActions, ds_list_find_value(enemyActionList, myAction))
-        ds_list_delete(enemyActionList, myAction)
-        ds_list_delete(desireList, myAction)
         }
     }
+ 
+    if myAction > -1{
+		totalDesire += power(maxDesire, 2)
+        ds_list_add(possibleEnemyActions, [ds_list_find_value(enemyActionList, myAction), power(maxDesire,2)])
+        ds_list_delete(enemyActionList, myAction)
+        ds_list_delete(desireList, myAction)
+    }
+}
+
+for(var i=0; i< ds_list_size(possibleEnemyActions); i++){
+	ds_list_replace(possibleEnemyActions, i, [ds_list_find_value(possibleEnemyActions, i)[0], ds_list_find_value(possibleEnemyActions, i)[1]/totalDesire])
+}
 
 allowShipActions = true
 allowMelleActions = true

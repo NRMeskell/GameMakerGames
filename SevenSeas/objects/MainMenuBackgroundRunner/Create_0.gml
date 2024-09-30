@@ -1,11 +1,12 @@
 /// @description Fonts
 
-display_set_gui_size(room_width, room_height);
+//application_surface_draw_enable(false); //So we don't draw it twice.
 
 ///Waves Vars
 
 landMap = ds_map_create()
 landMap[? global.seaNames[0]] = PirateCoveLand
+
 
 //land
 landX = 0

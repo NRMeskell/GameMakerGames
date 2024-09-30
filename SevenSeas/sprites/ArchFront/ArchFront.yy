@@ -12,21 +12,21 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"1cd446c5-a148-40cf-a740-ce6396db73d5","name":"1cd446c5-a148-40cf-a740-ce6396db73d5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"50e9adb0-d3ca-4336-83cc-d754a571e296","name":"50e9adb0-d3ca-4336-83cc-d754a571e296","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":360,
   "HTile":true,
   "layers":[
-    {"$GMImageLayer":"","%Name":"e4c7d9a0-941e-4102-989d-7fd2a058fecf","blendMode":0,"displayName":"default","isLocked":false,"name":"e4c7d9a0-941e-4102-989d-7fd2a058fecf","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"d6f7f309-1e9b-4fd7-b73c-fa8a74b82d32","blendMode":0,"displayName":"default","isLocked":false,"name":"d6f7f309-1e9b-4fd7-b73c-fa8a74b82d32","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"ArchFront",
   "nineSlice":null,
   "origin":0,
   "parent":{
     "name":"Arch",
-    "path":"folders/Sprites/Backgrounds/Land/Camps/RockyIslands/Arch.yy",
+    "path":"folders/Sprites/Backgrounds/Land/Camps/Shipwreck/Arch.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1cd446c5-a148-40cf-a740-ce6396db73d5","path":"sprites/ArchFront/ArchFront.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"8e146716-1197-44f6-97a0-f1ad76ff1a9d","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"50e9adb0-d3ca-4336-83cc-d754a571e296","path":"sprites/ArchFront/ArchFront.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"247f97f8-aedf-4c09-9995-5fd91bafd952","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

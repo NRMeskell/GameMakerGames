@@ -14,6 +14,7 @@ for(i=0; i<hatNumber; i++)
         }
         
     ds_list_add(itemList[0], newHat)
+	instance_deactivate_object(newHat)
     }
 
 
@@ -33,6 +34,7 @@ for(i=0; i<shirtNumber; i++)
         }
         
     ds_list_add(itemList[1], newShirt)
+	instance_deactivate_object(newShirt)
     }
 
 
@@ -52,6 +54,7 @@ for(i=0; i<pantsNumber; i++)
         }
         
     ds_list_add(itemList[2], newPants)
+	instance_deactivate_object(newPants)
     }
 
 

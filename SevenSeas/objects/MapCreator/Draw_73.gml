@@ -114,20 +114,20 @@ else
 
        
 //drawSeaType
-draw_set_valign(fa_center)
+draw_set_valign(fa_top)
 draw_set_halign(fa_center)
 draw_set_color(merge_color(c_red,c_black,0.3))
 draw_set_font(global.LargePirateFont)
-draw_text_transformed(__view_get( e__VW.XView, 1 ) + __view_get( e__VW.WView, 1 )/2, __view_get( e__VW.YView, 1 ) + 11*zoom, string_hash_to_newline(global.seaType), zoom, zoom, 0)
+draw_text_ext_transformed(__view_get( e__VW.XView, 1 ) + __view_get( e__VW.WView, 1 )/2, __view_get( e__VW.YView, 1 ) + 6*zoom, string_hash_to_newline(global.seaType), 14, 100, zoom, zoom, 0)
 draw_set_color(c_black)
-
+draw_set_valign(fa_center)
 draw_set_font(global.PirateFont)
 
 ///Get view to surface
 
 if !surface_exists(surf)
     {
-    surf = surface_create(__view_get( e__VW.WPort, 1 ), __view_get( e__VW.HPort, 1 ));
+    surf = surface_create(max(1,__view_get( e__VW.WPort, 1 )), max(1,__view_get( e__VW.HPort, 1 )));
     }
 
 __view_set( e__VW.SurfaceID, 1, surf );

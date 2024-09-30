@@ -16,7 +16,7 @@ function StowawayLetAboard() {
 			    }
 			}
 		else{
-			ds_list_add(global.notificationList, "stowaway declines!", "The stowaway says they only wanted to get out of town, and do not want to join the crew. They will leave at the next port.")
+			ds_list_add(global.notificationList, "stowaway declines!", "The stowaway says they will leave at the next port.")
 			with newPirate
 				myGoal = "leave"
 			}

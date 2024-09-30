@@ -14,6 +14,8 @@ function StrangeAnimal() {
 	    captionText = "Strange Noises!"
 	    eventText = "Strange scuffling sounds are coming from inside a storage container!"
 	    global.moraleBoost = "animal"
+		
+		audio_play_sound(ScratchingSnd, 0, true)
 	    }
 
 

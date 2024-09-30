@@ -12,7 +12,7 @@ if !instance_exists(Defeat){
     healthNumber = image_number - ((myHealth/maxHealth)*image_number)
     
     
-    if CombatRunner.playerTurn and point_in_rectangle(mouse_x, mouse_y, x-sprite_width/2, y-sprite_height/2, x+sprite_width/2, y+sprite_height/2 + drawHeight) and __view_get( e__VW.XView, 0 ) = 0
+    if CombatRunner.playerTurn and point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), x-sprite_width/2, y-sprite_height/2, x+sprite_width/2, y+sprite_height/2 + drawHeight) and __view_get( e__VW.XView, 0 ) = 0
         {
         if drawHeight < maxDrawHeight
             drawHeight += scrollSpeed
@@ -43,8 +43,8 @@ if !instance_exists(Defeat){
 			draw_sprite_ext(PlayerAttackActionsSpr, myButtonType.spriteNumber, x, y + drawHeight - (ds_list_size(myStats)*statSep + i*actionSep), -0.8, 0.8, 0, c_white, 0.8)
             
             //Draw action info
-            if point_in_rectangle(mouse_x, mouse_y, x-13, y + drawHeight - (ds_list_size(myStats)*statSep + i*actionSep) - 13, x + 12, y + drawHeight - (ds_list_size(myStats)*statSep + i*actionSep) + 13) and __view_get( e__VW.XView, 0 ) = 0
-            if !point_in_rectangle(mouse_x, mouse_y, x-20, y - 20, x+20, y+20)
+            if point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), x-13, y + drawHeight - (ds_list_size(myStats)*statSep + i*actionSep) - 13, x + 12, y + drawHeight - (ds_list_size(myStats)*statSep + i*actionSep) + 13) and __view_get( e__VW.XView, 0 ) = 0
+            if !point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), x-20, y - 20, x+20, y+20)
                 {
                 startX = room_width - sprite_get_width(ActionInfoSpr)
                 drawInfoY = y + drawHeight - (ds_list_size(myStats)*statSep + i*actionSep) + 60

@@ -12,7 +12,7 @@ if instance_exists(CombatRunner)
     else
         canUse = true
     
-    if point_in_rectangle(mouse_x, mouse_y, x - sprite_width/2, y - sprite_height/2, x + sprite_width/2, y + sprite_height/2) and mouse_check_button_pressed(mb_left) and CombatRunner.playerTurn
+    if point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), x - sprite_width/2, y - sprite_height/2, x + sprite_width/2, y + sprite_height/2) and mouse_check_button_pressed(mb_left) and CombatRunner.playerTurn
         {
         if canUse
             {
@@ -42,7 +42,7 @@ if instance_exists(CombatRunner)
             if mouse_check_button_pressed(mb_left)
                 {
                 targeted = false
-                if point_in_rectangle(mouse_x, mouse_y, x-sprite_width/2, y-sprite_height/2, x+sprite_height/2, y+sprite_height/2)
+                if point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), x-sprite_width/2, y-sprite_height/2, x+sprite_height/2, y+sprite_height/2)
                     {
                     other.myTarget = id
                     CombatRunner.canEndTurn = true

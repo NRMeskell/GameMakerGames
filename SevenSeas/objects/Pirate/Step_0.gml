@@ -1,5 +1,10 @@
 /// @description Slots
 
+if myHealth < 1{
+	event_user(2)
+	exit;
+}	
+
 if !instance_exists(DumpItem){
 
 canMoveCombat = true
@@ -13,7 +18,7 @@ if selected = true and !instance_exists(Event) and ds_list_size(global.notificat
     if mouse_check_button_pressed(mb_left)
         with ShipSlot
             {
-            if point_in_rectangle(mouse_x, mouse_y, x, y, x+24, y+24)
+            if point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), x, y, x+24, y+24)
                 {
                 if occupied = false and global.menuShipLayer = myLayer and slotType != "storage" and other.canMoveCombat
                     {
@@ -193,18 +198,18 @@ prevMorale = morale
 /* */
 ///Open Equipment Slots
 
-overClose = point_in_circle(mouse_x, mouse_y, xWindow + sprite_get_width(PirateSheetSpr)-2, yWindow + 2, 10)
+overClose = point_in_circle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), xWindow + sprite_get_width(PirateSheetSpr)-2, yWindow + 2, 10)
 if selected and ((mouse_check_button_pressed(mb_left) and overClose) or (ds_list_size(global.notificationList) > 0))
 	event_user(0)
 
 
-overHat = point_in_rectangle(mouse_x, mouse_y, xWindow+drawX1-13, yWindow+drawY1-13, xWindow+drawX1+13, yWindow+drawY1+13)
-overShirt = point_in_rectangle(mouse_x, mouse_y, xWindow+drawX2-13, yWindow+drawY1-13, xWindow+drawX2+13, yWindow+drawY1+13)
+overHat = point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), xWindow+drawX1-13, yWindow+drawY1-13, xWindow+drawX1+13, yWindow+drawY1+13)
+overShirt = point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), xWindow+drawX2-13, yWindow+drawY1-13, xWindow+drawX2+13, yWindow+drawY1+13)
 
-overLeftHand = point_in_rectangle(mouse_x, mouse_y, xWindow+drawX2-13, yWindow+drawY2-13, xWindow+drawX2+13, yWindow+drawY2+13)
-overRightHand = point_in_rectangle(mouse_x, mouse_y, xWindow+drawX1-13, yWindow+drawY2-13, xWindow+drawX1+13, yWindow+drawY2+13)
-overPants = point_in_rectangle(mouse_x, mouse_y, xWindow+drawX2-13, yWindow+drawY3-13, xWindow+drawX2+13, yWindow+drawY3+13)
-overPet = point_in_rectangle(mouse_x, mouse_y, xWindow+drawX1-13, yWindow+drawY3-13, xWindow+drawX1+13, yWindow+drawY3+13)
+overLeftHand = point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), xWindow+drawX2-13, yWindow+drawY2-13, xWindow+drawX2+13, yWindow+drawY2+13)
+overRightHand = point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), xWindow+drawX1-13, yWindow+drawY2-13, xWindow+drawX1+13, yWindow+drawY2+13)
+overPants = point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), xWindow+drawX2-13, yWindow+drawY3-13, xWindow+drawX2+13, yWindow+drawY3+13)
+overPet = point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), xWindow+drawX1-13, yWindow+drawY3-13, xWindow+drawX1+13, yWindow+drawY3+13)
 
 
 lookingItem = noone
@@ -263,8 +268,8 @@ if lookingItem != noone
 /* */
 ///Select
 
-overSprite = drawable and point_in_rectangle(mouse_x, mouse_y, Ship.drawTagX + drawTagPictureX, Ship.drawTagY + drawTagPictureY + myTagPlace + tagShift, Ship.drawTagX + drawTagPictureX + drawTagPictureWidth, Ship.drawTagY + drawTagPictureY + myTagPlace + drawTagPictureHeight + tagShift + 15)
-overButton = point_in_rectangle(mouse_x, mouse_y, xReal, yReal, xReal + realWidth, yReal + realHeight) and !global.itemSelected
+overSprite = drawable and point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), Ship.drawTagX + drawTagPictureX, Ship.drawTagY + drawTagPictureY + myTagPlace + tagShift, Ship.drawTagX + drawTagPictureX + drawTagPictureWidth, Ship.drawTagY + drawTagPictureY + myTagPlace + drawTagPictureHeight + tagShift + 15)
+overButton = point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), xReal, yReal, xReal + realWidth, yReal + realHeight) and !global.itemSelected
 
 if mouse_check_button_pressed(mb_left) and !instance_exists(DumpItem) and __view_get( e__VW.XView, 0 ) = 0
     {
@@ -314,7 +319,7 @@ if mouse_check_button_pressed(mb_left) and !instance_exists(DumpItem) and __view
 
 dumpX = Ship.drawTagX + 54
 dumpY = Ship.drawTagY + myTagPlace + tagShift + 9
-overDump = point_in_rectangle(mouse_x, mouse_y, dumpX + 3, dumpY + 3, dumpX+realWidth-5, dumpY+realHeight-5)
+overDump = point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), dumpX + 3, dumpY + 3, dumpX+realWidth-5, dumpY+realHeight-5)
 
 if selected
     {

@@ -6,7 +6,7 @@
   "name":"CollectorsDecline",
   "parent":{
     "name":"CoveCollector",
-    "path":"folders/Scripts/Events/Characters/CoveCollector.yy",
+    "path":"folders/Scripts/Events/Characters/PirateCove/CoveCollector.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

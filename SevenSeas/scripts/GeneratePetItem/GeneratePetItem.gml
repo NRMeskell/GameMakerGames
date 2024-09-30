@@ -36,7 +36,7 @@ function GeneratePetItem(argument0) {
 		        itemInfo = "allows a pirate to handle the sails from unlikely places"
         
 		        itemPower = "rigging"   
-		        itemPowerDescription = "equipped pirate provides their rigging bonus, no matter where they are on board."
+		        itemPowerDescription = "equipped pirate provides a rigging bonus, no matter where they are on board."
 		    }
 		    else if chooseType == 1 {
 		        itemNumber = 7

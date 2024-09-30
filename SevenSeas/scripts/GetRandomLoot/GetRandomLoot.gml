@@ -1,7 +1,7 @@
 function GetRandomLoot(argument0, argument1, argument2) {
 	//Get Loot
 	itemNames = ds_list_create()
-	itemLevel = irandom(global.seaLevel div 2) + choose(0)
+	itemLevel = irandom(global.seaLevel div 2)
 	itemList = ds_list_create()
 	lootList = [3]
 	//Generate Loot

@@ -17,6 +17,7 @@ for(i=0; i<supNumber; i++)
         }
         
     ds_list_add(itemList[1], newSup)
+	instance_deactivate_object(newSup)
     }
 
 ///Ships
@@ -49,6 +50,7 @@ for(i=0; i<shipNumber; i++)
         }
         
     ds_list_add(itemList[0], newShip)
+	instance_deactivate_object(newShip)
     }
 
 
@@ -68,5 +70,6 @@ for(i=0; i<repairNumber; i++)
         }
         
     ds_list_add(itemList[2], newRepair)
+	instance_deactivate_object(newRepair)
     }
 

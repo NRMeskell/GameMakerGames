@@ -7,7 +7,7 @@ maxHealth = 30
 myHealth = maxHealth
 
 event_user(0)
-repeat(2){
+repeat(3){
 	if myType == 0
 		ds_list_add(myStats, choose(0,0,0,1))
 	else
