@@ -9,7 +9,7 @@ function TradingPostRest() {
     
 	while HasStored(3,1) and (Ship.myHealth < Ship.maxHealth)
 	    {
-	    Ship.myHealth += min(25, Ship.maxHealth - Ship.myHealth)
+	    Ship.myHealth += min(Ship.maxHealth div 15, Ship.maxHealth - Ship.myHealth)
 	    LoseCargo(3,1)
 	    }
     

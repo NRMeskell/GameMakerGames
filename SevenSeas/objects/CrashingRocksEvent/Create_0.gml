@@ -1,5 +1,9 @@
 /// @description Raft Vars
 
+goBetween = false
+mySound = audio_play_sound(SplashSnd, 0, false)
+audio_stop_sound(mySound)
+
 CrashingRocksEvent.result = ""
 CrashingRocksEvent.description = ""
 CrashingRocksEvent.sailing = false

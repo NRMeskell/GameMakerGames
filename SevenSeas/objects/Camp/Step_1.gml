@@ -3,11 +3,23 @@
 if x!=-100
     {		
 	if sprite_index == CampFireSpr{
+		if !audio_is_playing(CampFireSnd){
+			myFire = audio_play_sound(CampFireSnd, 0, false)
+			audio_sound_gain(myFire, 1, 0)
+		}
 		myName = "camp"
 	}else if sprite_index = CampFireDyingSpr{
+		if !audio_is_playing(CampFireSnd){
+			myFire = audio_play_sound(CampFireSnd, 0, false)
+			audio_sound_gain(myFire, 0.8, 0)
+			audio_sound_pitch(myFire, 0.7)
+		}
 		myName = "used camp"
 	}
 	else{
+		if audio_is_playing(myFire)
+			audio_stop_sound(myFire)
+			
 		myName = "dead camp"
 		campPower = 0
 	}
@@ -36,8 +48,9 @@ if x!=-100
 		}
 	}
 }
-else
+else{		
     if campFireLight != noone{
         instance_destroy(campFireLight)
         campFireLight = noone
     }
+}

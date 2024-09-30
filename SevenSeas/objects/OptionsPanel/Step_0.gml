@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-overMainMenu = point_in_rectangle(mouse_x, mouse_y, xc - sprite_get_width(ButtonSpr)/3, mainMenuY - 10, xc + sprite_get_width(ButtonSpr)/3, mainMenuY + 10) 
+overMainMenu = point_in_rectangle(window_view_mouse_get_x(0), mouse_y, xc - sprite_get_width(ButtonSpr)/3, mainMenuY - 10, xc + sprite_get_width(ButtonSpr)/3, mainMenuY + 10) 
 
 if x < room_width - sprite_get_width(OptionsPanelSpr) + 30{
 	slideSpeed = min(slideSpeed + 1, 4)
@@ -49,7 +49,7 @@ if mouse_check_button_pressed(mb_left){
 		with ViewController 
 			event_user(0)
 	}
-	if overMainMenu{
+	if overMainMenu and room == GameRoom{
 		if global.saveType == 2 or (global.inPort and (MapShip.targetPort.image_index = 1 or global.saveType == 1))
 			with SaveGameRunner
 				event_user(1)
@@ -60,13 +60,13 @@ if mouse_check_button_pressed(mb_left){
 
 if mouse_check_button(mb_left){
 	if mouseOverOption[2]{
-		global.masterVolume = min(sqrt(1), max(0, (mouse_x - (xc - volumeWidth))/(volumeWidth*2/sqrt(1))))
+		global.masterVolume = min(sqrt(1), max(0, (window_view_mouse_get_x(0) - (xc - volumeWidth))/(volumeWidth*2/sqrt(1))))
 	}
 	if mouseOverOption[3]{
-		global.musicVolume = min(sqrt(1), max(0, (mouse_x - (xc - volumeWidth))/(volumeWidth*2/sqrt(1))))
+		global.musicVolume = min(sqrt(1), max(0, (window_view_mouse_get_x(0) - (xc - volumeWidth))/(volumeWidth*2/sqrt(1))))
 	}
 	if mouseOverOption[4]{
-		global.worldVolume = min(sqrt(1), max(0, (mouse_x - (xc - volumeWidth))/(volumeWidth*2/sqrt(1))))
+		global.worldVolume = min(sqrt(1), max(0, (window_view_mouse_get_x(0) - (xc - volumeWidth))/(volumeWidth*2/sqrt(1))))
 	}
 	with SoundController
 		event_user(0)

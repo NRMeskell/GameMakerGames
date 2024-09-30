@@ -15,6 +15,7 @@
     {"$GMSpriteFrame":"","%Name":"9435fa88-fd28-4e0d-8882-7a427d819181","name":"9435fa88-fd28-4e0d-8882-7a427d819181","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"c6c815c9-1801-47c4-8d84-3341bf10961c","name":"c6c815c9-1801-47c4-8d84-3341bf10961c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"3a00b90d-0088-4fb2-876b-f97a70e63163","name":"3a00b90d-0088-4fb2-876b-f97a70e63163","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"e780553b-a22b-4bf7-a020-427ab1f7c95d","name":"e780553b-a22b-4bf7-a020-427ab1f7c95d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"83a3ef90-c32f-4616-8abf-376f4715e325","name":"83a3ef90-c32f-4616-8abf-376f4715e325","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
@@ -52,7 +53,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":4.0,
+    "length":5.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -81,8 +82,11 @@
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3a00b90d-0088-4fb2-876b-f97a70e63163","path":"sprites/SeaConqueredDecorSpr/SeaConqueredDecorSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"b26d39e3-8ccf-4e2f-851b-fc042b863a06","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e780553b-a22b-4bf7-a020-427ab1f7c95d","path":"sprites/SeaConqueredDecorSpr/SeaConqueredDecorSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"c91bb77d-53f4-4c15-8b8b-dd8121feb7f4","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"83a3ef90-c32f-4616-8abf-376f4715e325","path":"sprites/SeaConqueredDecorSpr/SeaConqueredDecorSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"0ae93f8c-58fe-4284-ba3a-ba6da914acea","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"0ae93f8c-58fe-4284-ba3a-ba6da914acea","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

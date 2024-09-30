@@ -20,3 +20,5 @@ backRainY = 0
 frontRainSpeed = 20
 backRainSpeed = 15
 
+myWind = audio_play_sound(HowlingWindSnd, 0, true)
+audio_stop_sound(myWind)

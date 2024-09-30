@@ -7,7 +7,7 @@ function closeEventCode() {
 		with DrawPort
 		    selected = false
 		
-		with EventDrawer
+		with EventDrawer if !global.inPort	
 			floatAway = true
 	}
 }

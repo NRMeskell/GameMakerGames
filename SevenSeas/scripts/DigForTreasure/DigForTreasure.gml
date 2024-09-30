@@ -2,7 +2,7 @@ function DigForTreasure() {
 	//Dig for Treasure
 
 	audio_stop_sound(DiggingSnd)
-	treasureFound = sign(irandom_range(-5, campPower+global.pirateNum[global.KEEN])) >= 0
+	treasureFound = irandom(3) == 0
 	with TreasureChest{
 		treasureFound = other.treasureFound
 		event_user(2)

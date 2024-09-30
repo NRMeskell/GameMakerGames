@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"HuntSeaLions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"HuntSeaLions",
+  "parent":{
+    "name":"Special",
+    "path":"folders/Scripts/Land/CampFireChoices/Special.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

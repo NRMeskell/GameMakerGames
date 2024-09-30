@@ -11,7 +11,7 @@ function ManOverboard() {
 	    ds_list_add(buttonText, "Throw them a rope!", "Stear towards them!")
         
 	    global.allowSelect = false
-	    captionText = pirateOverboard.firstName + "overboard!"
+	    captionText = pirateOverboard.firstName + " overboard!"
 	    eventText = pirateOverboard.name + " will drown if they don't make it back!" 
 	    global.moraleBoost = "overboard"  
 	    } 

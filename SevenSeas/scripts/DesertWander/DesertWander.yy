@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"DesertWander",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"DesertWander",
+  "parent":{
+    "name":"Special",
+    "path":"folders/Scripts/Land/CampFireChoices/Special.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -15,16 +15,20 @@ button[2] = "undefined"
 //Place vars
 
 //names
-buttonNames[0] = "cave for treasure"
+buttonNames[0] = "explore the cave"
 buttonNames[1] = ""
-buttonNames[2] = "climb for treasure"
+buttonNames[2] = "scale the cliffs"
 buttonNames[3] = "dig for treasure"
-buttonNames[4] = "search the jungle"
-buttonNames[5] = "dive for treasure"
-buttonNames[6] = "loot wreckage"
-buttonNames[7] = "approach idols"
+buttonNames[4] = "explore the jungle"
+buttonNames[5] = "dive in the oasis"
+buttonNames[6] = "loot the wreckage"
+buttonNames[7] = "hunt among the rocks"
+buttonNames[8] = "wander into desert"
+buttonNames[9] = "raft up the river"
 
 
+myFire = audio_play_sound(CampFireSnd, 0, true)
+audio_stop_sound(myFire)
 //resting vars
 getTreasure = undefined
 

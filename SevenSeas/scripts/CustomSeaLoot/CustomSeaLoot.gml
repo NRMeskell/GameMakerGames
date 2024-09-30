@@ -87,7 +87,25 @@ function CustomSeaLoot(itemsAllowed) {
 		}
 		//sea of the dead
 		if global.seaType == global.seaNames[3] and ds_map_find_value(MapCreator.seas[3], "conquered") ==  false{
-			if !ItemExists("Cursed Hat") and irandom(3) == 0 and itemsAllowed{
+			
+			if irandom(4) == 0 and MapCreator.seas[3][? "conquered"] == false{
+		        item = instance_create(0,0,StoreObjectStorable)
+        
+		        with item
+		            {
+		            name = "cursed jewel"
+		            description = "An beautiful treasure, cursed by an ancient spirit"
+		            previewName = "jewel*"
+		            amount = 1
+		            itemNumber = 8    
+		            cost = 0
+		            }
+            
+		        ds_list_replace(items, max(0, irandom(min(3,ds_list_size(items)-1))), item)
+		    }
+			
+			
+			if !ItemExists("Cursed Hat") and irandom(9) == 0 and itemsAllowed{
 		        specialItem = instance_create(0,0,StoreObjectItem)
         
 		        specialItem = GenerateHatItem(0)
@@ -101,7 +119,7 @@ function CustomSeaLoot(itemsAllowed) {
 				
 				ds_list_replace(items, 0, specialItem)
 		    }
-			if !ItemExists("Cursed Boots") and irandom(3) == 0 and itemsAllowed{
+			if !ItemExists("Cursed Boots") and irandom(9) == 0 and itemsAllowed{
 		        specialItem = instance_create(0,0,StoreObjectItem)
         
 		        specialItem = GeneratePantsItem(0)
@@ -115,7 +133,7 @@ function CustomSeaLoot(itemsAllowed) {
 				
 				ds_list_replace(items, 0, specialItem)
 		    }
-			if !ItemExists("Cursed Coat") and irandom(3) == 0 and itemsAllowed{
+			if !ItemExists("Cursed Coat") and irandom(9) == 0 and itemsAllowed{
 		        specialItem = instance_create(0,0,StoreObjectItem)
         
 		        specialItem = GenerateShirtItem(0)

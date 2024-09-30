@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"CurseLifterArrive",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"CurseLifterArrive",
+  "parent":{
+    "name":"SeaOfDead",
+    "path":"folders/Scripts/Events/Characters/SeaOfDead.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

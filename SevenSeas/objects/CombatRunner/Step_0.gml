@@ -4,7 +4,7 @@ event_user(6)
 
 ///Run Player Turn
 
-overEndTurnButton = point_in_rectangle(mouse_x, mouse_y, startX - sprite_get_width(EndTurnSpr)/2, startY - yGap - sprite_get_height(EndTurnSpr)/2, startX + sprite_get_width(EndTurnSpr)/3, startY - yGap + sprite_get_height(EndTurnSpr)/2)
+overEndTurnButton = point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), startX - sprite_get_width(EndTurnSpr)/2, startY - yGap - sprite_get_height(EndTurnSpr)/2, startX + sprite_get_width(EndTurnSpr)/3, startY - yGap + sprite_get_height(EndTurnSpr)/2)
 
 if playerTurn and !instance_exists(Event)
     {

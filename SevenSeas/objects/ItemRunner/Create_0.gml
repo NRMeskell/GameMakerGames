@@ -298,9 +298,9 @@ cargoCost[0] = 1
 cargoCost[1] = 10
 cargoCost[2] = 2
 cargoCost[3] = 1
-cargoCost[4] = 1
+cargoCost[4] = 2
 cargoCost[5] = 4
-cargoCost[6] = 2
+cargoCost[6] = 3
 cargoCost[7] = 10
 
 cargoName[0] = "gold"
@@ -314,4 +314,3 @@ cargoName[7] = "pearls"
 cargoName[8] = ""
 cargoName[9] = ""
 cargoName[10] = ""
-

@@ -71,8 +71,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"Arch",
-    "path":"folders/Sprites/Backgrounds/Land/Camps/RockyIslands/Arch.yy",
+    "name":"Old",
+    "path":"folders/Sprites/Backgrounds/Land/Camps/Old.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

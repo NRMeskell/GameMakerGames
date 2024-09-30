@@ -37,8 +37,8 @@ realRock = GetWaterAngle(middleWaves, drawX)
 
 ///Change Menu Layer
 
-overUp = point_in_circle(mouse_x, mouse_y, xWindow + buttonX, yWindow + buttonY, 15)
-overDown = point_in_circle(mouse_x, mouse_y, xWindow + sprite_width - buttonX, yWindow + buttonY, 15)
+overUp = point_in_circle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), xWindow + buttonX, yWindow + buttonY, 15)
+overDown = point_in_circle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), xWindow + sprite_width - buttonX, yWindow + buttonY, 15)
 
 if overDown and mouse_check_button_pressed(mb_left) and global.menuShipLayer < 2 and __view_get( e__VW.XView, 0 ) = 0 and !instance_exists(DumpItem)
     {
@@ -60,7 +60,7 @@ if mouse_check_button_pressed(mb_left) and __view_get( e__VW.XView, 0 ) = 0  and
         global.slotPosition --
         }
         
-    if overListDown and global.slotPosition + drawPiratePostNumber < ds_list_size(global.crewList) and mouse_x < 55
+    if overListDown and global.slotPosition + drawPiratePostNumber < ds_list_size(global.crewList) and window_view_mouse_get_x(0) < 55
         {
         global.slotPosition ++
         }
@@ -71,8 +71,8 @@ if global.slotPosition + drawPiratePostNumber > global.crewSize and global.crewS
     global.slotPosition --
     }
 
-overListUp = point_in_rectangle(mouse_x, mouse_y, drawTagX + listPositionX - 8, drawTagY + listPositionUpY - 15, drawTagX + listPositionX + 8, drawTagY + listPositionUpY + 15)
-overListDown = point_in_rectangle(mouse_x, mouse_y, drawTagX + listPositionX - 8, drawTagY + listPositionDownY - 15, drawTagX + listPositionX + 8, drawTagY + listPositionDownY + 15)
+overListUp = point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), drawTagX + listPositionX - 8, drawTagY + listPositionUpY - 15, drawTagX + listPositionX + 8, drawTagY + listPositionUpY + 15)
+overListDown = point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), drawTagX + listPositionX - 8, drawTagY + listPositionDownY - 15, drawTagX + listPositionX + 8, drawTagY + listPositionDownY + 15)
 
 ///Global Stats
 
@@ -166,7 +166,7 @@ rockScale = 0.1
 shipSize = 1 + overShipPort*0.1
 
 
-overShipPort = global.inPort and point_in_circle(mouse_x, mouse_y, drawX, drawY-sprite_get_height(hullDict[shipType])/2, 50)
+overShipPort = global.inPort and point_in_circle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), drawX, drawY-sprite_get_height(hullDict[shipType])/2, 50)
 
 if global.inPort = true and mouse_check_button_released(mb_left)  and !instance_exists(DumpItem)
     {
@@ -209,13 +209,13 @@ if mouse_check_button_pressed(mb_left)
     else
         global.doubleClickTimer = 0
     
-    doubleClickX = mouse_x
-    doubleClickY = mouse_y
+    doubleClickX = window_view_mouse_get_x(0)
+    doubleClickY = window_view_mouse_get_y(0)
     }
 
 if global.doubleClickTimer > 0
     global.doubleClickTimer -= 1
     
-if point_distance(doubleClickX, doubleClickY, mouse_x, mouse_y) > 10
+if point_distance(doubleClickX, doubleClickY, window_view_mouse_get_x(0), window_view_mouse_get_y(0)) > 10
      global.doubleClickTimer = 0
 

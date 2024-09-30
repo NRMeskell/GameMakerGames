@@ -6,7 +6,7 @@
   "name":"TikiHeads",
   "parent":{
     "name":"Special",
-    "path":"folders/Scripts/LandPort/CampFireChoices/Special.yy",
+    "path":"folders/Scripts/Land/CampFireChoices/Special.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

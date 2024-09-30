@@ -7,21 +7,24 @@ function EquipItem(argument0, argument1) {
 	        {
 	        if argument0.myRightHand.itemName == "none" and !argument0.handLostRight
 	            {
+				instance_destroy(argument0.myRightHand)
 	            argument0.myRightHand = argument1
 	            isEquipped = true
 	            }
 	        else if argument0.myLeftHand.itemName == "none" and !argument0.handLostLeft
 	            {
+				instance_destroy(argument0.myLeftHand)
 	            argument0.myLeftHand = argument1
 	            isEquipped = true
 	            }
 	        else if !argument0.handLostRight
 	            {
 				//choose right hand
-				if irandom(1) or argument0.myRightHand.twoHanded == true{
+				if irandom(1) or argument0.myRightHand.twoHanded == true or argument0.handLostLeft{
 		            UnequipItem(argument0.myRightHand)
-		            if argument0.myRightHand.twoHanded == true
+		            if argument0.myRightHand.twoHanded == true{
 		                argument0.myLeftHand = instance_create(0,0,ItemParent)
+					}
                 
 		            argument0.myRightHand = argument1
 		            isEquipped = true

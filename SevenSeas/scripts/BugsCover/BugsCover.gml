@@ -19,5 +19,6 @@ function BugsCover() {
 		ds_list_add(global.notificationList, "Crew uncovered!", "the crew cannot cover themselves, and some cargo is lost in the scramble for cloth:#" + lostCargo)
 	
 	}
+	audio_stop_sound(BugsBuzzingSnd)
 	script_execute(closeEventCode, 2)
 }

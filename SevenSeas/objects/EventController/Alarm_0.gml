@@ -18,6 +18,7 @@ if desertPossible
     }
 else
     {
+	event_user(0)
     if irandom(2) > 0
         {
         myPortList = ds_map_find_value(specialPortEvents, global.seaType)

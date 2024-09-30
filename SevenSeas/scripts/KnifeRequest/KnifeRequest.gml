@@ -12,7 +12,7 @@ function KnifeRequest(argument0) {
 	    ds_list_add(buttons, KnifeGamesAllow) 
 	    global.allowSelect = false
 		activity = choose("throwing", "spinning", "twirling")
-	    eventText = otherPirate.name + "' found me " + activity + " knives, and told me to stop! do I have to?'"  
+	    eventText = "'" + otherPirate.name + " found me " + activity + " knives, and told me to stop! Can I keep " + activity+ "?'"  
     
 	    global.moraleBoost = "knives"
 	    }

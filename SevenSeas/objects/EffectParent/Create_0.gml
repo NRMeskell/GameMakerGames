@@ -1,4 +1,5 @@
 /// @description Vars
+
 alarm[1] = 1
 team = ""
 effect = ""

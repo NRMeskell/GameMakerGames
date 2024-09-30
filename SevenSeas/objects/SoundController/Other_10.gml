@@ -17,15 +17,46 @@ for(i=0; i<ds_list_size(seaMusic); i++)
 
 //combat music
 for (k = ds_map_find_first(combatMusicMap); !is_undefined(k); k = ds_map_find_next(combatMusicMap, k)) 
-    audio_sound_gain(combatMusicMap[? k], 0.4*musicVolumeBase*global.musicVolume*global.masterVolume, 0)
+    audio_sound_gain(combatMusicMap[? k], 1*musicVolumeBase*global.musicVolume*global.masterVolume, 0)
 //port music
 for (k = ds_map_find_first(portMusicMap); !is_undefined(k); k = ds_map_find_next(portMusicMap, k)) 
-    audio_sound_gain(portMusicMap[? k], 0.9*musicVolumeBase*global.musicVolume*global.masterVolume, 0)
+    audio_sound_gain(portMusicMap[? k], 0.7*musicVolumeBase*global.musicVolume*global.masterVolume, 0)
+//camp music
+for (k = ds_map_find_first(campMusicMap); !is_undefined(k); k = ds_map_find_next(campMusicMap, k)) 
+    audio_sound_gain(campMusicMap[? k], 0.7*musicVolumeBase*global.musicVolume*global.masterVolume, 0)
+
+
 //defeat music
 audio_sound_gain(DefeatMusicSnd, 0.8*musicVolumeBase*global.musicVolume*global.masterVolume, 0)
     
 //background sounds
 audio_sound_gain(WavesSnd, 0.1*backgroundVolumeBase*global.worldVolume*global.masterVolume, 0)
+audio_sound_gain(SeagullsSnd, 0.7*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
+audio_sound_gain(CampFireSnd, 0.3*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
+audio_sound_gain(SeagullsPortSnd, 0.6*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
+audio_sound_gain(BeachWavesSnd, 0.5*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
+audio_sound_gain(JungleBackSnd, 0.7*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
+audio_sound_gain(ShipwreckSnd, 0.2*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
+audio_sound_gain(CaveWaterSnd, 0.2*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
+audio_sound_gain(HowlingWindSnd, 0.2*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
+audio_sound_gain(OasisSnd, 0.7*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
+audio_sound_gain(SeaLions, 0.5*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
+audio_sound_gain(DesertFlySnd, 0.5*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
+audio_sound_gain(CrowRiverSnd, 0.8*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
+
+
+//event Sounds
+audio_sound_gain(CrashingRocksSnd, 1*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
+audio_sound_gain(EventSplashingSnd, 0.2*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
+audio_sound_gain(TurtleSnd, 0.7*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
+audio_sound_gain(MermaidsSnd, 0.7*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
+audio_sound_gain(StormSnd, 0.2*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
+audio_sound_gain(BugsBuzzingSnd, 1.2*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
+audio_sound_gain(ScratchingSnd, 0.5*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
+audio_sound_gain(SeaLionHuntingSpr, 0.15*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
+audio_sound_gain(HawkCrySnd, 0.3*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
+
+
 
 //game sounds
 audio_sound_gain(SwordSnd, 0.5*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
@@ -54,14 +85,18 @@ audio_sound_gain(ShrapnelSnd, 0.4*gameVolumeBase*global.worldVolume*global.maste
 audio_sound_gain(WarningSnd, 0.3*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
 
 
+//Camp Sounds
 audio_sound_gain(ShipCreakSnd, 0.5*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
 audio_sound_gain(DiggingSnd, 0.5*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
 audio_sound_gain(BatSnd, 0.2*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
 audio_sound_gain(RopeSwingSnd, 0.2*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
 audio_sound_gain(RopeHookSnd, 0.6*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
-audio_sound_gain(JungleBirdSnd, 0.2*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
-audio_sound_gain(SplashSnd, 0.1*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
+audio_sound_gain(JungleBirdSnd, 0.6*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
+audio_sound_gain(SplashSnd, 0.4*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
 audio_sound_gain(PaddleSnd, 0.5*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
+audio_sound_gain(SleepingSnd, 0.4*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
+audio_sound_gain(SearchingSnd, 0.2*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
+
 
 //menu sounds
 audio_sound_gain(BellSnd, 0.3*menuVolumeBase*global.worldVolume*global.masterVolume, 0)

@@ -4,7 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
-if runSuccess and !CombatRunner.closeRange
+if runSuccess
     {
     instance_destroy(ActionParent)
     instance_destroy(PlayerActionRunner)

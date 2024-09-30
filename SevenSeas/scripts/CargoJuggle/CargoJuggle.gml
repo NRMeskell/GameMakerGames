@@ -17,7 +17,7 @@ function CargoJuggle(){
 
 function JugglingAllow(){
 	if sign(irandom(3)) {
-		ds_list_add(global.notificationList, myPirate.firstName + " had great time juggling, and the crew enjoyed it too!")
+		ds_list_add(global.notificationList, "grand performance!", myPirate.firstName + " had great time juggling, and the crew enjoyed it too!")
 		UpdateMorale(1, -1)
 	}
 	else if irandom(1) {

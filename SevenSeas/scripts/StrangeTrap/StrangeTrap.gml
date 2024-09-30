@@ -16,5 +16,5 @@ function StrangeTrap() {
 			myHealth -= 20
 		}
 	}
-
+	audio_stop_sound(ScratchingSnd)
 }

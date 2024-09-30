@@ -8,7 +8,7 @@ function MysteryFogArrive() {
 	    ds_list_add(buttonStats, 0, 3)
 	    ds_list_add(buttonRequires, 0, global.eventDiff[3, 2])
 	    ds_list_add(buttonCosts, 0, 0)
-	    ds_list_add(buttonText, "wait out the fog", "continue to sail")
+	    ds_list_add(buttonText, "wait out below decks", "continue to sail")
         
 	    global.allowSelect = false
 	    captionText = "Mysterious Fog!"
@@ -31,7 +31,7 @@ function MysteryFogSail() {
 	else{
 		ds_list_add(global.notificationList, "poison cloud!", "the mysterious cloud enters the crew's lungs, making it difficult to breathe!")
 		with Pirate
-			myHealth -= irandom(10) + 10
+			myHealth -= irandom(10) + 15
 		with instance_create(0,0,ConditionTimer){
 		    condition = MysteryFogPoison
 		}
@@ -45,7 +45,7 @@ function MysteryFogPoison(){
 		myHealth -= irandom(10) + 5
 		UpdateMorale(-1, -1)
 	}
-	if irandom(2) == 0 with instance_create(0,0,ConditionTimer){
+	if irandom(1) == 0 with instance_create(0,0,ConditionTimer){
 		condition = MysteryFogPoison
 	}
 }

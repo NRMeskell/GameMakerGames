@@ -1,4 +1,7 @@
 /// @description Lose Limb
+if myHealth < 1
+	exit;
+
 if global.moraleBoost != "meal" and myPet.itemPower != "full health"{
 
 global.moraleBoost = "injury"

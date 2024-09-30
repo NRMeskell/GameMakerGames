@@ -97,7 +97,7 @@ if myAction != noone
     
     //Draw action info
     if instance_exists(Pirate)
-    if point_in_rectangle(mouse_x, mouse_y, xWindow+sprite_get_width(ItemSheetSpr)/2 - 16, drawStartY + drawStatDisY*((r div 3)+1) + 20 - sprite_get_height(PlayerAttackActionsSpr) - 16, xWindow+sprite_get_width(ItemSheetSpr)/2 + 16, drawStartY + drawStatDisY*((r div 3)+1) + 20 - sprite_get_height(PlayerAttackActionsSpr) + 16)
+    if point_in_rectangle(window_view_mouse_get_x(0), mouse_y, xWindow+sprite_get_width(ItemSheetSpr)/2 - 16, drawStartY + drawStatDisY*((r div 3)+1) + 20 - sprite_get_height(PlayerAttackActionsSpr) - 16, xWindow+sprite_get_width(ItemSheetSpr)/2 + 16, drawStartY + drawStatDisY*((r div 3)+1) + 20 - sprite_get_height(PlayerAttackActionsSpr) + 16)
         {
         startX = 25 + Pirate.xWindow - sprite_get_width(ActionInfoSpr)/2 + 8 + sprite_get_width(PirateSheetSpr)/2
         drawInfoY = Pirate.yWindow + 215+16 - 60

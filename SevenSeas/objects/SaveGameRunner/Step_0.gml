@@ -2,7 +2,7 @@
 // Check When to save
 
 if room == GameRoom{
-	overMenuButton = point_in_circle(mouse_x, mouse_y, menuButtonX, menuButtonY, sprite_get_width(OptionsSpr)/2) and (MapCreator.drawMiniHeight == 0)
+	overMenuButton = point_in_circle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), menuButtonX, menuButtonY, sprite_get_width(OptionsSpr)/2) and (MapCreator.drawMiniHeight == 0)
 	if MapCreator.instantClose{
 		saveNow = true
 	}
@@ -17,7 +17,7 @@ if room == GameRoom{
 	menuButtonY = 68
 }
 else{
-	overMenuButton = point_in_circle(mouse_x, mouse_y, menuButtonX, menuButtonY, sprite_get_width(OptionsSpr)/2)
+	overMenuButton = point_in_circle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), menuButtonX, menuButtonY, sprite_get_width(OptionsSpr)/2)
 	
 	menuButtonX = room_width - 50
 	menuButtonY = 32

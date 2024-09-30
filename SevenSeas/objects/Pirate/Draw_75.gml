@@ -1,3 +1,7 @@
+if myHealth < 1
+	exit;
+
+
 var __b__;
 __b__ = action_if_variable(selected, true, 0);
 if __b__
@@ -174,7 +178,7 @@ for(i=0; i < array_length_1d(bonus); i++)
         drawBonusY = drawStartY - drawStatDisY*((numBonus - 1) div 3)/2 + drawStatDisY*(r div 3)
         draw_set_font(global.PirateFont)
         
-        if point_in_rectangle(mouse_x, mouse_y, drawBonusX, drawBonusY + 2, drawBonusX + sprite_get_width(StatSymbolSpr) + textShift - 15, drawBonusY - 4 + sprite_get_height(StatSymbolSpr)){
+        if point_in_rectangle(window_view_mouse_get_x(0), mouse_y, drawBonusX, drawBonusY + 2, drawBonusX + sprite_get_width(StatSymbolSpr) + textShift - 15, drawBonusY - 4 + sprite_get_height(StatSymbolSpr)){
             drawXPoint = ((drawBonusX) + (drawBonusX + sprite_get_width(StatSymbolSpr) + textShift - 15))/2
             drawYPoint = drawBonusY + 1
             
@@ -218,7 +222,7 @@ if selected = true// and Ship.portSelect = true
 healthX = 15
 healthY = 250
 healthH = 16
-if point_in_rectangle(mouse_x, mouse_y, xWindow + healthX, yWindow + healthY, xWindow + sprite_get_width(PirateSheetSpr) - healthX, yWindow + healthY + healthH) and !instance_exists(DumpItem)
+if point_in_rectangle(window_view_mouse_get_x(0), mouse_y, xWindow + healthX, yWindow + healthY, xWindow + sprite_get_width(PirateSheetSpr) - healthX, yWindow + healthY + healthH) and !instance_exists(DumpItem)
     {
     draw_sprite(PirateLifeDisplaySpr, 0, xWindow + sprite_get_width(PirateSheetSpr)/2, yWindow + healthY + healthH/2)
     draw_set_color(c_black)
@@ -229,7 +233,7 @@ if point_in_rectangle(mouse_x, mouse_y, xWindow + healthX, yWindow + healthY, xW
     }
     
 //draw morale info
-if point_in_rectangle(mouse_x, mouse_y, xWindow + 68, yWindow + 126, xWindow + 85, yWindow + 146) and !instance_exists(DumpItem)
+if point_in_rectangle(window_view_mouse_get_x(0), mouse_y, xWindow + 68, yWindow + 126, xWindow + 85, yWindow + 146) and !instance_exists(DumpItem)
     {
     draw_sprite_part(PirateLifeDisplaySpr, 1, 0, 0, sprite_get_width(PirateLifeDisplaySpr), 20 + 5*(ds_list_size(myMoraleReasons)>0) + 14*ds_list_size(myMoraleReasons)/2, xWindow + sprite_get_width(PirateSheetSpr)/2 - sprite_get_width(PirateLifeDisplaySpr)/2, yWindow + 144 - healthH/2 - 10)
     draw_sprite_part(PirateLifeDisplaySpr, 1, 0, sprite_get_height(PirateLifeDisplaySpr)-5, sprite_get_width(PirateLifeDisplaySpr), 5*(ds_list_size(myMoraleReasons)>0), xWindow + sprite_get_width(PirateSheetSpr)/2 - sprite_get_width(PirateLifeDisplaySpr)/2, yWindow + 144 - healthH/2 + 15 + 14*ds_list_size(myMoraleReasons)/2)
@@ -266,7 +270,7 @@ for(i=0; i<array_length_1d(myAction); i++)
     if myAction[i] != noone  and !instance_exists(DumpItem)
         {                
         //Draw stat Info
-        if point_in_rectangle(mouse_x, mouse_y, xWindow + actionStartX + 39*i - 16, yWindow + actionStartY - 16, xWindow + actionStartX + 40*i + 16, yWindow + actionStartY + 16)
+        if point_in_rectangle(window_view_mouse_get_x(0), mouse_y, xWindow + actionStartX + 39*i - 16, yWindow + actionStartY - 16, xWindow + actionStartX + 40*i + 16, yWindow + actionStartY + 16)
             {
             startX = xWindow - sprite_get_width(ActionInfoSpr)/2 + 8 + sprite_get_width(PirateSheetSpr)/2
             drawInfoY = yWindow + actionStartY - 60

@@ -10,7 +10,7 @@ for(i=0; i<seaNumber; i++)
 
 //open pannel
 cs = sprite_get_width(ConquerSpr)/2
-overConquer = !instance_exists(PirateLeveler) and !instance_exists(CombatRunner) and point_in_rectangle(mouse_x, mouse_y, conquerButtonX - cs, conquerButtonY - cs, conquerButtonX + cs, conquerButtonY + cs)
+overConquer = !instance_exists(PirateLeveler) and !instance_exists(CombatRunner) and point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), conquerButtonX - cs, conquerButtonY - cs, conquerButtonX + cs, conquerButtonY + cs)
 
 if overConquer and mouse_check_button_pressed(mb_left) 
     {
@@ -38,33 +38,41 @@ if currentSeaNumber == 0{
         event_user(1)
     }
 if currentSeaNumber == 3{
-		
-	//count number of cursed items
-	var foundCursed = 0;
-	for(var fc=0; fc<instance_number(ItemParent); fc++){
-		var checkItem = instance_find(ItemParent, fc);
-		if string_starts_with(checkItem.itemName, "Cursed")
-			foundCursed ++;
-	}
-		
-	if foundCursed == 3 and ds_map_find_value(seas[currentSeaNumber], "conquered") == false{
+	if HasStored(8, 5){
+		LoseCargo(8, 5)
+		GetRandomLoot(1, "treasure", [1])
+		with StoreObjectStorable
+			amount = 5
+			
 		event_user(1)
-		ds_list_add(global.notificationList, "Curse Lifted!", "As the treasures are reunited, a powerful wind is felt, and the curse is lifted!")
-		with ItemParent{
-			if itemName == "Cursed Hat"{
-				itemName = "Skeletal Hat"
-				itemInfo = "A bicorn, now restored to it's former glory"
-				bonus[6] = 2
+		ds_list_add(global.notificationList, "Curse Lifted!", "As the jewels are reunited, ghostly spirits rise from the treasure! all curses are lifted from the ship!")
+	
+		for(var i=0; i<instance_number(Pirate); i++){
+			var checkPirate = instance_find(Pirate, i)
+			if checkPirate.body == sprite_get_number(PirateManSkinSpr) -1{
+				checkPirate.face = myMainPer * 2 + irandom(1)
+				checkPirate.body = irandom(sprite_get_number(PirateManSkinSpr)-2)
+				with checkPirate{
+					UpdateMorale(3, -1)
+					if surface_exists(fullPirateSurface)
+						MakePirateSurface(fullPirateSurface, 0, 0)
+					if surface_exists(smallPirateSurface)
+						MakePirateSurface(smallPirateSurface, drawPictureRealx, drawPictureRealy)
+					if surface_exists(tagPirateSurface)
+						MakePirateSurface(tagPirateSurface, drawTagSpriteX, drawTagSpriteY)
+				}
 			}
-			if itemName == "Cursed Coat"{
-				itemName = "Skeletal Coat"
-				itemInfo = "A heavy coat, now restored to it's former glory"
-				bonus[5] = 2
+			if string_starts_with(checkPirate.myShirt.itemName, "Cursed"){
+				checkPirate.myShirt.itemName = "Skeletal Coat"
+				checkPirate.myShirt.itemInfo = "A bicorn, now restored to it's former glory"
 			}
-			if itemName == "Cursed Boots"{
-				itemName = "Skeletal Boots"
-				itemInfo = "work boots, now restored to their former glory"
-				bonus[3] = 2
+			if string_starts_with(checkPirate.myHat.itemName, "Cursed"){
+				checkPirate.myHat.itemName = "Skeletal Hat"
+				checkPirate.myHat.itemInfo = "A bicorn, now restored to it's former glory"
+			}
+			if string_starts_with(checkPirate.myPants.itemName, "Cursed"){
+				checkPirate.myPants.itemName = "Skeletal Boots"
+				checkPirate.myPants.itemInfo = "work boots, now restored to their former glory"
 			}
 		}
 	}

@@ -2,7 +2,7 @@
   "$GMPath":"",
   "%Name":"BirdPath",
   "closed":true,
-  "kind":0,
+  "kind":1,
   "name":"BirdPath",
   "parent":{
     "name":"Paths",
@@ -23,7 +23,7 @@
     {"speed":100.0,"x":270.75,"y":111.0,},
     {"speed":90.0,"x":301.125,"y":105.0,},
   ],
-  "precision":1,
+  "precision":2,
   "resourceType":"GMPath",
   "resourceVersion":"2.0",
 }

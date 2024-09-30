@@ -19,7 +19,6 @@ with instance_create(50,50,EffectParent)
     effect = "damageMultiplier"
     multiplier = 1.75
     duration = 1 
-    attackType = "melle"
     }
 
 

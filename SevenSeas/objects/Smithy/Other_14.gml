@@ -20,6 +20,7 @@ for(i=0; i<swordNumber; i++)
         }
         
     ds_list_add(itemList[0], newSword)
+	instance_deactivate_object(newSword)
     }
 
 
@@ -45,6 +46,7 @@ for(i=0; i<gunNumber; i++)
         }
         
     ds_list_add(itemList[1], newGun)
+	instance_deactivate_object(newGun)
     }
 
 
@@ -70,6 +72,7 @@ for(i=0; i<rifleNumber; i++)
         }
         
     ds_list_add(itemList[2], newGun)
+	instance_deactivate_object(newGun)
     }
 
 

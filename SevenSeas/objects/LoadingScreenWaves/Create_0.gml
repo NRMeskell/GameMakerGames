@@ -9,5 +9,5 @@ waveRollSpeed = 0.09
 usedEvent = false
 myEvent = 0
 
-audio_play_sound(SplashSnd, 1, false)
+audio_play_sound(PaddleSnd, 1, false)
 

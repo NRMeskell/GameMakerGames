@@ -6,7 +6,7 @@
   "name":"SilverwheelRepay",
   "parent":{
     "name":"Silverwheel",
-    "path":"folders/Scripts/Events/Characters/Silverwheel.yy",
+    "path":"folders/Scripts/Events/Characters/PirateCove/Silverwheel.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

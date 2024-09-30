@@ -13,8 +13,8 @@
   "name":"WeatherController",
   "overriddenProperties":[],
   "parent":{
-    "name":"Events",
-    "path":"folders/Objects/Events.yy",
+    "name":"GUI",
+    "path":"folders/Objects/GUI.yy",
   },
   "parentObjectId":null,
   "persistent":false,

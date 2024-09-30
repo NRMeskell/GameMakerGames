@@ -22,16 +22,18 @@ if firstAttack != noone{
     with firstAttack
         {
         skip = false
-        if (actionType == "cannon" and CombatRunner.closeRange)
-            skip = true
+		if (!instance_exists(myPirate))
+			skip = true;
+        else if (actionType == "cannon" and CombatRunner.closeRange)
+            skip = true;
         else if (actionType == "melle" and !CombatRunner.closeRange)
-            skip = true
-        else if (actionType == "ship" and CombatRunner.myStats[3] == 0)
-            skip = true
-        else if !instance_exists(myPirate)
-            skip = true
+            skip = true;
+        else if (actionType == "ship" and ((myPirate.object_index == Enemy or myPirate.object_index == CombatRunner) and CombatRunner.myStats[3] == 0))
+            skip = true;
+		else if (actionType == "ship" and global.totalWheelBonus == 0)
+            skip = true;
 		else if (myPirate.object_index != CombatRunner and myPirate.object_index != Ship) and myPirate.stunned == true
-			skip = true
+			skip = true;
             
         if !skip{
             alarm[2] = 5

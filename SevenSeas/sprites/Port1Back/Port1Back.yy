@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Ports",
-    "path":"folders/Sprites/Backgrounds/Land/Ports.yy",
+    "name":"PirateCove",
+    "path":"folders/Sprites/Backgrounds/Land/Ports/Port/PirateCove.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

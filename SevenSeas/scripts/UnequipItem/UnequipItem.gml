@@ -1,8 +1,10 @@
 function UnequipItem(argument0) {
 	if argument0.myPirate != noone{
-		argument0.state = "floating"
-		ds_list_add(ItemRunner.floatingItems, argument0)
-		argument0.selected = false
+		if argument0.itemName != "none"{
+			argument0.state = "floating"
+			ds_list_add(ItemRunner.floatingItems, argument0)
+			argument0.selected = false
+			}
 		
 		with argument0.myPirate{
 			if myHat == argument0.id
@@ -27,5 +29,11 @@ function UnequipItem(argument0) {
 				MakePirateSurface(tagPirateSurface, drawTagSpriteX, drawTagSpriteY)
 		}
 		argument0.myPirate = noone
+		
+		if argument0.itemName == "none"{
+			instance_destroy(argument0)
+		}
+	}else{
+		instance_destroy(argument0)
 	}
 }

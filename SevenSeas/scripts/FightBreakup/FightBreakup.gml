@@ -12,7 +12,7 @@ function FightBreakup() {
 		with myPirate
 	        {
 	        UpdateMorale(1, global.FEARSOME)
-	        myHealth -= irandom(5*global.seaLevel)
+	        myHealth -= irandom(15*(1+global.seaLevel))
 	        }
 		ds_list_add(global.notificationList, "fight continues!", "neither party listens to reason, and the fight continues until the town guard arrives!")
 	}

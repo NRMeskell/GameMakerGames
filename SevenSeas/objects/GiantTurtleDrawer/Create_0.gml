@@ -1,5 +1,7 @@
 /// @description Vars
 
+mySound = audio_play_sound(TurtleSnd, 0, true)
+
 image_speed = 0.06
 
 placeX = -15

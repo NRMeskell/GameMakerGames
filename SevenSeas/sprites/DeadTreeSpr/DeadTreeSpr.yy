@@ -53,8 +53,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"SkullRock",
-    "path":"folders/Sprites/Backgrounds/Land/Camps/PirateCove/SkullRock.yy",
+    "name":"GeneralFlavor",
+    "path":"folders/Sprites/Backgrounds/Land/Camps/GeneralFlavor.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -12,6 +12,8 @@ textTop = captionY + (string_height_ext(string_hash_to_newline(captionText), 12,
 textBottom = buttonCenter - (ds_list_size(buttons)/2)*(buttonSpacing*2) - buttonSpacing
 textY = (textTop + textBottom)/2 + 4
     
+	
+
     
 draw_sprite(EventSpr, 0, drawX, drawY)
 draw_set_color(c_black)
@@ -23,7 +25,7 @@ for(i=-buttonNumber; i < buttonNumber; i+=2)
     {    
     requiredAmount = ds_list_find_value(buttonRequires, (i+buttonNumber)/2)
     requiredCost = ds_list_find_value(buttonCosts, (i+buttonNumber)/2)
-    haveAmount = (requiredCost > 0) or Ship.myStatsNumList[ds_list_find_value(buttonStats, (i+buttonNumber)/2)]
+    haveAmount = (requiredAmount == 0) ? 1 : Ship.myStatsNumList[ds_list_find_value(buttonStats, (i+buttonNumber)/2)]
     haveCost = CargoAmount(ds_list_find_value(buttonStats, (i+buttonNumber)/2))
     successChance  = (requiredAmount == 0) ? 100 : min(round(200/(1+exp(-(haveAmount/requiredAmount-0.6)*4)) div 2), 99)
         

@@ -1,6 +1,7 @@
 /// @description Draw Self
 // You can write your code in this editor
 
+
 optionText[2][0] = string(round(global.masterVolume*200) div 5 * 5) + "%"
 optionText[3][0] = string(round(global.musicVolume*200) div 5 * 5) + "%"
 optionText[4][0] = string(round(global.worldVolume*200) div 5 * 5) + "%"

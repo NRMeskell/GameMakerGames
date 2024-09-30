@@ -27,7 +27,7 @@ else if myPortType = 5
 	{
     mySpecialAction = OasisAction
 	myAnimationTimes = [room_speed, room_speed*3]
-	myAnimation = [[310, 410], [250, 260], OasisSplash]
+	myAnimation = [[260, 310], [280, 290], OasisSplash]
 }
 else if myPortType = 6
 	{
@@ -37,9 +37,21 @@ else if myPortType = 6
 }
 else if myPortType = 7
 	{
-    mySpecialAction = TikiHeads
+    mySpecialAction = HuntSeaLions
+	myAnimationTimes = [room_speed, room_speed/2]
+	myAnimation = [[400, 500], [230, 240], SeaLion]
+}
+else if myPortType = 8
+	{
+    mySpecialAction = DesertWander
+	myAnimationTimes = [room_speed/2, room_speed]
+	myAnimation = [[room_width/3, room_width], [room_height/2 - 50, room_height/2+50], SandBlowing]
+}
+else if myPortType = 9
+	{
+    mySpecialAction = RaftDownRiver
 	myAnimationTimes = [room_speed*7, room_speed*7]
-	myAnimation = [[Ship.drawX+1, Ship.drawX+1], [Ship.drawY, Ship.drawY], TikiOffer]
+	myAnimation = [[333+PortDrawerBack.drawPortShiftX, 333+PortDrawerBack.drawPortShiftX], [273+PortDrawerBack.drawPortShiftY, 273+PortDrawerBack.drawPortShiftY], RiverBoat]
 }
 
 if sprite_index = CampFireSpr

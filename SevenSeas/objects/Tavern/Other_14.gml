@@ -28,10 +28,10 @@ for(i=0; i<pirateNumber; i++)
             }
         
         
-        myShirt = MakeRandomShirtItem(irandom(global.seaLevel div 2) + irandom_range(-1, 0))
+        EquipItem(id, MakeRandomShirtItem(irandom(global.seaLevel div 2) + irandom_range(-1, 0)))
         cost += round(myShirt.cost*.5)
         
-        myPants = MakeRandomPantsItem((irandom(global.seaLevel div 2) + irandom_range(-1, 0)))
+        EquipItem(id, MakeRandomPantsItem((irandom(global.seaLevel div 2) + irandom_range(-1, 0))))
         cost += round(myPants.cost*.5)
         
 		repeat(min(0, irandom(global.seaLevel) - 1)){
@@ -50,6 +50,15 @@ for(i=0; i<pirateNumber; i++)
         cost = cost div 1
 		}
     ds_list_add(itemList[0], newPirate)
+	with newPirate{
+		instance_deactivate_object(myHat)
+		instance_deactivate_object(myShirt)
+		instance_deactivate_object(myPants)
+		instance_deactivate_object(myPet)
+		instance_deactivate_object(myRightHand)
+		instance_deactivate_object(myLeftHand)
+		}
+	instance_deactivate_object(newPirate)
     }
 
 
@@ -72,6 +81,7 @@ for(i=0; i<foodNumber; i++)
         }
         
     ds_list_add(itemList[1], newFood)
+	instance_deactivate_object(newFood)
     }
 
 ///Rum
@@ -90,5 +100,6 @@ for(i=0; i<rumNumber; i++)
         }
         
     ds_list_add(itemList[2], newGrog)
+	instance_deactivate_object(newGrog)
     }
 

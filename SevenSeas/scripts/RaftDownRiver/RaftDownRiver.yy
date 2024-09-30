@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"RaftDownRiver",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"RaftDownRiver",
+  "parent":{
+    "name":"Special",
+    "path":"folders/Scripts/Land/CampFireChoices/Special.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

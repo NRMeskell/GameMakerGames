@@ -1,6 +1,4 @@
 /// @description Center Window
-/*
-window_center();
 
-/* */
-/*  */
+
+window_has_focus();

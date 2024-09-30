@@ -65,7 +65,7 @@ damageScaler[? ShipChaosAttack] = 0
 //bleed bullets
 damageMin[? BleedingShotAttack] = 0.75
 damageMax[? BleedingShotAttack] = 1.5
-damageScaler[? BleedingShotAttack] = 5
+damageScaler[? BleedingShotAttack] = 2
 //deafening squawk
 damageMin[? ParrotSquawkAttack] = 0.8
 damageMax[? ParrotSquawkAttack] = 1.2

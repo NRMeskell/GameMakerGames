@@ -19,8 +19,10 @@ function StrangeOpen() {
 	        petName = "parrot"
         
 	    ds_list_add(global.notificationList, petName + " inside!", "it jumps out the barrel and joins the crew!") 
-	    }
-
+	    
+		
+		}
+	audio_stop_sound(ScratchingSnd)
 	script_execute(closeEventCode, 2)
 
 }

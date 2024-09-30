@@ -79,17 +79,19 @@ if playerTurn and __view_get( e__VW.XView, 0 ) = 0
             draw_set_font(global.LargePirateFont)
             
             //draw possible actions
-            showAction = ds_list_find_value(possibleEnemyActions, i) 
-			if (i>1){
-				draw_set_color(merge_color(c_yellow,c_black,0.4))
-				draw_text(drawOptionsX - 20, drawOptionsY + i*drawOptionsDis, string_hash_to_newline(string(showAction.priorityMin) + "-" + string(showAction.priorityMax)))
-			}
+            var showAction = ds_list_find_value(possibleEnemyActions, i)[0]
+			var showDesire = ds_list_find_value(possibleEnemyActions, i)[1]
+
+			draw_set_color(merge_color(c_yellow,c_black,0.4))
+			draw_text(drawOptionsX - 20, drawOptionsY + i*drawOptionsDis, string_hash_to_newline(string(showAction.priorityMin) + "-" + string(showAction.priorityMax)))
+			draw_text(drawOptionsX - 60, drawOptionsY + i*drawOptionsDis, string_hash_to_newline(showDesire))
+
 			canHover = true
 			with Enemy 
 				if drawHeight > 5
 					other.canHover = false
 			
-			if canHover and point_in_rectangle(mouse_x, mouse_y, drawOptionsX-20, drawOptionsY + i*drawOptionsDis - 20, drawOptionsX+20, drawOptionsY + i*drawOptionsDis + 20){
+			if canHover and point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), drawOptionsX-20, drawOptionsY + i*drawOptionsDis - 20, drawOptionsX+20, drawOptionsY + i*drawOptionsDis + 20){
 				draw_sprite_ext(PlayerAttackFrameSpr, 0, drawOptionsX, drawOptionsY + i*drawOptionsDis, -1, 1, 0, c_ltgray, 1)
 				draw_sprite_ext(PlayerAttackActionsSpr, showAction.spriteNumber, drawOptionsX, drawOptionsY + i*drawOptionsDis, -1, 1, 0, c_ltgray, 1)
 				overAction[i] = true

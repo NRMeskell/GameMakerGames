@@ -34,6 +34,12 @@ if global.inPort = true {
             DrawWithLighting(GrassSpr, animate + 17, 543+drawPortShiftX, 155+drawPortShiftY, 0, c_white, 1, drawLayer)
             DrawWithLighting(BridgeSpr, animate, drawPortShiftX+185, drawPortShiftY+218, 0, c_white, 1, drawLayer)
 		}
+		if global.seaType == global.seaNames[3]{
+			DrawWithLighting(GrassSpr, animate, 614+drawPortShiftX, 114+drawPortShiftY, 0, c_white, 1, drawLayer)
+            DrawBackWithLighting(Port4Back, drawPortShiftX, drawPortShiftY, merge_color(c_white, Clock.cloudColor, 0.6), 1, drawLayer)
+			DrawWithLighting(GrassSpr, animate + 17, 314+drawPortShiftX, 194+drawPortShiftY, 0, c_white, 1, drawLayer)
+			DrawWithLighting(DeadTreeSpr, animate, 362+drawPortShiftX, 148+drawPortShiftY, 0, c_white, 1, drawLayer)
+		}
 	}
         
     if global.portType = 2 {
@@ -99,10 +105,34 @@ if global.inPort = true {
 	}
 		
 	if global.portType = 7 {
-		DrawWithLighting( TikiHead1Spr, animate, 533, 198, 0, merge_color(c_white, Clock.cloudColor, 0.6), 1, drawLayer)
-        if instance_exists(TikiOffer)
-			DrawWithLighting( TikiHead1WaterSpr, TikiOffer.animate, 533, 198, 0, merge_color(c_white, Clock.cloudColor, 0.8), 0.7, drawLayer)
+		//DrawWithLighting( TikiHead1Spr, animate, 533, 198, 0, merge_color(c_white, Clock.cloudColor, 0.6), 1, drawLayer)
+        //if instance_exists(TikiOffer)
+		//	DrawWithLighting( TikiHead1WaterSpr, TikiOffer.animate, 533, 198, 0, merge_color(c_white, Clock.cloudColor, 0.8), 0.7, drawLayer)
+		DrawWithLighting(PalmTree1Spr, animate div 2, 519, 130, 0, merge_color(c_white, Clock.cloudColor, 0.5), 1, drawLayer)
+		DrawWithLighting(GrassSpr, animate+9, 468, 156, 0, merge_color(c_white, Clock.cloudColor, 0.5), 1, drawLayer)
+		
 		DrawBackWithLighting(ArchBack, drawPortShiftX,drawPortShiftY, merge_color(c_white, Clock.cloudColor, 0.6), 1, drawLayer)
-    }
+		DrawWithLighting( SeaLionSpr, animate+20, 510, 177, 0, merge_color(c_white, Clock.cloudColor, 0.6), 1, drawLayer)
+	}
+	if global.portType = 8 {
+        DrawWithLighting(DeadTreeSpr, animate, 380+drawPortShiftX, 150+drawPortShiftY, 0, c_white, 1, drawLayer)
+        DrawWithLighting(DeadTreeSpr, animate+6, 515+drawPortShiftX, 112+drawPortShiftY, 0, c_white, 1, drawLayer)
+        DrawWithLighting(GrassSpr, animate + 10, 471+drawPortShiftX, 155+drawPortShiftY, 0, c_white, 1, drawLayer)
+        DrawBackWithLighting(DesertBack, drawPortShiftX, drawPortShiftY, merge_color(c_white, Clock.cloudColor, 0.6), 1, drawLayer)
+	 
+	}
+	if global.portType = 9 {
+        DrawWithLighting(DeadTreeSpr, animate, 380+drawPortShiftX, 150+drawPortShiftY, 0, c_white, 1, drawLayer)
+        DrawWithLighting(DeadTreeSpr, animate+6, 445+drawPortShiftX, 112+drawPortShiftY, 0, c_white, 1, drawLayer)
+        DrawBackWithLighting(DeadRiverBack, drawPortShiftX, drawPortShiftY, merge_color(c_white, Clock.cloudColor, 0.6), 1, drawLayer)
+		
+		DrawWithLighting(OasisFlower1Spr, animate+16, 444+drawPortShiftX, 218+drawPortShiftY, 0, c_white, 1, drawLayer)
+        DrawWithLighting(OasisFlower1Spr, animate+7, 395+drawPortShiftX, 234+drawPortShiftY, 0, c_white, 1, drawLayer)
+        DrawWithLighting(OasisFlower1Spr, animate+13, 540+drawPortShiftX, 190+drawPortShiftY, 0, c_white, 1, drawLayer)
+ 
+		DrawWithLighting(DeadRiverRiverSpr, animate div 2, 253+drawPortShiftX, 192+drawPortShiftY, 0, c_white, 1, drawLayer)
+        DrawWithLighting(OasisFlower1Spr, animate+2, 613+drawPortShiftX, 192+drawPortShiftY, 0, c_white, 1, drawLayer)
+        
+	}
 }
 

@@ -14,6 +14,8 @@ function BugsAttack() {
 	    captionText = "Bug Swarms!"
 	    eventText = "Misquitos swarm the ship, eating the crew alive!"
 	    global.moraleBoost = "bugs"
+		
+		audio_play_sound(BugsBuzzingSnd, 0, true)
 	    }
 
 

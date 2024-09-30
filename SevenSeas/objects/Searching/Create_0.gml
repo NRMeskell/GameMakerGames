@@ -1,5 +1,8 @@
 /// @description vars
 
+mySound = audio_play_sound(SplashSnd, 0, false)
+audio_stop_sound(mySound)
+
 instance_destroy()
 
 alarm[0] = room_speed*1.4

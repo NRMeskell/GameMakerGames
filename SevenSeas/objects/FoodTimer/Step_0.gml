@@ -13,6 +13,10 @@ if alarm[0] < 1{
 	var cursedPirates = 0
 	for(var i=0; i<instance_number(Pirate); i++){
 		var checkPirate = instance_find(Pirate, i)
+		if checkPirate.body == sprite_get_number(PirateManSkinSpr) -1{
+			cursedPirates ++;
+			break;
+		}
 		if string_starts_with(checkPirate.myShirt.itemName, "Cursed"){
 			cursedPirates ++;
 			break;
@@ -53,7 +57,7 @@ if alarm[0] < 1{
 			checkPirate = instance_find(Pirate, pirateCount)
 				
 			var currentCursed = false;
-			if string_starts_with(checkPirate.myHat.itemName, "Cursed") or string_starts_with(checkPirate.myShirt.itemName, "Cursed") or string_starts_with(checkPirate.myPants.itemName, "Cursed")
+			if (checkPirate.body == sprite_get_number(PirateManSkinSpr)-1) or string_starts_with(checkPirate.myHat.itemName, "Cursed") or string_starts_with(checkPirate.myShirt.itemName, "Cursed") or string_starts_with(checkPirate.myPants.itemName, "Cursed")
 				currentCursed = true
 				
 	        if HasStored(4,1) and !currentCursed

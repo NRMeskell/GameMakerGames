@@ -1,5 +1,10 @@
 /// @description Vars
 
+mySound = audio_play_sound(SeagullsSnd, 0, true)
+audio_sound_pitch(mySound, random_range(0.8, 1.2))
+if instance_number(BirdEvent) > 3 or global.inPort
+	audio_stop_sound(mySound)
+
 color[0] = make_color_rgb(155,0,0)
 color[1] = make_color_rgb(128,0,0)
 color[2] = make_color_rgb(0,44,119)
@@ -18,3 +23,4 @@ image_index = irandom(image_number-1)
 floatAway = false
 flyAwayDir = irandom_range(45, 135)
 
+front = choose(true, false)

@@ -1,5 +1,7 @@
 /// @description vars
 
+mySound = audio_play_sound(SplashSnd, 0, false)
+audio_stop_sound(mySound)
 
 if id != instance_find(RopeHook, 0){
 	instance_destroy(instance_find(RopeHook, 0))

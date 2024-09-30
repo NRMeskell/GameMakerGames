@@ -2,8 +2,8 @@
 
 buttonNumber = ds_list_size(buttons)
 
-overButton[0] = point_in_rectangle(mouse_x, mouse_y, drawX - sprite_get_width(ButtonSpr)/2, drawY + buttonCenter - sprite_get_height(ButtonSpr)/2, drawX - 3, drawY + buttonCenter + sprite_get_height(ButtonSpr)/2)
-overButton[1] = point_in_rectangle(mouse_x, mouse_y, drawX + 3, drawY + buttonCenter - sprite_get_height(ButtonSpr)/2, drawX + sprite_get_width(ButtonSpr)/2, drawY + buttonCenter + sprite_get_height(ButtonSpr)/2)
+overButton[0] = point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), drawX - sprite_get_width(ButtonSpr)/2, drawY + buttonCenter - sprite_get_height(ButtonSpr)/2, drawX - 3, drawY + buttonCenter + sprite_get_height(ButtonSpr)/2)
+overButton[1] = point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), drawX + 3, drawY + buttonCenter - sprite_get_height(ButtonSpr)/2, drawX + sprite_get_width(ButtonSpr)/2, drawY + buttonCenter + sprite_get_height(ButtonSpr)/2)
 
 if mouse_check_button_pressed(mb_left)
     {                                       

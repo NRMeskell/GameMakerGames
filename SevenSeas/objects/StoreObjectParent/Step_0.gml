@@ -1,10 +1,10 @@
 /// @description Over Buttons
 
-overClose = point_in_circle(mouse_x, mouse_y, closeX, closeY, 10)
+overClose = point_in_circle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), closeX, closeY, 10)
 
 if viewed and !instance_exists(DumpItem)
     {
-    if point_in_rectangle(mouse_x, mouse_y, drawX - 20, drawY - 19, drawX + 125, drawY + 20)
+    if point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), drawX - 20, drawY - 19, drawX + 125, drawY + 20)
         {
         if !Store.previewItem
             {
@@ -31,7 +31,7 @@ if viewed and !instance_exists(DumpItem)
         preview = false
         }
         
-    if point_in_rectangle(mouse_x, mouse_y, drawX + 130, drawY - 15, drawX + 160, drawY + 15)
+    if point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), drawX + 130, drawY - 15, drawX + 160, drawY + 15)
         {
         if mouse_check_button_pressed(mb_left)// and (object_index != StoreObjectTrade or HasStored(type, storeAmount))
             {

@@ -1,6 +1,6 @@
 /// @description Select
 
-if !instance_exists(Defeat){
+if !instance_exists(Defeat) and ds_list_size(global.notificationList) == 0 {
     if selected = false
         {
         audio_play_sound(OpenMenuSnd, 1, false)

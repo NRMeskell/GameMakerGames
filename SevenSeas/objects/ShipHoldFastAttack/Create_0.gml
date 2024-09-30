@@ -17,6 +17,7 @@ image_yscale = 1
 
 endRound = true
 actionType = "melle"
+showDamage = false
 
 x = Ship.drawX + animationX + irandom_range(-animationWidth,animationWidth)
 y = Ship.drawY + animationY + irandom_range(-animationHeight,animationHeight) + Ship.waveHeight

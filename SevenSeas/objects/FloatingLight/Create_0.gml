@@ -1,5 +1,8 @@
 /// @description Vars
 
+mySound = audio_play_sound(SplashSnd, 0, false)
+audio_stop_sound(mySound)
+
 myLight = noone
 
 myLayer = choose(3)

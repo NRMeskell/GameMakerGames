@@ -9,7 +9,7 @@ for(i=0; i<array_length_1d(myAction); i++)
         {
         DrawAction(myAction[i], xWindow + actionStartX + 39*i, yWindow + actionStartY, 1)
         //Draw stat Info
-        if point_in_rectangle(mouse_x, mouse_y, xWindow + actionStartX + 39*i - 16, yWindow + actionStartY - 16, xWindow + actionStartX + 40*i + 16, yWindow + actionStartY + 16)
+        if point_in_rectangle(window_view_mouse_get_x(0), mouse_y, xWindow + actionStartX + 39*i - 16, yWindow + actionStartY - 16, xWindow + actionStartX + 40*i + 16, yWindow + actionStartY + 16)
             {
             startX = xWindow - sprite_get_width(ActionInfoSpr)/2 + 8 + sprite_get_width(PirateSheetSpr)/2
             startX += (point_distance(xWindow, 0, room_width/2 - 50, 0) > 150) *(sign(room_width/2 - xWindow))*50
@@ -18,4 +18,3 @@ for(i=0; i<array_length_1d(myAction); i++)
             }
         }
     }
-

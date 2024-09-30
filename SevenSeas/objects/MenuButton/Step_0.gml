@@ -24,7 +24,7 @@ if y > room_height + 100
 ///Over Button
 
 if dropSpeed < 0.01{
-    overButton = position_meeting(mouse_x, mouse_y, id) and !instance_exists(OptionsPanel)
+    overButton = position_meeting(window_view_mouse_get_x(0), mouse_y, id) and !instance_exists(OptionsPanel)
     }
 else{
     overButton = false

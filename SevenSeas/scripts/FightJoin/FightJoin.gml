@@ -7,7 +7,7 @@ function FightJoin() {
 	        {
 	        UpdateMorale(1,-1)
 	        UpdateMorale(1, global.FEARSOME)
-	        myHealth -= irandom(5*global.seaLevel)
+	        myHealth -= irandom(5*(1+global.seaLevel))
 	        }
 		ds_list_add(global.notificationList, "victory!", "the other party flees the scene, leaving the day as ours!")
 		}
@@ -16,7 +16,7 @@ function FightJoin() {
 		with Pirate
 	        {
 	        UpdateMorale(1, -1)
-	        myHealth -= irandom(5*global.seaLevel)
+	        myHealth -= irandom(10*(1+global.seaLevel))
 	        }
 			
 		if irandom(1){
@@ -28,7 +28,7 @@ function FightJoin() {
 			with Pirate
 		        {
 		        UpdateMorale(1, global.FEARSOME)
-		        myHealth -= irandom(2*global.seaLevel)
+		        myHealth -= irandom(20*(1+global.seaLevel))
 		        }
 			}
 			

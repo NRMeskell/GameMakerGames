@@ -27,7 +27,7 @@ showDamage = true
 hasAnimation = false
 
 runSuccess = false
-if irandom(1)
+if irandom(2) = 0
     {
     damage = "success"
     runSuccess = true

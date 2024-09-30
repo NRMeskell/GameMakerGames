@@ -37,7 +37,7 @@ function BlackSpotRemove() {
 	}
 	else{
 		ds_list_add(global.notificationList, "black spot remains", "No matter how hard the area is scrubbed and cut, the spot doesn't come off! The crew begin to worry...")
-		myPirate.myHealth -= 15
+		myPirate.myHealth -= 20
 		with myPirate{
 			UpdateMorale(-1, -1)
 			UpdateMorale(-1, global.JOLLY)

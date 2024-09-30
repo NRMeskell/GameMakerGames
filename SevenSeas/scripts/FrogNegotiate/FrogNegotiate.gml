@@ -10,7 +10,7 @@ function FrogNegotiate() {
 	    {
 	    ds_list_add(global.notificationList, "attacked!", "the tropical ship is unimpressed and begin to board the ship!")
 	    with instance_create(0,0,myShip.myShipType)  
-			CombatRunner.closeRange = true
+			//CombatRunner.closeRange = true
 	    instance_destroy(EventDrawer)
 	    }
 
