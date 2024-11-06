@@ -1,2 +1,1 @@
-
-MerchantArrive()
+GetNewCharacterEncounter()

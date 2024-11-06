@@ -16,10 +16,4 @@ function BirdsArrive() {
 
 	repeat(irandom_range(3, 6))
 	    instance_create(0,0,BirdEvent)
-
-
-
-
-
-
 }

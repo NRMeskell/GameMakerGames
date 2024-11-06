@@ -41,8 +41,8 @@ audio_sound_gain(CaveWaterSnd, 0.2*gameVolumeBase*global.worldVolume*global.mast
 audio_sound_gain(HowlingWindSnd, 0.2*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
 audio_sound_gain(OasisSnd, 0.7*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
 audio_sound_gain(SeaLions, 0.5*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
-audio_sound_gain(DesertFlySnd, 0.5*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
-audio_sound_gain(CrowRiverSnd, 0.8*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
+audio_sound_gain(DesertFlySnd, 0.3*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
+audio_sound_gain(CrowRiverSnd, 0.6*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
 
 
 //event Sounds

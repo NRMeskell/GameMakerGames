@@ -1,7 +1,7 @@
 /// @description Add Enemy Attack
 
 chosenAttack = noone
-if irandom(power(ds_list_size(possibleEnemyActions)+1,2)) > 0{
+if irandom(power(ds_list_size(possibleEnemyActions)*2,2)) > 0{
 	
 	var attackNum = random_range(0.01, 0.99)
 	var currVal = 0

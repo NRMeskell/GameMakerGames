@@ -40,8 +40,8 @@ function SkeletonDrinkTake() {
 		GetRandomLoot(1, "Gift", [-1, 1, 6])
 	}
 	else{
-		ds_list_add(global.notificationList, "Thrown head!", "the harbormaster's 'gift' was throwing her screaming head!##The crew are startled, but she seems very amused by the trick.")
-		UpdateMorale(-3, -1)
+		ds_list_add(global.notificationList, "removed head!", "the harbormaster's 'gift' was her own head! The crew are startled, but she seems very amused by the trick.")
+		UpdateMorale(-2, -1)
 	}
 	closeEventCode()
 }

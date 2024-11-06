@@ -8,6 +8,7 @@ if __b__
 if alarm[1] == -1
     {
     draw_self()
+	draw_sprite_ext(flagSprite, 0, x -8, y + 9, 1, 1, 0, c_white, 1)
     draw_set_halign(fa_right)
     draw_set_valign(fa_center)
     draw_set_color(c_black)
@@ -80,11 +81,11 @@ if playerTurn and __view_get( e__VW.XView, 0 ) = 0
             
             //draw possible actions
             var showAction = ds_list_find_value(possibleEnemyActions, i)[0]
-			var showDesire = ds_list_find_value(possibleEnemyActions, i)[1]
+			//var showDesire = ds_list_find_value(possibleEnemyActions, i)[1]
 
 			draw_set_color(merge_color(c_yellow,c_black,0.4))
 			draw_text(drawOptionsX - 20, drawOptionsY + i*drawOptionsDis, string_hash_to_newline(string(showAction.priorityMin) + "-" + string(showAction.priorityMax)))
-			draw_text(drawOptionsX - 60, drawOptionsY + i*drawOptionsDis, string_hash_to_newline(showDesire))
+			//draw_text(drawOptionsX - 60, drawOptionsY + i*drawOptionsDis, string_hash_to_newline(showDesire))
 
 			canHover = true
 			with Enemy 

@@ -29,8 +29,10 @@ function CrashingRocksArrive() {
 	    myPirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
 		if CrashingRocks.myState == "unmet"
 			eventText = "The two enourmous stones tower from the water and crash together!" 
-	    else
+	    else if CrashingRocks.myVar == 1
 	        eventText = "The giant stones appear again, although you swear they weren't here before." 
+		else
+			eventText = "the stones appear on the horizon, and the seasoned crew prepare for the challenge!"
 		CrashingRocks.myState = "met"
 		CrashingRocks.myVar += 1
 		
@@ -57,7 +59,7 @@ function CrashingRace(){
 	}
 	else{
 		CrashingRocksEvent.result = "smashed by rocks!"
-		CrashingRocksEvent.description = "The crew's best efforts were not enough, and the rocks crash into the ship!"
+		CrashingRocksEvent.description = "The crew's best efforts were not enough, and the rocks crash into the ship!##The living members learn from the experience."
 		CrashingRocksEvent.sailing = true
 		CrashingRocksEvent.success = false
 	}
@@ -78,7 +80,7 @@ function CrashingNavigate(){
 	}
 	else{
 		CrashingRocksEvent.result = "smashed by rocks!"
-		CrashingRocksEvent.description = "The crew's best efforts were not enough, and the rocks crash into the ship!"
+		CrashingRocksEvent.description = "The crew's best efforts were not enough, and the rocks crash into the ship!##The living members learn from the experience."
 		CrashingRocksEvent.sailing = true
 		CrashingRocksEvent.success = false
 	}

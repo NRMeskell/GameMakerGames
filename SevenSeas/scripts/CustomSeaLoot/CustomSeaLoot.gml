@@ -10,7 +10,7 @@ function CustomSeaLoot(itemsAllowed) {
 		        with item
 		            {
 		            name = "pearl"
-		            description = "A rare pearl, small enough to not need storage space!"
+		            description = "A rare pearl, highly valued by the tropical locals!"
 		            previewName = "pearl"
 		            amount = 1
 		            itemNumber = 7     
@@ -93,8 +93,8 @@ function CustomSeaLoot(itemsAllowed) {
         
 		        with item
 		            {
-		            name = "cursed jewel"
-		            description = "An beautiful treasure, cursed by an ancient spirit"
+		            name = "spirit jewel"
+		            description = "An beautiful treasure, touched by an ancient spirit"
 		            previewName = "jewel*"
 		            amount = 1
 		            itemNumber = 8    

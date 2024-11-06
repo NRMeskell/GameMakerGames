@@ -17,22 +17,14 @@ function MerchantArrive() {
 	    eventText = "They have seen us and are sailing past quickly." 
     
 	    myShip = instance_create(0,0,ShipEvent)  
-	    with myShip
-	        {
+	    with myShip{
+	        myFlag = MerchantFlagSpr
 	        if global.seaLevel == 0
 	            myShipHull = MerchantSmallSpr
 	        else if global.seaLevel == 1
 	            myShipHull = MerchantMediumSpr
 	        else
 	            myShipHull = MerchantLargeSpr
-            
-	        color[0] = make_color_rgb(155,0,0)
-	        color[1] = make_color_rgb(128,0,0)
-	        color[2] = make_color_rgb(0,44,119)
-	        color[3] = make_color_rgb(158,126,2)
-	        color[4] = make_color_rgb(140,0,145)
-        
-	        flagColor = color[irandom(array_length_1d(color)-1)]
 	        }
 	    }
 

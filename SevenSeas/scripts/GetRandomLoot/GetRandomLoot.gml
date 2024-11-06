@@ -92,14 +92,22 @@ function getItemText(argument0, argument1){
 	for(var i=0; i<ds_list_size(argument0); i++){
 		itemType = ds_list_find_value(argument0, i) + 1
 		
+		var newItem = ""
+		if itemType <= 7
+			newItem = argument1[itemType]
+		else if itemType == 8
+			newItem = "pearls"
+		else if itemType == 9
+			newItem = "cursed gems"
+		
 		if i < ds_list_size(argument0)-2{
-			itemNames += argument1[itemType] + ", "
+			itemNames += newItem + ", "
 		}
 		else if i == ds_list_size(argument0)-2{
 			if ds_list_size(argument0) == 2
-				itemNames += argument1[itemType] + " and "
+				itemNames += newItem + " and "
 			else
-				itemNames += argument1[itemType] + ", and "
+				itemNames += newItem + ", and "
 		}
 		else{
 			itemNames += argument1[itemType]

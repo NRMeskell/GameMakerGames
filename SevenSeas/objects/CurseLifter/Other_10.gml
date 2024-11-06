@@ -1,4 +1,4 @@
-/// @description Frog King Reactions
+/// @description CurseLifter Reactions
 
 ds_list_add(locations, global.seaNames[3])
 		

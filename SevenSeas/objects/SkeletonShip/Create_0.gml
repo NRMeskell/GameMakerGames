@@ -24,11 +24,11 @@ ds_list_add(myBasicActions, BasicMelleAction, BasicRangedAction, BasicCannonActi
 
 instance_create(0,0,SkeletalCaptain)
 
-repeat(choose(1,3))
-    instance_create(0,0,SkeletalCrew)
-	
-if (instance_number(Enemy) == 2) or (instance_number(Enemy) == 3 and irandom(1))
+if (irandom(1))
 	instance_create(0,0, SkeletalCrewHealer)
+
+repeat(choose(3,4)-instance_number(Enemy))
+    instance_create(0,0,SkeletalCrew)
  
 
 event_user(2)

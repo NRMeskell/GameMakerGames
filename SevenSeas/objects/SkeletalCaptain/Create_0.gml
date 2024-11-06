@@ -12,6 +12,6 @@ repeat(2){
 	ds_list_add(myStats, choose(0,1))
 }
 
-    
-ds_list_add(myActions, HealDeadAction, RaiseDeadAction)
+GetSpecialAttack()
+ds_list_add(myActions, RaiseDeadAction)
 

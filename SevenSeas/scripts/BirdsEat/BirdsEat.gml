@@ -5,10 +5,10 @@ function BirdsEat() {
 	    {
 		itemsTaken = ""
 		repeat(irandom(global.seaLevel div 2) + 1) {
-		    if irandom(1)
+		    if irandom(3) == 0
 		        itemsTaken += LoseRandomItems(1) + "#"
 		    else
-		        itemsTaken += LoseRandomCargo(3) + "#"
+		        itemsTaken += LoseRandomCargo(2) + "#"
 		    }
 
 		ds_list_add(global.notificationList, "Failed to kill any birds!", "They made away with cargo:#" + itemsTaken)

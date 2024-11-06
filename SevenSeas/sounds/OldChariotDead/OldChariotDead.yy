@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":146.24507,
+  "duration":161.3787,
   "name":"OldChariotDead",
   "parent":{
     "name":"SeaOfDead",

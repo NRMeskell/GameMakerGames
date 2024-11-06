@@ -1,5 +1,6 @@
 function EquipItem(argument0, argument1) {
 	isEquipped = false
+	argument1.overLeft = false
 
 	if argument1.sprite_index = EquipHandSpr
 	    {
@@ -46,17 +47,11 @@ function EquipItem(argument0, argument1) {
 	        {
 	        if !argument0.handLostRight and !argument0.handLostLeft
 	            {
-	            if argument0.myLeftHand.itemName != "none"
-	                {
-	                UnequipItem(argument0.myLeftHand)
-	                }
+	            UnequipItem(argument0.myLeftHand)
 	            argument0.myLeftHand = argument1
 	            isEquipped = true
             
-	            if argument0.myRightHand.itemName != "none"
-	                {
-	                UnequipItem(argument0.myRightHand)
-	                }
+	            UnequipItem(argument0.myRightHand)
 	            argument0.myRightHand = argument1
 	            isEquipped = true
 	            }
@@ -64,33 +59,26 @@ function EquipItem(argument0, argument1) {
 	    }
 	else if argument1.sprite_index = EquipShirtSpr
 	    {
-	    if argument0.myShirt.itemName != "none"
-	        UnequipItem(argument0.myShirt)  
-        
+	    UnequipItem(argument0.myShirt)  
 	    argument0.myShirt = argument1
 	    isEquipped = true
 	    }
 	else if argument1.sprite_index = EquipPantsSpr
 	    {
-	    if argument0.myPants.itemName != "none"
-	        UnequipItem(argument0.myPants)  
-        
+	    UnequipItem(argument0.myPants)  
+
 	    argument0.myPants = argument1
 	    isEquipped = true
 	    }
 	else if argument1.sprite_index = EquipHatSpr
 	    {
-	    if argument0.myHat.itemName != "none"
-	        UnequipItem(argument0.myHat)  
-        
+	    UnequipItem(argument0.myHat)  
 	    argument0.myHat = argument1
 	    isEquipped = true
 	    }
 	else if argument1.sprite_index = EquipPetSpr
 	    {
-	    if argument0.myPet.itemName != "none"
-	        UnequipItem(argument0.myPet)  
-        
+	    UnequipItem(argument0.myPet)  
 	    argument0.myPet = argument1
 	    isEquipped = true
 	    }

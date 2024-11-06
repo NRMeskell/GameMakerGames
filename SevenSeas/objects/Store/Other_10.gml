@@ -6,8 +6,7 @@ with StoreObjectParent
     selected = false
     preview = false
     previewSelect = false
-	if global.inPort == false
-		instance_destroy()
+		
 	if object_index == StoreObjectPirate{
 		instance_deactivate_object(myHat)
 		instance_deactivate_object(myShirt)
@@ -16,8 +15,10 @@ with StoreObjectParent
 		instance_deactivate_object(myRightHand)
 		instance_deactivate_object(myLeftHand)
 	}
-		
-	instance_deactivate_object(id)
+	if global.inPort == false
+		instance_destroy()
+	else
+		instance_deactivate_object(id)
 }
 
 
