@@ -16,7 +16,7 @@ function MerchantChase() {
 	    {
 	    with instance_create(0,0,Merchant)
 	        {
-	        flagColor = other.myShip.flagColor
+	        flagSprite = other.myShip.myFlag
 	        myShipHull = other.myShip.myShipHull
 	        shipType = other.myShip.shipType
 	        }

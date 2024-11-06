@@ -20,36 +20,10 @@ closeRangeView = 0
 surrender = false
 lootMod = 1
 
-totalVar = 2*global.gameDiff + 2
 //Update Difficulty
-enemyPower = irandom_range(totalVar/2-1,totalVar/2+1)
-
-/*enemyNumber = round(instance_number(Enemy)*(enemyPower+3)/5)
-change = enemyNumber - instance_number(Enemy)
-for (i = 0; i<abs(change); i++){
-	foundDup = false
-	while !foundDup{
-		dupEnemy = instance_find(Enemy, irandom(instance_number(Enemy)-2))
-		with Enemy
-			if x < other.dupEnemy.x{
-				if other.change > 0
-					x -= xGap
-				else
-					x += xGap
-					
-				other.foundDup = true
-			}
-	}
-	
-	if change > 0
-		with instance_create(0, dupEnemy.y, dupEnemy.object_index)
-			x = other.dupEnemy.x - xGap
-	else
-		instance_destroy(dupEnemy)
-}*/
-
-maxHealth = round(maxHealth * ((totalVar - enemyPower)+3)/5)
+maxHealth = maxHealth
 myHealth = maxHealth
+healthDiff = maxHealth
 
 ///Create Action Runners
 

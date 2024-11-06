@@ -4,6 +4,8 @@ function CurseLifterArrive() {
 			myCharacter = 8
 		else if CurseLifter.myState == "unwell"
 			myCharacter = 9
+		else if CurseLifter.myState == "dying"
+			myCharacter = 10
 			
 	    buttonNumber = 3
 	    ds_list_add(buttons, CurseLifterPass, GoldForLimb, CurseLifterLimb) 
@@ -19,13 +21,13 @@ function CurseLifterArrive() {
 	    global.allowSelect = false
 	    captionText = "Mia CurseLifter"
 	    if CurseLifter.myState == "unmet"
-	        eventText = "A friendly woman approaches. She offers to trade, or lift curses, for a single limb from the crew."
+	        eventText = "The friendly woman offers to trade or lift curses for the price of one of the crew's limbs."
         if CurseLifter.myState == "fresh"
 	        eventText = "Mia thanks the crew for their earlier business, and asks if they care for another trade?"
         if CurseLifter.myState == "unwell"
 			eventText = "The friendly woman returns and asks if you'd please like to lift a curse from your ship."
 		if CurseLifter.myState == "dying"
-			eventText = "Mia explains that her soul shall be cast away if she doesn't recieve living flesh, and begs for help."
+			eventText = "Mia explains that her soul shall be cast away if she doesn't recieve living flesh, and begs for help!"
 		
 		
 		global.moraleBoost = "curselifter"

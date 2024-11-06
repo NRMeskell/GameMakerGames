@@ -494,7 +494,7 @@ winCond[2] = 0
 
 //isles of the dead
 ds_map_add(condDes, global.seaNames[3], "lift the curse from the Dead Man's Treasure!")
-ds_map_add(condCritera, global.seaNames[3], "COLLECT ALL 5 CURSED JEWELS")
+ds_map_add(condCritera, global.seaNames[3], "COLLECT ALL 5 SOUL STONES")
 ds_map_add(condImage, global.seaNames[3], 3) 
 winCond[3] = 0
 

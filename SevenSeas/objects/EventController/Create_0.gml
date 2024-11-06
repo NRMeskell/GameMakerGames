@@ -25,7 +25,7 @@ ds_list_add(roughEventList, SeaSickPirates, ManOverboard, SeaSickPirates, MastDa
 ds_list_add(eventList[0], Shortcut, BirdsArrive, Stowaway, SupplyBoxArrive, RaftPirate, FloatingBarrel, FloatingBarrel, PirateShipArrive, TradingPostArrive, PirateShipArrive, PlagueShip, MerchantArrive)
 ds_list_add(eventList[1], FloatingBarrel, MermaidRocks, TropicalFishArrive, BugsAttack, StrangeAnimal, TropicalHeat, FrogsArrive, BirdsArrive, DolphinsArrive, SpoiledFood, RottenPlanks, BirdsArrive, MerchantArrive)
 ds_list_add(eventList[2], Shortcut, FloatingBarrel, RaftPirate, PirateShipArrive, Stowaway, ScavengersArrive, DamagedShip, ThickFogArrive, RuinsArrive, FloatingDebris, FloatingDebris, MerchantArrive)
-ds_list_add(eventList[3], ThickFogArrive, MysteryFogArrive, FloatingLights, BlackSpotArrives, RuinsArrive, FloatingBarrel, HowlingWinds, SkelRaftPirate, SpoiledFood, MerchantArrive, SkeletonsArrive)
+ds_list_add(eventList[3], ThickFogArrive, MysteryFogArrive, FloatingLights, BlackSpotArrives, FloatingLights, FloatingBarrel, HowlingWinds, SkelRaftPirate, SpoiledFood, MerchantArrive, SkeletonsArrive)
 ds_list_add(eventList[4], DolphinsArrive)
 ds_list_add(eventList[5], DolphinsArrive)
 ds_list_add(eventList[6], DolphinsArrive)

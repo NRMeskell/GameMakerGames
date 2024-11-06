@@ -5,7 +5,7 @@ if CargoAmount(type) == 0
 else
 	maxAmount = 1
 
-if type = 1
+if type == 1 or type == 7
     {
     sellAmount = max(maxAmount, CargoAmount(1))
     amount = irandom_range(sellAmount*(ItemRunner.cargoCost[1]*0.9) div 1, 1.5*sellAmount*ItemRunner.cargoCost[1])

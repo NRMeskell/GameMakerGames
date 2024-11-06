@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":104.99483,
+  "duration":134.3971,
   "name":"DrunkenSailorDead",
   "parent":{
     "name":"SeaOfDead",

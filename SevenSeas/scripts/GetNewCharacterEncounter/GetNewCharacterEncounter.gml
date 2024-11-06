@@ -31,8 +31,4 @@ function GetNewCharacterEncounter() {
 	                alarm[0] = 1
 	        }
 	    }
-
-
-
-
 }

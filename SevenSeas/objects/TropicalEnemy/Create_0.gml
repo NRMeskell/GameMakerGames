@@ -13,7 +13,7 @@ flagSprite = TropicalFlagSpr
 
 ///Common enemy vars
 
-name = "Tropical Cannoneer-Ship"
+name = "Tropical Frog Ship"
 maxHealth = 200
 myHealth = maxHealth
 image_index = 1
