@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"SailingMalfunction",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SailingMalfunction",
+  "parent":{
+    "name":"Tragedy",
+    "path":"folders/Scripts/Events/SailingEvents/MedicalEvents/Tragedy.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

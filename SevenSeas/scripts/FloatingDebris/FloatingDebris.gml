@@ -47,7 +47,7 @@ function DebrisSearch() {
 		ds_list_add(global.notificationList, title, text)
 	}
 	else{
-		injuredPirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+		injuredPirate = RandomPirate()
 		injuredPirate.myHealth -= 20
 		ds_list_add(global.notificationList, "Hit by Debris!", injuredPirate.firstName + " was struck by a floating plank, and the crew had to abandon their search.")
 	}

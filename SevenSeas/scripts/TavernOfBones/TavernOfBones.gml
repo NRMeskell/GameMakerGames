@@ -35,7 +35,7 @@ function TavernBonesEnter(){
 		}
 	}
 	else{
-		myPirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+		myPirate = RandomPirate()
 		ds_list_add(global.notificationList, "Skeletal Crew Member!", myPirate.name + " returned a cursed pirate! They cannot eat until the curse is lifted.")
 		global.moraleBoost = "skeleton" 
 		with myPirate{

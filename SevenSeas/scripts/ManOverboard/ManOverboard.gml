@@ -1,7 +1,7 @@
 function ManOverboard() {
 	with instance_create(0, 0, Event)
 	    {
-	    pirateOverboard = instance_find(Pirate, irandom(instance_number(Pirate) - 1))
+	    pirateOverboard = RandomPirate()
 	
 	    buttonNumber = 3
 	    ds_list_add(buttons, ManOverboardRope, ManOverboardSave)

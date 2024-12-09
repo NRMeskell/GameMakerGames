@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"GetNewMedicalEvent",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"GetNewMedicalEvent",
+  "parent":{
+    "name":"MedicalEvents",
+    "path":"folders/Scripts/Events/SailingEvents/MedicalEvents.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

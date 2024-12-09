@@ -1,7 +1,7 @@
 function MalariaCrewmate() {
 	//Malaria
 
-	myPirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+	myPirate = RandomPirate()
 	ds_list_add(global.notificationList, "Malaria!", myPirate.name + " got malaria from misquito bites, and has fallen very ill!")
 	global.moraleBoost = "Malaria"
 	with myPirate

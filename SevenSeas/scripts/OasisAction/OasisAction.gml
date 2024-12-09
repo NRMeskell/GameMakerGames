@@ -22,7 +22,7 @@ function OasisAction() {
 	    }
 	else
 	    {
-		crewTarget = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+		crewTarget = RandomPirate()
 	    with crewTarget
 	        {
 			UpdateMorale(2, -1)

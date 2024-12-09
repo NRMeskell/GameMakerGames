@@ -53,7 +53,7 @@ function CurseLifterPass() {
 
 
 function GoldForLimb() {	
-	var myPirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+	var myPirate = RandomPirate()
 	with myPirate
 		event_user(3)
 	

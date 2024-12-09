@@ -7,7 +7,7 @@ function SupplyBoxWithdraw() {
 	}
 	else{
 		ds_list_add(global.notificationList, "Wrong Code!", "After several failed attempts, a loaded bullet-trap fires and injures the crew!")
-		with instance_find(Pirate, irandom(instance_number(Pirate)-1)){
+		with RandomPirate(){
 			myHealth -= 20
 			UpdateMorale(-1, -1)
 			UpdateMorale(-1, global.KEEN)

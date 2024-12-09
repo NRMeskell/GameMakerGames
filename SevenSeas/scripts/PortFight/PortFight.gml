@@ -10,7 +10,7 @@ function PortFight() {
         
 	    global.allowSelect = false
 	    captionText = "Street Brawl!"
-	    myPirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+	    myPirate = RandomPirate()
 	    eventText = myPirate.name + " got into a fight with a local!" 
 	    global.moraleBoost = "brawl"
 	    }

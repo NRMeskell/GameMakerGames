@@ -19,7 +19,7 @@ function GabblerMeet() {
 	    global.allowSelect = false
 		
 	    captionText = "Old Gabbler"
-	    myPirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+	    myPirate = RandomPirate()
 		if OldGabbler.myState == "unmet"
 			eventText = "The crew meets an odd character in a tavern, who would love to tell a 'free' tale." 
 	    else

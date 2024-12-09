@@ -8,13 +8,13 @@ function FloatingLights() {
 	    ds_list_add(buttonStats, 3, 3, 6)
 	    ds_list_add(buttonRequires, 0, global.eventDiff[3,1], global.eventDiff[6,2])
 	    ds_list_add(buttonCosts, 0, 0, 0)
-	    ds_list_add(buttonText, "Wait for them to leave", "chase away the lights", "observe the lights")
+	    ds_list_add(buttonText, "Wait for them to leave", "chase away the lights", "study the lights' behavior")
         
-		myPirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+		myPirate = RandomPirate()
 	    global.allowSelect = false
 	    captionText = "Floating lights!"
     
-	    eventText = "Mysterious lights are floating around the ship, lingering near any injured crew members."
+	    eventText = "Mysterious lights are floating around the ship, lingering near injured crew members."
 	    global.moraleBoost = "lights"  
 		
 		repeat(5)

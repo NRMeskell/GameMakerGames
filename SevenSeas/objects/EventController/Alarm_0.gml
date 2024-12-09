@@ -7,7 +7,7 @@ with Pirate
 
 if desertPossible
     {
-	checkPirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+	checkPirate = RandomPirate()
     with checkPirate
         if morale <= irandom_range(-3, -2)
             {

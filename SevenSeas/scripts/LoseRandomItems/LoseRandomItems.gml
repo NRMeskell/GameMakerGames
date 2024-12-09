@@ -11,7 +11,7 @@ function LoseRandomItems(argument0) {
 
 	repeat lostItemNumber
 	    {   
-	    myPirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+	    myPirate = RandomPirate()
 	    with myPirate
 	        {
 	        if other.lostItems != ""

@@ -4,9 +4,9 @@ function BackflipRequest(argument0) {
 	with instance_create(0,0,Request)
 	    {
 	    myPirate = argument0
-		otherPirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+		otherPirate = RandomPirate()
 	    while otherPirate == myPirate and instance_number(Pirate) > 1
-	        otherPirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+	        otherPirate = RandomPirate()
 			
 	    buttonNumber = 2
 	    ds_list_add(buttons, BackflipAllow) 

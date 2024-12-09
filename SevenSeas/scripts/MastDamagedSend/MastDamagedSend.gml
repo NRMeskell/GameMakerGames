@@ -8,7 +8,7 @@ function MastDamagedSend() {
 	    ds_list_add(global.notificationList, "sails secured!", "the crew were able to safely save the ship") 
 	    }
 	else{
-	    hurtPirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+	    hurtPirate = RandomPirate()
 	    ds_list_add(global.notificationList, "sails damaged!", hurtPirate.name + " was hurt while trying to securing the sails.") 
 	    Ship.myHealth -= 50*(global.seaLevel+1)
 	    hurtPirate.myHealth -= 25*(global.seaLevel+1)
