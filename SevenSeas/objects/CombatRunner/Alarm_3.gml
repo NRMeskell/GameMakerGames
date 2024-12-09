@@ -24,7 +24,7 @@ if irandom(power(ds_list_size(possibleEnemyActions)*2,2)) > 0{
 		    shipTarget = Ship
 		    myCrewTarget = Enemy
 		    myShipTarget = CombatRunner
-		    targetPirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+		    targetPirate = RandomPirate()
 		    myPirate = other.chosenAttack.myPirate
         
 		    event_user(3)

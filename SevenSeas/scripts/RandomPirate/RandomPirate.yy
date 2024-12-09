@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"RandomPirate",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"RandomPirate",
+  "parent":{
+    "name":"Events",
+    "path":"folders/Scripts/Events.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

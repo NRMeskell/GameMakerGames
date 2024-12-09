@@ -26,7 +26,7 @@ function CrashingRocksArrive() {
 	    global.allowSelect = false
 		
 	    captionText = "Crashing Rocks"
-	    myPirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+	    myPirate = RandomPirate()
 		if CrashingRocks.myState == "unmet"
 			eventText = "The two enourmous stones tower from the water and crash together!" 
 	    else if CrashingRocks.myVar == 1

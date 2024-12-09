@@ -14,20 +14,26 @@ if eventTimer <= 0
     //calm events
     if global.weather == 1
         {
-        eventType = choose("Special Event", "Special Event", "Special Event", "Character", "Ambush", "Request")
-        if eventType == "Request" and instance_number(Pirate) < 2
+        eventType = choose("Special Event", "Special Event", "Character", "Ambush", "Request", "Medical")
+        
+		var needsHelp = RandomPirate().myHealth < (global.seaLevel+1)*12 or Ship.myHealth < (global.seaLevel+1)*30
+		if eventType != "Medical" and needsHelp and irandom(1) == 0
+			eventType = choose("Medical", "Request")
+		
+		if eventType == "Request" and instance_number(Pirate) < 2
 			eventType = choose("Special Event", "Character")
 		
 		//Events
-        if eventType == "Event"{
+		if eventType == "Medical"{
+			GetNewMedicalEvent()
+		}
+        else if eventType == "Event"{
             event_user(1)
-            //chosenEvent = ds_list_find_value(normalEventList, irandom(ds_list_size(normalEventList)-1))
-            //script_execute(chosenEvent)
             }
         //Requests
         else if eventType == "Request"{
             //get pirate
-			requestPirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+			requestPirate = RandomPirate()
 			currentRequest = requestLists[requestPirate.myMainPer][irandom(array_length(requestLists[requestPirate.myMainPer])-1)]
 			//choose request 
 			script_execute(currentRequest, requestPirate)  
@@ -42,28 +48,18 @@ if eventTimer <= 0
             }
         //Ambush and enemy arrive
         else{
-            avoidAmbush = false
-            with Pirate
-                if myPet.itemPower = "avoid" and mySlot.slotType = "rigging"
-                    avoidAmbush = true
-                    
-            if avoidAmbush and irandom(1)
-                ds_list_add(global.notificationList, "ambush avoided!", "an enemy was spotted with a spyglass and confrontation be avoided!")
+            //getSeaNumber
+            currentSeaNumber = -1
+            for(i=0; i<MapCreator.seaNumber; i++)
+                if ds_map_find_value(MapCreator.seas[i], "type") = global.seaType
+                    currentSeaNumber = i
+            
+            if ds_map_find_value(MapCreator.seas[currentSeaNumber], "enemy seen") == true
+                script_execute(Ambushed)
             else
                 {
-                //getSeaNumber
-                currentSeaNumber = -1
-                for(i=0; i<MapCreator.seaNumber; i++)
-                    if ds_map_find_value(MapCreator.seas[i], "type") = global.seaType
-                        currentSeaNumber = i
-            
-                if ds_map_find_value(MapCreator.seas[currentSeaNumber], "enemy seen") == true
-                    script_execute(Ambushed)
-                else
-                    {
-                    script_execute(ds_map_find_value(EventController.enemySeenMap, global.seaType))
-                    ds_map_replace(MapCreator.seas[currentSeaNumber], "enemy seen", true)
-                    }
+                script_execute(ds_map_find_value(EventController.enemySeenMap, global.seaType))
+                ds_map_replace(MapCreator.seas[currentSeaNumber], "enemy seen", true)
                 }
             }
         }

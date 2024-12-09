@@ -9,7 +9,7 @@ function JohnnyFurious() {
 	    }
 	if result == 1
 	    {
-	    myPirate = instance_find(Pirate, irandom(instance_number(Pirate)-1)) 
+	    myPirate = RandomPirate() 
 	    with myPirate
 	        other.item = LoseRandomItem()
 	    text = "Johnny returns, and is none too happy! he steals a " + item + " from " + myPirate.name + " before running off!"

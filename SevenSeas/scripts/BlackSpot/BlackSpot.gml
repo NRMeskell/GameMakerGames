@@ -10,7 +10,7 @@ function BlackSpotArrives() {
 	    ds_list_add(buttonCosts, 0, 0)
 	    ds_list_add(buttonText, "hope it goes away", "remove the spot")
         
-		myPirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+		myPirate = RandomPirate()
 	    global.allowSelect = false
 	    captionText = "Black Spot!"
     

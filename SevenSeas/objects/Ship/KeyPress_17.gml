@@ -1,1 +1,1 @@
-GetNewCharacterEncounter()
+GetNewMedicalEvent()

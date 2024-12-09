@@ -5,7 +5,7 @@ function SpiritLordArrive() {
 		//add pirates who are keen
 		pirateList = ds_list_create()
 		for(var p=0; p<instance_number(Pirate) and ds_list_size(pirateList)<2; p++){
-			var addPirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+			var addPirate = RandomPirate()
 			if addPirate.myMainPer == global.KEEN
 				ds_list_add(pirateList, addPirate)
 		}
@@ -13,9 +13,9 @@ function SpiritLordArrive() {
 		var slotsLeft = 2-ds_list_size(pirateList);
 		var piratesLeft = instance_number(Pirate) - ds_list_size(pirateList);
 		repeat(min(slotsLeft, piratesLeft)){
-			var addPirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+			var addPirate = RandomPirate()
 			while ds_list_find_index(pirateList, addPirate) != -1{
-				addPirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+				addPirate = RandomPirate()
 			}
 			ds_list_add(pirateList, addPirate)
 		}

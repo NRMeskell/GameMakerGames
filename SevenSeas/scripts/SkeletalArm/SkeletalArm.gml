@@ -31,7 +31,7 @@ function SkeletalArmSmash() {
 		UpdateMorale(1, -1)
 	}
 	else{
-		member = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+		member = RandomPirate()
 		ds_list_add(global.notificationList, "attacked!", "the skeletal " + skelType + " attaches itself to " + member.firstName + " and takes off a chunk of skin!")
 		with member
 			myHealth -= irandom(10) + 15

@@ -2,7 +2,7 @@ function CrazyPirate(argument0) {
 	//Crazy Pirate
 	global.moraleBoost = "crazy pirate"
 	if argument0 = undefined
-	    myPirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+	    myPirate = RandomPirate()
 	else
 	    myPirate = argument0
 

@@ -17,7 +17,7 @@ eventList[4] = ds_list_create()
 eventList[5] = ds_list_create()
 eventList[6] = ds_list_create()
 
-ds_list_add(stillEventList, RottenPlanks, CrazyPirateMaker, SpoiledFood, SpoiledFood)
+ds_list_add(stillEventList, RottenPlanks, CrazyPirateMaker, SpoiledFood, RestfulWaters)
 ds_list_add(roughEventList, SeaSickPirates, ManOverboard, SeaSickPirates, MastDamaged)
 //NORMAL EVENT LIST PHASED OUT!!!
 

@@ -6,13 +6,13 @@ function TrainingAllow() {
 
 	if irandom(3) == 0
 	    {
-	    injuredMember = instance_find(Pirate, irandom(instance_number(Pirate)))
+	    injuredMember = RandomPirate()
 	    ds_list_add(global.notificationList, "Injured Crew Member!", injuredMember.name + " was injured, and the training was halted.")
 	    injuredMember.myHealth -= (injuredMember.maxHealth div 4)
 	    }
 	else if irandom(1)
 	    {
-	    pirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+	    pirate = RandomPirate()
 	    ds_list_add(global.notificationList, "hardened crew!", "the crew trains hard, and " + pirate.name + " improved their maximum health!")
     
 	    with pirate

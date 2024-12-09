@@ -3,7 +3,7 @@ function MermaidIgnore() {
 
 	if !argument0
 	    {
-	    struckPirate = instance_find(Pirate,irandom(instance_number(Pirate)-1))
+	    struckPirate = RandomPirate()
 	    ds_list_add(global.notificationList, "siren's song!", struckPirate.name + " loved the song, and injured themselves trying to get overboard!")
 		struckPirate.myHealth -= 20
 	    }

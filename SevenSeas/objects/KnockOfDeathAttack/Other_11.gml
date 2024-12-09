@@ -12,9 +12,9 @@ with Pirate{
 
 //if not all pirates are cursed
 if cursedPirates < instance_number(Pirate){
-	cursePirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+	cursePirate = RandomPirate()
 	while cursePirate.body == sprite_get_number(PirateManSkinSpr)-1
-		cursePirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+		cursePirate = RandomPirate()
 		
 	global.moraleBoost = "skeleton" 
 	with cursePirate{

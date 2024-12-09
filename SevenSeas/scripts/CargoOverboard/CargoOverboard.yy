@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"CargoOverboard",
   "parent":{
-    "name":"CargoOverboard",
-    "path":"folders/Scripts/Events/SailingEvents/StormEvents/CargoOverboard.yy",
+    "name":"Tragedy",
+    "path":"folders/Scripts/Events/SailingEvents/MedicalEvents/Tragedy.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

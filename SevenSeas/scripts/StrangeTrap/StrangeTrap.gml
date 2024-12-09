@@ -9,7 +9,7 @@ function StrangeTrap() {
 		script_execute(closeEventCode, 2)
 	}
 	else{
-		member = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+		member = RandomPirate()
 		ds_list_add(global.notificationList, "pirate caught!", member.firstName + " was snapped by a trap, and they lost health and morale!")
 		with member{
 			UpdateMorale(-1, -1)

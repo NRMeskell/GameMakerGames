@@ -1,7 +1,7 @@
 function SeaSickPirates() {
 	with instance_create(0, 0, Event)
 	    {
-	    sickPirate = instance_find(Pirate, irandom(instance_number(Pirate) - 1))
+	    sickPirate = RandomPirate()
     
 	    buttonNumber = 3
 	    ds_list_add(buttons, SeaSickHold, SeaSickMedicine)

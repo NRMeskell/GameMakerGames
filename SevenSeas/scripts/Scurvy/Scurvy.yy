@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"Scurvy",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Scurvy",
+  "parent":{
+    "name":"Tragedy",
+    "path":"folders/Scripts/Events/SailingEvents/MedicalEvents/Tragedy.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -11,7 +11,7 @@ function EntertainWatch() {
 	    ds_list_add(global.notificationList, "A fun time!", "the crew enjoy a wonderful show, and gain morale!")
 	    }
 	else if irandom(1) > 0{
-		var pirateCalled = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+		var pirateCalled = RandomPirate()
 		ds_list_add(global.notificationList, "A fun time!", pirateCalled.firstName + " is called on stage to assist!")
 	    with pirateCalled{
 			UpdateMorale(-1, global.KEEN)

@@ -5,7 +5,7 @@ function TikiHeads() {
 	result = irandom(3)
 	
 	if result = 0 {
-		cursedCrew = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+		cursedCrew = RandomPirate()
 		with cursedCrew{
 			event_user(3)
 		}
@@ -15,9 +15,9 @@ function TikiHeads() {
 		ds_list_add(global.notificationList, "No response", "Water drains from the idols, but nothing more appears to happen")
 	}
 	else {
-		blessedCrew = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+		blessedCrew = RandomPirate()
 		while blessedCrew.mySlot.slotType == "bed"
-			blessedCrew = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+			blessedCrew = RandomPirate()
 			
 		with blessedCrew{
 			PirateLevelUp(true, false)

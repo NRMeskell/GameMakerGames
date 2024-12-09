@@ -9,7 +9,7 @@ function RaftDownRiver() {
 		UpdateMorale(1, global.DARING)
 	}
 	else if irandom(3) > 0 {
-		var lostPirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+		var lostPirate = RandomPirate()
 		with lostPirate
 			event_user(3)
 		
@@ -19,7 +19,7 @@ function RaftDownRiver() {
 		ds_list_add(global.notificationList, "unsettling trade!", "The crew return with " + lootText + ", but refuse say how " + lostPirate.firstName + " lost their limb.")
 	}
 	else{
-		var lostPirate = instance_find(Pirate, irandom(instance_number(Pirate)-1))
+		var lostPirate = RandomPirate()
 		
 		ds_list_add(global.notificationList, "Skeletal Crew Member!", lostPirate.name + " returned a cursed pirate! They cannot eat until the curse is lifted.")
 		global.moraleBoost = "skeleton" 
