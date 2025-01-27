@@ -8,7 +8,7 @@ function BreakRequest(argument0) {
 	    ds_list_add(buttons, BreakAllow)
      
 	    global.allowSelect = false
-	    eventText = "'We've been worked too hard, and I'm having no fun. Can I take a break?'"
+	    eventText = "We've been worked too hard, and I'm having no fun. Can I take a break?"
 	    global.moraleBoost = "break"
 	    }
     

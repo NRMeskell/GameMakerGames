@@ -1,5 +1,9 @@
 /// @description Vars
 
+pushx = 0
+pushy = 0
+mySide = 0
+
 shadeImage = 0
 imageSpeed = 5/room_speed
 moveSpeed = (90)/room_speed

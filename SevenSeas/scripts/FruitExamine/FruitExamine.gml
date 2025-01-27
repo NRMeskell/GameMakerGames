@@ -16,12 +16,12 @@ function FruitExamine() {
 		}
 	else{
 		if irandom(1){
-			ds_list_add(global.notificationList, "Unedible fruit!", "the fruit is deemed unsafe, and the crew leave dissapointed.")
+			ds_list_add(global.notificationList, "inedible fruit!", "the fruit is deemed unsafe, and the crew leave disappointed.")
 			UpdateMorale(-2,global.JOLLY)
 			UpdateMorale(-2,global.KEEN)
 		}
 		else{
-			ds_list_add(global.notificationList, "Unedible fruit!", "the fruit is deemed safe, but is so sour that the crew become sick.")
+			ds_list_add(global.notificationList, "inedible fruit!", "the fruit is deemed safe, but is so sour that the crew become sick.")
 			UpdateMorale(-1,-1)
 			with Pirate{
 				myHealth *= 0.9

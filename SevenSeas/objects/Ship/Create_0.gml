@@ -4,6 +4,7 @@ if global.modernRes
 	sceneBackground = surface_create(display_get_width(), display_get_height())
 else
 	sceneBackground = surface_create(room_width, room_height)
+
 //show_debug_overlay(true)
 
 global.myLayer = 0
@@ -115,12 +116,12 @@ shipMaxCrew[6] = 6
 
 //health
 maxHealthType[0] = 250
-maxHealthType[1] = 450
-maxHealthType[2] = 500
-maxHealthType[3] = 600
-maxHealthType[4] = 1000
-maxHealthType[5] = 1250
-maxHealthType[6] = 1000
+maxHealthType[1] = 350
+maxHealthType[2] = 400
+maxHealthType[3] = 450
+maxHealthType[4] = 550
+maxHealthType[5] = 600
+maxHealthType[6] = 550
 
 maxHealth = maxHealthType[shipType]
 myHealth = maxHealth

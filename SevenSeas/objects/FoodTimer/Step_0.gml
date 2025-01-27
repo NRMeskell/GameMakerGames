@@ -37,7 +37,7 @@ if alarm[0] < 1{
 	
 		if !HasStored(4, instance_number(Pirate) - cursedPirates)
 	        {
-	        ds_list_add(global.notificationList, "Meal Time!", "There be insufficent food! Unfed crew loses morale and health.")
+	        ds_list_add(global.notificationList, "Meal Time!", "There be insufficient food! Unfed crew loses morale and health.")
 	        }
 	    else
 	        {

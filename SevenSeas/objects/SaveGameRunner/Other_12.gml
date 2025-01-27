@@ -7,5 +7,4 @@ LoadBuildings(gameName)
 LoadShip(gameName)
 LoadPirates(gameName)
 LoadCharacters(gameName)
-LoadReputation(gameName)
 

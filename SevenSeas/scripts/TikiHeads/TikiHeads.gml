@@ -9,7 +9,7 @@ function TikiHeads() {
 		with cursedCrew{
 			event_user(3)
 		}
-		ds_list_add(global.notificationList, "Cursed!", "The idols unlease a curse uopon the crew, crippling " + cursedCrew.name + "!")
+		ds_list_add(global.notificationList, "Cursed!", "The idols unleash a curse upon the crew, crippling " + cursedCrew.name + "!")
 	}
 	else if result <= 2 and irandom(1){
 		ds_list_add(global.notificationList, "No response", "Water drains from the idols, but nothing more appears to happen")

@@ -8,7 +8,7 @@ function ManOverboard() {
 	    ds_list_add(buttonStats, 3, 5)
 	    ds_list_add(buttonRequires, global.eventDiff[3,0], global.eventDiff[5,1])
 	    ds_list_add(buttonCosts, 0, 0)
-	    ds_list_add(buttonText, "Throw them a rope!", "Stear towards them!")
+	    ds_list_add(buttonText, "Throw them a rope!", "steer towards them!")
         
 	    global.allowSelect = false
 	    captionText = pirateOverboard.firstName + " overboard!"

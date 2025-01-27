@@ -8,7 +8,7 @@ function PirateShipTrade() {
 	    }
 	else
 	    {
-	    ds_list_add(global.notificationList, "attacked!", "the rival ship lures you in, and springs a suprise attack!")
+	    ds_list_add(global.notificationList, "attacked!", "the rival ship lures you in, and springs a surprise attack!")
 	    with instance_create(0,0,EnemyShip)
 	        {
 	        flagColor = other.myShip.flagColor

@@ -1,6 +1,6 @@
 function SilverwheelTradeRequest() {
 	if argument0{
-		ds_list_add(global.notificationList, "Trades Begin!", "Captain Silverwheel reluctently offers goods, but makes you promise to act better.")
+		ds_list_add(global.notificationList, "Trades Begin!", "Captain Silverwheel reluctantly offers goods, but makes you promise to act better.")
 
 		GetRandomStore(irandom_range(3,4), "Trades")
 

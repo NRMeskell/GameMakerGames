@@ -93,9 +93,9 @@ function CustomSeaLoot(itemsAllowed) {
         
 		        with item
 		            {
-		            name = "spirit jewel"
+		            name = "jewel*"
 		            description = "An beautiful treasure, touched by an ancient spirit"
-		            previewName = "jewel*"
+		            previewName = "spirit jewel"
 		            amount = 1
 		            itemNumber = 8    
 		            cost = 0

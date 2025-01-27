@@ -98,9 +98,6 @@ myAction[2] = noone
 morale = 0
 stars = 0
 
-PirateLevelUp(false, false)
-
-
 ///Equipment
 
 drawY1 = 40 + 12
@@ -145,30 +142,11 @@ leftHandSelected = false
 
 drawOptionsSpr = 2
 
-tempAction = instance_create(-100, -100, myAction[0])
-
 EquipItem(id, MakeRandomShirtItem(0))
     
 while true{
     var breakLoop = false
-    if myShirt.bonus[5] != 0{
-        for(var i=0; i<array_length_1d(tempAction.requiredSlot); i++)
-            if tempAction.requiredSlot[i] == "wheel"
-                breakLoop = true
-        }
-    else if myShirt.bonus[6] != 0{
-        for(var i=0; i<array_length_1d(tempAction.requiredSlot); i++)
-            if tempAction.requiredSlot[i] == "medical"
-                breakLoop = true
-        }
-    else if myShirt.bonus[2] != 0{
-        for(var i=0; i<array_length_1d(tempAction.requiredSlot); i++)
-            if tempAction.requiredSlot[i] == "cannon"
-                breakLoop = true
-        }
-    else if myShirt.bonus[3] != 0{
-        for(var i=0; i<array_length_1d(tempAction.requiredSlot); i++)
-            if tempAction.requiredSlot[i] == "rigging"
+    if myShirt.bonus[5] > 0 or myShirt.bonus[6] != 0{
                 breakLoop = true
         }
     if breakLoop
@@ -180,8 +158,8 @@ while true{
 	}
 }
     
-EquipItem(id,MakeRandomPantsItem(-1))  
-        
-instance_destroy(tempAction)
-     
+EquipItem(id, MakeRandomPantsItem(-1))       
 EquipItem(id, MakeRandomHandItem(0))
+
+PirateLevelUp(false, false)
+

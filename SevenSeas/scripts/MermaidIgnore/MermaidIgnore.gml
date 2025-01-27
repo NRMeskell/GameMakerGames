@@ -9,7 +9,7 @@ function MermaidIgnore() {
 	    }
 	else
 	    {
-	    ds_list_add(global.notificationList, "crew dissapointed!", "the crew wanted to see the mermaids, and lost morale!")
+	    ds_list_add(global.notificationList, "crew disappointed!", "the crew wanted to see the mermaids, and lost morale!")
 	    with Pirate
 	        {
 	        UpdateMorale(-1, -1)

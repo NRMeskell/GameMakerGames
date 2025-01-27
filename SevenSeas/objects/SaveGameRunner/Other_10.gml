@@ -7,7 +7,6 @@ if !instance_exists(Defeat){
 	SaveBuildings(gameName)
 	SaveShip(gameName)
 	SaveCharacters(gameName)
-	//SaveGameStats(gameName)
 	SavePirates(gameName)
 }
 

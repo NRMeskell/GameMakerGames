@@ -10,7 +10,7 @@ if itemNumber = 1
     {
     name = ItemRunner.cargoName[1] + " x" + string(amount)
     previewName = "jewels"
-    description = "Sparkly and shiny!#worth about 15 gold to traders in town!"
+    description = "Sparkly and shiny!#very valuable to traders in town!"
     }
 if itemNumber = 2
     {

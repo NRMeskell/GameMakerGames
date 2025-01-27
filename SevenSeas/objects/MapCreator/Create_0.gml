@@ -1,9 +1,5 @@
 /// @description Create Port Types
 
-//TEMP
-global.portBuilds = ds_list_create()
-ds_list_add(global.portBuilds, Tavern, Smithy, Taylors, ShipYard, TrinketShop)
-
 instantClose = false
 
 ///Create Sea Surfaces
@@ -39,12 +35,6 @@ for(n=0; n<30*9; n++)
     draw_sprite_ext(MapWaveSpr, irandom(3), irandom(mapSizeX), irandom(mapSizeY), 1, 1, 0, c_white, 0.5)
 surface_reset_target()
 
-/*seenSurface = surface_create(mapSizeX, mapSizeY)
-surface_set_target(seenSurface)
-draw_set_color( make_color_rgb(82,45,16))
-draw_rectangle(0, 0, mapSizeX, mapSizeY, false)
-surface_reset_target()*/
-
 distanceSurface = surface_create(mapSizeX, mapSizeY)
 islandSurface = surface_create(mapSizeX, mapSizeY)
 surf = surface_create(mapSizeX, mapSizeY)
@@ -66,12 +56,12 @@ islandSize = 230
 
 //Create Placement Vars
 seaDis[0] = 0
-seaDis[1] = islandSize*2.1
-seaDis[2] = islandSize*2.1
-seaDis[3] = islandSize*2.3
-seaDis[4] = islandSize*2.3
-seaDis[5] = islandSize*2.65
-seaDis[6] = islandSize*2.65
+seaDis[1] = islandSize*2.2
+seaDis[2] = islandSize*2.2
+seaDis[3] = islandSize*2.2
+seaDis[4] = islandSize*2.2
+seaDis[5] = islandSize*2.2
+seaDis[6] = islandSize*2.2
 
 seaType[0] = ds_list_create()
 seaType[1] = ds_list_create()
@@ -156,12 +146,7 @@ for(n=0; n<seaNumber; n++)
             event_user(0)
         }
     if n > 0
-        {
-        if n/2 != n div 2
-            dir += pi
-        else
-            dir += pi/3
-        }
+        dir += pi/3
     }
     
 for(n=0; n<seaNumber; n++)
@@ -270,7 +255,6 @@ moveSpeed = 30
 global.inPort = true
 
 global.path = path_add()
-
 for(n=0; n < seaNumber; n++)
     for(r=0; r<other.landNumber - ds_map_find_value(seas[n], "level"); r++)
         {        

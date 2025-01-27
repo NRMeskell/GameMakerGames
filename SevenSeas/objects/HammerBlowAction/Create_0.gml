@@ -9,7 +9,7 @@ priorityMax = 6
 
 myAttack = ShipHammerAttack
 requiredSlot[0] = "rigging"
-myType = "melle"
+myType = "melee"
 level = 0
 
 needsTarget = true

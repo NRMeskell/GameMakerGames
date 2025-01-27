@@ -16,14 +16,13 @@ animationWidth = 10
 image_yscale = 1
 
 endRound = true
-actionType = "melle"
-showDamage = false
+actionType = "melee"
 
 x = Ship.drawX + animationX + irandom_range(-animationWidth,animationWidth)
 y = Ship.drawY + animationY + irandom_range(-animationHeight,animationHeight) + Ship.waveHeight
 
-attackPower = global.totalSwordBonus
+attackPower = 0
 event_user(0)
 event_user(2)
-
+showDamage = false
 

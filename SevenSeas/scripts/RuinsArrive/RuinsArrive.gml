@@ -70,11 +70,12 @@ function RuinsHelp() {
 			lastName = "Grayhair"
 			name = firstName + " " + lastName
 				
-			EquipItem(id, MakeRandomHandItem(2))
+			EquipItem(id, MakeRandomHandItem(1))
 			EquipItem(id, MakeRandomPantsItem(1))
-			EquipItem(id, MakeRandomShirtItem(2))
-			EquipItem(id, MakeRandomHatItem(2))
+			EquipItem(id, MakeRandomShirtItem(1))
+			EquipItem(id, MakeRandomHatItem(1))
 				
+			
 			PirateLevelUp(false, false)
 			PirateLevelUp(false, false)
 			PirateLevelUp(false, false)

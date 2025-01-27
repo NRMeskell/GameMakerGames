@@ -1,5 +1,5 @@
 function GetModifiedDamage(argument0, argument1) {
-	if myType = "melle"
+	if myType = "melee"
 	    multiplier = global.totalSwordBonus
 	if myType = "ranged"
 	    multiplier = global.totalGunBonus

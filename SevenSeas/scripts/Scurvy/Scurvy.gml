@@ -5,7 +5,7 @@ function Scurvy() {
 	    buttonNumber = 2
 	    ds_list_add(buttons, ScurvyIgnore, ScurvyHelp)
 	    ds_list_add(buttonStats, 0, 6)
-	    ds_list_add(buttonRequires, 0, global.eventDiff[6, 1])
+	    ds_list_add(buttonRequires, 0, global.eventDiff[6, 0])
 	    ds_list_add(buttonCosts, 0, 0)
 	    ds_list_add(buttonText, "ignore the problem", "provide " + eventValue.firstName + "  medical care")
         
@@ -23,17 +23,6 @@ function ScurvyIgnore(){
 		myArgument = other.eventValue
 		condition = ScurvyReturn 
 	} 
-}
-
-function ScurvyReturn(){
-	ds_list_add(global.notificationList, "Scurvy Worsens!", "A small cut on " + argument0.firstName + "'s arm won't stop bleeding, and they lose a significant amount of blood!")
-	argument0.myHealth -= 20 + 25*global.seaLevel
-	if irandom(1){
-		with instance_create(0,0,ConditionTimer){ 
-		myArgument = other.eventValue
-		condition = ScurvyReturn 
-		}
-	}
 }
 
 function ScurvyHelp(){
@@ -58,6 +47,17 @@ function ScurvyHelp(){
 				myArgument = other.eventValue
 				condition = ScurvyReturn 
 			}
+		}
+	}
+}
+
+function ScurvyReturn(){
+	ds_list_add(global.notificationList, "Scurvy Worsens!", "A small cut on " + myArgument.firstName + "'s arm won't stop bleeding, and they lose a significant amount of blood!")
+	myArgument.myHealth -= 20 + 25*global.seaLevel
+	if irandom(1){
+		with instance_create(0,0,ConditionTimer){ 
+		myArgument = other.myArgument
+		condition = ScurvyReturn 
 		}
 	}
 }

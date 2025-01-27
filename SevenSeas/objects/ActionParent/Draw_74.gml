@@ -47,7 +47,7 @@ else
 
 if selected
     {
-    if myType == "melle"
+    if myType == "melee"
         draw_sprite(MelleSelectedSpr, animationNumber div 20, x, y)
     if myType == "ranged"
         draw_sprite(RangedSelectedSpr, animationNumber div 20, x, y)
@@ -68,7 +68,7 @@ if waitLeft > 0
     draw_set_alpha(1)
     //draw_sprite(PlayerActionTimerSpr,0,x,y)
     mergeColorLevel = 0.4
-    if myType == "melle"
+    if myType == "melee"
         draw_set_color(merge_color(merge_color(make_color_rgb(128, 128, 128), drawColor, mergeColorLevel), c_black, 0.2))
     if myType == "ranged"
         draw_set_color(merge_color(merge_color(make_color_rgb(158, 126, 2), drawColor, mergeColorLevel), c_black, 0.2))

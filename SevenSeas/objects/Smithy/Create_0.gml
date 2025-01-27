@@ -8,7 +8,7 @@ button[0] = "purchase#swords"
 button[1] = "purchase#guns"
 button[2] = "purchase#rifles"
 
-event_user(4)
+event_user(5)
 
 ///Light
 

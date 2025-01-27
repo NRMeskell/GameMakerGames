@@ -6,7 +6,7 @@ function DolphinsBefriend() {
 		UpdateMorale(2, global.KEEN)
 	}
 	else{
-		ds_list_add(global.notificationList, "Dolphins insulted!", "A clumbsy attempt to communicate seems to only insult the dolphins, which disappear below the water.")
+		ds_list_add(global.notificationList, "Dolphins insulted!", "A clumsy attempt to communicate seems to only insult the dolphins, which disappear below the water.")
 		UpdateMorale(-1, global.KEEN)
 	}
 

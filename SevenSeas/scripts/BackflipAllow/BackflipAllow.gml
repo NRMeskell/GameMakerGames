@@ -3,12 +3,12 @@ function BackflipAllow() {
 
 	if irandom(1){
 		if irandom(1){
-			ds_list_add(global.notificationList, myPirate.firstName + " and " + otherPirate.firstName + " excited!", "They practice backflips for the duration of the day, and " + otherPirate.firstName + " almost lands one!")
+			ds_list_add(global.notificationList, myPirate.firstName + " and " + otherPirate.firstName + " excited!", "They practice back-flips for the duration of the day, and " + otherPirate.firstName + " almost lands one!")
 			with otherPirate
 				UpdateMorale(1, -1)
 		}
 		else{
-			ds_list_add(global.notificationList, myPirate.firstName + " and " + otherPirate.firstName + " thrilled!", "They practice backflips, and " + otherPirate.firstName + " quickly learns the trick!")
+			ds_list_add(global.notificationList, myPirate.firstName + " and " + otherPirate.firstName + " thrilled!", "They practice back-flips, and " + otherPirate.firstName + " quickly learns the trick!")
 			
 			with otherPirate
 				UpdateMorale(2, -1)

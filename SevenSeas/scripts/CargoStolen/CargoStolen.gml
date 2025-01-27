@@ -10,7 +10,7 @@ function CargoStolen() {
         
 	    global.allowSelect = false
 	    captionText = "Dishonest Cargo-loaders!"
-	    eventText = "A group of port-hands are stealing cargo off the ship!" 
+	    eventText = "A group of dockworkers are stealing cargo off the ship!" 
 	    global.moraleBoost = "thieves"  
 	    }
 }

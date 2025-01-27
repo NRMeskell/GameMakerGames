@@ -4,14 +4,14 @@ function SailingMalfunction() {
 		eventValue = RandomPirate()
 	    buttonNumber = 2
 	    ds_list_add(buttons, MalfunctionShip, MalfunctionCrew)
-	    ds_list_add(buttonStats, 3, 6)
-	    ds_list_add(buttonRequires, 0, global.eventDiff[6, 1])
+	    ds_list_add(buttonStats, 5, 6)
+	    ds_list_add(buttonRequires, global.eventDiff[5,1], global.eventDiff[6, 1])
 	    ds_list_add(buttonCosts, global.seaLevel+1, 0)
 	    ds_list_add(buttonText, "reinforce the#breaking ship" , "attend to the#injured crew")
         
 	    global.allowSelect = false
-	    var eventNum = irandom(3)
-		var accidents = ["A rope rips free", "A decking board breaks", "A small sail tears free,"]
+	    var eventNum = irandom(2)
+		var accidents = ["A rope rips free", "A decking board breaks", "A small sail tears free"]
 	    var titles = ["Loose Rope!", "Broken Plank!", "Torn Sail!"]
 	
 	    captionText = titles[eventNum]

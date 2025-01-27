@@ -6,6 +6,9 @@ mainFont = font_add_sprite(FontSpr, ord("!"), true, 2);
 draw_set_font(mainFont)
 
 
+loadedLevel = 1
+currentLevel = 1
+/*
 if file_exists("the_bond_level_tracker.txt")
     {
     file = file_text_open_read("the_bond_level_tracker.txt")
@@ -21,6 +24,7 @@ else
     file_text_writeln(file);
     file_text_close(file);
     }    
+*/
 
 ///Create Ground Array
 
@@ -34,6 +38,8 @@ music[2] = Music3
 lastMusic = music[0]
 currentMusic = music[0]
 audio_play_sound(currentMusic, 1, false)
+
+keyboard = true
 
 
 /* */

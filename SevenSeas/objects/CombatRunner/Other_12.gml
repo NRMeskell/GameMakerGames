@@ -27,7 +27,7 @@ healthDiff = maxHealth
 
 ///Create Action Runners
 
-indexType[0] = "melle"
+indexType[0] = "melee"
 indexType[1] = "ranged"
 indexType[2] = "cannon"
 indexType[3] = "ship"

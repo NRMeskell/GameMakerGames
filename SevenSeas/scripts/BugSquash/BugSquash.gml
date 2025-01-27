@@ -10,7 +10,7 @@ function BugSquash(argument0) {
 	    ds_list_add(buttons, BugAllow)
      
 	    global.allowSelect = false
-	    eventText = "'" + otherPirate.name + " is scared of everything! Can I have them kill the big bug in our quarters to toughen up?'"
+	    eventText = otherPirate.name + " is scared of everything! Can I have them kill the big bug in our quarters to toughen up?"
     
 	    global.moraleBoost = "bug"
 	    }

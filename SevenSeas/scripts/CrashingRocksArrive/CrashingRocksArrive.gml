@@ -28,7 +28,7 @@ function CrashingRocksArrive() {
 	    captionText = "Crashing Rocks"
 	    myPirate = RandomPirate()
 		if CrashingRocks.myState == "unmet"
-			eventText = "The two enourmous stones tower from the water and crash together!" 
+			eventText = "The two enormous stones tower from the water and crash together!" 
 	    else if CrashingRocks.myVar == 1
 	        eventText = "The giant stones appear again, although you swear they weren't here before." 
 		else

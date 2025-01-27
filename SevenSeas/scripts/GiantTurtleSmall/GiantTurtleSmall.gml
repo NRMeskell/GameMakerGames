@@ -7,7 +7,7 @@ function GiantTurtleSmall() {
 	    ds_list_add(buttonStats, 0, 3) 
 	    ds_list_add(buttonRequires, 0, global.eventDiff[3, 0])
 	    ds_list_add(buttonCosts, 0, 0)
-	    ds_list_add(buttonText, "ingore the turtle", "take the gift")
+	    ds_list_add(buttonText, "ignore the turtle", "take the gift")
         
 	    global.allowSelect = false
 	    captionText = "Giant Sea Turtle"

@@ -12,7 +12,7 @@ function BugsIgnore() {
 	        condition = MalariaCrewmate
 	    }
 
-	ds_list_add(global.notificationList, "Bugs persist!", "the misquitos continue to swarm the crew, lowering moral!")
+	ds_list_add(global.notificationList, "Bugs persist!", "the mosquitoes continue to swarm the crew, lowering moral!")
 	
 	audio_stop_sound(BugsBuzzingSnd)
 	script_execute(closeEventCode, 2)

@@ -27,11 +27,11 @@ if !surface_exists(fullPirateSurface){
 DrawPirateSurface(fullPirateSurface, xWindow+xPicture, yWindow+yPicture)
 
 //draw morale markers
-moraleXLow = 52-2*stars;
-moraleXHigh = 122+2*stars;
+moraleXLow = 51-2*min(2,stars);
+moraleXHigh = 123+2*min(2,stars);
 moraleY = 137;
 moraleXWidth = moraleXHigh-moraleXLow;
-w = (sprite_get_width(MoraleSymbolSpr)/2+4-stars)
+w = (sprite_get_width(MoraleSymbolSpr)/2+5-2*min(2,stars))
 middle = moraleXLow + (moraleMax[stars]*w/moraleXWidth - 2*w/moraleXWidth + 2)/(moraleMax[stars]+2)*moraleXWidth
 draw_sprite_ext(MoraleSymbolSpr, myMainPer, xWindow  + middle, yWindow+moraleY, size, size, 0, c_white, 1)
 for(var i=-3; i<min(morale, 0); i++) draw_sprite(MoraleTicksSpr, 0, xWindow + moraleXLow + (3+i)*((middle-w - moraleXLow)/2), yWindow+moraleY)
@@ -233,7 +233,7 @@ if point_in_rectangle(window_view_mouse_get_x(0), mouse_y, xWindow + healthX, yW
     }
     
 //draw morale info
-if point_in_rectangle(window_view_mouse_get_x(0), mouse_y, xWindow + 68, yWindow + 126, xWindow + 85, yWindow + 146) and !instance_exists(DumpItem)
+if point_in_rectangle(window_view_mouse_get_x(0), mouse_y, xWindow + 68 - 5*stars, yWindow + 126, xWindow + 85 - 5*stars, yWindow + 146) and !instance_exists(DumpItem)
     {
     draw_sprite_part(PirateLifeDisplaySpr, 1, 0, 0, sprite_get_width(PirateLifeDisplaySpr), 20 + 5*(ds_list_size(myMoraleReasons)>0) + 14*ds_list_size(myMoraleReasons)/2, xWindow + sprite_get_width(PirateSheetSpr)/2 - sprite_get_width(PirateLifeDisplaySpr)/2, yWindow + 144 - healthH/2 - 10)
     draw_sprite_part(PirateLifeDisplaySpr, 1, 0, sprite_get_height(PirateLifeDisplaySpr)-5, sprite_get_width(PirateLifeDisplaySpr), 5*(ds_list_size(myMoraleReasons)>0), xWindow + sprite_get_width(PirateSheetSpr)/2 - sprite_get_width(PirateLifeDisplaySpr)/2, yWindow + 144 - healthH/2 + 15 + 14*ds_list_size(myMoraleReasons)/2)

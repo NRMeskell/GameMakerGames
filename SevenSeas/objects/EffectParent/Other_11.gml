@@ -10,7 +10,7 @@ if team == "pirate"{
 	    {
 	    if effect == "damageMultiplier"
 	    {
-	    if attackType = "melle"
+	    if attackType = "melee"
 	        sparkleColor = make_color_rgb(148, 148, 148)
 	    else if attackType = "ranged"
 	        sparkleColor = make_color_rgb(158, 126, 2)

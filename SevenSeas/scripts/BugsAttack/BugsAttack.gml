@@ -12,7 +12,7 @@ function BugsAttack() {
         
 	    global.allowSelect = false
 	    captionText = "Bug Swarms!"
-	    eventText = "Misquitos swarm the ship, eating the crew alive!"
+	    eventText = "mosquitoes swarm the ship, eating the crew alive!"
 	    global.moraleBoost = "bugs"
 		
 		audio_play_sound(BugsBuzzingSnd, 0, true)

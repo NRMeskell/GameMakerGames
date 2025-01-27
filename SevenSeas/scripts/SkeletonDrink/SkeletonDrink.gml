@@ -13,7 +13,7 @@ function SkeletonDrink() {
 	    global.allowSelect = false
 	    captionText = "Offered Gift!"
     
-	    eventText = "Seeing your out-of-place crew, the skeletal harbormaster offers a small welcome gift."
+	    eventText = "Seeing your out of place crew, the skeletal harbormaster offers a small welcome gift."
 	    global.moraleBoost = "skeleton"  
 	    }
 }

@@ -1,5 +1,15 @@
 /// @description Add Enemy Attack
 
+allowShipActions = true
+allowMelleActions = true
+allowRangedActions = true
+allowCannonActions = true
+
+Ship.allowShipActions = true
+Ship.allowMelleActions = true
+Ship.allowRangedActions = true
+Ship.allowCannonActions = true
+
 chosenAttack = noone
 if irandom(power(ds_list_size(possibleEnemyActions)*2,2)) > 0{
 	

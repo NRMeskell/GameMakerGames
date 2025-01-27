@@ -1,7 +1,5 @@
 /// @description Do attack
 
-shipTarget.allowRangedActions = false;
-
 repeat(damage*priority)
     {
     i = irandom(instance_number(crewTarget)-1)

@@ -14,9 +14,10 @@ function GetRandomStore(argument0, argument1) {
 		if irandom(2) == 0{
 	        newItem = instance_create(0,0,StoreObjectTrade)
 			type = choose(1, irandom_range(2,5))
+			
 			while ds_list_find_index(itemTypes, type) != -1{
 				type = choose(1, irandom_range(2,5))
-				if global.seaType = "tropical waters" and irandom(1)
+				if global.seaType = global.seaNames[1] and irandom(1)
 					type = 7
 			}
 				

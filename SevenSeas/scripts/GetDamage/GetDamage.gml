@@ -1,7 +1,7 @@
 function GetDamage(argument0) {
 	if enemyAction == false
 	    {
-	    if myType = "melle"
+	    if myType = "melee"
 	        multiplier = global.totalSwordBonus
 	    if myType = "ranged"
 	        multiplier = global.totalGunBonus
@@ -18,7 +18,7 @@ function GetDamage(argument0) {
 	    }
 	else
 	    {
-	    if myType = "melle"
+	    if myType = "melee"
 	        multiplier = CombatRunner.myStats[0]
 	    if myType = "ranged"
 	        multiplier = CombatRunner.myStats[1]

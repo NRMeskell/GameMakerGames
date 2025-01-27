@@ -10,7 +10,7 @@ priorityMax = 8
 myAttack = ShipHoldFastAttack
 requiredSlot[0] = "rigging"
 requiredSlot[1] = "medical"
-myType = "melle"
+myType = "melee"
 level = 0
 
 

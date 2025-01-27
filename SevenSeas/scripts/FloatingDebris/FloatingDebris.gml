@@ -32,7 +32,7 @@ function DebrisAvoid() {
 		
 	}
 	else{
-		ds_list_add(global.notificationList, "Debris stike!", "several large chunks of debris hit the ship, damaging the hull.")
+		ds_list_add(global.notificationList, "Debris strike!", "several large chunks of debris hit the ship, damaging the hull.")
 		Ship.myHealth -= irandom_range(50, 150) div 5 * 5
 	}
 	closeEventCode()

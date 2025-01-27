@@ -1,7 +1,7 @@
 /// @description Attack Lighting
 
 lightLayer = 2
-if lightType == "melle"{
+if lightType == "melee"{
     red = 0.015
     green = 0.015
     blue = 0.02

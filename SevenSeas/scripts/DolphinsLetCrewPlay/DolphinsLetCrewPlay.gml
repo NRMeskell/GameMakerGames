@@ -33,7 +33,7 @@ function DolphinsLetCrewPlay() {
 	            }
             
 	    captionText = "They be sharks!"
-	    notiText = "some of the crew be attacked and unjured!"
+	    notiText = "some of the crew be attacked and injured!"
     
 	    ds_list_add(global.notificationList, captionText, notiText)
 	    }

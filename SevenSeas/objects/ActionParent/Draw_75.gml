@@ -6,7 +6,7 @@ if __b__
 
 if drawInfo and __view_get( e__VW.XView, 0 ) = 0
     {
-    if myType = "melle"
+    if myType = "melee"
         drawInfoY = y+sprite_height/2 + sprite_get_height(ActionInfoSpr)/2 + infoYGap
     if myType = "ranged"
         drawInfoY = y+sprite_height/2 + sprite_get_height(ActionInfoSpr)/2 + infoYGap
@@ -18,7 +18,7 @@ if drawInfo and __view_get( e__VW.XView, 0 ) = 0
     DrawActionInfo(object_index, startX, drawInfoY, false, "pirate", priority) 
     
     /*
-    if myType = "melle"
+    if myType = "melee"
         {
         drawInfoY = y+sprite_height/2 + sprite_get_height(ActionInfoSpr)/2 + infoYGap
         draw_sprite(ActionInfoSpr, 0, startX, drawInfoY)

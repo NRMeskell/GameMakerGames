@@ -13,7 +13,7 @@ function DesertWander() {
 		loot = GetRandomLoot(choose(1,2), "Items", [-1, 0, 0, 1, 3])
 		lootText = getItemText(loot, ["fallen items", "sifted gold", "precious stones", "", "dry boards"])
 		
-		ds_list_add(global.notificationList, "items found!", "the crew is suprised to find " + lootText + " in this arid desert.")
+		ds_list_add(global.notificationList, "items found!", "the crew is surprised to find " + lootText + " in this arid desert.")
 		with Pirate 
 			myHealth -= 15
 		}

@@ -15,7 +15,7 @@ animationHeight = 2
 animationWidth = 10
 
 endRound = false
-actionType = "melle"
+actionType = "melee"
 
 x = Ship.drawX + animationX + irandom_range(-animationWidth,animationWidth)
 y = Ship.drawY + animationY + irandom_range(-animationHeight,animationHeight) + Ship.waveHeight

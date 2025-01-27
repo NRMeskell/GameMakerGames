@@ -10,9 +10,9 @@ global.FEARSOME = 2
 global.DARING = 3
 
 moraleMax[0] = 8;
-moraleMax[1] = 12;
-moraleMax[2] = 16;
-moraleMax[3] = 16;
+moraleMax[1] = 15;
+moraleMax[2] = 24;
+moraleMax[3] = 24;
 
 moraleXLow = 50;
 moraleXHigh = 124;

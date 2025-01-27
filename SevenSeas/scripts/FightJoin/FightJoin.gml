@@ -21,7 +21,7 @@ function FightJoin() {
 			
 		if irandom(1){
 		    LoseCargo(0, min(CargoAmount(0), 10))
-		    ds_list_add(global.notificationList, "gaurds arrive!", "the guards arrive to break up the fight, and fine you 10 gold for breaking port rules.")
+		    ds_list_add(global.notificationList, "guards arrive!", "the guards arrive to break up the fight, and fine you 10 gold for breaking port rules.")
 			}
 		else{
 		    ds_list_add(global.notificationList, "defeat!", "The others are stronger than you guessed, and the crew suffers an embarrassing defeat.")			

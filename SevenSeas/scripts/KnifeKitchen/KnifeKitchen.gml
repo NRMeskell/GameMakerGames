@@ -8,7 +8,7 @@ function KnifeKitchen(argument0) {
 	    ds_list_add(buttons, KnifeAllow)
      
 	    global.allowSelect = false
-	    eventText = "'There's a lovely knife being wasted in the kitchens! Can I repurpose it for combat?'"
+	    eventText = "There's a lovely knife being wasted in the kitchens! Can I re-purpose it for combat?"
 	    global.moraleBoost = "knife"
 	    }
 

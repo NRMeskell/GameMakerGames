@@ -22,9 +22,7 @@ xPrev = x
 targetPort = instance_nearest(x,y,LandingSpot)
 islandPoints = ds_list_create()
 
-sailSpeedModifier = 0.05
 normalViewDistance = 40
-viewDistanceModifier = 0.2
 viewDistance = normalViewDistance
 sailPath = path_add()
 normalSailSpeed = 0.12
@@ -43,7 +41,7 @@ with LandingSpot
     slotBuild[0].mySlot = 0
     slotBuild[0].myPortType = image_index
     
-    slotBuild[1] = instance_create(-100, -100, Taylors)
+    slotBuild[1] = instance_create(-100, -100, Tailors)
     slotBuild[1].mySlot = 1
     slotBuild[1].myPortType = image_index
     

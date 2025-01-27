@@ -9,7 +9,7 @@ priorityMax = 2
 
 myAttack = ShipFinishingAttack
 requiredSlot[0] = "rigging"
-myType = "melle"
+myType = "melee"
 level = 0
 
 

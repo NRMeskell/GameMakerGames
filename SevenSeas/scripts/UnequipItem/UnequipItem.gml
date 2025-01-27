@@ -21,6 +21,8 @@ function UnequipItem(argument0) {
 					MakePirateSurface(smallPirateSurface, drawPictureRealx, drawPictureRealy)
 				if surface_exists(tagPirateSurface)
 					MakePirateSurface(tagPirateSurface, drawTagSpriteX, drawTagSpriteY)
+			
+				event_user(14)
 			}
 			argument0.state = "floating"
 			ds_list_add(ItemRunner.floatingItems, argument0)

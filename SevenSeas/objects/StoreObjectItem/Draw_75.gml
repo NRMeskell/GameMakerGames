@@ -1,5 +1,6 @@
-/// @description Draw Self
-var __b__;
+/// @description Draw Preview
+// You can write your code in this editor
+
 __b__ = action_if_variable(preview, true, 0);
 if __b__
 {
@@ -17,7 +18,7 @@ lineHeight = max(infoBoxY + 10 + string_height_ext(string_hash_to_newline(itemIn
 draw_set_color(c_yellow)
 //draw_text(100,50 + selected*25, itemNumber)
 draw_sprite(ItemSheetSpr, 0, xWindow, yWindow)
-DrawItem(spriteIndex, itemNumber, myColor, xWindow+28-11, yWindow + 34-11, 0, 0, sprite_get_width(spriteIndex), sprite_get_height(spriteIndex))
+DrawItem(spriteIndex, itemNumber, myColor, xWindow+28-12, yWindow + 34-12, 0, 0, sprite_get_width(spriteIndex), sprite_get_height(spriteIndex))
 
 draw_set_halign(fa_left)
 draw_set_valign(fa_center)
@@ -121,33 +122,3 @@ if itemPowerDescription != ""
 }
 }
 /*  */
-
-
-if viewed
-    {
-    draw_sprite(StoreItemSpr, (overButton or previewSelect) + selected*2, drawX, drawY)
-    
-    if hidden = false
-        {
-        DrawItem(spriteIndex, itemNumber, myColor, drawX-13, drawY-13, 0, 0, sprite_get_width(spriteIndex), sprite_get_height(spriteIndex))
-        }
-    else
-        draw_sprite(StoreHealthSpr, 2, drawX, drawY)
-    
-    draw_set_valign(fa_center)
-    draw_set_halign(fa_left)
-    draw_set_color(c_black)
-    maxLen = 11
-    if string_length(itemName) < maxLen
-        draw_text(drawX + 25, drawY, string_hash_to_newline(itemName))
-    else
-        draw_text(drawX + 25, drawY, string_hash_to_newline(string_copy(itemName, 0, (maxLen - 4) + (string_char_at(itemName, maxLen - 3) != " ")) + "..."))
-        
-    draw_set_color(merge_color(c_yellow, c_black, 0.2))
-    draw_set_halign(fa_right)
-    if cost != 0
-        draw_text(drawX + sprite_get_width(sprite_index) - 50, drawY, string_hash_to_newline(cost))
-
-    }
-
-

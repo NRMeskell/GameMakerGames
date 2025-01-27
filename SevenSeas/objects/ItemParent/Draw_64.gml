@@ -126,7 +126,7 @@ if ds_list_find_value(ItemRunner.floatingItems, 0) == id or (state == "equipped"
             startX = 10 + ((state != "equipped") * 20) + Pirate.xWindow - sprite_get_width(ActionInfoSpr)/2 + 8 + sprite_get_width(PirateSheetSpr)/2
             drawInfoY = Pirate.yWindow + 215+16 - 60
             
-            if myAction.myType = "melle"
+            if myAction.myType = "melee"
                 draw_sprite(ActionInfoSpr, 0, startX, drawInfoY)
             if myAction.myType = "ranged"
                 draw_sprite(ActionInfoSpr, 1, startX, drawInfoY)
@@ -168,16 +168,22 @@ if ds_list_find_value(ItemRunner.floatingItems, 0) == id or (state == "equipped"
     buttonTextDis = 48
     buttonTextHieght = 13
     
-    if state != "equipped"  
-/*        {
+    /*if state != "equipped"  
+        {
         draw_text(drawX + buttonTextDis, drawY + sprite_get_height(ItemSheetSpr)- buttonTextHieght, string_hash_to_newline("unequip"))
         draw_text(drawX +sprite_get_width(ItemSheetSpr) - buttonTextDis, drawY + sprite_get_height(ItemSheetSpr) - buttonTextHieght, string_hash_to_newline("close"))
         }
     else*/
         {
 		draw_text(drawX + buttonTextDis, drawY  + sprite_get_height(ItemSheetSpr)- buttonTextHieght, string_hash_to_newline("equip"))
-        draw_text(drawX +sprite_get_width(ItemSheetSpr) - buttonTextDis, drawY + sprite_get_height(ItemSheetSpr) - buttonTextHieght, string_hash_to_newline("discard"))
-        if ds_list_size(ItemRunner.floatingItems) > 1
+        if !AbleToStore(1, 1)
+			draw_text(drawX +sprite_get_width(ItemSheetSpr) - buttonTextDis, drawY + sprite_get_height(ItemSheetSpr) - buttonTextHieght, string_hash_to_newline("discard"))
+        else{
+			draw_text(drawX +sprite_get_width(ItemSheetSpr) - buttonTextDis - 8, drawY + sprite_get_height(ItemSheetSpr) - buttonTextHieght, string_hash_to_newline("store"))
+			draw_sprite_ext(CargoSpr, 1, drawX +sprite_get_width(ItemSheetSpr) - buttonTextDis + 20, drawY + sprite_get_height(ItemSheetSpr) - buttonTextHieght, 0.7, 0.7, 0, merge_color(c_white, c_ltgray, overRight), 1)
+		}
+		
+		if ds_list_size(ItemRunner.floatingItems) > 1
             {
             draw_sprite(EndCombatSpr, 7, drawX-3 + sprite_get_width(ItemSheetSpr), drawY+3)
             if ds_list_size(ItemRunner.floatingItems) < 10

@@ -3,7 +3,7 @@ function RaceAllow() {
 
 	if sign(irandom(2))
 	    {
-	    ds_list_add(global.notificationList, "Impessive climb!", myPirate.firstName + " raced up the mast at an impressive speed, raising crew moral!")
+	    ds_list_add(global.notificationList, "impressive climb!", myPirate.firstName + " raced up the mast at an impressive speed, raising crew moral!")
 	    with Pirate if id != other.myPirate.id
 	        {
 			if irandom(1)

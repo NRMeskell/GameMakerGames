@@ -3,7 +3,7 @@ function SetTrap() {
 
 	if irandom(2) == 0
 	    {
-	    ds_list_add(global.notificationList, "Rats caught on board!", "rats were caught outside the container, and the stranges noises stop.")
+	    ds_list_add(global.notificationList, "Rats caught on board!", "rats were caught outside the container, and the strangers noises stop.")
 	    instance_destroy()
 	    }
 	else

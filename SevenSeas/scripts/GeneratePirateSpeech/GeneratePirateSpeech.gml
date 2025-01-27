@@ -3,22 +3,20 @@ function GeneratePirateSpeech() {
 
 	//Main Dicts found in SpeechController
 	myPirateDict = ds_map_create()
-	ds_map_copy(myPirateDict, SpeechController.pirateDict0)
+	ds_map_copy(myPirateDict, SpeechController.pirateDict)
+
+	var myFancyDict = SpeechController.pirateDicts[myMainPer]
 
 
-	pirateTalkSize = irandom(ds_map_size(SpeechController.pirateDict1))
+	pirateTalkSize = irandom_range(ds_map_size(myFancyDict)/2, ds_map_size(myFancyDict))
 	for(i=0; i<pirateTalkSize; i++)
 	    {
-	    currentKey = ds_map_find_first(SpeechController.pirateDict1)
-	    rand = irandom(ds_map_size(SpeechController.pirateDict1))
+	    currentKey = ds_map_find_first(myFancyDict)
+	    rand = irandom(ds_map_size(myFancyDict))
 	    for(r=0; r<rand; r++)
-	        currentKey = ds_map_find_next(SpeechController.pirateDict1, currentKey)
+	        currentKey = ds_map_find_next(myFancyDict, currentKey)
         
 	    if ds_map_find_value(myPirateDict, currentKey) != 0
-	        ds_map_add(myPirateDict, currentKey, ds_map_find_value(SpeechController.pirateDict1, currentKey))
+	        ds_map_add(myPirateDict, currentKey, ds_map_find_value(myFancyDict, currentKey))
 	    }
-
-
-
-
 }

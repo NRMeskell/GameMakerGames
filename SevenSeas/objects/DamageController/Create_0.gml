@@ -4,31 +4,31 @@ damageMin = ds_map_create()
 damageMax = ds_map_create()
 damageScaler = ds_map_create()
 
-//Basic Melle
+//Basic melee
 damageMin[? ShipSwordAttack] = 0.9
 damageMax[? ShipSwordAttack] = 1.1
 damageScaler[? ShipSwordAttack] = 8
-//Heavy Melle
+//Heavy melee
 damageMin[? ShipHeavyBoardingAttack] = 0.75
 damageMax[? ShipHeavyBoardingAttack] = 1.25
 damageScaler[? ShipHeavyBoardingAttack] = 12
-//Swarm Melle
+//Swarm melee
 damageMin[? ShipSwarmAttack] = 0.75
 damageMax[? ShipSwarmAttack] = 1.5
 damageScaler[? ShipSwarmAttack] = 5
-//Hammer Melle
+//Hammer melee
 damageMin[? ShipHammerAttack] = 0.9
 damageMax[? ShipHammerAttack] = 1.1
 damageScaler[? ShipHammerAttack] = 3
-//Scout Melle
+//Scout melee
 damageMin[? ShipScoutAttack] = 0.8
 damageMax[? ShipScoutAttack] = 1.1
 damageScaler[? ShipScoutAttack] = 6
-//Stab Melle
-damageMin[? ShipFinishingAttack] = 0.75
-damageMax[? ShipFinishingAttack] = 1.5
+//Stab melee
+damageMin[? ShipFinishingAttack] = 1.0
+damageMax[? ShipFinishingAttack] = 1.25
 damageScaler[? ShipFinishingAttack] = 15
-//Hold Fast Melle
+//Hold Fast melee
 damageMin[? ShipHoldFastAttack] = 0.8
 damageMax[? ShipHoldFastAttack] = 1.2
 damageScaler[? ShipHoldFastAttack] = 3
@@ -40,36 +40,36 @@ damageScaler[? MonkeyBiteAttack] = 6
 
 //Basic Ranged
 damageMin[? ShipGunAttack] = 0.8
-damageMax[? ShipGunAttack] = 1.25
+damageMax[? ShipGunAttack] = 1.5
 damageScaler[? ShipGunAttack] = 4
 //Barrage Ranged
 damageMin[? ShipBarrageAttack] = 0.75
-damageMax[? ShipBarrageAttack] = 1.3
+damageMax[? ShipBarrageAttack] = 1.5
 damageScaler[? ShipBarrageAttack] = 6
 //Lookout Ranged
-damageMin[? ShipLookoutAttack] = 0.8
-damageMax[? ShipLookoutAttack] = 1.0
-damageScaler[? ShipLookoutAttack] = 1
+damageMin[? ShipLookoutAttack] = 0.6
+damageMax[? ShipLookoutAttack] = 1.2
+damageScaler[? ShipLookoutAttack] = 2
 //Target Ranged
 damageMin[? ShipTargetedAttack] = 0.75
-damageMax[? ShipTargetedAttack] = 1.2
+damageMax[? ShipTargetedAttack] = 1.5
 damageScaler[? ShipTargetedAttack] = 2
 //Sniper Ranged
-damageMin[? ShipSniperAttack] = 0.34
-damageMax[? ShipSniperAttack] = 2.0
+damageMin[? ShipSniperAttack] = 0.64
+damageMax[? ShipSniperAttack] = 1.5
 damageScaler[? ShipSniperAttack] = 3
 //Chaos Ranged
 damageMin[? ShipChaosAttack] = 0
 damageMax[? ShipChaosAttack] = 0
 damageScaler[? ShipChaosAttack] = 0
 //bleed bullets
-damageMin[? BleedingShotAttack] = 0.75
-damageMax[? BleedingShotAttack] = 1.5
-damageScaler[? BleedingShotAttack] = 2
+damageMin[? BleedingShotAttack] = 0.34
+damageMax[? BleedingShotAttack] = 2.0
+damageScaler[? BleedingShotAttack] = 3
 //deafening squawk
 damageMin[? ParrotSquawkAttack] = 0.8
 damageMax[? ParrotSquawkAttack] = 1.2
-damageScaler[? ParrotSquawkAttack] = 2
+damageScaler[? ParrotSquawkAttack] = 3
 
 
 //Basic Cannon

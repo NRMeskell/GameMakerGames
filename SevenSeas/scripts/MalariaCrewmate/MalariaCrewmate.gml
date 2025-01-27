@@ -2,7 +2,7 @@ function MalariaCrewmate() {
 	//Malaria
 
 	myPirate = RandomPirate()
-	ds_list_add(global.notificationList, "Malaria!", myPirate.name + " got malaria from misquito bites, and has fallen very ill!")
+	ds_list_add(global.notificationList, "Malaria!", myPirate.name + " got malaria from mosquito bites, and has fallen very ill!")
 	global.moraleBoost = "Malaria"
 	with myPirate
 	    {

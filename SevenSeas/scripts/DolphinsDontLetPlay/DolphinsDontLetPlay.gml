@@ -10,7 +10,7 @@ function DolphinsDontLetPlay() {
 		    }
         
 		captionText = "The crew be disappointed!"
-		notiText = "They reluctently obey the orders and maintain their positions!"
+		notiText = "They reluctantly obey the orders and maintain their positions!"
 
 		ds_list_add(global.notificationList, captionText, notiText)
 

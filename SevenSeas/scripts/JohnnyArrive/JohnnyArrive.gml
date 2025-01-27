@@ -12,7 +12,7 @@ function JohnnyArrive() {
 	    global.allowSelect = false
 	    captionText = "Johnny Shortsticks"
 	    if JohnnyShortsticks.myState != "unmet"
-	        eventText = "johnny shortsticks spots and recognises you and asks to sail with you again!" 
+	        eventText = "johnny shortsticks spots and recognizes you and asks to sail with you again!" 
 	    else
 	        eventText = "a curly-haired boy named johnny shortsticks asks to sail with you! he promises to not get in the way." 
 	    JohnnyShortsticks.myState = "in port"

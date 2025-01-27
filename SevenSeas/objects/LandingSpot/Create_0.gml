@@ -4,7 +4,7 @@ visible = false
 drawSize = 1
 image_speed = 0
 image_xscale = choose(-1, 1)
-visited = false
+visited = 0
 
 slotBuild[0] = undefined
 slotBuild[1] = undefined

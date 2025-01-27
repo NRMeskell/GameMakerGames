@@ -21,7 +21,7 @@ function JungleAction() {
 	    {
 	    loot = GetRandomLoot(irandom_range(3,4), "jungle tree", [1,1,3,6,6])
 	    lootText = getItemText(loot, ["", "", choose("shiny stones", "jungle gems"), "", "", "", "", choose("fruit", "meat")])
-	    ds_list_add(global.notificationList, "sucessful expedition!", "the crew found " + lootText + " hidden deep in the jungle!")
+	    ds_list_add(global.notificationList, "successful expedition!", "the crew found " + lootText + " hidden deep in the jungle!")
 	    }
 	else
 	    {

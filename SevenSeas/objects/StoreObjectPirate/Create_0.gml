@@ -34,6 +34,8 @@ legLostLeft = false
 
 legsLost = 0
 
+maxHealth = 60
+myHealth = maxHealth
 
 ///Equipment
 
@@ -113,7 +115,7 @@ if myGoal == "adventure"{
 if myGoal == "action"{
 	backMiddle[0] = "I'm looking to plunder the 7 seas! "
 	backMiddle[1] = "I'm young, fit, strong, and ready for action. "	
-	backMiddle[2] = "I'd like to taunt the hangmans noose! "
+	backMiddle[2] = "I'd like to taunt the hangman's noose! "
 	backMiddle[3] = "Are you a menace on the 7 seas? "
 }
 
@@ -136,7 +138,7 @@ if myMainPer == 1{
 if myMainPer == 3{
 	backSecond[0] = "I will bring adventure to your trip! "
 	backSecond[1] = "Every ship needs someone to go exploring. "
-	backSecond[2] = "Can anyone on your ship do a backflip? "
+	backSecond[2] = "Can anyone on your ship do a back-flip? "
 }
 
 backEnd[0] = "Will you let me on board?"

@@ -2,10 +2,8 @@
 
 upNext = true
 with PirateLeveler
-    {
-    if ds_list_find_index(global.crewList, myPirate.id) < ds_list_find_index(global.crewList, other.myPirate.id)
-        other.upNext = false
-    }
+	if upNext = true and id != other.id
+		upNext = false
         
 if upNext and x == -1000 and !instance_exists(Store) and !instance_exists(Event)
     {
@@ -24,13 +22,9 @@ for(i=0; i<2; i++)
         
     if overButton[i] and mouse_check_button_pressed(mb_left)
         {
-        PirateLevelUpFinal(myPirate, action[i])
+        PirateLevelUpFinal(myPirate, action[i], replaceSlot)
         alarm[0] = 1
         }
     }
-	
-if myPirate.selected == false
-	with myPirate
-		event_user(1)
 
 

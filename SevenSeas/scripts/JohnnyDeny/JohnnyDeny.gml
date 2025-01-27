@@ -1,5 +1,5 @@
 function JohnnyDeny() {
-	ds_list_add(global.notificationList, "Johnny be dissapointed!", "he hangs his head and walks away.")
+	ds_list_add(global.notificationList, "Johnny be disappointed!", "he hangs his head and walks away.")
 
 	with Pirate
 	    {

@@ -10,7 +10,7 @@ function CrazyPirateMedicate() {
 				
 		with Pirate
 			myHealth -= round(myHealth*.1)
-		ds_list_add(global.notificationList, "The crew seem unhelped!", "The medicine is awful, and does not seem to help.")
+		ds_list_add(global.notificationList, "The crew seem unaided!", "The medicine is awful, and does not seem to help.")
 		UpdateMorale(-1, -1)
 	}
 	else{

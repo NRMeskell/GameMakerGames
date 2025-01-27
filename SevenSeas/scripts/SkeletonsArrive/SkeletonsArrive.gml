@@ -45,7 +45,7 @@ function SkeletonLootFast() {
 		GetRandomLoot(irandom_range(1,2), "cargo", undefined)
 	}
 	else{
-		ds_list_add(global.notificationList, "skeletal suprise!", "scattered bones knit themselves together, and soon your ship is boarded by a skeletal crew!")
+		ds_list_add(global.notificationList, "skeletal surprise!", "scattered bones knit themselves together, and soon your ship is boarded by a skeletal crew!")
 		
 		//engage
 		with instance_create(0,0,SkeletonShip){

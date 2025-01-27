@@ -37,9 +37,11 @@ function LoadBuildings(argument0) {
 	                    }
 	                }
 	            else{
+					if buildingType == "Taylors"
+						buildingType = "Tailors"
 	                myLanding.slotBuild[n] = instance_create(0,0,asset_get_index(buildingType))
 	                with myLanding.slotBuild[n] 
-	                    event_user(4)
+	                    event_user(5)
 	            }
             
 	            myLanding.slotBuild[n].mySlot = n

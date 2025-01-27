@@ -9,11 +9,14 @@ function GetNewMedicalEvent(){
 	}
 	
 	var medEvent
-	if crewCurHealth <= crewMaxHealth/2 or irandom(1){
+	if crewCurHealth <= crewMaxHealth/2 or irandom(2){
 		medEvent = choose(Surgery, RestfulWaters)
 	}
 	else{
-		medEvent = choose(SailingAccident, Scurvy, SailingMalfunction)
+		if round(global.foodQuality) <= 1
+			medEvent = choose(SailingAccident, Scurvy)
+		else
+			medEvent = SailingAccident
 	}
 	
 	script_execute(medEvent)

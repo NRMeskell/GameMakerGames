@@ -9,7 +9,7 @@ function CargoJuggle(){
 	    buttonNumber = 2
 	    ds_list_add(buttons, JugglingAllow) 
 	    global.allowSelect = false
-	    eventText = "'There aren't any fun things to do around here. Can I try juggling some cargo?'"  
+	    eventText = "There aren't any fun things to do around here. Can I try juggling some cargo?"  
     
 	    global.moraleBoost = "juggling"
 	    }

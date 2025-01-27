@@ -10,7 +10,7 @@ function WildAnimals() {
         
 	    global.allowSelect = false
 	    captionText = "Escaped Animals!"
-	    eventText = "pigs, rats, monkeys, mice, parrots, frogs, lizards and more run throught the streets!"
+	    eventText = "pigs, rats, monkeys, mice, parrots, frogs, lizards and more run through the streets!"
 	    global.moraleBoost = "animals"
 	    }
 

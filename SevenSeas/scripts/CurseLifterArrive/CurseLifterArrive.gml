@@ -27,7 +27,7 @@ function CurseLifterArrive() {
         if CurseLifter.myState == "unwell"
 			eventText = "The friendly woman returns and asks if you'd please like to lift a curse from your ship."
 		if CurseLifter.myState == "dying"
-			eventText = "Mia explains that her soul shall be cast away if she doesn't recieve living flesh, and begs for help!"
+			eventText = "Mia explains that her soul shall be cast away if she doesn't receive living flesh, and begs for help!"
 		
 		
 		global.moraleBoost = "curselifter"
@@ -37,7 +37,7 @@ function CurseLifterArrive() {
 
 function CurseLifterPass() {
 	if CurseLifter.myState != "unwell"{
-		ds_list_add(global.notificationList, "Offer Declined!", "The woman is surprisingly dissapointed, but wishes your crew well!")
+		ds_list_add(global.notificationList, "Offer Declined!", "The woman is surprisingly disappointed, but wishes your crew well!")
 		CurseLifter.myState = "unwell"
 		
 		with CurseLifter
@@ -60,7 +60,7 @@ function GoldForLimb() {
 	if CurseLifter.myState != "dying"
 		ds_list_add(global.notificationList, "Trade Complete!", myPirate.firstName + "'s limb comes magically free, and Mia happily trades it for 25 gold!")
 	else
-		ds_list_add(global.notificationList, "Mia Saved!", myPirate.firstName + "'s limb comes magically free, and Mia gratefully recieves it in tears.")
+		ds_list_add(global.notificationList, "Mia Saved!", myPirate.firstName + "'s limb comes magically free, and Mia gratefully receives it in tears.")
 	
 	GetRandomLoot(1, "Offer", [0])
 	with StoreObjectStorable
@@ -115,9 +115,9 @@ function CurseLifterLimb() {
 	
 	if cursesLifted == 0{
 		if CurseLifter.myState != "dying"
-			ds_list_add(global.notificationList, "No Curses!", "Mia is dissapointed to not find a curse, and she leaves without a trade.")
+			ds_list_add(global.notificationList, "No Curses!", "Mia is disappointed to not find a curse, and she leaves without a trade.")
 		else
-			ds_list_add(global.notificationList, "Mia Saved!", myPirate.firstName + "'s limb comes magically free, and Mia recieves it in tears. However, no curses were found on the ship.")
+			ds_list_add(global.notificationList, "Mia Saved!", myPirate.firstName + "'s limb comes magically free, and Mia receives it in tears. However, no curses were found on the ship.")
 	}else{
 		var gonePirate = ds_list_find_value(pirates, irandom(ds_list_size(pirates)-1))
 		if CurseLifter.myState != "dying"

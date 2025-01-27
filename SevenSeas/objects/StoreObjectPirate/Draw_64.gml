@@ -1,36 +1,24 @@
-/*var __b__;
-__b__ = action_if_variable(preview, true, 0);
-if __b__
-{
-{
-///Draw preview Pirate
-
-draw_sprite_ext(PirateSheetPreviewSpr, 0, xWindow, yWindow, size, size, 0, c_white, 1)
-
-if !surface_exists(fullPirateSurface){
-	fullPirateSurface = surface_create(sprite_get_width(PirateManSkinSpr), sprite_get_height(PirateManSkinSpr))
-	MakePirateSurface(fullPirateSurface, 0, 0)
-}	
-DrawPirateSurface(fullPirateSurface, xWindow + xPicture, yWindow + yPicture)
+///Draw Self
 
 
-///Draw Name Menu
+if viewed
+    {
+    draw_sprite(StoreItemSpr, (overButton or previewSelect) + selected*2, drawX, drawY)
+    
+	if !surface_exists(fullPirateSurface){
+		fullPirateSurface = surface_create(sprite_get_width(PirateManSkinSpr), sprite_get_height(PirateManSkinSpr))
+		MakePirateSurface(fullPirateSurface, 0, 0)
+	}	
+    DrawPirateSurface(smallPirateSurface, drawX - realWidth/2, drawY- realHeight/2)
+        
+    draw_set_valign(fa_center)
+    draw_set_halign(fa_left)
+    draw_set_color(c_black)
+    draw_text(drawX + 25, drawY, string_hash_to_newline(string_char_at(firstName,0) + "." + string_copy(lastName, 0, min(string_length(lastName), 8))))
+    
+    draw_set_color(merge_color(c_yellow, c_black, 0.2))
+    draw_set_halign(fa_right)
+    if cost != 0
+        draw_text(drawX + sprite_get_width(sprite_index) - 50, drawY, string_hash_to_newline(cost))
+    }
 
-draw_set_halign(fa_center)
-draw_set_valign(fa_middle)
-draw_set_color(c_black)
-draw_set_font(global.PirateFont)
-
-draw_text_transformed(xWindow+(sprite_get_width(PirateSheetSpr)/2)*size, yWindow+19*size, string_hash_to_newline(name), size, size, 0)
-
-///Draw Backstory
-
-draw_set_halign(fa_center)
-draw_set_valign(fa_center)
-draw_set_color(c_black)
-draw_text_ext(xWindow + sprite_get_width(PirateSheetPreviewSpr)/2, yWindow + 200, string_hash_to_newline(backstory), 12, sprite_get_width(PirateSheetPreviewSpr) - 30) 
-
-draw_set_font(global.PirateFont)
-
-}
-}

@@ -1,5 +1,6 @@
 /// @description Display objects/update canTake
 
+
 previewItem = false
 event_user(3)
 

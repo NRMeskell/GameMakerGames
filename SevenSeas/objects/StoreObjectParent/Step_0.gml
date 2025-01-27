@@ -12,7 +12,7 @@ if viewed and !instance_exists(DumpItem)
             overButton = true
             }
             
-        if mouse_check_button_pressed(mb_left)// and object_index != StoreObjectStorable
+        /*if mouse_check_button_pressed(mb_left)// and object_index != StoreObjectStorable
             {
             if previewSelect
                 previewSelect = false
@@ -23,10 +23,15 @@ if viewed and !instance_exists(DumpItem)
                 previewSelect = true
                 }
             audio_play_sound(OpenMenuSnd,1, false)
-            }
+            }*/
         }
-    else
-        {
+	// gray out if not able to buy/trade
+    else if (object_index != StoreObjectTrade and !HasStored(0, cost)) or (object_index == StoreObjectTrade and !HasStored(type, sellAmount))
+		{
+        overButton = true
+        preview = false
+        }
+	else{
         overButton = false
         preview = false
         }
@@ -52,6 +57,6 @@ if viewed and !instance_exists(DumpItem)
         }
     }
     
-if previewSelect
-    preview = true
+//if previewSelect
+    //preview = true
 

@@ -11,6 +11,7 @@ if x < 0{
 buffer = 3
 drawHeight = (106 - sprite_get_height(LandMenuButtonSpr)/2 - buffer*2)/buttonNumber
 drawStart = 21 + sprite_get_height(LandMenuButtonSpr)/2 + buffer
+
 for(i=0; i<buttonNumber; i++)
     {
     drawButtonHeight = currentHeight-drawHeight*i-drawStart

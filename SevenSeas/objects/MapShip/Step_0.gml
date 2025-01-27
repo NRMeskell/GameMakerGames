@@ -72,9 +72,6 @@ if path_position = 1 and global.inPort = false{
 	                slotBuild[i].x = MapShip.slotX[slotBuild[i].mySlot]
 	                slotBuild[i].y = MapShip.slotY[slotBuild[i].mySlot]
 	                slotBuild[i].image_speed = 0.2
-					/*with slotBuild[i]
-						if object_index != Camp 
-							event_user(4)*/
 	            }
 	        }
 	    }
@@ -83,17 +80,23 @@ if path_position = 1 and global.inPort = false{
 	        with targetPort {
 	            visited = true
 	            GameStatsController.locationsVisted ++
-            
-	            for(i=0; i<slotNumber; i++) {
-	                if myIndex = 1{
-						if i == 0
-							getType = choose(TrinketShop, ShipYard)
-						else if i == 1
-							getType = choose(Tavern)
-						else 
-							getType = choose(Smithy, Taylors)
+				
+				var tavernSlot = choose(0,1,2)
+				var placesLeft = [Smithy, Tailors, TrinketShop]
+				var getType;
+	            for(var i=0; i<slotNumber; i++) {
+					var slotNum = irandom(array_length(placesLeft)-1)
+					var slotObject = array_get(placesLeft, slotNum)
+	                array_delete(placesLeft, slotNum, 1)
+					if myIndex = 1{
+						if i == tavernSlot
+							getType = Tavern
+						else if i == 0
+							getType = choose(ShipYard, slotObject)
+						else
+							getType = slotObject
 	                }
-	                else  getType = Camp
+	                else { getType = Camp }
 
 	                slotBuild[i] = instance_create(-100, -100, getType)
 	                instance_activate_object(slotBuild[i])
@@ -132,6 +135,10 @@ else
     with Pirate
         if myPet.itemPower == "speed bonus" and mySlot.slotType == "wheel"
             other.sailSpeed *= 1.15
+			
+	with Pirate
+        if myPet.itemPower == "speed bonus 10" and mySlot.slotType == "wheel"
+            other.sailSpeed *= 1.10
 			
 	//sailSpeed *= 1+(sailSpeedModifier*global.totalRiggingBonus)
     path_speed = sailSpeed

@@ -9,7 +9,7 @@ with shipTarget
     other.prevShipHealth += myHealth
     
 if shipTarget == CombatRunner{
-    if actionType == "melle"
+    if actionType == "melee"
         attackPower = global.totalSwordBonus
     else if actionType == "ranged"
         attackPower = global.totalGunBonus
@@ -19,7 +19,7 @@ if shipTarget == CombatRunner{
         attackPower = global.totalWheelBonus
     }
 else{
-    if actionType == "melle"
+    if actionType == "melee"
         attackPower = CombatRunner.myStats[0]
     else if actionType == "ranged"
         attackPower = CombatRunner.myStats[1]

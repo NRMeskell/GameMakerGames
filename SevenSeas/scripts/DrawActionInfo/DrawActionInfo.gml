@@ -21,7 +21,7 @@ function DrawActionInfo(argument0, argument1, argument2, argument3, argument4, a
 
 	if argument4 == "pirate"
 	    {
-	    if myActionDrawer.myType = "melle"
+	    if myActionDrawer.myType = "melee"
 	        draw_sprite(ActionInfoSpr, 0, drawInfoX, drawInfoY)
 	    if myActionDrawer.myType = "ranged"
 	        draw_sprite(ActionInfoSpr, 1, drawInfoX, drawInfoY)
@@ -32,7 +32,7 @@ function DrawActionInfo(argument0, argument1, argument2, argument3, argument4, a
 	    }
 	else
 	    {
-	    if myActionDrawer.myType = "melle"
+	    if myActionDrawer.myType = "melee"
 	        draw_sprite(EnemyActionInfoSpr, 0, drawInfoX, drawInfoY)
 	    if myActionDrawer.myType = "ranged"
 	        draw_sprite(EnemyActionInfoSpr, 1, drawInfoX, drawInfoY)

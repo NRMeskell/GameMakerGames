@@ -25,7 +25,7 @@ if ds_list_find_index(GameRunner.levelList, room) + 2 > GameRunner.currentLevel
     GameRunner.currentLevel = ds_list_find_index(GameRunner.levelList, room) + 2
 
 
-file = file_text_open_read("the_bond_level_tracker.txt")
+/*file = file_text_open_read("the_bond_level_tracker.txt")
 loadedLevel = real(file_text_readln(file))
 file_text_readln(file);
 file_text_close(file)
@@ -37,6 +37,8 @@ if loadedLevel < GameRunner.currentLevel
     file_text_writeln(file);
     file_text_close(file);
     }
+*/
+loadedLevel ++ 
 
 instance_destroy(BlackSpirit)
 instance_destroy()

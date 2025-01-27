@@ -3,135 +3,100 @@
 //@param needs_rum
 
 function PirateLevelUp(argument0, argument1) {
-
-	melleActions = ds_list_create()
-	rangedActions = ds_list_create()
-	cannonActions = ds_list_create()
-	shipActions = ds_list_create()
+	leveler = undefined;
+	var slotType;
+	if object_index == Pirate	
+		slotType = mySlot.slotType 
+	else{
+		if statTotal[5] > 0 
+			slotType = "wheel"
+		else if statTotal[6] > 0
+			slotType = "medical"
+		else if statTotal[2] > 0
+			slotType = "cannon"
+		else
+			slotType = "rigging"
+	}
+	
+	var melleActions = ds_list_create()
+	var rangedActions = ds_list_create()
+	var cannonActions = ds_list_create()
+	var shipActions = ds_list_create()
 
 	ds_list_add(melleActions, HoldFastAction, HammerBlowAction, FinishingStabAction, ScoutingAction, HeavyBoardingAction, SwarmAction)  
 	ds_list_add(rangedActions, BleedingShotAction, TargetedFireAction, CauseChaosAction, LookoutAction, BarrageAction, SniperAction) 
 	ds_list_add(cannonActions, ConcentratedFireAction, ShrapnelAction, ChainShotAction, WarningShotAction, CannonSprayAction, BroadsideAction) 
 	ds_list_add(shipActions, SurgeryAction, DisengageAction, EngageAction, SurpriseAction, OutmaneuverAction, RammingAction) 
 
+	var tempActions, choosingAction, myActionList, myNewAction;
+	
 	for(i=0; i<2; i++)
 	    {
 	    tempActions[i] = myAction[0]
 	    choosingAction = true
+		var breakam = 0;
 	    while choosingAction
 	        {
+			breakam += 1
+			if breakam > 100
+				break;
 	        //get random action
 	        myActionList = choose(melleActions, rangedActions, cannonActions, shipActions)
 	        myNewAction = ds_list_find_value(myActionList, irandom(ds_list_size(myActionList)-1))
         
 	        //create action as refferance
 	        if !instance_exists(myNewAction)
-	                with instance_create(-1000,-200, myNewAction)
-	                    {
-	                    pirateDrawTest = true
-	                    event_user(2)
-	                    }
+	            with instance_create(-1000,-200, myNewAction)
+	                {
+	                pirateDrawTest = true
+	                event_user(2)
+	                }
         
 	        //test action requirements     
-	        if myNewAction != myAction[0] and myNewAction != myAction[1] and myNewAction != tempActions[0]
+	        if myNewAction != myAction[0] and myNewAction != myAction[1] and myNewAction != myAction[2] and myNewAction != tempActions[0]
 	            {
-	            if object_index == Pirate
-	                {
-	                for(r=0; r<array_length_1d(myNewAction.requiredSlot); r++)
-	                    if (myNewAction.requiredSlot[r] == "none") or (mySlot.slotType == myNewAction.requiredSlot[r]) or mySlot.slotType == "bed"
-	                        choosingAction = false
-	                }
-	            else
-	                choosingAction = false
+	            for(var r=0; r<array_length_1d(myNewAction.requiredSlot); r++)
+	                if (myNewAction.requiredSlot[r] == "none") or (slotType == myNewAction.requiredSlot[r])
+	                    choosingAction = false
 	            }
-	        tempActions[i] = myNewAction
 	        }
+			tempActions[i] = myNewAction
 	    }
     
 	//level up using actions
-	if (object_index == Pirate and (HasStored(5,1)) and mySlot.slotType != "bed") or !argument1
-	    {
+	if (object_index == Pirate and (HasStored(5,1))) or !argument1{
 	    morale = 0
 		prevMorale = morale
-	    maxHealth += power(2,global.seaLevel) * 20
-	    myHealth += power(2,global.seaLevel) * 20
+	    maxHealth += 20
+	    myHealth += 20
 		healthDiff = myHealth
     
 	    //In-game Pirate Level-up
-	    if argument0 == true
-	        {
-	        with instance_create(-1000, room_height/2, PirateLeveler)
-	            {
-	            action[0] = other.tempActions[0]
-	            action[1] = other.tempActions[1]
-	            myPirate = other.id
-	            GameStatsController.totalCrewStars ++
-	            }            
+	    if argument0 == true{
+	        leveler = instance_create(-1000, room_height/2, PirateLeveler)
+		    leveler.action[0] = tempActions[0]
+		    leveler.action[1] = tempActions[1]
+		    leveler.myPirate = id
+		    GameStatsController.totalCrewStars ++            
 	        LoseCargo(5,1)
-	        }
-	    //other level-ups
-	    else
-	        {
-	        captianActionList[0] = melleActions
-	        captianActionList[1] = rangedActions
-	        captianActionList[2] = cannonActions
-	        if object_index == ChooseCaptain {
-	            findAction = irandom(ds_list_size(shipActions)-1)
-	            myTempAction = ds_list_find_value(shipActions, findAction)
-				while instance_exists(myTempAction){
-					findAction = irandom(ds_list_size(shipActions)-1)
-					myTempAction = ds_list_find_value(shipActions, findAction)
-				}
-				instance_create(-50, -50, myTempAction)
-	        }
-	        else if object_index == ChooseFirstMate
-	            {
-	            myActionNumber = irandom(ds_list_size(global.attackTypeList) - 2)
-	            myTempActionList = captianActionList[ds_list_find_value(global.attackTypeList, myActionNumber)]
-	            myTempAction = ds_list_find_value(myTempActionList, irandom(ds_list_size(myTempActionList)-1))
-	            ds_list_delete(global.attackTypeList, myActionNumber)
-	            }
-	        else
-	            {
-	            myTempActionList = captianActionList[irandom(3)]
-	            myTempAction = ds_list_find_value(myTempActionList, irandom(ds_list_size(myTempActionList)-1))
-	            }
-
-	        PirateLevelUpFinal(id, myTempAction)
-	        }
-	    } 
-	else if !HasStored(5,1)
-	    {
-	    if argument0 == true and object_index = Pirate
-	        {
-			showMessage = true
-			with Pirate	
-				if leveling == true
-					other.showMessage = false
-
-			if morale > 7{
-				if leveling == false and showMessage
-					ds_list_add(global.notificationList, "Pirates failed to level up!", "There is no grog to drink! Get grog to increase the skill of your crew.")
-				leveling = true
-				morale = Pirate.moraleMax[stars] + 1
-			}
-		}
-	}     
-	else if mySlot.slotType == "bed"
-	    {
-	    if argument0 == true and object_index = Pirate
-	        {
-			showMessage = true
-			with Pirate	
-				if leveling == true
-					other.showMessage = false
-				
-		    if morale > 7 and mySlot.slotType == "bed"{
-				if leveling == false and showMessage
-					ds_list_add(global.notificationList, "Pirates failed to level up!", "some pirates were in bed and could not level up!")
-				leveling = true
-				morale = Pirate.moraleMax[stars] + 1
-				}
-			}  
 	    }
+	    //other level-ups
+	    else{
+	        PirateLevelUpFinal(id, tempActions[0], -1)
+	    }
+	} 
+	else if !HasStored(5,1){
+	    if argument0 == true and object_index = Pirate{
+			showMessage = true
+			with Pirate	
+				if leveling == true
+					other.showMessage = false
+
+			if showMessage
+				ds_list_add(global.notificationList, "Pirates failed to level up!", "There is no grog to drink! Get grog to increase the skill of your crew.")
+			leveling = true
+			morale = Pirate.moraleMax[stars] + 1
+		}
+	} 
+	return leveler
 }

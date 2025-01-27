@@ -9,7 +9,7 @@ function GoSwimming(){
 	    buttonNumber = 2
 	    ds_list_add(buttons, SwimmingAllow) 
 	    global.allowSelect = false
-	    eventText = "'Look how wonderful the water looks! Can I go for a quick swim?'"  
+	    eventText = "Look how wonderful the water looks! Can I go for a quick swim?"  
     
 	    global.moraleBoost = "swimming"
 	    }

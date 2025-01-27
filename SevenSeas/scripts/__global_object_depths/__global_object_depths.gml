@@ -35,7 +35,7 @@ function __global_object_depths() {
 	global.__objectDepths[27] = 0; // DrawPort
 	global.__objectDepths[28] = 10; // Tavern
 	global.__objectDepths[29] = 10; // Smithy
-	global.__objectDepths[30] = 10; // Taylors
+	global.__objectDepths[30] = 10; // Tailors
 	global.__objectDepths[31] = 10; // ShipYard
 	global.__objectDepths[32] = 10; // TrinketShop
 	global.__objectDepths[33] = 0; // LandFlavor
@@ -233,7 +233,7 @@ function __global_object_depths() {
 	global.__objectNames[27] = "DrawPort";
 	global.__objectNames[28] = "Tavern";
 	global.__objectNames[29] = "Smithy";
-	global.__objectNames[30] = "Taylors";
+	global.__objectNames[30] = "Tailors";
 	global.__objectNames[31] = "ShipYard";
 	global.__objectNames[32] = "TrinketShop";
 	global.__objectNames[33] = "LandFlavor";

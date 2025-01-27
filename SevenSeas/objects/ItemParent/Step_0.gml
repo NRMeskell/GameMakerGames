@@ -15,11 +15,16 @@ if mouse_check_button_pressed(mb_left) and !instance_exists(DumpItem)
 	        }
 	    if overRight
 	        {
-	        UnequipItem(id)  
-	        audio_play_sound(CloseMenuSound, 1, false)
+	        UnequipItem(id)
 	        while ds_list_find_index(ItemRunner.floatingItems, id) != -1
 	            ds_list_delete(ItemRunner.floatingItems, ds_list_find_index(ItemRunner.floatingItems, id))
-	        instance_destroy()
+	        if AbleToStore(1, 1){
+				audio_play_sound(StoreBuySnd, 1, false)
+				StoreItem(1, 1)
+			}
+			else
+				audio_play_sound(CloseMenuSound, 1, false)
+			instance_destroy()
 	        }
 		}
     }

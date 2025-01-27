@@ -1,24 +1,27 @@
 /// @description Control Events
 
 if room == GameRoom{
-if global.doTime and !global.inPort and MapShip.path_position < 0.98
+if global.doTime and !global.inPort and MapShip.path_position < 0.95 and MapShip.path_position > 0.05
     {
     eventTimer -= 1
+	if eventTimer div 60 == eventTimer/60
+		with LandingSpot
+			event_user(0)
     }
     
 if eventTimer <= 0 
     {
 	event_user(0)
-    eventTimer = random_range(1,2)*eventTimeAmount
+    eventTimer = (random_range(1,2)*eventTimeAmount) div 1
     
     //calm events
     if global.weather == 1
         {
-        eventType = choose("Special Event", "Special Event", "Character", "Ambush", "Request", "Medical")
+        eventType = choose("Special Event", "Special Event", "Character", "Character", "Ambush", "Request", "Medical")
         
 		var needsHelp = RandomPirate().myHealth < (global.seaLevel+1)*12 or Ship.myHealth < (global.seaLevel+1)*30
 		if eventType != "Medical" and needsHelp and irandom(1) == 0
-			eventType = choose("Medical", "Request")
+			eventType = choose("Medical", "Medical", "Request")
 		
 		if eventType == "Request" and instance_number(Pirate) < 2
 			eventType = choose("Special Event", "Character")

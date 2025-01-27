@@ -10,11 +10,11 @@ function FrogKingArrive() {
         
 		//check for crown
 		if ItemExists("Tropical Crown"){
-			ds_list_replace(other.buttons, 2, FrogKingCrown)
-			ds_list_replace(other.buttonStats, 2, 0)
-			ds_list_replace(other.buttonRequires, 2, 0)
-			ds_list_replace(other.buttonCosts, 2, 0)
-			ds_list_replace(other.buttonText, 2, "give king tropical crown")
+			ds_list_replace(buttons, 0, FrogKingCrown)
+			ds_list_replace(buttonStats, 0, 0)
+			ds_list_replace(buttonRequires, 0, 0)
+			ds_list_replace(buttonCosts, 0, 0)
+			ds_list_replace(buttonText, 0, "give king tropical crown")
 			}
 			
 		

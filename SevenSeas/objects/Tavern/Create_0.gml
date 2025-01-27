@@ -8,7 +8,7 @@ button[0] = "hire new crew"
 button[1] = "purchase food"
 button[2] = "purchase grog"
 
-event_user(4)
+event_user(5)
 
 ///Light
 

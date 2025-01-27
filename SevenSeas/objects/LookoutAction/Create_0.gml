@@ -3,8 +3,8 @@
 event_user(0)
 spriteNumber = 12
 rechargeTime = 5
-priorityMin = 3
-priorityMax = 6
+priorityMin = 1
+priorityMax = 5
 
 myAttack = ShipLookoutAttack
 myType = "ranged"

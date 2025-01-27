@@ -20,7 +20,7 @@ function RunAllow() {
 			case 2: ds_list_add(ItemRunner.floatingItems, MakeRandomPantsItem(global.seaLevel div 2)) break;
 			case 3: ds_list_add(ItemRunner.floatingItems, MakeRandomShirtItem(global.seaLevel div 2)) break;
 		}
-	    ds_list_add(global.notificationList, "Item Found!", myPirate.firstName + " found an unclaimed item burried beneath stacks of cargo.")
+	    ds_list_add(global.notificationList, "Item Found!", myPirate.firstName + " found an unclaimed item buried beneath stacks of cargo.")
 	    
 	}
 

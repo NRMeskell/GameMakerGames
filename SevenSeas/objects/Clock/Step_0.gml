@@ -23,6 +23,7 @@ if alarm[2] > 0{
 	if !MapCreator.instantClose{
 		global.timeCycle += timeSpeed * campingSpeed * pi/2*sin(alarm[2]/(campTime) * pi)
 		global.timeCycleRate = campingSpeed * pi/2*sin(alarm[2]/(campTime) * pi)
+		
 		with Cloud
 			x += moveSpeed*2*(other.timeSpeed * other.campingSpeed * pi/2*sin(other.alarm[2]/(other.campTime) * pi))
 		with Pirate

@@ -7,5 +7,7 @@ function SilverwheelDelayPay() {
 		LoseCargo(0, loseCargo)
 		ds_list_add(global.notificationList, "delayed interest!", "The captain is annoyed, and takes " + string(loseCargo) + " gold as interest!")
 	}
+	
+	
 	script_execute(closeEventCode)
 }

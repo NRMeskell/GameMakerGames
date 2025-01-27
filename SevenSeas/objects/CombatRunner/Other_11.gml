@@ -21,7 +21,7 @@ for(var i=0; i<instance_number(ActionParent); i++)
                 available = false
                 for(var r=0; r<array_length_1d(checkAction.requiredSlot); r++)
 					if /*right slot*/((checkAction.requiredSlot[r] == "none") or (checkAction.myPirate.mySlot.slotType == checkAction.requiredSlot[r])) and /*right combat zone*/ ((checkAction.zoneRequired == -1) or (checkAction.zoneRequired == 0 and closeRange = true) or (checkAction.zoneRequired == 1 and closeRange = false)) 
-						if /*not disabled*/ ((checkAction.myType == "melle" and Ship.allowMelleActions) or (checkAction.myType == "ranged" and Ship.allowRangedActions) or (checkAction.myType == "cannon" and Ship.allowCannonActions) or (checkAction.myType == "ship" and Ship.allowShipActions))
+						if /*not disabled*/ ((checkAction.myType == "melee" and Ship.allowMelleActions) or (checkAction.myType == "ranged" and Ship.allowRangedActions) or (checkAction.myType == "cannon" and Ship.allowCannonActions) or (checkAction.myType == "ship" and Ship.allowShipActions))
 							available = true
                 
                 if available
@@ -44,7 +44,7 @@ for(i=0; i<instance_number(ActionParent); i++)
             {
             //Check action requirements
             if checkAction.waitLeft = 0 and ((checkAction.zoneRequired == -1) or (checkAction.zoneRequired == 0 and closeRange = true) or (checkAction.zoneRequired == 1 and closeRange = false))
-                if /*not disabled*/ ((checkAction.myType == "melle" and allowMelleActions) or (checkAction.myType == "ranged" and allowRangedActions) or (checkAction.myType == "cannon" and allowCannonActions) or (checkAction.myType == "ship" and allowShipActions))
+                if /*not disabled*/ ((checkAction.myType == "melee" and allowMelleActions) or (checkAction.myType == "ranged" and allowRangedActions) or (checkAction.myType == "cannon" and allowCannonActions) or (checkAction.myType == "ship" and allowShipActions))
 					ds_list_add(enemyActionList, checkAction)
             }
     }
@@ -79,7 +79,7 @@ if myHealth > 0 and instance_number(Enemy) > 0
     farPreferance = myStats[2]*2 - (global.totalCannonBonus div 2) - myStats[0] + (global.totalSwordBonus div 2)
     wantsClose = max(sign(closePreferance - farPreferance), 0)
     
-    melleDamage = UpdateEnemyDamage(myStats[0], "melle")
+    melleDamage = UpdateEnemyDamage(myStats[0], "melee")
     rangedDamage = UpdateEnemyDamage(myStats[1], "ranged")
     cannonDamage = UpdateEnemyDamage(myStats[2], "cannon")
     
@@ -88,26 +88,26 @@ if myHealth > 0 and instance_number(Enemy) > 0
     for(var i=0; i<ds_list_size(enemyActionList); i++){
         currentAction = ds_list_find_value(enemyActionList, i)
         
-        if currentAction.myType = "melle"{  //add melle attack 
+        if currentAction.myType = "melee"{  //add melee attack 
             if closeRange
-                ds_list_add(desireList, UpdateEnemyDamage(melleDamage*(sqrt(currentAction.rechargeTime)+DamageController.damageScaler[? currentAction.myAttack]), "melle"))
+                ds_list_add(desireList, UpdateEnemyDamage(melleDamage*(currentAction.priorityMax+(currentAction.rechargeTime)+DamageController.damageScaler[? currentAction.myAttack]), "melee"))
             else
                 ds_list_add(desireList, 0)
             }
         else if currentAction.myType = "ranged"{ //add ranged attack
-            ds_list_add(desireList, UpdateEnemyDamage(rangedDamage*(sqrt(currentAction.rechargeTime)+DamageController.damageScaler[? currentAction.myAttack]), "ranged"))
+            ds_list_add(desireList, UpdateEnemyDamage(rangedDamage*(currentAction.priorityMax+(currentAction.rechargeTime)+DamageController.damageScaler[? currentAction.myAttack]), "ranged"))
             }
-        else if currentAction.myType = "cannon"{  //add melle attack 
+        else if currentAction.myType = "cannon"{  //add melee attack 
             if !closeRange
-                ds_list_add(desireList, UpdateEnemyDamage(cannonDamage*(sqrt(1+currentAction.rechargeTime)+DamageController.damageScaler[? currentAction.myAttack]), "cannon"))
+                ds_list_add(desireList, UpdateEnemyDamage(cannonDamage*(currentAction.priorityMax+(1+currentAction.rechargeTime)+DamageController.damageScaler[? currentAction.myAttack]), "cannon"))
             else
                 ds_list_add(desireList, 0)
             }
         else{                               //add ship attack 
             if currentAction.changeZones and closeRange != wantsClose and myStats[3] > 0
-                ds_list_add(desireList, sqrt(currentAction.rechargeTime)*abs(cannonDamage-melleDamage)*5)
+                ds_list_add(desireList, currentAction.priorityMax+(currentAction.rechargeTime)*abs(cannonDamage-melleDamage)*5)
             else if !currentAction.changeZones and myStats[3] > 0
-				ds_list_add(desireList, sqrt(currentAction.rechargeTime)*8)
+				ds_list_add(desireList, currentAction.priorityMax+(currentAction.rechargeTime)*8)
 			else
                 ds_list_add(desireList, 0)
             }
@@ -138,13 +138,3 @@ for(var i=0; i<4; i++){
 for(var i=0; i< ds_list_size(possibleEnemyActions); i++){
 	ds_list_replace(possibleEnemyActions, i, [ds_list_find_value(possibleEnemyActions, i)[0], ds_list_find_value(possibleEnemyActions, i)[1]/totalDesire])
 }
-
-allowShipActions = true
-allowMelleActions = true
-allowRangedActions = true
-allowCannonActions = true
-
-Ship.allowShipActions = true
-Ship.allowMelleActions = true
-Ship.allowRangedActions = true
-Ship.allowCannonActions = true

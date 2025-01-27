@@ -15,7 +15,7 @@ function PirateCollectorsGrateful() {
 	    captionText = "Cove Patrol"
 	    global.moraleBoost = "Patrol" 
     
-	    eventText = "Captain Hardcoin recognises you, and only charges 3 gold as a fee."   
+	    eventText = "Captain Hardcoin recognizes you, and only charges 3 gold as a fee."   
     
 	    myShip = instance_create(-1000,0,ShipEvent)
 	    with myShip

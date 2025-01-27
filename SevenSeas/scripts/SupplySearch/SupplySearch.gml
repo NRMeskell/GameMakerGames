@@ -12,13 +12,13 @@ function SearchSupplies(){
 	    {
 	    loot = GetRandomLoot(max(0, 3  + irandom_range(-1,0)), "supplies", [2,3,3,3,4,4,4,4,6])
 		title = "sandy beach"
-		text ="In the soft sandy beach, the crew find " + getItemText(loot, ["", "", "", choose("rocks", "stones"), choose("driftwood", "dried plants"), choose("berries", "shore-animals"), "", choose("fruit", "seafood")]) + "."
+		text ="In the soft sandy beach, the crew find " + getItemText(loot, ["", "", "", choose("rocks", "stones"), choose("driftwood", "dried plants"), choose("berries", "shore animals"), "", choose("fruit", "seafood")]) + "."
 	    }
 	else if myPortType = 2
 	    {
 		title = "steep cliffs"
 	    loot = GetRandomLoot(max(0, 3  + irandom_range(-2,-1)), "supplies", [1,2,2,3,3,4,4,6,6])
-		text = "scattered around the cliffside, the crew find " + getItemText(loot, ["", "", choose("diamonds", "precious stones"), "loose stones", "driftwood", "edible plants", "", "delicous roots"]) + "."
+		text = "scattered around the cliff-side, the crew find " + getItemText(loot, ["", "", choose("diamonds", "precious stones"), "loose stones", "driftwood", "edible plants", "", "delicious roots"]) + "."
 		}
 	else if myPortType = 4
 	    {

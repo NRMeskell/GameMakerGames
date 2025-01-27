@@ -6,11 +6,11 @@ function SupplyBoxArrive() {
 	    ds_list_add(buttonStats, 0, 0, 5)
 	    ds_list_add(buttonRequires, 0, 0, global.eventDiff[5, 3])
 	    ds_list_add(buttonCosts, 0, 0, 0)
-	    ds_list_add(buttonText, "Let the box float by", "trade supplies for gold", "enter withdraw code")
+	    ds_list_add(buttonText, "Let the box float by", "deposit supplies into box", "enter withdraw code")
         
 	    global.allowSelect = false
 	    captionText = "Pirate supply Box!"
-	    eventText = "Cargo can be traded for coins, and clever captains can withdraw treasure!"   
+	    eventText = "Cargo can be deposited for gold, or clever captains can withdraw treasure!"   
 	    global.moraleBoost = "Supply Box"
 	    }
 

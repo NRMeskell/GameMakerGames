@@ -26,10 +26,10 @@ function OasisAction() {
 	    with crewTarget
 	        {
 			UpdateMorale(2, -1)
-			maxHealth += 20
-			myHealth += 20
+			maxHealth += 10
+			myHealth += maxHealth
 		}
         
-	    ds_list_add(global.notificationList, "magical swim!", "the mystical clear water seems to have strengthed " + crewTarget.firstName + ", and increased their maximum health!")
+	    ds_list_add(global.notificationList, "magical swim!", "the mystical clear water seems to have strengthened " + crewTarget.firstName + ", and increased their maximum health!")
 	    }
 }

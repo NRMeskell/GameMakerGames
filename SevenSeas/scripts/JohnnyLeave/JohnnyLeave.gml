@@ -1,5 +1,5 @@
 function JohnnyLeave() {
-	ds_list_add(global.notificationList, "Change dockings!", "Your crew docks in a different part of town, and Johnny does not return.")
+	ds_list_add(global.notificationList, "Change docking!", "Your crew docks in a different part of town, and Johnny does not return.")
 	with Pirate
 	    {
 	    UpdateMorale(2, global.FEARSOME)

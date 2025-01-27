@@ -1,5 +1,6 @@
 /// @description Run Turn
 
+
 if alarm[0] != -1 or instance_exists(Defeat){
     with RealAttack
         instance_destroy()
@@ -26,7 +27,7 @@ if firstAttack != noone{
 			skip = true;
         else if (actionType == "cannon" and CombatRunner.closeRange)
             skip = true;
-        else if (actionType == "melle" and !CombatRunner.closeRange)
+        else if (actionType == "melee" and !CombatRunner.closeRange)
             skip = true;
         else if (actionType == "ship" and ((myPirate.object_index == Enemy or myPirate.object_index == CombatRunner) and CombatRunner.myStats[3] == 0))
             skip = true;

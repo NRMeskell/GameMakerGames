@@ -6,8 +6,8 @@ function SilverwheelRepay() {
 	    ds_list_add(buttons, SilverwheelDontPay, SilverwheelDelayPay, SilverwheelPay) 
 	    ds_list_add(buttonStats, 0, 5, 0) 
 	    ds_list_add(buttonRequires, 0, global.eventDiff[5, 1], 0)
-	    ds_list_add(buttonCosts, 0, 0, CaptainSilverwheel.myVar*5)
-	    ds_list_add(buttonText, "refuse her offer", "delay the repayment", "argee to her request")
+	    ds_list_add(buttonCosts, 0, 0, max(15, min(CargoAmount(0), CaptainSilverwheel.myVar*3)))
+	    ds_list_add(buttonText, "refuse her offer", "delay the repayment", "agree to her request")
         
 	    global.allowSelect = false
 	    captionText = "Captain Silverwheel"
@@ -21,5 +21,7 @@ function SilverwheelRepay() {
 	        myFlag = SilverwheelFlagSpr
 	        }
 	    global.moraleBoost = "Silverwheel"
+		
+		CaptainSilverwheel.myVar += 1
 	    }
 }

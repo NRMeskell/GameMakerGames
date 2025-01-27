@@ -10,7 +10,7 @@ function TropicalFishArrive() {
         
 	    global.allowSelect = false
 	    captionText = "colorful fish!"
-	    eventText = "a swarm of colroful fish is swimming near the ship!"  
+	    eventText = "a swarm of colorful fish is swimming near the ship!"  
 	    global.moraleBoost = "fish" 
 	    }
 

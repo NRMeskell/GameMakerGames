@@ -1,3 +1,1 @@
-
-
-MapShip.path_position = .9
+MapShip.path_position = 0.99

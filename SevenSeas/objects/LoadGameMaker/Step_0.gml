@@ -78,22 +78,30 @@ if mouse_check_button_pressed(mb_left) and !instance_exists(DumpItem){
 
     for(r=0; r<ds_list_size(myGames); r++){
         if overButton[r]{
-			audio_play_sound(StoreBuySnd, 0, false)
-			
 			SaveGameRunner.gameName = ds_list_find_value(myGames, r)
-			saveFile = file_text_open_write("saveGames.txt")
-			for(var i=ds_list_size(myGames)-1; i>=0; i--){
-				if (i != r)  file_text_write_string(saveFile, ds_list_find_value(myGames, i) + "\n")
-				}	
-			file_text_write_string(saveFile, ds_list_find_value(myGames, r) + "\n")
-			file_text_close(saveFile)
+			if LoadFileExists(SaveGameRunner.gameName){
+				saveFile = file_text_open_write("saveGames.txt")
+				for(var i=ds_list_size(myGames)-1; i>=0; i--){
+					if (i != r)  file_text_write_string(saveFile, ds_list_find_value(myGames, i) + "\n")
+					}	
+				file_text_write_string(saveFile, ds_list_find_value(myGames, r) + "\n")
+				file_text_close(saveFile)
 			
-			with instance_create(0,0,LoadingScreenWaves)
-                myEvent = 2
+				audio_play_sound(StoreBuySnd, 0, false)
+				with instance_create(0,0,LoadingScreenWaves)
+	                myEvent = 2
 				
-            dropY = room_height*2
-            dropSpeed = 2
-            }
+	            dropY = room_height*2
+	            dropSpeed = 2
+				}
+			else{
+				with instance_create(0,0,DeleteAreYouSure){
+					caption = "Save File Corrupt!"
+					text = "This save cannot be loaded. Would you like to delete it?"
+					myEvent = other.r
+				}
+			}
+        }
         if overTrash[r]{
 			with instance_create(0,0,DeleteAreYouSure){
 				myEvent = other.r

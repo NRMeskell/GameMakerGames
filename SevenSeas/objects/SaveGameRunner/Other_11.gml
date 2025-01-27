@@ -7,7 +7,6 @@ if !instance_exists(Defeat){
 	SaveShip(gameName)
 	SavePirates(gameName)
 	SaveCharacters(gameName)
-	SaveReputation(gameName)
 }
 saveGameTimer = 0
 

@@ -12,7 +12,7 @@ function MerchantLure() {
 	        shipType = other.myShip.shipType
 	        }
 	    instance_destroy(EventDrawer)
-	    ds_list_add(global.notificationList, "they're surprised!", "the merchant ship is caught off gaurd!")
+	    ds_list_add(global.notificationList, "they're surprised!", "the merchant ship is caught off guard!")
 	    with Enemy
 	        {
 	        myHealth = round(myHealth*0.75)

@@ -16,11 +16,11 @@ function GetRandomLoot(argument0, argument1, argument2) {
 			lootList = argument2
 			}
 		
-		randomVal = lootList[irandom(array_length(lootList)-1)]
+		randomVal = lootList[max(irandom(array_length(lootList)-1),irandom(array_length(lootList)-1))]
 				
 	    if randomVal < 0
 	        {
-	        type = choose(1,1,2,3,0,4)
+	        type = choose(1,1,1,2,2,3,3,0,4)
 	        if type == 0 
 	            newItem = GenerateHatItem(min(0, itemLevel))
 	        else if type == 1
@@ -110,7 +110,7 @@ function getItemText(argument0, argument1){
 				itemNames += newItem + ", and "
 		}
 		else{
-			itemNames += argument1[itemType]
+			itemNames += newItem
 		}		
 	}
 	if itemNames == ""{

@@ -8,7 +8,7 @@ priorityMin = 7
 priorityMax = 8
 
 myAttack = ShipScoutAttack
-myType = "melle"
+myType = "melee"
 requiredSlot[0] = "rigging"
 level = 0
 

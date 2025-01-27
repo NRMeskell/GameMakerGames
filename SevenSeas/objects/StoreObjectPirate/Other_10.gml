@@ -39,11 +39,16 @@ with CreatePirate(false)
     EquipItem(id, other.myPants)
     EquipItem(id, other.myHat)
     EquipItem(id, other.myRightHand)
+	
+	maxHealth = other.maxHealth
+	myHealth = other.myHealth
     
     event_user(0)
     }
     
 ds_list_delete(myStore.items, ds_list_find_index(myStore.items, id))
 LoseCargo(0, cost)
+
+
 instance_destroy()
 

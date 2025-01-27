@@ -141,7 +141,7 @@ if (eyeLostRight and eyeLostLeft) and myAction[1] != LostEyeAction
 //UpdateHealthDiff
 if abs(healthDiff - myHealth) > 1
     {
-	if healthDiffTimer == 0 and myHealth < healthDiff and ((random(1)+random(1))/2 < (healthDiff - myHealth)/healthDiff){
+	if healthDiffTimer == 0 and myHealth < healthDiff and ((random(1) + random(1))/2 < abs(healthDiff - myHealth)/healthDiff){
         event_user(3)
         global.moraleBoost = "injured"
         UpdateMorale(-2, -1)
@@ -190,8 +190,16 @@ if morale < -3
 if morale <= moraleMax[stars]
 	leveling = false
 	
-if morale > moraleMax[stars] and !MapCreator.instantClose
-    PirateLevelUp(true, true)
+if morale > moraleMax[stars] and !instance_exists(PirateLeveler) {
+	if stars < 3 and myAction[stars] != LostEyeAction
+		PirateLevelUp(true, true)
+	else{
+		with instance_create(-1000, room_height/2, PirateLevelChooser){
+			myPirate = other.id
+			event_user(0)
+		}
+	}
+}
     
 prevMorale = morale
 
@@ -214,7 +222,14 @@ overPet = point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y
 
 lookingItem = noone
 
-if selected
+with myHat {overItem = false}
+with myPants {overItem = false}
+with myShirt {overItem = false}
+with myRightHand {overItem = false}
+with myLeftHand {overItem = false}
+with myPet {overItem = false}
+
+if selected and false
     {
     if overHat and myHat.itemName != "none" 
         lookingItem = myHat
@@ -229,13 +244,6 @@ if selected
     if overPet and myPet.itemName != "none" 
         lookingItem = myPet
     }
- 
-with myHat {overItem = false}
-with myPants {overItem = false}
-with myShirt {overItem = false}
-with myRightHand {overItem = false}
-with myLeftHand {overItem = false}
-with myPet {overItem = false}
 
 if lookingItem != noone
     {
@@ -245,24 +253,6 @@ if lookingItem != noone
             other.canLookItem = false
     if canLookItem    
         lookingItem.overItem = true
-            
-    if mouse_check_button_pressed(mb_left)
-        {
-        selectit = false
-        if lookingItem.selected = false
-            selectit = true
-            
-        ItemParent.selected = false
-        
-        if selectit
-            {
-            audio_play_sound(OpenMenuSnd, 1, false)
-            with lookingItem
-                selected = true
-            }
-        else
-            audio_play_sound(CloseMenuSound, 1, false)
-        }
     }
 
 /* */
@@ -328,8 +318,19 @@ if selected
         if mouse_check_button_pressed(mb_left) 
             with instance_create(0,0,DumpItem)
                 {
-                caption = "Do you want to make " + other.name + " walk the plank?"
-                myEvent = 1
+				retire = false	
+				if !global.inPort
+					caption = "Do you want to make " + other.name + " walk the plank?"
+                else{
+					if global.portType == 1{
+						caption = "Do you want to retire " + other.name + "?"
+						retire = true
+					}
+					else
+						caption = "Do you maroon " + other.name + " on this island?"
+				}
+				
+				myEvent = 1
                 myDump = other.id
                 }
         }

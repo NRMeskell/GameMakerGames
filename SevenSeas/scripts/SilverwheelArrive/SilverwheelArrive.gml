@@ -7,7 +7,7 @@ function SilverwheelArrive() {
 	    ds_list_add(buttonStats, 0, 0) 
 	    ds_list_add(buttonRequires, 0, 0)
 	    ds_list_add(buttonCosts, 0, 0)
-	    ds_list_add(buttonText, "accept her offer", "deline her offer")
+	    ds_list_add(buttonText, "accept her offer", "decline her offer")
         
 	    global.allowSelect = false
 	    captionText = "Captain Silverwheel"

@@ -7,10 +7,10 @@ function GiantTurtleArrive() {
 	    ds_list_add(buttonStats, 0, 4, 1) 
 	    ds_list_add(buttonRequires, 0, 0, 0)
 	    ds_list_add(buttonCosts, 0, 1, 1)
-	    ds_list_add(buttonText, "ingore the turtle", "feed the turtle food", "give the turtle jewel")
+	    ds_list_add(buttonText, "ignore the turtle", "feed the turtle food", "give the turtle jewel")
         
 	    global.allowSelect = false
-	    captionText = "Giant Sea Trutle"
+	    captionText = "Giant Sea turtle"
 	    if GiantTurtle.myState == "unmet"
 	        eventText = "a massive sea turtle arrives and begins to swim alongside the ship" 
 	    else

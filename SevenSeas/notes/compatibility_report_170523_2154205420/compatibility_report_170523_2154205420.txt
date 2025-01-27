@@ -973,25 +973,25 @@ Converted description /// @description Buy Guns
 Converting GML script: ${project_dir}\objects\Smithy\Other_11.gml
 Converted description /// @description Buy Swords
 
-Converting GML script: ${project_dir}\objects\Taylors\Create_0.gml
+Converting GML script: ${project_dir}\objects\Tailors\Create_0.gml
 Converted description /// @description Start Vars
 
-Converting GML script: ${project_dir}\objects\Taylors\Destroy_0.gml
+Converting GML script: ${project_dir}\objects\Tailors\Destroy_0.gml
 Converted description /// @description destroy light
 
-Converting GML script: ${project_dir}\objects\Taylors\Step_1.gml
+Converting GML script: ${project_dir}\objects\Tailors\Step_1.gml
 Converted description /// @description Create Light Source
 
-Converting GML script: ${project_dir}\objects\Taylors\Other_14.gml
+Converting GML script: ${project_dir}\objects\Tailors\Other_14.gml
 Converted description /// @description Hats
 
-Converting GML script: ${project_dir}\objects\Taylors\Other_13.gml
+Converting GML script: ${project_dir}\objects\Tailors\Other_13.gml
 Converted description /// @description Buy Pants
 
-Converting GML script: ${project_dir}\objects\Taylors\Other_12.gml
+Converting GML script: ${project_dir}\objects\Tailors\Other_12.gml
 Converted description /// @description Buy Shirts
 
-Converting GML script: ${project_dir}\objects\Taylors\Other_11.gml
+Converting GML script: ${project_dir}\objects\Tailors\Other_11.gml
 Converted description /// @description Buy Hats
 
 Converting GML script: ${project_dir}\objects\ShipYard\Create_0.gml

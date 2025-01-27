@@ -5,15 +5,15 @@ function SailingAccident() {
 	    buttonNumber = 2
 	    ds_list_add(buttons, SailingAccidentRope, SailingAccidentMed)
 	    ds_list_add(buttonStats, 3, 6)
-	    ds_list_add(buttonRequires, global.eventDiff[3, 0], global.eventDiff[6, 1])
+	    ds_list_add(buttonRequires, global.eventDiff[3, 1], global.eventDiff[6, 0])
 	    ds_list_add(buttonCosts, 0, 0)
-	    ds_list_add(buttonText, "roughly bandage " + eventValue.firstName + "'s wounds" , "carefully address " + eventValue.firstName + "'s wounds")
+	    ds_list_add(buttonText, "roughly bandage " + eventValue.firstName + "'s wounds" , "carefully heal " + eventValue.firstName + "'s wounds")
         
 				global.allowSelect = false
 		
-		var eventNum = irandom(1)
-		var accidents = [" was caught in the rigging", " was knocked off their feet"]
-	    var titles = ["Caught in Rigging!", "Thrown To Deck!"]
+		var eventNum = irandom(2)
+		var accidents = [" was hit by a yardarm", " was caught in the rigging", " was knocked off their feet"]
+	    var titles = ["Hit by Beam!", "Caught in Rigging!", "Thrown To Deck!"]
 	
 	    captionText = titles[eventNum]
 		var accident =  accidents[eventNum]

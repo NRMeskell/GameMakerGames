@@ -13,7 +13,7 @@ function TropicalHeat() {
 	    global.allowSelect = false
 	    captionText = "Blazing Heat!"
     
-	    eventText = "The crew is exhuasted, overheating, and tired!" 
+	    eventText = "The crew is exhausted, overheating, and tired!" 
 	    global.moraleBoost = "heat"
 	    }
 

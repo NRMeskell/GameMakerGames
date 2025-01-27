@@ -82,10 +82,10 @@ function GeneratePetItem(argument0) {
 			if chooseType == 5 {
 		        itemNumber = 6
 		        itemName = "Compass"
-		        itemInfo = "a navagation tool to help sail the 7 seas"
+		        itemInfo = "a navigation tool to help sail the 7 seas"
         
-		        itemPower = "speed bonus"   
-		        itemPowerDescription = "if equipped pirate is at the helm, the ship sails 15% faster"
+		        itemPower = "speed bonus 10"   
+		        itemPowerDescription = "if equipped pirate is at the helm, the ship sails 10% faster"
 		    }
     
 		}

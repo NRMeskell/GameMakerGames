@@ -100,7 +100,10 @@ function EquipItem(argument0, argument1) {
 		if surface_exists(smallPirateSurface)
 			MakePirateSurface(smallPirateSurface, drawPictureRealx, drawPictureRealy)
 		if surface_exists(tagPirateSurface)
-			MakePirateSurface(tagPirateSurface, drawTagSpriteX, drawTagSpriteY)
+			MakePirateSurface(tagPirateSurface, drawTagSpriteX, drawTagSpriteY) 
+	
+		//update stats
+		event_user(14)
 	}
 	return isEquipped
 }

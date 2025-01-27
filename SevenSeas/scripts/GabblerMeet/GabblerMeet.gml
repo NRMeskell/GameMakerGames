@@ -29,7 +29,7 @@ function GabblerMeet() {
 }
 
 function GabblerTellTales(){
-	var tales = choose("the open seas", "her peg leg", "burried treasure"),
+	var tales = choose("the open seas", "her peg leg", "buried treasure"),
 		result = "The Old Gabbler tells a wonderful tale about " + tales + "!", 
 	
 	if irandom(1) and HasStored(0, 1){
@@ -44,7 +44,7 @@ function GabblerTellTales(){
 
 function GabblerIgnore(){
 	UpdateMorale(-1, -1)
-	ds_list_add(global.notificationList, "Dissapointed Crew!", "The Old Gabbler huffs away, and the crew be sad not to hear a tale.")
+	ds_list_add(global.notificationList, "disappointed Crew!", "The Old Gabbler huffs away, and the crew be sad not to hear a tale.")
 	closeEventCode()
 }
 

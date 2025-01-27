@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"LoadFileExists",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"LoadFileExists",
+  "parent":{
+    "name":"SaveGame",
+    "path":"folders/Scripts/SaveGame.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
