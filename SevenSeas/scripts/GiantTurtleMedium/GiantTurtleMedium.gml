@@ -3,11 +3,11 @@ function GiantTurtleMedium() {
 	    {
 	    myCharacter = 5
 	    buttonNumber = 2
-	    ds_list_add(buttons, GiantTurtleIgnore, GiantTurtleMediumTake) 
-	    ds_list_add(buttonStats, 0, 3) 
-	    ds_list_add(buttonRequires, 0, global.eventDiff[3, 1])
-	    ds_list_add(buttonCosts, 0, 0)
-	    ds_list_add(buttonText, "ignore the turtle", "take the gift")
+	    ds_list_add(buttons, GiantTurtleFeed, GiantTurtleJewel, GiantTurtleMediumTake) 
+	    ds_list_add(buttonStats, 4, 1, 3) 
+	    ds_list_add(buttonRequires, 0, 0, global.eventDiff[3, 0])
+	    ds_list_add(buttonCosts, 1, 1, 0)
+	    ds_list_add(buttonText, "feed the turtle food", "give the turtle jewel", "take the gift")
         
 	    global.allowSelect = false
 	    captionText = "Giant Sea turtle"

@@ -229,7 +229,7 @@ with myRightHand {overItem = false}
 with myLeftHand {overItem = false}
 with myPet {overItem = false}
 
-if selected and false
+if selected
     {
     if overHat and myHat.itemName != "none" 
         lookingItem = myHat

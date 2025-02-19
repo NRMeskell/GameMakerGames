@@ -4,6 +4,7 @@ function SwitchShips(argument0) {
 	Pirate.visible = false
 
 	Ship.shipType = argument0
+	MapShip.image_index = argument0
 
 	with ShipSlot
 	    {
@@ -22,15 +23,12 @@ function SwitchShips(argument0) {
 	        }
 	    }
     
-	Ship.maxHealth = Ship.maxHealthType[Ship.shipType]
+	Ship.maxHealth = global.maxHealthType[Ship.shipType]
 	Ship.myHealth = Ship.maxHealth
+	Ship.healthDiff = Ship.maxHealth
 
 	Pirate.visible = true
 
 	if global.inPort = true
 	    Ship.portSelect = false
-    
-
-
-
 }

@@ -3,9 +3,6 @@
 farDistance = 135
 myShipType = 0
 
-flagX = sprite_get_xoffset(ScavengerShipSpr) - 55
-flagY = 10 - sprite_get_yoffset(ScavengerShipSpr)
-
 myShipHull = ScavengerShipSpr
 
 flagColor = c_white

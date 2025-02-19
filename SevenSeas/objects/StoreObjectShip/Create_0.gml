@@ -19,16 +19,15 @@ overButton = false
 
 viewed = false
 
-name = Ship.shipName[myShipType]
-description = Ship.shipDescription[myShipType]
+name = global.shipName[myShipType]
+description = global.shipDescription[myShipType]
 previewName = ""
 
-myHealth = Ship.maxHealthType[myShipType]
-maxCrew = Ship.shipMaxCrew[myShipType]
+myHealth = global.maxHealthType[myShipType]
+maxCrew = global.shipMaxCrew[myShipType]
 
-myRigging = Ship.shipSlots[0,myShipType]
-myCannons = Ship.shipSlots[1,myShipType]
-myCargo = Ship.shipSlots[2,myShipType]
+myCannons = global.shipCannons[myShipType]
+myCargo = global.shipCargo[myShipType]
 
 drawX = 100
 drawY = 100

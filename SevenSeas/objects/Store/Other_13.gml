@@ -34,7 +34,7 @@ for(r=0; r < ds_list_size(items); r++)
             }
         else if checkCanStore.object_index = StoreObjectPirate
             {
-            if instance_number(Pirate) == Ship.shipMaxCrew[Ship.shipType]
+            if instance_number(Pirate) >= global.shipMaxCrew[Ship.shipType]
                 canTake = false
 				
 			cargoAmounts[0] -= checkCanStore.cost

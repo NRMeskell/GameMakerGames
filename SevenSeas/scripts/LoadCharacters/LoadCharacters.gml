@@ -1,6 +1,6 @@
 /// @description load characters
 function LoadCharacters(argument0) {
-	ini_open(argument0 + "-characters.ini")
+	ini_open(argument0 + "\\characters.ini")
 
 	instance_destroy(CharacterParent)
 

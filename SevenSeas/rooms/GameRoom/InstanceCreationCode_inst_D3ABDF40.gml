@@ -1,15 +1,12 @@
 myLayer = 1
-
-xSpot[0] = -50
-ySpot[0] = -50
-
-xSpot[1] = -50
-ySpot[1] = -50
-
-xSpot[2] = -50
-ySpot[2] = -50
-
-xSpot[3] = 125
-ySpot[3] = 183
-
 slotType = "cannon"
+
+for(var i=0; i<7; i++){
+	if global.shipCannons[i] == 1{
+		xSpot[i] = -50
+		ySpot[i] = -50
+	}else{
+		xSpot[i] = 125
+		ySpot[i] = 183
+	}
+}

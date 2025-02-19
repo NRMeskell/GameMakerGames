@@ -5,10 +5,5 @@ function AddSaveFile(argument0) {
 	currentFile = file_text_open_append("saveGames.txt")
 	file_text_write_string(currentFile, argument0 + chr(10))
 	file_text_close(currentFile)
-
-
-
-
-
-
+	directory_create(argument0)
 }

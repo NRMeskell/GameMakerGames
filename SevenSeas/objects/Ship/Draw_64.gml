@@ -9,7 +9,15 @@ if __b__
 
 if portSelect = true or global.inPort = false
     {
-    draw_sprite_ext(menuShipSprs[shipType], global.menuShipLayer, xWindow, yWindow, menuSize, menuSize, 0, -1, 1) 
+	var drawLayer = global.menuShipLayer
+	if global.menuShipLayer == 0
+		drawLayer += 3*(global.mastNumber[shipType]-1)
+	else if global.menuShipLayer == 1
+		drawLayer += 3*(global.shipCannons[shipType]-1)	
+	else if global.menuShipLayer == 2
+		drawLayer += 3*(global.shipCargo[shipType]-4)	
+		
+    draw_sprite_ext(MenuShipSpr, drawLayer, xWindow, yWindow, menuSize, menuSize, 0, -1, 1) 
     
     
     if (!overUp and __view_get( e__VW.XView, 0 ) == 0) and global.menuShipLayer != 0
@@ -41,6 +49,9 @@ for(i=0; i<array_length_1d(myStatsNumList); i++)
 //DRAW SHIP HEALTH
 draw_set_color(make_color_rgb(59, 33, 6))
 draw_rectangle(room_width/2 + 100 - sprite_get_width(HealthBoxSpr)/2 + 2, room_height - sprite_get_height(StatMenuSpr) - sprite_get_height(HealthBoxSpr)+6, room_width/2 + 100 + sprite_get_width(HealthBoxSpr)/2-3, room_height - sprite_get_height(StatMenuSpr)+2, false)
+
+if healthDiff > maxHealth
+	healthDiff = maxHealth
 
 if healthDiff >= myHealth{
 	draw_set_color(make_color_rgb(166, 29, 8))
@@ -85,7 +96,7 @@ draw_set_color(c_black)
 draw_sprite_part(PirateListSpr, 0, 0, 0, 30 + string_width(string_hash_to_newline(SaveGameRunner.gameName)), sprite_get_height(PirateListSpr) ,drawTagX, drawTagY)
 draw_sprite_part(PirateListSpr, 0, sprite_get_width(PirateListSpr) - 16, 0, 16, sprite_get_height(PirateListSpr), drawTagX + 30 + string_width(string_hash_to_newline(SaveGameRunner.gameName)), drawTagY)
 
-draw_text(drawTagX + 30, drawTagY + 30, string_hash_to_newline(SaveGameRunner.gameName))
+draw_text(drawTagX + 30, drawTagY + 38, string_hash_to_newline(SaveGameRunner.gameName))
 
 for(i = drawTagY+sprite_get_height(PirateListSpr); i < room_height; i+= sprite_get_height(PirateListSpr))
     {
@@ -93,7 +104,7 @@ for(i = drawTagY+sprite_get_height(PirateListSpr); i < room_height; i+= sprite_g
     }
 
 //Draw Pirate List Arrows
-
+/*
 if global.slotPosition != 0
     {
     if overListUp and __view_get( e__VW.XView, 0 ) = 0
@@ -102,18 +113,21 @@ if global.slotPosition != 0
         draw_sprite_ext(PirateListArrowSpr, 0, drawTagX + listPositionX, drawTagY + listPositionUpY, 1,1,0,c_white, 1)
     }
    
-if global.slotPosition + 4 < instance_number(Pirate)
+if global.slotPosition + 5 < instance_number(Pirate)
     {
     if overListDown and __view_get( e__VW.XView, 0 ) = 0
         draw_sprite_ext(PirateListArrowSpr, 1, drawTagX + listPositionX, drawTagY + listPositionDownY, 1,1,0,c_ltgray, 1)
     else
         draw_sprite_ext(PirateListArrowSpr, 1, drawTagX + listPositionX, drawTagY + listPositionDownY, 1,1,0,c_white, 1)
     } 
-    
+
+*/  
 //Draw Pirates
 
 with Pirate
     {
+	tagDistance = sprite_get_height(PirateListSpr) * (7/(2+global.shipMaxCrew[Ship.shipType]))
+		
     myTagPlace = tagDistance * (1 + ds_list_find_index(global.crewList, id) - global.slotPosition)
     drawable = -1 < ds_list_find_index(global.crewList, id) - global.slotPosition and ds_list_find_index(global.crewList, id) - global.slotPosition < Ship.drawPiratePostNumber
     
@@ -124,9 +138,10 @@ with Pirate
         draw_set_valign(fa_middle)
         draw_set_color(c_black)
          
-        for(i = Ship.drawTagY+tagDistance*(ds_list_size(global.crewList)+1-global.slotPosition); i < room_height; i+= tagDistance)
+        for(var i = Ship.drawTagY+tagDistance*(ds_list_size(global.crewList)+1-global.slotPosition); i < room_height; i+= tagDistance)
             draw_sprite(PirateListSpr, 3, Ship.drawTagX, i + tagShift)
-        draw_sprite(PirateListSpr, 3, Ship.drawTagX, Ship.drawTagY+tagDistance*5 + tagShift)
+        
+		draw_sprite(PirateListSpr, 3, Ship.drawTagX, Ship.drawTagY+tagDistance*5 + tagShift)
         
         }
         
@@ -202,6 +217,10 @@ with Pirate
 		}
         DrawPirateSurface(tagPirateSurface, Ship.drawTagX + drawTagPictureX, Ship.drawTagY + drawTagPictureY + myTagPlace + tagShift)
         }
+		
     }
-}
+	
+	for(var i = drawTagY+sprite_get_height(PirateListSpr)+1; i < room_height; i+= Pirate.tagDistance)
+        draw_sprite(PirateListSpr, 4, drawTagX, i)
+	}
 }

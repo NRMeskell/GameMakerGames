@@ -1,7 +1,7 @@
 /// @description Save Characters
 function SaveCharacters(argument0) {
 
-	ini_open(argument0 + "-characters.ini")
+	ini_open(argument0 + "\\characters.ini")
 
 	for(i=0; i<ds_list_size(CharacterCreator.characters); i++){
 	    character = ds_list_find_value(CharacterCreator.characters, i)

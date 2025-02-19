@@ -1,5 +1,5 @@
 function SaveMapVariables(argument0) {
-	writeFile = file_text_open_write(argument0 + "-MapSeaVarsFile.txt");
+	writeFile = file_text_open_write(argument0 + "\\MapSeaVarsFile.txt");
 
 	for(n=0; n<MapCreator.seaNumber; n++){
 	    seaX = ds_map_find_value(MapCreator.seas[n], "x")

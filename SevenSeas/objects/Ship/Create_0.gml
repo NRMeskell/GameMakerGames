@@ -31,8 +31,6 @@ hitAmount = 0
 
 global.gameSpeed = 1
 
-global.actionsLeft = 0
-
 global.totalWheelBonus = 0
 global.totalSailBonus = 0
 global.totalRiggingBonus = 0
@@ -49,104 +47,14 @@ moralDisplay[2] = "Fair"
 moralDisplay[3] = "High"
 moralDisplay[4] = "Great"
 
-///Ship Types
-
 shipType = 0
 damage = 0
 
-shipName[0] = "Sloop"
-shipName[1] = "Schooner"
-shipName[2] = "Caravel"
-shipName[3] = "Brigantine"
-shipName[4] = "Galleon"
-shipName[5] = "Man O' War"
-shipName[6] = "Frigate"
-
-shipDescription[0] = "A small seaworthy craft"
-shipDescription[1] = "A fast, slim-hulled sailing ship"
-shipDescription[2] = "A reliable transport vessel"
-shipDescription[3] = "A mid-sized sturdy gunboat"
-shipDescription[4] = "A triple-masted storage ship"
-shipDescription[5] = "A large, powerful warship"
-shipDescription[6] = "A formidable sailing vessel"
-
-hullDict[0] = ShipSloopSpr
-hullDict[1] = ShipScoonerSpr
-hullDict[2] = ShipCaravelSpr
-hullDict[3] = ShipBrigSpr
-hullDict[4] = ShipScoonerSpr
-hullDict[5] = ShipCaravelSpr
-hullDict[6] = ShipBrigSpr
-
-//rigging
-shipSlots[0,0] = 2
-shipSlots[0,1] = 3
-shipSlots[0,2] = 2
-shipSlots[0,3] = 2
-shipSlots[0,4] = 3
-shipSlots[0,5] = 2
-shipSlots[0,6] = 3
-
-//cannon
-shipSlots[1,0] = 1
-shipSlots[1,1] = 1
-shipSlots[1,2] = 1
-shipSlots[1,3] = 2
-shipSlots[1,4] = 1
-shipSlots[1,5] = 3
-shipSlots[1,6] = 2
-
-//cargo
-shipSlots[2,0] = 4
-shipSlots[2,1] = 4
-shipSlots[2,2] = 5
-shipSlots[2,3] = 4
-shipSlots[2,4] = 6
-shipSlots[2,5] = 4
-shipSlots[2,6] = 5
-
-//crew
-shipMaxCrew[0] = 4
-shipMaxCrew[1] = 5
-shipMaxCrew[2] = 4
-shipMaxCrew[3] = 4
-shipMaxCrew[4] = 6
-shipMaxCrew[5] = 6
-shipMaxCrew[6] = 6
-
-//health
-maxHealthType[0] = 250
-maxHealthType[1] = 350
-maxHealthType[2] = 400
-maxHealthType[3] = 450
-maxHealthType[4] = 550
-maxHealthType[5] = 600
-maxHealthType[6] = 550
-
-maxHealth = maxHealthType[shipType]
+maxHealth = global.maxHealthType[0]
 myHealth = maxHealth
 healthDiff = maxHealth
 updateHealthDiff = false
 healthDiffTimer = 0
-
-menuShipSprs[0] = MenuShipSloopSpr
-menuShipSprs[1] = MenuShipScoonerSpr
-menuShipSprs[2] = MenuShipCaravelSpr
-menuShipSprs[3] = MenuShipBrigSpr
-
-
-flagX[0] = -1
-flagY[0] = 29-96
-
-flagX[1] = 0
-flagY[1] = 25-96
-
-flagX[2] = -2
-flagY[2] = 25-96
-
-flagX[3] = 75-65
-flagY[3] = 29-96
-
 
 ///Waves Vars
 
@@ -267,7 +175,7 @@ global.menuShipLayer = 0
 ///Pirate List
 
 drawTagX = 0
-drawTagY = 10
+drawTagY = -5
 
 global.allowSelect = true
 
@@ -275,7 +183,7 @@ global.crewSize = 0
 global.slotPosition = 0
 
 drawPiratePostNumber = 4
-tagShift = 10
+tagShift = 0
 
 global.crewList = ds_list_create()
 healSpeed = 0//1/room_speed

@@ -1,6 +1,6 @@
 /// @description Load Ladnigng Spots
 function LoadLandingSpots(argument0) {
-	ini_open(argument0 + "-MapLandingFile.txt")
+	ini_open(argument0 + "\\MapLandingFile.txt")
 
 	for(n=0; n<instance_number(LandingSpot); n++){
 	    myLanding = instance_find(LandingSpot, n)

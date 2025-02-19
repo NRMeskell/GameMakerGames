@@ -166,7 +166,7 @@ rockScale = 0.1
 shipSize = 1 + overShipPort*0.1
 
 
-overShipPort = global.inPort and point_in_circle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), drawX, drawY-sprite_get_height(hullDict[shipType])/2, 50)
+overShipPort = global.inPort and point_in_circle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), drawX, drawY-sprite_get_height(global.hullDict[shipType])/2, 50)
 
 if global.inPort = true and mouse_check_button_released(mb_left)  and !instance_exists(DumpItem)
     {

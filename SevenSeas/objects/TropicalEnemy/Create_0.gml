@@ -3,9 +3,6 @@
 farDistance = 135
 myShipType = 0
 
-flagX = sprite_get_xoffset(TropicalShipSpr) - 55
-flagY = 10 - sprite_get_yoffset(TropicalShipSpr)
-
 myShipHull = TropicalShipSpr
 
 flagColor = make_color_rgb(45,133,45)

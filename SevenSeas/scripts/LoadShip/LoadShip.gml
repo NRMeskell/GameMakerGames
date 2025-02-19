@@ -1,5 +1,5 @@
 function LoadShip(argument0) {
-	ini_open(argument0 + "-ship.ini")
+	ini_open(argument0 + "\\ship.ini")
 
 	SwitchShips(real(ini_read_string("vars", "type", 0)))
 	Ship.maxHealth = real(ini_read_string("vars", "maxHealth", Ship.maxHealth))
@@ -23,7 +23,4 @@ function LoadShip(argument0) {
 			sunriseMeal = !sunriseMeal
 	
 	ini_close()
-
-
-
 }

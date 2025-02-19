@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function LoadReputation(argument0){
 	
-	ini_open(argument0 + "-reputation.ini")
+	ini_open(argument0 + "\\reputation.ini")
 	var total = ini_read_real("reputation", "entries", 0)	
 		
 	for(var i=0; i<total; i++){

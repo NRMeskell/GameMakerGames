@@ -6,7 +6,7 @@ function LoadBuildings(argument0) {
 
 	for(i=0; i<instance_number(LandingSpot); i++){
 	    myLanding = instance_find(LandingSpot, i)
-	    ini_open(argument0 + "-BuildingFile.ini")
+	    ini_open(argument0 + "\\BuildingFile.ini")
 	    for(n=0; n<3; n++){ 
 	        //garbage collection
 	        if myLanding.slotBuild[n] != undefined

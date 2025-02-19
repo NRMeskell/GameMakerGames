@@ -1,6 +1,6 @@
 /// @description sea surface reading
 function SaveLandingSpots(argument0) {
-	ini_open(argument0 + "-MapLandingFile.txt");
+	ini_open(argument0 + "\\MapLandingFile.txt");
 	
 	myTargetNumber = -1
 	for(i=0; i<instance_number(LandingSpot); i++){
@@ -28,6 +28,6 @@ function SaveLandingSpots(argument0) {
 		}
     
 	ini_close()
-	//surface_save(MapCreator.seenSurface, argument0 + "-MapSeenFile.png");
+	//surface_save(MapCreator.seenSurface, argument0 + "\\MapSeenFile.png");
 	
 }

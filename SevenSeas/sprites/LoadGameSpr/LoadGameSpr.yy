@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"LoadGameSpr",
   "bboxMode":0,
-  "bbox_bottom":231,
+  "bbox_bottom":241,
   "bbox_left":0,
   "bbox_right":293,
   "bbox_top":0,
@@ -19,7 +19,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":232,
+  "height":242,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"48325fee-60ed-490e-8d60-0afe09a70007","blendMode":0,"displayName":"default","isLocked":false,"name":"48325fee-60ed-490e-8d60-0afe09a70007","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -88,7 +88,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":147,
-    "yorigin":116,
+    "yorigin":121,
   },
   "swatchColours":[
     4278190335,4278190080,4280558628,4282400832,4283914071,4286282619,4290164406,4292269782,4294967295,4283893835,

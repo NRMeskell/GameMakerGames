@@ -11,7 +11,7 @@ myShipTypes[2] = choose(4,5,6)
 myShipTypes[3] = choose(4,5,6)
 
 shipType = myShipTypes[global.seaLevel]
-myShipHull = Ship.hullDict[shipType]
+myShipHull = global.hullDict[shipType]
 flagColor = c_dkgray
 flagSprite = PirateFlagSpr
 shipFocus = choose("jack", "melee", "cannon")

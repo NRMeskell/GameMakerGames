@@ -54,7 +54,7 @@ if random(1) < surrenderChance and enemyLevel == 0{
     with instance_create(0,0,SurrenderOption)
         {
         caption = CombatRunner.name + " surrenders!"
-        text = "they offer " + other.displayAmount + " of their ship's cargo as a prize.#Accept their offer?"
+        text = "The enemy will give up half their cargo#and the crew will gain morale!"
         myEvent = 0
         amount = other.amount
         }

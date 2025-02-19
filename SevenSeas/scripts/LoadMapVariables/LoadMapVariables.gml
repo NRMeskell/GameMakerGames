@@ -1,7 +1,8 @@
 function LoadMapVariables(argument0) {
-	writeFile = file_text_open_read(argument0 + "-MapSeaVarsFile.txt");
+	var writeFile = file_text_open_read(argument0 + "\\MapSeaVarsFile.txt");
+	var currentLine, currentData
 
-	for(n=0; n<MapCreator.seaNumber; n++){
+	for(var n=0; n<MapCreator.seaNumber; n++){
 	    currentLine = file_text_readln(writeFile)
 	    currentData = SplitLine(currentLine, ",")
 	    ds_map_replace(MapCreator.seas[n], "x", real(currentData[0]))
@@ -15,7 +16,7 @@ function LoadMapVariables(argument0) {
  
 	currentLine = file_text_readln(writeFile)
 	currentData = SplitLine(currentLine, ",")   
-	for(i=0; i<array_length_1d(MapCreator.winCond); i++){
+	for(var i=0; i<array_length_1d(MapCreator.winCond); i++){
 	    MapCreator.winCond[i] = real(currentData[i])
 	    }
     
@@ -23,7 +24,7 @@ function LoadMapVariables(argument0) {
 
 	//catch poorly made islands
 	tempSea = ds_map_create()
-	for(i=1; i<7; i+=2){
+	for(var i=1; i<7; i+=2){
 	    if ds_map_find_value(MapCreator.seas[i], "type") != global.seaNames[i]{
 	        ds_map_copy(tempSea, MapCreator.seas[i])
 	        ds_map_copy(MapCreator.seas[i], MapCreator.seas[i+1])

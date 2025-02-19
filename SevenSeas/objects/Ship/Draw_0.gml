@@ -21,7 +21,7 @@ if global.weather == 2
 	with WeatherController
 		event_user(2)
 
-DrawShip(hullDict[shipType], sprite_get_number(ShipSloopSpr)*(1-max(0.01,((myHealth)/maxHealth))), drawX, GetWaterLevel(middleWaves, drawX) + sinking, realRock/2, c_white, PirateFlagSpr, c_white, 3)
+DrawShip(global.hullDict[shipType], sprite_get_number(ShipSloopSpr)*(1-max(0.01,((myHealth)/maxHealth))), drawX, GetWaterLevel(middleWaves, drawX) + sinking, realRock/2, c_white, PirateFlagSpr, c_white, 3)
 
 ///Draw Front Events
 

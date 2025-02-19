@@ -10,24 +10,25 @@
 /// @param  layer
 function DrawShip(argument0, argument1, argument2, argument3, argument4, argument5, argument6, argument7, argument8) {
 
-	myFlagX = 0
-	myFlagY = 0
+
+	var myFlagX = 0
+	var myFlagY = 0
 	rotation = round(argument4*4)/4
 	xPos = global.modernRes ? argument2 : argument2 div 1
 	yPos = global.modernRes ? argument3 : argument3 div 1
 
 	if argument0 == ShipSloopSpr{
-	    myFlagX = -1
-	    myFlagY = 29-96}
+	    myFlagX = sprite_get_xoffset(argument0)-40
+	    myFlagY = 1-sprite_get_yoffset(argument0)}
 	else if argument0 == ShipScoonerSpr{
-	    myFlagX = 0
-	    myFlagY = 25-96}
+	    myFlagX = sprite_get_xoffset(argument0)-43
+	    myFlagY = 2-sprite_get_yoffset(argument0)}
 	else if argument0 == ShipCaravelSpr{
-	    myFlagX = 14
-	    myFlagY = 25-96}
+	    myFlagX = sprite_get_xoffset(argument0)-32
+	    myFlagY = 8-sprite_get_yoffset(argument0)}
 	else if argument0 == ShipBrigSpr{
-	    myFlagX = 75-65
-	    myFlagY = 29-96}
+	    myFlagX = sprite_get_xoffset(argument0)-41
+	    myFlagY = 1-sprite_get_yoffset(argument0)}
 	else if argument0 == MerchantSmallSpr{
 	    myFlagX = sprite_get_xoffset(argument0)-40
 	    myFlagY = 0-sprite_get_yoffset(argument0)}

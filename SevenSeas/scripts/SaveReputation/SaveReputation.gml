@@ -2,10 +2,10 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function SaveReputation(argument0){
 	
-	if file_exists(argument0 + "-reputation.ini")
-		file_delete(argument0 + "-reputation.ini")
+	if file_exists(argument0 + "\\reputation.ini")
+		file_delete(argument0 + "\\reputation.ini")
 	
-	ini_open(argument0 + "-reputation.ini")	
+	ini_open(argument0 + "\\reputation.ini")	
 	ini_write_real("reputation", "entries", ds_list_size(global.reputation))
 	
 	for(var i=0; i<ds_list_size(global.reputation); i++){

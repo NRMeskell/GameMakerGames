@@ -42,8 +42,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"MenuShipSloopSpr",
-    "path":"sprites/MenuShipSloopSpr/MenuShipSloopSpr.yy",
+    "name":"MenuShipSpr",
+    "path":"sprites/MenuShipSpr/MenuShipSpr.yy",
   },
   "spriteMaskId":null,
   "visible":true,

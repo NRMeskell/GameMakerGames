@@ -168,12 +168,7 @@ if ds_list_find_value(ItemRunner.floatingItems, 0) == id or (state == "equipped"
     buttonTextDis = 48
     buttonTextHieght = 13
     
-    /*if state != "equipped"  
-        {
-        draw_text(drawX + buttonTextDis, drawY + sprite_get_height(ItemSheetSpr)- buttonTextHieght, string_hash_to_newline("unequip"))
-        draw_text(drawX +sprite_get_width(ItemSheetSpr) - buttonTextDis, drawY + sprite_get_height(ItemSheetSpr) - buttonTextHieght, string_hash_to_newline("close"))
-        }
-    else*/
+    if state != "equipped"  
         {
 		draw_text(drawX + buttonTextDis, drawY  + sprite_get_height(ItemSheetSpr)- buttonTextHieght, string_hash_to_newline("equip"))
         if !AbleToStore(1, 1)

@@ -1,7 +1,7 @@
 /*/// @description Rarity Map
 
 //base rarity
-if instance_number(Pirate) == Ship.shipMaxCrew[Ship.shipType]
+if instance_number(Pirate) == global.shipMaxCrew[Ship.shipType]
     {
     eventRarity[? RaftPirate] = 0
     eventRarity[? Stowaway] = 0

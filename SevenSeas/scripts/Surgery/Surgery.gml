@@ -21,11 +21,11 @@ function Surgery() {
 		if eventValue.object_index == Ship{
 		    ds_list_add(buttonStats, 0, 3)
 		    ds_list_add(buttonRequires, 0, 0)
-		    ds_list_add(buttonCosts, 0, min(1, CargoAmount(3), (Ship.maxHealth - Ship.myHealth) div 15 + 1))
+		    ds_list_add(buttonCosts, 0, max(1, min(CargoAmount(3), (Ship.maxHealth - Ship.myHealth) div 15 + 1)))
 			ds_list_add(buttons, RepairIgnore, RepairGive)
-			ds_list_add(buttonText, "Continue without repairs", "Provide emergency repairs")	
+			ds_list_add(buttonText, "Continue without repairs", "Provide on-board repairs")	
 			captionText = "Repairs!"
-		    eventText = "the ship is in need of emergency reconstruction."   
+		    eventText = "the ship is in poor condition and could use patching."   
 		    global.moraleBoost = "repairs"
 		}
 		else {
@@ -33,9 +33,9 @@ function Surgery() {
 		    ds_list_add(buttonRequires, 0, global.eventDiff[6, 2])
 		    ds_list_add(buttonCosts, 0, 0)
 			ds_list_add(buttons, SurgeryIgnore, SurgeryGive)
-			ds_list_add(buttonText, "Continue without treatment", "Provide emergency care")	
+			ds_list_add(buttonText, "Continue without treatment", "Provide medical treatment")	
 			captionText = "Surgery!"
-		    eventText = eventValue.name + " is in need of emergency medical attention"   
+		    eventText = eventValue.name + " is in poor health and could use care."   
 		    global.moraleBoost = "surgery"
 		}
 		
@@ -50,10 +50,10 @@ function RepairIgnore(){
 }
 
 function RepairGive(){
-	var planksUsed = min(1, CargoAmount(3), (Ship.maxHealth - Ship.myHealth) div 15 + 1)
+	var planksUsed =  max(1, min(CargoAmount(3), (Ship.maxHealth - Ship.myHealth) div 15 + 1))
 	Ship.myHealth += (Ship.maxHealth div 10) * planksUsed
 	
-	ds_list_add(global.notificationList, "Ship Repaired", planksUsed + " plank(s) were used to patch up the damaged ship.")
+	ds_list_add(global.notificationList, "Ship Repaired", string(planksUsed) + " plank(s) were used to patch up the damaged ship.")
 	
 }
 

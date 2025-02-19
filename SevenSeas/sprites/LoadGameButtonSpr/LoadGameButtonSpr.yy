@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"LoadGameButtonSpr",
   "bboxMode":0,
-  "bbox_bottom":29,
+  "bbox_bottom":45,
   "bbox_left":0,
   "bbox_right":208,
   "bbox_top":0,
@@ -18,7 +18,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":30,
+  "height":47,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"363ffad8-2f3e-49a6-aca8-72db7b7a7ba3","blendMode":0,"displayName":"default","isLocked":false,"name":"363ffad8-2f3e-49a6-aca8-72db7b7a7ba3","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},

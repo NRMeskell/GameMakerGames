@@ -25,24 +25,24 @@ if y > room_height + 100
 
 farHor = 132
 farVer = 48
-nearHor = 102
-nearVer = 20
+nearHor = 107
+nearVer = 25
 
 returnWidth = 46
-returnTop = 90
-returnBottom = 115
+returnTop = 95
+returnBottom = 120
 
 if dropSpeed = 0 and !instance_exists(DumpItem){
     overUp = point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), x + nearHor, y - farVer, x + farHor, y - nearVer)
-    overDown = point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), x + nearHor, y + nearVer, x + farHor, y + farVer)
+    overDown = point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), x + nearHor, y + nearVer + 5, x + farHor, y + farVer + 5)
     overBack = point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), x-returnWidth, y + returnTop, x+returnWidth, y+returnBottom)
     
     for(i=0; i<ds_list_size(myGames); i++){
         overButton[i] = point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), x-buttonAlign-15, y - buttonStartY + buttonDistance*(i-buttonPos)-14, x-buttonAlign-15+buttonSplit-8, y - buttonStartY + buttonDistance*(i-buttonPos)+14)
         overTrash[i] = point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), x-buttonAlign-15+buttonSplit+5, y - buttonStartY + buttonDistance*(i-buttonPos)-14, x-buttonAlign-15+buttonSplit+27, y - buttonStartY + buttonDistance*(i-buttonPos)+14)
         
-		overButton[i] = overButton[i] && (i - buttonPos < 4) && (i - buttonPos >= 0)
-		overTrash[i] = overTrash[i] && (i - buttonPos < 4) && (i - buttonPos >= 0)
+		overButton[i] = overButton[i] && (i - buttonPos < 3) && (i - buttonPos >= 0)
+		overTrash[i] = overTrash[i] && (i - buttonPos < 3) && (i - buttonPos >= 0)
 		}
     }
 else{
@@ -76,15 +76,15 @@ if mouse_check_button_pressed(mb_left) and !instance_exists(DumpItem){
         }
 
 
-    for(r=0; r<ds_list_size(myGames); r++){
+    for(var r=0; r<ds_list_size(myGames); r++){
         if overButton[r]{
-			SaveGameRunner.gameName = ds_list_find_value(myGames, r)
+			SaveGameRunner.gameName = ds_list_find_value(myGames, r)[0]
 			if LoadFileExists(SaveGameRunner.gameName){
 				saveFile = file_text_open_write("saveGames.txt")
 				for(var i=ds_list_size(myGames)-1; i>=0; i--){
-					if (i != r)  file_text_write_string(saveFile, ds_list_find_value(myGames, i) + "\n")
+					if (i != r)  file_text_write_string(saveFile, ds_list_find_value(myGames, i)[0] + "\n")
 					}	
-				file_text_write_string(saveFile, ds_list_find_value(myGames, r) + "\n")
+				file_text_write_string(saveFile, ds_list_find_value(myGames, r)[0] + "\n")
 				file_text_close(saveFile)
 			
 				audio_play_sound(StoreBuySnd, 0, false)
@@ -95,22 +95,20 @@ if mouse_check_button_pressed(mb_left) and !instance_exists(DumpItem){
 	            dropSpeed = 2
 				}
 			else{
-				with instance_create(0,0,DeleteAreYouSure){
-					caption = "Save File Corrupt!"
-					text = "This save cannot be loaded. Would you like to delete it?"
-					myEvent = other.r
-				}
+				var myDelete = instance_create(0,0,DeleteAreYouSure)
+				myDelete.caption = "Save File Corrupt!"
+				myDelete.text = "This save cannot be loaded. Would you like to delete it?"
+				myDelete.myEvent = r
 			}
         }
         if overTrash[r]{
-			with instance_create(0,0,DeleteAreYouSure){
-				myEvent = other.r
-			}
+			var myDelete = instance_create(0,0,DeleteAreYouSure)
+			myDelete.myEvent = r
         }
     }
 }
     
-if (buttonPos + 4) > ds_list_size(myGames)
+if (buttonPos + 3) > ds_list_size(myGames)
     buttonPos --
 if buttonPos < 0
     buttonPos = 0

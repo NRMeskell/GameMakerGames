@@ -73,8 +73,11 @@ function LoadPirate(argument0) {
 	    EquipItem(pirate, LoadItem(ini_read_string("equipment", "lhand", SaveItem(pirate.myLeftHand))))
     
 	//ship slots
-	newSlot = instance_find(ShipSlot, real(ini_read_string("ship", "slot", 2)))
-	newMainSlot = instance_find(ShipSlot, real(ini_read_string("ship", "mainSlot", 2)))
+	var newSlot = instance_find(ShipSlot, real(ini_read_string("ship", "slot", 2)))
+	while newSlot == noone or newSlot.occupied or newSlot.slotType == "storage" or newSlot.xSpot[Ship.shipType] == -50
+		newSlot = instance_find(ShipSlot, irandom(instance_number(ShipSlot)-1))
+	
+	var newMainSlot = newSlot
 
 	newSlot.myThing = pirate.id
 	pirate.mySlot.occupied = false

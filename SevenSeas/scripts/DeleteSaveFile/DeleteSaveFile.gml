@@ -8,19 +8,7 @@ function DeleteSaveFile(argument0) {
 	        file_text_write_string(saveFile, myFiles[i] + chr(10))
 	        }
 	    else{
-	        file_delete(argument0 + "-MapSeaVarsFile.txt")
-	        file_delete(argument0 + "-MapIslandFile.png")
-			file_delete(argument0 + "-MapSeenFile.png")
-	        file_delete(argument0 + "-MapLandingFile.txt")
-	        file_delete(argument0 + "-BuildingFile.ini")
-	        file_delete(argument0 + "-characters.ini")
-			file_delete(argument0 + "-gameStats.ini")
-			file_delete(argument0 + "-reputation.ini")
-	        for(p=0; p<10; p++)
-	            file_delete(argument0 + "-pirate" + string(p) + ".ini")
-	        file_delete(argument0 + "-ship.ini")
-	        file_delete(argument0 + "-MapGrid.ini")
-			file_delete(argument0 + "-MapDistanceFile.png")
+	        directory_destroy(argument0)
 	        }
 	    }
 

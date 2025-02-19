@@ -1,10 +1,10 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function AttackEvents(){
-	
+	/*
 	//boom stick explodes
 	if myType == "ranged"{
-		if irandom(20) == 0{
+		if irandom(100) == 0{
 			with ItemParent if itemName == "Hand Cannon"{	
 				ds_list_add(global.notificationList, "Gun Explodes!", "A weapon held by " + myPirate.firstName + " exploded, hurting the pirate and destroying the weapon!")
 				with myPirate
@@ -17,5 +17,5 @@ function AttackEvents(){
 				instance_destroy()
 			}
 		}
-	}
+	}*/
 }

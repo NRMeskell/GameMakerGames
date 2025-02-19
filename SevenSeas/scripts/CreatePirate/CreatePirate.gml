@@ -1,6 +1,6 @@
 /// @description Create Pirate
 function CreatePirate(argument0) {
-	if instance_number(Pirate) < Ship.shipMaxCrew[Ship.shipType]
+	if instance_number(Pirate) < global.shipMaxCrew[Ship.shipType]
 	    {
 	    myPirate = instance_create(0,0,Pirate)
     
@@ -11,8 +11,7 @@ function CreatePirate(argument0) {
 	            {
 	            mySlot = instance_find(ShipSlot, random(instance_number(ShipSlot)-1))
 	            } 
-			myPrevSlot = mySlot
-        
+
 	        mySlot.occupied = true
 	        mySlot.myThing = id
         

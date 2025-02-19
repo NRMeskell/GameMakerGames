@@ -1,5 +1,5 @@
 function SaveShip(argument0) {
-	ini_open(argument0 + "-ship.ini")
+	ini_open(argument0 + "\\ship.ini")
 
 	ini_write_string("vars", "type", Ship.shipType)
 	ini_write_string("vars", "maxHealth", Ship.maxHealth)

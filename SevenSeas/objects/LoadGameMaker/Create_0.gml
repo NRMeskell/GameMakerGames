@@ -2,13 +2,14 @@
 
 myGames = ds_list_create()
 files = ReadAllSaveFiles()
-for(i=0; i<array_length_1d(files); i++)
-    ds_list_insert(myGames, 0, files[i])
+for(var i=0; i<array_length(files); i++){
+    ds_list_insert(myGames, 0, [files[i], GetGameStats(files[i])])
+}
     
 
 buttonAlign = 110
-buttonStartY = 50
-buttonDistance = 35
+buttonStartY = 56
+buttonDistance = 50
 buttonNumber = 4
 buttonSplit = 178
 buttonPos = 0

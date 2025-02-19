@@ -1,18 +1,10 @@
 myLayer = 2
-
-xSpot[0] = 125
-ySpot[0] = 122
-
-xSpot[1] = 125
-ySpot[1] = 124
-
-xSpot[2] = xSpot[0]
-ySpot[2] = xSpot[0]
-
-xSpot[3] = xSpot[0]
-ySpot[3] = ySpot[0]
-
 slotType = "storage"
+
+for(var i=0; i<7; i++){
+	xSpot[i] = 125
+	ySpot[i] = 122
+}
 
 image_index = 2
 

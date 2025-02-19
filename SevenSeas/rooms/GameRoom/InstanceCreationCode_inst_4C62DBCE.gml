@@ -1,17 +1,14 @@
 myLayer = 2
-
-xSpot[0] = -50
-ySpot[0] = -50
-
-xSpot[1] = xSpot[0]
-ySpot[1] = ySpot[0]
-
-xSpot[2] = 150
-ySpot[2] = 232
-
-xSpot[3] = xSpot[0]
-ySpot[3] = ySpot[0]
-
 slotType = "storage"
+
+for(var i=0; i<7; i++){
+	if global.shipCargo[i] == 4{
+		xSpot[i] = -50
+		ySpot[i] = -50
+	} else{
+		xSpot[i] = 150
+		ySpot[i] = 232
+	}
+}
 
 image_index = 2

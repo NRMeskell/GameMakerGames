@@ -14,7 +14,7 @@ function LoadGameStats(argument0) {
 	    if instance_find(LandingSpot, i).visited == true
 	        locations ++
 
-	ini_open(argument0 + "-gameStats.ini")
+	ini_open(argument0 + "\\gameStats.ini")
 
 	GameStatsController.seasConquered = ini_write_real("stats", "seas", seas)
 	GameStatsController.goldCollected = ini_write_real("stats", "gold", CargoAmount(0))

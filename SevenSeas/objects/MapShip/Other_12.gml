@@ -13,6 +13,7 @@ if !global.inPort{
 }
 
 draw_sprite_ext(MapMarkerSpr, 0, moveX, moveY, 1, 1, 0, -1, 1)   
+
 ///Draw Self
 draw_self()
 if !global.inPort {

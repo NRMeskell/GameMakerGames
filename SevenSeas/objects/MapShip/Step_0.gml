@@ -11,6 +11,7 @@ if path_position = 1 and global.inPort = false{
 		MapCreator.mapClose = true
 		global.inPort = true
 		global.portType = targetPort.myIndex
+		Ship.portSelect = false
     
 		with EventDrawer
 		    instance_destroy()

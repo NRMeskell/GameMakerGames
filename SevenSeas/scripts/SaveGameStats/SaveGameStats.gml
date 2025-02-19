@@ -1,6 +1,6 @@
 function SaveGameStats(argument0) {
 	//update this game stats
-	ini_open(argument0 + "-gameStats.ini")
+	ini_open(argument0 + "\\gameStats.ini")
 
 	ini_write_real("stats", "seas", GameStatsController.seasConquered)
 	ini_write_real("stats", "gold", GameStatsController.goldCollected)

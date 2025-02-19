@@ -5,16 +5,6 @@ myShipTypes[1] = MerchantMediumSpr
 myShipTypes[2] = MerchantLargeSpr
 myShipTypes[3] = MerchantLargeSpr
 
-flagX[0] = 39 - sprite_get_xoffset(MerchantSmallSpr)
-flagX[1] = 52 - sprite_get_xoffset(MerchantMediumSpr)
-flagX[2] = 57 - sprite_get_xoffset(MerchantLargeSpr)
-flagX[3] = 57 - sprite_get_xoffset(MerchantLargeSpr)
-
-flagY[0] = 0 - sprite_get_yoffset(MerchantSmallSpr)
-flagY[1] = 4 - sprite_get_yoffset(MerchantMediumSpr)
-flagY[2] = 14 - sprite_get_yoffset(MerchantLargeSpr)
-flagY[3] = 14 - sprite_get_yoffset(MerchantLargeSpr)
-
 myShipHull = myShipTypes[global.seaLevel]
 
 color[0] = make_color_rgb(155,0,0)

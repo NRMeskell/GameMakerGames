@@ -7,7 +7,7 @@ function SailingAccident() {
 	    ds_list_add(buttonStats, 3, 6)
 	    ds_list_add(buttonRequires, global.eventDiff[3, 1], global.eventDiff[6, 0])
 	    ds_list_add(buttonCosts, 0, 0)
-	    ds_list_add(buttonText, "roughly bandage " + eventValue.firstName + "'s wounds" , "carefully heal " + eventValue.firstName + "'s wounds")
+	    ds_list_add(buttonText, "roughly bandage their wounds" , "carefully address their wounds")
         
 				global.allowSelect = false
 		
@@ -44,7 +44,6 @@ function SailingAccidentMed(){
 function SailingAccidentFail(){
 	if irandom(2){
 		ds_list_add(global.notificationList, "Blood Loss!", "The wounds are deep and the crew cannot stop the bleeding in time.")
-		eventValue.myHealth *= 0.75
 		eventValue.myHealth -= 20 + 10*global.seaLevel
 	}
 	else{

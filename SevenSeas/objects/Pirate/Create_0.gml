@@ -130,7 +130,7 @@ tagDistance = sprite_get_height(PirateListSpr)
 
 draw_set_font(global.PirateFont)
 nameTagStart = 20
-nameTagMin = nameTagStart + 60
+nameTagMin = nameTagStart + 45
 nameTagLength = nameTagMin
 //nameTagMax = sprite_get_width(PirateListSpr)
 

@@ -1,7 +1,7 @@
 /// @description Save Buildings
 function SaveBuildingTarget(argument0) {
 
-	ini_open(argument0 + "-BuildingFile.ini")
+	ini_open(argument0 + "\\BuildingFile.ini")
 	myLanding = MapShip.targetPort.id
 	for(n=0; n<3; n++){ 
 	    curB = myLanding.slotBuild[n]
