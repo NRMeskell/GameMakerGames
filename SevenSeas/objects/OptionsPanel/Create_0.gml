@@ -1,6 +1,10 @@
 /// @description vars
 mainMenuY = y + sprite_get_height(OptionsPanelSpr) + 14
 overMainMenu = false
+overOther = false
+
+
+tab = true
 
 xc = 0
 optionWidth = 65
@@ -12,62 +16,92 @@ buttonColor[1] = c_dkgray
 goAway = false
 slideSpeed = -10
 
-largeGap = 20
-smallGap = 14
+largeGap = 25
+smallGap = 16
 
-drawY = y + 25
-GAMEPLAYY = drawY					//GAME PLAY
-drawY += largeGap
-optionY[0] = drawY //DIFFICULTY
-drawY += smallGap
-optionY[1] = drawY //SAVING
-drawY += largeGap
+optionY = ds_map_create()
 
-SOUNDY = drawY						//SOUND
-drawY += largeGap + smallGap*1/2
-optionY[2] = drawY //Master
-drawY += smallGap*3/2
-optionY[3] = drawY //music
-drawY += smallGap*3/2
-optionY[4] = drawY //world
-drawY += largeGap
+//## GAMEPLAY TAB ##
+// Experience
+var drawY = y + 35
+experienceY = drawY; drawY += largeGap; //GAME PLAY
+optionY[? "sail"] = drawY;  drawY += smallGap; // Sail Rate
+optionY[? "combat"] = drawY;  drawY += smallGap; // Combat speed
+optionY[? "camp"] = drawY;  drawY += largeGap; // Skip camping
 
-GRAPHICSY = drawY
-drawY += largeGap
-optionY[5] = drawY
-drawY += smallGap
-optionY[6] = drawY
-drawY += smallGap
-optionY[7] = drawY
+// Difficulty
+drawY += smallGap; 
+diffY = drawY; drawY += largeGap; // DIFFICULTY
+optionY[? "enemy"] = drawY;  drawY += smallGap; // enemy AI
+optionY[? "saving"] = drawY;  drawY += smallGap; // saving
+optionY[? "loot"] = drawY;  drawY += smallGap; // looting rate
+optionY[? "event"] = drawY;  drawY += largeGap // event diff
+optionY[? "reset"] = drawY; // reset to normal difficulty
 
-for(var i=0; i<array_length(optionY); i++){
-	mouseOverOption[i] = false
+//## SETTINGS TAB ##
+// sound
+var drawY = y + 25
+soundY = drawY; drawY += largeGap + smallGap*1/2
+optionY[? "master"] = drawY; drawY += smallGap*3/2; //Master 
+optionY[? "music"] = drawY; drawY += smallGap*3/2; //Music
+optionY[? "menu"] = drawY; drawY += smallGap*3/2; //Menu
+optionY[? "game"] = drawY; drawY += largeGap;     //Game
+
+graphicsY = drawY; drawY += largeGap
+optionY[? "reso"] = drawY; drawY += smallGap // Resolution
+optionY[? "font"] = drawY; drawY += smallGap // Font
+optionY[? "light"] = drawY;					  // Lighting
+
+
+mouseOverOption = ds_map_create()
+for (var k = ds_map_find_first(optionY); !is_undefined(k); k = ds_map_find_next(optionY, k)) {
+	mouseOverOption[? k] = false
 }
 
 
 ///OPTION OPTIONS
+optionText = ds_map_create()
 
-optionText[0][0] = "CALM"
-optionText[0][1] = "NORMAL"
-optionText[0][2] = "FIERCE"
+optionText[? "sail"] = ["CALM", "QUICK", "RAPID"]
+optionText[? "combat"] = ["CALM", "QUICK", "RAPID"]
+optionText[? "camp"] = ["ANIMATED", "SKIPPED"]
 
-optionText[1][0] = "PORTS"
-optionText[1][1] = "SHELTERS"
-optionText[1][2] = "ALWAYS"
+optionText[? "enemy"] = ["SIMPLE", "NORMAL", "CHEATING"]
+optionText[? "saving"] = ["IN PORT", "AT LAND", "ALWAYS"]
+optionText[? "loot"] = ["SLIM", "NORMAL", "GENEROUS"]
+optionText[? "event"] = ["EASY", "NORMAL", "HARD"]
 
-optionText[2][0] = string(global.masterVolume) + "%"
-optionText[3][0] = string(global.musicVolume) + "%"
-optionText[4][0] = string(global.worldVolume) + "%"
+optionText[? "master"] = string(((200*global.masterVolume) div 5 * 5)) + "%"
+optionText[? "music"] = string(((200*global.musicVolume) div 5 * 5)) + "%"
+optionText[? "menu"] = string(((200*global.menuVolume) div 5 * 5)) + "%"
+optionText[? "game"] = string(((200*global.worldVolume) div 5 * 5)) + "%"
 
-optionText[5][0] = "NONE"
-optionText[5][1] = "PARTIAL"
-optionText[5][2] = "FULL"
 
-optionText[6][0] = "RETRO"
-optionText[6][1] = "MODERN"
+optionText[? "reso"] = ["4:3", "16:9", "21:9"]
+optionText[? "font"]= ["PLAIN", "PIRATE"]
+optionText[? "light"] = ["NONE", "PARTIAL", "FULL"]
 
-optionText[7][0] = "PLAIN"
-optionText[7][1] = "PIRATE"
+
+/// OPTION TABS
+optionTab = ds_map_create()
+
+optionTab[? "sail"] = false
+optionTab[? "camp"] = false
+optionTab[? "combat"] = false
+
+optionTab[? "enemy"] = false
+optionTab[? "saving"] = false
+optionTab[? "loot"] = false
+optionTab[? "event"] = false
+
+optionTab[? "master"] = true
+optionTab[? "music"] = true
+optionTab[? "menu"] = true
+optionTab[? "game"] = true
+
+optionTab[? "reso"] = true
+optionTab[? "font"] = true
+optionTab[? "light"] = true
 
 depth = -100000
 

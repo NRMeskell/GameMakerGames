@@ -16,8 +16,8 @@ if playerTurn and !instance_exists(Event)
             with Pirate
                 event_user(0)
                 
-            alarm[3] = room_speed/2
-            alarm[4] = room_speed*2
+            alarm[3] = (room_speed/2)/global.combatRate
+            alarm[4] = (room_speed*2)/global.combatRate
             
 			skipped = true
             with ActionParent

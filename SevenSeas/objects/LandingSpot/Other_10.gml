@@ -1,7 +1,6 @@
 /// @description Reset Fire
 // You can write your code in this editor
 
-
 //check to see if visited landing spot
 if sprite_index == StopSpr and image_index != 1{
 	// make random recovery

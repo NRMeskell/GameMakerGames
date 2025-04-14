@@ -3,7 +3,7 @@ function GetNewCargo(argument0) {
 	    {
 	    if AbleToStore(newThingType, newThingAmount)
 	        {
-	        StoreItem(newThingType, newThingAmount)
+	        StoreCargo(newThingType, newThingAmount)
         
 	        with DrawPort
 	            if selected

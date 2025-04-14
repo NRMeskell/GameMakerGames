@@ -12,7 +12,7 @@ if global.doTime and !global.inPort and MapShip.path_position < 0.95 and MapShip
 if eventTimer <= 0 
     {
 	event_user(0)
-    eventTimer = (random_range(1,2)*eventTimeAmount) div 1
+    eventTimer = ((random_range(1,2)*eventTimeAmount) div 1)/global.gameRate
     
     //calm events
     if global.weather == 1

@@ -9,8 +9,8 @@
   "name":"ShipFinishingAttack",
   "overriddenProperties":[],
   "parent":{
-    "name":"Melle",
-    "path":"folders/Objects/Combat/Attacks/Melle.yy",
+    "name":"Melee",
+    "path":"folders/Objects/Combat/Attacks/Melee.yy",
   },
   "parentObjectId":{
     "name":"RealAttack",

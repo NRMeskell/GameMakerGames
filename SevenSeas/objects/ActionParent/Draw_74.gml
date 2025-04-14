@@ -31,24 +31,19 @@ if point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), x 
     }
 else
     {
-    if canUse
-        {
-        drawColor = c_white
-        draw_sprite_ext(PlayerAttackFrameSpr, 0, x, y, 1, 1,0, c_white, 1)
-        draw_sprite_ext(PlayerAttackActionsSpr, spriteNumber, x, y, 1, 1, 0, c_white, 1)
-        }
-    else
-        {
-        drawColor = c_gray
-        draw_sprite_ext(PlayerAttackFrameSpr, 0, x,y, 1, 1, 0, c_gray, 1)
-        draw_sprite_ext(PlayerAttackActionsSpr, spriteNumber, x, y, 1, 1, 0, c_gray, 1)
-        }
+	var drawColor;
+    if !canUse drawColor = c_gray
+	else if warning drawColor = merge_color(c_gray, c_ltgray, 0.5)
+	else drawColor = c_white
+    
+	draw_sprite_ext(PlayerAttackFrameSpr, 0, x,y, 1, 1, 0, drawColor, 1)
+    draw_sprite_ext(PlayerAttackActionsSpr, spriteNumber, x, y, 1, 1, 0, drawColor, 1)
     }
 
 if selected
     {
     if myType == "melee"
-        draw_sprite(MelleSelectedSpr, animationNumber div 20, x, y)
+        draw_sprite(MeleeSelectedSpr, animationNumber div 20, x, y)
     if myType == "ranged"
         draw_sprite(RangedSelectedSpr, animationNumber div 20, x, y)
     if myType == "cannon"

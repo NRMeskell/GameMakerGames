@@ -1,6 +1,6 @@
 /// @description Animate
           
 //Add damage multiplier	
-shipTarget.allowMelleActions = false;
+shipTarget.allowMeleeActions = false;
 shipTarget.allowCannonActions = false;    
 

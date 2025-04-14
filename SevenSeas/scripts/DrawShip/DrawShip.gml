@@ -13,9 +13,9 @@ function DrawShip(argument0, argument1, argument2, argument3, argument4, argumen
 
 	var myFlagX = 0
 	var myFlagY = 0
-	rotation = round(argument4*4)/4
-	xPos = global.modernRes ? argument2 : argument2 div 1
-	yPos = global.modernRes ? argument3 : argument3 div 1
+	var rotation = round(argument4*4)/4
+	var xPos = argument2
+	var yPos = argument3
 
 	if argument0 == ShipSloopSpr{
 	    myFlagX = sprite_get_xoffset(argument0)-40

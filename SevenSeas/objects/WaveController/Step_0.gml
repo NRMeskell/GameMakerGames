@@ -17,6 +17,9 @@ if room != MainMenuRoom{
 	else if !global.doTime {
 		waveMovement *= 0.5
 	}
+	else{
+		waveMovement *= global.gameRate
+	}
 }
 	
 

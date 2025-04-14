@@ -18,8 +18,6 @@ onButtonRight = false
 onButtonLeft = false
 animationBorder = 20
 
-eventTimerLength = room_speed * 6
-eventTimer = eventTimerLength
 eventSpeed = 15
 eventFade = 5
 depth = -999999

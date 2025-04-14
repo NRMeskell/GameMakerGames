@@ -36,9 +36,9 @@ if instance_exists(CombatRunner){
 	event_user(3)
 	event_user(1)
 	if hasAnimation
-		alarm[0] = image_number/image_speed + room_speed*2
+		alarm[0] = (image_number/image_speed + room_speed*2)/global.combatRate
 	else
-		alarm[0] = room_speed
+		alarm[0] = room_speed/global.combatRate
     if instance_exists(CombatRunner){
 		if CombatRunner.closeRange
 			CombatRunner.currentDistance = CombatRunner.closeDistance

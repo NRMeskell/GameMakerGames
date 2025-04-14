@@ -18,12 +18,12 @@ function PirateLevelUp(argument0, argument1) {
 			slotType = "rigging"
 	}
 	
-	var melleActions = ds_list_create()
+	var meleeActions = ds_list_create()
 	var rangedActions = ds_list_create()
 	var cannonActions = ds_list_create()
 	var shipActions = ds_list_create()
 
-	ds_list_add(melleActions, HoldFastAction, HammerBlowAction, FinishingStabAction, ScoutingAction, HeavyBoardingAction, SwarmAction)  
+	ds_list_add(meleeActions, HoldFastAction, HammerBlowAction, FinishingStabAction, ScoutingAction, HeavyBoardingAction, SwarmAction)  
 	ds_list_add(rangedActions, BleedingShotAction, TargetedFireAction, CauseChaosAction, LookoutAction, BarrageAction, SniperAction) 
 	ds_list_add(cannonActions, ConcentratedFireAction, ShrapnelAction, ChainShotAction, WarningShotAction, CannonSprayAction, BroadsideAction) 
 	ds_list_add(shipActions, SurgeryAction, DisengageAction, EngageAction, SurpriseAction, OutmaneuverAction, RammingAction) 
@@ -41,7 +41,7 @@ function PirateLevelUp(argument0, argument1) {
 			if breakam > 100
 				break;
 	        //get random action
-	        myActionList = choose(melleActions, rangedActions, cannonActions, shipActions)
+	        myActionList = choose(meleeActions, rangedActions, cannonActions, shipActions)
 	        myNewAction = ds_list_find_value(myActionList, irandom(ds_list_size(myActionList)-1))
         
 	        //create action as refferance

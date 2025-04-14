@@ -1,5 +1,3 @@
-///TEMP
-
 var __b__;
 __b__ = action_if_variable(instance_exists(Defeat), false, 0);
 if __b__

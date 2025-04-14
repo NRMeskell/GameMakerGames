@@ -28,7 +28,7 @@ else
         }
     }
     
-rockRotation += rockSpeed * global.gameSpeed
+rockRotation += rockSpeed
 //waveHeight = sin(2*pi*(waveShipx)/(background_get_width(WaveShip)*1/(rockScale)))*12.5 + damage*5
 
 realRock = GetWaterAngle(middleWaves, drawX)

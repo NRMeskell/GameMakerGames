@@ -14,9 +14,9 @@ with CreatePirate(true)
 with Pirate
     event_user(4)
 
-StoreItem(0,20)
-StoreItem(6,10)
-StoreItem(2,10)
+StoreCargo(0,20)
+StoreCargo(6,10)
+StoreCargo(2,10)
 
 GameStatsController.goldCollected = 0
 

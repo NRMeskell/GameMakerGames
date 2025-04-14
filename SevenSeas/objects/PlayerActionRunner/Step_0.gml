@@ -5,17 +5,6 @@ if __b__
 ///Add Actions to action list
 
 //Check to see if availible
-//if myType = "melee" and CombatRunner.closeRange == false
-  //  canUseActions = false
-if myType = "cannon" and (global.totalCannonBonus == 0 or HasStored(2,1) == false or !Ship.allowCannonActions)
-    canUseActions = false
-else if myType = "ship" and (global.totalWheelBonus == 0 or !Ship.allowShipActions)
-    canUseActions = false
-else if myType = "melee" and (global.totalSwordBonus == 0 or !Ship.allowMelleActions)
-    canUseActions = false
-else if myType = "ranged" and (global.totalGunBonus == 0 or!Ship.allowRangedActions)
-    canUseActions = false
-
 if CombatRunner.alarm[1] > 0
 	canUseActions = false
 
@@ -31,7 +20,7 @@ with ActionParent
 
 scrollSpeed = 8
 
-if (canUseActions and point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), xMin, yMin, xMax, yMax) or actionSelected) and CombatRunner.playerTurn and !instance_exists(Event) and __view_get( e__VW.XView, 0 ) == 0
+if (point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), xMin, yMin, xMax, yMax) or actionSelected) and CombatRunner.playerTurn and !instance_exists(Event) and __view_get( e__VW.XView, 0 ) == 0
     {
     //Update List
     if refreshed = false
@@ -68,7 +57,7 @@ if (canUseActions and point_in_rectangle(window_view_mouse_get_x(0), window_view
                 {
                 x = other.x
                 y = other.y
-                canUse = other.canUseActions
+				event_user(3)
                 }
         }
     }
@@ -88,6 +77,4 @@ else
         xMax -= scrollSpeed
     refreshed = false
     }
-
-
 }

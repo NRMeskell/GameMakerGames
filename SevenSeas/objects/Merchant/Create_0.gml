@@ -25,7 +25,7 @@ image_index = 1
 enemyLevel = 1
 
 myBasicActions = ds_list_create()
-ds_list_add(myBasicActions, BasicMelleAction, BasicRangedAction, BasicShipAction)
+ds_list_add(myBasicActions, BasicMeleeAction, BasicRangedAction, BasicShipAction)
 
 
 //Crew

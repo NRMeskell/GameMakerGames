@@ -1,8 +1,6 @@
 function LoadMapSurface(argument0) {
-	MapCreator.sprite_index = sprite_add(argument0 + "\\MapIslandFile.png", 0, true, false, 0, 0)
+	MapCreator.sprite_index = sprite_add(argument0 + "\\MapIslandFile.png", 0, false, false, 0, 0)
 	MapCreator.distanceBackground = background_add(argument0 + "\\MapDistanceFile.png", false, false)
-	
-	MapCreator.x = MapCreator.mapStart 
 		
 	tempGrid = ds_grid_create(MapCreator.mapSizeX div MapCreator.gridSize, MapCreator.mapSizeY div MapCreator.gridSize)
 	

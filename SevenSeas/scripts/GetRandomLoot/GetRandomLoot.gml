@@ -1,7 +1,6 @@
 function GetRandomLoot(argument0, argument1, argument2) {
 	//Get Loot
 	itemNames = ds_list_create()
-	itemLevel = irandom(global.seaLevel div 2)
 	itemList = ds_list_create()
 	lootList = [3]
 	//Generate Loot
@@ -20,6 +19,7 @@ function GetRandomLoot(argument0, argument1, argument2) {
 				
 	    if randomVal < 0
 	        {
+			itemLevel = irandom(global.seaLevel div 2)
 	        type = choose(1,1,1,2,2,3,3,0,4)
 	        if type == 0 
 	            newItem = GenerateHatItem(min(0, itemLevel))
@@ -46,7 +46,7 @@ function GetRandomLoot(argument0, argument1, argument2) {
 	        with newItem
 	            {        
 	            itemNumber = other.randomVal
-	            amount = floor((irandom_range(3,5) + 2*(itemNumber==0) + (2*(global.seaLevel)))/ItemRunner.cargoCost[itemNumber]) + 1 + irandom(global.seaLevel)
+	            amount = round((irandom_range(2,4)+3*(global.seaLevel+(itemNumber==0)))/ItemRunner.cargoCost[itemNumber]) + global.lootDrop*2
 	            cost = 0     
 	            selected = false
 	            }

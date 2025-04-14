@@ -34,7 +34,7 @@ Converted description /// @description clean up the mess
 Converting GML script: ${project_dir}\scripts\AbleToStore\AbleToStore.gml
 Converted string - line 8: 'storage' -> "storage"
 
-Converting GML script: ${project_dir}\scripts\StoreItem\StoreItem.gml
+Converting GML script: ${project_dir}\scripts\StoreCargo\StoreCargo.gml
 Converted string - line 45: 'storage' -> "storage"
 
 Converting GML script: ${project_dir}\scripts\RestingCrew\RestingCrew.gml
@@ -1658,10 +1658,10 @@ Converted description /// @description vars
 Converting GML script: ${project_dir}\objects\BlankAction\Other_12.gml
 Converted description /// @description update Stats
 
-Converting GML script: ${project_dir}\objects\BasicMelleAction\Create_0.gml
+Converting GML script: ${project_dir}\objects\BasicMeleeAction\Create_0.gml
 Converted description /// @description vars
 
-Converting GML script: ${project_dir}\objects\BasicMelleAction\Other_12.gml
+Converting GML script: ${project_dir}\objects\BasicMeleeAction\Other_12.gml
 Converted description /// @description Update info
 
 Converting GML script: ${project_dir}\objects\HeavyBoardingAction\Create_0.gml

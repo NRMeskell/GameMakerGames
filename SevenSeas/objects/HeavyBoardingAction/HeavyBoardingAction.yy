@@ -9,8 +9,8 @@
   "name":"HeavyBoardingAction",
   "overriddenProperties":[],
   "parent":{
-    "name":"MelleActions",
-    "path":"folders/Objects/Combat/ActionButtons/MelleActions.yy",
+    "name":"MeleeActions",
+    "path":"folders/Objects/Combat/ActionButtons/MeleeActions.yy",
   },
   "parentObjectId":{
     "name":"ActionParent",

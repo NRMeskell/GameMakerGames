@@ -114,7 +114,7 @@ function __global_object_depths() {
 	global.__objectDepths[106] = -8; // ActionParent
 	global.__objectDepths[107] = 0; // LostEyeAction
 	global.__objectDepths[108] = 0; // BlankAction
-	global.__objectDepths[109] = 0; // BasicMelleAction
+	global.__objectDepths[109] = 0; // BasicMeleeAction
 	global.__objectDepths[110] = 0; // HeavyBoardingAction
 	global.__objectDepths[111] = 0; // SwarmAction
 	global.__objectDepths[112] = 0; // HammerBlowAction
@@ -312,7 +312,7 @@ function __global_object_depths() {
 	global.__objectNames[106] = "ActionParent";
 	global.__objectNames[107] = "LostEyeAction";
 	global.__objectNames[108] = "BlankAction";
-	global.__objectNames[109] = "BasicMelleAction";
+	global.__objectNames[109] = "BasicMeleeAction";
 	global.__objectNames[110] = "HeavyBoardingAction";
 	global.__objectNames[111] = "SwarmAction";
 	global.__objectNames[112] = "HammerBlowAction";

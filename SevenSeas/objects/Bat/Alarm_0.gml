@@ -15,7 +15,7 @@ if irandom(1) or image_alpha = 1
 if y < -20
     instance_destroy()
     
-alarm[0] = room_speed/6
+alarm[0] = room_speed/(6)
 
 
 

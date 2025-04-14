@@ -10,11 +10,13 @@
 function DrawWithLighting(argument0, argument1, argument2, argument3, argument4, argument5, argument6, argument7) {
 
 	//layers: sky, mountains, backship, frontship/backport, frontport
-
+	var relX = window_get_width()/room_width
+	var relY = window_get_height()/room_height
+	
 	sprite = argument0
 	index = argument1 div 1
-	xval = argument2
-	yval = argument3
+	xval = ((argument2*relX) div 1)/relX
+	yval = ((argument3*relY) div 1)/relY
 	rot = argument4
 	color = argument5
 	alpha = argument6

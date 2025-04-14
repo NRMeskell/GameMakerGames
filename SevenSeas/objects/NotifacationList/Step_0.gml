@@ -12,12 +12,11 @@ with Pirate
 
 if ds_list_size(global.notificationList) > 0
     {
-    if eventTimer = eventTimerLength 
+    if drawY >= room_height*1.25 
         {   
         audio_play_sound(SlidingClosedSnd, 1, false)
         }
-    eventTimer -= 1
-    
+
     captionSize = string_height_ext(string_hash_to_newline(ds_list_find_value(global.notificationList, 0)), 14, sprite_get_width(NotifacationSpr)-20)*1.2
     textSize = string_height_ext(string_hash_to_newline(ds_list_find_value(global.notificationList, 1)), 12, sprite_get_width(NotifacationSpr)-20);
     
@@ -25,7 +24,7 @@ if ds_list_size(global.notificationList) > 0
     
     onButton = !instance_exists(DumpItem) and point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), drawX - sprite_get_width(ButtonSpr)/3, drawY - sprite_get_height(ButtonSpr)/2.5 + (notificationSize)/2 + 20, drawX + sprite_get_width(ButtonSpr)/3, drawY + sprite_get_height(ButtonSpr)/2.5 + (notificationSize)/2 + 20)
     
-    if (mouse_check_button_pressed(mb_left) and onButton)// or eventTimer < 1
+    if (mouse_check_button_pressed(mb_left) and onButton)
         {
         closed = true
         audio_play_sound(SlidingOpenSnd, 1, false)
@@ -36,8 +35,6 @@ if ds_list_size(global.notificationList) > 0
         drawY -= min(eventSpeed, point_distance(x, drawY, x, room_height/2)/eventFade + 1)
         }
     }
-else
-    eventTimer = eventTimerLength
     
 if closed
     {
@@ -46,7 +43,6 @@ if closed
         {
         ds_list_delete(global.notificationList, 0)
         ds_list_delete(global.notificationList, 0)
-        eventTimer = eventTimerLength
         closed = false
         }
     }

@@ -4,7 +4,7 @@ if changeZones == true
     {
     if alarm[4] > 0
         {
-        actualMoveSpeed = CombatRunner.closeDistance/((room_speed*2)/moveSpeed)
+        var actualMoveSpeed = CombatRunner.closeDistance/((room_speed*2)/moveSpeed)
         
         if CombatRunner.closeRange
             {

@@ -1,1 +1,1 @@
-SwitchShips(irandom(3))
+Ambushed()

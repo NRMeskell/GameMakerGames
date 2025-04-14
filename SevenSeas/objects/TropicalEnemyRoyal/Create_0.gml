@@ -18,7 +18,7 @@ enemyLevel = 2
 
 myBasicActions = ds_list_create()
 
-ds_list_add(myBasicActions, BasicMelleAction, BasicRangedAction, BasicCannonAction, BasicShipAction)
+ds_list_add(myBasicActions, BasicMeleeAction, BasicRangedAction, BasicCannonAction, BasicShipAction)
 
 //Create Crew
 instance_create(0,0,EnemyFrogCaptain)

@@ -12,8 +12,8 @@
   "duration":0.0,
   "name":"ShieldsSnd",
   "parent":{
-    "name":"Melle",
-    "path":"folders/Sounds/game/Combat/Melle.yy",
+    "name":"Melee",
+    "path":"folders/Sounds/game/Combat/Melee.yy",
   },
   "preload":true,
   "resourceType":"GMSound",

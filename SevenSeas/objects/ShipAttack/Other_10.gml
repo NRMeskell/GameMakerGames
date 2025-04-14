@@ -5,6 +5,7 @@ shipTarget = CombatRunner
 myCrewTarget = Pirate
 myShipTarget = Ship
 
+moveSpeed = moveSpeed*global.combatRate
 isClose = CombatRunner.closeRange
 
 singleAttack = true

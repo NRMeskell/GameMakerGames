@@ -1,6 +1,6 @@
 /// @description Gameplay Vars
 
-if global.modernRes
+if global.resolution
 	sceneBackground = surface_create(display_get_width(), display_get_height())
 else
 	sceneBackground = surface_create(room_width, room_height)
@@ -28,8 +28,6 @@ realWidth = 25
 realHeight = 25
 
 hitAmount = 0
-
-global.gameSpeed = 1
 
 global.totalWheelBonus = 0
 global.totalSailBonus = 0
@@ -234,9 +232,9 @@ global.doubleClickTimer = 0
 doubleClickX = 0
 doubleClickY = 0 
 
-myStoreItemType = -1 
+myStoreCargoType = -1 
 
 allowShipActions = true
-allowMelleActions = true
+allowMeleeActions = true
 allowRangedActions = true
 allowCannonActions = true

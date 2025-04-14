@@ -6,7 +6,7 @@ if !instance_exists(Event) and !instance_exists(Store) and ds_list_size(global.n
 }
 
 if floatAway and !instance_exists(Store){
-	placeX -= (Ship.middleWaves.waveSpeeds[0]/2)*!global.mapPause*global.gameSpeed
+	placeX -= (Ship.middleWaves.waveSpeeds[0]/2)*!global.mapPause*global.gameRate
 }
 
 if x < -1000 or y < -100 or x > room_width + 100 or y > room_height + 100

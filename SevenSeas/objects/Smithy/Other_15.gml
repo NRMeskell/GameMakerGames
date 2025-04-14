@@ -8,7 +8,7 @@ for(i=0; i<swordNumber; i++)
     while !foundSwordItem
         {
         newSword = GenerateHandItem(choose(0,sign(irandom(global.seaLevel))))
-        if ds_list_find_index(ItemRunner.melleList, newSword.itemNumber) != -1
+        if ds_list_find_index(ItemRunner.meleeList, newSword.itemNumber) != -1
             foundSwordItem = true
         }
         
@@ -34,7 +34,7 @@ for(i=0; i<gunNumber; i++)
     while !foundGunItem
         {
         newGun = GenerateHandItem(choose(0,sign(irandom(global.seaLevel))))
-        if ds_list_find_index(ItemRunner.melleList, newGun.itemNumber) == -1 and ds_list_find_index(ItemRunner.twoHandedList, newGun.itemNumber) == -1
+        if ds_list_find_index(ItemRunner.meleeList, newGun.itemNumber) == -1 and ds_list_find_index(ItemRunner.twoHandedList, newGun.itemNumber) == -1
             foundGunItem = true
         }
         
@@ -60,7 +60,7 @@ for(i=0; i<rifleNumber; i++)
     while !foundGunItem
         {
         newGun = GenerateHandItem(choose(0,sign(irandom(global.seaLevel))))
-        if ds_list_find_index(ItemRunner.melleList, newGun.itemNumber) == -1 and ds_list_find_index(ItemRunner.twoHandedList, newGun.itemNumber) != -1
+        if ds_list_find_index(ItemRunner.meleeList, newGun.itemNumber) == -1 and ds_list_find_index(ItemRunner.twoHandedList, newGun.itemNumber) != -1
             foundGunItem = true
         }
         

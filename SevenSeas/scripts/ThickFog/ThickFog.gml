@@ -22,8 +22,7 @@ function ThickFogArrive() {
 }
 
 function ThickFogWait() {
-	with instance_find(FogEvent, 0)
-		alarm[0] = room_speed*2
+	Clock.eventTimeLeft = room_speed*2
 	with Event
 		drawX = -1000
 }

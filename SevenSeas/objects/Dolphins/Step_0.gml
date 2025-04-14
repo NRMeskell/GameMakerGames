@@ -17,5 +17,5 @@ if image_angle < -180
     }
     
 if floatAway
-    y += 2
+    y += 2*global.gameRate
 

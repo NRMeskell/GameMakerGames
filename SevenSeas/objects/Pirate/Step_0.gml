@@ -27,9 +27,8 @@ if selected = true and !instance_exists(Event) and ds_list_size(global.notificat
                             {
                             event_user(1)
                             canEndTurn = true
+							piratesMoved = true
                             }
-                        with PlayerActionRunner
-                            canUseActions = false
                         }
                     
                     myThing = other.id

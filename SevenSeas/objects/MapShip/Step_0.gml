@@ -84,7 +84,6 @@ if path_position = 1 and global.inPort = false{
 				
 				var tavernSlot = choose(0,1,2)
 				var placesLeft = [Smithy, Tailors, TrinketShop]
-				var getType;
 	            for(var i=0; i<slotNumber; i++) {
 					var slotNum = irandom(array_length(placesLeft)-1)
 					var slotObject = array_get(placesLeft, slotNum)
@@ -129,7 +128,7 @@ if !global.doTime{
     }
 else 
     {
-    sailSpeed = normalSailSpeed
+    sailSpeed = normalSailSpeed * global.gameRate
     if global.weather = 0 or global.weather = 2
         sailSpeed = normalSailSpeed*0.25
     
@@ -141,8 +140,7 @@ else
         if myPet.itemPower == "speed bonus 10" and mySlot.slotType == "wheel"
             other.sailSpeed *= 1.10
 			
-	//sailSpeed *= 1+(sailSpeedModifier*global.totalRiggingBonus)
-    path_speed = sailSpeed
+	path_speed = sailSpeed
 }
 
 viewDistance = normalViewDistance//*(1+viewDistanceModifier*global.totalWheelBonus)

@@ -2,12 +2,12 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
 /// @function DrawPirateSurface(surface, x, y)
-function DrawPirateSurface(surfaceTarget, argument0, argument1){
-	draw_surface_ext(surfaceTarget, argument0+1, argument1, 1, 1, 0, c_black, 0.5)
-	draw_surface_ext(surfaceTarget, argument0-1, argument1, 1, 1, 0, c_black, 0.5)
-	draw_surface_ext(surfaceTarget, argument0, argument1+1, 1, 1, 0, c_black, 0.5)
-	draw_surface_ext(surfaceTarget, argument0, argument1-1, 1, 1, 0, c_black, 0.5)
-	draw_surface(surfaceTarget, argument0, argument1)
+function DrawPirateSurface(surfaceTarget, varX, varY){
+	draw_surface_ext(surfaceTarget, varX+1, varY, 1, 1, 0, c_black, 0.5)
+	draw_surface_ext(surfaceTarget, varX-1, varY, 1, 1, 0, c_black, 0.5)
+	draw_surface_ext(surfaceTarget, varX, varY+1, 1, 1, 0, c_black, 0.5)
+	draw_surface_ext(surfaceTarget, varX, varY-1, 1, 1, 0, c_black, 0.5)
+	draw_surface(surfaceTarget, varX, varY)
 }
 
 /// @function DrawItem(sprite, index, color, x, y, left, top, width, height)

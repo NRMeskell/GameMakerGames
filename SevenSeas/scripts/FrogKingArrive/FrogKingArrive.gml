@@ -99,14 +99,14 @@ function FrogKingRequest() {
 			//reset islands
 			event_user(0)
 			targetPort = instance_find(LandingSpot, 0)
-			FindPath(sailPath, x, y, targetPort.checkX, targetPort.checkY)
+			FindPath(sailPath, x, y, x, y)
 			if path_get_number(sailPath) > 0 {                    
 			    toPort = true
 
 			    global.portType = targetPort.myIndex
 			    global.mapPause = false
                 
-			    path_start(sailPath, sailSpeed, path_action_stop, false)
+			    path_start(sailPath, 0, path_action_stop, false)
 			    }
 			//create new islands
 			event_user(1)

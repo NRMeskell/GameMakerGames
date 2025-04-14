@@ -42,7 +42,7 @@ pirateEventText = PirateTalkTranslator(eventText, myPirate)
     draw_set_font(global.LargePirateFont)
     draw_set_color(c_green)
     draw_text(drawX - 38, drawY + buttonCenter, string_hash_to_newline("aye"))
-    draw_set_color(c_red)
+    draw_set_color(merge_color(c_red, c_black, 0.1))
     draw_text(drawX + 38, drawY + buttonCenter, string_hash_to_newline("nay")) 
     
     draw_set_color(make_color_rgb(193, 147, 1))

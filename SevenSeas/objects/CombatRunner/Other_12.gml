@@ -49,19 +49,19 @@ for(i=0;i<4;i++)
 ///Create Player Actions
 
 actionList = ds_list_create()
-turnCounter = 0
+piratesMoved = false
 playerTurn = true
 stunned = false
 hasPlayerAttack = false
 hasEnemyAttack = false
 
-basicMelleAttack = instance_create(-100,-100,BasicMelleAction)
+basicMeleeAttack = instance_create(-100,-100,BasicMeleeAction)
 basicRangedAttack = instance_create(-100,-100,BasicRangedAction)
 basicCannonAttack = instance_create(-100,-100,BasicCannonAction)
 basicShipChange = instance_create(-100,-100,BasicShipAction)
 basicShipRun = instance_create(-100,-100, BasicRunAction)
 
-basicMelleAttack.myPirate = Ship
+basicMeleeAttack.myPirate = Ship
 basicRangedAttack.myPirate = Ship
 basicCannonAttack.myPirate = Ship
 basicShipChange.myPirate = Ship
@@ -95,6 +95,7 @@ for(i=0; i<instance_number(Pirate); i++)
 
 enemyActionList = ds_list_create()
 desireList = ds_list_create()
+priorityList = ds_list_create()
 possibleEnemyActions = ds_list_create()
 
 for(i=0; i<ds_list_size(myBasicActions); i++)
@@ -148,7 +149,7 @@ averagePlayerDam = 0
 averageEnemyDam = 0
 
 allowShipActions = true
-allowMelleActions = true
+allowMeleeActions = true
 allowRangedActions = true
 allowCannonActions = true
 
@@ -164,6 +165,20 @@ with Pirate
     UpdateMorale(1, global.FEARSOME)
     
 overAction[0] = false
+
+
+/// Adjust Ship Power Levels
+// Enemies get 20% more health per level
+// Enemies have a 20% change per level to have an extra stat
+with Enemy{
+	myHealth = (myHealth * (0.80 + 0.20*global.enemyDiff)) div 1
+	if random(1) < 0.2*global.enemyDiff{
+		ds_list_add(myStats, ds_list_find_value(myStats, irandom(ds_list_size(myStats)-1)))
+		if ds_list_find_value(myStats, ds_list_size(myStats)-1) == 5
+			ds_list_replace(myStats, ds_list_size(myStats)-1, choose(0,1))
+	}
+}
+myHealth =  (myHealth * (0.80 + 0.20*global.enemyDiff)) div 1
 
 ///Begin Game
 event_user(0)

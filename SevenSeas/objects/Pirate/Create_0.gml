@@ -18,7 +18,7 @@ moraleXLow = 50;
 moraleXHigh = 124;
 moraleY = 137;
 moraleXWidth = moraleXHigh-moraleXLow;
-
+mySlot = undefined
 
 //NOTES
 

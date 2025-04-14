@@ -2,5 +2,5 @@
 
 name = "Rapid Recovery"
 
-description = "all used actions become available a round sooner. deal 150% damage next turn."
+description = "all used actions become available a round sooner. crew heal " + string(round(5*global.totalMedicalBonus)) + "%"
 

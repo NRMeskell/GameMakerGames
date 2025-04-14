@@ -1,15 +1,19 @@
-/// @description @description DrawActionInfo(action, x, y, draw required slots, attacker, <optional> priority)
+/// @description @description DrawActionInfo(action, x, y, draw required slots, attacker, priority, allowed)
 /// @param action
 /// @param  x
 /// @param  y
 /// @param  draw required slots
 /// @param  attacker
-/// @param  <optional> priority
-function DrawActionInfo(argument0, argument1, argument2, argument3, argument4, argument5) {
+/// @param  priority
+/// @param  allowed
+function DrawActionInfo(argument0, argument1, argument2, argument3, argument4, argument5, argument6) {
 	if argument0 != LostEyeAction{
 	myActionDrawer = instance_create(-100, -200, argument0)
 	drawInfoX = argument1
 	drawInfoY = argument2
+	if argument6 == undefined
+		argument6 = true
+	
 	with myActionDrawer
 	    {
 	    pirateDrawTest = true
@@ -22,13 +26,13 @@ function DrawActionInfo(argument0, argument1, argument2, argument3, argument4, a
 	if argument4 == "pirate"
 	    {
 	    if myActionDrawer.myType = "melee"
-	        draw_sprite(ActionInfoSpr, 0, drawInfoX, drawInfoY)
+	        draw_sprite(ActionInfoSpr, 0+4*!argument6, drawInfoX, drawInfoY)
 	    if myActionDrawer.myType = "ranged"
-	        draw_sprite(ActionInfoSpr, 1, drawInfoX, drawInfoY)
+	        draw_sprite(ActionInfoSpr, 1+4*!argument6, drawInfoX, drawInfoY)
 	    if myActionDrawer.myType = "cannon"
-	        draw_sprite(ActionInfoSpr, 2, drawInfoX, drawInfoY)
+	        draw_sprite(ActionInfoSpr, 2+4*!argument6, drawInfoX, drawInfoY)
 	    if myActionDrawer.myType = "ship"
-	        draw_sprite(ActionInfoSpr, 3, drawInfoX, drawInfoY)
+	        draw_sprite(ActionInfoSpr, 3+4*!argument6, drawInfoX, drawInfoY)
 	    }
 	else
 	    {

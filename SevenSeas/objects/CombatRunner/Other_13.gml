@@ -10,33 +10,22 @@ if alarm[0] != -1 or instance_exists(Defeat){
 
 ///Run Turn
 
-maxPri = -1
+var maxPri = -1
 firstAttack = noone
 with RealAttack{
-    if priority >= other.maxPri{
-        other.maxPri = priority
+    if priority >= maxPri{
+        maxPri = priority
         other.firstAttack = id
         }
     }
 
 if firstAttack != noone{
+	with firstAttack.myButton
+		event_user(3)
+		
     with firstAttack
-        {
-        skip = false
-		if (!instance_exists(myPirate))
-			skip = true;
-        else if (actionType == "cannon" and CombatRunner.closeRange)
-            skip = true;
-        else if (actionType == "melee" and !CombatRunner.closeRange)
-            skip = true;
-        else if (actionType == "ship" and ((myPirate.object_index == Enemy or myPirate.object_index == CombatRunner) and CombatRunner.myStats[3] == 0))
-            skip = true;
-		else if (actionType == "ship" and global.totalWheelBonus == 0)
-            skip = true;
-		else if (myPirate.object_index != CombatRunner and myPirate.object_index != Ship) and myPirate.stunned == true
-			skip = true;
-            
-        if !skip{
+        {	
+        if myButton.canUse and !myButton.warning{
             alarm[2] = 5
             }
         else{

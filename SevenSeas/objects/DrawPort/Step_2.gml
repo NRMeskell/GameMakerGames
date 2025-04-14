@@ -24,7 +24,7 @@ if !overButton
 else
     overButton = point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), x-sprite_get_width(LandMenuSpr)/2, y-sprite_get_height(LandMenuSpr), x+sprite_get_width(LandMenuSpr)/2, y)
 
-if Clock.alarm[2] > 0 or global.pirateSelected or ds_list_size(ItemRunner.floatingItems) > 0 or  instance_exists(Store) or instance_exists(Event) or ds_list_size(global.notificationList) > 0// or sprite_index = CampFireDyingSpr
+if Clock.eventTimeLeft > 0 or global.pirateSelected or ds_list_size(ItemRunner.floatingItems) > 0 or  instance_exists(Store) or instance_exists(Event) or ds_list_size(global.notificationList) > 0// or sprite_index = CampFireDyingSpr
     overButton = false
 
 ///Press Button
@@ -40,7 +40,7 @@ for(i=0; i<buttonNumber; i++)
 			audio_stop_sound(CampFireSnd)
 			
 			with Clock{
-				alarm[2] = campTime
+				eventTimeLeft = campTime
 				}
 			
 			alarm[0] = 1

@@ -23,7 +23,7 @@ function SkelRaftPirate() {
 function SkelRaftPirateFood() {
 	//interrogate
 	ds_list_add(global.notificationList, "Food thrown back!", "The sailor throws the food back, claiming that they won't need it.")
-	StoreItem(4, 1)
+	StoreCargo(4, 1)
     
 	script_execute(closeEventCode)
 }

@@ -4,7 +4,7 @@
 windowHeight = min(display_get_height(), display_get_width()*room_height/room_width)
 windowWidth = windowHeight*(room_width/room_height)
 
-if global.modernRes
+if global.resolution
 	surface_resize(application_surface, windowWidth, windowHeight)
 else
 	surface_resize(application_surface, room_width, room_height)

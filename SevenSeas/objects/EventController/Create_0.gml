@@ -1,7 +1,7 @@
 /// @description Event codes
 
-eventTimeAmount = room_speed*5
-eventTimer = (random_range(1,2)*eventTimeAmount) div 1
+eventTimeAmount = room_speed*2.5
+eventTimer = ((random_range(1,2)*eventTimeAmount) div 1)/global.gameRate
 //global.healTimer = room_speed
 
 //Normal Events

@@ -16,7 +16,7 @@ function FrogsArrive() {
 	    global.moraleBoost = "Frogs"
 	    myShip = instance_create(0,0,ShipEvent)  
 	    with myShip {
-	        myShipType = choose(TropicalEnemy)
+	        myShipType = TropicalEnemy
 	        if myShipType == TropicalEnemy
 	            myShipHull = TropicalShipSpr
 	        else

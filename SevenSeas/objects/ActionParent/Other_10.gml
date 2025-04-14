@@ -1,5 +1,9 @@
 /// @description Create Basics
 
+canUse = true
+warning = false
+requireText = ""
+
 enemyAction = false
 myAttack = noone
 
@@ -23,7 +27,7 @@ animationNumber = 0
 image_speed = 0
 selected = false
 
-canUse = true
+myType = ""
 waitLeft = 0
 needsTarget = false
 myTarget = noone
@@ -32,8 +36,6 @@ myPirate = noone
 pirateDrawTest = false
 zoneRequired = -1
 drawInfo = false
-petAction = false
-canUse = true
 priority = -1
 changeZones = false
 

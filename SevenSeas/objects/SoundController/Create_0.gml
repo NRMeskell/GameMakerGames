@@ -1,5 +1,7 @@
 /// @description Global sea types
 
+audio_master_gain(10)
+
 global.seaNames[0] = "pirate cove"
 global.seaNames[1] = "tropical islands"
 global.seaNames[2] = "shipwreck shores"
@@ -8,7 +10,12 @@ global.seaNames[4] = "volcanic islands"
 global.seaNames[5] = "sea of monsters"
 global.seaNames[6] = "royal waters"
 
+
 ///Audio Vars
+global.masterVolume = 1
+global.musicVolume = 1
+global.menuVolume = 1
+global.worldVolume = 1
 
 musicVolumeBase = 1
 gameVolumeBase = 0.6

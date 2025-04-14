@@ -21,12 +21,12 @@ function GenerateHandItem(argument0) {
         
 	        if itemType != 0
 	            {
-	            if ds_list_find_index(ItemRunner.melleList, itemNumber) != -1
+	            if ds_list_find_index(ItemRunner.meleeList, itemNumber) != -1
 	                foundItemType = true
 	            }
 	        else
 	            {
-	            if ds_list_find_index(ItemRunner.melleList, itemNumber) == -1
+	            if ds_list_find_index(ItemRunner.meleeList, itemNumber) == -1
 	                foundItemType = true
 	            }
 	        }
@@ -42,7 +42,7 @@ function GenerateHandItem(argument0) {
 	        twoHanded = true
 	        bonus[1] = bonusNum + 1
 	        }
-	    else if ds_list_find_index(ItemRunner.melleList, itemNumber) != -1
+	    else if ds_list_find_index(ItemRunner.meleeList, itemNumber) != -1
 	        {
 	        bonus[0] = bonusNum
 	        }

@@ -3,10 +3,10 @@
 //number of pirates per level: 3, 4, 6
 
     
-levelDiff[0] = 1 + global.gameDiff
-levelDiff[1] = 2 + global.gameDiff
-levelDiff[2] = 3 + global.gameDiff
-levelDiff[3] = 4 + global.gameDiff
+levelDiff[0] = 1 + global.eventDiffBase
+levelDiff[1] = 2 + global.eventDiffBase
+levelDiff[2] = 3 + global.eventDiffBase
+levelDiff[3] = 4 + global.eventDiffBase
 
 //rigging
 global.eventDiff[3, 0] = (sqrt(global.seaLevel+1) * levelDiff[0])

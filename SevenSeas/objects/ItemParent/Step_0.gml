@@ -20,7 +20,7 @@ if mouse_check_button_pressed(mb_left) and !instance_exists(DumpItem)
 	            ds_list_delete(ItemRunner.floatingItems, ds_list_find_index(ItemRunner.floatingItems, id))
 	        if AbleToStore(1, 1){
 				audio_play_sound(StoreBuySnd, 1, false)
-				StoreItem(1, 1)
+				StoreCargo(1, 1)
 			}
 			else
 				audio_play_sound(CloseMenuSound, 1, false)

@@ -5,13 +5,13 @@
 event_inherited();
 
 if sailing and alarm[0] > 0{
-	alarm[0] = room_speed + room_speed*success
+	alarm[0] = (room_speed + room_speed*success)
 	sailing = false
 	sailingSail = true
 }
 
 if sailingSail{	
-	placeX -= (Ship.middleWaves.waveSpeeds[0])*!global.mapPause*global.gameSpeed
+	placeX -= (Ship.middleWaves.waveSpeeds[0])*!global.mapPause
 	Ship.middleWaves.waveOffsets[0] += Ship.middleWaves.waveSpeeds[0]
 	Ship.frontWaves.waveOffsets[0] += Ship.frontWaves.waveSpeeds[0]
 	Ship.backWaves.waveOffsets[0] += Ship.backWaves.waveSpeeds[0]

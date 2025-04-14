@@ -19,6 +19,8 @@ if view_current = 1{
 	
 	draw_background_part(seaBackground, background_get_width(seaBackground)-seaScroll, 0, seaScroll, background_get_height(seaBackground), mapStart, 0)
 	draw_background_part(seaBackground, 0, 0, background_get_width(seaBackground)-seaScroll, background_get_height(seaBackground), mapStart + seaScroll, 0)
+	draw_background_ext(MapBackground, mapStart, 0, 1, 1, 0, c_white, 0.3)
+	
 		
 	shader_set( MapWaveShader );
 	texture_set_stage( disSampler, sampTexture );
@@ -33,7 +35,7 @@ if view_current = 1{
 	//draw_surface(seenSurface, mapStart, 0)
 	//draw_set_alpha(1)
 	
-	draw_background(sprite_index, mapStart, 0)
+	draw_sprite(sprite_index, 0, mapStart, 0)
 	
 	/*draw_set_alpha(0.5)
 	mp_grid_draw(global.mapGrid)

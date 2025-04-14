@@ -5,13 +5,13 @@ function RestingCrew() {
 	    {
 		UpdateMorale(2, -1)
 		if other.campPower == 3{
-		    myHealth = round(min(myHealth + (maxHealth*1/(1+global.gameDiff)), maxHealth))
+		    myHealth = round(min(myHealth + (maxHealth*1/(2)), maxHealth))
 			}
 		if other.campPower == 2{
-		    myHealth = round(min(myHealth + (maxHealth*1/(2+global.gameDiff)), maxHealth))
+		    myHealth = round(min(myHealth + (maxHealth*1/(3)), maxHealth))
 			}
 		else{
-			myHealth = round(min(myHealth + (maxHealth*1/(4+global.gameDiff)), maxHealth))
+			myHealth = round(min(myHealth + (maxHealth*1/(5)), maxHealth))
 			}
 	    }
     

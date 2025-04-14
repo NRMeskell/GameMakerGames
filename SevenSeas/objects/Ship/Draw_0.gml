@@ -1,5 +1,3 @@
-//temp
-
 if (view_current == 0)
 {
 {

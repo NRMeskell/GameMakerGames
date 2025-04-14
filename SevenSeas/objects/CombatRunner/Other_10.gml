@@ -21,11 +21,8 @@ with EffectParent
     
 canEndTurn = false
 playerTurn = true
-with PlayerActionRunner
-    {
-    canUseActions = true
-    visible = true
-    }
+piratesMoved = false
+PlayerActionRunner.visible = true
 
 ///Try surrendering
 
@@ -47,7 +44,6 @@ playerTurnsLeft = min(Ship.myHealth/(enemyAverage + 1), pirateHealth/(enemyAvera
 surrenderChance = (power(1/enemyTurnsLeft, 2)) / (power(1/min(playerTurnsLeft, 2), 1/4))*irandom(1.25)
 
 //Decide how much cargo to surrender
-displayAmount = "1/2"
 amount = 1/2
 
 if random(1) < surrenderChance and enemyLevel == 0{

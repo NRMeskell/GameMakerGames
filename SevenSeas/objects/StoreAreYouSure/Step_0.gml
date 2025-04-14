@@ -8,7 +8,7 @@ notificationSize = captionSize + textSize
 onButtonLeft = point_in_rectangle(window_view_mouse_get_x(0), mouse_y, drawX - buttonShift - sprite_get_width(ButtonSpr)/4, drawY - sprite_get_height(ButtonSpr)/2.5 + (notificationSize)/2 + 20, drawX - buttonShift + sprite_get_width(ButtonSpr)/4, drawY + sprite_get_height(ButtonSpr)/2.5 + (notificationSize)/2 + 20)
 onButtonRight = point_in_rectangle(window_view_mouse_get_x(0), mouse_y, drawX + buttonShift - sprite_get_width(ButtonSpr)/4, drawY - sprite_get_height(ButtonSpr)/2.5 + (notificationSize)/2 + 20, drawX + buttonShift + sprite_get_width(ButtonSpr)/4, drawY + sprite_get_height(ButtonSpr)/2.5 + (notificationSize)/2 + 20)
 
-if (mouse_check_button_pressed(mb_left) and (onButtonRight or onButtonLeft))// or eventTimer < 1
+if (mouse_check_button_pressed(mb_left) and (onButtonRight or onButtonLeft))
     {
     closed = true
     audio_play_sound(SlidingOpenSnd, 1, false)
@@ -21,7 +21,6 @@ if closed
     drawY += min(eventSpeed, point_distance(x, drawY, x, room_height/2)/eventFade + 1)
     if drawY > room_height*1.25
         {
-        eventTimer = eventTimerLength
         closed = false
         instance_destroy()
         }

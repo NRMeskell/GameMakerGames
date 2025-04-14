@@ -1,4 +1,4 @@
 /// @description Do attack
 
-shipTarget.allowMelleActions = false;
+shipTarget.allowMeleeActions = false;
 

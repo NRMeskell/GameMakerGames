@@ -7,7 +7,7 @@ function SailingAccident() {
 	    ds_list_add(buttonStats, 3, 6)
 	    ds_list_add(buttonRequires, global.eventDiff[3, 1], global.eventDiff[6, 0])
 	    ds_list_add(buttonCosts, 0, 0)
-	    ds_list_add(buttonText, "roughly bandage their wounds" , "carefully address their wounds")
+	    ds_list_add(buttonText, "roughly wrap the injury" , "carefully treat their wounds")
         
 				global.allowSelect = false
 		

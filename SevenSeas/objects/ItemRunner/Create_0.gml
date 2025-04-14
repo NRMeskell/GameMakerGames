@@ -209,8 +209,8 @@ ds_list_add(handLevel[1], 4,6,10,11,12,13,14,15)
 
 twoHandedList = ds_list_create()
 ds_list_add(twoHandedList, 8, 9, 14, 15)
-melleList = ds_list_create()
-ds_list_add(melleList, 0,1,4,5,10,11)
+meleeList = ds_list_create()
+ds_list_add(meleeList, 0,1,4,5,10,11)
 
 
 //names

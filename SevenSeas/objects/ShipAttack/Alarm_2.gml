@@ -12,5 +12,5 @@ if changeZones == true{
     CombatRunner.closeRange = (CombatRunner.closeRange == false)
     }
 else
-    alarm[4] = room_speed/2
+    alarm[4] = (room_speed/2)/global.combatRate
 

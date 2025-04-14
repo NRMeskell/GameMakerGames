@@ -1,6 +1,4 @@
 function PirateCollectorsRoyals() {
-	//TEMP
-
 	with instance_create(0,0,Event)
 	    {
 	    myCharacter = 0

@@ -45,7 +45,7 @@ function checkGridCollision(x0, y0, x1, y1){
 		deltaerr = 10000;
 
 	var error = 0, // No error at star
-		gridy = y0 div MapCreator.gridSize,
+		gridy = y0 div MapCreator.gridSize;
     for(var gridx = (x0 - MapCreator.mapStart) div MapCreator.gridSize;  gridx != (x1 - MapCreator.mapStart) div MapCreator.gridSize; gridx += sign(deltax)){
         error += abs(deltaerr)
         while abs(error) >= 0.5{

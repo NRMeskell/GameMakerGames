@@ -25,39 +25,10 @@ islandPoints = ds_list_create()
 normalViewDistance = 40
 viewDistance = normalViewDistance
 sailPath = path_add()
-normalSailSpeed = 0.12
+normalSailSpeed = 0.125
 sailSpeed = normalSailSpeed
 
 image_speed = 0
-
-///StartingPort
-
-with LandingSpot
-    {
-    image_index = 1
-    slotNumber = 3
-    
-    slotBuild[0] = instance_create(-100, -100, Tavern)
-    slotBuild[0].mySlot = 0
-    slotBuild[0].myPortType = image_index
-    
-    slotBuild[1] = instance_create(-100, -100, Tailors)
-    slotBuild[1].mySlot = 1
-    slotBuild[1].myPortType = image_index
-    
-    slotBuild[2] = instance_create(-100, -100, Smithy)
-    slotBuild[2].mySlot = 2
-    slotBuild[2].myPortType = image_index
-        
-    for(i=0; i<slotNumber; i++)
-        {
-        slotBuild[i].x = MapShip.slotX[slotBuild[i].mySlot]
-        slotBuild[i].y = MapShip.slotY[slotBuild[i].mySlot]
-        slotBuild[i].image_speed = 0.2
-        }
-    
-    visited = true
-    }
 
 ///Level Vars
 

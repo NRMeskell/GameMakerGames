@@ -38,8 +38,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Melle",
-    "path":"folders/Sprites/Combat/Attacks/Melle.yy",
+    "name":"Melee",
+    "path":"folders/Sprites/Combat/Attacks/Melee.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

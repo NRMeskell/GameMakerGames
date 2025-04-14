@@ -12,7 +12,7 @@ function LoadShip(argument0) {
 	for(r=0; r<10; r++){
 	    defaultAmout = (r==0)*50 + (r==2)*10 + (r==6)*12
 	    amount = real(ini_read_string("cargo" + string(r), "amount", defaultAmout))
-	    StoreItem(r, amount)
+	    StoreCargo(r, amount)
 	    }
     
 	global.foodQuality = real(ini_read_string("food", "quality", 2))

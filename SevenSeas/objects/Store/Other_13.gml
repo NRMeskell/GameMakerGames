@@ -5,10 +5,10 @@ overflow = false
 hasSelected = false
 
 //find how many ship slots are open
-slotNumber = 0
-for(i=0; i < instance_number(ShipSlot); i++)
+var slotNumber = 0
+for(var i=0; i < instance_number(ShipSlot); i++)
 	{
-	checkSlot = instance_find(ShipSlot, i)
+	var checkSlot = instance_find(ShipSlot, i)
 	if checkSlot.slotType = "storage" and checkSlot.xSpot[Ship.shipType] != -50 and checkSlot.damaged = false
 		slotNumber += 1
 	}
@@ -18,7 +18,7 @@ for(i=0; i < array_length(cargoAmounts); i++)
 	cargoAmounts[i] = CargoAmount(i);
 
 //adjust cargo array based on selected cargo
-for(r=0; r < ds_list_size(items); r++)
+for(var r=0; r < ds_list_size(items); r++)
     {
     checkCanStore = ds_list_find_value(items, r)
     if checkCanStore.selected

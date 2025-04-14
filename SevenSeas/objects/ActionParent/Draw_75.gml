@@ -15,39 +15,18 @@ if drawInfo and __view_get( e__VW.XView, 0 ) = 0
     if myType = "ship"
         drawInfoY = y-sprite_height/2 - sprite_get_height(ActionInfoSpr)/2 - infoYGap
     
-    DrawActionInfo(object_index, startX, drawInfoY, false, "pirate", priority) 
+    DrawActionInfo(object_index, startX, drawInfoY, false, "pirate", priority, requireText == "") 
     
-    /*
-    if myType = "melee"
-        {
-        drawInfoY = y+sprite_height/2 + sprite_get_height(ActionInfoSpr)/2 + infoYGap
-        draw_sprite(ActionInfoSpr, 0, startX, drawInfoY)
-        }
-    if myType = "ranged"
-        {
-        drawInfoY = y+sprite_height/2 + sprite_get_height(ActionInfoSpr)/2 + infoYGap
-        draw_sprite(ActionInfoSpr, 1, startX, drawInfoY)
-        }
-    if myType = "cannon"
-        {
-        drawInfoY = y-sprite_height/2 - sprite_get_height(ActionInfoSpr)/2 - infoYGap
-        draw_sprite(ActionInfoSpr, 2, startX, drawInfoY)
-        }
-    if myType = "ship"
-        {
-        drawInfoY = y-sprite_height/2 - sprite_get_height(ActionInfoSpr)/2 - infoYGap
-        draw_sprite(ActionInfoSpr, 3, startX, drawInfoY)
-        }
-    draw_set_color(c_black) 
-    draw_set_valign(fa_top)   
-    draw_set_halign(fa_right)
-    draw_text(startX + timerX, drawInfoY - nameY, rechargeTime)
-    
-    draw_set_halign(fa_left)
-    draw_text(startX + shiftX, drawInfoY - nameY, name)
-    draw_text_ext(startX + shiftX, drawInfoY - descY, description, 11, drawWidth)
-    */
-    }
+	if requireText != ""{
+		draw_set_halign(fa_center)
+		draw_set_valign(fa_center)
+		if canUse == false
+			draw_set_color(merge_color(c_red, c_black, 0.1))
+		else
+			draw_set_color(merge_color(c_yellow, c_black, 0.45))
+		draw_text(startX+141, drawInfoY+44, requireText)
+	}
+}
     
 arrowHeight = cos(arrowHeightTimer) * 3
 arrowHeightTimer += 0.03

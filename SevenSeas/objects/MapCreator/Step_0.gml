@@ -62,7 +62,7 @@ if drawMiniHeight > 0
 else
     depth = -10
 
-if mapClose or Clock.alarm[2] > 0 or instantClose
+if mapClose or Clock.eventTimeLeft > 0 or instantClose
     {
     grabbed = false
     onBoat = true

@@ -1,6 +1,7 @@
 /// @description Time Vars
 
-cloudSurf = surface_create(room_width, room_height)
+eventTimeLeft = -1
+
 instance_create(0, 0, SunLight)
 instance_create(0, 0, MoonLight)
 

@@ -30,7 +30,7 @@ function GabblerMeet() {
 
 function GabblerTellTales(){
 	var tales = choose("the open seas", "her peg leg", "buried treasure"),
-		result = "The Old Gabbler tells a wonderful tale about " + tales + "!", 
+		result = "The Old Gabbler tells a wonderful tale about " + tales + "!" 
 	
 	if irandom(1) and HasStored(0, 1){
 		var coins = min(irandom_range(1,5), CargoAmount(0))

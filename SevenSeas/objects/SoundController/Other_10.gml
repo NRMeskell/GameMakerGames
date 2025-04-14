@@ -99,14 +99,13 @@ audio_sound_gain(SearchingSnd, 0.2*gameVolumeBase*global.worldVolume*global.mast
 
 
 //menu sounds
-audio_sound_gain(BellSnd, 0.3*menuVolumeBase*global.worldVolume*global.masterVolume, 0)
-audio_sound_gain(OpenMenuSnd, 0.2*menuVolumeBase*global.worldVolume*global.masterVolume, 0)
-audio_sound_gain(CloseMenuSound, 0.3*menuVolumeBase*global.worldVolume*global.masterVolume, 0)
-audio_sound_gain(OpenMapSnd, 0.4*menuVolumeBase*global.worldVolume*global.masterVolume, 0)
-audio_sound_gain(CloseMapSnd, 0.4*menuVolumeBase*global.worldVolume*global.masterVolume, 0)
-audio_sound_gain(StoreSelectSnd, 0.3*menuVolumeBase*global.worldVolume*global.masterVolume, 0)
-audio_sound_gain(SlidingOpenSnd, 0.3*menuVolumeBase*global.worldVolume*global.masterVolume, 0)
-audio_sound_gain(SlidingClosedSnd, 0.08*menuVolumeBase*global.worldVolume*global.masterVolume, 0)
-audio_sound_gain(StoreBuySnd, 0.1*menuVolumeBase*global.worldVolume*global.masterVolume, 0)
-audio_sound_gain(DingSnd, 0.1*menuVolumeBase*global.worldVolume*global.masterVolume, 0)
-
+audio_sound_gain(BellSnd, 0.3*menuVolumeBase*global.menuVolume*global.masterVolume, 0)
+audio_sound_gain(OpenMenuSnd, 0.2*menuVolumeBase*global.menuVolume*global.masterVolume, 0)
+audio_sound_gain(CloseMenuSound, 0.3*menuVolumeBase*global.menuVolume*global.masterVolume, 0)
+audio_sound_gain(OpenMapSnd, 0.4*menuVolumeBase*global.menuVolume*global.masterVolume, 0)
+audio_sound_gain(CloseMapSnd, 0.4*menuVolumeBase*global.menuVolume*global.masterVolume, 0)
+audio_sound_gain(StoreSelectSnd, 0.3*menuVolumeBase*global.menuVolume*global.masterVolume, 0)
+audio_sound_gain(SlidingOpenSnd, 0.3*menuVolumeBase*global.menuVolume*global.masterVolume, 0)
+audio_sound_gain(SlidingClosedSnd, 0.08*menuVolumeBase*global.menuVolume*global.masterVolume, 0)
+audio_sound_gain(StoreBuySnd, 0.1*menuVolumeBase*global.menuVolume*global.masterVolume, 0)
+audio_sound_gain(DingSnd, 0.1*menuVolumeBase*global.menuVolume*global.masterVolume, 0)

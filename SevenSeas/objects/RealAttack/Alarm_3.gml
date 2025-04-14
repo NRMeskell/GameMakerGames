@@ -17,6 +17,6 @@ if ds_list_size(global.notificationList) == 0{
 	    event_user(3)
 }
 else{
-	alarm[3] = room_speed/2
+	alarm[3] = room_speed/(2*global.combatRate)
 }
 

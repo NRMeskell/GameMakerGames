@@ -10,9 +10,13 @@ slotBuild[0] = undefined
 slotBuild[1] = undefined
 slotBuild[2] = undefined
 
+checkX = 0
+checkY = 0
+
 depth = -y
 
 released = false
+myIslandType = "none"
 
 
 
