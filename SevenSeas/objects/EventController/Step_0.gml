@@ -17,7 +17,7 @@ if eventTimer <= 0
     //calm events
     if global.weather == 1
         {
-        eventType = choose("Special Event", "Special Event", "Character", "Character", "Ambush", "Request", "Medical")
+        eventType = choose("Special Event", "Special Event", "Character", "Ambush", "Request", "Medical")
         
 		var needsHelp = RandomPirate().myHealth < (global.seaLevel+1)*12 or Ship.myHealth < (global.seaLevel+1)*30
 		if eventType != "Medical" and needsHelp and irandom(1) == 0

@@ -85,14 +85,20 @@ if path_position = 1 and global.inPort = false{
 				var tavernSlot = choose(0,1,2)
 				var placesLeft = [Smithy, Tailors, TrinketShop]
 	            for(var i=0; i<slotNumber; i++) {
-					var slotNum = irandom(array_length(placesLeft)-1)
-					var slotObject = array_get(placesLeft, slotNum)
+					var slotNum, slotObject;
+					if (instance_number(TrinketShop) < instance_number(Tavern)/2)
+						slotNum = irandom(array_length(placesLeft)-1)
+					else
+						slotNum = array_length(placesLeft)-1
+					slotObject = array_get(placesLeft, slotNum)
 	                array_delete(placesLeft, slotNum, 1)
 					if myIndex = 1{
 						if i == tavernSlot
 							getType = Tavern
-						else if i == 0
-							getType = choose(ShipYard, slotObject)
+						else if i == 0{
+							// choose either a ship yard or a random thing
+							getType = (instance_number(ShipYard) < instance_number(Tavern)/3) ? ShipYard : choose(ShipYard, slotObject)
+						}
 						else
 							getType = slotObject
 	                }

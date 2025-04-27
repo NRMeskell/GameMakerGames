@@ -2,13 +2,16 @@
 
 // resolve trades first
 with StoreObjectTrade{
-	if selected
+	if selected{
 		event_user(0)
+		selected = false
+	}
 }
 // resolve cargo storing issues next (store unstored cargo types)
 with StoreObjectStorable{
 	if selected and !HasStored(itemNumber, 1){
 		event_user(0)
+		selected = false
 	}
 }
 // resolve all unresolved transactions

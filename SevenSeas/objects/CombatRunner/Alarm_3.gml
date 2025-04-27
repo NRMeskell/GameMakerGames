@@ -57,7 +57,7 @@ if irandom(power(ds_list_size(possibleEnemyActions)*2,2)) > 0{
 				}
 			}
 		    myPirate = other.chosenAttack.myPirate
-        
+			myButton = other.chosenAttack.id
 		    event_user(3)
 	    }  
 	}

@@ -18,4 +18,4 @@ if myShipTarget == Ship{
 }
 
 with myCrewTarget
-	myHealth = min(maxHealth, round(myHealth + maxHealth*0.5*medicalBonus))
+	myHealth = min(maxHealth, round(myHealth + maxHealth*0.05))

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"GetGameStats",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"GetGameStats",
+  "parent":{
+    "name":"SaveGame",
+    "path":"folders/Scripts/SaveGame.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
