@@ -6,7 +6,7 @@
   "name":"LessNoise",
   "parent":{
     "name":"LessNoise",
-    "path":"folders/Scripts/Events/Requests/fearsome/LessNoise.yy",
+    "path":"folders/Scripts/Events/Requests/LessNoise.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

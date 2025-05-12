@@ -6,7 +6,7 @@
   "name":"BugSquash",
   "parent":{
     "name":"Bug",
-    "path":"folders/Scripts/Events/Requests/fearsome/Bug.yy",
+    "path":"folders/Scripts/Events/Requests/Bug.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

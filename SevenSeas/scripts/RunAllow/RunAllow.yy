@@ -6,7 +6,7 @@
   "name":"RunAllow",
   "parent":{
     "name":"RunningAround",
-    "path":"folders/Scripts/Events/Requests/fearsome/RunningAround.yy",
+    "path":"folders/Scripts/Events/Requests/RunningAround.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

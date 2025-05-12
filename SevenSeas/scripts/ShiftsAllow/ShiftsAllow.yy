@@ -6,7 +6,7 @@
   "name":"ShiftsAllow",
   "parent":{
     "name":"NewShifts",
-    "path":"folders/Scripts/Events/Requests/Jolly/NewShifts.yy",
+    "path":"folders/Scripts/Events/Requests/NewShifts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

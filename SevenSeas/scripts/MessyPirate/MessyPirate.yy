@@ -6,7 +6,7 @@
   "name":"MessyPirate",
   "parent":{
     "name":"Messy",
-    "path":"folders/Scripts/Events/Requests/keen/Messy.yy",
+    "path":"folders/Scripts/Events/Requests/Messy.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

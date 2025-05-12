@@ -6,7 +6,7 @@
   "name":"CargoJuggle",
   "parent":{
     "name":"CargoJuggle",
-    "path":"folders/Scripts/Events/Requests/daring/CargoJuggle.yy",
+    "path":"folders/Scripts/Events/Requests/CargoJuggle.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -9,7 +9,7 @@ function GoSwimming(){
 	    buttonNumber = 2
 	    ds_list_add(buttons, SwimmingAllow) 
 	    global.allowSelect = false
-	    eventText = "Look how wonderful the water looks! Can I go for a quick swim?"  
+	    eventText = "The water looks beautiful and relaxing! Can we all go for a quick swim?"  
     
 	    global.moraleBoost = "swimming"
 	    }
@@ -17,12 +17,12 @@ function GoSwimming(){
 
 function SwimmingAllow(){
 	if sign(irandom(3)) {
-		ds_list_add(global.notificationList, myPirate.firstName + " had a nice swim!", "The water was very refreshing, and they enjoyed the break!")
+		ds_list_add(global.notificationList, "a nice swim!", "The water was very refreshing, and the crew enjoyed the break!")
 		with myPirate 
 			UpdateMorale(1, -1)
 	}
-	else if irandom(1) {
-		Ship.myHealth -= 20+15*global.seaLevel
-		ds_list_add(global.notificationList, "crunching stop!", myPirate.firstName + " knocked the anchor overboard while getting in the water!")
+	else {
+		cargoString = LoseRandomCargo(irandom(global.seaLevel)+1)
+		ds_list_add(global.notificationList, "cargo overboard!", myPirate.firstName + " knocked " + cargoString + " overboard while getting in the water!")
 	}
 }

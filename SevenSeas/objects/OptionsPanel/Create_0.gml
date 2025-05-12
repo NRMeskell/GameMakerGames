@@ -71,7 +71,7 @@ optionText[? "saving"] = ["IN PORT", "AT LAND", "ALWAYS"]
 optionText[? "loot"] = ["SLIM", "NORMAL", "GENEROUS"]
 optionText[? "event"] = ["EASY", "NORMAL", "HARD"]
 
-optionText[? "master"] = string(((200*global.masterVolume) div 5 * 5)) + "%"
+optionText[? "master"] = string(((global.masterVolume) div 5 * 5)) + "%"
 optionText[? "music"] = string(((200*global.musicVolume) div 5 * 5)) + "%"
 optionText[? "menu"] = string(((200*global.menuVolume) div 5 * 5)) + "%"
 optionText[? "game"] = string(((200*global.worldVolume) div 5 * 5)) + "%"

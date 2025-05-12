@@ -1,4 +1,4 @@
-function KnifeKitchen(argument0) {
+function ScaryStories(argument0) {
 	//Ambushed
 
 	with instance_create(0,0,Request)
@@ -8,7 +8,7 @@ function KnifeKitchen(argument0) {
 	    ds_list_add(buttons, KnifeAllow)
      
 	    global.allowSelect = false
-	    eventText = "There's a lovely knife being wasted in the kitchens! Can I re-purpose it for combat?"
+	    eventText = "?"
 	    global.moraleBoost = "knife"
 	    }
 

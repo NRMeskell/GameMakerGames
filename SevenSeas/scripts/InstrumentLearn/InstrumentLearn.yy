@@ -6,7 +6,7 @@
   "name":"InstrumentLearn",
   "parent":{
     "name":"Instrument",
-    "path":"folders/Scripts/Events/Requests/Jolly/Instrument.yy",
+    "path":"folders/Scripts/Events/Requests/Instrument.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

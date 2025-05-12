@@ -7,7 +7,7 @@ if room == GameRoom{
 		saveNow = true
 	}
 
-	if !MapCreator.instantClose and saveNow and global.saveType == 2{
+	if !MapCreator.instantClose and saveNow and (global.saveType == 2 or (global.inPort and (global.saveType == 1 or global.portType == 1)))  {
 		event_user(1)
 		saveNow = false
 	}

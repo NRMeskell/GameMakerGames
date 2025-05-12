@@ -6,7 +6,7 @@
   "name":"KnifeGamesAllow",
   "parent":{
     "name":"KnifeGames",
-    "path":"folders/Scripts/Events/Requests/daring/KnifeGames.yy",
+    "path":"folders/Scripts/Events/Requests/KnifeGames.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

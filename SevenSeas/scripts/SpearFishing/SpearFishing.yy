@@ -6,7 +6,7 @@
   "name":"SpearFishing",
   "parent":{
     "name":"Fishing",
-    "path":"folders/Scripts/Events/Requests/daring/Fishing.yy",
+    "path":"folders/Scripts/Events/Requests/Fishing.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

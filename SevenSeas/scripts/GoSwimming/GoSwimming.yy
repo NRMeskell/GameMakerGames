@@ -6,7 +6,7 @@
   "name":"GoSwimming",
   "parent":{
     "name":"GoSwimming",
-    "path":"folders/Scripts/Events/Requests/Jolly/GoSwimming.yy",
+    "path":"folders/Scripts/Events/Requests/GoSwimming.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

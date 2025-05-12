@@ -32,7 +32,7 @@ if !tab{
 	draw_text(xc - optionWidth, optionY[? "combat"], "COMBAT:")
 	draw_text(xc - optionWidth, optionY[? "camp"], "CAMPS:")
 	
-	draw_text(xc - optionWidth, optionY[? "enemy"], "ENEMYS:")
+	draw_text(xc - optionWidth, optionY[? "enemy"], "ENEMIES:")
 	draw_text(xc - optionWidth, optionY[? "saving"], "SAVING:")
 	draw_text(xc - optionWidth, optionY[? "loot"], "LOOTING:")
 	draw_text(xc - optionWidth, optionY[? "event"], "EVENTS:")
@@ -41,7 +41,7 @@ if !tab{
 	draw_set_color(buttonColor[mouseOverOption[? "sail"]])
 	draw_text(xc + optionWidth, optionY[? "sail"], optionText[? "sail"][sqrt(global.gameRate-1)])
 	draw_set_color(buttonColor[mouseOverOption[? "combat"]])
-	draw_text(xc + optionWidth, optionY[? "combat"], optionText[? "combat"][sqrt(global.combatRate-1)])
+	draw_text(xc + optionWidth, optionY[? "combat"], optionText[? "combat"][(global.combatRate*2)-2])
 	draw_set_color(buttonColor[mouseOverOption[? "camp"]])
 	draw_text(xc + optionWidth, optionY[? "camp"], optionText[? "camp"][global.skipCamp])
 	draw_set_color(buttonColor[mouseOverOption[? "enemy"]])

@@ -6,7 +6,7 @@
   "name":"BreakRequest",
   "parent":{
     "name":"Break",
-    "path":"folders/Scripts/Events/Requests/Jolly/Break.yy",
+    "path":"folders/Scripts/Events/Requests/Break.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

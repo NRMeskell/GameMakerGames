@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"SkippingAbout",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SkippingAbout",
+  "parent":{
+    "name":"SkippingAbout",
+    "path":"folders/Scripts/Events/Requests/SkippingAbout.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

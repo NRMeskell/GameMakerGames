@@ -6,7 +6,7 @@
   "name":"StarsMappingAllow",
   "parent":{
     "name":"StarsMapping",
-    "path":"folders/Scripts/Events/Requests/keen/StarsMapping.yy",
+    "path":"folders/Scripts/Events/Requests/StarsMapping.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

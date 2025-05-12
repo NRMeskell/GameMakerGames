@@ -23,7 +23,7 @@ if mouse_check_button_pressed(mb_left)
         if overButton[1]{
             global.moraleBoost = "denied"
             with myPirate
-                UpdateMorale(-1, -1)
+                UpdateMorale(-2, -1)
             }
 
         audio_play_sound(StoreSelectSnd, 1, false)

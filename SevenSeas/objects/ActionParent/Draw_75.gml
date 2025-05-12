@@ -21,7 +21,7 @@ if drawInfo and __view_get( e__VW.XView, 0 ) = 0
 		draw_set_halign(fa_center)
 		draw_set_valign(fa_center)
 		if canUse == false
-			draw_set_color(merge_color(c_red, c_black, 0.1))
+			draw_set_color(merge_color(c_red, c_black, 0.12))
 		else
 			draw_set_color(merge_color(c_yellow, c_black, 0.45))
 		draw_text(startX+141, drawInfoY+44, requireText)

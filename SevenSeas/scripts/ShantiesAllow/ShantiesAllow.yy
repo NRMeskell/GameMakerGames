@@ -6,7 +6,7 @@
   "name":"ShantiesAllow",
   "parent":{
     "name":"Shanties",
-    "path":"folders/Scripts/Events/Requests/Jolly/Shanties.yy",
+    "path":"folders/Scripts/Events/Requests/Shanties.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

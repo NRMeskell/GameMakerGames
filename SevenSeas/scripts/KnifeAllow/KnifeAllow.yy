@@ -6,7 +6,7 @@
   "name":"KnifeAllow",
   "parent":{
     "name":"KitchenKnife",
-    "path":"folders/Scripts/Events/Requests/fearsome/KitchenKnife.yy",
+    "path":"folders/Scripts/Events/Requests/KitchenKnife.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

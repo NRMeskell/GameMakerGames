@@ -6,7 +6,7 @@
   "name":"RaceAllow",
   "parent":{
     "name":"MastRacing",
-    "path":"folders/Scripts/Events/Requests/daring/MastRacing.yy",
+    "path":"folders/Scripts/Events/Requests/MastRacing.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

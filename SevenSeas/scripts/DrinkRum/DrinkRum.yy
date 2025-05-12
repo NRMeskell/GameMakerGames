@@ -1,12 +1,12 @@
 {
   "$GMScript":"",
-  "%Name":"FishingAllow",
+  "%Name":"DrinkRum",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"FishingAllow",
+  "name":"DrinkRum",
   "parent":{
-    "name":"Fishing",
-    "path":"folders/Scripts/Events/Requests/Fishing.yy",
+    "name":"DrinkRum",
+    "path":"folders/Scripts/Events/Requests/DrinkRum.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

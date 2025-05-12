@@ -1,12 +1,12 @@
 {
   "$GMScript":"",
-  "%Name":"FishingAllow",
+  "%Name":"ExpandCargo",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"FishingAllow",
+  "name":"ExpandCargo",
   "parent":{
-    "name":"Fishing",
-    "path":"folders/Scripts/Events/Requests/Fishing.yy",
+    "name":"ExpandCargo",
+    "path":"folders/Scripts/Events/Requests/ExpandCargo.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

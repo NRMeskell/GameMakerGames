@@ -51,8 +51,8 @@ if mouse_check_button_pressed(mb_left) {
 		global.skipCamp = !global.skipCamp
 	}
 	if mouseOverOption[? "combat"]{
-		global.combatRate = sqr(sqrt(global.combatRate-1) + 1) +1
-		if global.combatRate > 5
+		global.combatRate += 0.5
+		if global.combatRate >= 2
 			global.combatRate = 1
 	}
 	
@@ -106,7 +106,7 @@ if mouse_check_button(mb_left) {
 	if mouseOverOption[? "game"]{
 		global.worldVolume = min(1, max(0, (window_view_mouse_get_x(0) - (xc - volumeWidth))/(volumeWidth*2)))
 	}
-	optionText[? "master"] = string(((200*global.masterVolume) div 5 * 5)) + "%"
+	optionText[? "master"] = string(((global.masterVolume) div 5 * 5)) + "%"
 	optionText[? "music"] = string(((200*global.musicVolume) div 5 * 5)) + "%"
 	optionText[? "menu"] = string(((200*global.menuVolume) div 5 * 5)) + "%"
 	optionText[? "game"] = string(((200*global.worldVolume) div 5 * 5)) + "%"

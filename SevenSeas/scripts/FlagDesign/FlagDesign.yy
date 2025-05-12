@@ -6,7 +6,7 @@
   "name":"FlagDesign",
   "parent":{
     "name":"FlagRedesign",
-    "path":"folders/Scripts/Events/Requests/keen/FlagRedesign.yy",
+    "path":"folders/Scripts/Events/Requests/FlagRedesign.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

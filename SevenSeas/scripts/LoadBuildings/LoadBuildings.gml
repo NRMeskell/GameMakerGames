@@ -9,8 +9,10 @@ function LoadBuildings(argument0) {
 	    ini_open(argument0 + "\\BuildingFile.ini")
 	    for(n=0; n<3; n++){ 
 	        //garbage collection
-	        if myLanding.slotBuild[n] != undefined
+	        if myLanding.slotBuild[n] != undefined{
 	            instance_destroy(myLanding.slotBuild[n])
+				myLanding.slotBuild[n] = undefined
+			}
         
 	        //load new buildings
 	        buildingType = ini_read_string("LS" + string(i), "building" + string(n), "none");

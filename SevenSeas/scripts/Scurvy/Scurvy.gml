@@ -41,7 +41,7 @@ function ScurvyHelp(){
 		
 		} else{
 			ds_list_add(global.notificationList, "Blood Letting!", "The doctor was unable to find " + eventValue.firstName + "'s bad blood, no matter how much they let out.") 
-			argument0.myHealth -= 20 + 25*global.seaLevel 
+			argument0.myHealth -= 15 + 10*global.seaLevel 
 		
 			with instance_create(0,0,ConditionTimer){ 
 				myArgument = other.eventValue
@@ -53,7 +53,7 @@ function ScurvyHelp(){
 
 function ScurvyReturn(){
 	ds_list_add(global.notificationList, "Scurvy Worsens!", "A small cut on " + myArgument.firstName + "'s arm won't stop bleeding, and they lose a significant amount of blood!")
-	myArgument.myHealth -= 20 + 25*global.seaLevel
+	myArgument.myHealth -= 15 + 10*global.seaLevel
 	if irandom(1){
 		with instance_create(0,0,ConditionTimer){ 
 		myArgument = other.myArgument

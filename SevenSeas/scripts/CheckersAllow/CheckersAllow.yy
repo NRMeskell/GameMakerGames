@@ -6,7 +6,7 @@
   "name":"CheckersAllow",
   "parent":{
     "name":"Checkers",
-    "path":"folders/Scripts/Events/Requests/keen/Checkers.yy",
+    "path":"folders/Scripts/Events/Requests/Checkers.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

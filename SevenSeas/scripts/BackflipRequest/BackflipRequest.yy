@@ -6,7 +6,7 @@
   "name":"BackflipRequest",
   "parent":{
     "name":"Backflip",
-    "path":"folders/Scripts/Events/Requests/daring/Backflip.yy",
+    "path":"folders/Scripts/Events/Requests/Backflip.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

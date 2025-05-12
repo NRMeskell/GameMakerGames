@@ -114,10 +114,15 @@ event_user(1)*/
 
 
 ///Request lists
-requestLists[0] = [BreakRequest, GoSwimming, InstrumentLearn, NewShifts, ShantyRequest]
-requestLists[1] = [Checkers, MessyPirate, FlagDesign, StolenJournal, StarsMapping]
-requestLists[2] = [BugSquash, KnifeKitchen, LessNoise, RunAround, HardenedTraining]
-requestLists[3] = [RaceUpMast, SpearFishing, BackflipRequest, KnifeRequest, CargoJuggle]
+// (Morale, cargo/item, health, custom, custom)
+// Jolly
+requestLists[0] = [ShantyRequest, GoSwimming, DrinkRum, InstrumentLearn, NewShifts]
+// Keen: Raise or lower only my morale
+requestLists[1] = [Checkers, ExpandCargo, FlagDesign, StarsMapping, StolenJournal]
+// Fearsome: Raise my morale (at risk of others)
+requestLists[2] = [BugSquash, MessyPirate, KnifeRequest, LessNoise, RunAround]
+// Raise my morale (at risk of health/cargo)
+requestLists[3] = [SkippingAbout, SpearFishing, BackflipRequest, CargoJuggle, RaceUpMast]
 
 
 //Reputation

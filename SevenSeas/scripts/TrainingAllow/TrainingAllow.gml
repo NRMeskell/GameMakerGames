@@ -22,7 +22,7 @@ function TrainingAllow() {
 	        }
 	    }
 	else{
-	    ds_list_add(global.notificationList, "tired crew!", "the crew trains hard and gain comradery!")
+	    ds_list_add(global.notificationList, "tired crew!", "the crew trains hard and gain camaraderie!")
 	    with Pirate{
 	        UpdateMorale(1, global.FEARSOME)
 	        UpdateMorale(1, global.DARING)

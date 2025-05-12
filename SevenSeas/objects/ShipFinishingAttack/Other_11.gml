@@ -10,7 +10,7 @@ repeat(damage){
 }
 	
 if !enemyKilled{
-	repeat(damage div 4){
+	repeat(damage div 2){
 	    i = irandom(instance_number(myCrewTarget)-1)
 	    nextTargetPirate = instance_find(myCrewTarget, i)
 	    nextTargetPirate.myHealth -= 1

@@ -80,9 +80,9 @@ function SpiritLordPlayDice() {
 			with item{
 				amount = min(2, max(0, 5-CargoAmount(8)))
 				if amount > 0{
-			        name = "jewel*"
-			        description = "An beautiful treasure, touched by an ancient spirit"
-			        previewName = "spirit jewel"
+			        name = "s-gems"
+			        description = "A beautiful treasure, touched by an ancient spirit"
+			        previewName = "spirit gems"
 			        itemNumber = 8    
 			        cost = 0
 				}

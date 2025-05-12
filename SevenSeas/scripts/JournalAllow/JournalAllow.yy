@@ -6,7 +6,7 @@
   "name":"JournalAllow",
   "parent":{
     "name":"MissingJournal",
-    "path":"folders/Scripts/Events/Requests/keen/MissingJournal.yy",
+    "path":"folders/Scripts/Events/Requests/MissingJournal.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

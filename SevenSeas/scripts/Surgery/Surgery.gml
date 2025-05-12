@@ -30,12 +30,12 @@ function Surgery() {
 		}
 		else {
 			ds_list_add(buttonStats, 0, 6)
-		    ds_list_add(buttonRequires, 0, global.eventDiff[6, 2])
+		    ds_list_add(buttonRequires, 0, global.eventDiff[6, 1])
 		    ds_list_add(buttonCosts, 0, 0)
 			ds_list_add(buttons, SurgeryIgnore, SurgeryGive)
 			ds_list_add(buttonText, "Continue without treatment", "Provide medical treatment")	
 			captionText = "Surgery!"
-		    eventText = eventValue.name + " is in poor health and could use care."   
+		    eventText = eventValue.name + " is in poor condition and could use help."   
 		    global.moraleBoost = "surgery"
 		}
 		
@@ -72,6 +72,7 @@ function SurgeryGive(){
 		ds_list_add(global.notificationList, "Successful Surgery!", eventValue.firstName + " returns to work feeling much better!")
 	}
 	else{
+		with Pirate event_user(3)
 		ds_list_add(global.notificationList, "Horrible surgery!", "The surgery goes horribly wrong, and " + eventValue.firstName + " looses their limb.")
 	}
 }
