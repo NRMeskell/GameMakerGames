@@ -23,8 +23,8 @@ else{
 
 if floatAway
     {
-	image_xscale -= 0.01*global.gameRate
-	image_yscale -= 0.01*global.gameRate
+	image_xscale -= 0.01*max(1, global.doTime*global.gameRate)
+	image_yscale -= 0.01*max(1, global.doTime*global.gameRate)
 	
 	if image_xscale < 0.01
 		instance_destroy()

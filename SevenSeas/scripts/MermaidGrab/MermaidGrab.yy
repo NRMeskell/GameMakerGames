@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"MermaidGrab",
   "isCompatibility":false,
   "isDnD":false,

@@ -34,5 +34,6 @@ for(var i=0; i<buttonNumber; i++)
 overDecline = point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), x - sprite_get_width(ButtonSpr)*(2/3)/2, y + sprite_height/2 -2, x + sprite_get_width(ButtonSpr)*(2/3)/2, y  + sprite_height/2 -2 + sprite_get_height(ButtonSpr)*(2/3)) and !instance_exists(DumpItem)
 if overDecline and mouse_check_button_pressed(mb_left){
 	myPirate.morale = 0
+	myPirate.prevMorale = 0
 	instance_destroy()
 }

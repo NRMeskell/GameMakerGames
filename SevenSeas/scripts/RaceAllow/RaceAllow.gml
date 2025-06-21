@@ -17,7 +17,7 @@ function RaceAllow() {
 	    {
 	    ds_list_add(global.notificationList, "Climbing accident!", myPirate.firstName + " fell off the mast, and injured themselves!")
 	    with myPirate
-	        myHealth -= maxHealth div 4
+	        UpdateHealth(id, -Ship.myHealth div 4)
 	    }
 
 

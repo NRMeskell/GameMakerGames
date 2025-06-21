@@ -3,8 +3,7 @@ function ShortcutSteer() {
 	if !argument0
 	    {
 	    ds_list_add(global.notificationList, "Crashed!", "the deckhands could not navigate the route, and the ship was damaged!")
-	    with Ship
-			myHealth -= myHealth div 4
+	    UpdateHealth(Ship, -50)
 			
 	    with Pirate
 	        UpdateMorale(-1, global.DARING)

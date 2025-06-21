@@ -25,7 +25,7 @@ function CrazyPirate(argument0) {
 	        if irandom(1) == 0
 	            {
 	            other.injuredCrew ++
-	            myHealth -= 20
+	            UpdateHealth(id, -20)
 	            }
             
 	    ds_list_add(global.notificationList, "Insane Pirate!", myPirate.name + " went crazy! They injured " + string(injuredCrew) + " of the crew!")
@@ -34,10 +34,7 @@ function CrazyPirate(argument0) {
 	    {
 	    ds_list_add(global.notificationList, "Insane Pirate!", myPirate.name + " went crazy! They jumped overboard!")
     
-	    with myPirate
-	        {
-	        myHealth = -20
-	        }
+	    UpdateHealth(myPirate, -20)
 	    instance_destroy()
 	    }
     

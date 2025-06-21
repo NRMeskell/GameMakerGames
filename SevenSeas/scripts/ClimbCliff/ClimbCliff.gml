@@ -4,7 +4,7 @@ function ClimbCliff() {
 	lootText = getItemText(loot, ["equipment", "gold", choose("shiny stones", "gems")])
 	if irandom(2) < 1{
 		hurtPirate = RandomPirate()
-		hurtPirate.myHealth = (hurtPirate.myHealth * 0.75) div 1
+		UpdateHealth(hurtPirate, -hurtPirate.myHealth*0.25)
 		ds_list_add(global.notificationList, "Pirate Hurt!", hurtPirate.firstName + " fell and was injured! The crew returned with " + lootText + ".")
 	
 	}

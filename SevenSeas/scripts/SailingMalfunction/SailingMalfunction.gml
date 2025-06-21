@@ -25,7 +25,7 @@ function SailingMalfunction() {
 function MalfunctionShip(){	
 	if argument0{
 		ds_list_add(global.notificationList, "Ship Repaired!", "The crew is quick to repair the damage! " + eventValue.firstName + "'s injuries go untreated...")
-		eventValue.myHealth -= eventValue.maxHealth div 4
+		UpdateHealth(myHealth, -eventValue.maxHealth div 4)
 	}
 	else{
 		MalfunctionFail()
@@ -35,7 +35,7 @@ function MalfunctionShip(){
 function MalfunctionCrew(){
 	if argument0{
 		ds_list_add(global.notificationList, "Injuries Treated!", eventValue.firstName + "'s wounds are quickly addressed! The ship's damage goes unaddressed...")
-		Ship.myHealth -= Ship.maxHealth div 6
+		UpdateHealth(Ship, -Ship.maxHealth div 6)
 	}
 	else{
 		MalfunctionFail()
@@ -44,7 +44,7 @@ function MalfunctionCrew(){
 
 function MalfunctionFail(){
 	ds_list_add(global.notificationList, "Failed Attempt!", "The damage was greater than expected, and neither the ship nor crew could be helped.")
-	eventValue.myHealth -= maxHealth div 4
-	Ship.myHealth -= Ship.maxHealth div 6
+	UpdateHealth(eventValue, -Ship.maxHealth div 4)
+	UpdateHealth(Ship, -Ship.maxHealth div 6)
 }
 

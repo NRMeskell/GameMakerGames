@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"TradingPostArrive",
   "isCompatibility":false,
   "isDnD":false,

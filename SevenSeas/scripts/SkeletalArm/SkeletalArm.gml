@@ -34,7 +34,7 @@ function SkeletalArmSmash() {
 		member = RandomPirate()
 		ds_list_add(global.notificationList, "attacked!", "the skeletal " + skelType + " attaches itself to " + member.firstName + " and takes off a chunk of skin!")
 		with member
-			myHealth -= irandom(10) + 15
+			UpdateHealth(id, -20)
 		UpdateMorale(-2, -1)
 		UpdateMorale(1, global.DARING)
 	}

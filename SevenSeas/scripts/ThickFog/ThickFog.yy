@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"ThickFog",
   "isCompatibility":false,
   "isDnD":false,

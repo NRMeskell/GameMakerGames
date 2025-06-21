@@ -15,6 +15,6 @@ if floatAway
     {
     path_end()
     direction = flyAwayDir
-    speed = 1*global.gameRate
+    speed = max(1, global.doTime*global.gameRate)
     }
 

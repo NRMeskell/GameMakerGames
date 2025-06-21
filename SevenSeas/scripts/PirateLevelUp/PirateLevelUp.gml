@@ -68,7 +68,7 @@ function PirateLevelUp(argument0, argument1) {
 	    morale = 0
 		prevMorale = morale
 	    maxHealth += 20
-	    myHealth += 20
+	    UpdateHealth(id, 20)
 		healthDiff = myHealth
     
 	    //In-game Pirate Level-up

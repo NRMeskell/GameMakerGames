@@ -19,14 +19,18 @@ uniform float uvs[8];
 void main()
     {
     if ((texture2D( gm_BaseTexture, v_vTexcoord).a != 0.0)){
+		vec2 pixelSize;
         int i, myLight;
         float xPos, yPos, dist, org, brightness, lightDis, lb;
         vec3 lightVec;
         
         lb = 35.0;
         lightVec = vec3(0.0, 0.0, 0.0);
-        xPos = (v_vTexcoord.x - uvs[0])/(uvs[2] - uvs[0]);
-        yPos = (v_vTexcoord.y - uvs[1])/(uvs[3] - uvs[1]);
+        pixelSize.x = (uvs[2] - uvs[0])/xSize;
+		pixelSize.y = (uvs[3] - uvs[1])/ySize;
+		
+        xPos = (floor(v_vTexcoord.x/pixelSize.x)*pixelSize.x - uvs[0])/(uvs[2] - uvs[0]);
+        yPos = (floor(v_vTexcoord.y/pixelSize.y)*pixelSize.y - uvs[1])/(uvs[3] - uvs[1]);;
         
         org = 0.3 - 0.15*pow(yPos + sin(6.28318531*xPos)*0.2, 2.0);
         
@@ -39,12 +43,11 @@ void main()
                     brightness = (myVolume[i]/8000.0)*max((1600.0 - dist)/(1600.0), 0.0)/(1.0 + yPos);
                     
                     lightVec += vec3(red[i]*brightness, green[i]*brightness, blue[i]*brightness);
-                    }
                 }
             }
+        }
 		
-            
         gl_FragColor = vec4(floor(lb*texture2D(gm_BaseTexture, v_vTexcoord).r*(org + lightVec.r))/lb, floor(lb*texture2D(gm_BaseTexture, v_vTexcoord).g*(org + lightVec.g))/lb, floor(lb*texture2D(gm_BaseTexture, v_vTexcoord).b*(org + lightVec.b))/lb, texture2D(gm_BaseTexture, v_vTexcoord).a*v_vColour[3]);
-		}
-    }
+	}
+}
 

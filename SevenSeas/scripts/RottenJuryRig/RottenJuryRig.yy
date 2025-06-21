@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"RottenJuryRig",
   "isCompatibility":false,
   "isDnD":false,

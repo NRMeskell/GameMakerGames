@@ -3,8 +3,7 @@ function SeaSickRest() {
 
 	if irandom(1)
 	    {
-	    with Ship
-	        myHealth -= 50
+	    UpdateHealth(Ship, -50)
 	    ds_list_add(global.notificationList, "The ship breaks apart!",  "without the crew, the ship was damaged by the wind")
 	    }
 	else

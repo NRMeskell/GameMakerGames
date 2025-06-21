@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"UpdateHealth",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"UpdateHealth",
+  "parent":{
+    "name":"PirateUpdates",
+    "path":"folders/Scripts/Pirate/PirateUpdates.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

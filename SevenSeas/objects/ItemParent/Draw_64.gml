@@ -126,13 +126,13 @@ if ds_list_find_value(ItemRunner.floatingItems, 0) == id or (state == "equipped"
             startX = 10 + ((state != "equipped") * 20) + Pirate.xWindow - sprite_get_width(ActionInfoSpr)/2 + 8 + sprite_get_width(PirateSheetSpr)/2
             drawInfoY = Pirate.yWindow + 215+16 - 60
             
-            if myAction.myType = "melee"
+            if myAction.actionType = "melee"
                 draw_sprite(ActionInfoSpr, 0, startX, drawInfoY)
-            if myAction.myType = "ranged"
+            if myAction.actionType = "ranged"
                 draw_sprite(ActionInfoSpr, 1, startX, drawInfoY)
-            if myAction.myType = "cannon"
+            if myAction.actionType = "cannon"
                 draw_sprite(ActionInfoSpr, 2, startX, drawInfoY)
-            if myAction.myType = "ship"
+            if myAction.actionType = "ship"
                 draw_sprite(ActionInfoSpr, 3, startX, drawInfoY)
             draw_set_color(c_black) 
             draw_set_valign(fa_top)   

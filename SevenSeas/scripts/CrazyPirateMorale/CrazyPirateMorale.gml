@@ -8,11 +8,10 @@ function CrazyPirateMorale() {
 			    condition = CrazyPirate
 			    }
         ds_list_add(global.notificationList, "Poor speech!", "Hopefully it's enough...")
-		UpdateMorale(-2, -1)
+		UpdateMorale(-1, -1)
 	}
 	else{
         ds_list_add(global.notificationList, "Good Speech!", "The crew seems to be doing better!")
 		UpdateMorale(1, -1)
 	}
-	script_execute(closeEventCode, 2)
 }

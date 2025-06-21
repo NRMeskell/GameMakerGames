@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"GenerateHatItem",
   "isCompatibility":false,
   "isDnD":false,

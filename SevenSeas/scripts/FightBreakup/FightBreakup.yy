@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"FightBreakup",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"RatsEvent",
   "isCompatibility":false,
   "isDnD":false,

@@ -37,8 +37,6 @@ if playerTurn and !instance_exists(Event)
                     event_user(1)
                     }
                 }
-			if skipped
-				Pirate.stunned = false
             }
         }
         

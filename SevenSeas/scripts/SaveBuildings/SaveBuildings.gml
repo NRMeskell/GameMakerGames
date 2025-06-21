@@ -2,22 +2,18 @@
 function SaveBuildings(argument0) {
 
 	ini_open(argument0 + "\\BuildingFile.ini")
-	for(var i=0; i<instance_number(LandingSpot); i++){
-	    myLanding = instance_find(LandingSpot, i)
-	    for(var n=0; n<3; n++){ 
-	        curB = myLanding.slotBuild[n]
-	        if curB != undefined{
+	for(var sn=0; sn<instance_number(LandingSpot); sn++){
+	    var myLanding = instance_find(LandingSpot, sn)
+	    for(var bn=0; bn<3; bn++){ 
+	        var curB = myLanding.slotBuild[bn]
+	        if curB == undefined{
+				ini_write_string("LS" + string(sn), "building" + string(bn), "none")
+			}else{
 	            if curB.object_index == Camp
-	                ini_write_string("LS" + string(i), "building" + string(n), curB.myName)
+	                ini_write_string("LS" + string(sn), "building" + string(bn), curB.myName)
 	            else
-	                ini_write_string("LS" + string(i), "building" + string(n), object_get_name(curB.object_index))
-	        }
-	        else
-	            ini_write_string("LS" + string(i), "building" + string(n), "none")
+	                ini_write_string("LS" + string(sn), "building" + string(bn), object_get_name(curB.object_index))
+			}
 	    }
 	}
-
-
-
-
 }

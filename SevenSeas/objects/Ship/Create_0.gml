@@ -1,7 +1,7 @@
 /// @description Gameplay Vars
 
 if global.resolution
-	sceneBackground = surface_create(display_get_width(), display_get_height())
+	sceneBackground = surface_create(1920, 1080)
 else
 	sceneBackground = surface_create(room_width, room_height)
 

@@ -1,7 +1,5 @@
 /// @description Draw Self
 
-if (view_current == 0)
-{
 //draw text backing
 draw_sprite(sprite_index, image_index, x, y)
 
@@ -29,4 +27,3 @@ draw_set_color(make_color_rgb(182,154,8))
 draw_text(x, y - 101, string_hash_to_newline("Load Game"))
 draw_set_color(merge_color(c_red, c_gray, 0.4))
 draw_text(x, y + 109, string_hash_to_newline("return"))
-}

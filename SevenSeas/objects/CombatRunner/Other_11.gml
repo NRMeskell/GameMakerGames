@@ -35,7 +35,7 @@ for(i=0; i<instance_number(ActionParent); i++)
             {
             //Check action requirements
             if checkAction.waitLeft = 0 and ((checkAction.zoneRequired == -1) or (checkAction.zoneRequired == 0 and closeRange = true) or (checkAction.zoneRequired == 1 and closeRange = false))
-                if /*not disabled*/ ((checkAction.myType == "melee" and allowMeleeActions) or (checkAction.myType == "ranged" and allowRangedActions) or (checkAction.myType == "cannon" and allowCannonActions) or (checkAction.myType == "ship" and allowShipActions))
+                if /*not disabled*/ ((checkAction.actionType == "melee" and allowMeleeActions) or (checkAction.actionType == "ranged" and allowRangedActions) or (checkAction.actionType == "cannon" and allowCannonActions) or (checkAction.actionType == "ship" and allowShipActions))
 					ds_list_add(enemyActionList, checkAction)
             }
     }
@@ -49,15 +49,15 @@ myStats[3] = 0
 
 with Enemy
     if stunned = false
-    {
-    for(i=0; i<ds_list_size(myStats); i++)
-        {
-        if ds_list_find_value(myStats, i) < 5
-            other.myStats[ds_list_find_value(myStats, i)] += 1
-        else
-            other.myStats[3] += 1
-        }
-    } 
+	    {
+	    for(i=0; i<ds_list_size(myStats); i++)
+	        {
+	        if ds_list_find_value(myStats, i) < 5
+	            other.myStats[ds_list_find_value(myStats, i)] += 1
+	        else
+	            other.myStats[3] += 1
+	        }
+	    } 
 	
 
 /* */
@@ -70,9 +70,9 @@ if myHealth > 0 and instance_number(Enemy) > 0
     farPreferance = myStats[2]*2 - (global.totalCannonBonus div 2) - myStats[0] + (global.totalSwordBonus div 2)
     wantsClose = max(sign(closePreferance - farPreferance), 0)
     
-    melleDamage = UpdateEnemyDamage(myStats[0], "melee")
-    rangedDamage = UpdateEnemyDamage(myStats[1], "ranged")
-    cannonDamage = UpdateEnemyDamage(myStats[2], "cannon")
+    melleDamage = UpdateDamage(myStats[0], false)
+    rangedDamage = UpdateDamage(myStats[1], false)
+    cannonDamage = UpdateDamage(myStats[2], false)
     
     //Take Turn
     for(var i=0; i<ds_list_size(enemyActionList); i++){
@@ -83,18 +83,18 @@ if myHealth > 0 and instance_number(Enemy) > 0
 		ds_list_add(priorityList, irandom_range(currentAction.priorityMin, currentAction.priorityMax))
         
 		// ## Add desire of each action to list ##
-        if currentAction.myType = "melee"{  //add melee attack 
+        if currentAction.actionType = "melee"{  //add melee attack 
             if closeRange
-                ds_list_add(desireList, UpdateEnemyDamage(melleDamage*(currentAction.priorityMax+(currentAction.rechargeTime)+DamageController.damageScaler[? currentAction.myAttack]), "melee"))
+                ds_list_add(desireList, UpdateDamage(melleDamage*(currentAction.priorityMax+(currentAction.rechargeTime)+DamageController.damageScaler[? currentAction.myAttack]), false))
             else
                 ds_list_add(desireList, 0)
             }
-        else if currentAction.myType = "ranged"{ //add ranged attack
-            ds_list_add(desireList, UpdateEnemyDamage(rangedDamage*(currentAction.priorityMax+(currentAction.rechargeTime)+DamageController.damageScaler[? currentAction.myAttack]), "ranged"))
+        else if currentAction.actionType = "ranged"{ //add ranged attack
+            ds_list_add(desireList, UpdateDamage(rangedDamage*(currentAction.priorityMax+(currentAction.rechargeTime)+DamageController.damageScaler[? currentAction.myAttack]), false))
             }
-        else if currentAction.myType = "cannon"{  //add melee attack 
+        else if currentAction.actionType = "cannon"{  //add melee attack 
             if !closeRange
-                ds_list_add(desireList, UpdateEnemyDamage(cannonDamage*(currentAction.priorityMax+(1+currentAction.rechargeTime)+DamageController.damageScaler[? currentAction.myAttack]), "cannon"))
+                ds_list_add(desireList, UpdateDamage(cannonDamage*(currentAction.priorityMax+(1+currentAction.rechargeTime)+DamageController.damageScaler[? currentAction.myAttack]), false))
             else
                 ds_list_add(desireList, 0)
             }

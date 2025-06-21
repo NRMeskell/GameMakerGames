@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"SearchWreckage",
   "isCompatibility":false,
   "isDnD":false,

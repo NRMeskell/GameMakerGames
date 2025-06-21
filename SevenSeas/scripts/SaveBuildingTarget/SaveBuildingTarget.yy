@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"SaveBuildingTarget",
   "isCompatibility":false,
   "isDnD":false,

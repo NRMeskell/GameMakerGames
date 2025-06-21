@@ -7,7 +7,6 @@ highRange = 1.5
 
 ///vars
 
-myButton = HealDeadAction
 animationY = 0
 animationX = 20
 animationHeight = 50

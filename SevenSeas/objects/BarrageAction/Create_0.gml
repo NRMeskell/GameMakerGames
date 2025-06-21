@@ -8,7 +8,7 @@ priorityMax = 6
 
 myAttack = ShipBarrageAttack
 
-myType = "ranged"
+actionType = "ranged"
 
 requiredSlot[0] = "rigging"
 

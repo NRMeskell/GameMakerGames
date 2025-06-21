@@ -12,7 +12,7 @@ function CurseLifterArrive() {
 	    ds_list_add(buttonStats, 0, 0, 0) 
 	    ds_list_add(buttonRequires, 0, 0, 0)
 	    ds_list_add(buttonCosts, 0, 0, 0)
-		if CurseLifter.myState == "unmet" or CurseLifter.myState == "fresh" or CurseLifter.myState == "passed"
+		if CurseLifter.myState != "dying"
 			ds_list_add(buttonText, "decline her offer", "give limb for 25 gold", "give limb to lift curses")
 		else
 			ds_list_add(buttonText, "ignore her plea", "give limb for 25 gold", "give limb to lift curses")
@@ -27,7 +27,7 @@ function CurseLifterArrive() {
         if CurseLifter.myState == "unwell"
 			eventText = "The friendly woman returns and asks if you'd please like to lift a curse from your ship."
 		if CurseLifter.myState == "dying"
-			eventText = "Mia explains that her soul shall be cast away if she doesn't receive living flesh, and begs for help!"
+			eventText = "Mia pleads for her soul, which will be destroyed if she doesn't receive living flesh!"
 		
 		
 		global.moraleBoost = "curselifter"
@@ -36,102 +36,75 @@ function CurseLifterArrive() {
 
 
 function CurseLifterPass() {
-	if CurseLifter.myState != "unwell"{
+	if CurseLifter.myState != "dying"{
 		ds_list_add(global.notificationList, "Offer Declined!", "The woman is surprisingly disappointed, but wishes your crew well!")
-		CurseLifter.myState = "unwell"
-		
-		with CurseLifter
-			event_user(1)
+		if CurseLifter.myState == "unwell"
+			CurseLifter.myState = "dying"
+		else
+			CurseLifter.myState = "unwell"
+
 	}else{
-		CurseLifter.myState = "dying"
 		ds_list_add(global.notificationList, "Plea Refused!", "Mia breaks down wailing! As she departs, you suspect you will never hear from her again...")
 		instance_destroy(CurseLifter)
 	}
-    
-	script_execute(closeEventCode)
 }
 
 
 function GoldForLimb() {	
+	var limbName;
 	var myPirate = RandomPirate()
-	with myPirate
-		event_user(3)
+	with myPirate{
+		if myRightHand.itemName == "none" or myLeftHand.itemName == "none"
+			limbName = "hand"
+		else if stars < 3
+			limbName = "eye"
+		else
+			limbName = "leg"
+		event_user(limbName)
+	}
 	
 	if CurseLifter.myState != "dying"
-		ds_list_add(global.notificationList, "Trade Complete!", myPirate.firstName + "'s limb comes magically free, and Mia happily trades it for 25 gold!")
+		ds_list_add(global.notificationList, "Trade Complete!", myPirate.firstName + "'s " + limbName + " comes magically free, and Mia happily trades it for 25 gold!")
 	else
-		ds_list_add(global.notificationList, "Mia Saved!", myPirate.firstName + "'s limb comes magically free, and Mia gratefully receives it in tears.")
+		ds_list_add(global.notificationList, "Mia Saved!", myPirate.firstName + "'s " + limbName + " comes magically free, and Mia gratefully receives it in tears.")
 	
 	GetRandomLoot(1, "Offer", [0])
 	with StoreObjectStorable
 		amount = 25
 	
 	CurseLifter.myState = "fresh"
-	with CurseLifter
-		event_user(1)
 	script_execute(closeEventCode)
 }
 
 
 function CurseLifterLimb() {
-	var pirates = ds_list_create()
-	var cursesLifted = 0
-	for(var i=0; i<instance_number(Pirate); i++){
-		var checkPirate = instance_find(Pirate, i)
-		if checkPirate.body == sprite_get_number(PirateManSkinSpr) -1{
-			checkPirate.face = myMainPer * 2 + irandom(1)
-			checkPirate.body = irandom(sprite_get_number(PirateManSkinSpr)-2)
-			cursesLifted ++;
-			with checkPirate{
-				UpdateMorale(3, -1)
-				if surface_exists(fullPirateSurface)
-					MakePirateSurface(fullPirateSurface, 0, 0)
-				if surface_exists(smallPirateSurface)
-					MakePirateSurface(smallPirateSurface, drawPictureRealx, drawPictureRealy)
-				if surface_exists(tagPirateSurface)
-					MakePirateSurface(tagPirateSurface, drawTagSpriteX, drawTagSpriteY)
-			}
-			ds_list_add(pirates, checkPirate, checkPirate, checkPirate)
-		}
-		if string_starts_with(checkPirate.myShirt.itemName, "Cursed"){
-			checkPirate.myShirt.itemName = "Skeletal Coat"
-			checkPirate.myShirt.itemInfo = "A bicorn, now restored to it's former glory"
-			cursesLifted ++;
-			ds_list_add(pirates, checkPirate)
-		}
-		if string_starts_with(checkPirate.myHat.itemName, "Cursed"){
-			checkPirate.myHat.itemName = "Skeletal Hat"
-			checkPirate.myHat.itemInfo = "A bicorn, now restored to it's former glory"
-			ds_list_add(pirates, checkPirate)
-			cursesLifted ++;
-		}
-		if string_starts_with(checkPirate.myPants.itemName, "Cursed"){
-			checkPirate.myPants.itemName = "Skeletal Boots"
-			checkPirate.myPants.itemInfo = "work boots, now restored to their former glory"
-			ds_list_add(pirates, checkPirate)
-			cursesLifted ++;
-		}
+	var limbName;
+	var myPirate = RandomPirate()
+	with myPirate{
+		if myRightHand.itemName == "none" or myLeftHand.itemName == "none"
+			limbName = "hand"
+		else if stars < 3
+			limbName = "eye"
+		else
+			limbName = "leg"
+		event_user(limbName)
 	}
 	
+	var cursesLifted = LiftCurses()
 	if cursesLifted == 0{
 		if CurseLifter.myState != "dying"
-			ds_list_add(global.notificationList, "No Curses!", "Mia is disappointed to not find a curse, and she leaves without a trade.")
-		else
-			ds_list_add(global.notificationList, "Mia Saved!", myPirate.firstName + "'s limb comes magically free, and Mia receives it in tears. However, no curses were found on the ship.")
+			ds_list_add(global.notificationList, "No Curses!", "Mia doesn't find any curses to life and she leaves very dissapointed without taking a limb.")
+		else{
+			ds_list_add(global.notificationList, "Mia Saved!", myPirate.firstName + "'s " + limbName + " comes magically free, and Mia receives it in tears. No curses were found on the ship.")
+		}
 	}else{
-		var gonePirate = ds_list_find_value(pirates, irandom(ds_list_size(pirates)-1))
 		if CurseLifter.myState != "dying"
-			ds_list_add(global.notificationList, "Curses Lifted!", "The woman lifts " + string(cursesLifted) + " curses, magically removes " + gonePirate.firstName + "'s limb, and thanks your crew.")
+			ds_list_add(global.notificationList, "Curses Lifted!", "The woman lifts " + string(cursesLifted) + " curses, magically removes " + gonePirate.firstName + "'s " + limbName + ", and thanks your crew.")
 		else
-			ds_list_add(global.notificationList, "Curses Lifted!", "Mia lifts " + string(cursesLifted) + " curses, and receives " + gonePirate.firstName + "'s magically removed limb with tears of joy!")
-		
-		with gonePirate
-			event_user(3)
+			ds_list_add(global.notificationList, "Curses Lifted!", "Mia lifts " + string(cursesLifted) + " curses, and receives " + gonePirate.firstName + "'s magically removed " + limbName + " with tears of joy!")
 	}
 	
 	CurseLifter.myState = "fresh"
-	with CurseLifter
-		event_user(1)
 	script_execute(closeEventCode)
 }
 

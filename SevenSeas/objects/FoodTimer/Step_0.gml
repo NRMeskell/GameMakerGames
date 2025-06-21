@@ -71,7 +71,7 @@ if alarm[0] < 1{
 	            with checkPirate
 	                {
 	                UpdateMorale(-2,-1)
-	                myHealth -= myHealth*1/2
+	                UpdateHealth(id, -myHealth/2)
 	                }
 	            }
 	        }

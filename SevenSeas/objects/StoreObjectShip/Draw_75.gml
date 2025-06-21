@@ -16,7 +16,7 @@ draw_sprite(StatSymbolSpr, 9, xWindow + 114 - sprite_get_width(StatSymbolSpr)/2,
 draw_set_valign(fa_center)
 draw_set_color(c_black)
 draw_set_halign(fa_left)
-draw_text(xWindow + 59, yWindow + 26, string_hash_to_newline(name))
+draw_text(xWindow + 59, yWindow + 23, string_hash_to_newline(name))
 draw_set_halign(fa_center)
 draw_text(xWindow + 87, yWindow + 55, string_hash_to_newline("Stats:"))
 

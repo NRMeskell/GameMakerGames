@@ -1,16 +1,16 @@
-/// @description Load Ladnigng Spots
+/// @description Load Landigng Spots
 function LoadLandingSpots(argument0) {
 	ini_open(argument0 + "\\MapLandingFile.txt")
 
-	for(n=0; n<instance_number(LandingSpot); n++){
-	    myLanding = instance_find(LandingSpot, n)
+	for(var bn=0; bn<instance_number(LandingSpot); bn++){
+	    var myLanding = instance_find(LandingSpot, bn)
     
-	    myLanding.x = ini_read_real("Landing " + string(n), "x", myLanding.x)
-	    myLanding.y = ini_read_real("Landing " + string(n), "y", myLanding.y)
-	    myLanding.checkX = ini_read_real("Landing " +  string(n), "checkX", myLanding.checkX)
-	    myLanding.checkY = ini_read_real("Landing " +  string(n), "checkY", myLanding.checkY)
-	    myLanding.visited = ini_read_real("Landing " +  string(n), "visited", myLanding.visited)
-		myLanding.myIndex = ini_read_real("Landing " +string(n), "myIndex", myLanding.myIndex)
+	    myLanding.x = ini_read_real("Landing " + string(bn), "x", myLanding.x)
+	    myLanding.y = ini_read_real("Landing " + string(bn), "y", myLanding.y)
+	    myLanding.checkX = ini_read_real("Landing " +  string(bn), "checkX", myLanding.checkX)
+	    myLanding.checkY = ini_read_real("Landing " +  string(bn), "checkY", myLanding.checkY)
+	    myLanding.visited = ini_read_real("Landing " +  string(bn), "visited", myLanding.visited)
+		myLanding.myIndex = ini_read_real("Landing " +string(bn), "myIndex", myLanding.myIndex)
 	    if myLanding.visited or myLanding.myIndex == 1
 	        myLanding.image_index = myLanding.myIndex
 	    }

@@ -7,7 +7,7 @@ priorityMin = 1
 priorityMax = 5
 
 myAttack = ShipLookoutAttack
-myType = "ranged"
+actionType = "ranged"
 level = 0
 
 requiredSlot[0] = "rigging"

@@ -6,6 +6,7 @@ requireText = ""
 
 enemyAction = false
 myAttack = noone
+spriteNumber = 0
 
 siwtchInfoY = 180
 infoYGap = 5
@@ -27,7 +28,7 @@ animationNumber = 0
 image_speed = 0
 selected = false
 
-myType = ""
+actionType = ""
 waitLeft = 0
 needsTarget = false
 myTarget = noone
@@ -40,4 +41,6 @@ priority = -1
 changeZones = false
 
 arrowHeightTimer = 0
+waitLeft = 0
+rechargeTime = 0
 

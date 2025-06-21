@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"CollectorsRun",
   "isCompatibility":false,
   "isDnD":false,

@@ -6,7 +6,6 @@ highRange = 0.9
 
 ///vars
 
-myButton = BarrageAction
 image_speed = 0.8
 image_index = 0
 animationY = -30

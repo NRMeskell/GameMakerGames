@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"SpoiledFoodSalvage",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"GenerateShipItem",
   "isCompatibility":false,
   "isDnD":false,

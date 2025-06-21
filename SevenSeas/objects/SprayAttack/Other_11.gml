@@ -1,5 +1,5 @@
 /// @description Animate
 
-shipTarget.myHealth -= damage
+UpdateHealth(shipTarget, -damage)
     
 

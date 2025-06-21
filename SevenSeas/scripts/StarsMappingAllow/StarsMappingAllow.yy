@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"StarsMappingAllow",
   "isCompatibility":false,
   "isDnD":false,

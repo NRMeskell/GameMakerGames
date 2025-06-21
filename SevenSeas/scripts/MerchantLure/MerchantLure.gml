@@ -13,11 +13,6 @@ function MerchantLure() {
 	        }
 	    instance_destroy(EventDrawer)
 	    ds_list_add(global.notificationList, "they're surprised!", "the merchant ship is caught off guard!")
-	    with Enemy
-	        {
-	        myHealth = round(myHealth*0.75)
-	        ds_list_delete(myStats, 0)
-	        }
 	    }
 	else// if result < 8
 	    {
@@ -30,9 +25,5 @@ function MerchantLure() {
 	    with Pirate
 	        UpdateMorale(-1, global.FEARSOME)
 	    }
-
-	script_execute(closeEventCode, 2)
-
-
 
 }

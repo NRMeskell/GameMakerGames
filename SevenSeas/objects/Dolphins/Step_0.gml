@@ -17,5 +17,5 @@ if image_angle < -180
     }
     
 if floatAway
-    y += 2*global.gameRate
+    y += 2*max(1, global.doTime*global.gameRate)
 

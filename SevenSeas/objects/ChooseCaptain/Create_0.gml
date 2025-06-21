@@ -162,4 +162,3 @@ EquipItem(id, MakeRandomPantsItem(-1))
 EquipItem(id, MakeRandomHandItem(0))
 
 PirateLevelUp(false, false)
-

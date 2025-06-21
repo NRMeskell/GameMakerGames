@@ -1,10 +1,13 @@
-/// @description Do Attack
+/// @description Animate
 
-i = irandom(instance_number(crewTarget)-1)
-nextTargetPirate = instance_find(crewTarget, i)
-repeat(damage)
-    {
-    nextTargetPirate.myHealth -= UpdateCrewDamage(1, nextTargetPirate)
-    }
-    
+var targetCrew = undefined
+var healthLeft = 0
+with crewTarget{
+	if myHealth > healthLeft{
+		healthLeft = myHealth
+		targetCrew = id
+	}
+}
+
+UpdateHealth(targetCrew, -damage)
 

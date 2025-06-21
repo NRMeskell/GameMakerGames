@@ -10,8 +10,8 @@ function MastDamagedSend() {
 	else{
 	    hurtPirate = RandomPirate()
 	    ds_list_add(global.notificationList, "sails damaged!", hurtPirate.name + " was hurt while trying to securing the sails.") 
-	    Ship.myHealth -= 50*(global.seaLevel+1)
-	    hurtPirate.myHealth -= 25*(global.seaLevel+1)
+	    UpdateHealth(Ship, -25*(global.seaLevel+1))
+		UpdateHealth(hurtPirate, -15*(global.seaLevel+1))
 	    }
 
 	script_execute(closeEventCode, 2)

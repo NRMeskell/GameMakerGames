@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"SetTrap",
   "isCompatibility":false,
   "isDnD":false,

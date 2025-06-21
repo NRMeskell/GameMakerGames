@@ -3,7 +3,7 @@
 with crewTarget
     {
     ApplyCrewEffect("stun", id)
-    myHealth -= damage
+    UpdateHealth(id, -10)
     }
 
     

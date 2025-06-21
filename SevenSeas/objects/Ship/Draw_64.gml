@@ -218,6 +218,7 @@ with Pirate
 		
     }
 	
+if instance_exists(Pirate)
 	for(var i = drawTagY+sprite_get_height(PirateListSpr)+1; i < room_height; i+= Pirate.tagDistance)
         draw_sprite(PirateListSpr, 4, drawTagX, i)
 	}

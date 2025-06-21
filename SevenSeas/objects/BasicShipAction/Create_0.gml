@@ -8,7 +8,7 @@ priorityMin = 2
 priorityMax = 4
 myAttack = ShipShipChange
 
-myType = "ship"
+actionType = "ship"
 
 requiredSlot[0] = "wheel"
 changeZones = true

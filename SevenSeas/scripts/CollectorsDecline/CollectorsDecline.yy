@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"CollectorsDecline",
   "isCompatibility":false,
   "isDnD":false,

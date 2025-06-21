@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"FruitLeave",
   "isCompatibility":false,
   "isDnD":false,

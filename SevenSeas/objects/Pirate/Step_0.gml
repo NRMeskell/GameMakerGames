@@ -121,12 +121,6 @@ if myHealth < 1{
 	event_user(2)
     }
     
-if myHealth > maxHealth - legLostHealth*maxHealth*(legLostRight + legLostLeft)
-    {
-    myHealth = maxHealth - legLostHealth*maxHealth*(legLostRight + legLostLeft)
-    healthDiff = maxHealth - legLostHealth*maxHealth*(legLostRight + legLostLeft)
-	}
-    
 if !instance_exists(CombatRunner)
     stunned = false
     
@@ -141,7 +135,7 @@ if (eyeLostRight and eyeLostLeft) and myAction[1] != LostEyeAction
 if abs(healthDiff - myHealth) > 1
     {
 	if healthDiffTimer == 0 and myHealth < healthDiff and ((random(1) + random(1))/2 < abs(healthDiff - myHealth)/healthDiff){
-        event_user(3)
+        LoseLimb(undefined)
         global.moraleBoost = "injured"
         UpdateMorale(-2, -1)
 		}
@@ -189,10 +183,10 @@ if morale < -3
 if morale <= moraleMax[stars]
 	leveling = false
 	
-if morale > moraleMax[stars] and !instance_exists(PirateLeveler) {
+if morale > moraleMax[stars] and !instance_exists(PirateLeveler) and !instance_exists(Event) and !instance_exists(CombatRunner) {
 	if stars < 3 and myAction[stars] != LostEyeAction
 		PirateLevelUp(true, true)
-	else{
+	else if HasStored(5, 1){
 		with instance_create(-1000, room_height/2, PirateLevelChooser){
 			myPirate = other.id
 			event_user(0)
@@ -337,11 +331,6 @@ if selected
 
 /* */
 /*  */
-
-if (myHealth < maxHealth)
-    {
-    myHealth += global.timeCycleRate * sqrt(global.totalMedicalBonus)*global.doTime*Ship.healSpeed
-    }
 }
 
 stars = 0

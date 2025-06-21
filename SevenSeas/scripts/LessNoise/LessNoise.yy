@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"LessNoise",
   "isCompatibility":false,
   "isDnD":false,

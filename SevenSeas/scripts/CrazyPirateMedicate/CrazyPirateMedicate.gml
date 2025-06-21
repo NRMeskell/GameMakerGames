@@ -9,7 +9,7 @@ function CrazyPirateMedicate() {
 			    }
 				
 		with Pirate
-			myHealth -= round(myHealth*.1)
+			UpdateHealth(id, -myHealth*0.2)
 		ds_list_add(global.notificationList, "The crew seem unaided!", "The medicine is awful, and does not seem to help.")
 		UpdateMorale(-1, -1)
 	}
@@ -17,5 +17,4 @@ function CrazyPirateMedicate() {
         ds_list_add(global.notificationList, "The crew be helped!", "The crew seems to be doing better...")
 		UpdateMorale(1, -1)
 	}
-	script_execute(closeEventCode, 2)
 }

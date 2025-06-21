@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"closeEventCode",
   "isCompatibility":false,
   "isDnD":false,

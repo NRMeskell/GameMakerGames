@@ -1,17 +1,17 @@
-function UpdateMorale(argument0, argument1) {
+function UpdateMorale(change, personality) {
 	if object_index == Pirate{
-		PirateMoraleUpdate(argument0, argument1, id)
+		PirateMoraleUpdate(change, personality)
 	}
 	else{
 		with Pirate
-			PirateMoraleUpdate(argument0, argument1, id)
+			PirateMoraleUpdate(change, personality)
 	}
 }
 
-function PirateMoraleUpdate(argument0, argument1, argument2){
+function PirateMoraleUpdate(change, personality){
 	moraleChange = 0
-	if myMainPer == argument1 or argument1 == -1
-	    moraleChange = argument0
+	if myMainPer == personality or personality == -1
+	    moraleChange = change
 
 	repeat(abs(moraleChange))
 	    {

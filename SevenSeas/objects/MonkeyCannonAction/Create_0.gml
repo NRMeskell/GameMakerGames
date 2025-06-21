@@ -3,7 +3,7 @@
 event_user(0)
 spriteNumber = 25
 rechargeTime = 2
-myType = "cannon"
+actionType = "cannon"
 requiredSlot[0] = "cannon"
 level = 0
 

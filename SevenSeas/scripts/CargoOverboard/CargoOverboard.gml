@@ -27,7 +27,7 @@ function CargoOverboardMedical() {
 	}
 	else{
 		ds_list_add(global.notificationList, "Failed Treatment!", eventPirate.name + " injuries are too great and " + cargoFlavor + " tumbles overboard!")	
-		eventPirate.myHealth -= 20 + global.seaLevel*15
+		UpdateHealth(eventPirate, -(20 + global.seaLevel*15))
 	}
 	
 	script_execute(closeEventCode, 2)
@@ -35,7 +35,7 @@ function CargoOverboardMedical() {
 
 function CargoOverboardSave() {
 	//save all cargo	
-	eventPirate.myHealth -= 20 + global.seaLevel*15
+	UpdateHealth(eventPirate, -(20 + global.seaLevel*15))
 	
 	if argument0{
 		ds_list_add(global.notificationList, "Cargo secured!", "The crew managed to secure the cargo, but " + eventPirate + " is left untreated!")

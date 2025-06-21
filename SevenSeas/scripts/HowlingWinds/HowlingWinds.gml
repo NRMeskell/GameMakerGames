@@ -24,9 +24,9 @@ function HowlHoldFast() {
 	ds_list_add(global.notificationList, "biting air", "the wind bites through the crew and deck!")
 	UpdateMorale(-1, -1)
 	with Pirate 
-		myHealth -= 20
+		UpdateHealth(id, -20)
 	with Ship 
-		myHealth -= 80
+		UpdateHealth(id, -80)
 		
 	audio_stop_sound(mySound)
 }
@@ -40,9 +40,9 @@ function HowlSail() {
 		ds_list_add(global.notificationList, "biting air", "the wind bites through the exposed crew as they climb the masts!")
 		UpdateMorale(-1, -1)
 		with Pirate 
-			myHealth -= 35
+			UpdateHealth(id, -35)
 		with Ship 
-			myHealth -= 150
+			UpdateHealth(id, -100)
 	}
 	audio_stop_sound(mySound)
 	closeEventCode()
@@ -53,15 +53,15 @@ function HowlBelowDeck(){
 		ds_list_add(global.notificationList, "spooky sounds!", "The winds blows across the deck, howling and biting into the wood.")
 		UpdateMorale(1, -1)
 		with Ship 
-			myHealth -= 150
+			UpdateHealth(id, -100)
 	}
 	else{
 		ds_list_add(global.notificationList, "crew paralyzed", "the howls captivate the crew, who are compelled to stand exposed in the biting winds!")
 		UpdateMorale(-1, -1)
 		with Pirate 
-			myHealth -= 35
+			UpdateHealth(id, -35)
 		with Ship 
-			myHealth -= 150
+			UpdateHealth(id, -150)
 	}
 	audio_stop_sound(mySound)
 	closeEventCode()

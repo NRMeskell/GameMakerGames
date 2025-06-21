@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"SupplyBoxWithdraw",
   "isCompatibility":false,
   "isDnD":false,

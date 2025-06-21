@@ -10,12 +10,12 @@ function MastDamagedHope() {
 	else if result < 8
 	    {
 	    ds_list_add(global.notificationList, "Sails torn loose!", "sails tear away from the mast, damaging the ship!") 
-	    Ship.myHealth -= 75*(global.seaLevel+1)
+	    UpdateHealth(Ship, -30*(global.seaLevel+1))
 	    }
 	else
 	    {
 	    ds_list_add(global.notificationList, "mast cracks!", "the mast cracks and sails tear, severely damaging the ship!") 
-	    Ship.myHealth -= 150*(global.seaLevel+1)
+	    UpdateHealth(Ship, -50*(global.seaLevel+1))
 	    }
 
 	script_execute(closeEventCode, 2)

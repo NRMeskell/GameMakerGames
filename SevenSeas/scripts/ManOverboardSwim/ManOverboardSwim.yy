@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"ManOverboardSwim",
   "isCompatibility":false,
   "isDnD":false,

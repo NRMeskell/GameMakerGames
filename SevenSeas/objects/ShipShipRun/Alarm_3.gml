@@ -11,9 +11,14 @@ if runSuccess
     instance_destroy(Enemy)
     instance_destroy(EffectParent)
     instance_destroy(CombatRunner) 
+	
+	var totalCargo = 0
+	for(var j=0; j<array_length(ItemRunner.cargoCost); j++)
+		totalCargo += CargoAmount(j)
+	var lostCargo = LoseRandomCargo(totalCargo div 2)
     
-	global.moraleBoost = "run away"
-    with Pirate
+	global.moraleBoost = "Surrender"
+	with Pirate
         {
         UpdateMorale(-3, -1)
         UpdateMorale(-1, global.FEARSOME)
@@ -22,7 +27,7 @@ if runSuccess
         bleeding = false
         }     
         
-    ds_list_add(global.notificationList, "Ran Away!", "The crew lose significant morale.")
+    ds_list_add(global.notificationList, "Surrendered!", "The crew unload " + lostCargo + ", and lose significant morale.")
     alarm[4] = -1
 	
 	with RealAttack

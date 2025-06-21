@@ -8,6 +8,6 @@ with crewTarget
         }
     }
     
-shipTarget.myHealth -= damage
+UpdateHealth(shipTarget, -damage)
     
 

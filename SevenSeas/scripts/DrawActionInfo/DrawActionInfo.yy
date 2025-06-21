@@ -1,12 +1,12 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"DrawActionInfo",
   "isCompatibility":false,
   "isDnD":false,
   "name":"DrawActionInfo",
   "parent":{
-    "name":"Pirate",
-    "path":"folders/Scripts/Pirate.yy",
+    "name":"PirateUpdates",
+    "path":"folders/Scripts/Pirate/PirateUpdates.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

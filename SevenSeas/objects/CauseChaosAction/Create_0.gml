@@ -7,7 +7,7 @@ spriteNumber = 19
 rechargeTime = 4
 priorityMin = 5
 priorityMax = 10
-myType = "ranged"
+actionType = "ranged"
 myAttack = ShipChaosAttack
 
 requiredSlot[0] = "rigging"

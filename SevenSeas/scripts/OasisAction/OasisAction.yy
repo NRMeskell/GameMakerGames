@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"OasisAction",
   "isCompatibility":false,
   "isDnD":false,

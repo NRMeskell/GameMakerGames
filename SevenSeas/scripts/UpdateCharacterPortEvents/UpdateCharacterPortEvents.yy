@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"UpdateCharacterPortEvents",
   "isCompatibility":false,
   "isDnD":false,

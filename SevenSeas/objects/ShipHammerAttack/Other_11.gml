@@ -1,6 +1,4 @@
 /// @description Do Attack
 
-targetPirate.myHealth -= damage;
-
-
-
+SpreadDamage(crewTarget, damage);
+targetPirate.stunned = true

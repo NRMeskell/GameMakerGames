@@ -9,7 +9,7 @@ priorityMax = 5
 myAttack = ShipHeavyBoardingAttack
 
 requiredSlot[0] = "rigging"
-myType = "melee"
+actionType = "melee"
 level = 0
 
 

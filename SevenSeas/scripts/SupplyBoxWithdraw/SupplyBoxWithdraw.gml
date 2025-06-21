@@ -8,7 +8,7 @@ function SupplyBoxWithdraw() {
 	else{
 		ds_list_add(global.notificationList, "Wrong Code!", "After several failed attempts, a loaded bullet-trap fires and injures the crew!")
 		with RandomPirate(){
-			myHealth -= 20
+			UpdateHealth(id, -10)
 			UpdateMorale(-1, -1)
 			UpdateMorale(-1, global.KEEN)
 		}

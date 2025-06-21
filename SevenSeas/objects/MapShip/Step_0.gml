@@ -34,7 +34,7 @@ if path_position = 1 and global.inPort = false{
 		if targetPort.image_index == 1{        
 		    //Fix Ship
 		    while HasStored(3,1) and (Ship.myHealth < Ship.maxHealth){
-		        Ship.myHealth += min(Ship.maxHealth div 15, Ship.maxHealth - Ship.myHealth)
+		        UpdateHealth(Ship, Ship.maxHealth div 10)
 		        LoseCargo(3,1)
 		    }
             
@@ -68,11 +68,13 @@ if path_position = 1 and global.inPort = false{
 	    //Create ports if not yet created
 	    if targetPort.visited{
 	        with targetPort{
-	            for(i=0; i<slotNumber; i++){
-					instance_activate_object(slotBuild[i])
-	                slotBuild[i].x = MapShip.slotX[slotBuild[i].mySlot]
-	                slotBuild[i].y = MapShip.slotY[slotBuild[i].mySlot]
-	                slotBuild[i].image_speed = 0.2
+	            for(i=0; i<3; i++){
+					if slotBuild[i] != undefined{
+						instance_activate_object(slotBuild[i])
+		                slotBuild[i].x = MapShip.slotX[slotBuild[i].mySlot]
+		                slotBuild[i].y = MapShip.slotY[slotBuild[i].mySlot]
+		                slotBuild[i].image_speed = 0.2
+					}
 	            }
 	        }
 	    }
@@ -84,15 +86,16 @@ if path_position = 1 and global.inPort = false{
 				
 				var tavernSlot = choose(0,1,2)
 				var placesLeft = [Smithy, Tailors, TrinketShop]
-	            for(var i=0; i<slotNumber; i++) {
-					var slotNum, slotObject;
-					if (instance_number(TrinketShop) < instance_number(Tavern)/2)
-						slotNum = irandom(array_length(placesLeft)-1)
-					else
-						slotNum = array_length(placesLeft)-1
-					slotObject = array_get(placesLeft, slotNum)
-	                array_delete(placesLeft, slotNum, 1)
+				var slotNum, slotObject;
+	            for(var i=0; i<(myIndex = 1 ? 3 : 1); i++) {
 					if myIndex = 1{
+						if (instance_number(TrinketShop) < instance_number(Tavern)/2)
+							slotNum = irandom(array_length(placesLeft)-1)
+						else
+							slotNum = array_length(placesLeft)-1
+						slotObject = array_get(placesLeft, slotNum)
+		                array_delete(placesLeft, slotNum, 1)
+						
 						if i == tavernSlot
 							getType = Tavern
 						else if i == 0{
@@ -149,7 +152,7 @@ else
 	path_speed = sailSpeed
 }
 
-viewDistance = normalViewDistance//*(1+viewDistanceModifier*global.totalWheelBonus)
+viewDistance = normalViewDistance
 
 
 ///Ship Vars

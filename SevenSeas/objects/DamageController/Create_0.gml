@@ -5,21 +5,21 @@ damageMax = ds_map_create()
 damageScaler = ds_map_create()
 
 //Basic melee
-damageMin[? ShipSwordAttack] = 0.9
-damageMax[? ShipSwordAttack] = 1.1
+damageMin[? ShipSwordAttack] = 0.98
+damageMax[? ShipSwordAttack] = 1.0
 damageScaler[? ShipSwordAttack] = 8
 //Heavy melee
 damageMin[? ShipHeavyBoardingAttack] = 0.75
-damageMax[? ShipHeavyBoardingAttack] = 1.25
+damageMax[? ShipHeavyBoardingAttack] = 1.0
 damageScaler[? ShipHeavyBoardingAttack] = 12
 //Swarm melee
 damageMin[? ShipSwarmAttack] = 0.75
 damageMax[? ShipSwarmAttack] = 1.5
-damageScaler[? ShipSwarmAttack] = 5
+damageScaler[? ShipSwarmAttack] = 6
 //Hammer melee
 damageMin[? ShipHammerAttack] = 0.9
 damageMax[? ShipHammerAttack] = 1.1
-damageScaler[? ShipHammerAttack] = 3
+damageScaler[? ShipHammerAttack] = 8
 //Scout melee
 damageMin[? ShipScoutAttack] = 0.8
 damageMax[? ShipScoutAttack] = 1.1
@@ -27,7 +27,7 @@ damageScaler[? ShipScoutAttack] = 6
 //Stab melee
 damageMin[? ShipFinishingAttack] = 1.0
 damageMax[? ShipFinishingAttack] = 1.25
-damageScaler[? ShipFinishingAttack] = 15
+damageScaler[? ShipFinishingAttack] = 6
 //Hold Fast melee
 damageMin[? ShipHoldFastAttack] = 0.8
 damageMax[? ShipHoldFastAttack] = 1.2

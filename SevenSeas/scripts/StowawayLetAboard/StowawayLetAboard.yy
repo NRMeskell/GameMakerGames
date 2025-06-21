@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"StowawayLetAboard",
   "isCompatibility":false,
   "isDnD":false,

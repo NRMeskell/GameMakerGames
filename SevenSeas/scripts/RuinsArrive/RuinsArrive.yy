@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"RuinsArrive",
   "isCompatibility":false,
   "isDnD":false,

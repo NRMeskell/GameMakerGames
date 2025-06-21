@@ -10,7 +10,7 @@ function BugsTrap() {
 	else{
 		with Pirate{
 			UpdateMorale(-1, -1)
-			myHealth -= 10
+			UpdateHealth(id, -10)
 		}
 	ds_list_add(global.notificationList, "bugs attracted", "the traps attract the bugs, making them more aggressive. They continue to bite the crew!")
 	

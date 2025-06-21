@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"UpdateCharacterEvents",
   "isCompatibility":false,
   "isDnD":false,

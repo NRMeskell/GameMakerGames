@@ -6,7 +6,7 @@ else
     image_xscale = 1
     
 if !floatAway{
-    image_alpha = abs(sin((current_time+alphaShift)/10000))*global.gameRate
+    image_alpha = abs(sin((current_time+alphaShift)/10000))*max(1, global.doTime*global.gameRate)
 }
 else{
 	image_alpha -= 0.01

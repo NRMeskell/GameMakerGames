@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"ManOverboardRope",
   "isCompatibility":false,
   "isDnD":false,

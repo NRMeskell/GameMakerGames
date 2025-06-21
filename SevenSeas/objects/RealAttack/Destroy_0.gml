@@ -1,12 +1,8 @@
-/// @description Unstun crew
-// You can write your code in this editor
+/// @description Turn Over Unstun Enemy Crew
 
-if shipTarget = Ship{
-	with Pirate stunned = false
-	with Ship stunned = false
+if activated{
+	if instance_exists(myCrewTarget)
+		myCrewTarget.stunned = false
+	if instance_exists(myShipTarget)
+		myShipTarget.stunned = false
 }
-else{
-	with Enemy stunned = false
-	with CombatRunner stunned = false
-}
-	

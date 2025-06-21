@@ -1,6 +1,5 @@
 /// @description Update info
-
+/// @description Update info
 
 name = "swarm"
-description = "deals " + GetDamage(myAttack) + " to a random enemy."
-
+description = "deals " + GetDamageString(myAttack) + " damage to the enemy crew with the most health."

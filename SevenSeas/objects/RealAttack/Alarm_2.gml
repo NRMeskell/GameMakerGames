@@ -13,11 +13,8 @@ if ds_map_find_value(DamageController.damageScaler, object_index) != undefined
     madeAttacks = attackPower
     animationLength = (room_speed*sqrt(attackNumber*1/3)/global.combatRate)
     
-    if shipTarget == CombatRunner{
-        damage = UpdateDamage(irandom_range(attackPower*DamageController.damageScaler[? object_index]*DamageController.damageMin[? object_index], attackPower*DamageController.damageScaler[? object_index]*DamageController.damageMax[? object_index]), myButton.myType)
-	}
-	else
-        damage = UpdateEnemyDamage(irandom_range(attackPower*DamageController.damageScaler[? object_index]*DamageController.damageMin[? object_index], attackPower*DamageController.damageScaler[? object_index]*DamageController.damageMax[? object_index]), myButton.myType)
+	damageRange = GetDamageRange(object_index)
+	damage = irandom_range(damageRange[0], damageRange[1])
 	}
 else
     {

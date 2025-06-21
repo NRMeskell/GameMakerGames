@@ -6,7 +6,7 @@ function FightAllow() {
 	        {
 	        UpdateMorale(-1, -1)
 	        UpdateMorale(-1, global.FEARSOME)
-	        myHealth -= maxHealth div 4
+	        UpdateHealth(id, -irandom(25*(1+global.seaLevel)))
 	        other.itemLost = LoseRandomItem()
 	        }
 	    ds_list_add(global.notificationList, myPirate.firstName + " lost!", "they were beat badly, and their " + itemLost + " was taken!")
@@ -17,7 +17,7 @@ function FightAllow() {
 	        {
 	        UpdateMorale(1, -1)
 	        UpdateMorale(1, global.FEARSOME)
-	        myHealth -= maxHealth div 8
+	        UpdateHealth(id, -irandom(10*(1+global.seaLevel)))
 	        }
         
 	    ds_list_add(global.notificationList, myPirate.firstName + " won!", "they were victorious and gain morale.")

@@ -7,7 +7,7 @@ priorityMin = 2
 priorityMax = 5
 myAttack = ShipCannonAttack
 
-myType = "cannon"
+actionType = "cannon"
 requiredSlot[0] = "cannon"
 level = 0
 

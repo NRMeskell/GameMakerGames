@@ -1,5 +1,5 @@
 /// @description Do attack
 
-targetPirate.myHealth -= damage
+UpdateHealth(targetPirate, -damage)
 ApplyCrewEffect("bleed", targetPirate)
 

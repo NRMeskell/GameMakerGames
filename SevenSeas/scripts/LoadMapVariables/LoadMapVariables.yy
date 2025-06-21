@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"LoadMapVariables",
   "isCompatibility":false,
   "isDnD":false,

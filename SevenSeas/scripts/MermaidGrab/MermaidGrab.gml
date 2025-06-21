@@ -3,7 +3,7 @@ function MermaidGrab() {
 
 	with Pirate
 	    {
-	    myHealth -= irandom_range(10,30)
+	    UpdateHealth(id, -25)
 	    }
     
 	if !argument0

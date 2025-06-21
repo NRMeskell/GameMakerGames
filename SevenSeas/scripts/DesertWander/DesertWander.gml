@@ -6,7 +6,7 @@ function DesertWander() {
 		ds_list_add(global.notificationList, "nothing found!", "a day of wandering into the desert has lowered the crew's morale.")
 		UpdateMorale(-2, -1)	
 		with Pirate 
-			myHealth -= 15
+			UpdateHealth(id, -25)
 		}
 	else
 	    {
@@ -15,6 +15,6 @@ function DesertWander() {
 		
 		ds_list_add(global.notificationList, "items found!", "the crew is surprised to find " + lootText + " in this arid desert.")
 		with Pirate 
-			myHealth -= 15
+			UpdateHealth(id, -25)
 		}
 }

@@ -73,17 +73,26 @@ function LoadPirate(argument0) {
 	    EquipItem(pirate, LoadItem(ini_read_string("equipment", "lhand", SaveItem(pirate.myLeftHand))))
     
 	//ship slots
-	var newSlot = instance_find(ShipSlot, real(ini_read_string("ship", "slot", 2)))
-	while newSlot == noone or newSlot.occupied or newSlot.slotType == "storage" or newSlot.xSpot[Ship.shipType] == -50
-		newSlot = instance_find(ShipSlot, irandom(instance_number(ShipSlot)-1))
-	
-	var newMainSlot = newSlot
+	var pirSlot = ini_read_string("ship", "slot", "rigging")
+	var newSlot;
+	for(var sn=0; sn<instance_number(ShipSlot); sn++){
+		var checkSlot = instance_find(ShipSlot, sn)
+		//check if slot is good for a new pirate
+		if checkSlot.occupied = false and checkSlot.xSpot[Ship.shipType] != -50 and checkSlot.myLayer != 2{
+			// default to open slots
+			newSlot = checkSlot;
+			// if slot is correct type, end search
+			if checkSlot.slotType == pirSlot{
+				break;
+			}
+		}
+	}
 
 	newSlot.myThing = pirate.id
 	pirate.mySlot.occupied = false
 	newSlot.occupied = true
 	pirate.mySlot = newSlot
-	pirate.myMainSlot = newMainSlot
+	pirate.myMainSlot = newSlot
 
 	ini_close()
 }

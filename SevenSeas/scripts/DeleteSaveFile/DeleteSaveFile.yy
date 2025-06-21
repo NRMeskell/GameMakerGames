@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"DeleteSaveFile",
   "isCompatibility":false,
   "isDnD":false,

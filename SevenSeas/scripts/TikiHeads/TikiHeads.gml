@@ -2,27 +2,38 @@ function TikiHeads() {
 	//Get Treasure
 
 	global.moraleBoost = "idols"
-	result = irandom(3)
+	result = irandom(2)
 	
-	if result = 0 {
-		cursedCrew = RandomPirate()
-		with cursedCrew{
-			event_user(3)
-		}
-		ds_list_add(global.notificationList, "Cursed!", "The idols unleash a curse upon the crew, crippling " + cursedCrew.name + "!")
-	}
-	else if result <= 2 and irandom(1){
+	if result <= 1{
 		ds_list_add(global.notificationList, "No response", "Water drains from the idols, but nothing more appears to happen")
 	}
 	else {
-		blessedCrew = RandomPirate()
-		while blessedCrew.mySlot.slotType == "bed"
-			blessedCrew = RandomPirate()
-			
-		with blessedCrew{
-			PirateLevelUp(true, false)
+		var cursedPirates = false
+		with Pirate{
+			if body == sprite_get_number(PirateManSkinSpr)-1{
+				cursedPirates = true
+			if string_starts_with(myShirt.itemName, "Cursed")
+				cursedPirates = true
+			if string_starts_with(myHat.itemName, "Cursed")
+				cursedPirates = true
+			if string_starts_with(myPants.itemName, "Cursed")
+				cursedPirates = true
+			}
 		}
-		ds_list_add(global.notificationList, "Blessed!", "The idols rumble with power, and bestow a blessing upon " + blessedCrew.name + "!")
+		
+		// no cursed pirates, so level up random pirate
+		if cursedPirates == false{
+			var blessedCrew = RandomPirate()			
+			with blessedCrew{
+				PirateLevelUp(true, false)
+			}
+			ds_list_add(global.notificationList, "Blessed!", "The idols rumble with power, and bestow a blessing upon " + blessedCrew.name + "!")
+		}
+		else{
+			
+			ds_list_add(global.notificationList, "Blessed!", "The idols rumble with power, and lift all curses from the crew!")
+			LiftCurses()
+		}
 	}
 	with TikiOffer
 		goAway = true

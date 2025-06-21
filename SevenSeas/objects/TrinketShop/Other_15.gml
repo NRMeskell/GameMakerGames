@@ -36,7 +36,7 @@ repeat(irandom_range(2,4))
     with newItem
         {        
         itemNumber = other.type
-        amount = round((irandom_range(5,10) + (5*(global.seaLevel + 1)))/ItemRunner.cargoCost[itemNumber]) + 1
+        amount = min(10, round((irandom_range(5,10) + (5*(global.seaLevel + 1)))/ItemRunner.cargoCost[itemNumber]) + 1)
         selected = false
         cost = ItemRunner.cargoCost[itemNumber]+ irandom(2) + ItemRunner.cargoCost[itemNumber]*amount               
         selected = false

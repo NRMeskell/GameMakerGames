@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"DrawBackWaterWithLighting",
   "isCompatibility":false,
   "isDnD":false,

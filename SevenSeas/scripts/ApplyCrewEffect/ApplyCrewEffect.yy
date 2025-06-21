@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"ApplyCrewEffect",
   "isCompatibility":false,
   "isDnD":false,

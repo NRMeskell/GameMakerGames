@@ -19,7 +19,4 @@ function GetSpecialAttack() {
 	    return choose(BroadsideAction, WarningShotAction, CannonSprayAction, ChainShotAction, ShrapnelAction, ConcentratedFireAction)
 	else
 	    return choose(EngageAction, DisengageAction, OutmaneuverAction, SurgeryAction, RammingAction, SurpriseAction, SurpriseAction)
-
-
-
 }

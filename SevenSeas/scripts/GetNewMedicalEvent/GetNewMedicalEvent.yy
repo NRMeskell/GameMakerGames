@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"GetNewMedicalEvent",
   "isCompatibility":false,
   "isDnD":false,

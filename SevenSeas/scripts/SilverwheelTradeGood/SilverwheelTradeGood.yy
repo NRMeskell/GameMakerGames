@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"SilverwheelTradeGood",
   "isCompatibility":false,
   "isDnD":false,

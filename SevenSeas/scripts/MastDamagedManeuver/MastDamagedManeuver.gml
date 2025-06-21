@@ -8,7 +8,7 @@ function MastDamagedManeuver() {
 	else
 	    {
 	    ds_list_add(global.notificationList, "the mast begins to break!", "sails tear away from the mast, damaging the ship!") 
-	    Ship.myHealth -= 75*(global.seaLevel+1)
+	    UpdateHealth(Ship, -30*(global.seaLevel+1))
 	    }
     
 	script_execute(closeEventCode, 2)

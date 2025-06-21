@@ -4,6 +4,7 @@ with myButton
 
 if ds_list_size(global.notificationList) == 0{
 	
+	activated = true
 	if (actionType == "cannon" and shipTarget == CombatRunner)
 		LoseCargo(2, 1);
 

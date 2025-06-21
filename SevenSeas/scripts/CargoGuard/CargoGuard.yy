@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"CargoGuard",
   "isCompatibility":false,
   "isDnD":false,

@@ -7,7 +7,7 @@ function OasisAction() {
 	    {
 	    with Pirate
 	        {
-	        myHealth -= irandom_range(10,20)
+	        UpdateHealth(Ship, -15)
 	        }
 		ds_list_add(global.notificationList, "fish attack!", "tropical fish were able to surprise and attack the crew!")
 		}
@@ -27,7 +27,7 @@ function OasisAction() {
 	        {
 			UpdateMorale(2, -1)
 			maxHealth += 10
-			myHealth += maxHealth
+			UpdateHealth(id, 10)
 		}
         
 	    ds_list_add(global.notificationList, "magical swim!", "the mystical clear water seems to have strengthened " + crewTarget.firstName + ", and increased their maximum health!")

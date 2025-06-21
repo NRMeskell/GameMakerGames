@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"background_get_uvs",
   "isCompatibility":true,
   "isDnD":false,

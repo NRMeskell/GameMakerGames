@@ -56,12 +56,8 @@ function SavePirate(argument0, argument1) {
 	else
 	    ini_write_string("equipment", "lhand", "none")
     
-	for(i=0; i<instance_number(ShipSlot); i++){
-	    if pirate.mySlot.id = instance_find(ShipSlot, i).id
-	        ini_write_string("ship", "slot", i)
-		if pirate.myMainSlot.id = instance_find(ShipSlot, i).id
-	        ini_write_string("ship", "mainSlot", i)
-	    }
+	ini_write_string("ship", "slot", pirate.mySlot.slotType)
+	ini_write_string("ship", "mainSlot", pirate.myMainSlot.slotType)
 
 	ini_close()
 }

@@ -37,8 +37,8 @@ function BlackSpotRemove() {
 	}
 	else{
 		ds_list_add(global.notificationList, "black spot remains", "No matter how hard the area is scrubbed and cut, the spot doesn't come off! The crew begin to worry...")
-		myPirate.myHealth -= 20
 		with myPirate{
+			UpdateHealth(id, -20)
 			UpdateMorale(-1, -1)
 			UpdateMorale(-1, global.JOLLY)
 		}
@@ -53,10 +53,10 @@ function BlackSpotRemove() {
 
 function BlackSpotResolve(){
 	if irandom(1){
-		with myPirate{
-			event_user(3)
-		}
-		ds_list_add(global.notificationList, "Black Spot!", myPirate.name + "'s black spot grows larger, and then disappears... along with a part of their body!")
+		var limb;
+		with myPirate 
+			limb = LoseLimb(undefined)
+		ds_list_add(global.notificationList, "Black Spot!", myPirate.name + "'s black spot grows larger, and then disappears... along with their " + limb + "!")
 	}
 	else{
 		ds_list_add(global.notificationList, "Black Spot Gone!", myPirate.name + "'s black spot has gone away in the night. They hope it doesn't come back!")

@@ -1,5 +1,5 @@
 /// @description Move to auto slot
-
+/*
 item[0] = myShirt
 item[1] = myHat
 item[2] = myPants

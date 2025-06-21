@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"action_if_variable",
   "isCompatibility":true,
   "isDnD":false,

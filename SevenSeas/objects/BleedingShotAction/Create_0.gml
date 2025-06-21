@@ -6,7 +6,7 @@ rechargeTime = 5
 priorityMin = 6
 priorityMax = 9
 
-myType = "ranged"
+actionType = "ranged"
 level = 0
 myAttack = BleedingShotAttack
 

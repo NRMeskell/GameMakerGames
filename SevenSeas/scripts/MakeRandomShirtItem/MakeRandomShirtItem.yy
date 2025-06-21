@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"MakeRandomShirtItem",
   "isCompatibility":false,
   "isDnD":false,

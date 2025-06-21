@@ -5,7 +5,7 @@ function MermaidIgnore() {
 	    {
 	    struckPirate = RandomPirate()
 	    ds_list_add(global.notificationList, "siren's song!", struckPirate.name + " loved the song, and injured themselves trying to get overboard!")
-		struckPirate.myHealth -= 20
+		UpdateHealth(struckPirate, -20)
 	    }
 	else
 	    {

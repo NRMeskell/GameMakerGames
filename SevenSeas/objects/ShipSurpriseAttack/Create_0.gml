@@ -7,7 +7,6 @@ highRange = 1.5
 
 ///vars
 
-myButton = SurpriseAction
 myButtonSprite = 29
 animationY = 0
 animationX = 20

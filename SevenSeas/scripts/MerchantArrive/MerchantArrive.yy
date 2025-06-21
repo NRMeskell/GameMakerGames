@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"MerchantArrive",
   "isCompatibility":false,
   "isDnD":false,

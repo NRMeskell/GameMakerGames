@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"CursePirate",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"CursePirate",
+  "parent":{
+    "name":"PirateUpdates",
+    "path":"folders/Scripts/Pirate/PirateUpdates.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

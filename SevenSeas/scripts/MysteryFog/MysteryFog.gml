@@ -31,7 +31,7 @@ function MysteryFogSail() {
 	else{
 		ds_list_add(global.notificationList, "poison cloud!", "the mysterious cloud enters the crew's lungs, making it difficult to breathe!")
 		with Pirate
-			myHealth -= irandom(10) + 15
+			UpdateHealth(id, -25)
 		with instance_create(0,0,ConditionTimer){
 		    condition = MysteryFogPoison
 		}
@@ -42,10 +42,10 @@ function MysteryFogSail() {
 function MysteryFogPoison(){
 	ds_list_add(global.notificationList, "poisoned lungs!", "the crew continue to cough up purple smoke!")
 	with Pirate{
-		myHealth -= irandom(10) + 5
+		UpdateHealth(id, -15)
 		UpdateMorale(-1, -1)
 	}
-	if irandom(1) == 0 with instance_create(0,0,ConditionTimer){
+	if irandom(2) == 0 with instance_create(0,0,ConditionTimer){
 		condition = MysteryFogPoison
 	}
 }

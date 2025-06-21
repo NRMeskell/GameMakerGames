@@ -7,7 +7,8 @@ priorityMin = 2
 priorityMax = 5
 myAttack = ShrapnelAttack
 
-myType = "cannon"
+actionType = "cannon"
 requiredSlot[0] = "cannon"
 level = 0
 
+needsTarget = true

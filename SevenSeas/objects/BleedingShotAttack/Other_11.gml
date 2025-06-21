@@ -1,6 +1,6 @@
 /// @description Animate
 
-targetPirate.myHealth -= UpdateCrewDamage(damage, targetPirate)
+UpdateHealth(targetPirate, -AddCrewEffects(targetPirate, damage))
     
 if targetPirate.myHealth < 1{
 	//Add damage multiplier

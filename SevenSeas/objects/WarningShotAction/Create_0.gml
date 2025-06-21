@@ -8,7 +8,7 @@ priorityMax = 8
 myAttack = ShipWarningAttack
 
 damageScalerEnemy = 1
-myType = "cannon"
+actionType = "cannon"
 requiredSlot[0] = "cannon"
 level = 0
 

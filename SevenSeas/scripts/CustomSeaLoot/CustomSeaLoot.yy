@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"CustomSeaLoot",
   "isCompatibility":false,
   "isDnD":false,

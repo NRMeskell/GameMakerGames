@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"EncounterCharacterPort",
   "isCompatibility":false,
   "isDnD":false,

@@ -30,7 +30,7 @@ if (point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), x
         for(i=ds_list_size(CombatRunner.actionList)-1; i>=0; i--)
             {
             //if ds_map_find_value(CombatRunner.actionTypeMap, ds_list_find_value(CombatRunner.actionList, i).object_index) == myType
-            if ds_list_find_value(CombatRunner.actionList, i).myType == myType
+            if ds_list_find_value(CombatRunner.actionList, i).actionType == actionType
                 ds_list_add(actionList, ds_list_find_value(CombatRunner.actionList, i))
             }
         }

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"MermaidIgnore",
   "isCompatibility":false,
   "isDnD":false,

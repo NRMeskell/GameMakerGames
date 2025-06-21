@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"LoadPirate",
   "isCompatibility":false,
   "isDnD":false,

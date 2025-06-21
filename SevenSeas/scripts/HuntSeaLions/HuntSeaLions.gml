@@ -6,7 +6,7 @@ function HuntSeaLions() {
 	
 	if result == 0 {
 		with Pirate {
-			myHealth -= 15
+			UpdateHealth(id, -15)
 		}
 		loot = GetRandomLoot(irandom_range(1,2), "Sea Lions", [4, 4, 6])
 		ds_list_add(global.notificationList, "Dangerous Hunting!", "The crew kill several sea lions, but the herd is aggressive and fights back!")

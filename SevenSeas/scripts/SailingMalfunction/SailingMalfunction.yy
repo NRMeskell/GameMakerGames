@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"SailingMalfunction",
   "isCompatibility":false,
   "isDnD":false,

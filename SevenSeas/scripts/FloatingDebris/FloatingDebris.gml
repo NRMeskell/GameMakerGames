@@ -33,7 +33,7 @@ function DebrisAvoid() {
 	}
 	else{
 		ds_list_add(global.notificationList, "Debris strike!", "several large chunks of debris hit the ship, damaging the hull.")
-		Ship.myHealth -= irandom_range(50, 150) div 5 * 5
+		UpdateHealth(Ship, -irandom_range(50, 150) div 5 * 5)
 	}
 	closeEventCode()
 }
@@ -48,7 +48,7 @@ function DebrisSearch() {
 	}
 	else{
 		injuredPirate = RandomPirate()
-		injuredPirate.myHealth -= 20
+		UpdateHealth(injuredPirate, -20)
 		ds_list_add(global.notificationList, "Hit by Debris!", injuredPirate.firstName + " was struck by a floating plank, and the crew had to abandon their search.")
 	}
 	closeEventCode()
@@ -63,7 +63,7 @@ function DebrisDive() {
 		ds_list_add(global.notificationList, title, text)
 	}
 	else{
-		with Pirate myHealth -= 35
+		UpdateHealth(myHealth, -35)
 		ds_list_add(global.notificationList, "Shark Attack!", "the crew was attacked by a hungry shark, and had to swim quickly to the surface!")
 	}
 	closeEventCode()

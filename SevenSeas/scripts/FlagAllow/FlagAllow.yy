@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"FlagAllow",
   "isCompatibility":false,
   "isDnD":false,

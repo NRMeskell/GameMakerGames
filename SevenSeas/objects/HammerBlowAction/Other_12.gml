@@ -2,5 +2,5 @@
 
 
 name = "crushing blow"
-description = "deal " + GetDamage(myAttack) + " damage to target. ends combat round."
+description = "deal " + GetDamageString(myAttack) + " damage to enemy crew. Target cannot contribute to next enemy attack."
 

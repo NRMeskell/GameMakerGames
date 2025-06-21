@@ -4,7 +4,7 @@ function FloatingLights() {
 	with instance_create(0,0,Event)
 	    {
 	    buttonNumber = 3
-	    ds_list_add(buttons, FloatingLightsWait, FloatingLightsChase, FloatingLightsAccept)
+	    ds_list_add(buttons, FloatingLightsWaiting, FloatingLightsChase, FloatingLightsAccept)
 	    ds_list_add(buttonStats, 3, 3, 6)
 	    ds_list_add(buttonRequires, 0, global.eventDiff[3,1], global.eventDiff[6,2])
 	    ds_list_add(buttonCosts, 0, 0, 0)
@@ -20,6 +20,10 @@ function FloatingLights() {
 		repeat(5)
 			instance_create(0, 0, FloatingLight)
 	    }
+}
+
+function FloatingLightsWaiting(){
+	Wait(1/8*Clock.fullDay, FloatingLightsWait, argument0)
 }
 
 function FloatingLightsWait() {
@@ -60,7 +64,7 @@ function FloatingLightsChase() {
 	else{
 		ds_list_add(global.notificationList, "lights attack!", "The lights begin to swarm and attack the crew, burning their skin when close!")
 		with Pirate
-			myHealth -= 30 + irandom(10)
+			UpdateHealth(id, -35)
 	}
 }
 
@@ -90,7 +94,7 @@ function FloatingLightsAccept(){
 	else{
 		ds_list_add(global.notificationList, "burning lights!", "the crew watch too closely, and the lights burn their eyes and skin!")
 		with Pirate
-			myHealth -= 10 + irandom(10)
+			UpdateHealth(id, -20)
 	}
 }
 

@@ -8,6 +8,9 @@ canTake = false
 overflow = false
 cargoAmounts = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
+x = room_width*5/6
+y = room_height/2
+
 currentView = 0
 maxView = 4
 totalCost = 0

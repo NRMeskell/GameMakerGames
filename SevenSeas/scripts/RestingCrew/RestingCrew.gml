@@ -4,21 +4,13 @@ function RestingCrew() {
 	with Pirate
 	    {
 		UpdateMorale(2, -1)
-		if other.campPower == 3{
-		    myHealth = round(min(myHealth + (maxHealth*1/(2)), maxHealth))
-			}
-		if other.campPower == 2{
-		    myHealth = round(min(myHealth + (maxHealth*1/(3)), maxHealth))
-			}
-		else{
-			myHealth = round(min(myHealth + (maxHealth*1/(5)), maxHealth))
-			}
+		UpdateHealth(id, round((maxHealth*1/2)))
 	    }
     
 	boards = 0
 	while HasStored(3,1) and (Ship.myHealth < Ship.maxHealth)
 	    {
-	    Ship.myHealth = min(Ship.myHealth + (Ship.maxHealth div 15), Ship.maxHealth)
+	    UpdateHealth(Ship, (Ship.maxHealth div 10))
 	    boards += 1
 	    LoseCargo(3,1)
 	    }

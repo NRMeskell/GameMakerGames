@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"ScavengersArrive",
   "isCompatibility":false,
   "isDnD":false,

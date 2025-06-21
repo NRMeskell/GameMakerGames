@@ -6,7 +6,6 @@ highRange = 0.7
 
 ///vars
 
-myButton = HammerBlowAction
 image_speed = 0.8
 image_index = 0
 animationY = -35

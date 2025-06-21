@@ -17,5 +17,4 @@ if myShipTarget == Ship{
 	medicalBonus = CombatRunner.myStats[3]
 }
 
-with myCrewTarget
-	myHealth = min(maxHealth, round(myHealth + maxHealth*0.05))
+UpdateHealth(myCrewTarget, round(maxHealth*0.05*medicalBonus))

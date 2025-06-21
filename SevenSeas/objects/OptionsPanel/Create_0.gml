@@ -77,7 +77,7 @@ optionText[? "menu"] = string(((200*global.menuVolume) div 5 * 5)) + "%"
 optionText[? "game"] = string(((200*global.worldVolume) div 5 * 5)) + "%"
 
 
-optionText[? "reso"] = ["4:3", "16:9", "21:9"]
+optionText[? "reso"] = ["LOW", "MED", "HIGH"]
 optionText[? "font"]= ["PLAIN", "PIRATE"]
 optionText[? "light"] = ["NONE", "PARTIAL", "FULL"]
 

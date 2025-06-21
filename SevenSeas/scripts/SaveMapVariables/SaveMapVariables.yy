@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"SaveMapVariables",
   "isCompatibility":false,
   "isDnD":false,

@@ -6,7 +6,6 @@ highRange = 1.1
 
 ///vars
 
-myButton = WarningShotAction
 image_speed = 0.8
 image_index = 0
 animationY = -10

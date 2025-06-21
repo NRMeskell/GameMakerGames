@@ -4,7 +4,7 @@ function JohnnyFurious() {
 
 	if result == 0
 	    {
-	    Ship.myHealth = (Ship.myHealth * 3/4) div 1
+	    UpdateHealth(Ship, -(Ship.myHealth * 1/4) div 1)
 	    text = "Johnny returns, and is none too happy! he lights a small fire on the ship before running off!"
 	    }
 	if result == 1

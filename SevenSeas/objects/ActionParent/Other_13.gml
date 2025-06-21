@@ -5,21 +5,13 @@ if (!instance_exists(myPirate)){
 	requireText = "crew member killed"
 }
 else{
-	var myShipTarget, swds, guns, cnns, whls;
-	if myPirate.object_index == Pirate or myPirate.object_index == Ship{
-		swds = global.totalSwordBonus
-		whls = global.totalWheelBonus
-		guns = global.totalGunBonus
-		cnns = global.totalCannonBonus
-		myShipTarget = Ship.id;
-	}else{
-		swds = CombatRunner.myStats[0]
-		whls = CombatRunner.myStats[3]
-		guns = CombatRunner.myStats[1]
-		cnns = CombatRunner.myStats[2]
-		myShipTarget = CombatRunner.id;
-	}
-      
+	var attackPwr, myShipTarget;
+	attackPwr = GetAttackPower(actionType, myPirate.object_index == Pirate or myPirate.object_index == Ship)
+    if (myPirate.object_index == Pirate) or (myPirate.object_index == Ship)
+		myShipTarget = Ship
+	else
+		myShipTarget = CombatRunner
+	  
 	warning = false
 	canUse = true
 	requireText = ""
@@ -32,13 +24,13 @@ else{
 	    canUse = false
 		requireText = "crew moved this round"
 	}
-	else if (myType == "ship" and !myShipTarget.allowShipActions) or (myType == "cannon" and !myShipTarget.allowCannonActions) or (myType == "ranged" and !myShipTarget.allowRangedActions) or (myType == "melee" and !myShipTarget.allowMeleeActions) {
+	else if (actionType == "ship" and !myShipTarget.allowShipActions) or (actionType == "cannon" and !myShipTarget.allowCannonActions) or (actionType == "ranged" and !myShipTarget.allowRangedActions) or (actionType == "melee" and !myShipTarget.allowMeleeActions) {
 		if !instance_exists(RealAttack){
 			canUse = false
 			requireText = "attack type disabled"
 		}
 	}
-	else if (myType == "cannon" and myShipTarget.object_index == Ship and !HasStored(2,1)){
+	else if (actionType == "cannon" and myShipTarget.object_index == Ship and !HasStored(2,1)){
 		canUse = false
 		requireText = "out of cannonballs"
 	}
@@ -46,11 +38,15 @@ else{
 	    canUse = false
 		requireText = "crew in incorrect slot"
 	}
-	else if (myType == "ship" and whls==0) or (myType == "cannon" and cnns==0) or (myType == "ranged" and guns==0) or (myType == "melee" and swds==0) {
+	else if (myPirate.object_index == Pirate and myPirate.stunned){
+		canUse = true
+		requireText = "crew cannot contribute"
+	}
+	else if (attackPwr = 0) {
 		warning = true
 		requireText = "missing required stats"
 	}
-	else if (((zoneRequired == 0 or myType == "melee") and CombatRunner.closeRange = false) or ((zoneRequired == 1 or myType == "cannon") and CombatRunner.closeRange = true)){
+	else if (((zoneRequired == 0 or actionType == "melee") and CombatRunner.closeRange = false) or ((zoneRequired == 1 or actionType == "cannon") and CombatRunner.closeRange = true)){
 		warning = true
 		requireText = "incorrect combat zone"
 	}

@@ -11,7 +11,7 @@ function Surgery() {
 			}
 		}
 		
-		if healthPer > 0.75{
+		if healthPer > 0.5{
 			RestfulWaters();
 			instance_destroy();
 			return;
@@ -19,23 +19,26 @@ function Surgery() {
 		
 	    buttonNumber = 2
 		if eventValue.object_index == Ship{
+			planksNeeded = max(1, min(CargoAmount(3), (Ship.maxHealth - Ship.myHealth) div 10 + 1))
+			
 		    ds_list_add(buttonStats, 0, 3)
 		    ds_list_add(buttonRequires, 0, 0)
-		    ds_list_add(buttonCosts, 0, max(1, min(CargoAmount(3), (Ship.maxHealth - Ship.myHealth) div 15 + 1)))
+		    ds_list_add(buttonCosts, 0, planksNeeded)
 			ds_list_add(buttons, RepairIgnore, RepairGive)
-			ds_list_add(buttonText, "Continue without repairs", "Provide on-board repairs")	
+			ds_list_add(buttonText, "Continue sailing", "Use boards to make repairs")	
 			captionText = "Repairs!"
 		    eventText = "the ship is in poor condition and could use patching."   
-		    global.moraleBoost = "repairs"
+
+			global.moraleBoost = "repairs"
 		}
 		else {
 			ds_list_add(buttonStats, 0, 6)
 		    ds_list_add(buttonRequires, 0, global.eventDiff[6, 1])
 		    ds_list_add(buttonCosts, 0, 0)
-			ds_list_add(buttons, SurgeryIgnore, SurgeryGive)
-			ds_list_add(buttonText, "Continue without treatment", "Provide medical treatment")	
+			ds_list_add(buttons, SurgeryIgnore, SurgeryGiving)
+			ds_list_add(buttonText, "Continue sailing", "Take time to give treatment")	
 			captionText = "Surgery!"
-		    eventText = eventValue.name + " is in poor condition and could use help."   
+		    eventText = eventValue.name + " is in poor condition, and could use medical attention."   
 		    global.moraleBoost = "surgery"
 		}
 		
@@ -50,10 +53,9 @@ function RepairIgnore(){
 }
 
 function RepairGive(){
-	var planksUsed =  max(1, min(CargoAmount(3), (Ship.maxHealth - Ship.myHealth) div 15 + 1))
-	Ship.myHealth += (Ship.maxHealth div 10) * planksUsed
+	UpdateHealth(Ship, (Ship.maxHealth div 10) * planksNeeded)
 	
-	ds_list_add(global.notificationList, "Ship Repaired", string(planksUsed) + " plank(s) were used to patch up the damaged ship.")
+	ds_list_add(global.notificationList, "Ship Repaired", string(planksNeeded) + " plank(s) were used to patch up the damaged ship.")
 	
 }
 
@@ -61,19 +63,22 @@ function RepairGive(){
 // Provide Medical Attention
 function SurgeryIgnore(){
 	with eventValue
-		UpdateMorale(-2, -1)
+		UpdateMorale(-1, -1)
 		
 	ds_list_add(global.notificationList, eventValue.firstName + " ignored!", "The crew continue sailing, and " + eventValue.firstName + " is forced to work through the pain.")
 }
 
 function SurgeryGive(){
 	if argument0{
-		with Pirate myHealth = maxHealth
+		with eventValue myHealth = maxHealth
 		ds_list_add(global.notificationList, "Successful Surgery!", eventValue.firstName + " returns to work feeling much better!")
 	}
 	else{
-		with Pirate event_user(3)
-		ds_list_add(global.notificationList, "Horrible surgery!", "The surgery goes horribly wrong, and " + eventValue.firstName + " looses their limb.")
+		ds_list_add(global.notificationList, "Unsuccessful surgery!", "The ship's doctor was unable to do anything to help " + eventValue.firstName + ".")
 	}
+}
+
+function SurgeryGiving(){
+	Wait(1/8*Clock.fullDay, SurgeryGive, argument0)
 }
 

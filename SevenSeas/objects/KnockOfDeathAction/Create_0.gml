@@ -8,7 +8,7 @@ priorityMin = 3
 priorityMax = 7
 
 myAttack = KnockOfDeathAttack
-myType = "melee"
+actionType = "melee"
 requiredSlot[0] = "wheel"
 level = 0
 

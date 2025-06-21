@@ -37,12 +37,17 @@ for(i=0; i<buttonNumber; i++)
 		event_user(i+1)
 		
 		if object_index = Camp{
-			audio_stop_sound(CampFireSnd)
+			// wait to perform camping event
+			Wait(1/4*Clock.fullDay, mySpecialAction, 0)
 			
-			with Clock{
-				eventTimeLeft = campTime
+			// heal the ship
+			with Pirate{
+				if myPet.itemPower = "medical ship"{
+					UpdateHealth(Ship, 60*stars)
 				}
+			}
 			
+			// start animations
 			alarm[0] = 1
 			}
         }

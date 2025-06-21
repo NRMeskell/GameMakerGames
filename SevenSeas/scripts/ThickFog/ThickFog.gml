@@ -22,9 +22,11 @@ function ThickFogArrive() {
 }
 
 function ThickFogWait() {
-	Clock.eventTimeLeft = room_speed*2
-	with Event
-		drawX = -1000
+	Wait(1/8*Clock.fullDay, ThickFogWaited, argument0)
+}
+
+function ThickFogWaited(){
+	ds_list_add(global.notificationList, "fog dissipates!", "After a while, the fog clears and the danger passes.")
 }
 
 function ThickFogSail() {
@@ -34,8 +36,7 @@ function ThickFogSail() {
 	else{
 		ds_list_add(global.notificationList, "rocks hit!", "the ship crashes into several unseen rocks before emerging from the fog.")
 		with Ship
-			myHealth -= irandom(25) + 50
+			UpdateHealth(Ship, -50)
 	}
-	closeEventCode()
 }
 

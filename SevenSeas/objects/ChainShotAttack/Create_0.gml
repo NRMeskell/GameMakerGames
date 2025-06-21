@@ -6,7 +6,6 @@ highRange = 1.2
 
 ///vars
 
-myButton = ChainShotAction
 image_speed = 0.8
 image_index = 0
 animationY = -10
@@ -15,7 +14,6 @@ animationHeight = 2
 animationWidth = 5
 rotate = false
 
-endRound = false
 actionType = "cannon"
 
 x = Ship.drawX + animationX + irandom_range(-animationWidth,animationWidth)

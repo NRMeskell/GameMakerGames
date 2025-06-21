@@ -42,13 +42,13 @@ else
 
 if selected
     {
-    if myType == "melee"
+    if actionType == "melee"
         draw_sprite(MeleeSelectedSpr, animationNumber div 20, x, y)
-    if myType == "ranged"
+    if actionType == "ranged"
         draw_sprite(RangedSelectedSpr, animationNumber div 20, x, y)
-    if myType == "cannon"
+    if actionType == "cannon"
         draw_sprite(CannonSelectedSpr, animationNumber div 20, x, y)
-    if myType == "ship"
+    if actionType == "ship"
         draw_sprite(ShipSelectedSpr, animationNumber div 20, x, y)
     //drawInfo = true
     }
@@ -63,19 +63,19 @@ if waitLeft > 0
     draw_set_alpha(1)
     //draw_sprite(PlayerActionTimerSpr,0,x,y)
     mergeColorLevel = 0.4
-    if myType == "melee"
+    if actionType == "melee"
         draw_set_color(merge_color(merge_color(make_color_rgb(128, 128, 128), drawColor, mergeColorLevel), c_black, 0.2))
-    if myType == "ranged"
+    if actionType == "ranged"
         draw_set_color(merge_color(merge_color(make_color_rgb(158, 126, 2), drawColor, mergeColorLevel), c_black, 0.2))
-    if myType == "cannon"
+    if actionType == "cannon"
         draw_set_color(merge_color(merge_color(make_color_rgb(180, 0, 0), drawColor, mergeColorLevel), c_black, 0.2))
-    if myType == "ship"
+    if actionType == "ship"
         draw_set_color(merge_color(merge_color(make_color_rgb(0, 73, 165), drawColor, mergeColorLevel), c_black, 0.2))
 
     draw_set_font(global.LargePirateFont)
     draw_set_halign(fa_center)
     draw_set_valign(fa_center)
-    draw_text(x + 1, y, string_hash_to_newline(waitLeft))
+    draw_text(x + 1, y, string(waitLeft))
     }
 }
 

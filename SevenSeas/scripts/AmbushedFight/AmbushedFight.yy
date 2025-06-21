@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"AmbushedFight",
   "isCompatibility":false,
   "isDnD":false,

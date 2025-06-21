@@ -116,8 +116,8 @@ function SpiritLordPlayDice() {
 		with playPirate{
 			body = sprite_get_number(PirateManSkinSpr)-1
 			face = sprite_get_number(PirateManFaceSpr)-1
-			UpdateMorale(-5, -1)
-			UpdateMorale(3, global.DARING)
+			UpdateMorale(-3, -1)
+			UpdateMorale(1, global.DARING)
 			
 			if surface_exists(fullPirateSurface)
 				MakePirateSurface(fullPirateSurface, 0, 0)

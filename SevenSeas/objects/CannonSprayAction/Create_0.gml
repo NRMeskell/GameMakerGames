@@ -8,7 +8,7 @@ priorityMin = 2
 priorityMax = 5
 myAttack = SprayAttack
 
-myType = "cannon"
+actionType = "cannon"
 requiredSlot[0] = "cannon"
 level = 0
 

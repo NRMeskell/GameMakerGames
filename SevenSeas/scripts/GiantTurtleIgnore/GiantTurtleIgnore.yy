@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"GiantTurtleIgnore",
   "isCompatibility":false,
   "isDnD":false,

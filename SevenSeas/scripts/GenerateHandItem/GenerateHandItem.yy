@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"GenerateHandItem",
   "isCompatibility":false,
   "isDnD":false,

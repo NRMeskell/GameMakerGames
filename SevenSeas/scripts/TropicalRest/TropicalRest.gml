@@ -1,3 +1,7 @@
+function TropicalResting(){
+	Wait(Clock.fullDay/6, TropicalRest, argument0)
+}
+
 function TropicalRest() {
 	//run away
 	global.moraleBoost = "rested"
@@ -8,33 +12,11 @@ function TropicalRest() {
     
 	if result == 0
 	    {
-	    Ship.myHealth -= 25
+	    UpdateHealth(Ship, -25)
 	    ds_list_add(global.notificationList, "Crew rested", "The crew is rested and morale is raised, but the ship was slightly damaged without the crew!") 
 	    }
-	else if result == 1
+	else
 	    {
-	    with Pirate
-	        if irandom(1)
-	            myHealth -= 10
-	    ds_list_add(global.notificationList, "Crew rested", "The crew is rested and morale is raised, but some pirates still suffered from exhaustion!") 
+	    ds_list_add(global.notificationList, "Crew rested", "The crew's morale raises and exhaustion is avoided!") 
 	    }
-	else if result == 2
-	    {
-	    itemsTaken = ""
-	    if irandom(2) == 0
-	        itemsTaken += LoseRandomItems(irandom(global.seaLevel)+1)
-	    else
-	        itemsTaken += LoseRandomCargo(irandom_range(1 + global.seaLevel, 2 + global.seaLevel))
-
-	    ds_list_add(global.notificationList, "Crew rested", "The crew is rested and morale is raised, but some unattended cargo fell overboard:#" + itemsTaken) 
-	    }
-
-	script_execute(closeEventCode, 2)
-
-
-
-
-
-
-
 }

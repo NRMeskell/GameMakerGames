@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"SaveMapSurface",
   "isCompatibility":false,
   "isDnD":false,

@@ -37,8 +37,7 @@ function BackflipAllow() {
 	}
 	else{
 		ds_list_add(global.notificationList, otherPirate.firstName + " hurt!", otherPirate.firstName + " misses a flip and falls hard on their head.")
-		with otherPirate
-			myHealth = myHealth - myHealth div 5
+		UpdateHealth(otherPirate, -(otherPirate.myHealth div 5))
 	}
 	
 	with myPirate

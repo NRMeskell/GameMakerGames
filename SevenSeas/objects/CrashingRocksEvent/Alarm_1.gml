@@ -7,15 +7,6 @@ if sailingSail and ds_list_size(global.notificationList) == 0{
 	sailingSail = false
 	ds_list_add(global.notificationList, result, description)
 
-	if !success{
-		Ship.myHealth -= irandom_range(100, 150) div 5 * 5
-		with Pirate{
-			myHealth -= 20
-			global.moraleBoost = "crashing rocks"
-			UpdateMorale(-1, -1)
-			UpdateMorale(-1, global.DARING)
-		}
-	}
 	if success{
 		global.moraleBoost = "crashing rocks"
 		UpdateMorale(2, -1)

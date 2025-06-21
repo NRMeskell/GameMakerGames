@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"LoadLandingSpots",
   "isCompatibility":false,
   "isDnD":false,

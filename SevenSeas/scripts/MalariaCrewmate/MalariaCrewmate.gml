@@ -8,7 +8,7 @@ function MalariaCrewmate() {
 	    {
 	    // if injured != true
 	        //injured = true
-	    myHealth -= 25
+	    UpdateHealth(id, -25)
 	    UpdateMorale(-2, -1)
 	    }
     

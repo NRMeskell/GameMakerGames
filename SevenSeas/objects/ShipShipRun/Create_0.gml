@@ -8,7 +8,6 @@ highRange = 1.5
 ///vars
 
 image_speed = 0.8
-myButton = BasicRunAction
 animationY = -10
 animationX = 40
 animationHeight = 1
@@ -27,13 +26,7 @@ showDamage = true
 hasAnimation = false
 
 runSuccess = false
-if irandom(2) = 0
-    {
-    damage = "success"
-    runSuccess = true
-    }
-else
-    damage = "failure"
+damage = "surrender!"
 
 
 

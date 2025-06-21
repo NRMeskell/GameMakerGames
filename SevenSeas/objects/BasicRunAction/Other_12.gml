@@ -1,5 +1,5 @@
 /// @description update Stats
 
-name = "Retreat"
-description = "Ends combat 30% of the time." 
+name = "Surrender"
+description = "Ends combat. Half your cargo is lost, and the crew lose morale." 
 

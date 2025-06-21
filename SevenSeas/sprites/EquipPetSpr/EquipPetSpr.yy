@@ -29,6 +29,7 @@
     {"$GMSpriteFrame":"","%Name":"15e72737-ebf9-42b6-9aa9-8ab44f1906e8","name":"15e72737-ebf9-42b6-9aa9-8ab44f1906e8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"c5d88e42-0dc8-43be-9383-57b456f7836a","name":"c5d88e42-0dc8-43be-9383-57b456f7836a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"b232dd42-aa5a-4532-96df-c11138b338c8","name":"b232dd42-aa5a-4532-96df-c11138b338c8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"88b41900-43ed-4841-9214-e08d6dfe6770","name":"88b41900-43ed-4841-9214-e08d6dfe6770","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -48,7 +49,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"",
     "autoRecord":true,
     "backdropHeight":1080,
@@ -65,7 +66,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":17.0,
+    "length":18.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -79,6 +80,8 @@
     "playbackSpeedType":1,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
+    "seqHeight":26.0,
+    "seqWidth":26.0,
     "showBackdrop":true,
     "showBackdropImage":false,
     "timeUnits":1,
@@ -135,6 +138,9 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b232dd42-aa5a-4532-96df-c11138b338c8","path":"sprites/EquipPetSpr/EquipPetSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"07eb35f6-2b5f-4f3b-a1bb-1a5e615be1d4","IsCreationKey":false,"Key":16.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"88b41900-43ed-4841-9214-e08d6dfe6770","path":"sprites/EquipPetSpr/EquipPetSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"5dbd6d26-44cd-4a6a-9cd7-c4a136f11827","IsCreationKey":false,"Key":17.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

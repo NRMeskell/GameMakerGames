@@ -66,4 +66,3 @@ if waiting and CombatRunner.alarm[4] > 0{
     draw_text(damageDrawX, damageDrawY, string_hash_to_newline(priority))
     draw_set_font(global.PirateFont)
     }
-

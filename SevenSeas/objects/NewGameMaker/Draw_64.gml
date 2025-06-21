@@ -1,7 +1,6 @@
 /// @description Draw Self
 //draw text backing
 
-if view_current == 0{
 draw_sprite(sprite_index, image_number-1, x, y)
 
 draw_set_color(merge_color(c_gray, c_black, 0.2))
@@ -33,4 +32,4 @@ draw_set_color(merge_color(c_red, c_gray, 0.4))
 draw_text(x-58, y + 82, string_hash_to_newline("return"))
 draw_set_color(c_green)
 draw_text(x+58, y + 82, string_hash_to_newline("confirm"))
-}
+

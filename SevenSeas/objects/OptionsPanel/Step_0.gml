@@ -75,6 +75,8 @@ if mouse_check_button_pressed(mb_left) {
 	}
 	if mouseOverOption[? "reso"]{
 		global.resolution = (global.resolution + 1) % 3
+		with ViewController 
+			event_user(0)
 	}
 	if mouseOverOption[? "font"]{
 		global.usePirateFont = !global.usePirateFont
@@ -106,7 +108,7 @@ if mouse_check_button(mb_left) {
 	if mouseOverOption[? "game"]{
 		global.worldVolume = min(1, max(0, (window_view_mouse_get_x(0) - (xc - volumeWidth))/(volumeWidth*2)))
 	}
-	optionText[? "master"] = string(((global.masterVolume) div 5 * 5)) + "%"
+	optionText[? "master"] = string(((200*global.masterVolume) div 5 * 5)) + "%"
 	optionText[? "music"] = string(((200*global.musicVolume) div 5 * 5)) + "%"
 	optionText[? "menu"] = string(((200*global.menuVolume) div 5 * 5)) + "%"
 	optionText[? "game"] = string(((200*global.worldVolume) div 5 * 5)) + "%"

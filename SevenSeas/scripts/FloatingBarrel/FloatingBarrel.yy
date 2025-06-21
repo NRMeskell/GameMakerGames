@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"FloatingBarrel",
   "isCompatibility":false,
   "isDnD":false,

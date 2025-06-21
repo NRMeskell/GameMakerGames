@@ -8,7 +8,6 @@ highRange = 1.5
 ///vars
 
 image_speed = 0.8
-myButton = RammingAction
 animationY = -10
 animationX = 40
 animationHeight = 1
@@ -31,12 +30,12 @@ showDamage = false
 hasAnimation = true
 if myShipTarget = Ship
     {
-    damage = UpdateDamage(global.totalWheelBonus*10, "ship")
+    damage = UpdateDamage(global.totalWheelBonus*10, true)
     myDamage = global.totalWheelBonus*2
     }
 else
     {
-    damage = UpdateEnemyDamage(attackPower*10, "ship")
+    damage = UpdateDamage(attackPower*10, false)
     myDamage = attackPower*2
     }
 

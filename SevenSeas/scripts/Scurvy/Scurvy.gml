@@ -31,8 +31,12 @@ function ScurvyHelp(){
 	}
 	else{
 		if irandom(3) == 0{
-			ds_list_add(global.notificationList, "Removed limb!", "The doctor removed " + eventValue.firstName + "'s limb, but this did not seem to relieve the symptoms.")
-			with eventValue { event_user(3) }
+			var limb; 
+			with eventValue
+				limb = LoseLimb(undefined)
+				
+			ds_list_add(global.notificationList, "Removed limb!", "The doctor removed " + eventValue.firstName + "'s " + limb + ", but this did not seem to relieve the symptoms.")
+			
 		
 			with instance_create(0,0,ConditionTimer){ 
 				myArgument = other.eventValue
@@ -41,7 +45,7 @@ function ScurvyHelp(){
 		
 		} else{
 			ds_list_add(global.notificationList, "Blood Letting!", "The doctor was unable to find " + eventValue.firstName + "'s bad blood, no matter how much they let out.") 
-			argument0.myHealth -= 15 + 10*global.seaLevel 
+			UpdateHealth(eventValue, -15 - 10*global.seaLevel)
 		
 			with instance_create(0,0,ConditionTimer){ 
 				myArgument = other.eventValue
@@ -53,7 +57,7 @@ function ScurvyHelp(){
 
 function ScurvyReturn(){
 	ds_list_add(global.notificationList, "Scurvy Worsens!", "A small cut on " + myArgument.firstName + "'s arm won't stop bleeding, and they lose a significant amount of blood!")
-	myArgument.myHealth -= 15 + 10*global.seaLevel
+	UpdateHealth(myArgument, -15 - 10*global.seaLevel)
 	if irandom(1){
 		with instance_create(0,0,ConditionTimer){ 
 		myArgument = other.myArgument

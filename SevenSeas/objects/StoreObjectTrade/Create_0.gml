@@ -19,7 +19,7 @@ overButton = false
 
 viewed = false
 
-type = 0
+type = 1
 amount = 0
 name = ""
 description = ""

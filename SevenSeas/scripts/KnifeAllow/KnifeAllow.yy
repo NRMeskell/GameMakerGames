@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"KnifeAllow",
   "isCompatibility":false,
   "isDnD":false,

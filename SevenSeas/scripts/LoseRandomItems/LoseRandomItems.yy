@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"LoseRandomItems",
   "isCompatibility":false,
   "isDnD":false,

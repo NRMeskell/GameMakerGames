@@ -1,25 +1,19 @@
 /// @description Set vars
 
-criticalHit = irandom(99) < 10
+activated = false
+
+criticalHit = irandom(99) < 5
 
 crewTarget = Enemy
 shipTarget = CombatRunner
 myCrewTarget = Pirate
 myShipTarget = Ship
-
 singleAttack = false
 showDamage = true
 waiting = true
 damageColor = merge_color(c_green, c_black, 0.2)
-
-if !instance_exists(myButton)
-    with instance_create(-100, -200, myButton)
-        {
-        pirateDrawTest = true
-        event_user(2)
-        }
+myButton = noone
         
 prevShipHealth = 0
 prevCrewHealth = 0
-event_user(3)
-
+damageRange = [0,0]

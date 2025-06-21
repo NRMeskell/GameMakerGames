@@ -12,6 +12,4 @@ function LoadPirates(argument0) {
 	        newPirate = LoadPirate(argument0 + "\\pirate" + string(p) + ".ini")
 	    }
 
-
-
 }

@@ -8,7 +8,7 @@ priorityMax = 4
 myAttack = BroadsideAttack
 
 damageScalerEnemy = 10
-myType = "cannon"
+actionType = "cannon"
 requiredSlot[0] = "cannon"
 level = 0
 

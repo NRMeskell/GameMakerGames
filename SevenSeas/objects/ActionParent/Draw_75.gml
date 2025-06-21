@@ -6,13 +6,13 @@ if __b__
 
 if drawInfo and __view_get( e__VW.XView, 0 ) = 0
     {
-    if myType = "melee"
+    if actionType = "melee"
         drawInfoY = y+sprite_height/2 + sprite_get_height(ActionInfoSpr)/2 + infoYGap
-    if myType = "ranged"
+    if actionType = "ranged"
         drawInfoY = y+sprite_height/2 + sprite_get_height(ActionInfoSpr)/2 + infoYGap
-    if myType = "cannon"
+    if actionType = "cannon"
         drawInfoY = y-sprite_height/2 - sprite_get_height(ActionInfoSpr)/2 - infoYGap
-    if myType = "ship"
+    if actionType = "ship"
         drawInfoY = y-sprite_height/2 - sprite_get_height(ActionInfoSpr)/2 - infoYGap
     
     DrawActionInfo(object_index, startX, drawInfoY, false, "pirate", priority, requireText == "") 

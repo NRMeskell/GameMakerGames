@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"SupplySearch",
   "isCompatibility":false,
   "isDnD":false,

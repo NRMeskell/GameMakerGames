@@ -40,45 +40,12 @@ if currentSeaNumber == 0{
 if currentSeaNumber == 3{
 	if HasStored(8, 5){
 		LoseCargo(8, 5)
-		GetRandomLoot(1, "treasure", [1])
-		with StoreObjectStorable
-			amount = 5
+		StoreCargo(1, 5)
 			
 		event_user(1)
-		ds_list_add(global.notificationList, "Curse Lifted!", "As the jewels are reunited, ghostly spirits rise from the treasure! all curses are lifted from the ship!")
-	
-		for(var i=0; i<instance_number(Pirate); i++){
-			var checkPirate = instance_find(Pirate, i)
-			if checkPirate.body == sprite_get_number(PirateManSkinSpr) -1{
-				checkPirate.face = myMainPer * 2 + irandom(1)
-				checkPirate.body = irandom(sprite_get_number(PirateManSkinSpr)-2)
-				with checkPirate{
-					UpdateMorale(3, -1)
-					if surface_exists(fullPirateSurface)
-						MakePirateSurface(fullPirateSurface, 0, 0)
-					if surface_exists(smallPirateSurface)
-						MakePirateSurface(smallPirateSurface, drawPictureRealx, drawPictureRealy)
-					if surface_exists(tagPirateSurface)
-						MakePirateSurface(tagPirateSurface, drawTagSpriteX, drawTagSpriteY)
-				}
-			}
-			if string_starts_with(checkPirate.myShirt.itemName, "Cursed"){
-				checkPirate.myShirt.itemName = "Skeletal Coat"
-				checkPirate.myShirt.itemInfo = "A bicorn, now restored to it's former glory"
-			}
-			if string_starts_with(checkPirate.myHat.itemName, "Cursed"){
-				checkPirate.myHat.itemName = "Skeletal Hat"
-				checkPirate.myHat.itemInfo = "A bicorn, now restored to it's former glory"
-			}
-			if string_starts_with(checkPirate.myPants.itemName, "Cursed"){
-				checkPirate.myPants.itemName = "Skeletal Boots"
-				checkPirate.myPants.itemInfo = "work boots, now restored to their former glory"
-			}
-		}
+		ds_list_add(global.notificationList, "Spirits Lifted!", "As the gem are reunited, ghostly spirits rise from the treasure! all curses are lifted from the ship!")
+		LiftCurses()
 	}
 }
-
-///Release new seas
-
 
 

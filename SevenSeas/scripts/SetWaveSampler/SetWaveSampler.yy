@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"SetWaveSampler",
   "isCompatibility":false,
   "isDnD":false,

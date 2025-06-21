@@ -1,3 +1,8 @@
+function PlagueShipSearching(){
+	Wait(1/8*Clock.fullDay, PlagueShipSearch, argument0)
+}
+
+
 function PlagueShipSearch() {
 	//engage
 
@@ -13,16 +18,7 @@ function PlagueShipSearch() {
 	    UpdateMorale(1, -1)
 		}
 		
-	if irandom(2) == 0	
+	if irandom(4) == 0	
 		with instance_create(0,0,ConditionTimer)
 			condition = PlagueCrewmate
-
-	script_execute(closeEventCode, 2)
-
-
-
-
-
-
-
 }

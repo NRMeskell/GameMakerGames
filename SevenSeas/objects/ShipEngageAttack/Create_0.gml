@@ -7,7 +7,6 @@ highRange = 1.1
 
 ///vars
 
-myButton = EngageAction
 animationY = -40
 animationX = -20
 animationHeight = 1

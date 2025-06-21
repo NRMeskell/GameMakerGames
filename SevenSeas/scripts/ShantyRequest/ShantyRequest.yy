@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"ShantyRequest",
   "isCompatibility":false,
   "isDnD":false,

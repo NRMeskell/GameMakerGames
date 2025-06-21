@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"FloatingBarrelCheck",
   "isCompatibility":false,
   "isDnD":false,

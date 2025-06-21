@@ -24,7 +24,7 @@ function FruitExamine() {
 			ds_list_add(global.notificationList, "inedible fruit!", "the fruit is deemed safe, but is so sour that the crew become sick.")
 			UpdateMorale(-1,-1)
 			with Pirate{
-				myHealth *= 0.9
+				UpdateHealth(id, -myHealth*0.1)
 			}
 		}		
 			

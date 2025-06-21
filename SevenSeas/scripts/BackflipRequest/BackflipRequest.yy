@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"BackflipRequest",
   "isCompatibility":false,
   "isDnD":false,

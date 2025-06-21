@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"AddReputation",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"AreAdjacent",
   "isCompatibility":false,
   "isDnD":false,

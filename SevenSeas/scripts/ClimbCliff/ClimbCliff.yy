@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"ClimbCliff",
   "isCompatibility":false,
   "isDnD":false,

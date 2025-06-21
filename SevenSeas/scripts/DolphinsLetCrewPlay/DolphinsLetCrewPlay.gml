@@ -1,7 +1,12 @@
+
+function DolphinsStartPlaying(){
+	Wait(Clock.fullDay/8, DolphinsLetCrewPlay, argument0)
+}
+
 function DolphinsLetCrewPlay() {
-	result = irandom(9)
+	result = irandom(5)
     
-	if result < 9 - 4*(global.seaType == "sea of monsters") {
+	if result < 5 - 2*(global.seaType == "sea of monsters") {
 		if result < 7{
 		    with Pirate 
 		        {
@@ -28,7 +33,7 @@ function DolphinsLetCrewPlay() {
 	    with Pirate 
 	        if irandom(2) = 1
 	            {
-	            myHealth -= 30
+	            UpdateHealth(id, -30)
 	            UpdateMorale(-2, -1)
 	            }
             

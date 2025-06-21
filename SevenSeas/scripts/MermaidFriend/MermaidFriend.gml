@@ -16,7 +16,7 @@ function MermaidFriend() {
 	    {
 	    with Pirate
 	        {
-	        myHealth -= 20
+	        UpdateHealth(id, -20)
 	        UpdateMorale(-1,-1)
 	        UpdateMorale(1, global.FEARSOME)
 	        }

@@ -9,9 +9,7 @@ priorityMax = 10
 
 myAttack = ShipSwarmAttack
 requiredSlot[0] = "rigging"
-myType = "melee"
+actionType = "melee"
 level = 0
 
 needsTarget = false
-
-

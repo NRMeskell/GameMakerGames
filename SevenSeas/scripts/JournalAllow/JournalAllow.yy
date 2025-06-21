@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"JournalAllow",
   "isCompatibility":false,
   "isDnD":false,

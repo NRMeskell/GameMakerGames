@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"LoadFileExists",
   "isCompatibility":false,
   "isDnD":false,

@@ -25,24 +25,24 @@ function DrawActionInfo(argument0, argument1, argument2, argument3, argument4, a
 
 	if argument4 == "pirate"
 	    {
-	    if myActionDrawer.myType = "melee"
+	    if myActionDrawer.actionType = "melee"
 	        draw_sprite(ActionInfoSpr, 0+4*!argument6, drawInfoX, drawInfoY)
-	    if myActionDrawer.myType = "ranged"
+	    if myActionDrawer.actionType = "ranged"
 	        draw_sprite(ActionInfoSpr, 1+4*!argument6, drawInfoX, drawInfoY)
-	    if myActionDrawer.myType = "cannon"
+	    if myActionDrawer.actionType = "cannon"
 	        draw_sprite(ActionInfoSpr, 2+4*!argument6, drawInfoX, drawInfoY)
-	    if myActionDrawer.myType = "ship"
+	    if myActionDrawer.actionType = "ship"
 	        draw_sprite(ActionInfoSpr, 3+4*!argument6, drawInfoX, drawInfoY)
 	    }
 	else
 	    {
-	    if myActionDrawer.myType = "melee"
+	    if myActionDrawer.actionType = "melee"
 	        draw_sprite(EnemyActionInfoSpr, 0, drawInfoX, drawInfoY)
-	    if myActionDrawer.myType = "ranged"
+	    if myActionDrawer.actionType = "ranged"
 	        draw_sprite(EnemyActionInfoSpr, 1, drawInfoX, drawInfoY)
-	    if myActionDrawer.myType = "cannon"
+	    if myActionDrawer.actionType = "cannon"
 	        draw_sprite(EnemyActionInfoSpr, 2, drawInfoX, drawInfoY)
-	    if myActionDrawer.myType = "ship"
+	    if myActionDrawer.actionType = "ship"
 	        draw_sprite(EnemyActionInfoSpr, 3, drawInfoX, drawInfoY)
 	    }
     

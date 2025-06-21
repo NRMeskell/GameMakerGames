@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"ShantiesAllow",
   "isCompatibility":false,
   "isDnD":false,

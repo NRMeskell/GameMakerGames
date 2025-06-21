@@ -6,7 +6,7 @@ function SearchWreckage() {
 	
 	if result <=1 {
 		GetRandomLoot(irandom(1), "treasure", [-1, 0, 1])
-		Ship.myHealth -= (Ship.myHealth * 0.25) div 1
+		UpdateHealth(Ship, -(Ship.myHealth * 0.25) div 1)
 		ds_list_add(global.notificationList, "Run Aground!", "The ship was washed into the rocks, and the crew had to return early with limited goods.")
 	}
 	else if result == 2 or irandom(1){

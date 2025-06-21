@@ -13,7 +13,7 @@ function StrangeTrap() {
 		ds_list_add(global.notificationList, "pirate caught!", member.firstName + " was snapped by a trap, and they lost health and morale!")
 		with member{
 			UpdateMorale(-1, -1)
-			myHealth -= 20
+			UpdateHealth(Ship, -20)
 		}
 	}
 	audio_stop_sound(ScratchingSnd)

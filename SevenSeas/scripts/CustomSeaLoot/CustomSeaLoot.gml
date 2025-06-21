@@ -116,6 +116,7 @@ function CustomSeaLoot(itemsAllowed) {
 				for(i=0; i<9; i++)
 				    specialItem.bonus[i] = 0
 				specialItem.bonus[6] = 2
+				specialItem.bonus[5] = 1
 				
 				ds_list_replace(items, 0, specialItem)
 		    }
@@ -130,6 +131,7 @@ function CustomSeaLoot(itemsAllowed) {
 				for(i=0; i<9; i++)
 				    specialItem.bonus[i] = 0
 				specialItem.bonus[3] = 2
+				specialItem.bonus[2] = 1
 				
 				ds_list_replace(items, 0, specialItem)
 		    }
@@ -144,6 +146,7 @@ function CustomSeaLoot(itemsAllowed) {
 				for(i=0; i<9; i++)
 				    specialItem.bonus[i] = 0
 				specialItem.bonus[5] = 2
+				specialItem.bonus[3] = 1
 				
 				ds_list_replace(items, 0, specialItem)
 		    }

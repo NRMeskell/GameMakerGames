@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"ShortcutMap",
   "isCompatibility":false,
   "isDnD":false,

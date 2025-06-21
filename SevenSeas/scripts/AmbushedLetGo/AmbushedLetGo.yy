@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"AmbushedLetGo",
   "isCompatibility":false,
   "isDnD":false,

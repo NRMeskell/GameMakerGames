@@ -5,7 +5,7 @@ spriteNumber = 21
 
 rechargeTime = 0
 requiredSlot[0] = "none"
-myType = "melee"
+actionType = "melee"
 level = 0
 
 

@@ -2,5 +2,5 @@
 
 
 name = "monkey bite"
-description = "deals " + GetDamage(MonkeyBiteAttack) + " to target and makes target bleed."
+description = "deals " + GetDamageString(MonkeyBiteAttack) + " to target and makes target bleed."
 

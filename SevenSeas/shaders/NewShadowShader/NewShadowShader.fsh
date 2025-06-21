@@ -18,12 +18,15 @@ uniform float uvs[8];
 
 void main()
     {
-	vec2 pixelSize;
+	vec2 pixelSize, newTexcoord;
 	vec4 testPixel;
 	vec3 testColor = vec3(0.0, 0.0, 0.0);
 	float alpha = 0.0;
 	pixelSize.x = (uvs[2] - uvs[0])/xSize;
 	pixelSize.y = (uvs[3] - uvs[1])/ySize;
+	
+	newTexcoord.x = floor(v_vTexcoord.x/pixelSize.x)*pixelSize.x;
+	newTexcoord.y = floor(v_vTexcoord.y/pixelSize.y)*pixelSize.y;
 	
     if ((texture2D( gm_BaseTexture, v_vTexcoord).a > 0.0) && (v_vTexcoord.x > uvs[0] + pixelSize.x) && (v_vTexcoord.x < uvs[2] - pixelSize.x) && (v_vTexcoord.y > uvs[1] + pixelSize.y) && (v_vTexcoord.y < uvs[3] - pixelSize.y)){
         int i, myLight;
@@ -34,8 +37,8 @@ void main()
         
 		gl_FragColor = v_vColour * vec4(0.0, 0.0, 0.0, texture2D(gm_BaseTexture, v_vTexcoord).a);
     
-        xPos = (v_vTexcoord.x - uvs[0])/(uvs[2] - uvs[0]);
-        yPos = (v_vTexcoord.y - uvs[1])/(uvs[3] - uvs[1]);
+        xPos = (newTexcoord.x - uvs[0])/(uvs[2] - uvs[0]);
+        yPos = (newTexcoord.y - uvs[1])/(uvs[3] - uvs[1]);
 		
         //add light if bright
         for(i=0; i<10; i+=1){
@@ -52,16 +55,13 @@ void main()
                 //cast shadows
                 if (myLayer > lightLayer[i]){
                     for(j=0.15; j<0.5; j+=0.15){
-                        float checkX = floor((v_vTexcoord.x + (dir*(j)).x)/pixelSize.x)*pixelSize.x;
-                        float checkY = floor((v_vTexcoord.y + (dir*(j)).y)/pixelSize.y)*pixelSize.y;
+                        float checkX = (newTexcoord.x + (dir*(j)).x);
+                        float checkY = (newTexcoord.y + (dir*(j)).y);
                         
                         //Check if in my texture
                         if ((checkX > uvs[0]) && (checkX < uvs[2]) && (checkY > uvs[1]) && (checkY < uvs[3])){
                             
-							//check if behind shadow
-                            //if (sign(xDist) == sign(lightX[i] - ((myX + uvs[4]) + xSize*uvs[6]*(checkX - uvs[0])/(uvs[2]- uvs[0])))){
-		                        //if (sign(yDist) == sign(lightY[i] - ((myY + uvs[5]) + ySize*uvs[7]*(checkY - uvs[1])/(uvs[3]- uvs[1])))){
-                            
+							
 		                    //check if can cast shadow
 		                    if (((texture2D(gm_BaseTexture, v_vTexcoord + dir*(pow(j, 2.0))).a > 0.5))){
 		                        brightness *= 0.7;

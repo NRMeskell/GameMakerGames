@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"background_create_from_surface",
   "isCompatibility":true,
   "isDnD":false,

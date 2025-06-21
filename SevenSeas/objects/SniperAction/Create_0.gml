@@ -13,7 +13,7 @@ requiredSlot[0] = "rigging"
 
 needsTarget = true
 
-myType = "ranged"
+actionType = "ranged"
 level = 0
 
 

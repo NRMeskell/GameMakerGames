@@ -1,6 +1,6 @@
 /// @description Vars
 
-myType = choose(0,1)
+actionType = choose(0,1)
 image_index = 20
 
 maxHealth = 35

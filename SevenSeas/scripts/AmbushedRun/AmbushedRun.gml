@@ -6,7 +6,6 @@ function AmbushedRun() {
 	if argument0
 	    {
 	    ds_list_add(global.notificationList, "Enemy Avoided", "the ambushed was spotted and successfully avoided!")
-	    script_execute(closeEventCode, 2)
 	    }
 	else
 	    {	
@@ -24,6 +23,5 @@ function AmbushedRun() {
 		else{
 			ds_list_add(global.notificationList, "Cove Patrol!", "Captain Hardcoin chases away the ambushers for you!")
 		}
-	script_execute(closeEventCode, 2)
 	}
 }

@@ -26,8 +26,8 @@ function GiantTurtleSpecialTake() {
 		    color[3] = make_color_rgb(128, 128, 0)
 		    specialItem.myColor = color[irandom(array_length_1d(color)-1)]
     
-		    specialItem.itemPower = "medical ship"   
-		    specialItem.itemPowerDescription = "when taking an action at camp, " + specialItem.itemName + " will help repair the ship."
+		    specialItem.itemPower = "defense"   
+		    specialItem.itemPowerDescription = specialItem.itemName + " will protect equiped pirate, reducing combat damage they take by 25%"
 		    } 
     
 		GetRandomLoot(0, "TURTLE GIFT", undefined)

@@ -2,7 +2,7 @@
 
 
 name = "sniper"
-description = "deals " + GetDamage(myAttack) + " damage to target."
+description = "deals " + GetDamageString(myAttack) + " damage to target."
 
 
 

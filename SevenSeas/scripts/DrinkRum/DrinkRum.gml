@@ -17,11 +17,11 @@ function DrinkRum(){
 function DrinkFlask(){
 	if irandom(2){
 		ds_list_add(global.notificationList, "Tasty Drink!", "The flask was full of a sweet liquid, and " + myPirate.firstName + " recovers health and morale!")
-		myPirate.myHealth = min(myPirate.myHealth*1.25, myPirate.maxHealth)
+		UpdateHealth(myPirate, myPirate.myHealth*.25)
 	}
 	else{
 		ds_list_add(global.notificationList, "Poison!", "The flask was full of a bitter poison, and " + myPirate.firstName + " weakens!")
-		myPirate.myHealth = max(myPirate.myHealth*0.75, 1)
+		UpdateHealth(myPirate, -myPirate.myHealth*1.25)
 		with myPirate 
 			UpdateMorale(-1,-1)
 	}

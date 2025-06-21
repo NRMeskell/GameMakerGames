@@ -3,7 +3,7 @@
 event_user(0)
 spriteNumber = 32
 rechargeTime = 5
-myType = "ship"
+actionType = "ship"
 
 myAttack = ShipEngageAttack
 

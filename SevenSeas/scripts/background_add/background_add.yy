@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"background_add",
   "isCompatibility":true,
   "isDnD":false,

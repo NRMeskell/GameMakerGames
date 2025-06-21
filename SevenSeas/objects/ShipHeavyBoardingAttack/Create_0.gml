@@ -6,7 +6,6 @@ highRange = 1.3
 
 ///vars
 
-myButton = HeavyBoardingAction
 image_speed = 0.8
 image_index = 0
 animationY = - 35

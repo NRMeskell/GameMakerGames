@@ -2,7 +2,12 @@ function GeneratePetItem(argument0) {
 	newItem = instance_create(0,0,StoreObjectItem)
 	with newItem
 	    {   
-	    color[0] = c_white
+		color[0] = make_color_rgb(0,44,119)
+		color[1] = make_colour_rgb(200,200,200)
+		color[2] = make_color_rgb(158,126,2)
+		color[3] = make_color_rgb(140,0,145)
+		color[4] = make_color_rgb(2,98,0)
+		
 	    if argument0 == 0 {
 	        color[0] = make_color_rgb(155,0,0)
 	        color[1] = make_color_rgb(190,0,0)
@@ -21,6 +26,7 @@ function GeneratePetItem(argument0) {
 	        color[1] = make_color_rgb(25,25,25)
 	        color[2] = make_color_rgb(146,82,0)
 	        color[3] = make_color_rgb(94,68,35)
+			color[4] = make_color_rgb(80,80,80)
 	        itemNumber = irandom_range(3,5)
 	        itemName = choose("bongo", "buster", "flopsy", "popsie", "flo", "wanky", "talullah", "gaga", "dopey", "coconut")
 	        itemInfo = "a cute climbing companion"
@@ -44,7 +50,7 @@ function GeneratePetItem(argument0) {
 		        itemInfo = "a telescoping lens to increase a pirate's vision"
         
 		        itemPower = "wheel"   
-		        itemPowerDescription = "equipped pirate provides one wheel bonus, no matter where they are on the ship."
+		        itemPowerDescription = "equipped pirate provides one wheel bonus, no matter where they are on board."
 		    }
 		    else if chooseType == 2 {
 		        itemNumber = 8
@@ -69,15 +75,6 @@ function GeneratePetItem(argument0) {
         
 		        itemPower = "combat move"   
 		        itemPowerDescription = "equipped pirate can move freely during combat"
-        
-		        color[0] = make_color_rgb(155,0,0)
-		        color[1] = make_color_rgb(128,0,0)
-		        color[2] = make_color_rgb(0,44,119)
-		        color[3] = make_colour_rgb(200,200,200)
-		        color[4] = make_color_rgb(25,25,25)
-		        color[5] = make_color_rgb(158,126,2)
-		        color[6] = make_color_rgb(140,0,145)
-		        color[7] = make_color_rgb(2,98,0)
 		    }
 			if chooseType == 5 {
 		        itemNumber = 6
@@ -87,7 +84,14 @@ function GeneratePetItem(argument0) {
 		        itemPower = "speed bonus 10"   
 		        itemPowerDescription = "if equipped pirate is at the helm, the ship sails 10% faster"
 		    }
-    
+			if chooseType == 6 {
+		        itemNumber = 17
+		        itemName = "tool belt"
+		        itemInfo = "A set of handy craftsman tools"
+        
+		        itemPower = "medical ship"   
+		        itemPowerDescription = "when using a campfire, repair 20 ship damage per equipped pirate level." 
+		    }
 		}
 		myColor = color[irandom(array_length_1d(color)-1)]
 		spriteIndex = EquipPetSpr          

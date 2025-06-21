@@ -5,7 +5,7 @@ spriteNumber = 26
 
 rechargeTime = 5
 requiredSlot[0] = "rigging"
-myType = "melee"
+actionType = "melee"
 level = 0
 
 needsTarget = true

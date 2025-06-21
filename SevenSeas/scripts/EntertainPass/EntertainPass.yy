@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"EntertainPass",
   "isCompatibility":false,
   "isDnD":false,

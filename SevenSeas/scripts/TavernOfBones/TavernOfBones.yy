@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"TavernOfBones",
   "isCompatibility":false,
   "isDnD":false,

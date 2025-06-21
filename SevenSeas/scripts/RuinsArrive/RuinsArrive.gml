@@ -4,9 +4,9 @@ function RuinsArrive() {
 	with instance_create(0,0,Event)
 	    {
 	    buttonNumber = 3
-	    ds_list_add(buttons, closeEventCode, RuinsSearch, RuinsHelp)
+	    ds_list_add(buttons, closeEventCode, RuinsSearching, RuinsHelp)
 	    ds_list_add(buttonStats, 0, 3, 3)
-	    ds_list_add(buttonRequires, 0, global.eventDiff[3, 1], global.eventDiff[3, 3])
+	    ds_list_add(buttonRequires, 0, 0, global.eventDiff[3, 3])
 	    ds_list_add(buttonCosts, 0, 0, 0)
 	    ds_list_add(buttonText, "sail by the ruins", "search for treasure", "help release the prisoner" )
         
@@ -20,8 +20,12 @@ function RuinsArrive() {
 	instance_create(0,0,Ruins)
 }
 
+function RuinsSearching(){
+	Wait(Clock.fullDay/8, RuinsSearch, argument0)
+}
+
 function RuinsSearch() {
-	if argument0{
+	if irandom(1){
 		ds_list_add(global.notificationList, "Treasure Found!", "The dark exploration scared and invigorated the crew.")
 		GetRandomLoot(irandom_range(1,3), "Treasure", [-1, 0, 0, 1, 1])
 		UpdateMorale(-1, global.KEEN)
@@ -38,7 +42,7 @@ function RuinsSearch() {
 		else{
 			var injuredPirate = RandomPirate()
 			ds_list_add(global.notificationList, "Ruins collapse!", "An old stairwell breaks underfoot, injuring " + injuredPirate.firstName)
-			injuredPirate.myHealth -= 25
+			UpdateHealth(injuredPirate, -25)
 		}
 	}
 	closeEventCode()
@@ -95,7 +99,7 @@ function RuinsHelp() {
 	else{
 		var injuredPirate = RandomPirate()
 		ds_list_add(global.notificationList, "Ruins collapse!", "The stairwell to the cage breaks underfoot, injuring " + injuredPirate.firstName)
-		injuredPirate.myHealth -= 25
+		UpdateHealth(injuredPirate, -25)
 	}
 	closeEventCode()
 }

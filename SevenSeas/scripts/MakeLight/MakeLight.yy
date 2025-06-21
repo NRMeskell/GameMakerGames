@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"MakeLight",
   "isCompatibility":false,
   "isDnD":false,

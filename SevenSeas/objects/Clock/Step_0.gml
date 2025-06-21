@@ -1,9 +1,7 @@
 /// @description Do Time Cycle
 
-timeSpeed = 0.5
-global.timeCycleRate = 0
 if room == GameRoom{
-    if (instance_exists(Defeat) or instance_exists(ConquerPannel) or instance_exists(PirateLeveler) or (ds_list_size(global.notificationList) > 0) or global.mapPause or (global.eventOpen) or (instance_exists(Store) and !global.inPort) or ds_list_size(ItemRunner.floatingItems) != 0 or instance_exists(CombatRunner))
+    if eventTimeLeft> 0 or (instance_exists(Defeat) or instance_exists(ConquerPannel) or instance_exists(PirateLeveler) or (ds_list_size(global.notificationList) > 0) or global.mapPause or (global.eventOpen) or (instance_exists(Store) and !global.inPort) or ds_list_size(ItemRunner.floatingItems) != 0 or instance_exists(CombatRunner))
         alarm[1] = 1
         
     if (alarm[1] <= 0 and MapShip.path_position < 1) or (global.inPort and global.portType == 1)
@@ -16,30 +14,27 @@ else
     
 if global.doTime and !(global.inPort and global.portType != 1)
     {
-    global.timeCycle += timeSpeed*(global.inPort or room != GameRoom ? 1 : global.gameRate )
-	global.timeCycleRate = 1
+    global.timeCycle += (global.inPort or room != GameRoom ? 1 : global.gameRate )
     }
 	
-var runTime = (global.skipCamp*eventTimeLeft-1)
 if eventTimeLeft > 0{
-	if !MapCreator.instantClose{
-		repeat(max(1, runTime)){
-			global.timeCycle += timeSpeed * campingSpeed * pi/2*sin(eventTimeLeft/(campTime) * pi)
-			global.timeCycleRate = campingSpeed * pi/2*sin(eventTimeLeft/(campTime) * pi)
-		
-			with Cloud
-				x += moveSpeed*2*(other.timeSpeed * other.campingSpeed * pi/2*sin(other.eventTimeLeft/(other.campTime) * pi))
-			with Pirate
-				myHealth += 0.5*(other.timeSpeed * other.campingSpeed * pi/2*sin(other.eventTimeLeft/(other.campTime) * pi)) * sqrt(global.totalMedicalBonus)*Ship.healSpeed
-		
+	if !ds_list_size(global.notificationList){
+		repeat(min(eventTimeLeft, 1+4*global.skipCamp)){
+			global.timeCycle += campingSpeed * pi/2*sin(eventTimeLeft/(eventTimeTotal) * pi)
+
+			with Cloud{
+				x += moveSpeed*2*(other.campingSpeed * pi/2*sin(other.eventTimeLeft/(other.eventTimeTotal) * pi))
+			}
+			
 			eventTimeLeft -= 1
 		}
 	}
 }
-
 if eventTimeLeft == 0{
-	event_user(2)
+	with waitCaller
+		script_execute(Clock.waitEvent, Clock.waitSuccess)
 	eventTimeLeft = -1
+	closeEventCode()
 }
 
 if global.timeCycle > global.timeCycleLength
@@ -55,7 +50,7 @@ if (global.timeCycle/(global.timeCycleLength) * 360) > 180 and global.isDay = tr
 if (global.timeCycle/(global.timeCycleLength) * 360) < 180 and global.isDay = false
     global.isDay = true
 
-    
+
 
 
 

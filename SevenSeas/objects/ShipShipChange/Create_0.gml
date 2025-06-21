@@ -7,7 +7,6 @@ highRange = 1.1
 
 ///vars
 
-myButton = BasicShipAction
 animationY = 0
 animationX = 20
 animationHeight = 1

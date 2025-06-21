@@ -7,7 +7,6 @@ highRange = 1.5
 
 ///vars
 
-myButton = OutmaneuverAction
 myButtonSprite = 3
 animationY = 0
 animationX = 20

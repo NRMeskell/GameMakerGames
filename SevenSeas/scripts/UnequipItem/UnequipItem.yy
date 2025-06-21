@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"UnequipItem",
   "isCompatibility":false,
   "isDnD":false,

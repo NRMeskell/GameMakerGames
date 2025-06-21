@@ -1,6 +1,5 @@
 /// @description vars
 
-myButton = BasicMeleeAction
 image_speed = 0.8
 image_index = 0
 animationY = - 35

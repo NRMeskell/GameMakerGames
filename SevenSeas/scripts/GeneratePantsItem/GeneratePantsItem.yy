@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"GeneratePantsItem",
   "isCompatibility":false,
   "isDnD":false,

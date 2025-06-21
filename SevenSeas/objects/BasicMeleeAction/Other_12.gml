@@ -2,6 +2,6 @@
 
 
 name = "boarding"
-description = "deals " + GetDamage(myAttack) + " damage to enemy crew"
+description = "deals " + GetDamageString(myAttack) + " damage to enemy crew"
 
 

@@ -3,7 +3,7 @@ function SeaSickMedicine() {
 
 	if !argument0{
 	    with sickPirate{
-			myHealth -= 20 + 10*global.seaLevel
+			UpdateHealth(Ship, -20-10*global.seaLevel)
 			UpdateMorale(-2, -1)
 		}
     

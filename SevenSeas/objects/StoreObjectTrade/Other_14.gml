@@ -23,7 +23,7 @@ else
     amount = max(1, irandom_range(sellAmount*(ItemRunner.cargoCost[type])*0.85 div 1, sellAmount*ItemRunner.cargoCost[type]))
     }
 	
-amount = min(amount, 99)    
+sellAmount = min(sellAmount, global.storeSize[type]) 
 name = string(sellAmount) + " " + ItemRunner.cargoName[type]
 description = "sell " + string(sellAmount) + " " + ItemRunner.cargoName[type] + " to the trader for " + string(amount) + " gold"
 

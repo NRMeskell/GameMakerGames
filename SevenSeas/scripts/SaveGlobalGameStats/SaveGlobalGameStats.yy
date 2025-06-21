@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"SaveGlobalGameStats",
   "isCompatibility":false,
   "isDnD":false,

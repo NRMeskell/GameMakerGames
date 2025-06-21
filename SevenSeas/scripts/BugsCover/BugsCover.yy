@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"BugsCover",
   "isCompatibility":false,
   "isDnD":false,

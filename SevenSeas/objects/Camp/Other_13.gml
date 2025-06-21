@@ -1,7 +1,10 @@
 /// @description Search for treasure
 
 instance_destroy(LandFlavor)
-
+// Play basic searching sound
+if global.skipCamp
+	audio_play_sound(SearchingSnd, 1, false)
+	
 if myPortType = 0{
 	mySpecialAction = LookInCave
 	myAnimationTimes = [room_speed/2, room_speed]

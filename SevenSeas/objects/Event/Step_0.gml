@@ -32,7 +32,7 @@ for(r=0; r<buttonNumber; r++)
 			catch( _exception){
 				showException( _exception)
 				}
-			if !instance_exists(CrashingRocksEvent) and !instance_exists(FogEvent)
+			if Clock.eventTimeLeft == -1
 				closeEventCode()
 			}
         }

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"FloatingLights",
   "isCompatibility":false,
   "isDnD":false,

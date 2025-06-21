@@ -273,7 +273,6 @@ for(var n=0; n < seaNumber; n++){
 		if r < townNumber - ds_map_find_value(seas[n], "level") {
             newLanding.image_index = 1
 			newLanding.visible = true
-            newLanding.slotNumber = 3
             newLanding.myIndex = newLanding.image_index
             newLanding.spreadOut = true
             newLanding.myIslandType = ds_map_find_value(seas[n], "type")
@@ -282,7 +281,6 @@ for(var n=0; n < seaNumber; n++){
             newLanding.myIslandType = ds_map_find_value(seas[n], "type")
             newLanding.image_index = ds_list_find_value(spotTypes[? ds_map_find_value(seas[n], "type")], r mod 3)
             newLanding.myIndex = newLanding.image_index
-            newLanding.slotNumber = 1
             newLanding.spreadOut = false
 			newLanding.visible = false
         }
@@ -378,7 +376,6 @@ with instance_create(startingPort.checkX, startingPort.checkY, MapShip){
 with MapShip.targetPort
     {
     image_index = 1
-    slotNumber = 3
     
     slotBuild[0] = instance_create(-100, -100, Tavern)
     slotBuild[0].mySlot = 0
@@ -392,7 +389,7 @@ with MapShip.targetPort
     slotBuild[2].mySlot = 2
     slotBuild[2].myPortType = image_index
         
-    for(i=0; i<slotNumber; i++)
+    for(i=0; i<3; i++)
         {
         slotBuild[i].x = MapShip.slotX[slotBuild[i].mySlot]
         slotBuild[i].y = MapShip.slotY[slotBuild[i].mySlot]

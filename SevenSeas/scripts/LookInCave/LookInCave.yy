@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"LookInCave",
   "isCompatibility":false,
   "isDnD":false,

@@ -41,7 +41,7 @@ for(i=0;i<4;i++)
     {
     with instance_create(startX, startY + yGap*i, PlayerActionRunner)
         {
-        myType = other.indexType[other.i]
+        actionType = other.indexType[other.i]
         image_index = other.i
         }
     }
@@ -171,14 +171,16 @@ overAction[0] = false
 // Enemies get 20% more health per level
 // Enemies have a 20% change per level to have an extra stat
 with Enemy{
-	myHealth = (myHealth * (0.80 + 0.20*global.enemyDiff)) div 1
+	maxHealth = (maxHealth * (0.80 + 0.20*global.enemyDiff)) div 1
+	myHealth = maxHealth
 	if random(1) < 0.2*global.enemyDiff{
 		ds_list_add(myStats, ds_list_find_value(myStats, irandom(ds_list_size(myStats)-1)))
 		if ds_list_find_value(myStats, ds_list_size(myStats)-1) == 5
 			ds_list_replace(myStats, ds_list_size(myStats)-1, choose(0,1))
 	}
 }
-myHealth =  (myHealth * (0.80 + 0.20*global.enemyDiff)) div 1
+maxHealth =  (maxHealth * (0.80 + 0.20*global.enemyDiff)) div 1
+myHealth = maxHealth
 
 ///Begin Game
 event_user(0)

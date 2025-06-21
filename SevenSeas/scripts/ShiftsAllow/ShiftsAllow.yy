@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"ShiftsAllow",
   "isCompatibility":false,
   "isDnD":false,

@@ -13,10 +13,4 @@ function TropicalWork() {
     
 	script_execute(closeEventCode, 2)
 
-
-
-
-
-
-
 }

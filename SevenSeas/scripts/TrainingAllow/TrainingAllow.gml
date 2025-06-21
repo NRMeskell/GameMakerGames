@@ -8,7 +8,7 @@ function TrainingAllow() {
 	    {
 	    injuredMember = RandomPirate()
 	    ds_list_add(global.notificationList, "Injured Crew Member!", injuredMember.name + " was injured, and the training was halted.")
-	    injuredMember.myHealth -= (injuredMember.maxHealth div 4)
+	    UpdateHealth(injuredMember,  -injuredMember.maxHealth div 4)
 	    }
 	else if irandom(1)
 	    {
