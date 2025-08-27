@@ -6,7 +6,7 @@
   "name":"FrogKingArrive",
   "parent":{
     "name":"FrogKing",
-    "path":"folders/Scripts/Events/Characters/TropicalIslands/FrogKing.yy",
+    "path":"folders/Scripts/Events/Characters/CharacterEvents/FrogKing.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

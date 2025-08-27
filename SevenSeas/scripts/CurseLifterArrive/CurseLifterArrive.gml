@@ -13,15 +13,15 @@ function CurseLifterArrive() {
 	    ds_list_add(buttonRequires, 0, 0, 0)
 	    ds_list_add(buttonCosts, 0, 0, 0)
 		if CurseLifter.myState != "dying"
-			ds_list_add(buttonText, "decline her offer", "give limb for 25 gold", "give limb to lift curses")
+			ds_list_add(buttonText, "decline her offer", "give up limb to gain 25 gold", "give up limb to lift all curses")
 		else
-			ds_list_add(buttonText, "ignore her plea", "give limb for 25 gold", "give limb to lift curses")
+			ds_list_add(buttonText, "ignore her plea", "give up limb to gain 25 gold", "give up limb to lift all curses")
 			
 		
 	    global.allowSelect = false
 	    captionText = "Mia CurseLifter"
 	    if CurseLifter.myState == "unmet"
-	        eventText = "The friendly woman offers to trade or lift curses for the price of one of the crew's limbs."
+	        eventText = "The friendly woman offers gold or curse lifting, for the price of one of the crew's limbs."
         if CurseLifter.myState == "fresh"
 	        eventText = "Mia thanks the crew for their earlier business, and asks if they care for another trade?"
         if CurseLifter.myState == "unwell"
@@ -58,9 +58,11 @@ function GoldForLimb() {
 			limbName = "hand"
 		else if stars < 3
 			limbName = "eye"
-		else
+		else if !legLostLeft or !legLostRight
 			limbName = "leg"
-		event_user(limbName)
+		else
+			limbName = undefined
+		LoseLimb(limbName)
 	}
 	
 	if CurseLifter.myState != "dying"
@@ -85,15 +87,17 @@ function CurseLifterLimb() {
 			limbName = "hand"
 		else if stars < 3
 			limbName = "eye"
-		else
+		else if !legLostLeft or !legLostRight
 			limbName = "leg"
-		event_user(limbName)
+		else
+			limbName = undefined
+		LoseLimb(limbName)
 	}
 	
 	var cursesLifted = LiftCurses()
 	if cursesLifted == 0{
 		if CurseLifter.myState != "dying"
-			ds_list_add(global.notificationList, "No Curses!", "Mia doesn't find any curses to life and she leaves very dissapointed without taking a limb.")
+			ds_list_add(global.notificationList, "No Curses!", "Mia doesn't find any curses to lift, and she leaves very dissapointed without taking a limb.")
 		else{
 			ds_list_add(global.notificationList, "Mia Saved!", myPirate.firstName + "'s " + limbName + " comes magically free, and Mia receives it in tears. No curses were found on the ship.")
 		}

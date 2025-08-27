@@ -36,7 +36,7 @@ function GenerateShirtItem(argument0) {
 	            bonus[choose(5,6)] ++
 	        }
            
-	    itemCost = 10 + itemBonuses*10+irandom_range(-3,3)
+	    itemCost = 12+itemBonuses*17+irandom_range(-3,3)
 	    }
     
 	return newItem

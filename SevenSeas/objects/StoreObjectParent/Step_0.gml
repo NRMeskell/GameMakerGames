@@ -1,5 +1,6 @@
 /// @description Over Buttons
 
+
 overClose = point_in_circle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), closeX, closeY, 10)
 
 if viewed and !instance_exists(DumpItem)

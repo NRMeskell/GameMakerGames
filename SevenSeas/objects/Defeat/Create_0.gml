@@ -22,10 +22,10 @@ for(i=0; i<ds_list_size(SoundController.seaMusic); i++){
         audio_sound_gain(ds_map_find_value(ds_list_find_value(SoundController.seaMusic, i), global.seaType), 0, 100)
     }  
     
-audio_is_playing(ds_map_find_value(SoundController.combatMusicMap, global.seaType))
-    audio_sound_gain(ds_map_find_value(SoundController.combatMusicMap, global.seaType), 0, 100)
+if audio_is_playing(SoundController.combatMusic)
+    audio_sound_gain(SoundController.combatMusic, 0, 100)
     
-audio_is_playing(ds_map_find_value(SoundController.portMusicMap, global.seaType))
+if audio_is_playing(ds_map_find_value(SoundController.portMusicMap, global.seaType))
     audio_sound_gain(ds_map_find_value(SoundController.portMusicMap, global.seaType), 0, 100)
     
 audio_play_sound(DeathBellSnd, 1, false)

@@ -36,8 +36,6 @@ if selected = true and !instance_exists(Event) and ds_list_size(global.notificat
                     occupied = true
                     other.mySlot = id
                     
-					if !instance_exists(CombatRunner) and slotType != "bed"
-						other.myMainSlot = other.mySlot
                     }
                 }
             }   
@@ -184,7 +182,7 @@ if morale <= moraleMax[stars]
 	leveling = false
 	
 if morale > moraleMax[stars] and !instance_exists(PirateLeveler) and !instance_exists(Event) and !instance_exists(CombatRunner) {
-	if stars < 3 and myAction[stars] != LostEyeAction
+	if stars < 3 and myAction[stars] != LostEyeAction and !leveling
 		PirateLevelUp(true, true)
 	else if HasStored(5, 1){
 		with instance_create(-1000, room_height/2, PirateLevelChooser){
@@ -192,6 +190,9 @@ if morale > moraleMax[stars] and !instance_exists(PirateLeveler) and !instance_e
 			event_user(0)
 		}
 	}
+	
+	if stars > 3
+		stars = 3
 }
     
 prevMorale = morale

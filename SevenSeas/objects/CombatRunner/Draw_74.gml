@@ -53,7 +53,7 @@ if alarm[1] == -1
 
 ///Draw End Turn Button
 
-if playerTurn and __view_get( e__VW.XView, 0 ) = 0
+if playerTurn and __view_get( e__VW.XView, 0 ) = 0 and ds_list_size(global.notificationList) == 0
     {
     showSkipButton = true
     with ActionParent

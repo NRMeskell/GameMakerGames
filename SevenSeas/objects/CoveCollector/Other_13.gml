@@ -1,3 +1,4 @@
 /// @description Become Zombie
 
-instance_destroy()
+myState = "zombie"
+event_user(0)

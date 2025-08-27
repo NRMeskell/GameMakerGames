@@ -1,9 +1,7 @@
 /// @description Draw Preview
 // You can write your code in this editor
 
-__b__ = action_if_variable(preview, true, 0);
-if __b__
-{
+if preview = true
 {
 ///Draw info
 
@@ -119,6 +117,5 @@ if itemPowerDescription != ""
     }
 
 /* */
-}
 }
 /*  */

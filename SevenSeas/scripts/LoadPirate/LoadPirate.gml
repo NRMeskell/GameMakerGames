@@ -92,7 +92,6 @@ function LoadPirate(argument0) {
 	pirate.mySlot.occupied = false
 	newSlot.occupied = true
 	pirate.mySlot = newSlot
-	pirate.myMainSlot = newSlot
 
 	ini_close()
 }

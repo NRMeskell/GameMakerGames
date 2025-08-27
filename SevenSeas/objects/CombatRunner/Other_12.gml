@@ -37,12 +37,12 @@ startY = 135
 yGap = sprite_get_height(PlayerAttacksSpr) + 2
 
 
-for(i=0;i<4;i++)
+for(var i=0;i<4;i++)
     {
     with instance_create(startX, startY + yGap*i, PlayerActionRunner)
         {
-        actionType = other.indexType[other.i]
-        image_index = other.i
+        actionType = other.indexType[i]
+        image_index = i
         }
     }
 
@@ -67,10 +67,10 @@ basicCannonAttack.myPirate = Ship
 basicShipChange.myPirate = Ship
 basicShipRun.myPirate = Ship
 
-for(i=0; i<instance_number(Pirate); i++)
+for(var i=0; i<instance_number(Pirate); i++)
     {
     checkPirate = instance_find(Pirate,i)
-    for(r=0; r<3; r++)
+    for(var r=0; r<3; r++)
         {
         if checkPirate.myAction[r] != noone
             {
@@ -98,12 +98,12 @@ desireList = ds_list_create()
 priorityList = ds_list_create()
 possibleEnemyActions = ds_list_create()
 
-for(i=0; i<ds_list_size(myBasicActions); i++)
+for(var i=0; i<ds_list_size(myBasicActions); i++)
     with instance_create(-50, -50, ds_list_find_value(myBasicActions, i)){
 		myPirate = CombatRunner.id
 	}
             
-for(i=0; i<instance_number(Enemy); i++)
+for(var i=0; i<instance_number(Enemy); i++)
     {
     checkEnemy = instance_find(Enemy,i)
     for(r=0; r<ds_list_size(checkEnemy.myActions); r++)
@@ -181,6 +181,37 @@ with Enemy{
 }
 maxHealth =  (maxHealth * (0.80 + 0.20*global.enemyDiff)) div 1
 myHealth = maxHealth
+
+
+// Check difficulty of enemy for music
+var enemysHealth = 0
+var enemyStats = 0
+var enemySkills = 0
+with Enemy{
+	enemysHealth += maxHealth
+	enemyStats += ds_list_size(myStats)
+	enemySkills += ds_list_size(myActions)
+}
+var enemyDiff = min(maxHealth, enemysHealth) + 35*enemyStats + 45*enemySkills
+
+var pirateHealth = 0
+var pirateStats = 0
+var pirateSkills = 0
+with Pirate{
+	pirateHealth += maxHealth
+	for(var i=0; i<9; i++)
+		pirateStats += statTotal[i]
+	pirateSkills += stars
+}
+var pirateDiff = min(Ship.maxHealth, pirateHealth) + 35*pirateStats + 45*pirateSkills;
+if enemyDiff/pirateDiff > 0.9{
+	SoundController.combatMusic = CombatMusicEpicSnd
+}else if enemyDiff/pirateDiff < 0.3{
+	SoundController.combatMusic = CombatMusicSnd
+}else{
+	SoundController.combatMusic = CombatMusicSnd
+}
+
 
 ///Begin Game
 event_user(0)

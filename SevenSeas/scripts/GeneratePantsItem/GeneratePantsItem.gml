@@ -38,7 +38,7 @@ function GeneratePantsItem(argument0) {
 	        }
         
                
-	    itemCost = 12+power(itemBonuses,2)*17+irandom_range(-3,3)
+	    itemCost = 10+power(itemBonuses,2)*10+irandom_range(-3,3)
 	    }
     
 	return newItem

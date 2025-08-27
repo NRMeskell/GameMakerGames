@@ -16,66 +16,60 @@ function DrawShip(argument0, argument1, argument2, argument3, argument4, argumen
 	var rotation = round(argument4*4)/4
 	var xPos = argument2
 	var yPos = argument3
+	
+	var red = 0.03, green = 0.03, blue = 0.01;
+	if argument0 == TropicalShipSpr or argument0 == FrogKingShipSpr or argument0 == FrogShipRoyalSpr{
+		red = 0.01; green = 0.05; blue = 0.02;
+	}else if argument0 == SkeletalShipSpr or argument0 == SpiritLordShipSpr{
+		red = 0.015; green = 0.00; blue = 0.02;
+	}
+	
+		
+	var slices = sprite_get_nineslice(argument0);
+	slices.active = false;
+	myFlagX = sprite_get_xoffset(argument0)-(sprite_get_width(argument0)-slices.right);
+	myFlagY =  slices.top-sprite_get_yoffset(argument0);
 
-	if argument0 == ShipSloopSpr{
-	    myFlagX = sprite_get_xoffset(argument0)-40
-	    myFlagY = 1-sprite_get_yoffset(argument0)}
-	else if argument0 == ShipScoonerSpr{
-	    myFlagX = sprite_get_xoffset(argument0)-43
-	    myFlagY = 2-sprite_get_yoffset(argument0)}
-	else if argument0 == ShipCaravelSpr{
-	    myFlagX = sprite_get_xoffset(argument0)-32
-	    myFlagY = 8-sprite_get_yoffset(argument0)}
-	else if argument0 == ShipBrigSpr{
-	    myFlagX = sprite_get_xoffset(argument0)-41
-	    myFlagY = 1-sprite_get_yoffset(argument0)}
-	else if argument0 == MerchantSmallSpr{
-	    myFlagX = sprite_get_xoffset(argument0)-40
-	    myFlagY = 0-sprite_get_yoffset(argument0)}
-	else if argument0 == MerchantMediumSpr{
-	    myFlagX = sprite_get_xoffset(argument0)-32
-	    myFlagY = 0-sprite_get_yoffset(argument0)}
-	else if argument0 == MerchantLargeSpr{
-	    myFlagX = sprite_get_xoffset(argument0)-40
-	    myFlagY = 6-sprite_get_yoffset(argument0)}
-	else if argument0 == TropicalShipSpr or argument0 == FrogShipRoyalSpr or argument0 == FrogKingShipSpr{
-	    myFlagX = sprite_get_xoffset(argument0)-55
-	    myFlagY = 13-sprite_get_yoffset(argument0)}
-	else if argument0 == TropicalSwordShipSpr{
-	    myFlagX = sprite_get_xoffset(argument0)-55
-	    myFlagY = 13-sprite_get_yoffset(argument0)}
-	else if argument0 == PirateCollectorsSpr{
-	    myFlagX = 14
-	    myFlagY = 25-96}
-	else if argument0 == SilverwheelShipSpr{
-	    myFlagX = 75-65
-	    myFlagY = 29-96}
-	else if argument0 == ScavengerShipSpr{
-	    myFlagX = 0
-	    myFlagY = 25-96}
-	else if argument0 == SkeletalShipSpr{
-	    myFlagX = sprite_get_xoffset(argument0)-76
-	    myFlagY = 30-sprite_get_yoffset(argument0)}
+	var myLightXOffset = sprite_get_xoffset(argument0)-slices.left;
+	var myLightYOffset = (sprite_get_height(argument0)-slices.bottom-2)-sprite_get_yoffset(argument0);
 
-	myLightX = xPos - (myFlagX*dcos(rotation) - myFlagY*dsin(rotation))/3
-	myLightY = yPos + (myFlagX*dsin(rotation) + myFlagY*dcos(rotation))/3
-    
+	var myLightX; 
+	var myLightY;
+	myLightX[0] = getRotPosX(xPos, yPos, myLightXOffset, myLightYOffset, rotation);
+	myLightY[0] = getRotPosY(xPos, yPos, myLightXOffset, myLightYOffset - 1, rotation);
 
-	myLight = instance_create(myLightX, myLightY, LightParent)   
-	myLight.red = 0.03
-	myLight.green = 0.03
-	myLight.blue = 0.01
-	myLight.flicker = true
-	if true //(SunLight.myVolume < 500)
-	    myLight.myVolume = 7
-	else
-	    myLight.myVolume = 0
-	myLight.lightLayer = argument8
-	with myLight
-	    event_user(1)
+	var j=1;
+	for(var i=sprite_get_width(argument0)-slices.right; i>slices.left + 20; i-=20){
+		myLightX[j] = getRotPosX(xPos, yPos, sprite_get_xoffset(argument0) - i, (sprite_get_height(argument0)-slices.bottom)-sprite_get_yoffset(argument0), rotation);
+		myLightY[j] = getRotPosY(xPos, yPos, sprite_get_xoffset(argument0) - i, (sprite_get_height(argument0)-slices.bottom)-sprite_get_yoffset(argument0), rotation) + 6 - j*2;
+		j+=1;
+	}
+	
+	var myLight;
+	for(var i=0; i<array_length(myLightX); i++){
+		myLight[i] = instance_create(myLightX[i], myLightY[i], LightParent)   
+		myLight[i].red = red
+		myLight[i].green = green
+		myLight[i].blue = blue
+		myLight[i].myVolume = (i==0 ? 4 : 7)
+		myLight[i].lightLayer = argument8
+		with myLight[i]
+			event_user(1)
+	}
 
-	DrawWithLighting(argument6, Ship.animate/(2+global.inPort), xPos - (myFlagX*dcos(rotation) - myFlagY*dsin(rotation)), yPos + myFlagX*dsin(rotation) + myFlagY*dcos(rotation), rotation, merge_color(argument5, merge_color(c_white, Clock.cloudColor, 0.6), 0.5), 1, argument8)
+	DrawWithLighting(argument6, Ship.animate/(2+global.inPort), getRotPosX(xPos, yPos, myFlagX, myFlagY, rotation), getRotPosY(xPos, yPos, myFlagX, myFlagY, rotation), rotation, merge_color(argument5, merge_color(c_white, Clock.cloudColor, 0.6), 0.5), 1, argument8)
 	DrawWithLighting(argument0, argument1, xPos, yPos, rotation, merge_color(argument5, merge_color(c_white, Clock.cloudColor, 0.6), 0.5), 1, argument8)
+	
+	for(var i=0; i<array_length(myLightX); i++){
+		DrawWithLighting(LanternSpr, i==0, myLightX[i], myLightY[i], i==0 ? rotation : 0, merge_color(argument5, merge_color(c_white, Clock.cloudColor, 0.6), 0.5), 1, argument8)
+		instance_destroy(myLight[i])
+	}
+}
 
-	instance_destroy(myLight)
+function getRotPosX(xPos, yPos, xoffset, yoffset, rot){
+	return xPos - (xoffset*dcos(rot) - yoffset*dsin(rot));
+}
+
+function getRotPosY(xPos, yPos, xoffset, yoffset, rot){
+	return yPos + xoffset*dsin(rot) + yoffset*dcos(rot);
 }

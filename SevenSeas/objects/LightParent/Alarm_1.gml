@@ -11,5 +11,5 @@ flicker[5] = 8/7
 myVolume *= flicker[flickerVal]
 flickerVal = (flickerVal + 1) % 6
 
-alarm[1] = irandom(room_speed)
+alarm[1] = irandom_range(room_speed/2, 2*room_speed)
 

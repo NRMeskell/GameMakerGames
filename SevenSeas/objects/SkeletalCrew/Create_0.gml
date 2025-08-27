@@ -3,7 +3,7 @@
 var mySkel = choose(0,1)
 image_index = 19
 
-maxHealth = 50
+maxHealth = 30
 myHealth = maxHealth
 
 event_user(0)

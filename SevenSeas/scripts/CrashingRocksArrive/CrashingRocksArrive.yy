@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"CrashingRocksArrive",
   "parent":{
-    "name":"CrashingRocks",
-    "path":"folders/Scripts/Events/Characters/Shipwreck/CrashingRocks.yy",
+    "name":"CharacterEvents",
+    "path":"folders/Scripts/Events/Characters/CharacterEvents.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

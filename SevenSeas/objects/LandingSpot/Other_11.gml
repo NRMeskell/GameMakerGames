@@ -11,7 +11,9 @@ if visited or image_index = 1
 else
 	sprite_index = UnknownStopSpr
 
-if released{
+if released and MapCreator.drawMiniHeight > 0 and 
+  (max(x, checkX) > camera_get_view_x(view_camera[1]) or min(x, checkX) < camera_get_view_x(1) + camera_get_view_width(view_camera[1])) and
+  (max(y, checkY) > camera_get_view_y(view_camera[1]) or min(y, checkY) < camera_get_view_y(1) + camera_get_view_height(view_camera[1])) {
 	visible = true
     dir = point_direction(x, y, checkX, checkY)
     draw_sprite_general(MapFlavorSpr, 1, 0, 0, point_distance(x, y, checkX, checkY), sprite_get_height(MapFlavorSpr), x - sin(degtorad(dir))*sprite_get_height(MapFlavorSpr)/2, y-cos(degtorad(dir))*sprite_get_height(MapFlavorSpr)/2, 1, 1, dir, -1, -1, -1, -1, 1) 

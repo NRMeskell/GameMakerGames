@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"SketchyArrive",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SketchyArrive",
+  "parent":{
+    "name":"CharacterEvents",
+    "path":"folders/Scripts/Events/Characters/CharacterEvents.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

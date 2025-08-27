@@ -8,7 +8,7 @@ if __b__
 if CombatRunner.alarm[1] > 0
 	canUseActions = false
 
-if !CombatRunner.playerTurn or CombatRunner.alarm[1] > 0
+if !CombatRunner.playerTurn or CombatRunner.alarm[1] > 0 or ds_list_size(global.notificationList) > 0
     visible = false
 else
     visible = true
@@ -20,7 +20,7 @@ with ActionParent
 
 scrollSpeed = 8
 
-if (point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), xMin, yMin, xMax, yMax) or actionSelected) and CombatRunner.playerTurn and !instance_exists(Event) and __view_get( e__VW.XView, 0 ) == 0
+if (point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), xMin, yMin, xMax, yMax) or actionSelected) and CombatRunner.playerTurn and !instance_exists(Event) and __view_get( e__VW.XView, 0 ) == 0 and ds_list_size(global.notificationList) == 0
     {
     //Update List
     if refreshed = false

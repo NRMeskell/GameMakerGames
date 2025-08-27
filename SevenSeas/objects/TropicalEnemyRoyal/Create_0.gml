@@ -11,7 +11,7 @@ flagSprite = TropicalFlagSpr
 ///Common enemy vars
 
 name = "Tropical Kingdom Ship"
-maxHealth = 200
+maxHealth = 150
 myHealth = maxHealth
 image_index = 1
 enemyLevel = 2

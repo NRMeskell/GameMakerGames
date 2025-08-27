@@ -1,10 +1,7 @@
-//
-// Simple passthrough fragment shader
-//
 varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
 
-uniform float myX, myY, xSize, ySize, myLayer;
+uniform float myX, myY, xSize, ySize, myLayer, myRot, rotX, rotY;
 uniform int lightNumber;
 
 uniform float lightX[10];
@@ -15,6 +12,14 @@ uniform float blue[10];
 uniform float myVolume[10];
 uniform float lightLayer[10];
 uniform float uvs[8];
+
+float getRotPosX(float xPos, float yPos, float xOffset, float yOffset, float rot){
+	return ((xPos - xOffset)*cos(-rot*3.14/180.0) - (yPos - yOffset)*sin(-rot*3.14/180.0)) + xOffset;
+}
+
+float getRotPosY(float xPos, float yPos, float xOffset, float yOffset, float rot){
+	return ((xPos - xOffset)*sin(-rot*3.14/180.0) + (yPos - yOffset)*cos(-rot*3.14/180.0)) + yOffset;
+}
 
 void main()
     {
@@ -37,20 +42,23 @@ void main()
         
 		gl_FragColor = v_vColour * vec4(0.0, 0.0, 0.0, texture2D(gm_BaseTexture, v_vTexcoord).a);
     
-        xPos = (newTexcoord.x - uvs[0])/(uvs[2] - uvs[0]);
-        yPos = (newTexcoord.y - uvs[1])/(uvs[3] - uvs[1]);
+        xPos = getRotPosX((newTexcoord.x - uvs[0])/(uvs[2] - uvs[0])*xSize, (newTexcoord.y - uvs[1])/(uvs[3] - uvs[1])*ySize, rotX, rotY, myRot);
+        yPos = getRotPosY((newTexcoord.x - uvs[0])/(uvs[2] - uvs[0])*xSize, (newTexcoord.y - uvs[1])/(uvs[3] - uvs[1])*ySize, rotX, rotY, myRot);
 		
         //add light if bright
         for(i=0; i<10; i+=1){
 			brightness = 0.0;
             if (myVolume[i] > 0.0){
-                xDist = lightX[i] - ((myX + uvs[4]) + (xPos)*xSize*uvs[6]); //determine x distance
-                yDist = lightY[i] - ((myY + uvs[5]) + (yPos)*ySize*uvs[7]); //determine y distance
+                xDist = lightX[i] - ((myX + uvs[4]) + (xPos)*uvs[6]); //determine x distance
+                yDist = lightY[i] - ((myY + uvs[5]) + (yPos)*uvs[7]); //determine y distance
 				dist = sqrt(xDist*xDist + yDist*yDist);
                 dist += 50.0*abs(myLayer-lightLayer[i]); //total distance
                 
-                dir = vec2(0.7*xDist/(uvs[6]) * (uvs[2] - uvs[0]), 0.7*yDist/(uvs[7]) * (uvs[3] - uvs[1]))/dist;
-                brightness = min(2.0, myVolume[i]/(dist*2.0));				
+				float xdir = 0.7*xDist/(uvs[6]) * (uvs[2] - uvs[0]);
+				float ydir = 0.7*yDist/(uvs[7]) * (uvs[3] - uvs[1]);
+				
+                dir = vec2(xdir*cos(myRot*3.14/180.0)-ydir*sin(myRot*3.14/180.0), xdir*sin(myRot*3.14/180.0)+ydir*cos(myRot*3.14/180.0))/dist;
+                brightness = min(2.0, myVolume[i]/(dist*2.0));			
 				
                 //cast shadows
                 if (myLayer > lightLayer[i]){
@@ -116,4 +124,3 @@ void main()
 		gl_FragColor.a = alpha;
 	}
 }
-

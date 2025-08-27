@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"CombatMusicEpicSnd",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":192,
+  "compression":0,
+  "conversionMode":0,
+  "duration":117.49442,
+  "name":"CombatMusicEpicSnd",
+  "parent":{
+    "name":"music",
+    "path":"folders/Sounds/music.yy",
+  },
+  "preload":true,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"CombatMusicEpicSnd.wav",
+  "type":0,
+  "volume":1.0,
+}

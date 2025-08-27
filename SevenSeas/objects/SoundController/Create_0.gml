@@ -85,14 +85,7 @@ campMusicMap[? global.seaNames[4]] = CampMusicSnd
 campMusicMap[? global.seaNames[5]] = CampMusicSnd
 campMusicMap[? global.seaNames[6]] = CampMusicSnd
 
-combatMusicMap = ds_map_create()
-combatMusicMap[? global.seaNames[0]] = CombatMusicSnd
-combatMusicMap[? global.seaNames[1]] = CombatMusicSnd
-combatMusicMap[? global.seaNames[2]] = CombatMusicSnd
-combatMusicMap[? global.seaNames[3]] = CombatMusicSnd
-combatMusicMap[? global.seaNames[4]] = CombatMusicSnd
-combatMusicMap[? global.seaNames[5]] = CombatMusicSnd
-combatMusicMap[? global.seaNames[6]] = CombatMusicSnd
+combatMusic = CombatMusicSnd
 
 seaMusic = ds_list_create()
 ds_list_add(seaMusic, awayRioMap, oldChariotMap, drunkenSailorMap, leaveHerMap, wellermanMap)

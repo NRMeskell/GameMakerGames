@@ -1,5 +1,7 @@
 /// @description Vars
 
+depth = -1000
+
 buttonShift = sprite_get_width(ButtonSpr)/4 + 2
 
 drawY = room_height/2

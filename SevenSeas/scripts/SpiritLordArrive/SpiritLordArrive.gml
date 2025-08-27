@@ -29,7 +29,7 @@ function SpiritLordArrive() {
 			else 
 				ds_list_add(buttons, SpiritLordPlayDice2)
 				
-			ds_list_add(buttonText, "let " + pirate.firstName + " " + pirate.lastName + " play dice")
+			ds_list_add(buttonText, "let " + string_char_at(pirate.firstName, 1) + ". " + pirate.lastName + " roll")
 		}
 		
 	    ds_list_add(buttons, SpiritLordRun) 
@@ -39,6 +39,12 @@ function SpiritLordArrive() {
 	    ds_list_add(buttonRequires, 0, 0, 0)
 	    ds_list_add(buttonCosts, 0, 0, 0)
 			
+		myShip = instance_create(-1000,0,ShipEvent)
+	    with myShip{
+	        myShipHull = SpiritLordShipSpr
+	        flagColor = c_white
+	        myFlag = SkeletalFlagSpr
+	    }
 		
 	    global.allowSelect = false
 	    captionText = "Lord of the undead"
@@ -67,9 +73,9 @@ function SpiritLordPlayDice() {
 	//calculate shance of winning
 	var win = false
 	if playPirate.myMainPer == global.KEEN
-		var win = (irandom(1) == 0)
+		var win = (irandom(2) > 0)
 	else
-		var win = (irandom(2) == 0)
+		var win = (irandom(1) > 0)
 	
 	
 	//won contest
@@ -102,7 +108,7 @@ function SpiritLordPlayDice() {
 			SpiritLord.myState = "bested"
 		}
 		else if SpiritLord.myState == "bested"{
-			ds_list_add(global.notificationList, "Game won!", "the spirit lord, having never before been bested twice, retreats from this world!")
+			ds_list_add(global.notificationList, "Game won!", "the spirit lord, furious at losing his own game twice, retreats from this world!")
 			instance_destroy(SpiritLord)
 		}
 	}

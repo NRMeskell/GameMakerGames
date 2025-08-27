@@ -13,7 +13,7 @@ flagSprite = SkeletalFlagSpr
 ///Common enemy vars
 
 name = "Skeletal Ship"
-maxHealth = irandom_range(300, 500) div 1
+maxHealth = irandom_range(200, 300) div 1
 myHealth = maxHealth
 image_index = 0 
 enemyLevel = 0

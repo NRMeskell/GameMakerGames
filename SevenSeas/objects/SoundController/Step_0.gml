@@ -18,8 +18,8 @@ if room = GameRoom and !instance_exists(Defeat) and alarm[0] < 1 and alarm[1] < 
         }
     }
     else if instance_exists(CombatRunner) {
-        if !audio_is_playing(ds_map_find_value(combatMusicMap, global.seaType)) {
-            newCurrentSong = audio_play_sound(ds_map_find_value(combatMusicMap, global.seaType), 0, true)
+        if !audio_is_playing(combatMusic) {
+            newCurrentSong = audio_play_sound(combatMusic, 0, true)
             endMusic = true
         }
     }

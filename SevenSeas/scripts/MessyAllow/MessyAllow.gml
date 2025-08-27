@@ -7,13 +7,13 @@ function MessyAllow() {
 			itemLevel = max(0, global.seaLevel -1)
 			type = irandom(4)
 			if type == 0 
-				newItem = MakeRandomHatItem(itemLevel)
+				newItem = GenerateHatItem(itemLevel)
 			else if type == 1
-				newItem = MakeRandomShirtItem(itemLevel)
+				newItem = GenerateShirtItem(itemLevel)
 			else if type == 2
-				newItem = MakeRandomPantsItem(itemLevel)
+				newItem = GeneratePantsItem(itemLevel)
 			else if type <= 4
-				newItem = MakeRandomHandItem(itemLevel)
+				newItem = GenerateHandItem(itemLevel)
 
 			ds_list_add(global.notificationList, "Found Item!", "while cleaning " + otherPirate.firstName + "'s bunk, a missing item was found!")
 			ds_list_add(ItemRunner.floatingItems, newItem)

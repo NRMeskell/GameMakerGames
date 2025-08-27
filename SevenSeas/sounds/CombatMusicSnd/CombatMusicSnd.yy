@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":229.70921,
+  "duration":-1.0,
   "name":"CombatMusicSnd",
   "parent":{
     "name":"music",

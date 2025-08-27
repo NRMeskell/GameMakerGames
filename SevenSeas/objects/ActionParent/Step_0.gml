@@ -2,12 +2,12 @@
 
 if instance_exists(CombatRunner) and instance_exists(myPirate)
     {
-    if !CombatRunner.playerTurn or __view_get( e__VW.XView, 0 ) != 0
+    if !CombatRunner.playerTurn or __view_get( e__VW.XView, 0 ) != 0 or ds_list_size(global.notificationList) > 0
         visible = false
     else
         visible = true
 	
-    if point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), x - sprite_width/2, y - sprite_height/2, x + sprite_width/2, y + sprite_height/2) and mouse_check_button_pressed(mb_left) and CombatRunner.playerTurn
+    if point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), x - sprite_width/2, y - sprite_height/2, x + sprite_width/2, y + sprite_height/2) and mouse_check_button_pressed(mb_left) and CombatRunner.playerTurn and ds_list_size(global.notificationList) == 0
         {
         if canUse
             {

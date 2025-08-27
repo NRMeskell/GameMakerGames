@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"SpiritLordArrive",
   "parent":{
-    "name":"SeaOfDead",
-    "path":"folders/Scripts/Events/Characters/SeaOfDead.yy",
+    "name":"CharacterEvents",
+    "path":"folders/Scripts/Events/Characters/CharacterEvents.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

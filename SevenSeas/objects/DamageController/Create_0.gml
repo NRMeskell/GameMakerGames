@@ -41,23 +41,23 @@ damageScaler[? MonkeyBiteAttack] = 6
 //Basic Ranged
 damageMin[? ShipGunAttack] = 0.8
 damageMax[? ShipGunAttack] = 1.5
-damageScaler[? ShipGunAttack] = 4
+damageScaler[? ShipGunAttack] = 5
 //Barrage Ranged
 damageMin[? ShipBarrageAttack] = 0.75
 damageMax[? ShipBarrageAttack] = 1.5
-damageScaler[? ShipBarrageAttack] = 6
+damageScaler[? ShipBarrageAttack] = 8
 //Lookout Ranged
 damageMin[? ShipLookoutAttack] = 0.6
 damageMax[? ShipLookoutAttack] = 1.2
-damageScaler[? ShipLookoutAttack] = 2
+damageScaler[? ShipLookoutAttack] = 3
 //Target Ranged
 damageMin[? ShipTargetedAttack] = 0.75
 damageMax[? ShipTargetedAttack] = 1.5
-damageScaler[? ShipTargetedAttack] = 2
+damageScaler[? ShipTargetedAttack] = 3
 //Sniper Ranged
 damageMin[? ShipSniperAttack] = 0.64
 damageMax[? ShipSniperAttack] = 1.5
-damageScaler[? ShipSniperAttack] = 3
+damageScaler[? ShipSniperAttack] = 4
 //Chaos Ranged
 damageMin[? ShipChaosAttack] = 0
 damageMax[? ShipChaosAttack] = 0

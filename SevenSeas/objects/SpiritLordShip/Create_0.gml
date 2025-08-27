@@ -16,7 +16,7 @@ name = "Spirit Lord Ship"
 maxHealth = 800
 myHealth = maxHealth
 image_index = 0 
-enemyLevel = 1
+enemyLevel = 2
 
 myBasicActions = ds_list_create()
 ds_list_add(myBasicActions, BasicMeleeAction, BasicRangedAction, BasicCannonAction, BasicShipAction)

@@ -16,8 +16,8 @@ for(i=0; i<ds_list_size(seaMusic); i++)
     }
 
 //combat music
-for (k = ds_map_find_first(combatMusicMap); !is_undefined(k); k = ds_map_find_next(combatMusicMap, k)) 
-    audio_sound_gain(combatMusicMap[? k], 1*musicVolumeBase*global.musicVolume*global.masterVolume, 0)
+audio_sound_gain(CombatMusicSnd, 1*musicVolumeBase*global.musicVolume*global.masterVolume, 0)
+audio_sound_gain(CombatMusicEpicSnd, 1*musicVolumeBase*global.musicVolume*global.masterVolume, 0)
 //port music
 for (k = ds_map_find_first(portMusicMap); !is_undefined(k); k = ds_map_find_next(portMusicMap, k)) 
     audio_sound_gain(portMusicMap[? k], 0.7*musicVolumeBase*global.musicVolume*global.masterVolume, 0)

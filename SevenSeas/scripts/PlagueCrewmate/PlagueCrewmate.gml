@@ -3,7 +3,7 @@ function PlagueCrewmate(argument0) {
 	
 	//Sick Crewmate
 	ds_list_add(global.notificationList, "Crewmate has plague!", crewMember.name + " becomes ill! Hopefully a doctor can prevent further spread...")
-	UpdateHealth(crewMember, -myHealth div 2)
+	UpdateHealth(crewMember, -crewMember.myHealth div 2)
 		
 	if irandom(1+global.totalMedicalBonus) == 0{
 		with instance_create(0,0,ConditionTimer){

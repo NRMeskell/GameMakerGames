@@ -6,7 +6,7 @@ event_user(6)
 
 overEndTurnButton = point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), startX - sprite_get_width(EndTurnSpr)/2, startY - yGap - sprite_get_height(EndTurnSpr)/2, startX + sprite_get_width(EndTurnSpr)/3, startY - yGap + sprite_get_height(EndTurnSpr)/2)
 
-if playerTurn and !instance_exists(Event)
+if playerTurn and !instance_exists(Event) and ds_list_size(global.notificationList) == 0
     {
     if mouse_check_button_pressed(mb_left) and (overEndTurnButton and (canEndTurn or showSkipButton))
         {

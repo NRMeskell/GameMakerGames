@@ -6,7 +6,7 @@
   "name":"GabblerFoundJack",
   "parent":{
     "name":"OldGabbler",
-    "path":"folders/Scripts/Events/Characters/Shipwreck/OldGabbler.yy",
+    "path":"folders/Scripts/Events/Characters/CharacterEvents/OldGabbler.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

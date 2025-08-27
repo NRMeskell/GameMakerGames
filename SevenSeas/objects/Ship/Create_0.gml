@@ -5,7 +5,7 @@ if global.resolution
 else
 	sceneBackground = surface_create(room_width, room_height)
 
-//show_debug_overlay(true)
+show_debug_overlay(true)
 
 global.myLayer = 0
 global.storeSize[0] = 100

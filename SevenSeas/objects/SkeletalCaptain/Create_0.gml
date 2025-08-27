@@ -2,7 +2,7 @@
 
 image_index = 21
 
-maxHealth = 100
+maxHealth = 120
 myHealth = maxHealth
 
 event_user(0)

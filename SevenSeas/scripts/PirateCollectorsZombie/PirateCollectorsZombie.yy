@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"PirateCollectorsZombie",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"PirateCollectorsZombie",
+  "parent":{
+    "name":"CoveCollector",
+    "path":"folders/Scripts/Events/Characters/CharacterEvents/CoveCollector.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

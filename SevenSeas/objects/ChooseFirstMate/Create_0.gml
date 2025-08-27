@@ -138,19 +138,19 @@ drawOptionsSpr = 2
 
 while true{
     var breakLoop = false
-    if myShirt.bonus[2] > 0 or myShirt.bonus[3] > 0{
+    if myPants.bonus[2] > 0 or myPants.bonus[3] > 0{
         breakLoop = true
     } 
     if breakLoop
         break
     else{
-       instance_destroy(myShirt)
-		myShirt = instance_create(0,0,ItemParent)
-        EquipItem(id, MakeRandomShirtItem(0))
+       instance_destroy(myPants)
+		myPants = instance_create(0,0,ItemParent)
+        EquipItem(id, MakeRandomPantsItem(0))
     }
 }
     
-EquipItem(id, MakeRandomPantsItem(-1))
+EquipItem(id, MakeRandomShirtItem(-1))
 EquipItem(id, MakeRandomHandItem(0))
 
 

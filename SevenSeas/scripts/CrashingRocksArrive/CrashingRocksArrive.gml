@@ -4,8 +4,8 @@ function CrashingRocksArrive() {
 		myCharacter = 7
 	    buttonNumber = 3
 		
-		var raceEventDiff = global.eventDiff[3, 3]*2 - CrashingRocks.myVar
-		var navEventDiff = global.eventDiff[5, 3]*2 - CrashingRocks.myVar/2
+		var raceEventDiff = (global.eventDiff[3, 3]*1.5 - CrashingRocks.myVar) div 1
+		var navEventDiff = (global.eventDiff[5, 3]*1.5 - CrashingRocks.myVar/2) div 1
 		
 		for(var i=0; i<instance_number(Pirate); i++){
 			if instance_find(Pirate, i).myPet.itemPower = "crashing rocks"{

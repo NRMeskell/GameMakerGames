@@ -6,7 +6,7 @@
   "name":"JohnnyAllow",
   "parent":{
     "name":"JohnnyShortsticks",
-    "path":"folders/Scripts/Events/Characters/PirateCove/JohnnyShortsticks.yy",
+    "path":"folders/Scripts/Events/Characters/CharacterEvents/JohnnyShortsticks.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

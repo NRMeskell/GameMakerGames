@@ -28,7 +28,8 @@ function RestfulRaiseMorale(){
 
 function RestfulHealCrew(){
 	if argument0{
-		UpdateHealth(Pirate, (maxHealth - myHealth) div 2)
+		with Pirate
+			UpdateHealth(id, (maxHealth - myHealth) div 2)
 		ds_list_add(global.notificationList, "Medical Break!", "The injured crew members are treated and regain health!")
 	}
 	else{

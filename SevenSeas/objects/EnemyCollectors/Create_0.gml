@@ -16,7 +16,7 @@ name = "Captain Hardcoin"
 maxHealth = (125 + 50*random_range(0.75,1.5)) div 1
 myHealth = maxHealth
 image_index = 0 
-enemyLevel = 0
+enemyLevel = 1
 
 myBasicActions = ds_list_create()
 ds_list_add(myBasicActions, BasicMeleeAction, BasicRangedAction, BasicCannonAction, BasicShipAction)

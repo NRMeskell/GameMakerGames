@@ -26,7 +26,13 @@ waveMovement = 1
 waveMin = 0
 waveMax = room_width
 
+tex = sprite_get_texture(WaveSpr, 0);
+waveDis = texture_get_texel_width(tex)*20*0.8
+textsurePizH = texture_get_texel_height(tex)/sprite_get_height(WaveSpr);
 surfaceHeight = waveBase + 2*(waveHeights[0] + waveHeights[1])
+gpu_set_texfilter(false)
+
+waterSurface = surface_create(room_width, surfaceHeight)
 
 
 

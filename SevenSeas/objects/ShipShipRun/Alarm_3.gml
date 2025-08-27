@@ -4,7 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
-if runSuccess
+if true
     {
     instance_destroy(ActionParent)
     instance_destroy(PlayerActionRunner)

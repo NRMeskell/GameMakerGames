@@ -30,9 +30,14 @@ function DrawWithLighting(argument0, argument1, argument2, argument3, argument4,
 
 	//Update light vars
 
+	rotX = sprite_get_xoffset(sprite);
+	rotY = sprite_get_yoffset(sprite)
+
 	brightest = 0
-	myCornerX = xval - sprite_get_xoffset(sprite)
-	myCornerY = yval - sprite_get_yoffset(sprite)
+	myCornerX = xval - rotX
+	myCornerY = yval - rotY
+	
+	
 
 	//get page size as xSize
 	xSize = sprite_get_width(sprite)
@@ -78,6 +83,9 @@ function DrawWithLighting(argument0, argument1, argument2, argument3, argument4,
 		uni_lightY = shader_get_uniform(shader, "lightY")
 		uni_cornerX = shader_get_uniform(shader, "myX")
 		uni_cornerY = shader_get_uniform(shader, "myY")
+		uni_rotation = shader_get_uniform(shader, "myRot")
+		uni_rotX = shader_get_uniform(shader, "rotX")
+		uni_rotY = shader_get_uniform(shader, "rotY")
 		uni_xSize = shader_get_uniform(shader, "xSize")
 		uni_ySize = shader_get_uniform(shader, "ySize")
 		uni_red = shader_get_uniform(shader, "red")
@@ -96,6 +104,9 @@ function DrawWithLighting(argument0, argument1, argument2, argument3, argument4,
 		shader_set_uniform_f(uni_cornerY, myCornerY)
 		shader_set_uniform_f(uni_xSize, xSize)
 		shader_set_uniform_f(uni_ySize, ySize)
+		shader_set_uniform_f(uni_rotation, rot)
+		shader_set_uniform_f(uni_rotX, rotX)
+		shader_set_uniform_f(uni_rotY, rotY)
 		shader_set_uniform_f_array(uni_red, red)
 		shader_set_uniform_f_array(uni_green, green)
 		shader_set_uniform_f_array(uni_blue, blue)

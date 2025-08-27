@@ -6,7 +6,7 @@
   "name":"SilverwheelDelayPay",
   "parent":{
     "name":"Silverwheel",
-    "path":"folders/Scripts/Events/Characters/PirateCove/Silverwheel.yy",
+    "path":"folders/Scripts/Events/Characters/CharacterEvents/Silverwheel.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

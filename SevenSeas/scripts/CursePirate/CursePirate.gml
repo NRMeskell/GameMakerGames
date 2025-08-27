@@ -23,7 +23,7 @@ function LiftCurses(){
 	for(var i=0; i<instance_number(Pirate); i++){
 		var checkPirate = instance_find(Pirate, i)
 		if checkPirate.body == sprite_get_number(PirateManSkinSpr) -1{
-			checkPirate.face = myMainPer * 2 + irandom(1)
+			checkPirate.face = checkPirate.myMainPer * 2 + irandom(1)
 			checkPirate.body = irandom(sprite_get_number(PirateManSkinSpr)-2)
 			cursesLifted ++;
 			with checkPirate{

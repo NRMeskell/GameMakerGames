@@ -1,1 +1,1 @@
-GetRandomLoot(1, "TEST", [0,1,2,3,4,5,6])
+instance_create(0, 0, choose(EnemyShip, TropicalEnemy, EnemyCollectors))

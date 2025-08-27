@@ -20,7 +20,7 @@ function GetRandomLoot(argument0, argument1, argument2) {
 	    if randomVal < 0
 	        {
 			itemLevel = irandom(global.seaLevel div 2)
-	        type = choose(1,1,1,1,2,2,2,3,3,0,4)
+	        type = choose(2,2,2,2,1,1,1,3,3,0,4)
 	        if type == 0 
 	            newItem = GenerateHatItem(min(0, itemLevel))
 	        else if type == 1

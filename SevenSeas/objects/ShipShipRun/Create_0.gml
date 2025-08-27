@@ -25,8 +25,8 @@ event_user(0)
 showDamage = true
 hasAnimation = false
 
-runSuccess = false
-damage = "surrender!"
+runSuccess = true
+damage = ""
 
 
 

@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":3.696,
+  "duration":3.6960092,
   "name":"HealDeadSnd",
   "parent":{
     "name":"EnemyAttacks",

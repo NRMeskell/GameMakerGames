@@ -39,7 +39,7 @@ else{
 		requireText = "crew in incorrect slot"
 	}
 	else if (myPirate.object_index == Pirate and myPirate.stunned){
-		canUse = true
+		canUse = false
 		requireText = "crew cannot contribute"
 	}
 	else if (attackPwr = 0) {

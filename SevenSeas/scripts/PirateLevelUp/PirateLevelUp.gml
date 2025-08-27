@@ -30,7 +30,7 @@ function PirateLevelUp(argument0, argument1) {
 
 	var tempActions, choosingAction, myActionList, myNewAction;
 	
-	for(i=0; i<2; i++)
+	for(var i=0; i<2; i++)
 	    {
 	    tempActions[i] = myAction[0]
 	    choosingAction = true
@@ -94,7 +94,7 @@ function PirateLevelUp(argument0, argument1) {
 
 			if showMessage
 				ds_list_add(global.notificationList, "Pirates failed to level up!", "There is no grog to drink! Get grog to increase the skill of your crew.")
-			leveling = true
+			Pirate.leveling = true
 			morale = Pirate.moraleMax[stars] + 1
 		}
 	} 

@@ -32,7 +32,7 @@ function GiantTurtleSpecialTake() {
     
 		GetRandomLoot(0, "TURTLE GIFT", undefined)
 		with Store{
-		    ds_list_add(items, specialItem)
+		    ds_list_add(items, other.specialItem)
 		    }   
 		GiantTurtle.myVar = 0
 	}

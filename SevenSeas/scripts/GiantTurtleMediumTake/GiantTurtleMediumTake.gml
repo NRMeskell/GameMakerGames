@@ -11,7 +11,7 @@ function GiantTurtleMediumTake() {
 	    specialItem.itemName = "Shell Hat"
 	    specialItem.itemInfo = "A hard shell, perfectly fit for wearing"
 	    }    
-	if item == 1{
+	else {
 	    //Shirt Item
 	    specialItem = GenerateShirtItem(1)
 	    specialItem.itemNumber = 28
@@ -21,7 +21,7 @@ function GiantTurtleMediumTake() {
         
 	GetRandomLoot(0, "TURTLE GIFT", undefined)
 	with Store{
-	    ds_list_add(items, specialItem)
+	    ds_list_add(items, other.specialItem)
 	    }
 		GiantTurtle.myVar = 0
 	}
