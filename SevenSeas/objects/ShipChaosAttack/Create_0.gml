@@ -13,7 +13,6 @@ animationX = 30
 animationHeight = 2
 animationWidth = 10
 
-endRound = true
 actionType = "ranged"
 
 x = Ship.drawX + animationX + irandom_range(-animationWidth,animationWidth)

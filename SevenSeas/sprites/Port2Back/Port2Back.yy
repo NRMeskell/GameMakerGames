@@ -19,7 +19,7 @@
   "height":360,
   "HTile":true,
   "layers":[
-    {"$GMImageLayer":"","%Name":"c88429dd-37af-4a34-98a0-f5d965be48c0","blendMode":0,"displayName":"default","isLocked":false,"name":"c88429dd-37af-4a34-98a0-f5d965be48c0","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"1da90429-b1a3-4d1e-8c02-6be0372b7219","blendMode":0,"displayName":"default","isLocked":false,"name":"1da90429-b1a3-4d1e-8c02-6be0372b7219","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"Port2Back",
   "nineSlice":null,
@@ -63,6 +63,8 @@
     "playbackSpeedType":1,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
+    "seqHeight":360.0,
+    "seqWidth":640.0,
     "showBackdrop":true,
     "showBackdropImage":false,
     "timeUnits":1,

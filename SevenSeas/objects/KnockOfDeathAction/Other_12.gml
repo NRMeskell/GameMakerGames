@@ -1,7 +1,7 @@
 /// @description Update info
 
 
-name = "death's knock"
-description = "cursed enemies lose 50% of their current health. Curse a random enemy crew member."
+name = "Game of Death"
+description = "Target is randomly dealt 0% to 100% damage. They cannot contribute to the next enemy attack."
 
 

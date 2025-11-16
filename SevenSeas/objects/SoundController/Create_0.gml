@@ -109,6 +109,8 @@ campSound[6] = ShipwreckSnd //crash
 campSound[7] = SeaLions //arch
 campSound[8] = DesertFlySnd //desert
 campSound[9] = CrowRiverSnd //dead river
+campSound[10] = CrowRiverSnd // lava rocks
+campSound[11] = CrowRiverSnd // lava rocks
 
 
 musicVolumeMap = ds_map_create()

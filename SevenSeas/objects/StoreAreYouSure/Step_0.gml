@@ -27,8 +27,6 @@ if closed
     }
 
 ///Global Menu Open
-
-global.eventOpen = instance_exists(Event)
 global.pirateOpen = false
 
 with Pirate

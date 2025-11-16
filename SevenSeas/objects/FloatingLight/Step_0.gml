@@ -6,14 +6,14 @@ else
     image_xscale = 1
    
 
-if myLight == noone{
+if myLight == noone or !instance_exists(myLight){
     myLight = instance_create(x, y, LightParent)   
     myLight.red = 0.22
     myLight.green = 0.16
     myLight.blue = 0.22
     myLight.myVolume = 5*image_xscale
     myLight.lightLayer = myLayer
-	myLight.flicker = true
+	myLight.flickering = true
     }
 else{
 	myLight.x = x

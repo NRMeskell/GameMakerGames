@@ -7,16 +7,16 @@ highRange = 1.5
 
 ///vars
 
-animationY = 0
-animationX = 20
-animationHeight = 50
-animationWidth = 20
+animationY = -30
+animationX = 50
+animationHeight = 0
+animationWidth = 0
 
 actionType = "ship"
 
 moveSpeed = 1.5
 changeZones = false
-endRound = false
+
 
 event_user(0)
 showDamage = false

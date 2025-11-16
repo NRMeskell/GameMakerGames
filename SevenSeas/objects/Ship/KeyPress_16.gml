@@ -1,1 +1,0 @@
-instance_create(0, 0, choose(EnemyShip, TropicalEnemy, EnemyCollectors))

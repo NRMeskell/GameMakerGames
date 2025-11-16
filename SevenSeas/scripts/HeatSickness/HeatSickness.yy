@@ -6,7 +6,7 @@
   "name":"HeatSickness",
   "parent":{
     "name":"Heat",
-    "path":"folders/Scripts/Events/SailingEvents/TropicalEvents/Heat.yy",
+    "path":"folders/Scripts/Events/SailingEvents/VolcanicIslands/Heat.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

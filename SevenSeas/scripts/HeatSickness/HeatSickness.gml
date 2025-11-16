@@ -7,7 +7,7 @@ function HeatSickness() {
 	with Pirate
 	    if irandom(1)
 	        {
-	        UpdateHealth(id, -20)
+	        UpdateHealth(id, -30)
             
 	        UpdateMorale(-1, -1)
 	        }

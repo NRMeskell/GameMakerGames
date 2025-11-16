@@ -22,7 +22,7 @@ function StoreCargo(argument0, argument1) {
 	for(var i=0; i < instance_number(Cargo); i++){
 	    var checkCargo = instance_find(Cargo, i)
         
-	    if checkCargo.cargoType == myStoreCargoType{
+	    if checkCargo.cargoType == myStoreCargoType and !checkCargo.mySlot.damaged{
 	        var slotRoom = global.storeSize[myStoreCargoType] - checkCargo.cargoAmount
 			var slotStoring = min(slotRoom, storeAmount)
 
@@ -40,7 +40,7 @@ function StoreCargo(argument0, argument1) {
 			var checkSlot = instance_find(ShipSlot, i)
         
 			// Found open slot!
-			if checkSlot.slotType = "storage" and checkSlot.xSpot[Ship.shipType] != -50 and !checkSlot.occupied {
+			if checkSlot.slotType = "storage" and checkSlot.xSpot[Ship.shipType] != -50 and !checkSlot.occupied and !checkSlot.damaged {
 				var slotStoring = min(global.storeSize[myStoreCargoType], storeAmount)
 					
 				if myStoreCargoType == 4

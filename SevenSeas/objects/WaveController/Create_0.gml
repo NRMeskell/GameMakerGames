@@ -13,10 +13,10 @@ waveOffsets = [irandom(room_width), irandom(room_width)]
 
 oceanColor = ds_map_create()
 oceanColor[? global.seaNames[0]] = make_color_rgb(36, 51, 152)
-oceanColor[? global.seaNames[1]] = make_color_rgb(3, 110, 115)
+oceanColor[? global.seaNames[1]] = make_color_rgb(3, 100, 90)
 oceanColor[? global.seaNames[2]] = make_color_rgb(23, 90, 115)
-oceanColor[? global.seaNames[3]] = make_color_rgb(68, 61, 140)
-oceanColor[? global.seaNames[4]] = make_color_rgb(36, 51, 152)
+oceanColor[? global.seaNames[3]] = make_color_rgb(80, 30, 140)
+oceanColor[? global.seaNames[4]] = make_color_rgb(100, 50, 30)
 oceanColor[? global.seaNames[5]] = make_color_rgb(36, 51, 152)
 oceanColor[? global.seaNames[6]] = make_color_rgb(36, 51, 152)
 

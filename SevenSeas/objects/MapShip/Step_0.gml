@@ -33,16 +33,15 @@ if path_position = 1 and global.inPort = false{
 		//Land in Town
 		if targetPort.image_index == 1{        
 		    //Fix Ship
-		    while HasStored(3,1) and (Ship.myHealth < Ship.maxHealth){
-		        UpdateHealth(Ship, Ship.maxHealth div 10)
-		        LoseCargo(3,1)
-		    }
+		    var boards = RepairWithBoards()
+			if boards > 0 
+				ds_list_add(global.notificationList, "Repairs!", string_repeat(string(boards) + " board(s) were used to repair the ship.", sign(boards)))
             
-		    //Heal Pirates
-		    with Pirate{
-		        myHealth = maxHealth
+			//Heal Pirates
+			with Pirate{
+			    myHealth = maxHealth
 				healthDiff = maxHealth
-		    }
+			}
 			
 			with Pirate{
 				if myGoal == "leave"{
@@ -51,9 +50,9 @@ if path_position = 1 and global.inPort = false{
 					event_user(2)
 				}
 			}
-		    if alarm[0] == -1 and ds_list_size(global.notificationList) == 0 and global.timeCycle != global.timeCycleLength*1/8{
-		        with EventController alarm[0] = room_speed/2
-		    }
+			if alarm[0] == -1 and ds_list_size(global.notificationList) == 0 and global.timeCycle != global.timeCycleLength*1/8{
+			    with EventController alarm[0] = room_speed/2
+			}
 		}
         
 	    with WeatherController{
@@ -82,6 +81,15 @@ if path_position = 1 and global.inPort = false{
 	    else {
 	        with targetPort {
 	            visited = true
+				// Conquer the volcanic sea
+				if myIndex == 1 and global.seaType == global.seaNames[4]{
+					MapCreator.winCond[4] += 1
+					// Have not yet conquered the sea
+					if MapCreator.winCond[4] < 3{
+						ds_list_add(global.notificationList, "Hidden Sanctuary!", "The crew stumble upon a small town, hidden among the burning islands.")
+					}
+				}
+				
 	            GameStatsController.locationsVisted ++
 				
 				var tavernSlot = choose(0,1,2)
@@ -140,7 +148,7 @@ else
     sailSpeed = normalSailSpeed * global.gameRate
     if global.weather = 0 or global.weather = 2
         sailSpeed = normalSailSpeed*0.25
-    
+	
     with Pirate
         if myPet.itemPower == "speed bonus" and mySlot.slotType == "wheel"
             other.sailSpeed *= 1.15

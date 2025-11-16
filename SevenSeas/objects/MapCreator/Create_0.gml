@@ -2,8 +2,6 @@
 
 var loading = (LoadingScreenWaves.alarm[1] > 0)
 
-show_debug_message("start: " + string(current_time))
-
 instantClose = false
 
 ///Create Sea Surfaces
@@ -47,8 +45,7 @@ surf = surface_create(mapSizeX, mapSizeY)
 ///Create Islands
 
 var restarts = 0
-var restartLimit = 10000
-
+var restartLimit = 1000
 islandNumber = 9
 
 outlineSize = 0.9
@@ -102,51 +99,41 @@ for(n=0; n<seaNumber; n++) {
         }
      
     
-    var i=0, prevDisp = -100, dispGrow = 0;
+    var prevDisp = -100, dispGrow = 0;
+	
     ///Create Islands
-    while(i < islandNumber) {  
-        flip[n*islandNumber+i] = choose(-1, 1)
-        spin[n*islandNumber+i] = choose(0, 45, 90, 135, 180, 225, 270, 315)
-        islandShape[n*islandNumber+i] = 2*i + irandom(1)
+    for(i=0; i<islandNumber; i++){
+		for(tries=0; tries<5; tries++){
+	        flip[n*islandNumber+i] = choose(-1, 1)
+	        spin[n*islandNumber+i] = choose(0, 45, 90, 135, 180, 225, 270, 315)
+	        islandShape[n*islandNumber+i] = 2*i + irandom(1)
         
-        myDir = irandom(360)
-        myDis = other.islandSize - (3/(islandShape[n*islandNumber+i] div 3 + 3))*sprite_get_height(IslandSpr)
-        myDis -= myDis*random(1/(i+2))
-		getIslandX[n*islandNumber+i] = (mapSizeX/2 + ds_map_find_value(seas[n], "x") + dcos(myDir)*myDis) div 1
-        getIslandY[n*islandNumber+i] = (mapSizeY/2 + ds_map_find_value(seas[n], "y") + dsin(myDir)*myDis) div 1
+	        myDir = irandom(360)
+	        myDis = other.islandSize - (3/(islandShape[n*islandNumber+i] div 3 + 3))*sprite_get_height(IslandSpr)
+	        myDis -= myDis*random(1/(i+2))
+			getIslandX[n*islandNumber+i] = (mapSizeX/2 + ds_map_find_value(seas[n], "x") + dcos(myDir)*myDis) div 1
+	        getIslandY[n*islandNumber+i] = (mapSizeY/2 + ds_map_find_value(seas[n], "y") + dsin(myDir)*myDis) div 1
          
     
-        //Check if not too close
-        makeIsland = true
-		var disp = 0, aveX = 0, aveY = 0;
-		for(r=n*islandNumber; r<=n*islandNumber+i; r++){
-			aveX += getIslandX[r];
-			aveY += getIslandY[r];
-        }
-		aveX = aveX/(i+1); aveY = aveY/(i+1);
+	        //Check if not too close
+	        makeIsland = true
+			var disp = 0, aveX = 0, aveY = 0;
+			for(r=n*islandNumber; r<=n*islandNumber+i; r++){
+				aveX += getIslandX[r];
+				aveY += getIslandY[r];
+	        }
+			aveX = aveX/(i+1); aveY = aveY/(i+1);
 			
-        for(r=n*islandNumber; r<=n*islandNumber+i; r++)
-            disp += sqrt(power(aveX - getIslandX[r], 2) + power(aveY - getIslandY[r], 2))
+	        for(r=n*islandNumber; r<=n*islandNumber+i; r++)
+	            disp += sqrt(power(aveX - getIslandX[r], 2) + power(aveY - getIslandY[r], 2))
 			
-		disp /= (i+1);
+			disp /= (i+1);
 		
-        if ((disp < prevDisp+dispGrow) or (i==1 and disp < 100)) and (!loading) {
-			makeIsland = false;
-			restarts ++
-			if restarts > restartLimit{
-				restarts = 0;
-				i=0;
-				prevDisp = -dispGrow;
-				tries += 1;
-				if tries > 50{
-						room_restart()
-					}
+	        if (disp >= prevDisp+dispGrow) or i!=1 or disp >= 100 or (loading) {
+				break;
 			}
-			continue;
-		}else{
-			prevDisp = disp;
-			i++
-	    }
+		}
+			
     }
     if n > 0
         dir += pi/3
@@ -241,7 +228,7 @@ show_debug_message("added islands: " + string(current_time))
 //mp_grid_add_instances(global.mapGrid, MapCreator, true)
 
 ///Create Landing Spots
-var spotTypes = ds_map_create()
+spotTypes = ds_map_create()
 spotTypes[? global.seaNames[0]] = ds_list_create()
 spotTypes[? global.seaNames[1]] = ds_list_create()
 spotTypes[? global.seaNames[2]] = ds_list_create()
@@ -254,7 +241,7 @@ ds_list_add(spotTypes[? global.seaNames[0]], 0,2,3)
 ds_list_add(spotTypes[? global.seaNames[1]], 3,4,5)
 ds_list_add(spotTypes[? global.seaNames[2]], 2,6,7)
 ds_list_add(spotTypes[? global.seaNames[3]], 0,8,9)
-ds_list_add(spotTypes[? global.seaNames[4]], 0,2,3)
+ds_list_add(spotTypes[? global.seaNames[4]], 4,10,11)
 ds_list_add(spotTypes[? global.seaNames[5]], 0,2,3)
 ds_list_add(spotTypes[? global.seaNames[6]], 0,2,3)
 
@@ -265,14 +252,14 @@ global.inPort = true
 
 var startingPort;
 global.path = path_add()
-for(var n=0; n < seaNumber; n++){
-    for(var r=0; r<landNumber - ds_map_find_value(seas[n], "level"); r++){ 
-		newLanding = instance_create(0, 0, LandingSpot)
+for(var n=0; n<seaNumber; n++){
+    for(var r=0; r<landNumber; r++){ 
+		// Create landing spot type
+		var newLanding = instance_create(0, 0, LandingSpot)
 		if instance_number(LandingSpot) == 1
 			startingPort = newLanding;
-		if r < townNumber - ds_map_find_value(seas[n], "level") {
+		if r < townNumber - (ds_map_find_value(seas[n], "level") div 2) {
             newLanding.image_index = 1
-			newLanding.visible = true
             newLanding.myIndex = newLanding.image_index
             newLanding.spreadOut = true
             newLanding.myIslandType = ds_map_find_value(seas[n], "type")
@@ -282,64 +269,41 @@ for(var n=0; n < seaNumber; n++){
             newLanding.image_index = ds_list_find_value(spotTypes[? ds_map_find_value(seas[n], "type")], r mod 3)
             newLanding.myIndex = newLanding.image_index
             newLanding.spreadOut = false
-			newLanding.visible = false
         }
         
         //Place randomly on map 
-        var rad = 16, wellPlaced = false;
-        while !wellPlaced {
+        var rad=0, wellPlaced = false, tries =0;
+		var placeX=mapStart + mapSizeX/2, placeY=mapSizeY/2;
+        while !wellPlaced and tries < 1000 and !loading {
+			rad = 12*power(2,(1/tries))
 			wellPlaced = true;
 				
+			// Find original Point
             var myPlaceIsland = irandom(islandNumber - 1)
-            var placeX = mapStart + getIslandX[n*islandNumber+myPlaceIsland] + (random_range(-60,60) + random_range(-60,60))/2
-            var placeY = getIslandY[n*islandNumber+myPlaceIsland] + (random_range(-60,60) + random_range(-60,60))/2
+            placeX = mapStart + getIslandX[n*islandNumber+myPlaceIsland] + (random_range(-60,60) + random_range(-60,60))/2
+            placeY = getIslandY[n*islandNumber+myPlaceIsland] + (random_range(-60,60) + random_range(-60,60))/2
                     
-			//Place near shore
-            for(var i=0; i<360 and wellPlaced and !loading; i+=6){
+			// Don't place too close to water
+            for(var i=0; i<360 and wellPlaced; i+=6){
                 var radx = (cos(degtorad(i))*rad)
                 var rady = (sin(degtorad(i))*rad)
-                //dont place too close to water
+
                 if (mp_grid_get_cell(global.mapGrid, (placeX + radx - mapStart) div gridSize, (placeY + rady) div gridSize)) != -1 {
                     wellPlaced = false
-					break;
 				}
             }
 					
             //Dont place near another landing spot
-            for(var i=0; !loading and wellPlaced and i<instance_number(LandingSpot); i++){
-				var cl = instance_find(LandingSpot, i)
-				if cl.id != newLanding.id{
-					//Dont place near others
-		            if point_distance(cl.x, cl.y, placeX, placeY) < rad*3 {
-						wellPlaced = false;
-						break;
-		            }
-				}
-			}  
-			
-			
-			if !wellPlaced{
-				restarts ++
-		        if restarts > restartLimit{
-					with LandingSpot { 
-						if myIslandType == ds_map_find_value(other.seas[n], "type")
-							instance_destroy()
-					}
-					rad = max(8, rad - 1)
-					restarts = 0;
-					r=0;
-					tries += 1;
-					if tries > 50{
-						room_restart()
-					}
+			if instance_exists(LandingSpot){
+				var cl = instance_nearest(placeX, placeY, LandingSpot)
+			    if point_distance(cl.x, cl.y, placeX, placeY) < rad*3 {
 					wellPlaced = false;
-					break;
+					tries ++;
 				}
 			}
         }
-            
+
 		var foundSpot = false, checkX = 0, checkY =0;
-		
         //Find nearest water portion
         var dis = 16;
         while !foundSpot and wellPlaced and !loading {
@@ -350,8 +314,17 @@ for(var n=0; n < seaNumber; n++){
 					foundSpot = true;
 					for(var ii=0; wellPlaced and ii<instance_number(LandingSpot); ii++){
 						var cl = instance_find(LandingSpot, ii)
-                        if point_distance(cl.checkX, cl.checkY, checkX, checkY) < 32
+						if cl.id == newLanding.id{ continue; }
+						if cl.myIslandType == newLanding.myIslandType { continue; }
+						
+						// Don't be close to actual item on map 
+                        if collision_line(placeX, placeY, checkX, checkY, cl.id, true, true)
                             foundSpot = false;
+							
+						// Don't be too close to landing location
+						if point_distance(cl.checkX, cl.checkY, checkX, checkY) < 48{
+							foundSpot = false;
+						}
 					}
 				}
             }
@@ -492,20 +465,20 @@ ds_map_add(condImage, global.seaNames[1], 1)
 winCond[1] = 0
 
 //rocky shores
-ds_map_add(condDes, global.seaNames[2], "Be the first ship to make it through the passage!")
+ds_map_add(condDes, global.seaNames[2], "Brave a voyage through the treacherous passage!")
 ds_map_add(condCritera, global.seaNames[2], "SAIL THE CRASHING ROCKS")
 ds_map_add(condImage, global.seaNames[2], 2) 
 winCond[2] = 0
 
 //isles of the dead
-ds_map_add(condDes, global.seaNames[3], "lift the curse from the Dead Man's Treasure!")
-ds_map_add(condCritera, global.seaNames[3], "COLLECT ALL 5 SOUL STONES")
+ds_map_add(condDes, global.seaNames[3], "Release the trapped souls of previous sailors!")
+ds_map_add(condCritera, global.seaNames[3], "FREE 5 TRAPPED SOULS")
 ds_map_add(condImage, global.seaNames[3], 3) 
 winCond[3] = 0
 
 //volcanic
-ds_map_add(condDes, global.seaNames[4], "")
-ds_map_add(condCritera, global.seaNames[4], "")
+ds_map_add(condDes, global.seaNames[4], "discover the volcano's hidden sanctuaries!")
+ds_map_add(condCritera, global.seaNames[4], "FIND THE 3 VOLCANIC PORTS")
 ds_map_add(condImage, global.seaNames[4], 4) 
 winCond[4] = 0
 
@@ -528,7 +501,7 @@ ds_map_add(released, global.seaNames[0], true)
 ds_map_add(released, global.seaNames[1], true)
 ds_map_add(released, global.seaNames[2], true)
 ds_map_add(released, global.seaNames[3], true)
-ds_map_add(released, global.seaNames[4], false)
+ds_map_add(released, global.seaNames[4], true)
 ds_map_add(released, global.seaNames[5], false)
 ds_map_add(released, global.seaNames[6], false)
 

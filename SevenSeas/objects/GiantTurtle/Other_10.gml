@@ -1,6 +1,6 @@
 /// @description Turtle Events
 
-ds_list_add(locations, global.seaNames[1], global.seaNames[4], global.seaNames[5])
+ds_list_add(locations, global.seaNames[1], global.seaNames[5])
 
 if myState != "unmet"{
 	var myStates = ["waiting", "small", "med", "special"]

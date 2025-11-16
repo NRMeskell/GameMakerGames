@@ -8,6 +8,7 @@ function SwitchShips(argument0) {
 
 	with ShipSlot
 	    {
+		damaged = false
 	    x = xSpot[Ship.shipType]
 	    y = xSpot[Ship.shipType]
 	    }

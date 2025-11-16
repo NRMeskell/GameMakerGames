@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":127.494965,
+  "duration":113.330795,
   "name":"WellermanDead",
   "parent":{
     "name":"SeaOfDead",

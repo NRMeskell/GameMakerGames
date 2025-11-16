@@ -15,11 +15,11 @@ function GeneratePetItem(argument0) {
 	        color[3] = make_color_rgb(192,192,0)
 	        color[4] = make_color_rgb(2,98,0)
 	        itemNumber = irandom(2)
-	        itemName = choose("cookie", "mango", "scarlett", "molly", "Ava", "cleo", "annie", "paco", "cory", "polly", "skeet", "cracker", "ollie", "ringo", "macaw", "rico", "talon", "paco")
-	        itemInfo = "a colorful flying companion"
+	        itemName = choose("cookie", "scarlett", "molly", "cory", "polly", "cracker", "ollie", "ringo", "talon")
+	        itemInfo = "a colorful flying companion, smart and quick to help"
         
 	        itemPower = "morale loss"   
-	        itemPowerDescription = "equipped pirate cannot lose morale"
+	        itemPowerDescription = "equipped crew never loses morale, and their attacks gain +2 priority"
 	    }
 	    else if argument0 = 1 {
 	        color[0] = make_colour_rgb(165,165,165)
@@ -28,11 +28,11 @@ function GeneratePetItem(argument0) {
 	        color[3] = make_color_rgb(94,68,35)
 			color[4] = make_color_rgb(80,80,80)
 	        itemNumber = irandom_range(3,5)
-	        itemName = choose("bongo", "buster", "flopsy", "popsie", "flo", "wanky", "talullah", "gaga", "dopey", "coconut")
-	        itemInfo = "a cute climbing companion"
+	        itemName = choose("mango", "bongo", "flopsy", "popsie", "silly", "gaga", "dopey", "coconut", "rica", "paco")
+	        itemInfo = "a cute climbing companion, happy to hop in a cannon or two"
         
 	        itemPower = "morale loss"   
-	        itemPowerDescription = "equipped pirate cannot lose morale"
+	        itemPowerDescription = "equipped crew never loses morale, and their cannon attacks do not use cannonballs"
 	    }
 	    else{
 			var chooseType = irandom(6)

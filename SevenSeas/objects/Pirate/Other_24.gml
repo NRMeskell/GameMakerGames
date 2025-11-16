@@ -15,12 +15,12 @@ itemString[3] = "hands"
 itemString[4] = "hands"
 itemString[5] = "item"
 
-for(i=0; i<9; i++){
+for(var i=0; i<9; i++){
     statString[i] = ""
     bonus[i] = 0
     haveItem[i] = false //tracks whether to display the icon
     
-    for(r=0; r<array_length_1d(item); r++){
+    for(var r=0; r<array_length_1d(item); r++){
         itemBonus = item[r].bonus[i]
         if (r==3){
             if (item[r] != item[r+1]) //calculate left hand bonus
@@ -41,7 +41,7 @@ for(i=0; i<9; i++){
         string_delete(statString[i], string_length(statString[i]), 1)
     }
 
-for(i=0; i<9; i++){
+for(var i=0; i<9; i++){
     statTotal[i] = bonus[i]
     if ((i != 0) and (i != 1)) or (bonus[i] != 0)
         {

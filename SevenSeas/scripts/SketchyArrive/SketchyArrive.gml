@@ -5,7 +5,7 @@ function SketchyArrive() {
 	    ds_list_add(buttons, SketchyDecline, SketchyTrade, SketchyStartCombat) 
 	    ds_list_add(buttonStats, 0, 0, 0) 
 	    ds_list_add(buttonRequires, 0, 0, 0)
-	    ds_list_add(buttonCosts, 0, SketchySailsman.myState == "traded" ? 5 : 20, 0)
+	    ds_list_add(buttonCosts, 0, SketchySailsman.myState == "traded" ? 3 : 15, 0)
 	    ds_list_add(buttonText, "decline to trade", SketchySailsman.myState == "traded" ? "browse his wares" : "pay and browse his wares", "try to seize the wares")
 			
 		
@@ -18,13 +18,15 @@ function SketchyArrive() {
         else
 			eventText = "The overloaded ship returns. The helmsmen offers to trade - after the upfront payment!" 
 			
-	    myShip = instance_create(-1000,0,ShipEvent)
-	    with myShip
-	        {
-	        myShipHull = SketchyShipSpr
-	        flagColor = c_white
-	        myFlag = ScavengerFlagSpr
-	        }
+		if !global.inPort{
+		    myShip = instance_create(-1000,0,ShipEvent)
+		    with myShip
+		        {
+		        myShipHull = SketchyShipSpr
+		        flagColor = c_white
+		        myFlag = ScavengerFlagSpr
+		        }
+		}
 	    global.moraleBoost = "sketchy merchant"
 	    }
 }

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"PirateShipArrive",
   "parent":{
-    "name":"PirateShip",
-    "path":"folders/Scripts/Events/SailingEvents/PirateEvents/PirateShip.yy",
+    "name":"PirateEvents",
+    "path":"folders/Scripts/Events/SailingEvents/PirateEvents.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

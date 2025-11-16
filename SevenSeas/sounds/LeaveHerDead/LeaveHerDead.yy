@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":151.99782,
+  "duration":26.553469,
   "name":"LeaveHerDead",
   "parent":{
     "name":"SeaOfDead",

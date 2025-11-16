@@ -22,5 +22,6 @@ prevShipHealth = 0
 prevCrewHealth = 0
 
 lightType = "ship"
+endRound = false
     
 

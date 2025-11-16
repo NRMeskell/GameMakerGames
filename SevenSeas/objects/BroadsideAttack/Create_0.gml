@@ -14,7 +14,7 @@ animationHeight = 2
 animationWidth = 5
 rotate = false
 
-endRound = false
+
 actionType = "cannon"
 
 x = Ship.drawX + animationX + irandom_range(-animationWidth,animationWidth)

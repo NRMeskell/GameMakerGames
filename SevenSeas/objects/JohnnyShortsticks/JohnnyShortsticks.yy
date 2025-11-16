@@ -8,8 +8,8 @@
   "name":"JohnnyShortsticks",
   "overriddenProperties":[],
   "parent":{
-    "name":"cove",
-    "path":"folders/Objects/Events/Characters/cove.yy",
+    "name":"PirateCove",
+    "path":"folders/Objects/Events/Characters/PirateCove.yy",
   },
   "parentObjectId":{
     "name":"CharacterParent",

@@ -5,7 +5,7 @@ with PirateLeveler
 	if upNext = true and id != other.id
 		upNext = false
         
-if upNext and x == -1000 and !instance_exists(Store) and !instance_exists(Event)
+if upNext and x == -1000 and !instance_exists(Store) and !global.eventOpen
     {
     x = room_width*5/6
     with myPirate

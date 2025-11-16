@@ -8,7 +8,7 @@ if myShipTarget = Ship
     }
 else
     {
-    x = CombatRunner.placeX - 20*CombatRunner.closeRange - animationX + irandom_range(-animationWidth,animationWidth)
+    x = CombatRunner.placeX - animationX + irandom_range(-animationWidth,animationWidth)
     y = CombatRunner.placeY + animationY + irandom_range(-animationHeight,animationHeight) + Ship.waveHeight
     image_xscale = -1
     }
@@ -29,6 +29,10 @@ if madeAttacks < 0
 else
     {
     alarm[1] = animationLength/attackNumber
+	
+	//Change animation
+    event_user(2)
+	
     with instance_create(x,y,AttackAnimation)
         {
         lightType = other.actionType
@@ -44,8 +48,5 @@ else
         
     if singleAttack
         madeAttacks = 0
-        
-    //Change animation
-    event_user(2)
     }
 

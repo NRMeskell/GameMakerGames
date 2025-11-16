@@ -56,6 +56,18 @@ else if myPortType = 9
 	myAnimationTimes = [room_speed*7, room_speed*7]
 	myAnimation = [[333+PortDrawerBack.drawPortShiftX, 333+PortDrawerBack.drawPortShiftX], [273+PortDrawerBack.drawPortShiftY, 273+PortDrawerBack.drawPortShiftY], RiverBoat]
 }
+else if myPortType = 10
+	{
+    mySpecialAction = RollBurningRocks
+	myAnimationTimes = [room_speed, room_speed*2]
+	myAnimation = [[room_width/2, room_width*2/3], [room_height/2 - 25, room_height/2+50], GiantFire]
+}
+else if myPortType = 11
+	{
+    mySpecialAction = TikiHeads
+	myAnimationTimes = [room_speed*7, room_speed*7]
+	myAnimation = [[0,0], [0,0], TikiOffer]
+}
 
 if sprite_index = CampFireSpr
 	sprite_index = CampFireDyingSpr

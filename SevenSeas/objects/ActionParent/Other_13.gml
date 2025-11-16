@@ -20,7 +20,7 @@ else{
 	    canUse = false
 		requireText = "cool down timer"
 	}
-	else if (CombatRunner.piratesMoved == true){
+	else if (CombatRunner.piratesMoved == true and myShipTarget == Ship){
 	    canUse = false
 		requireText = "crew moved this round"
 	}
@@ -30,7 +30,7 @@ else{
 			requireText = "attack type disabled"
 		}
 	}
-	else if (actionType == "cannon" and myShipTarget.object_index == Ship and !HasStored(2,1)){
+	else if (actionType == "cannon" and myShipTarget.object_index == Ship and myPirate.object_index == Pirate and myPirate.myPet.itemInfo != "a cute climbing companion, happy to hop in a cannon or two" and !HasStored(2,1)){
 		canUse = false
 		requireText = "out of cannonballs"
 	}
@@ -50,4 +50,8 @@ else{
 		warning = true
 		requireText = "incorrect combat zone"
 	}
+}
+
+if instance_exists(RealAttack){
+	show_message(requireText)
 }

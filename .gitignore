@@ -21,6 +21,9 @@
 *.log
 *.sql
 *.sqlite
+*.yy
+*.yyp
+*.exe
 
 # OS generated files #
 ######################

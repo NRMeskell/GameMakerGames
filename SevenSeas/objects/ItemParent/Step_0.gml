@@ -4,7 +4,7 @@ if mouse_check_button_pressed(mb_left) and !instance_exists(DumpItem)
     {
 	if ds_list_find_value(ItemRunner.floatingItems, 0) == id
 	    {
-	    if overLeft and !instance_exists(Event) and !instance_exists(CombatRunner) and !instance_exists(Store)
+	    if overLeft and !global.eventOpen and !instance_exists(CombatRunner) and !instance_exists(Store)
 	        {
 	        with Pirate
 	            if selected

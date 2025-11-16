@@ -157,7 +157,7 @@ maxHealth = 60
 myHealth = maxHealth
 normHealth = maxHealth
 deserter = false
-healthTimer = 2
+healthTimer = 1
 
 healthDiff = maxHealth
 updateHealthDiff = false
@@ -166,6 +166,8 @@ healthDiffTimer = 0
 statDrawY = 155
 statDrawX = 55
 statDrawDistance = 48
+actionStartX = 32 + 16
+actionStartY = 215 + 16
 
 myGoal = "money"
 myGoalProgress = 0

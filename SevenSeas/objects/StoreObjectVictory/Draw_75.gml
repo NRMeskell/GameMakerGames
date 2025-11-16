@@ -9,7 +9,7 @@ if __b__
 ///Draw info
 
 draw_sprite(CargoSheetPreviewSpr, 1, xWindow, yWindow)
-draw_sprite(StoreVictorySpr, itemType, xWindow + 27, yWindow + 30)
+draw_sprite(CargoSpr, itemType, xWindow + 27, yWindow + 30)
 
 /*if overClose
     draw_sprite(EndCombatSpr, 1, xWindow + sprite_get_width(CargoSheetPreviewSpr)-2, yWindow+2)

@@ -3,7 +3,7 @@
 x = Ship.drawX + placeX
 y = GetWaterLevel(Ship.middleWaves, x)
 
-if sprite_index = SupplyBoxSpr{
+if sprite_index = SupplyBoxSpr or !instance_exists(myLight){
 	if myLight == noone{
 	    myLight = instance_create(85, 37, LightParent)   
 	    myLight.red = 0.05
@@ -11,7 +11,7 @@ if sprite_index = SupplyBoxSpr{
 	    myLight.blue = 0.02
 	    myLight.myVolume = 30
 	    myLight.lightLayer = 3
-		myLight.flicker = true
+		myLight.flickering = true
 	}
 	else{
 		myLight.x = x + 2*dcos(image_angle)

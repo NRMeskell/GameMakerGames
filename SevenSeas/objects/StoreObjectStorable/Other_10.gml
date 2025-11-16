@@ -10,10 +10,10 @@ remove = true
 
 // Use new wood to repair in Town
 if itemNumber == 3 and global.inPort and global.portType == 1{
-	while HasStored(3,1) and (Ship.myHealth < Ship.maxHealth){
-	    UpdateHealth(Ship, (Ship.maxHealth div 10))
-	    LoseCargo(3,1)
-	}
+	var boards = RepairWithBoards()
+	if boards > 0 
+		ds_list_add(global.notificationList, "Repairs!", string_repeat(string(boards) + " board(s) were used to repair the ship.", sign(boards)))
+		
 }
 
  

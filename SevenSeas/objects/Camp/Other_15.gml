@@ -1,5 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-sprite_index = CampFireSpr
-myName = "camp"
+if sprite_index == CampFireDeadSpr{
+	sprite_index = CampFireDyingSpr
+}
+else{
+	sprite_index = CampFireSpr
+}

@@ -12,7 +12,7 @@ function TropicalRest() {
     
 	if result == 0
 	    {
-	    UpdateHealth(Ship, -25)
+	    UpdateHealth(Ship, -75)
 	    ds_list_add(global.notificationList, "Crew rested", "The crew is rested and morale is raised, but the ship was slightly damaged without the crew!") 
 	    }
 	else

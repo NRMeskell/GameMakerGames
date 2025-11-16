@@ -16,7 +16,7 @@ actionType = "ship"
 
 moveSpeed = 1.5
 changeZones = false
-endRound = false
+
 
 event_user(0)
 showDamage = false

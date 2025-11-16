@@ -5,7 +5,7 @@ if viewed
     {
     draw_sprite(StoreItemSpr, (overButton or previewSelect) + selected*2, drawX, drawY)
     
-    draw_sprite(StoreVictorySpr, itemType, drawX, drawY)
+    draw_sprite(CargoSpr, itemType, drawX, drawY)
     
     draw_set_valign(fa_center)
     draw_set_halign(fa_left)

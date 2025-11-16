@@ -2,7 +2,7 @@ function RestfulWaters() {
 	with instance_create(0,0,Event)
 	    {
 	    buttonNumber = 2
-		planksNeeded = max(1, min(CargoAmount(3), (Ship.maxHealth - Ship.myHealth) div 10 + 1))
+		planksNeeded = max(1, PlanksNeededForRepairs())
 	    ds_list_add(buttons, RestfulRaiseMorale, RestfulHealCrew, RestfulRepairShip)
 	    ds_list_add(buttonStats, 5, 6, 3)
 	    ds_list_add(buttonRequires, global.eventDiff[5,0], global.eventDiff[6, 0], 0)
@@ -38,7 +38,7 @@ function RestfulHealCrew(){
 }
 
 function RestfulRepairShip(){
-	UpdateHealth(Ship, (Ship.maxHealth div 10) * planksNeeded)
+	UpdateHealth(Ship, planksNeeded*(Ship.maxHealth div 10))
 	
 	ds_list_add(global.notificationList, "Ship Repaired", string(planksNeeded) + " plank(s) were used to patch up the damaged ship.")
 	

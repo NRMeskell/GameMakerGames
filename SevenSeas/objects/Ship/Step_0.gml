@@ -1,6 +1,6 @@
 /// @description Rock
 
-drawX = room_width/2 + 30 - shipMapX*!global.inPort - 25*(instance_exists(Event))*!global.inPort - (global.inPort * 200) - 10*(instance_exists(CombatRunner)) 
+drawX = room_width/2 + 30 - shipMapX*!global.inPort - 25*(global.eventOpen)*!global.inPort - (global.inPort * 200) - 10*(instance_exists(CombatRunner)) 
 
 //map adjust
 if !MapCreator.mapClose
@@ -8,7 +8,7 @@ if !MapCreator.mapClose
 else
     shipMapX -= min(5, shipMapX)
     
-if instance_exists(Event)
+if global.eventOpen
     shipMapX = 0
 
 if rockSpeed > 0
@@ -188,7 +188,7 @@ if abs(healthDiff - myHealth) > 1
             updateHealthDiff = true
         
     if updateHealthDiff
-        healthDiff += sign(myHealth - healthDiff)
+        healthDiff += sign(myHealth - healthDiff)*maxHealth/60
     }
 else
     {

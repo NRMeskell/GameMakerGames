@@ -13,7 +13,7 @@ if abs(healthDiff - myHealth) > 1
         updateHealthDiff = true
         
     if updateHealthDiff
-        healthDiff += sign(myHealth - healthDiff)
+        healthDiff += sign(myHealth - healthDiff)*maxHealth/60
     }
 else
     {

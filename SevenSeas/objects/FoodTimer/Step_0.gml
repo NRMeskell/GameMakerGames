@@ -52,8 +52,7 @@ if alarm[0] < 1{
 	        }	
 	
 	    global.moraleBoost = "meal"
-	    for(var pirateCount=0; pirateCount<instance_number(Pirate); pirateCount++)
-	        {
+	    for(var pirateCount=0; pirateCount<instance_number(Pirate); pirateCount++) {
 			checkPirate = instance_find(Pirate, pirateCount)
 				
 			var currentCursed = false;
@@ -71,9 +70,13 @@ if alarm[0] < 1{
 	            with checkPirate
 	                {
 	                UpdateMorale(-2,-1)
-	                UpdateHealth(id, -myHealth/2)
+	                UpdateHealth(id, -myHealth/3)
 	                }
 	            }
-	        }
+				
+			// cook		
+			if checkPirate.myPet.itemPower == "cook"
+				UpdateMorale(round(global.foodQuality-1),1)
 	    }
+	}
 }

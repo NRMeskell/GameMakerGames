@@ -3,12 +3,13 @@
 event_user(0)
 spriteNumber = 37
 
-rechargeTime = 8
-priorityMin = 3
-priorityMax = 7
+rechargeTime = 6
+priorityMin = 1
+priorityMax = 2
+needsTarget = true
 
 myAttack = KnockOfDeathAttack
-actionType = "melee"
+actionType = "ship"
 requiredSlot[0] = "wheel"
 level = 0
 

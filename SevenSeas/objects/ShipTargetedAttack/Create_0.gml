@@ -13,7 +13,6 @@ animationX = 30
 animationHeight = 2
 animationWidth = 10
 
-endRound = false
 actionType = "ranged"
 needsTarget = true;
 

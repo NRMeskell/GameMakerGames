@@ -7,14 +7,9 @@ function TradingPostRest() {
 	    UpdateMorale(1, -1)
 	    }
     
-	while HasStored(3,1) and (Ship.myHealth < Ship.maxHealth)
-	    {
-	    UpdeateHealth(Ship, Ship.maxHealth div 10)
-	    LoseCargo(3,1)
-	    }
-    
-	ds_list_add(global.notificationList, "A good night's sleep!", "The crew is well rested and the ship's repaired!")
-    
+	var boards = RepairWithBoards()
+	ds_list_add(global.notificationList, "A good night's sleep!", "The crew is well rested!" + string_repeat("##" + string(boards) + " board(s) were used to repair the ship.", sign(boards)))
+	
 	script_execute(closeEventCode, 2)
 }
 

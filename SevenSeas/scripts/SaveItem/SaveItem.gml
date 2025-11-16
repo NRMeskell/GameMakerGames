@@ -16,10 +16,7 @@ function SaveItem(argument0) {
     
 	    itemString += string(item.damage) + ";"
 	    itemString += string(item.accuracy) + ";"
-	    if item.myAction != noone
-	        itemString += "none,"
-	    else
-	        itemString += string(object_get_name(item.myAction)) + ";"
+	    itemString += string(object_get_name(item.myAction)) + ";"
         
 	    itemString += string(item.cost) + ";"
 	    for(i=0; i<8; i++)

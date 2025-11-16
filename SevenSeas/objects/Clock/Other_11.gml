@@ -18,7 +18,13 @@ if view_current = 0
         
     skyColor = merge_color(skyLight, c_black, abs(sin(pi*((global.timeCycle)/(global.timeCycleLength))-pi/4)))
     cloudColor = merge_color(cloudLight, merge_color(c_white, c_black, 0.95), abs(sin(pi*((global.timeCycle)/(global.timeCycleLength))-pi/4))) 
-        
+    
+	// Volcano Lighting
+	if room == GameRoom and global.seaType == global.seaNames[4]{
+		skyColor = merge_color(skyColor, merge_color(WaveController.oceanColor[? global.seaType], c_gray, 0.3), Volcano.myVar/2)
+		cloudColor = merge_color(cloudColor, merge_color(WaveController.oceanColor[? global.seaType], c_dkgray, 0.8), Volcano.myVar/2)
+	}
+		
     draw_set_color(skyColor)
     draw_background_ext(Sky, 0, 0, 1, 1, 0, skyColor, 1)
     draw_background_ext(Stars, 0, 0, 1, 1, 0, -1, power((sin(pi*global.timeCycle/global.timeCycleLength - pi/4)), 4) - 0.2)

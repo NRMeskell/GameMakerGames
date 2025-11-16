@@ -5,12 +5,19 @@ with myButton
 if ds_list_size(global.notificationList) == 0{
 	
 	activated = true
+	var loseCBall = false;
 	if (actionType == "cannon" and shipTarget == CombatRunner)
+		loseCBall = true;
+
+	 /* MONKEY */
+	 if myPirate != noone and myPirate.object_index == Pirate and myPirate.myPet.itemInfo == "a cute climbing companion, happy to hop in a cannon or two"
+		loseCBall = false;
+		
+	if loseCBall
 		LoseCargo(2, 1);
 
 	if endRound
-	    with RealAttack
-	        instance_destroy()
+	    instance_destroy(RealAttack)
 			
 	instance_destroy()
 	

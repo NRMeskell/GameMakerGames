@@ -2,10 +2,10 @@ function TikiHeads() {
 	//Get Treasure
 
 	global.moraleBoost = "idols"
-	result = irandom(2)
+	result = irandom(4)
 	
-	if result <= 1{
-		ds_list_add(global.notificationList, "No response", "Water drains from the idols, but nothing more appears to happen")
+	if result <= 3{
+		ds_list_add(global.notificationList, "No response", "Lava drains from the idols, but nothing more appears to happen")
 	}
 	else {
 		var cursedPirates = false

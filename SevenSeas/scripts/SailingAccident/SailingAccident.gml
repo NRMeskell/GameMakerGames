@@ -5,7 +5,7 @@ function SailingAccident() {
 		// rope, boards, wheel
 		var eventNum = irandom(2)
 		var titles = ["Caught in Rigging!", "Smashed by Cargo", "Hit by yardarm"]
-		var accidents = [" was caught in the rigging", " was crush under cargo", " was slammed in the head"]
+		var accidents = [" was caught in the rigging", " was crushed under cargo", " was slammed in the head"]
 	    var solutions = ["cut away the ropes", "splint the injuries", "allow for needed rest"]
 		var eventStat = [3, 3, 5]
 		var car = [false, true, false]

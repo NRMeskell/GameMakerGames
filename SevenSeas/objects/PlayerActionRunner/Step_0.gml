@@ -20,7 +20,7 @@ with ActionParent
 
 scrollSpeed = 8
 
-if (point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), xMin, yMin, xMax, yMax) or actionSelected) and CombatRunner.playerTurn and !instance_exists(Event) and __view_get( e__VW.XView, 0 ) == 0 and ds_list_size(global.notificationList) == 0
+if (point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), xMin, yMin, xMax, yMax) or actionSelected) and CombatRunner.playerTurn and !global.eventOpen and __view_get( e__VW.XView, 0 ) == 0 and ds_list_size(global.notificationList) == 0
     {
     //Update List
     if refreshed = false

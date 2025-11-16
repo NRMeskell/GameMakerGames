@@ -3,8 +3,7 @@ function DrawAction(argument0, argument1, argument2, argument3) {
 	drawActionX = argument1
 	drawActionY = argument2
 
-	with myActionDrawer
-	    pirateDrawTest = true
+	myActionDrawer.pirateDrawTest = true
     
 	if object_is_ancestor(object_index, Enemy)
 		x_scale = -1

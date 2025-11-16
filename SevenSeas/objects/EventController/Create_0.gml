@@ -1,7 +1,9 @@
 /// @description Event codes
 
+
+global.eventOpen = false
 eventTimeAmount = room_speed*2.5
-eventTimer = ((random_range(1,2)*eventTimeAmount) div 1)/global.gameRate
+eventTimer = ((random_range(1,2)*eventTimeAmount)/global.gameRate) div 1
 //global.healTimer = room_speed
 
 //Normal Events
@@ -17,17 +19,17 @@ eventList[4] = ds_list_create()
 eventList[5] = ds_list_create()
 eventList[6] = ds_list_create()
 
-ds_list_add(stillEventList, RottenPlanks, CrazyPirateMaker, SpoiledFood, RestfulWaters)
-ds_list_add(roughEventList, SeaSickPirates, ManOverboard, SeaSickPirates, MastDamaged)
+ds_list_add(stillEventList, RottenPlanks, CrazyPirateMaker, SpoiledFood, RestfulWaters, SwitchWeather)
+ds_list_add(roughEventList, SeaSickPirates, ManOverboard, SeaSickPirates, MastDamaged, SwitchWeather)
 //NORMAL EVENT LIST PHASED OUT!!!
 
 
-ds_list_add(eventList[0], Shortcut, BirdsArrive, Stowaway, SupplyBoxArrive, RaftPirate, FloatingBarrel, FloatingBarrel, PirateShipArrive, TradingPostArrive, PirateShipArrive, PlagueShip, MerchantArrive)
-ds_list_add(eventList[1], FloatingBarrel, MermaidRocks, TropicalFishArrive, BugsAttack, StrangeAnimal, TropicalHeat, FrogsArrive, BirdsArrive, DolphinsArrive, SpoiledFood, RottenPlanks, BirdsArrive, MerchantArrive)
-ds_list_add(eventList[2], Shortcut, FloatingBarrel, RaftPirate, PirateShipArrive, Stowaway, ScavengersArrive, DamagedShip, ThickFogArrive, RuinsArrive, FloatingDebris, FloatingDebris, MerchantArrive)
-ds_list_add(eventList[3], ThickFogArrive, MysteryFogArrive, FloatingLights, BlackSpotArrives, FloatingLights, FloatingBarrel, HowlingWinds, SkelRaftPirate, SpoiledFood, MerchantArrive, SkeletonsArrive)
-ds_list_add(eventList[4], DolphinsArrive)
-ds_list_add(eventList[5], DolphinsArrive)
+ds_list_add(eventList[0], Shortcut, BirdsArrive, Stowaway, SupplyBoxArrive, RaftPirate, FloatingBarrel, TradingPostArrive, PirateShipArrive, PlagueShip, MerchantArrive)
+ds_list_add(eventList[1], MermaidRocks, TropicalFishArrive, BugsAttack, StrangeAnimal, FrogsArrive, BirdsArrive, DolphinsArrive, SpoiledFood, RottenPlanks, MerchantArrive)
+ds_list_add(eventList[2], Shortcut, FloatingBarrel, RaftPirate, PirateShipArrive, ScavengersArrive, DamagedShip, ThickFogArrive, RuinsArrive, FloatingDebris, MerchantArrive)
+ds_list_add(eventList[3], ThickFogArrive, FloatingLights, BlackSpotArrives, FloatingBarrel, HowlingWinds, SkelRaftPirate, SpoiledFood, SkeletonsArrive, PlagueShip, BugsAttack)
+ds_list_add(eventList[4], Shortcut, DolphinsArrive, IntenseHeat, BoilingWater, BirdsArrive, MiningRockArrive, SmokeyWater, SharpRock, RottenPlanks, SwitchWeather, LavaShipArrive)
+ds_list_add(eventList[5], StrangeAnimal, MermaidRocks, FloatingBarrel, DamagedShip, SerpentBlock)
 ds_list_add(eventList[6], DolphinsArrive)
 
 specialEventMap = ds_map_create()
@@ -55,9 +57,9 @@ ds_list_add(eventListPort[0], FoundItems, RefreshmentStand, Entertainers)
 ds_list_add(eventListPort[1], HostileLocals, FruitBaskets, RefreshmentStand)
 ds_list_add(eventListPort[2], CargoStolen, PortFight, PoorLanding)
 ds_list_add(eventListPort[3], ScaryLocals, SkeletalArmArrives, SkeletonDrink)
-ds_list_add(eventListPort[4], PoorLanding)
+ds_list_add(eventListPort[4], noone)
 ds_list_add(eventListPort[5], WildAnimals)
-ds_list_add(eventListPort[6], Entertainers, HostileLocals)
+ds_list_add(eventListPort[6], noone)
 
 
 //Group lists
@@ -74,7 +76,7 @@ enemySeenList[0] = PirateShipArrive
 enemySeenList[1] = FrogsArrive
 enemySeenList[2] = ScavengersArrive
 enemySeenList[3] = SkeletonsArrive
-enemySeenList[4] = PirateShipArrive
+enemySeenList[4] = noone
 enemySeenList[5] = PirateShipArrive
 enemySeenList[6] = PirateShipArrive
 

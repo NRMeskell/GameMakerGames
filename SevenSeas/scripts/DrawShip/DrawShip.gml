@@ -57,7 +57,8 @@ function DrawShip(argument0, argument1, argument2, argument3, argument4, argumen
 			event_user(1)
 	}
 
-	DrawWithLighting(argument6, Ship.animate/(2+global.inPort), getRotPosX(xPos, yPos, myFlagX, myFlagY, rotation), getRotPosY(xPos, yPos, myFlagX, myFlagY, rotation), rotation, merge_color(argument5, merge_color(c_white, Clock.cloudColor, 0.6), 0.5), 1, argument8)
+	DrawWithLighting(argument6, Ship.animate/(2+global.inPort), getRotPosX(xPos, yPos, myFlagX, myFlagY - 10, rotation)+1, getRotPosY(xPos, yPos, myFlagX, myFlagY-10, rotation), 0, merge_color(argument5, merge_color(c_white, Clock.cloudColor, 0.6), 0.5), 1, argument8)
+	DrawWithLighting(FlagPostSpr, Ship.animate/(2+global.inPort), getRotPosX(xPos, yPos, myFlagX, myFlagY, rotation), getRotPosY(xPos, yPos, myFlagX, myFlagY, rotation), rotation, merge_color(argument5, merge_color(c_white, Clock.cloudColor, 0.6), 0.5), 1, argument8)
 	DrawWithLighting(argument0, argument1, xPos, yPos, rotation, merge_color(argument5, merge_color(c_white, Clock.cloudColor, 0.6), 0.5), 1, argument8)
 	
 	for(var i=0; i<array_length(myLightX); i++){

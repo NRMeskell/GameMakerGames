@@ -12,5 +12,11 @@ with RealAttack{
 		hasEnemyAttack = true
 }
 
+if !hasPlayerAttack
+	Pirate.stunned = false
+
+if !hasEnemyAttack
+	Enemy.stunned = false
+
 event_user(3)
 

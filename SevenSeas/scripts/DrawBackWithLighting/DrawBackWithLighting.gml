@@ -20,13 +20,13 @@ function DrawBackWithLighting(argument0, argument1, argument2, argument3, argume
 	draw_blue = (0.5*colour_get_red(color)/255) + 0.5
 
 	//draw pre-made surface
-	if (!surface_exists(global.backSurf[myLayer]) or (sprite != global.backDrawing[myLayer]) or irandom(room_speed/8) == 0){
-	    global.backDrawing[myLayer] = sprite
+	if (!surface_exists(global.backSurf) or (sprite != global.backDrawing) or irandom(room_speed/8) == 0){
+	    global.backDrawing = sprite
     
-	    if !surface_exists(global.backSurf[myLayer])
-	        global.backSurf[myLayer]= surface_create(room_width, room_height)
+	    if !surface_exists(global.backSurf)
+	        global.backSurf= surface_create(room_width, room_height)
     
-	    surface_set_target(global.backSurf[myLayer])
+	    surface_set_target(global.backSurf)
 	    draw_set_blend_mode(bm_subtract)
 	    draw_rectangle(0, 0, room_width, room_height, false)
 	    draw_set_blend_mode(bm_normal)
@@ -111,6 +111,6 @@ function DrawBackWithLighting(argument0, argument1, argument2, argument3, argume
 	    surface_reset_target()
 	    }
 
-	if surface_exists(global.backSurf[myLayer])
-	    draw_surface(global.backSurf[myLayer], 0, 0)
+	if surface_exists(global.backSurf)
+	    draw_surface(global.backSurf, 0, 0)
 }

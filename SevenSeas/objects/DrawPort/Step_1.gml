@@ -1,6 +1,6 @@
 /// @description Create Light Source
 
-for(i=0; i<array_length_1d(myLight); i++){
+for(var i=0; i<array_length_1d(myLight); i++){
     if x!=-100// and SunLight.volume < myLightOn
         {
         if myLight[i] == noone or !instance_exists(myLight[i]){// and (global.timeCycle > global.timeCycleLength/2){

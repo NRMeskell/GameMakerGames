@@ -25,6 +25,8 @@ buttonNames[6] = "loot the wreckage"
 buttonNames[7] = "hunt among the rocks"
 buttonNames[8] = "wander into desert"
 buttonNames[9] = "raft up the river"
+buttonNames[10] = "flip over lava rocks"
+buttonNames[11] = "approach the tikis"
 
 
 myFire = audio_play_sound(CampFireSnd, 0, true)

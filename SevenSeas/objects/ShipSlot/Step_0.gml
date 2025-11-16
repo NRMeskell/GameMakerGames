@@ -18,7 +18,10 @@ else
         image_index = 0
     }
     
-if occupied = true 
-    if myThing.selected = true
-        image_index = 1
+if occupied = true {
+    if myThing.selected = true{
+        if !damaged image_index = 1
+		else image_index = 12
+	}
+}
 

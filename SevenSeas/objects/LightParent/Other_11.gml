@@ -1,7 +1,7 @@
 /// @description Normalize Light Amounts
-oldRed = red
-oldGreen = green
-oldBlue = blue
+var oldRed = red
+var oldGreen = green
+var oldBlue = blue
 
 red = (red)/sqrt(oldRed + oldGreen + oldBlue)
 green = (green)/sqrt(oldRed + oldGreen + oldBlue)

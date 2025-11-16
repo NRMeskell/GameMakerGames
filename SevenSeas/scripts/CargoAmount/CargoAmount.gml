@@ -7,7 +7,7 @@ function CargoAmount(argument0) {
 	for(tempCargo=0; tempCargo < instance_number(Cargo); tempCargo++)
 	    {
 	    myCurrentCheckCargo =  instance_find(Cargo, tempCargo)
-	    if argument0 == -1 or myCurrentCheckCargo.cargoType == argument0
+	    if (argument0 == -1 or myCurrentCheckCargo.cargoType == argument0) and !myCurrentCheckCargo.mySlot.damaged
 	        cargoStored += myCurrentCheckCargo.cargoAmount 
 	    }
     

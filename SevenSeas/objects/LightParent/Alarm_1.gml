@@ -1,6 +1,6 @@
 /// @description flickering
 
-
+var flicker;
 flicker[0] = 3/4
 flicker[1] = 5/4
 flicker[2] = 7/8

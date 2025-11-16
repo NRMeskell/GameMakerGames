@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":3.744,
+  "duration":3.7440135,
   "name":"RaiseDeadSnd",
   "parent":{
     "name":"EnemyAttacks",

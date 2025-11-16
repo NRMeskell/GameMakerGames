@@ -14,7 +14,6 @@ animationHeight = 2
 animationWidth = 10
 image_yscale = 1
 
-endRound = true
 actionType = "melee"
 
 x = Ship.drawX + animationX + irandom_range(-animationWidth,animationWidth)

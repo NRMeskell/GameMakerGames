@@ -12,6 +12,7 @@ function SaveLandingSpots(argument0) {
 		ini_write_real("Landing " +string(n), "checkY", myLanding.checkY)
 		ini_write_real("Landing " +string(n), "visited", myLanding.visited)
 		ini_write_real("Landing " +string(n), "myIndex", myLanding.myIndex)
+		ini_write_string("Landing " +string(n), "mySeaType", myLanding.myIslandType)
 		
 		if MapShip.targetPort.id == myLanding.id{
 	        myTargetNumber = n

@@ -70,6 +70,10 @@ damageScaler[? BleedingShotAttack] = 3
 damageMin[? ParrotSquawkAttack] = 0.8
 damageMax[? ParrotSquawkAttack] = 1.2
 damageScaler[? ParrotSquawkAttack] = 3
+//deafening squawk
+damageMin[? PterryAttackAttack] = 0
+damageMax[? PterryAttackAttack] = 0
+damageScaler[? PterryAttackAttack] = 1
 
 
 //Basic Cannon

@@ -1,6 +1,6 @@
 /// @description Wait for turn and refresh stuff
 
-if instance_exists(Event) or ds_list_size(global.notificationList) > 0{
+if global.eventOpen or ds_list_size(global.notificationList) > 0{
     alarm[2] = 20
     exit
 }

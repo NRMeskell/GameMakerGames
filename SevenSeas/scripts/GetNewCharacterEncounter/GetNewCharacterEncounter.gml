@@ -6,6 +6,7 @@ function GetNewCharacterEncounter() {
 	    if !global.inPort
 	        {
 	        with CharacterParent{
+				event_user(0)
 	            if ds_list_find_index(locations, global.seaType) != -1 and ds_list_size(myEvents) > 0 and myAlarm == 0{
 	                ds_list_add(other.chars, id)
 	                }
@@ -20,9 +21,11 @@ function GetNewCharacterEncounter() {
 	        }
 	    else
 	        {
-	        with CharacterParent
+	        with CharacterParent{
+				event_user(0)
 	            if ds_list_find_index(locations, global.seaType) != -1 and ds_list_size(myPortEvents) > 0
 	                ds_list_add(other.chars, id)
+			}
         
 	        if ds_list_size(chars) > 0
 	            EncounterCharacter(ds_list_find_value(chars, irandom(ds_list_size(chars)-1)))

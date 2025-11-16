@@ -20,7 +20,7 @@ function GetRandomLoot(argument0, argument1, argument2) {
 	    if randomVal < 0
 	        {
 			itemLevel = irandom(global.seaLevel div 2)
-	        type = choose(2,2,2,2,1,1,1,3,3,0,4)
+	        type = choose(2,2,2,2,1,1,1,3,3,0,0,4)
 	        if type == 0 
 	            newItem = GenerateHatItem(min(0, itemLevel))
 	        else if type == 1
@@ -89,17 +89,19 @@ function GetRandomLoot(argument0, argument1, argument2) {
 }
 
 function getItemText(argument0, argument1){
-	itemNames = ""
+	var itemNames = ""
 	for(var i=0; i<ds_list_size(argument0); i++){
-		itemType = ds_list_find_value(argument0, i) + 1
+		var itemType = ds_list_find_value(argument0, i) + 1
 		
 		var newItem = ""
-		if itemType <= 7
-			newItem = argument1[itemType]
-		else if itemType == 8
-			newItem = "pearls"
-		else if itemType == 9
-			newItem = "cursed gems"
+		newItem = argument1[itemType]
+		
+		if newItem == "" {
+			if itemType == 0 // is item
+				newItem = "treasure"
+			else
+				newItem = ItemRunner.cargoName[itemType]
+		}
 		
 		if i < ds_list_size(argument0)-2{
 			itemNames += newItem + ", "

@@ -1,7 +1,9 @@
 function SearchSupplies(){
 	/// @description Search For supplies
 	global.moraleBoost = "supplies"
-	
+	var loot;
+	var title;
+	var text, lootText;
 	if myPortType = 0
 	    {
 	    loot = GetRandomLoot(max(0, 3  + irandom_range(-1,0)), "supplies", [2,2,2,3,3,3,4,4])
@@ -58,9 +60,23 @@ function SearchSupplies(){
 	else if myPortType = 9
 	    {
 		title = "mystic river"
-		loot = GetRandomLoot(irandom_range(0, 2), "supplies", [2,3,4])
+		loot = GetRandomLoot(irandom_range(1, 3), "supplies", [2,3,4])
 		lootText = getItemText(loot, ["", "", "", "smooth rocks", "twisted branches", "dead birds", "", ""])
 		text = "along the bank of the river, the crew find " + lootText + "."
+		}
+	else if myPortType = 10
+	    {
+		title = "Lava rocks"
+		loot = GetRandomLoot(irandom_range(0, 2), "supplies", [0,1,2,2,3,4,9])
+		lootText = getItemText(loot, ["", "gold nuggets", "warm jems", "sharp rocks", "twisted branches", "stale nuts", "", ""])
+		text = "Under the glassy obsidian, the crew find " + lootText + "."
+		}
+	else if myPortType = 11
+	    {
+		title = "Misty Rocks"
+		loot = GetRandomLoot(irandom_range(1, 3), "supplies", [2,2,2,3,3,4])
+		lootText = getItemText(loot, ["", "", "", "large rocks", "twisted branches", "small berries", "", ""])
+		text = "Along the rocky, misty shoreline, the crew find " + lootText + "."
 		}
 		
 	ds_list_add(global.notificationList, title, text)

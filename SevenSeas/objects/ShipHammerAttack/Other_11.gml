@@ -2,3 +2,4 @@
 
 SpreadDamage(crewTarget, damage);
 targetPirate.stunned = true
+endRound = true

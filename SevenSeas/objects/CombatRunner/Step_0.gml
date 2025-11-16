@@ -6,7 +6,7 @@ event_user(6)
 
 overEndTurnButton = point_in_rectangle(window_view_mouse_get_x(0), window_view_mouse_get_y(0), startX - sprite_get_width(EndTurnSpr)/2, startY - yGap - sprite_get_height(EndTurnSpr)/2, startX + sprite_get_width(EndTurnSpr)/3, startY - yGap + sprite_get_height(EndTurnSpr)/2)
 
-if playerTurn and !instance_exists(Event) and ds_list_size(global.notificationList) == 0
+if playerTurn and !global.eventOpen and ds_list_size(global.notificationList) == 0
     {
     if mouse_check_button_pressed(mb_left) and (overEndTurnButton and (canEndTurn or showSkipButton))
         {
@@ -56,8 +56,7 @@ if (myHealth < 1 or instance_number(Enemy) < 1) and alarm[1] == -1
 
 if alarm[1] != -1
     {
-    sinkY += 200/(room_speed*5)
-    sinkRotate += 30/(room_speed*5)
+    event_user(4)
     }
 
 ///Health Update
@@ -71,7 +70,7 @@ if abs(healthDiff - myHealth) > 1
         updateHealthDiff = true
         
     if updateHealthDiff
-        healthDiff += sign(myHealth - healthDiff)
+        healthDiff += sign(myHealth - healthDiff)*maxHealth/60
     }
 else
     {

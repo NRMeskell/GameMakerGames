@@ -6,7 +6,7 @@ function HasStored(argument0, argument1) {
 	    {
 	    checkCargo =  instance_find(Cargo, i)
 
-	    if checkCargo.cargoType = argument0
+	    if checkCargo.cargoType = argument0 and !checkCargo.mySlot.damaged
 	        {
 	        needsStored -= checkCargo.cargoAmount 
 	        }

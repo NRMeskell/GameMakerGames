@@ -13,7 +13,7 @@ with ActionParent
         other.canMoveCombat = false
 
 //Move Slot
-if selected = true and !instance_exists(Event) and ds_list_size(global.notificationList) < 1 and __view_get( e__VW.XView, 0 ) = 0
+if selected = true and !global.eventOpen and ds_list_size(global.notificationList) < 1 and __view_get( e__VW.XView, 0 ) = 0
     {   
     if mouse_check_button_pressed(mb_left)
         with ShipSlot
@@ -145,7 +145,7 @@ if abs(healthDiff - myHealth) > 1
         updateHealthDiff = true
         
     if updateHealthDiff
-        healthDiff += sign(myHealth - healthDiff)
+        healthDiff += sign(myHealth - healthDiff)*maxHealth/60
     }
 else
     {
@@ -181,7 +181,7 @@ if morale < -3
 if morale <= moraleMax[stars]
 	leveling = false
 	
-if morale > moraleMax[stars] and !instance_exists(PirateLeveler) and !instance_exists(Event) and !instance_exists(CombatRunner) {
+if morale > moraleMax[stars] and !instance_exists(PirateLeveler) and !global.eventOpen and !instance_exists(CombatRunner) {
 	if stars < 3 and myAction[stars] != LostEyeAction and !leveling
 		PirateLevelUp(true, true)
 	else if HasStored(5, 1){

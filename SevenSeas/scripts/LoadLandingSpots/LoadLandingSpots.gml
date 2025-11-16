@@ -11,9 +11,22 @@ function LoadLandingSpots(argument0) {
 	    myLanding.checkY = ini_read_real("Landing " +  string(bn), "checkY", myLanding.checkY)
 	    myLanding.visited = ini_read_real("Landing " +  string(bn), "visited", myLanding.visited)
 		myLanding.myIndex = ini_read_real("Landing " +string(bn), "myIndex", myLanding.myIndex)
-	    if myLanding.visited or myLanding.myIndex == 1
+		myLanding.myIslandType = ini_read_string("Landing " +string(bn), "mySeaType", myLanding.myIslandType)
+		if ds_map_find_value(MapCreator.released, myLanding.myIslandType){
+			myLanding.released = true
+		}else
+			myLanding.released = false
+		
+		
+	    if myLanding.visited or myLanding.myIndex == 1{
 	        myLanding.image_index = myLanding.myIndex
-	    }
+	    }else{
+			var posTypes = MapCreator.spotTypes[? myLanding.myIslandType]
+			goodType = (ds_list_find_index(posTypes, myLanding.myIndex) != -1)
+				
+			if !goodType { myLanding.myIndex = ds_list_find_value(posTypes, irandom(2)) }
+		}
+	}
 
 	with MapShip{
 	    targetPort = instance_find(LandingSpot, ini_read_real("Ship", "Target", 0))

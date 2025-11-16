@@ -1,7 +1,7 @@
 /// @description Do Time Cycle
 
 if room == GameRoom{
-    if eventTimeLeft> 0 or (instance_exists(Defeat) or instance_exists(ConquerPannel) or instance_exists(PirateLeveler) or (ds_list_size(global.notificationList) > 0) or global.mapPause or (global.eventOpen) or (instance_exists(Store) and !global.inPort) or ds_list_size(ItemRunner.floatingItems) != 0 or instance_exists(CombatRunner))
+    if eventTimeLeft > 0 or (instance_exists(Defeat) or instance_exists(ConquerPannel) or instance_exists(PirateLeveler) or (ds_list_size(global.notificationList) > 0) or global.mapPause or (global.eventOpen) or (instance_exists(Store) and !global.inPort) or ds_list_size(ItemRunner.floatingItems) != 0 or instance_exists(CombatRunner))
         alarm[1] = 1
         
     if (alarm[1] <= 0 and MapShip.path_position < 1) or (global.inPort and global.portType == 1)

@@ -35,13 +35,11 @@ function DamagedShipSearch() {
 	    UpdateMorale(1, -1)
 	}
 	else{
-	    if irandom(1)
+	    if irandom(1) or global.seaType != global.seaNames[2]
 			ds_list_add(global.notificationList, "Nothing Found!", "The ship is too damaged to explore, and the crew returns empty-handed.")
 		else{
-			if global.seaType == global.seaNames[2]{
-				ds_list_add(global.notificationList, "TRAP!", "The damaged ship was bait, and a scavenger ship appears from behind a rock!")
-				instance_create(0,0,ScavengerShip)
-			}	
+			ds_list_add(global.notificationList, "TRAP!", "The damaged ship was bait, and a scavenger ship appears from behind a rock!")
+			instance_create(0,0,ScavengerShip)
 		}
 	}
 	with EventDrawer

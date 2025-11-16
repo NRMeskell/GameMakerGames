@@ -5,7 +5,7 @@ cloudNum[1] = 6
 cloudNum[2] = 18
 
 global.weather = 1
-weatherTimer = random_range(room_speed*60*2, room_speed*60*6)
+weatherTimer = 1//random_range(room_speed*60*2, room_speed*60*6)
 cloudNumber = cloudNum[1]
 
 ///Make Clouds

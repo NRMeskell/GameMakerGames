@@ -24,7 +24,7 @@ function LoadItem(argument0) {
 	    item.damage = real(itemVars[7])
 	    item.accuracy = real(itemVars[8])
 	    if itemVars[9] != "<undefined>"
-	        item.myAction = asset_get_type(itemVars[9])
+	        item.myAction = asset_get_index(itemVars[9])
         
 	    item.cost = real(itemVars[10])
 	    for(r=0; r<8; r++)

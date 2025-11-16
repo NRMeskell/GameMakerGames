@@ -12,10 +12,10 @@ windowWidth = windowHeight*(room_width/room_height)
 realWidths = [room_width, (windowWidth + room_width)/2, windowWidth]
 realHeights = [room_height, (windowHeight + room_height)/2, windowHeight]
 
-surface_resize(application_surface, realWidths[global.resolution], realHeights[global.resolution])
+//surface_resize(application_surface, realWidths[global.resolution], realHeights[global.resolution])
 
-view_wport[0] = realWidths[global.resolution];
-view_hport[0] = realHeights[global.resolution];
+view_wport[0] = realWidths[2];
+view_hport[0] = realHeights[2];
 view_xport[0] = 0
 view_yport[0] = 0
 camera_set_view_size(0, room_width, room_height)

@@ -1,10 +1,11 @@
 function LoseRandomCargo(argument0) {
 	//Lose Cargo
+	var numberCargoLost;
 	for(i=0; i < sprite_get_number(CargoSpr); i++)
 	    numberCargoLost[i] = 0
 
-	lostCargo = ""
-	lostCargoAmount = min(CargoAmount(-1), argument0)
+	var lostCargo = ""
+	var lostCargoAmount = min(CargoAmount(-1), argument0)
 
 	while lostCargoAmount > 0
 	    {
@@ -26,5 +27,5 @@ function LoseRandomCargo(argument0) {
 		}
 	}
     
-	return string_delete(lostCargo, string_length(lostCargo - 1), 2)
+	return string_delete(lostCargo, string_length(lostCargo)-1, 2)
 }

@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":4.822971,
+  "duration":4.8229704,
   "name":"DeathBellSnd",
   "parent":{
     "name":"menu",

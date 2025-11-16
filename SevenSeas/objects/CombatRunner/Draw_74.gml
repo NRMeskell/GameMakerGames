@@ -71,7 +71,7 @@ if playerTurn and __view_get( e__VW.XView, 0 ) = 0 and ds_list_size(global.notif
     drawOptionsY = 128
     drawOptionsDis = 40
     
-    if !instance_exists(Event){
+    if !global.eventOpen{
         for(var i=0; i<ds_list_size(possibleEnemyActions); i++){
 			overAction[i] = false
             draw_set_halign(fa_right)

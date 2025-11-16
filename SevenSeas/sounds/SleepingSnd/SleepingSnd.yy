@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":7.731633,
+  "duration":7.7316327,
   "name":"SleepingSnd",
   "parent":{
     "name":"Land",

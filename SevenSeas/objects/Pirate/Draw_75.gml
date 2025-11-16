@@ -195,8 +195,6 @@ for(i=0; i < array_length_1d(bonus); i++)
 //Draw Actions
 for(i=0; i<array_length_1d(myAction); i++)
     {
-    actionStartX = 32 + 16
-    actionStartY = 215 + 16
     if myAction[i] != noone
         {
         DrawAction(myAction[i], xWindow + actionStartX + 39*i, yWindow + actionStartY, 1)

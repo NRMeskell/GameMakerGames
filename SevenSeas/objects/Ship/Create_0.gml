@@ -61,7 +61,7 @@ landMap[? global.seaNames[0]] = PirateCoveLand
 landMap[? global.seaNames[1]] = TropicalIslandLand
 landMap[? global.seaNames[2]] = ShipwreckShoreLand
 landMap[? global.seaNames[3]] = SeaOfDeadLand
-landMap[? global.seaNames[4]] = PirateCoveLand
+landMap[? global.seaNames[4]] = VolcanicIslandLand
 landMap[? global.seaNames[5]] = PirateCoveLand
 landMap[? global.seaNames[6]] = PirateCoveLand
 
@@ -129,8 +129,6 @@ enemyRealRock = 0
 
 ///Menu Vars
 
-global.eventOpen = false
-
 myStatsSprDict[0] = 0
 myStatsSprDict[1] = 1
 myStatsSprDict[2] = 2
@@ -156,7 +154,7 @@ statsDistance = sprite_get_width(StatMenuSpr)/6 - (statsStartX - 20)/6
 flagSpr = 0
 animateFlag = 0
 
-drawX = room_width/2 - 5 + 26*instance_exists(Event)
+drawX = room_width/2 - 5
 drawY = room_height/2 + 50
 
 //image_speed = 0

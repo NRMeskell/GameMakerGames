@@ -17,14 +17,11 @@ actionType = "ship"
 
 moveSpeed = 2
 changeZones = true
-endRound = true
 
 event_user(0)
 
 x = myShipTarget.drawX + animationX
 y = myShipTarget.drawY + animationY
-
-endRound = true
 
 showDamage = false
 hasAnimation = true

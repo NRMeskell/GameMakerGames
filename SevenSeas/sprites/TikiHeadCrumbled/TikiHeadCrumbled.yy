@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"Old",
-    "path":"folders/Sprites/Backgrounds/Land/Camps/Old.yy",
+    "name":"VolcanicIslands",
+    "path":"folders/Sprites/Backgrounds/Land/Camps/VolcanicIslands.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

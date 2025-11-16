@@ -36,8 +36,8 @@ function SkeletonDrinkRefuse() {
 
 function SkeletonDrinkTake() {
 	if irandom(1){
-		ds_list_add(global.notificationList, "wonderful gift!", "The harbormaster gives you a considerate gift, and welcomes you into the port.")
-		GetRandomLoot(1, "Gift", [-1, 1, 6])
+		ds_list_add(global.notificationList, "generous gift!", "The harbormaster gives you a considerate gift, and welcomes you into the port.")
+		GetRandomLoot(1, "Gift", [-1, 1, 1, 6, 6])
 	}
 	else{
 		ds_list_add(global.notificationList, "removed head!", "the harbormaster's 'gift' was her own head! The crew are startled, but she seems very amused by the trick.")

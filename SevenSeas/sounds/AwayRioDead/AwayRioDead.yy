@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":0,
   "conversionMode":0,
-  "duration":175.03201,
+  "duration":46.734512,
   "name":"AwayRioDead",
   "parent":{
     "name":"SeaOfDead",

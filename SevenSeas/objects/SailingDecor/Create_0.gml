@@ -11,7 +11,7 @@ decorType[? global.seaNames[0]] = choose(0,1)
 decorType[? global.seaNames[1]] = choose(0,2)
 decorType[? global.seaNames[2]] = choose(1,3)
 decorType[? global.seaNames[3]] = choose(4,1)
-decorType[? global.seaNames[4]] = choose(0,1)
+decorType[? global.seaNames[4]] = choose(2,5)
 decorType[? global.seaNames[5]] = choose(0,1)
 decorType[? global.seaNames[6]] = choose(0,1)
 

@@ -2,3 +2,4 @@
 
 shipTarget.allowMeleeActions = false;
 shipTarget.allowRangedActions = false;
+endRound = true

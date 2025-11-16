@@ -1,7 +1,7 @@
 function FlagAllow() {
 	if irandom(2) > 0
 	    {
-	    ds_list_add(global.notificationList, "Horrible design!", "the flag is awful and the crew rejects the new design.")
+	    ds_list_add(global.notificationList, "Horrible design!", "The crew can't find anything anymore, and everyone's grumpy.")
     
 	    with myPirate
 	        UpdateMorale(-1, -1)
@@ -10,12 +10,8 @@ function FlagAllow() {
 	    }
 	else
 	    {
-	    ds_list_add(global.notificationList, "Amazing design!", "the new flag is well-made and the crew gladly fly under the new design!")
+	    ds_list_add(global.notificationList, "Amazing design!", "The deck is much cleaner, and some forgotten cargo is found!")
     
-	    with Pirate
-	        {
-	        UpdateMorale(1, -1)
-	        UpdateMorale(1, global.KEEN)
-	        }
+	    GetRandomLoot(1, "CARGO", [0, 0, 0, 1, 2, 3, 4, 4, 5, 6])
 	    }
 }

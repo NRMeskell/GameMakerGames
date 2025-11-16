@@ -55,7 +55,7 @@ global.pirateSelected = false
 with Pirate if selected
     global.pirateSelected = true
 
-instantClose = instance_exists(Event) or global.pirateSelected or ds_list_size(global.notificationList) > 0 or instance_exists(Store) or ds_list_size(ItemRunner.floatingItems) > 0 or instance_exists(PirateLeveler)
+instantClose = global.eventOpen or global.pirateSelected or ds_list_size(global.notificationList) > 0 or instance_exists(Store) or ds_list_size(ItemRunner.floatingItems) > 0 or instance_exists(PirateLeveler)
         
 if drawMiniHeight > 0
     depth = -1000

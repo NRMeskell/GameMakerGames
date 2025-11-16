@@ -43,7 +43,7 @@ audio_sound_gain(OasisSnd, 0.7*gameVolumeBase*global.worldVolume*global.masterVo
 audio_sound_gain(SeaLions, 0.4*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
 audio_sound_gain(DesertFlySnd, 0.3*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
 audio_sound_gain(CrowRiverSnd, 0.6*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
-
+audio_sound_gain(FireBurstSnd, 0.8*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
 
 //event Sounds
 audio_sound_gain(CrashingRocksSnd, 1*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
@@ -55,8 +55,8 @@ audio_sound_gain(BugsBuzzingSnd, 1.2*gameVolumeBase*global.worldVolume*global.ma
 audio_sound_gain(ScratchingSnd, 0.5*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
 audio_sound_gain(SeaLionsAngrySnd, 0.15*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
 audio_sound_gain(HawkCrySnd, 0.3*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
-
-
+audio_sound_gain(SoulFreeSnd, 0.8*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
+audio_sound_gain(CurseLiftedSnd, 0.6*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
 
 //game sounds
 audio_sound_gain(SwordSnd, 0.5*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
@@ -77,6 +77,7 @@ audio_sound_gain(BloodySnd, 0.4*gameVolumeBase*global.worldVolume*global.masterV
 audio_sound_gain(TargetedSnd, 0.4*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
 audio_sound_gain(HealDeadSnd, 0.5*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
 audio_sound_gain(RaiseDeadSnd, 0.5*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
+audio_sound_gain(KnockOfDeathSnd, 0.6*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
 
 audio_sound_gain(CannonSnd, 0.4*gameVolumeBase*global.worldVolume*global.masterVolume, 0)
 audio_sound_gain(BroadsideSnd, 0.4*gameVolumeBase*global.worldVolume*global.worldVolume*global.masterVolume, 0)

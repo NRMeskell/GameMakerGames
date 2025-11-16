@@ -19,11 +19,11 @@ function Surgery() {
 		
 	    buttonNumber = 2
 		if eventValue.object_index == Ship{
-			planksNeeded = max(1, min(CargoAmount(3), (Ship.maxHealth - Ship.myHealth) div 10 + 1))
+			planksNeeded = PlanksNeededForRepairs()
 			
 		    ds_list_add(buttonStats, 0, 3)
 		    ds_list_add(buttonRequires, 0, 0)
-		    ds_list_add(buttonCosts, 0, planksNeeded)
+		    ds_list_add(buttonCosts, 0, max(1, planksNeeded))
 			ds_list_add(buttons, RepairIgnore, RepairGive)
 			ds_list_add(buttonText, "Continue sailing", "Use boards to make repairs")	
 			captionText = "Repairs!"
@@ -53,7 +53,7 @@ function RepairIgnore(){
 }
 
 function RepairGive(){
-	UpdateHealth(Ship, (Ship.maxHealth div 10) * planksNeeded)
+	UpdateHealth(Ship, planksNeeded*(Ship.maxHealth div 10))
 	
 	ds_list_add(global.notificationList, "Ship Repaired", string(planksNeeded) + " plank(s) were used to patch up the damaged ship.")
 	

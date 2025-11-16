@@ -2,7 +2,7 @@
 
 event_user(0)
 spriteNumber = 15
-rechargeTime = 5
+rechargeTime = 8
 actionType = "ship"
 
 myAttack = ShipOutmaneuver

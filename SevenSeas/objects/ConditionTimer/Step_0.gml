@@ -8,5 +8,6 @@ if global.doTime and !global.inPort
 if timer <= 0
     {
     script_execute(condition, myArgument)
+	instance_destroy()
     }
 

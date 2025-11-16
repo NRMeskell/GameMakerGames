@@ -1,6 +1,6 @@
 /// @description Destroy if event exists
 
-if instance_exists(Event)
+if global.eventOpen
     {
     if Event.id != id
         instance_destroy()

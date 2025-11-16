@@ -1,7 +1,8 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+
 function LoseLimb(argument0){
-	var newInjury;
+	var newInjury, lostLimb = false;
 	if argument0 == undefined
 		newInjury = choose("hand", "leg", "eye")
 	else 
@@ -10,85 +11,92 @@ function LoseLimb(argument0){
 	if myHealth < 1
 		exit;
 
-	if global.moraleBoost != "meal" and myPet.itemPower != "full health"{
+	if myPet.itemPower != "full health"{
 
-	global.moraleBoost = "injury"
+		global.moraleBoost = "injury"
 
-	UpdateMorale(-2, -1)
+		UpdateMorale(-2, -1)
 
-	if newInjury = "hand"
-	    {
-		// Default to right hand
-		var loseRightHand;
-		// Force switch to left hand 
-		if (myLeftHand.itemName == "none" and myRightHand.itemName == "none")
-			loseRightHand = choose(false, true)
-		else if (myLeftHand.itemName == "none" and myRightHand.itemName != "none")
-			loseRightHand = false
-		else if (myLeftHand.itemName != "none" and myRightHand.itemName == "none")
-			loseRightHand = true
-		else
-			loseRightHand = choose(false, true)
+		if newInjury = "hand"
+		    {
+			// Default to right hand
+			var loseRightHand;
+			// Force switch to left hand 
+			if (myLeftHand.itemName == "none" and myRightHand.itemName == "none")
+				loseRightHand = choose(false, true)
+			else if (myLeftHand.itemName == "none")
+				loseRightHand = false
+			else if (myRightHand.itemName == "none")
+				loseRightHand = true
+			else
+				loseRightHand = (choose(false, true) and !handLostRight) or handLostLeft
 		
-		if loseRightHand
-	        {
-	        loseItem = myRightHand
-			UnequipItem(loseItem)
-		    with loseItem
+			if loseRightHand and !handLostRight
 		        {
-		        while ds_list_find_index(ItemRunner.floatingItems, id) != -1
-		            ds_list_delete(ItemRunner.floatingItems, ds_list_find_index(ItemRunner.floatingItems, id))
-		            instance_destroy()
+			    loseItem = myRightHand
+				UnequipItem(loseItem)
+				with loseItem
+				    {
+				    while ds_list_find_index(ItemRunner.floatingItems, id) != -1
+				        ds_list_delete(ItemRunner.floatingItems, ds_list_find_index(ItemRunner.floatingItems, id))
+				        instance_destroy()
+				    }
+				myRightHand = instance_create(0,0,ItemParent)
+			    handLostRight = true
+				lostLimb = true
 		        }
-			myRightHand = instance_create(0,0,ItemParent)
-	        handLostRight = true
-	        }
-	    else
-	        {
-	        loseItem = myLeftHand
-			UnequipItem(loseItem)
-		    with loseItem
+		    else if !handLostLeft
 		        {
-		        while ds_list_find_index(ItemRunner.floatingItems, id) != -1
-		            ds_list_delete(ItemRunner.floatingItems, ds_list_find_index(ItemRunner.floatingItems, id))
-		            instance_destroy()
+		        loseItem = myLeftHand
+				UnequipItem(loseItem)
+			    with loseItem
+			        {
+			        while ds_list_find_index(ItemRunner.floatingItems, id) != -1
+			            ds_list_delete(ItemRunner.floatingItems, ds_list_find_index(ItemRunner.floatingItems, id))
+			            instance_destroy()
+			        }
+				myLeftHand = instance_create(0,0,ItemParent)
+		        handLostLeft = true
+				lostLimb = false
 		        }
-			myLeftHand = instance_create(0,0,ItemParent)
-	        handLostLeft = true
-	        }
-	    }
+		    }
     
-	if newInjury = "leg"
-	    {
-	    if choose(true, false)
-	        {
-	        if !legLostRight 
-	            legsLost ++
-	        legLostRight = true
-	        }
-	    else
-	        {
-	        if !legLostLeft 
-	            legsLost ++
-	        legLostLeft = true
-	        }
-	    }
+		if newInjury = "leg" {
+		    if (choose(true, false) and !legLostRight) or (legLostLeft){
+		        if !legLostRight {
+		            legsLost ++
+					lostLimb = true
+				}
+		        legLostRight = true
+		    }
+		    else {
+		        if !legLostLeft {
+					lostLimb = true
+		            legsLost ++
+				}
+		        legLostLeft = true
+		    }
+		}
     
-	if newInjury = "eye"
-	    {
-	    if choose(true, false)
-	        {
-	        if !eyeLostRight 
-	            eyesLost ++
-	        eyeLostRight = true
-	        }
-	    else
-	        {
-	        if !eyeLostLeft 
-	            eyesLost ++
-	        eyeLostLeft = true
-	        }
-	    }
+		if newInjury = "eye" {
+		    if (choose(true, false) and !eyeLostRight) or (eyeLostLeft) {
+		        if !eyeLostRight {
+					lostLimb = true
+		            eyesLost ++
+				}
+		        eyeLostRight = true
+		    }
+		    else {
+		        if !eyeLostLeft {
+					lostLimb = true
+		            eyesLost ++
+				}
+		        eyeLostLeft = true
+		    }
+		}
+		
+		if lostLimb
+			ds_list_add(global.notificationList, "Lost Limb!", name + " lost their " + newInjury + "!")
 	}
 
 	if surface_exists(fullPirateSurface)
@@ -97,6 +105,7 @@ function LoseLimb(argument0){
 		MakePirateSurface(smallPirateSurface, drawPictureRealx, drawPictureRealy)
 	if surface_exists(tagPirateSurface)
 		MakePirateSurface(tagPirateSurface, drawTagSpriteX, drawTagSpriteY)
+
 
 	return newInjury
 }

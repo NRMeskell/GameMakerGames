@@ -1,6 +1,5 @@
-/// @description Global Menu Open
+/// @description Global Menu 
 
-global.eventOpen = instance_exists(Event)
 global.pirateOpen = false
 
 with Pirate

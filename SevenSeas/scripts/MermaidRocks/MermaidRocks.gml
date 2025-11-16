@@ -17,9 +17,4 @@ function MermaidRocks() {
 	    myShip = instance_create(-1000,0,MermaidEvent)
 	    }
 
-
-
-
-
-
 }

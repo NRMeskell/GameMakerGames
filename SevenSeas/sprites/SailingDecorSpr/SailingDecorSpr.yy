@@ -3,7 +3,7 @@
   "%Name":"SailingDecorSpr",
   "bboxMode":0,
   "bbox_bottom":134,
-  "bbox_left":9,
+  "bbox_left":0,
   "bbox_right":266,
   "bbox_top":0,
   "collisionKind":1,
@@ -17,6 +17,9 @@
     {"$GMSpriteFrame":"","%Name":"7126ded8-535b-43a1-a2f0-028d8cc4a479","name":"7126ded8-535b-43a1-a2f0-028d8cc4a479","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"31ac5b6c-6725-44fa-b9f1-40b65371bd8c","name":"31ac5b6c-6725-44fa-b9f1-40b65371bd8c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"a7dd3cb6-227f-4a27-951d-7a81eb3a3806","name":"a7dd3cb6-227f-4a27-951d-7a81eb3a3806","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"4f4e3be2-3ee2-4e8a-8ca4-a56d99b8b6e4","name":"4f4e3be2-3ee2-4e8a-8ca4-a56d99b8b6e4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"d0521bfc-9a16-4e15-bb19-149b5b7afc4b","name":"d0521bfc-9a16-4e15-bb19-149b5b7afc4b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"f48d158e-81c0-492d-a37f-55e456daddb3","name":"f48d158e-81c0-492d-a37f-55e456daddb3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -53,7 +56,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":5.0,
+    "length":8.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -87,6 +90,15 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a7dd3cb6-227f-4a27-951d-7a81eb3a3806","path":"sprites/SailingDecorSpr/SailingDecorSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"e7ed7b26-eb36-441f-95f0-9b5e24fe195e","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4f4e3be2-3ee2-4e8a-8ca4-a56d99b8b6e4","path":"sprites/SailingDecorSpr/SailingDecorSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"efc04c5f-ca9d-4f67-9907-cb95a2000666","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d0521bfc-9a16-4e15-bb19-149b5b7afc4b","path":"sprites/SailingDecorSpr/SailingDecorSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"136d63cd-b761-4821-a42d-ff30e2e98913","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f48d158e-81c0-492d-a37f-55e456daddb3","path":"sprites/SailingDecorSpr/SailingDecorSpr.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"e8379ede-d4da-49ef-8c00-dbd85abfcff5","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

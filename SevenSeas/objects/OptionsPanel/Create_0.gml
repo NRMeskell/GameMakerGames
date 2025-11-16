@@ -62,8 +62,8 @@ for (var k = ds_map_find_first(optionY); !is_undefined(k); k = ds_map_find_next(
 ///OPTION OPTIONS
 optionText = ds_map_create()
 
-optionText[? "sail"] = ["CALM", "QUICK", "RAPID"]
-optionText[? "combat"] = ["CALM", "QUICK", "RAPID"]
+optionText[? "sail"] = ["CALM", "NORMAL", "QUICK"]
+optionText[? "combat"] = ["CALM", "NORMAL", "QUICK"]
 optionText[? "camp"] = ["ANIMATED", "SKIPPED"]
 
 optionText[? "enemy"] = ["SIMPLE", "NORMAL", "CHEATING"]

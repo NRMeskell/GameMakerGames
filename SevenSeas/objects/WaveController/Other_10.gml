@@ -11,15 +11,23 @@ else if !surface_exists(waterSurface)
 surface_set_target(waterSurface)
 draw_clear_alpha(c_black, 0)
 
-if room == GameRoom
+if room == GameRoom{
 	waveColor = oceanColor[? global.seaType]
+	if global.seaType == global.seaNames[4]{
+		waveColor = merge_color(oceanColor[? global.seaNames[0]], oceanColor[? global.seaType], sqr((2*Volcano.myVar)/4))
+	}
+}
 
-if global.lighting < 2
-	var wave_color = make_color_hsv(colour_get_hue(waveColor), colour_get_saturation(waveColor), (color_get_value(waveColor)+colour_get_value(Clock.skyColor))/2)
-else
-	var wave_color = waveColor
+if global.lighting < 2{
+	var wave_top_color = make_color_hsv(colour_get_hue(waveColor), colour_get_saturation(waveColor), (color_get_value(waveColor)+colour_get_value(Clock.skyColor))/2)
+	var wave_bottom_color = make_color_hsv(colour_get_hue(oceanColor[? global.seaNames[0]]), colour_get_saturation(oceanColor[? global.seaNames[0]]), (color_get_value(oceanColor[? global.seaNames[0]])+colour_get_value(Clock.skyColor))/2)
+}
+else{
+	var wave_top_color = waveColor
+	var wave_bottom_color = oceanColor[? global.seaNames[0]]
+}
 
-var foam = merge_color(merge_color(c_white, Clock.skyColor, 0.5+0.3*(global.lighting != 2)), wave_color, max(0, 0.6-0.2*(global.lighting != 2)))
+var foam = merge_color(merge_color(c_white, Clock.skyColor, 0.5+0.3*(global.lighting != 2)), wave_top_color, max(0, 0.6-0.2*(global.lighting != 2)))
 	
 var tex = sprite_get_texture(WaveSpr, 0);
 var waveDis = texture_get_texel_width(tex)*20*0.8
@@ -31,14 +39,14 @@ var height;
 var angle;
 
 // draw wave
-draw_set_color(merge_color(wave_color, c_black, 0.5))
+draw_set_color(merge_color(wave_top_color, c_black, 0.5))
 for(var r=waveMin; r<=waveMax/wdw; r+=1){
 	height[r] = GetWaterLevel(id, r*wdw)
 	angle[r] = abs(power(GetWaterAngle(id, r*wdw), 2))/100;
 	
 	var startTex = (waveDis*textureNum) mod 1.0
-	draw_vertex_texture_color(r*wdw, 300, startTex, 1, wave_color, waveAlpha);
-	draw_vertex_texture_color(r*wdw, height[r] - (room_height-surfaceHeight), startTex, 0, wave_color, waveAlpha);
+	draw_vertex_texture_color(r*wdw, 300, startTex, 1, wave_bottom_color, waveAlpha);
+	draw_vertex_texture_color(r*wdw, height[r] - (room_height-surfaceHeight), startTex, 0, wave_top_color, waveAlpha);
 	if r < waveMax/wdw
 		textureNum ++
 }
@@ -52,7 +60,7 @@ for(var r=waveMin; r<=waveMax/wdw; r+=1){
 }
 draw_primitive_end();
 
-draw_set_color(merge_color(wave_color, c_black, 0.5))
+draw_set_color(merge_color(wave_top_color, c_black, 0.5))
 // draw line
 for(var r=waveMin; r<waveMax/wdw; r+=1){
 	draw_line_width(r*wdw-1, height[r] - (room_height-surfaceHeight)-1, (r+1)*wdw-1, height[r+1] - (room_height-surfaceHeight)-1, 1);

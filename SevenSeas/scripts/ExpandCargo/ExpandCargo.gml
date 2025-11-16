@@ -8,10 +8,10 @@ function ExpandCargo(argument0) {
 	    myPirate = argument0
 		if instance_exists(Cargo){
 			cargoType = instance_find(Cargo, irandom(instance_number(Cargo)-1)).cargoType
-			eventText = "I think I can split our " + ItemRunner.cargoName[cargoType] + ", and make a few new ones! Can I give it a go?"
+			eventText = "I think I can expand our " + ItemRunner.cargoName[cargoType] + ", and make a few new ones! Can I give it a go?"
 		}else{
 			cargoType = 4
-			eventText = "I think I can make a few " + ItemRunner.cargoName[cargoType] + " with a little creativity! Can I give it a go?"
+			eventText = "I think I can make some bread with a little creativity! Can I give it a go?"
 		}
 			
 	    buttonNumber = 2

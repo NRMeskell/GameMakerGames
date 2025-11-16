@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if myLight == noone{// and (global.timeCycle > global.timeCycleLength/2){
+if myLight == noone or !instance_exists(myLight){// and (global.timeCycle > global.timeCycleLength/2){
 	myLight = instance_create(x, y, LightParent)   
 	myLight.red = 0.03
 	myLight.green = 0.03

@@ -1,5 +1,5 @@
 function JohnnyAllow() {
-	ds_list_add(global.notificationList, "Johnny be excited!", "the child runs aboard, trying to stay out of the way of the crew.")
+	ds_list_add(global.notificationList, "Johnny excited!", "the child runs aboard! He stays out of the way, but promises to let you know if anything happens.")
 
 	with Pirate
 	    {

@@ -25,7 +25,7 @@ if x!=-100
 	}
 	
 	if x!=-100{
-	    if myLight[0] == noone{// and (global.timeCycle > global.timeCycleLength/2){
+	    if myLight[0] == noone or !instance_exists(myLight[0]){// and (global.timeCycle > global.timeCycleLength/2){
 	        myLight[0] = instance_create(x + myLightX[0] + 6, y + myLightY[0], LightParent)   
 	        myLight[0].red = 0.03
 	        myLight[0].green = 0.03

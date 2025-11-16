@@ -84,20 +84,11 @@ function SpiritLordPlayDice() {
 		with Store{
 			var item = instance_create(0,0,StoreObjectStorable)
 			with item{
-				amount = min(2, max(0, 5-CargoAmount(8)))
-				if amount > 0{
-			        name = "s-gems"
-			        description = "A beautiful treasure, touched by an ancient spirit"
-			        previewName = "spirit gems"
-			        itemNumber = 8    
-			        cost = 0
-				}
-				else{
-					name = "jewels"
-			        amount = 2
-			        itemNumber = 1 
-			        cost = 0
-				}
+				amount = MapCreator.seas[MapCreator.seaNumber][? "conquered"] == true ? 0 : min(2, max(0, 5-CargoAmount(8)))
+				name = "jewels"
+			    amount = 2
+			    itemNumber = 1 
+			    cost = 0
 		    }
 					
 			ds_list_add(items, item)

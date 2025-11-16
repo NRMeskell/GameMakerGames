@@ -18,6 +18,7 @@ function CursePirate(argument0){
 }
 
 function LiftCurses(){
+	audio_play_sound(CurseLiftedSnd, 1, false)
 	var cursesLifted = 0
 	global.moraleBoost = "curse lift" 
 	for(var i=0; i<instance_number(Pirate); i++){

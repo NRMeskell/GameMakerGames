@@ -1,6 +1,6 @@
 /// @description float away
 
-if !instance_exists(Event) and !instance_exists(Store) and ds_list_size(global.notificationList) == 0 and !instance_exists(CombatRunner){
+if !global.eventOpen and !instance_exists(Store) and ds_list_size(global.notificationList) == 0 and !instance_exists(CombatRunner){
     floatAway = true
 	audio_sound_gain(mySound, 0, 5000)
 }

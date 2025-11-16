@@ -13,42 +13,43 @@ function DrawWithLighting(argument0, argument1, argument2, argument3, argument4,
 	var relX = window_get_width()/room_width
 	var relY = window_get_height()/room_height
 	
-	sprite = argument0
-	index = argument1 div 1
-	xval = ((argument2*relX) div 1)/relX
-	yval = ((argument3*relY) div 1)/relY
-	rot = argument4
-	color = argument5
-	alpha = argument6
-	myLayer = argument7
+	var sprite = argument0
+	var index = argument1 div 1
+	var xval = ((argument2*relX) div 1)/relX
+	var yval = ((argument3*relY) div 1)/relY
+	var rot = argument4
+	var color = argument5
+	var alpha = argument6
+	var myLayer = argument7
 	
-	draw_red = (0.5*colour_get_red(color)/255) + 0.5
-	draw_green = (0.5*colour_get_red(color)/255) + 0.5
-	draw_blue = (0.5*colour_get_red(color)/255) + 0.5
+	var draw_red = (0.5*colour_get_red(color)/255) + 0.5
+	var draw_green = (0.5*colour_get_red(color)/255) + 0.5
+	var draw_blue = (0.5*colour_get_red(color)/255) + 0.5
 
 	///Draw shadows
 
 	//Update light vars
 
-	rotX = sprite_get_xoffset(sprite);
-	rotY = sprite_get_yoffset(sprite)
+	var rotX = sprite_get_xoffset(sprite);
+	var rotY = sprite_get_yoffset(sprite)
 
-	brightest = 0
-	myCornerX = xval - rotX
-	myCornerY = yval - rotY
+	var brightest = 0
+	var myCornerX = xval - rotX
+	var myCornerY = yval - rotY
 	
 	
 
 	//get page size as xSize
-	xSize = sprite_get_width(sprite)
-	ySize = sprite_get_height(sprite)
+	var xSize = sprite_get_width(sprite)
+	var ySize = sprite_get_height(sprite)
     
-	uvs = sprite_get_uvs(sprite, index)
+	var uvs = sprite_get_uvs(sprite, index)
 
-	lightNumber = min(instance_number(LightParent),10)
+	var lightNumber = min(instance_number(LightParent),10)
+	var myLightObject, lightX, lightY, red, green, blue, myVolume, lightLayer;
 
 	//Find nearest light source
-	for(i=0; i<10; i++){
+	for(var i=0; i<10; i++){
 	    if i<lightNumber{
 	        myLightObject = instance_find(LightParent, i)
 	        lightX[i] = myLightObject.x;
@@ -71,39 +72,41 @@ function DrawWithLighting(argument0, argument1, argument2, argument3, argument4,
 	        lightLayer[i] = -1.0
 	        }
 	    }
-    
+    var shader
 	if global.lighting > 0
 		shader = NewShadowShader
 	else
 		shader = NoShader
     
 	shader_set(shader)
-	//if global.lighting > 0 {
-		uni_lightX = shader_get_uniform(shader, "lightX")
-		uni_lightY = shader_get_uniform(shader, "lightY")
-		uni_cornerX = shader_get_uniform(shader, "myX")
-		uni_cornerY = shader_get_uniform(shader, "myY")
-		uni_rotation = shader_get_uniform(shader, "myRot")
-		uni_rotX = shader_get_uniform(shader, "rotX")
-		uni_rotY = shader_get_uniform(shader, "rotY")
-		uni_xSize = shader_get_uniform(shader, "xSize")
-		uni_ySize = shader_get_uniform(shader, "ySize")
-		uni_red = shader_get_uniform(shader, "red")
-		uni_green = shader_get_uniform(shader, "green")
-		uni_blue = shader_get_uniform(shader, "blue")
-		uni_volume = shader_get_uniform(shader, "myVolume")
-		uni_lightLayer = shader_get_uniform(shader, "lightLayer")
-		uni_myLayer = shader_get_uniform(shader, "myLayer")
-		uni_lightNumber = shader_get_uniform(shader, "lightNumber")
-		uni_uvs = shader_get_uniform(shader, "uvs")
+	var uni_xSize = shader_get_uniform(shader, "xSize")
+	var uni_ySize = shader_get_uniform(shader, "ySize")
+	var uni_uvs = shader_get_uniform(shader, "uvs")
+	
+	shader_set_uniform_f(uni_xSize, xSize)
+	shader_set_uniform_f(uni_ySize, ySize)
+	shader_set_uniform_f_array(uni_uvs, uvs)
 
+	if global.lighting > 0 {
+		var uni_lightX = shader_get_uniform(shader, "lightX")
+		var uni_lightY = shader_get_uniform(shader, "lightY")
+		var uni_cornerX = shader_get_uniform(shader, "myX")
+		var uni_cornerY = shader_get_uniform(shader, "myY")
+		var uni_rotation = shader_get_uniform(shader, "myRot")
+		var uni_rotX = shader_get_uniform(shader, "rotX")
+		var uni_rotY = shader_get_uniform(shader, "rotY")
+		var uni_red = shader_get_uniform(shader, "red")
+		var uni_green = shader_get_uniform(shader, "green")
+		var uni_blue = shader_get_uniform(shader, "blue")
+		var uni_volume = shader_get_uniform(shader, "myVolume")
+		var uni_lightLayer = shader_get_uniform(shader, "lightLayer")
+		var uni_myLayer = shader_get_uniform(shader, "myLayer")
+		var uni_lightNumber = shader_get_uniform(shader, "lightNumber")
 
 		shader_set_uniform_f_array(uni_lightX, lightX)
 		shader_set_uniform_f_array(uni_lightY, lightY)
 		shader_set_uniform_f(uni_cornerX, myCornerX)
 		shader_set_uniform_f(uni_cornerY, myCornerY)
-		shader_set_uniform_f(uni_xSize, xSize)
-		shader_set_uniform_f(uni_ySize, ySize)
 		shader_set_uniform_f(uni_rotation, rot)
 		shader_set_uniform_f(uni_rotX, rotX)
 		shader_set_uniform_f(uni_rotY, rotY)
@@ -113,9 +116,8 @@ function DrawWithLighting(argument0, argument1, argument2, argument3, argument4,
 		shader_set_uniform_f_array(uni_volume, myVolume)
 		shader_set_uniform_f_array(uni_lightLayer, lightLayer)
 		shader_set_uniform_f(uni_myLayer, myLayer)
-		shader_set_uniform_f_array(uni_uvs, uvs)
 		shader_set_uniform_i(uni_lightNumber, 2)
-	//}
+	}
 
 	draw_sprite_ext(sprite, index div 1, xval, yval, 1, 1, rot, color, alpha)
 

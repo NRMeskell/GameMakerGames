@@ -18,7 +18,7 @@ function GiantTurtleSpecialTake() {
 		    specialItem = GeneratePetItem(0)
 		    specialItem.itemNumber = 13
 		    specialItem.itemName = choose("bubbles", "pulpo", "starburst", "peeps", "mochi")
-		    specialItem.itemInfo = "A small octopus who loves to fix things!"
+		    specialItem.itemInfo = "A small octopus who happens to be a great cook!"
     
 		    color[0] = make_color_rgb(55, 118, 0)
 		    color[1] = make_color_rgb(0, 0, 145)
@@ -26,8 +26,8 @@ function GiantTurtleSpecialTake() {
 		    color[3] = make_color_rgb(128, 128, 0)
 		    specialItem.myColor = color[irandom(array_length_1d(color)-1)]
     
-		    specialItem.itemPower = "defense"   
-		    specialItem.itemPowerDescription = specialItem.itemName + " will protect equiped pirate, reducing combat damage they take by 25%"
+		    specialItem.itemPower = "cook"   
+		    specialItem.itemPowerDescription = "equipped pirate gains an extra morale during meals"
 		    } 
     
 		GetRandomLoot(0, "TURTLE GIFT", undefined)
